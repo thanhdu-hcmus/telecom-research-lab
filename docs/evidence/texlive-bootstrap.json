@@ -1,0 +1,10 @@
+{
+  "source": "https://mirror.ctan.org/systems/texlive/tlnet/install-tl.zip",
+  "final_url": "https://sg.mirrors.cicku.me/ctan/systems/texlive/tlnet/install-tl.zip",
+  "sha256": "38724c45cf8ec3397da32611e5c66609444bfeb0998d645cfe59f94d6b2b0621",
+  "size_bytes": 25144308,
+  "installer": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.tools\\texlive-installer\\install-tl-20261009\\install-tl-windows.bat",
+  "profile": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.tools\\texlive.profile",
+  "portable": true,
+  "changes_system_path": false
+}

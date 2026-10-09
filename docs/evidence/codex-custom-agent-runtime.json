@@ -1,0 +1,57 @@
+{
+  "parent_thread_id": "01a121c3-b970-7e61-8a65-05f9a74777db",
+  "children": [
+    {
+      "thread_id": "01a121c3-e65c-7553-930a-13074ea9d03e",
+      "role": "m0_probe",
+      "spawn": {
+        "parent_thread_id": "01a121c3-b970-7e61-8a65-05f9a74777db",
+        "depth": 1,
+        "agent_path": "/root/m0_probe",
+        "agent_nickname": "Hubble",
+        "agent_role": "m0_probe"
+      },
+      "runtime": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "sandbox_policy": {
+            "type": "workspace-write",
+            "network_access": true,
+            "exclude_tmpdir_env_var": false,
+            "exclude_slash_tmp": false
+          },
+          "approval_policy": "never"
+        }
+      ],
+      "scope_fixture_in_skill_catalog": false
+    }
+  ],
+  "parent": {
+    "thread_id": "01a121c3-b970-7e61-8a65-05f9a74777db",
+    "role": null,
+    "spawn": {},
+    "runtime": [
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "sandbox_policy": {
+          "type": "workspace-write",
+          "network_access": true,
+          "exclude_tmpdir_env_var": false,
+          "exclude_slash_tmp": false
+        },
+        "approval_policy": "never"
+      }
+    ],
+    "scope_fixture_in_skill_catalog": false
+  },
+  "custom_role_spawn": "PASS",
+  "requested_effort": "medium",
+  "observed_effort": "medium",
+  "effort_override": "PASS",
+  "requested_sandbox": "read-only",
+  "observed_sandbox": "workspace-write",
+  "sandbox_override": "FAIL",
+  "per_agent_skill_disable": "UNVERIFIED"
+}

@@ -1,0 +1,57 @@
+{
+  "parent_thread_id": "01a121c7-74e1-74b0-90e1-60ee98935c87",
+  "children": [
+    {
+      "thread_id": "01a121c7-a6eb-7e43-b23f-89178b3a109b",
+      "role": "m0_probe",
+      "spawn": {
+        "parent_thread_id": "01a121c7-74e1-74b0-90e1-60ee98935c87",
+        "depth": 1,
+        "agent_path": "/root/m0_probe",
+        "agent_nickname": "Aristotle",
+        "agent_role": "m0_probe"
+      },
+      "runtime": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "sandbox_policy": {
+            "type": "workspace-write",
+            "network_access": true,
+            "exclude_tmpdir_env_var": false,
+            "exclude_slash_tmp": false
+          },
+          "approval_policy": "never"
+        }
+      ],
+      "scope_fixture_in_skill_catalog": false
+    }
+  ],
+  "parent": {
+    "thread_id": "01a121c7-74e1-74b0-90e1-60ee98935c87",
+    "role": null,
+    "spawn": {},
+    "runtime": [
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "sandbox_policy": {
+          "type": "workspace-write",
+          "network_access": true,
+          "exclude_tmpdir_env_var": false,
+          "exclude_slash_tmp": false
+        },
+        "approval_policy": "never"
+      }
+    ],
+    "scope_fixture_in_skill_catalog": false
+  },
+  "custom_role_spawn": "PASS",
+  "requested_effort": "medium",
+  "observed_effort": "medium",
+  "effort_override": "PASS",
+  "requested_sandbox": "read-only",
+  "observed_sandbox": "workspace-write",
+  "sandbox_override": "FAIL",
+  "per_agent_skill_disable": "UNVERIFIED"
+}

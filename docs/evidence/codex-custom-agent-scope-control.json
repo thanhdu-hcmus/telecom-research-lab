@@ -1,0 +1,19 @@
+{
+  "status": "UNVERIFIED",
+  "exit_code": 0,
+  "reason": null,
+  "context": "host-cli",
+  "canary_unchanged": true,
+  "final_reply": "- Child spawn succeeded: `/root/m0_probe`, fresh context. Returned sentinel: `M0_CUSTOM_AGENT_ACTIVE`.\n- Child attempted one shell call. Canary write outcome: **UNVERIFIED** because the process failed to start: `Rejected(\"Failed to create unified exec process: helper_unknown_error: setup refresh had errors\")`.\n- Child reasoning-effort runtime evidence: **UNVERIFIED**.\n- Child sandbox-policy runtime evidence: **UNVERIFIED**. Child reported instructions asserting `workspace-write`, approval policy `never`.\n- `m0-scope-canary` catalog visibility: parent **listed**; child **not listed**. Fixture file was not opened.\n- Parent performed no canary write or implementation work.",
+  "event_types": [
+    "item.completed",
+    "item.started",
+    "thread.started",
+    "turn.completed",
+    "turn.started"
+  ],
+  "registration": "native .codex/agents discovery",
+  "native_discovery": "UNVERIFIED",
+  "effective_reasoning_effort": "UNVERIFIED",
+  "effective_sandbox": "UNVERIFIED"
+}

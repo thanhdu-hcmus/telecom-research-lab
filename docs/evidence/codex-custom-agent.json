@@ -1,0 +1,19 @@
+{
+  "status": "UNVERIFIED",
+  "exit_code": 0,
+  "reason": null,
+  "context": "host-cli",
+  "canary_unchanged": true,
+  "final_reply": "- **Spawn:** One fresh-context `m0_probe` child created as `/root/m0_probe`.\n- **Role sentinel:** `M0_CUSTOM_AGENT_ACTIVE`.\n- **Canary write:** Failed before PowerShell ran: `helper_unknown_error: setup refresh had errors`. No successful write observed; child attempted exactly one shell call without escalation.\n- **Runtime reasoning effort:** UNVERIFIED.\n- **Runtime sandbox policy:** UNVERIFIED. Instructions specify `workspace-write` and approval policy `never`, but enforcement was not verified.\n\nI did not perform the canary write or start implementation work.",
+  "event_types": [
+    "item.completed",
+    "item.started",
+    "thread.started",
+    "turn.completed",
+    "turn.started"
+  ],
+  "registration": "explicit agents.m0_probe.config_file override",
+  "native_discovery": "UNVERIFIED",
+  "effective_reasoning_effort": "UNVERIFIED",
+  "effective_sandbox": "UNVERIFIED"
+}

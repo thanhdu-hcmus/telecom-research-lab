@@ -1,0 +1,19 @@
+{
+  "status": "UNVERIFIED",
+  "exit_code": 0,
+  "reason": null,
+  "context": "host-cli",
+  "canary_unchanged": true,
+  "final_reply": "- Spawn succeeded once: `/root/m0_probe`, with fresh context (`fork_turns: \"none\"`).\n- Child sentinel: `M0_CUSTOM_AGENT_ACTIVE`.\n- Canary: child attempted one shell call. Process creation failed with `helper_unknown_error: setup refresh had errors`; the command did not run, so no write occurred. No retry or escalation.\n- Child reasoning effort: runtime evidence **UNVERIFIED**; role declaration specifies `medium`.\n- Sandbox policy: runtime enforcement **UNVERIFIED**; provided configuration specifies `workspace-write`, approval `never`.\n- `m0-scope-canary`: absent from both parent and child active skill catalogs. No fixture file opened.",
+  "event_types": [
+    "item.completed",
+    "item.started",
+    "thread.started",
+    "turn.completed",
+    "turn.started"
+  ],
+  "registration": "native .codex/agents discovery",
+  "native_discovery": "UNVERIFIED",
+  "effective_reasoning_effort": "UNVERIFIED",
+  "effective_sandbox": "UNVERIFIED"
+}

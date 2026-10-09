@@ -1,0 +1,11 @@
+.tools/
+.cache/
+.venv/
+__pycache__/
+*.pyc
+*.pdf
+*.mat
+.env
+external/
+docs/evidence/raw/
+probes/work/

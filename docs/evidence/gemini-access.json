@@ -1,0 +1,21 @@
+{
+  "optional": true,
+  "oauth_file_present": true,
+  "api_key_env_present": false,
+  "subscription_entitlements": "UNVERIFIED",
+  "probe": {
+    "status": "FAIL",
+    "command": [
+      "C:\\Program Files\\nodejs\\gemini.CMD",
+      "-p",
+      "Reply only GEMINI_M0_SMOKE_PASS. Do not use tools or read files.",
+      "--output-format",
+      "json"
+    ],
+    "exit_code": 1,
+    "stdout": "MCP issues detected. Run /mcp list for status.",
+    "stderr": "Error authenticating: IneligibleTierError: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google\n    at throwIneligibleOrProjectIdError (file:///C:/Users/ADMIN/AppData/Roaming/nvm/v22.22.2/node_modules/@google/gemini-cli/bundle/chunk-IWSCP2GY.js:277780:11)\n    at _doSetupUser (file:///C:/Users/ADMIN/AppData/Roaming/nvm/v22.22.2/node_modules/@google/gemini-cli/bundle/chunk-IWSCP2GY.js:277769:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {\n  ineligibleTiers: [\n    {\n      reasonCode: 'UNSUPPORTED_CLIENT',\n      reasonMessage: 'This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google',\n      tierId: 'free-tier',\n      tierName: 'Gemini Code Assist for individuals'\n    }\n  ]\n}\nSkill conflict detected: \"context7-mcp\" from \"C:\\Users\\ADMIN\\.agents\\skills\\context7-mcp\\SKILL.md\" is overriding the same skill from \"C:\\Users\\ADMIN\\.gemini\\skills\\context7-mcp\\SKILL.md\".An unexpected critical error occurred:IneligibleTierError: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google\n    at throwIneligibleOrProjectIdError (file:///C:/Users/ADMIN/AppData/Roaming/nvm/v22.22.2/node_modules/@google/gemini-cli/bundle/chunk-IWSCP2GY.js:277780:11)\n    at _doSetupUser (file:///C:/Users/ADMIN/AppData/Roaming/nvm/v22.22.2/node_modules/@google/gemini-cli/bundle/chunk-IWSCP2GY.js:277769:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n",
+    "elapsed_s": 8.875
+  },
+  "status": "FAIL"
+}

@@ -1,0 +1,198 @@
+{
+  "recorded_at": "2026-10-09T17:49:49.511422+00:00",
+  "context": "sandbox",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "root": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab",
+  "checks": {
+    "python_version": {
+      "status": "PASS",
+      "command": [
+        "C:\\Python312\\python.EXE",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Python 3.12.5\n",
+      "stderr": "",
+      "elapsed_s": 0.015
+    },
+    "uv_version": {
+      "status": "PASS",
+      "command": [
+        "C:\\Users\\ADMIN\\.local\\bin\\uv.EXE",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "uv 0.12.6 (7938ca5d5 2026-08-25 x86_64-pc-windows-msvc)\n",
+      "stderr": "",
+      "elapsed_s": 0.031
+    },
+    "git_version": {
+      "status": "PASS",
+      "command": [
+        "C:\\Program Files\\Git\\cmd\\git.EXE",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "git version 2.45.2.windows.1\n",
+      "stderr": "",
+      "elapsed_s": 0.031
+    },
+    "gh_version": {
+      "status": "PASS",
+      "command": [
+        "C:\\Program Files\\GitHub CLI\\gh.EXE",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "gh version 2.87.3 (2026-02-23)\nhttps://github.com/cli/cli/releases/tag/v2.87.3\n",
+      "stderr": "",
+      "elapsed_s": 0.062
+    },
+    "codex_version": {
+      "status": "PASS",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "C:\\Program Files\\nodejs\\node_modules\\@openai\\codex\\bin\\codex.js",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "codex-cli 0.161.0\n",
+      "stderr": "",
+      "elapsed_s": 0.094
+    },
+    "pdflatex_version": {
+      "status": "PASS",
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.tools\\texlive\\bin\\windows\\pdflatex.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)\nkpathsea version 6.4.2\nCopyright 2026 Han The Thanh (pdfTeX) et al.\nThere is NO warranty.  Redistribution of this software is\ncovered by the terms of both the pdfTeX copyright and\nthe Lesser GNU General Public License.\nFor more information about these matters, see the file\nnamed COPYING and the pdfTeX source.\nPrimary author of pdfTeX: Han The Thanh (pdfTeX) et al.\nCompiled with libpng 1.6.55; using libpng 1.6.55\nCompiled with zlib 1.3.2; using zlib 1.3.2\nCompiled with xpdf version 4.06\n",
+      "stderr": "",
+      "elapsed_s": 0.079
+    },
+    "latexmk_version": {
+      "status": "PASS",
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.tools\\texlive\\bin\\windows\\latexmk.exe",
+        "-version"
+      ],
+      "exit_code": 0,
+      "stdout": "Initial Win CP for (console input, console output, system): (CP437, CP65001, CP1252)\nI changed them all to CP1252\nLatexmk, John Collins, 9 March 2026. Version 4.88\n",
+      "stderr": "perl: warning: Setting locale failed.\nperl: warning: Please check that your locale settings:\n\tLC_ALL = \"C.UTF-8\",\n\tLC_CTYPE = \"C\",\n\tLC_NUMERIC = \"C\",\n\tLC_COLLATE = \"C\",\n\tLC_TIME = (unset),\n\tLC_MONETARY = (unset),\n\tLANG = \"C.UTF-8\"\n    are supported and installed on your system.\nperl: warning: Falling back to the system default locale (\"English_United States.1252\").\nReverting Windows console CPs to (in,out) = (437,65001)\n",
+      "elapsed_s": 0.329
+    },
+    "gemini_version": {
+      "status": "PASS",
+      "command": [
+        "C:\\Program Files\\nodejs\\gemini.CMD",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "0.38.2\n",
+      "stderr": "",
+      "elapsed_s": 0.734
+    },
+    "python_smoke": {
+      "status": "PASS",
+      "command": [
+        "C:\\Python312\\python.exe",
+        "-c",
+        "assert sum([1,2,3]) == 6; print('PYTHON_SMOKE_PASS')"
+      ],
+      "exit_code": 0,
+      "stdout": "PYTHON_SMOKE_PASS\n",
+      "stderr": "",
+      "elapsed_s": 0.031
+    },
+    "codex_auth": {
+      "status": "FAIL",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "C:\\Program Files\\nodejs\\node_modules\\@openai\\codex\\bin\\codex.js",
+        "login",
+        "status"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Not logged in\n",
+      "elapsed_s": 0.094
+    },
+    "github_auth": {
+      "status": "FAIL",
+      "command": [
+        "C:\\Program Files\\GitHub CLI\\gh.EXE",
+        "auth",
+        "status"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "github.com\n  X Failed to log in to github.com account thanhdu-hcmus (default)\n  - Active account: true\n  - The token in default is invalid.\n  - To re-authenticate, run: gh auth login -h github.com\n  - To forget about this account, run: gh auth logout -h github.com -u thanhdu-hcmus\n",
+      "elapsed_s": 0.078
+    },
+    "codex_help": {
+      "status": "PASS",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "C:\\Program Files\\nodejs\\node_modules\\@openai\\codex\\bin\\codex.js",
+        "--help"
+      ],
+      "exit_code": 0,
+      "stdout": "Codex CLI\n\nIf no subcommand is specified, options will be forwarded to the interactive CLI.\n\nUsage: codex [OPTIONS] [PROMPT]\n       codex [OPTIONS] <COMMAND> [ARGS]\n\nCommands:\n  agents            Browse all agent sessions on the shared local app-server daemon\n  exec              Run Codex non-interactively [aliases: e]\n  review            Run a code review non-interactively\n  login             Manage login\n  logout            Remove stored authentication credentials\n  mcp               Manage external MCP servers for Codex\n  plugin            Manage Codex plugins\n  app-server        [experimental] Run the app server or related tooling\n  remote-control    [experimental] Manage the app-server daemon with remote control enabled\n  app               Launch the Desktop app (opens the app installer if missing)\n  completion        Generate shell completion scripts\n  update            Update Codex to the latest version\n  doctor            Diagnose local Codex installation, config, auth, and runtime health\n  sandbox           Run commands within a Codex-provided sandbox\n  debug             Debugging tools\n  apply             Apply the latest diff produced by Codex agent as a `git apply` to your local\n                    working tree [aliases: a]\n  resume            Resume a previous interactive session (picker by default; use --last to continue\n                    the most recent)\n  queue             Queue a message for an existing session\n  archive           Archive a saved session by id or session name\n  delete            Permanently delete a saved session by id or session name\n  migrate-rollouts  Inspect or migrate legacy local sessions to paginated thread history\n  unarchive         Unarchive a saved session by id or session name\n  fork              Fork a previous interactive session (picker by default; use --last to fork the\n                    most recent)\n  cloud             [EXPERIMENTAL] Browse tasks from Codex Cloud and apply changes locally\n  exec-server       [EXPERIMENTAL] Run the standalone exec-server service\n  features          Inspect feature flags\n  help              Print this message or the help of the given subcommand(s)\n\nArguments:\n  [PROMPT]\n          Optional user prompt to start the session\n\nOptions:\n  -c, --config <key=value>\n          Override a configuration value that would otherwise be loaded from `~/.codex/config.toml`.\n          Use a dotted path (`foo.bar.baz`) to override nested values. The `value` portion is parsed\n          as TOML. If it fails to parse as TOML, the raw string is used as a literal.\n          \n          Examples: - `-c model=\"o3\"` - `-c 'sandbox_permissions=[\"di[redacted]\"]'` - `-c\n          shell_environment_policy.inherit=all`\n\n      --enable <FEATURE>\n          Enable a feature (repeatable). Equivalent to `-c features.<name>=true`\n\n      --disable <FEATURE>\n          Disable a feature (repeatable). Equivalent to `-c features.<name>=false`\n\n      --remote <ADDR>\n          Connect the TUI to a remote app server endpoint.\n          \n          Accepted forms: `ws://host:port`, `wss://host:port`, `unix://`, or `unix://PATH`.\n\n      --remote-auth-token-env <ENV_VAR>\n          Name of the environment variable containing the bearer token to send to a remote app\n          server websocket\n\n      --strict-config\n          Error out when config.toml contains fields that are not recognized by this version of\n          Codex\n\n  -i, --image <FILE>...\n          Optional image(s) to attach to the initial prompt\n\n  -m, --model <MODEL>\n          Model the agent should use\n\n      --oss\n          Use open-source provider\n\n      --local-provider <OSS_PROVIDER>\n          Specify which local provider to use (lmstudio or ollama). If not specified with --oss,\n          will use config default or show selection\n\n  -p, --profile <CONFIG_PROFILE_V2>\n          Layer $CODEX_HOME/<name>.config.toml on top of the base user config\n\n  -s, --sandbox <SANDBOX_MODE>\n          Select the sandbox policy to use when executing model-generated shell commands\n          \n          [possible values: read-only, workspace-write, danger-full-access]\n\n      --approve-for-me\n          Route approval requests through automatic review using the workspace-write sandbox\n\n      --dangerously-bypass-approvals-and-sandbox\n          Skip all confirmation prompts and execute commands without sandboxing. EXTREMELY\n          DANGEROUS. Intended solely for running in environments that are externally sandboxed\n\n      --dangerously-bypass-hook-trust\n          Run enabled hooks without requiring persisted hook trust for this invocation. DANGEROUS.\n          Intended only for automation that already vets hook sources\n\n  -C, --cd <DIR>\n          Tell the agent to use the specified directory as its working root\n\n      --worktree\n          Run the session in a new managed Git worktree\n\n      --add-dir <DIR>\n          Additional directories that should be writable alongside the primary workspace\n\n  -a, --a[redacted] <APPROVAL_POLICY>\n          Configure when the model requires human approval before executing a command\n\n          Possible values:\n          - on-request: The model decides when to ask the user for approval\n          - never:      Never ask for user approval Execution failures are immediately returned to\n            the model\n\n      --search\n          Enable live web search. When enabled, the native Responses `web_search` tool is available\n          to the model (no per‑call approval)\n\n      --no-alt-screen\n          Disable alternate screen mode\n          \n          Runs the TUI in inline mode, preserving terminal scrollback history.\n\n      --no-daemon\n          Run without the shared background server, even if it is already running\n\n  -h, --help\n          Print help (see a summary with '-h')\n\n  -V, --version\n          Print version\n",
+      "stderr": "",
+      "elapsed_s": 0.188
+    },
+    "codex_exec_help": {
+      "status": "PASS",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "C:\\Program Files\\nodejs\\node_modules\\@openai\\codex\\bin\\codex.js",
+        "exec",
+        "--help"
+      ],
+      "exit_code": 0,
+      "stdout": "Run Codex non-interactively\n\nUsage: codex exec [OPTIONS] [PROMPT]\n       codex exec [OPTIONS] <COMMAND> [ARGS]\n\nCommands:\n  resume  Resume a previous session by id or pick the most recent with --last\n  fork    Fork a previous session by id into a new session\n  review  Run a code review against the current repository\n  help    Print this message or the help of the given subcommand(s)\n\nArguments:\n  [PROMPT]\n          Initial instructions for the agent. If not provided as an argument (or if `-` is used),\n          instructions are read from stdin. If stdin is piped and a prompt is also provided, stdin\n          is appended as a `<stdin>` block\n\nOptions:\n  -c, --config <key=value>\n          Override a configuration value that would otherwise be loaded from `~/.codex/config.toml`.\n          Use a dotted path (`foo.bar.baz`) to override nested values. The `value` portion is parsed\n          as TOML. If it fails to parse as TOML, the raw string is used as a literal.\n          \n          Examples: - `-c model=\"o3\"` - `-c 'sandbox_permissions=[\"di[redacted]\"]'` - `-c\n          shell_environment_policy.inherit=all`\n\n      --enable <FEATURE>\n          Enable a feature (repeatable). Equivalent to `-c features.<name>=true`\n\n      --disable <FEATURE>\n          Disable a feature (repeatable). Equivalent to `-c features.<name>=false`\n\n      --strict-config\n          Error out when config.toml contains fields that are not recognized by this version of\n          Codex\n\n  -i, --image <FILE>...\n          Optional image(s) to attach to the initial prompt\n\n  -m, --model <MODEL>\n          Model the agent should use\n\n      --oss\n          Use open-source provider\n\n      --local-provider <OSS_PROVIDER>\n          Specify which local provider to use (lmstudio or ollama). If not specified with --oss,\n          will use config default or show selection\n\n  -p, --profile <CONFIG_PROFILE_V2>\n          Layer $CODEX_HOME/<name>.config.toml on top of the base user config\n\n  -s, --sandbox <SANDBOX_MODE>\n          Select the sandbox policy to use when executing model-generated shell commands\n          \n          [possible values: read-only, workspace-write, danger-full-access]\n\n      --approve-for-me\n          Route approval requests through automatic review using the workspace-write sandbox\n\n      --dangerously-bypass-approvals-and-sandbox\n          Skip all confirmation prompts and execute commands without sandboxing. EXTREMELY\n          DANGEROUS. Intended solely for running in environments that are externally sandboxed\n\n      --dangerously-bypass-hook-trust\n          Run enabled hooks without requiring persisted hook trust for this invocation. DANGEROUS.\n          Intended only for automation that already vets hook sources\n\n  -C, --cd <DIR>\n          Tell the agent to use the specified directory as its working root\n\n      --worktree\n          Run the session in a new managed Git worktree\n\n      --add-dir <DIR>\n          Additional directories that should be writable alongside the primary workspace\n\n      --thread-source <SOURCE>\n          Source classification for newly created or forked threads\n\n      --cyber-access-program <PROGRAM>\n          Request an experimental Cyber access program for this turn (OpenAI provider only). Omit to\n          use server defaults. Not supported with review; fork requires a prompt\n          \n          [possible values: standard, daybreak_blue, daybreak_red]\n\n      --skip-git-repo-check\n          Allow running Codex outside a Git repository\n\n      --ephemeral\n          Run without persisting session files to disk\n\n      --ignore-user-config\n          Do not load `$CODEX_HOME/config.toml`; auth still uses `CODEX_HOME`\n\n      --ignore-rules\n          Do not load user or project execpolicy `.rules` files\n\n      --output-schema <FILE>\n          Path to a JSON Schema file describing the model's final response shape\n\n      --color <COLOR>\n          Specifies color settings for use in the output\n          \n          [default: auto]\n          [possible values: always, never, auto]\n\n      --json\n          Print events to stdout as JSONL\n\n  -o, --output-last-message <FILE>\n          Specifies file where the last message from the agent should be written\n\n  -h, --help\n          Print help (see a summary with '-h')\n\n  -V, --version\n          Print version\n",
+      "stderr": "",
+      "elapsed_s": 0.125
+    },
+    "openalex": {
+      "status": "FAIL",
+      "url": "https://api.openalex.org/works?per-page=1",
+      "reason": "<urlopen error [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions>"
+    },
+    "arxiv": {
+      "status": "FAIL",
+      "url": "https://export.arxiv.org/api/query?search_query=all:RIS&max_results=1",
+      "reason": "<urlopen error [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions>"
+    },
+    "matlab_batch": {
+      "status": "FAIL",
+      "command": [
+        "C:\\Program Files\\MATLAB\\R2021b\\bin\\matlab.EXE",
+        "-wait",
+        "-batch",
+        "disp(1); fprintf('MATLAB_RELEASE=%s\\n',version('-release')); ver; fprintf('MATLAB_SMOKE_PASS\\n');"
+      ],
+      "exit_code": 3,
+      "stdout": "Warning: Unable to create personal MATLAB work folder:C\n     1\n\nMATLAB_RELEASE=2021b\n-----------------------------------------------------------------------------------------------------\nMATLAB Version: 9.11.0.1769968 (R2021b)\nMATLAB License Number: [redacted]\nOperating System: unknown Version 10.0 (Build 26200)\nJava Version: Java 1.8.0_202-b08 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode\n-----------------------------------------------------------------------------------------------------\nMATLAB                                                Version 9.11        (R2021b)\nSimulink                                              Version 10.4        (R2021b)\n5G Toolbox                                            Version 2.3         (R2021b)\nAntenna Toolbox                                       Version 5.1         (R2021b)\nAudio Toolbox                                         Version 3.1         (R2021b)\nCommunications Toolbox                                Version 7.6         (R2021b)\nComputer Vision Toolbox                               Version 10.1        (R2021b)\nControl System Toolbox                                Version 10.11       (R2021b)\nCurve Fitting Toolbox                                 Version 3.6         (R2021b)\nDDS Blockset                                          Version 1.1         (R2021b)\nDSP System Toolbox                                    Version 9.13        (R2021b)\nData Acquisition Toolbox                              Version 4.4         (R2021b)\nDatafeed Toolbox                                      Version 6.1         (R2021b)\nDeep Learning HDL Toolbox                             Version 1.2         (R2021b)\nDeep Learning Toolbox                                 Version 14.3        (R2021b)\nEconometrics Toolbox                                  Version 5.7         (R2021b)\nEmbedded Coder                                        Version 7.7         (R2021b)\nFilter Design HDL Coder                               Version 3.1.10      (R2021b)\nFinancial Instruments Toolbox                         Version 3.3         (R2021b)\nFinancial Toolbox                                     Version 6.2         (R2021b)\nFixed-Point Designer                                  Version 7.3         (R2021b)\nFuzzy Logic Toolbox                                   Version 2.8.2       (R2021b)\nGPU Coder                                             Version 2.2         (R2021b)\nGlobal Optimization Toolbox                           Version 4.6         (R2021b)\nImage Acquisition Toolbox                             Version 6.5         (R2021b)\nImage Processing Toolbox                              Version 11.4        (R2021b)\nInstrument Control Toolbox                            Version 4.5         (R2021b)\nLTE Toolbox                                           Version 3.6         (R2021b)\nLidar Toolbox                                         Version 2.0         (R2021b)\nMATLAB Coder                                          Version 5.3         (R2021b)\nMATLAB Compiler                                       Version 8.3         (R2021b)\nMATLAB Compiler SDK                                   Version 6.11        (R2021b)\nMATLAB Report Generator                               Version 5.11        (R2021b)\nMapping Toolbox                                       Version 5.2         (R2021b)\nMixed-Signal Blockset                                 Version 2.1         (R2021b)\nModel Predictive Control Toolbox                      Version 7.2         (R2021b)\nModel-Based Calibration Toolbox                       Version 5.11        (R2021b)\nMotor Control Blockset                                Version 1.3         (R2021b)\nNavigation Toolbox                                    Version 2.1         (R2021b)\nOPC Toolbox                                           Version 5.0.3       (R2021b)\nOptimization Toolbox                                  Version 9.2         (R2021b)\nParallel Computing Toolbox                            Version 7.5         (R2021b)\nPartial Differential Equation Toolbox                 Version 3.7         (R2021b)\nPhased Array System Toolbox                           Version 4.6         (R2021b)\nPowertrain Blockset                                   Version 1.10        (R2021b)\nPredictive Maintenance Toolbox                        Version 2.4         (R2021b)\nRF Blockset                                           Version 8.2         (R2021b)\nRF PCB Toolbox                                        Version 1.0         (R2021b)\nRF Toolbox                                            Version 4.2         (R2021b)\nROS Toolbox                                           Version 1.4         (R2021b)\nRadar Toolbox                                         Version 1.1         (R2021b)\nReinforcement Learning Toolbox                        Version 2.1         (R2021b)\nRobust Control Toolbox                                Version 6.11        (R2021b)\nSignal Integrity Toolbox                              Version 1.0         (R2021b)\nSignal Processing Toolbox                             Version 8.7         (R2021b)\nSimulink 3D Animation                                 Version 9.3         (R2021b)\nSimulink Check                                        Version 5.2         (R2021b)\nSimulink Code Inspector                               Version 4.0         (R2021b)\nSimulink Coder                                        Version 9.6         (R2021b)\nSimulink Compiler                                     Version 1.3         (R2021b)\nSimulink Control Design                               Version 6.0         (R2021b)\nSimulink Coverage                                     Version 5.3         (R2021b)\nSimulink Design Optimization                          Version 3.10        (R2021b)\nSimulink Design Verifier                              Version 4.6         (R2021b)\nSimulink Desktop Real-Time                            Version 5.13        (R2021b)\nSimulink PLC Coder                                    Version 3.5         (R2021b)\nSimulink Real-Time                                    Version 7.2         (R2021b)\nSimulink Report Generator                             Version 5.11        (R2021b)\nSimulink Requirements                                 Version 1.8         (R2021b)\nSimulink Test                                         Version 3.5         (R2021b)\nSpreadsheet Link                                      Version 3.4.6       (R2021b)\nStateflow                                             Version 10.5        (R2021b)\nStatistics and Machine Learning Toolbox               Version 12.2        (R2021b)\nSymbolic Math Toolbox                                 Version 9.0         (R2021b)\nSystem Composer                                       Version 2.1         (R2021b)\nSystem Identification Toolbox                         Version 9.15        (R2021b)\nText Analytics Toolbox                                Version 1.8         (R2021b)\nUAV Toolbox                                           Version 1.2         (R2021b)\nVehicle Dynamics Blockset                             Version 1.7         (R2021b)\nVehicle Network Toolbox                               Version 5.1         (R2021b)\nWLAN Toolbox                                          Version 3.3         (R2021b)\nWavelet Toolbox                                       Version 6.0         (R2021b)\nWireless HDL Toolbox                                  Version 2.3         (R2021b)\nMATLAB_SMOKE_PASS\n",
+      "stderr": "{\bError using exit\nUnrecognized function or variable 'Settings'.\n}\b \n{\bError using exit\nUnrecognized function or variable 'Settings'.\n}\b \nAssertion failed: Dynamic exception type: class mwboost::archive::archive_exception\nstd::exception::what: output stream error\n\n\nFunction: auto __cdecl mnShutdownMatlabInternalImpl::<lambda_42064d2ebd32ba966f56efbda0921dbe>::operator ()(void) const, file B:\\matlab\\src\\mcr\\runtime\\shutdown.cpp, line 677\n\n--------------------------------------------------------------------------------\n                Assertion detected at 2026-10-10 00:49:49 +0700\n--------------------------------------------------------------------------------\n\nConfiguration:\n  Crash Decoding           : Disabled - No sandbox or build area path\n  Crash Mode               : continue (default)\n  Default Encoding         : windows-1252\n  Deployed                 : false\n  Graphics Driver          : Unknown hardware \n  Graphics card 1          : Intel Corporation ( 0x8086 ) Intel(R) UHD Graphics 770 Version 31.0.101.5592 (2024-6-19)\n  Java Version             : Java 1.8.0_202-b08 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode\n  MATLAB Architecture      : win64\n  MATLAB Entitlement ID    : 6257193\n  MATLAB Root              : C:\\Program Files\\MATLAB\\R2021b\n  MATLAB Version           : 9.11.0.1769968 (R2021b)\n  OpenGL                   : hardware\n  Operating System         : unknown\n  Process ID               : 3796\n  Processor ID             : x86 Family 6 Model 191 Stepping 2, GenuineIntel\n  Session Key              : a5bde8dc-5db4-4fb7-a80b-567a8af639b6\n  Window System            : Version 10.0 (Build 26200)\n\nFault Count: 1\n\n\nAssertion in auto __cdecl mnShutdownMatlabInternalImpl::<lambda_42064d2ebd32ba966f56efbda0921dbe>::operator ()(void) const at B:\\matlab\\src\\mcr\\runtime\\shutdown.cpp line 677:\nDynamic exception type: class mwboost::archive::archive_exception\nstd::exception::what: output stream error\n\n\nCurrent Thread: 'MCR 0 interpreter thread' id 20044\n\nRegister State (captured):\n  RAX = 00007ffb28a0d9d8  RBX = 00007ffb28a0d9d8\n  RCX = 000000c7111de550  RDX = 0000000000000000\n  RSP = 000000c7111de490  RBP = 00000000000002a5\n  RSI = 000001c703b26850  RDI = 00007ffb28a0d9d8\n \n   R8 = 0000000000000004   R9 = 000000c7111de408\n  R10 = 00007ffb289b1b3c  R11 = 00007ffb289fdac5\n  R12 = 000000c7111deb80  R13 = 000000c7111df288\n  R14 = 00007ffb1fc0cf28  R15 = 00007ffb289fd918\n \n  RIP = 00007ffb288e138a  EFL = 00000206\n \n   CS = 0033   FS = 0053   GS = 002b\n\nStack Trace (captured):\n[  0] 0x00007ffb288da043 C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\libmwfl.dll+00041027 foundation::core::diag::thread_context::unspecified_bool+00000051\n[  1] 0x00007ffb288d7338 C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\libmwfl.dll+00029496 foundation::core::diag::stacktrace_base::capture+00000024\n[  2] 0x00007ffb288dd87d C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\libmwfl.dll+00055421 foundation::core::diag::symbols::getSymbolAddress+00013293\n[  3] 0x00007ffb288dc161 C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\libmwfl.dll+00049505 foundation::core::diag::symbols::getSymbolAddress+00007377\n[  4] 0x00007ffb288e0c0b C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\libmwfl.dll+00068619 foundation::core::diag::terminate+00000059\n[  5] 0x00007ffb1fbfbd01   C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\mcr.dll+01031425 mcr::mvm::detail::activateMcr+00109441\n[  6] 0x00007ffbb6861080 C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\VCRUNTIME140_1.dll+00004224\n[  7] 0x00007ffbb68626b5 C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\VCRUNTIME140_1.dll+00009909 _NLG_Return2+00005477\n[  8] 0x00007ffbe92c41b6                      C:\\WINDOWS\\SYSTEM32\\ntdll.dll+01196470 RtlCaptureContext2+00001190\n[  9] 0x00007ffb1fbcfbea   C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\mcr.dll+00850922 usedBatchStartupOptionBuiltin+00012202\n[ 10] 0x00007ffb1fbe1989   C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\mcr.dll+00924041 mcr::mvm::detail::activateMcr+00002057\n[ 11] 0x00007ffb1fbe3036   C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\mcr.dll+00929846 mcr::mvm::detail::activateMcr+00007862\n[ 12] 0x00007ffb1fb5421f   C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\mcr.dll+00344607 mcrInstantiationError::operator=+00009391\n[ 13] 0x00007ffb1fbf0b71   C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\mcr.dll+00985969 mcr::mvm::detail::activateMcr+00063985\n[ 14] 0x00007ffbb6861080 C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\VCRUNTIME140_1.dll+00004224\n[ 15] 0x00007ffbb68626b5 C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\VCRUNTIME140_1.dll+00009909 _NLG_Return2+00005477\n[ 16] 0x00007ffbe92c41b6                      C:\\WINDOWS\\SYSTEM32\\ntdll.dll+01196470 RtlCaptureContext2+00001190\n[ 17] 0x00007ffb1fb5463c   C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\mcr.dll+00345660 mcrInstantiationError::operator=+00010444\n[ 18] 0x00007ffb1fb55095   C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\mcr.dll+00348309 mcrInstantiationError::operator=+00013093\n[ 19] 0x00007ffb1fb52810   C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\mcr.dll+00337936 mcrInstantiationError::operator=+00002720\n[ 20] 0x00007ffb27449baa C:\\Program Files\\MATLAB\\R2021b\\bin\\win64\\mwboost_thread-vc142-mt-x64-1_72.dll+00039850 mwboost::thread::swap+00000074\n[ 21] 0x00007ffbe6a0cd30                   C:\\WINDOWS\\System32\\ucrtbase.dll+00183600 wcsrchr+00000336\n[ 22] 0x00007ffbe804cd87                   C:\\WINDOWS\\System32\\KERNEL32.DLL+00183687 BaseThreadInitThunk+00000023\n[ 23] 0x00007ffbe924caec                      C:\\WINDOWS\\SYSTEM32\\ntdll.dll+00707308 RtlUserThreadStart+00000044\n\n** This crash report has been saved to disk as C:\\Users\\ADMIN\\AppData\\Local\\Temp\\matlab_crash_dump.3796-1 **\n\n\n\nMATLAB is exiting because of fatal error\nERROR: MATLAB error Exit Status: 0x00000003, abort()\n",
+      "elapsed_s": 14.125
+    },
+    "latex_compile": {
+      "status": "PASS",
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.tools\\texlive\\bin\\windows\\latexmk.exe",
+        "-pdf",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-outdir=D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\latex-smoke",
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\latex-smoke\\smoke.tex"
+      ],
+      "exit_code": 0,
+      "stdout": "Initial Win CP for (console input, console output, system): (CP437, CP65001, CP1252)\nI changed them all to CP1252\nRc files read (in order):\n  NONE\nLatexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.\nNo existing .aux file, so I'll make a simple one, and require run of *latex.\nLatexmk: applying rule 'pdflatex'...\nRule 'pdflatex':  Reasons for rerun\nCategory 'other':\n  Rerun of 'pdflatex' forced or previously required:\n    Reason or flag: 'Initial setup'\n\n------------\nRun number 1 of rule 'pdflatex'\n------------\n------------\nRunning 'pdflatex  -interaction=nonstopmode -halt-on-error -recorder -output-directory=\".cache/latex-smoke\"  \"D:/02_EDUCATION/THESIS/telecom-research-lab/.cache/latex-smoke/smoke.tex\"'\n------------\nThis is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)\n restricted \\write18 enabled.\nentering extended mode\n(d:/02_EDUCATION/THESIS/telecom-research-lab/.cache/latex-smoke/smoke.tex\nLaTeX2e <2026-06-01>\nL3 programming layer <2026-09-09>\n\n(d:/02_EDUCATION/THESIS/telecom-research-lab/.tools/texlive/texmf-dist/tex/late\nx/base/article.cls\nDocument Class: article 2025/01/22 v1.4n Standard LaTeX document class\n\n(d:/02_EDUCATION/THESIS/telecom-research-lab/.tools/texlive/texmf-dist/tex/late\nx/base/size10.clo))\n(d:/02_EDUCATION/THESIS/telecom-research-lab/.tools/texlive/texmf-dist/tex/late\nx/l3kernel/l3backend-pdftex.def) (.cache/latex-smoke/smoke.aux) [1{d:/02_EDUCAT\nION/THESIS/telecom-research-lab/.tools/texlive/texmf-var/fonts/map/pdftex/updma\np/pdftex.map}] (.cache/latex-smoke/smoke.aux) )<d:/02_EDUCATION/THESIS/telecom-\nresearch-lab/.tools/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb\n>\nOutput written on .cache/latex-smoke/smoke.pdf (1 page, 13039 bytes).\nTranscript written on .cache/latex-smoke/smoke.log.\nLatexmk: Getting log file '.cache/latex-smoke/smoke.log'\nLatexmk: Examining '.cache/latex-smoke/smoke.fls'\nLatexmk: Examining '.cache/latex-smoke/smoke.log'\nLatexmk: Log file says output to '.cache/latex-smoke/smoke.pdf'\nLatexmk: All targets (.cache/latex-smoke/smoke.pdf) are up-to-date\n\n",
+      "stderr": "perl: warning: Setting locale failed.\nperl: warning: Please check that your locale settings:\n\tLC_ALL = \"C.UTF-8\",\n\tLC_CTYPE = \"C\",\n\tLC_NUMERIC = \"C\",\n\tLC_COLLATE = \"C\",\n\tLC_TIME = (unset),\n\tLC_MONETARY = (unset),\n\tLANG = \"C.UTF-8\"\n    are supported and installed on your system.\nperl: warning: Falling back to the system default locale (\"English_United States.1252\").\nReverting Windows console CPs to (in,out) = (437,65001)\n",
+      "elapsed_s": 0.406,
+      "pdf_exists": true
+    }
+  }
+}

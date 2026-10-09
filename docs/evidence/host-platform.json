@@ -1,0 +1,49 @@
+{
+  "os": {
+    "Caption": "Microsoft Windows 11 Pro",
+    "Version": "10.0.26200",
+    "OSArchitecture": "64-bit"
+  },
+  "computer": {
+    "Manufacturer": "ASRock",
+    "Model": "B760M-STX",
+    "TotalPhysicalMemory": 34107826176
+  },
+  "gpu": {
+    "Name": "Intel(R) UHD Graphics 770",
+    "AdapterRAM": 2147479552,
+    "DriverVersion": "31.0.101.5592"
+  },
+  "powershell_version": {
+    "status": "PASS",
+    "command": [
+      "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.6.0_x64__8wekyb3d8bbwe\\pwsh.EXE",
+      "-NoProfile",
+      "-Command",
+      "$PSVersionTable.PSVersion.ToString()"
+    ],
+    "exit_code": 0,
+    "stdout": "7.6.6\n",
+    "stderr": "",
+    "elapsed_s": 0.922
+  },
+  "wsl_python": {
+    "status": "PASS",
+    "command": [
+      "C:\\WINDOWS\\system32\\wsl.EXE",
+      "-d",
+      "Ubuntu",
+      "--exec",
+      "python3",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "Python 3.12.3\n",
+    "stderr": "",
+    "elapsed_s": 0.125
+  },
+  "remote_workstation": {
+    "status": "UNVERIFIED",
+    "reason": "No remote workstation inventory or launch target supplied"
+  }
+}

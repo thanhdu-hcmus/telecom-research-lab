@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "command": [
+    "C:\\Python312\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/m0",
+    "-v"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_auth_tokens_and_license_are_redacted (test_probe_environment.ProbeEvidenceTests.test_auth_tokens_and_license_are_redacted) ... ok\ntest_failure_exit_is_preserved (test_probe_environment.ProbeEvidenceTests.test_failure_exit_is_preserved) ... ok\ntest_missing_tool_is_explicit (test_probe_environment.ProbeEvidenceTests.test_missing_tool_is_explicit) ... ok\ntest_plain_xml_is_not_arxiv_success (test_probe_environment.ProbeEvidenceTests.test_plain_xml_is_not_arxiv_success) ... ok\ntest_reachability_does_not_accept_malformed_payload (test_probe_environment.ProbeEvidenceTests.test_reachability_does_not_accept_malformed_payload) ... ok\ntest_timeout_is_failure (test_probe_environment.ProbeEvidenceTests.test_timeout_is_failure) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.028s\n\nOK\n",
+  "elapsed_s": 0.234
+}

@@ -1,0 +1,44 @@
+{
+  "updated_at": "2026-10-09T17:56:33.581918+00:00",
+  "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
+  "active_milestone": "M0",
+  "status": "awaiting_pi_review",
+  "verification_complete": true,
+  "pi_approval": null,
+  "milestones": {
+    "M0": "checks_recorded_awaiting_approval",
+    "M1": "not_started",
+    "M2": "not_started",
+    "M3": "not_started",
+    "M4": "not_started",
+    "M5": "not_started",
+    "M6": "not_started",
+    "M7": "not_started",
+    "M8": "not_started",
+    "M9": "not_started",
+    "M10": "not_started",
+    "M11": "not_started",
+    "M12": "not_started"
+  },
+  "scientific_gates": {
+    "G1": "not_started",
+    "G2": "not_started",
+    "G3": "not_started",
+    "G4": "not_started",
+    "G5": "not_started",
+    "G6": "not_started",
+    "G7": "not_started"
+  },
+  "proposed_runtime": "native_windows_with_matlab_mcp",
+  "proposed_workarounds": [
+    "Run scholarly HTTP through host-approved bounded commands under the current session policy",
+    "Run independent reviewers in separately configured read-only root sessions; verify shell enforcement before L4 acceptance"
+  ],
+  "unresolved": [
+    "Current sandbox blocks scholarly HTTP and credential access",
+    "Custom-agent sandbox default overridden by parent live policy",
+    "Nested Codex child shell process creation fails with helper_unknown_error",
+    "Separate DL workstation hardware and launch route not supplied"
+  ],
+  "optional_gemini": "FAIL"
+}
