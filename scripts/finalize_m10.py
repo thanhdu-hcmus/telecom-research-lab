@@ -96,14 +96,18 @@ if overleaf_confirmed:
     }
 save(ROOT / "docs/evidence/m5-m10-acceptance.json", acceptance)
 state = load(ROOT / "implementation-state.json")
+advanced = state.get("active_milestone") in {"M11", "M12"}
 state.update(
     updated_at=now(),
-    active_milestone="M10",
-    status="software_build_complete"
-    if overleaf_confirmed
-    else "software_complete_pending_pi_overleaf",
     verification_complete=True,
 )
+if not advanced:
+    state.update(
+        active_milestone="M10",
+        status="software_build_complete"
+        if overleaf_confirmed
+        else "software_complete_pending_pi_overleaf",
+    )
 state["pi_approval"] = {
     "quote": "Approve M0, continue M1\u2013M10 automatically, and create the new private repository.",
     "scope": "M0 acceptance and software build M1-M10; no scientific gate approval",
@@ -113,7 +117,7 @@ for milestone in ["M5", "M6", "M7", "M8", "M9"]:
 state["milestones"]["M10"] = (
     "complete" if overleaf_confirmed else "software_complete_pending_pi_overleaf"
 )
-state["unresolved"] = [
+build_unresolved = [
     *(
         []
         if overleaf_confirmed
@@ -124,6 +128,8 @@ state["unresolved"] = [
     "Optional Gemini unavailable; manual independent review packets provided",
     "DL workstation launch route remains unspecified; not required for framework fixtures",
 ]
+if not advanced:
+    state["unresolved"] = build_unresolved
 state["last_acceptance"] = {
     "tests": load(ROOT / "docs/evidence/m5-m10-deterministic.json")["tests_passed"],
     **{name: f"{receipt['passed']}/3" for name, receipt in evaluations.items()},

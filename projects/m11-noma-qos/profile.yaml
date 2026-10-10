@@ -1,0 +1,15 @@
+working_title: Two-user NOMA versus equal-time OMA with QoS — M11 workflow dry run
+title_status: Synthetic benchmark proposed by the plan; pending PI scope review
+abstract: Exercise all seven gated phases on an established small problem, with matched resources, independent verification and a traceable manuscript.
+chapters: [Internal framework acceptance]
+core_topics: [downlink NOMA, OMA, QoS, power allocation, reproducibility]
+own_publications: []
+existing_code: [Framework Python simkit and MATLAB physics helpers]
+preferred_methods: [Analytical feasible interval, bounded scalar search, Monte Carlo checks]
+excluded_directions: [Original novelty, RIS or mmWave dissertation topic selection]
+mobility: excluded for this dry run
+target_quartiles: []
+time_budget_months_per_paper: null
+thesis_deadline: null
+pi_reviewed: false
+profile_purpose: M11 synthetic benchmark only; does not select the PI's dissertation topic

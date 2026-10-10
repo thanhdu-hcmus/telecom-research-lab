@@ -1,0 +1,11 @@
+id: 2026-10-10-0001
+timestamp: '2026-10-10T16:16:36.263741+00:00'
+phase: P1
+summary: Prepared the plan-defined M11 benchmark scope, synthetic profile and seven-gate
+  handoffs; assumptions remain proposals and PI review flags remain false.
+provenance: ai
+evidence:
+  scope.md: d58c04fcf064de9299c77d73cab651075e43805c5d912107accf53f9b39d1625
+  scope.yaml: a63f32a19a41064fee5436b6d2d07a2c233285f238175c67b0ac9b760fca66b1
+  profile.yaml: dc4bdf213a81a65c2fab5ab99d5a455130e99c647422e666672fab5b33a8a79d
+  execution-plan.md: e318c012e67fa66702019ee73464c31fdf55a4e4930c0c0f8503e6b17686d7d1

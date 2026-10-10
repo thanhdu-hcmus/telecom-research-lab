@@ -1,0 +1,55 @@
+version: 1
+project: m11-noma-qos
+phase: P1
+gates:
+  G1:
+    status: pending
+    timestamp: '2026-10-10T16:16:42.864197+00:00'
+    note: null
+    artifact_hashes:
+      projects/m11-noma-qos/profile.yaml: dc4bdf213a81a65c2fab5ab99d5a455130e99c647422e666672fab5b33a8a79d
+      projects/m11-noma-qos/scope.md: d58c04fcf064de9299c77d73cab651075e43805c5d912107accf53f9b39d1625
+      projects/m11-noma-qos/scope.yaml: a63f32a19a41064fee5436b6d2d07a2c233285f238175c67b0ac9b760fca66b1
+    checks_passed: false
+  G2:
+    status: not_started
+    timestamp: null
+    note: null
+    artifact_hashes: {}
+    checks_passed: false
+  G3:
+    status: not_started
+    timestamp: null
+    note: null
+    artifact_hashes: {}
+    checks_passed: false
+  G4:
+    status: not_started
+    timestamp: null
+    note: null
+    artifact_hashes: {}
+    checks_passed: false
+  G5:
+    status: not_started
+    timestamp: null
+    note: null
+    artifact_hashes: {}
+    checks_passed: false
+  G6:
+    status: not_started
+    timestamp: null
+    note: null
+    artifact_hashes: {}
+    checks_passed: false
+  G7:
+    status: not_started
+    timestamp: null
+    note: null
+    artifact_hashes: {}
+    checks_passed: false
+selected_idea: null
+baselines: {}
+protocol_hash: null
+protocol_commit: null
+deviations: []
+open_questions: []

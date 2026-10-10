@@ -125,3 +125,32 @@ def test_failed_commit_does_not_leave_approval(scoped, monkeypatch):
         state.decide(scoped, "G1", "approve", "Fixture")
     assert state.state(scoped)["gates"]["G1"]["status"] == "pending"
     assert state.decisions(scoped) == []
+
+
+def test_project_profile_is_reviewed_and_bound(scoped):
+    scope = load(scoped / "scope.yaml")
+    scope.update(mode="dry-run", profile="projects/toy/profile.yaml")
+    save(scoped / "scope.yaml", scope)
+    save(scoped / "profile.yaml", {"pi_reviewed": False})
+    assert state.request(scoped, "G1")["status"] == "FAIL"
+    save(scoped / "profile.yaml", {"pi_reviewed": True})
+    assert state.request(scoped, "G1")["status"] == "PASS"
+    assert "projects/toy/profile.yaml" in state.snapshot(scoped, 1)
+    scope["profile"] = "../outside.yaml"
+    save(scoped / "scope.yaml", scope)
+    with pytest.raises(LabError, match="escapes"):
+        state.profile_file(scoped)
+
+
+def test_reproduction_gate_keeps_explicit_selection_and_config_binding(scoped):
+    scope = load(scoped / "scope.yaml")
+    scope["workflow"] = "reproduction"
+    save(scoped / "scope.yaml", scope)
+    assert state.required_artifacts(scoped, 3) == [
+        "ideas/reproduction.yaml",
+        "ideas/reproduction-plan.md",
+    ]
+    save(scoped.parents[1] / "config/ranking.yaml", {"weights": "fixture"})
+    save(scoped.parents[1] / "config/baselines.yaml", {"minimum_score": 3})
+    assert "config/ranking.yaml" in state.snapshot(scoped, 3)
+    assert "config/baselines.yaml" in state.snapshot(scoped, 5)

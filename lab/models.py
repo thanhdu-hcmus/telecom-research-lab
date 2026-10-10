@@ -233,6 +233,9 @@ class Deviation(Artifact):
 
 
 class Scope(Artifact):
+    mode: Literal["research", "dry-run"] = "research"
+    workflow: Literal["ideation", "reproduction"] = "ideation"
+    profile: Text = "config/thesis-profile.yaml"
     area: Text
     keywords: list[Text] = Field(min_length=1)
     inclusion: list[Text] = Field(min_length=1)
@@ -240,6 +243,24 @@ class Scope(Artifact):
     year_from: int = Field(ge=1900)
     target_venues: list[Text] = Field(min_length=1)
     thesis_profile_reviewed: bool
+
+
+class ReproductionSelection(Artifact):
+    id: Text
+    reference_id: Text
+    purpose: Literal["reproduce-and-ablate"]
+    reference_figures: list[Text] = Field(min_length=1)
+    ablation: Text
+    expected_outputs: list[Text] = Field(min_length=1)
+    code_status: Literal["official-code", "reimplementation"]
+    code_revision: Annotated[str, Field(pattern=r"^[a-f0-9]{40}$")] | None = None
+    data_availability: Text
+
+    @model_validator(mode="after")
+    def official_revision(self):
+        if self.code_status == "official-code" and not self.code_revision:
+            raise ValueError("Official code requires a full pinned commit SHA")
+        return self
 
 
 class GateState(Artifact):
@@ -277,6 +298,7 @@ MODELS = {
         "gate_decision": GateDecision,
         "deviation": Deviation,
         "scope": Scope,
+        "reproduction_selection": ReproductionSelection,
         "research_state": ResearchState,
     }.items()
 }

@@ -85,7 +85,7 @@ def gate_status(
 def approve(
     gate: str,
     project: Annotated[str, typer.Option("--project")],
-    note: str,
+    note: Annotated[str, typer.Option("--note")],
     select: str | None = None,
     json_output: bool = typer.Option(False, "--json"),
 ):
@@ -96,7 +96,7 @@ def approve(
 def revise(
     gate: str,
     project: Annotated[str, typer.Option("--project")],
-    note: str,
+    note: Annotated[str, typer.Option("--note")],
     json_output: bool = typer.Option(False, "--json"),
 ):
     execute(state.decide, locate(project), gate, "revise", note)
@@ -106,7 +106,7 @@ def revise(
 def rewind(
     phase: str,
     project: Annotated[str, typer.Option("--project")],
-    note: str,
+    note: Annotated[str, typer.Option("--note")],
     json_output: bool = typer.Option(False, "--json"),
 ):
     execute(state.rewind, locate(project), phase, note)
@@ -115,10 +115,10 @@ def rewind(
 @deviation_app.command("open")
 def deviation_open(
     project: Annotated[str, typer.Option("--project")],
-    what: str,
-    why: str,
-    proposed_change: str,
-    impact: str,
+    what: Annotated[str, typer.Option("--what")],
+    why: Annotated[str, typer.Option("--why")],
+    proposed_change: Annotated[str, typer.Option("--proposed-change")],
+    impact: Annotated[str, typer.Option("--impact")],
     json_output: bool = typer.Option(False, "--json"),
 ):
     execute(state.deviation_open, locate(project), what, why, proposed_change, impact)
@@ -136,8 +136,8 @@ def deviation_list(
 def resolve(
     identifier: str,
     project: Annotated[str, typer.Option("--project")],
-    decision: str,
-    note: str,
+    decision: Annotated[str, typer.Option("--decision")],
+    note: Annotated[str, typer.Option("--note")],
     json_output: bool = typer.Option(False, "--json"),
 ):
     execute(state.deviation_resolve, locate(project), identifier, decision, note)

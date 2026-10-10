@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-10-10T16:17:31.387559+00:00",
+  "attempts": [
+    {
+      "check": "Initial targeted regressions",
+      "result": "14 passed, 13 fixture setup errors",
+      "cause": "Windows shared pytest temporary/cache directories denied access",
+      "resolution": "Use workspace-local temporary and cache directories"
+    },
+    {
+      "check": "Targeted regressions with local directories",
+      "result": "26 passed, 1 failed",
+      "cause": "Synthetic reproduction test used a card with null key_results",
+      "resolution": "Added an explicitly synthetic page-grounded result to the test fixture; production validation retained"
+    }
+  ],
+  "pi_gate_request": {
+    "project": "m11-noma-qos",
+    "gate": "G1",
+    "status": "pending",
+    "automated_checks": "FAIL: PI must review scope/profile; all required artifacts present",
+    "approval_recorded": false
+  }
+}

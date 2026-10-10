@@ -17,6 +17,8 @@ uv run lab project init my-project
 - [User guide](docs/user-guide.md): commands, artifact contracts and PI gates.
 - [Acceptance report](docs/acceptance-m5-m10.md): actual checks, failures and limits.
 - [Implementation state](implementation-state.json): milestone and gate status.
+- [Remaining-work audit](docs/remaining-work-audit.md): closed omissions and M11/M12 work.
+- [M11 G1 review](projects/m11-noma-qos/to_human/G1-review.md): proposed toy scope and PI steps.
 - [Build authorization](docs/build-authorizations.md): approved scope.
 - [Environment report](docs/environment-report.md): host and sandbox behavior.
 - [Evaluation runtime](docs/evaluation-runtime.md): audited independent reviewers.
@@ -35,6 +37,7 @@ M11's integrated research dry run and M12's real study require PI participation.
 ```powershell
 uv run python scripts/verify_milestone.py
 uv run python scripts/run_matlab_physics.py
+uv run python scripts/run_matlab_unittest.py
 uv run python scripts/roundtrip_matlab.py
 uv run python scripts/smoke_m8_m10.py
 ```

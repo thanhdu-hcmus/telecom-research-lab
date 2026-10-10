@@ -23,6 +23,37 @@ Changed approved evidence invalidates dependent gates; rewinds archive files.
 Approval commands commit decisions. Configure Git identity before the first PI gate.
 M0–M10 build approval does not advance a project's scientific phases.
 
+### M11 dry run and M12 reproduction
+
+The prepared M11 project is `m11-noma-qos`. Start with its
+`to_human/G1-review.md`; its synthetic profile does not choose a dissertation
+topic. Review flags remain false until the PI has reviewed the scope and profile.
+The global thesis profile now contains an unreviewed draft from existing workspace
+notes, with missing inputs listed explicitly.
+
+Scope defaults are `mode: research`, `workflow: ideation`, and
+`profile: config/thesis-profile.yaml`. A repo-relative `profile` can point to a
+project-specific reviewed profile. The scope and chosen profile are both bound
+to G1; changing either invalidates subsequent approvals.
+
+Only a reviewed `mode: dry-run` scope allows established-method idea cards to
+rank with their truthful `already-done` verdict. The fifteen-card, novelty-audit,
+ranking and sensitivity handoff is still required. No novelty claim follows.
+
+For M12, propose `workflow: reproduction` at G1. After G2, prepare
+`ideas/reproduction.yaml` using `schemas/reproduction_selection.schema.json` and
+`ideas/reproduction-plan.md`. Identify the reviewed full-paper reference, figures,
+one ablation, expected outputs, data availability and code status. Official code
+requires a full pinned commit SHA. This route replaces ordinary idea generation;
+request G3 and have the PI approve it with `--select SELECTION_ID` before P4.
+It does not waive G3. M12 still needs the PI's reference-paper choice.
+
+Ranking thresholds, allowed publishable verdicts and tie breakers come from
+`config/ranking.yaml`; scores use five-point rubrics and weights summing to ten.
+Baseline points, minimum score, maintenance window and curve agreement come from
+`config/baselines.yaml`. These configurations are included in G3/G5 snapshots;
+later edits require fresh gate review. Score previews cannot establish reproduction.
+
 ## Literature
 
 Create `projects/my-project/literature/query-plan.yaml`:
@@ -125,6 +156,10 @@ Independent packets omit earlier reviews, responses and author reasoning.
 Use a full forty-character commit SHA. Clone stores reviewed archives under the
 ignored `external/` folder. A clean heuristic scan grants no execution permission.
 Review source hashes, dependencies, licence and data explicitly before `env`.
+After setup, `env` records installed versions/origins in
+`.venv/lab-resolved-requirements.txt` and runtime/source/review hashes in
+`.venv/lab-environment.json`. These local files supplement the reviewed source
+commit; they do not replace the protocol or actual reproduction evidence.
 
 ```powershell
 uv run lab baseline clone owner/repo FULL_COMMIT_SHA --project my-project

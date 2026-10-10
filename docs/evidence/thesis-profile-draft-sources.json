@@ -1,0 +1,11 @@
+{
+  "recorded_at": "2026-10-10T16:17:31.388175+00:00",
+  "provenance": "ai",
+  "pi_reviewed": false,
+  "sources": {
+    "research-state.yaml": "c31c5facaa588c84df70d99f7d65d5ce73824237fec3cc089b22a3856e8811a7",
+    "findings.md": "c5bdddc4db6634d83f8c2c4532698916ea3f5a401b99305e854ca06fc0221e42"
+  },
+  "source_date": "2026-09-28",
+  "status": "Unreviewed draft; recommended title not selected; no publication or deadline inferred"
+}

@@ -2,7 +2,10 @@
 
 from __future__ import annotations
 
+import calendar
 import io
+import json
+import math
 import re
 import subprocess
 import sys
@@ -16,7 +19,44 @@ from lab.io import LabError, load, now, safe_id, save, sha256, within
 from lab.net import Network
 
 
-def agreement(reference, actual, mode="relative"):
+def baseline_policy(policy=None):
+    policy = (
+        policy
+        if policy is not None
+        else load(Path(__file__).resolve().parents[1] / "config/baselines.yaml")
+    )
+    points = [
+        policy["minimum_score"],
+        policy["official_repo_points"],
+        policy["license_points"],
+        policy["maintained_or_selfcontained_points"],
+        *policy["venue_points"].values(),
+        *(t["points"] for t in policy["citation_thresholds"]),
+    ]
+    if any(type(p) is not int or p < 0 for p in points):
+        raise LabError("Baseline points and minimum score must be nonnegative integers")
+    for value in [
+        policy["agreement"]["relative"],
+        policy["agreement"]["absolute_db"],
+        *(t["per_year"] for t in policy["citation_thresholds"]),
+    ]:
+        if type(value) not in {int, float} or not math.isfinite(value) or value < 0:
+            raise LabError(
+                "Baseline tolerances and citation thresholds must be finite and nonnegative"
+            )
+    if (
+        type(policy["maintenance_months"]) is not int
+        or policy["maintenance_months"] < 0
+        or type(policy["agreement"]["require_same_ordering"]) is not bool
+    ):
+        raise LabError(
+            "Baseline policy needs nonnegative maintenance months and a boolean trend rule"
+        )
+    return policy
+
+
+def agreement(reference, actual, mode="relative", *, policy=None):
+    settings = baseline_policy(policy)["agreement"]
     ref, got = np.asarray(reference, dtype=float), np.asarray(actual, dtype=float)
     if (
         ref.shape != got.shape
@@ -34,7 +74,8 @@ def agreement(reference, actual, mode="relative"):
     )
     same_trend = bool(np.array_equal(np.sign(np.diff(ref)), np.sign(np.diff(got))))
     return {
-        "passed": error <= (0.05 if mode == "relative" else 0.5) and same_trend,
+        "passed": error <= settings["relative" if mode == "relative" else "absolute_db"]
+        and (same_trend or not settings["require_same_ordering"]),
         "error": error,
         "mode": mode,
         "same_trend": same_trend,
@@ -140,6 +181,9 @@ def environment(folder: Path, review: Path):
     uv = decision.get("uv_executable", "uv")
     subprocess.run([uv, "venv", str(folder / ".venv")], check=True, timeout=120)
     requirements = folder / "requirements.txt"
+    python = folder / (
+        ".venv/Scripts/python.exe" if sys.platform == "win32" else ".venv/bin/python"
+    )
     if requirements.exists():
         subprocess.run(
             [
@@ -147,47 +191,111 @@ def environment(folder: Path, review: Path):
                 "pip",
                 "install",
                 "--python",
-                str(
-                    folder / ".venv/Scripts/python.exe"
-                    if sys.platform == "win32"
-                    else folder / ".venv/bin/python"
-                ),
+                str(python),
                 "-r",
                 str(requirements),
             ],
             check=True,
             timeout=300,
         )
-    return {"status": "PASS", "environment": str(folder / ".venv")}
+    frozen = subprocess.run(
+        [uv, "pip", "freeze", "--python", str(python)],
+        check=True,
+        capture_output=True,
+        text=True,
+        timeout=120,
+    )
+    if re.search(r"https?://[^/\s]*@", frozen.stdout):
+        raise LabError(
+            "Installed dependency origins contain credentials; remove them before recording the environment"
+        )
+    resolved = folder / ".venv/lab-resolved-requirements.txt"
+    resolved.write_text(frozen.stdout, encoding="utf-8", newline="\n")
+    runtime = subprocess.run(
+        [
+            str(python),
+            "-c",
+            "import json,platform,sys; print(json.dumps({'python':sys.version,'platform':platform.platform()}))",
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+        timeout=30,
+    )
+    receipt = folder / ".venv/lab-environment.json"
+    save(
+        receipt,
+        {
+            "timestamp": now(),
+            "runtime": json.loads(runtime.stdout),
+            "review_sha256": sha256(review),
+            "source_hashes": hashes,
+            "resolved_requirements": resolved.name,
+            "resolved_sha256": sha256(resolved),
+            "limitations": "Installed versions and origins captured; this is not an artifact-hash lockfile or proof of scientific reproduction.",
+        },
+    )
+    return {
+        "status": "PASS",
+        "environment": str(folder / ".venv"),
+        "receipt": str(receipt),
+        "receipt_sha256": sha256(receipt),
+        "resolved_requirements": str(resolved),
+        "resolved_sha256": sha256(resolved),
+    }
 
 
-def score(record, current_year=None, evidence_root=None):
+def score(record, current_year=None, evidence_root=None, *, policy=None):
+    if policy is None and evidence_root is not None:
+        policy = load(evidence_root.parents[1] / "config/baselines.yaml")
+    policy = baseline_policy(policy)
     current_year = current_year or datetime.now(timezone.utc).year
     rejected = (
         record.get("tutorial", False)
         or not record.get("paper_link_evidence")
         or not record.get("data_permitted", False)
     )
-    points = {
-        "venue": {"transactions_jsac": 3, "Q1_Q2": 2, "reputable_conference": 1}.get(
-            record.get("venue_tier"), 0
-        )
-    }
+    points = {"venue": policy["venue_points"].get(record.get("venue_tier"), 0)}
     year = record.get("paper_year")
     age = max(1, current_year - year) if isinstance(year, int) and year <= current_year else None
     rate = max(0, record.get("citations") or 0) / age if age else 0
-    points["citations"] = 2 if rate >= 10 else 1 if rate >= 3 else 0
-    points["official"] = 2 if record.get("official_link_evidence") else 0
-    points["license"] = int(
-        bool(record.get("license_permits_research") and record.get("license_evidence"))
+    points["citations"] = next(
+        (
+            t["points"]
+            for t in sorted(
+                policy["citation_thresholds"], key=lambda t: t["per_year"], reverse=True
+            )
+            if rate >= t["per_year"]
+        ),
+        0,
     )
+    points["official"] = (
+        policy["official_repo_points"] if record.get("official_link_evidence") else 0
+    )
+    licensed = bool(record.get("license_permits_research") and record.get("license_evidence"))
+    points["license"] = policy["license_points"] if licensed else 0
     recent = False
     if record.get("last_commit"):
         date = datetime.fromisoformat(record["last_commit"].replace("Z", "+00:00"))
         if date.tzinfo is None:
             date = date.replace(tzinfo=timezone.utc)
-        recent = 0 <= (datetime.now(timezone.utc) - date).days <= 731
-    points["maintenance"] = int(recent or bool(record.get("self_contained_evidence")))
+        today = datetime.now(timezone.utc)
+        month_index = today.year * 12 + today.month - 1 - policy["maintenance_months"]
+        year_cutoff, month_cutoff = divmod(month_index, 12)
+        if year_cutoff < 1:
+            raise LabError("Maintenance lookback exceeds supported dates")
+        month_cutoff += 1
+        cutoff = today.replace(
+            year=year_cutoff,
+            month=month_cutoff,
+            day=min(today.day, calendar.monthrange(year_cutoff, month_cutoff)[1]),
+        )
+        recent = cutoff <= date <= today
+    points["maintenance"] = (
+        policy["maintained_or_selfcontained_points"]
+        if recent or bool(record.get("self_contained_evidence"))
+        else 0
+    )
     reproduction = record.get("reproduction", {})
     verified = False
     if (
@@ -222,27 +330,27 @@ def score(record, current_year=None, evidence_root=None):
                 raise LabError("Reproduction curve must be a manifest output or locked input")
             data = np.genfromtxt(p, delimiter=",", names=True)
             values.append(data[curve["column"]])
-        verified = agreement(*values, reproduction.get("mode", "relative"))["passed"]
+        verified = agreement(*values, reproduction.get("mode", "relative"), policy=policy)["passed"]
     total = sum(points.values())
     return {
         "status": "PASS",
         "points": points,
         "total": total,
         "citations_per_year": rate,
-        "accepted": not rejected and verified and total >= 3 and bool(points["license"]),
+        "accepted": not rejected and verified and total >= policy["minimum_score"] and licensed,
         "reproduction_verified": verified,
         "rejected_by_policy": rejected,
         "acceptance_mode": "verified-data" if evidence_root is not None else "score-preview-only",
     }
 
 
-def overlay(reference, actual, destination: Path):
+def overlay(reference, actual, destination: Path, *, policy=None):
     import matplotlib
 
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
-    check = agreement(reference, actual)
+    check = agreement(reference, actual, policy=policy)
     fig, ax = plt.subplots(figsize=(3.5, 2.6))
     ax.plot(reference, "o-", label="Reference")
     ax.plot(actual, "s--", label="Reproduction")

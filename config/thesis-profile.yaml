@@ -1,13 +1,19 @@
-working_title: ''
-abstract: ''
+working_title: Performance Analysis and Optimization of RIS-Assisted mmWave Communication Systems
+working_title_status: Recommended umbrella in the PI's workspace notes; selection pending
+abstract: Which tractable models and optimization methods yield reliable RIS-assisted mmWave design decisions under selected channel, resource and implementation assumptions?
+abstract_status: Draft research question from workspace notes; not an approved thesis abstract
 chapters: []
 core_topics: [RIS, mmWave, wireless performance, optimization, NOMA, power allocation]
 own_publications: []
 existing_code: []
-preferred_methods: []
+preferred_methods: [CPU-based analysis, Monte Carlo simulation, tractable optimization]
 excluded_directions: [beam management as primary contribution]
 mobility: optional
 target_quartiles: [Q2, Q3]
 time_budget_months_per_paper: null
 thesis_deadline: null
 pi_reviewed: false
+target_outputs: [1 Q2 journal paper, 1 conference paper, 1 PhD dissertation]
+resources: Small team; primarily simulation; no required expensive hardware
+source_notes: Parent findings.md and research-state.yaml, dated 2026-09-28
+unknowns: [Chapter plan, own publications, deadlines, per-paper time budget, selected venues]

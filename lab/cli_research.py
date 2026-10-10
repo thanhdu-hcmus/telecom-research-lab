@@ -52,6 +52,7 @@ def score(record: Path, project_name: Annotated[str | None, typer.Option("--proj
         baseline.score,
         load(within(root(), record)),
         evidence_root=project(root(), project_name) if project_name else None,
+        policy=load(root() / "config/baselines.yaml"),
     )
 
 

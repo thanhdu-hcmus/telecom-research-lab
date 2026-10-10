@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-10T09:19:34.846093+00:00",
+  "updated_at": "2026-10-10T16:44:37.607228+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
-  "active_milestone": "M10",
-  "status": "software_build_complete",
+  "active_milestone": "M11",
+  "status": "awaiting_pi_scope_review",
   "verification_complete": true,
   "pi_approval": {
     "quote": "Approve M0, continue M1–M10 automatically, and create the new private repository.",
@@ -20,11 +20,11 @@
     "M8": "complete",
     "M9": "complete",
     "M10": "complete",
-    "M11": "not_started",
+    "M11": "in_progress",
     "M12": "not_started"
   },
   "scientific_gates": {
-    "G1": "not_started",
+    "G1": "pending",
     "G2": "not_started",
     "G3": "not_started",
     "G4": "not_started",
@@ -38,10 +38,12 @@
     "Run independent reviewers in separately configured read-only root sessions; verify shell enforcement before L4 acceptance"
   ],
   "unresolved": [
-    "PI fills thesis profile and target venues before real P3 ideation",
-    "M11/M12 and scientific gates G1-G7 require PI participation",
+    "M11 G1: PI reviews proposed toy scope and synthetic profile, records approval and report usability",
+    "M11 G2-G7 require actual phase artifacts and PI gate decisions",
+    "M12 reference paper and code/data availability require PI selection",
+    "Real thesis profile is an unreviewed draft with chapter plan, publications, deadlines and venues missing",
     "Optional Gemini unavailable; manual independent review packets provided",
-    "DL workstation launch route remains unspecified; not required for framework fixtures"
+    "DL workstation launch route remains unspecified"
   ],
   "optional_gemini": "FAIL",
   "m1_ci": "https://github.com/thanhdu-hcmus/telecom-research-lab/actions/runs/38015477790",
@@ -63,5 +65,18 @@
     "clean_zip_compilation": "PASS",
     "overleaf_pi_confirmation": "PASS"
   },
-  "repository": "https://github.com/thanhdu-hcmus/telecom-research-lab"
+  "repository": "https://github.com/thanhdu-hcmus/telecom-research-lab",
+  "scientific_project": "m11-noma-qos",
+  "continuation_authorization": {
+    "quote": "What have we left out here? Continue on that",
+    "scope": "Remaining-work audit, framework corrections and milestone preparation; scientific decisions remain PI-only"
+  },
+  "verification_scope": "Completed M0-M10 software; post-M10 regressions recorded separately; M11/M12 scientific acceptance pending",
+  "post_m10_audit": {
+    "status": "PASS",
+    "tests": 88,
+    "matlab_tests": 8,
+    "receipt": "docs/evidence/post-m10-audit-acceptance.json",
+    "sha256": "1f161c8d77cce2a6145625d1730ccc5060a179d9b425e5dc894b4d967d68a94b"
+  }
 }

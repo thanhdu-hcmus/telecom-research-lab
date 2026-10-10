@@ -1,6 +1,30 @@
 {
   "additionalProperties": false,
   "properties": {
+    "mode": {
+      "default": "research",
+      "enum": [
+        "research",
+        "dry-run"
+      ],
+      "title": "Mode",
+      "type": "string"
+    },
+    "workflow": {
+      "default": "ideation",
+      "enum": [
+        "ideation",
+        "reproduction"
+      ],
+      "title": "Workflow",
+      "type": "string"
+    },
+    "profile": {
+      "default": "config/thesis-profile.yaml",
+      "minLength": 1,
+      "title": "Profile",
+      "type": "string"
+    },
     "area": {
       "minLength": 1,
       "title": "Area",

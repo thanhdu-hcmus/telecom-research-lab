@@ -134,7 +134,7 @@ def init(repo: Path, slug: str) -> dict:
 
 
 def artifact_files(path: Path, index: int) -> list[Path]:
-    files = {path / name for name in REQUIRED[index] if (path / name).is_file()}
+    files = {path / name for name in required_artifacts(path, index) if (path / name).is_file()}
     for directory in PHASE_DIRS.get(index, []):
         files.update(
             p
@@ -147,11 +147,25 @@ def artifact_files(path: Path, index: int) -> list[Path]:
         )
     if index == 1:
         files = {p for p in files if p.name not in {"research-log.md", "findings.md"}}
-        profile = path.parents[1] / "config/thesis-profile.yaml"
-        files.add(profile)
+        files.add(profile_file(path))
     if index == 2:
         files.add(path / "baselines/candidates.yaml")
+    for file in {3: ["config/ranking.yaml"], 5: ["config/baselines.yaml"]}.get(index, []):
+        candidate = path.parents[1] / file
+        if candidate.exists():
+            files.add(candidate)
     return sorted(files)
+
+
+def profile_file(path: Path) -> Path:
+    scope = load(path / "scope.yaml", {})
+    return within(path.parents[1], scope.get("profile", "config/thesis-profile.yaml"))
+
+
+def required_artifacts(path: Path, index: int) -> list[str]:
+    if index == 3 and load(path / "scope.yaml", {}).get("workflow") == "reproduction":
+        return ["ideas/reproduction.yaml", "ideas/reproduction-plan.md"]
+    return REQUIRED[index]
 
 
 def snapshot(path: Path, index: int) -> dict:
@@ -217,7 +231,7 @@ def ensure_phase(path: Path, phase: str) -> None:
 
 def phase_checks(path: Path, index: int) -> list[dict]:
     checks = []
-    for name in REQUIRED[index]:
+    for name in required_artifacts(path, index):
         p = path / name
         checks.append(
             {
@@ -229,7 +243,7 @@ def phase_checks(path: Path, index: int) -> list[dict]:
     try:
         if index == 1:
             scope = Scope.model_validate(load(path / "scope.yaml"))
-            profile = load(path.parents[1] / "config/thesis-profile.yaml")
+            profile = load(profile_file(path))
             if not scope.thesis_profile_reviewed or not profile.get("pi_reviewed"):
                 raise LabError("PI must review the thesis profile and scope")
         elif index == 2:
@@ -237,9 +251,12 @@ def phase_checks(path: Path, index: int) -> list[dict]:
 
             validate_review(path)
         elif index == 3:
-            from lab.ideas import validate_ideas
+            from lab.ideas import validate_ideas, validate_reproduction
 
-            validate_ideas(path)
+            if load(path / "scope.yaml").get("workflow") == "reproduction":
+                validate_reproduction(path)
+            else:
+                validate_ideas(path)
         elif index == 4:
             from lab.modeling import validate_model
 
@@ -373,11 +390,23 @@ def decide(path: Path, gate: str, decision: str, note: str, select: str | None =
             raise LabError("Artifacts changed since request; request a fresh review")
         if gate == "G3":
             from lab.ideas import cards_at, eligible
-            from lab.models import IdeaCard
+            from lab.models import IdeaCard, ReproductionSelection
 
-            cards = [IdeaCard.model_validate(raw) for raw in cards_at(path)]
-            if not select or not any(c.id == select and eligible(c) for c in cards):
-                raise LabError("G3 needs --select naming an eligible idea card")
+            scope = Scope.model_validate(load(path / "scope.yaml"))
+            if scope.workflow == "reproduction":
+                choice = ReproductionSelection.model_validate(
+                    load(path / "ideas/reproduction.yaml")
+                )
+                if select != choice.id:
+                    raise LabError("G3 needs --select naming the reviewed reproduction selection")
+            else:
+                cards = [IdeaCard.model_validate(raw) for raw in cards_at(path)]
+                policy = load(path.parents[1] / "config/ranking.yaml")
+                if not select or not any(
+                    c.id == select and eligible(c, dry_run=scope.mode == "dry-run", policy=policy)
+                    for c in cards
+                ):
+                    raise LabError("G3 needs --select naming an eligible idea card")
         elif select:
             raise LabError("--select is only valid at G3")
     records = decisions(path)

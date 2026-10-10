@@ -75,7 +75,7 @@ def evaluate(name: str, json_output: bool = typer.Option(False, "--json")):
 @app.command("provenance")
 def provenance(
     project: Annotated[str, typer.Option("--project")],
-    summary: str,
+    summary: Annotated[str, typer.Option("--summary")],
     file: list[str] = typer.Option([], "--file"),
     tag: str = "ai",
     json_output: bool = typer.Option(False, "--json"),

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-10T16:44:37.596514+00:00",
+  "scope": "Software omissions closed and M11 P1 prepared; no scientific acceptance inferred",
+  "deterministic_tests_passed": 88,
+  "matlab_unittest_passed": 8,
+  "receipts": {
+    "post-m10-audit-deterministic": {
+      "path": "docs/evidence/post-m10-audit-deterministic.json",
+      "sha256": "b0d8ad11f0a6ab3e52d7c71e721dd581f6c474aee4e94062c9a94b597ad42faf"
+    },
+    "post-m10-matlab-unittest": {
+      "path": "docs/evidence/post-m10-matlab-unittest.json",
+      "sha256": "306ae0e9788394b1ffd987f863db5e633c98a6017b523d08969d5c828d3250a6"
+    },
+    "post-m10-baseline-environment": {
+      "path": "docs/evidence/post-m10-baseline-environment.json",
+      "sha256": "20017b7658b3e2e1445d5bb5b9429ad39655c1a2fd1467219b565485937fa185"
+    }
+  },
+  "scientific_project": "m11-noma-qos",
+  "scientific_phase": "P1",
+  "scientific_gate": "G1 pending",
+  "pi_decisions_recorded": 0,
+  "m11_complete": false,
+  "m12_complete": false
+}

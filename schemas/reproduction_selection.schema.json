@@ -1,0 +1,81 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "minLength": 1,
+      "title": "Id",
+      "type": "string"
+    },
+    "reference_id": {
+      "minLength": 1,
+      "title": "Reference Id",
+      "type": "string"
+    },
+    "purpose": {
+      "const": "reproduce-and-ablate",
+      "title": "Purpose",
+      "type": "string"
+    },
+    "reference_figures": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Reference Figures",
+      "type": "array"
+    },
+    "ablation": {
+      "minLength": 1,
+      "title": "Ablation",
+      "type": "string"
+    },
+    "expected_outputs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Expected Outputs",
+      "type": "array"
+    },
+    "code_status": {
+      "enum": [
+        "official-code",
+        "reimplementation"
+      ],
+      "title": "Code Status",
+      "type": "string"
+    },
+    "code_revision": {
+      "anyOf": [
+        {
+          "pattern": "^[a-f0-9]{40}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Code Revision"
+    },
+    "data_availability": {
+      "minLength": 1,
+      "title": "Data Availability",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "reference_id",
+    "purpose",
+    "reference_figures",
+    "ablation",
+    "expected_outputs",
+    "code_status",
+    "data_availability"
+  ],
+  "title": "ReproductionSelection",
+  "type": "object"
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-10T16:41:41.630600+00:00",
+  "purpose": "Self-authored software environment fixture only; no paper reproduction",
+  "dependency_requirement": "numpy==2.5.3",
+  "resolved_requirements": "numpy==2.5.3\n",
+  "environment_receipt": {
+    "timestamp": "2026-10-10T16:41:41.615890+00:00",
+    "runtime": {
+      "python": "3.13.5 (main, Jun 12 2025, 12:42:35) [MSC v.1943 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    "review_sha256": "db6eaba17d95080994cb128887bd1b06fd8d5e11180581159f9eb7ae41b2a49d",
+    "source_hashes": {
+      "README.md": "7392bbbce1c7ef4a145e347daf7c63237ccb0c62e076e084b2ab50987f42c6b1",
+      "requirements.txt": "5c12d85e7c08038d1dd9ffbf8119d12ce808885230a47e2bf65dcd9f114659d5"
+    },
+    "resolved_requirements": "lab-resolved-requirements.txt",
+    "resolved_sha256": "5c12d85e7c08038d1dd9ffbf8119d12ce808885230a47e2bf65dcd9f114659d5",
+    "limitations": "Installed versions and origins captured; this is not an artifact-hash lockfile or proof of scientific reproduction."
+  },
+  "result": {
+    "status": "PASS",
+    "environment": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\probes\\work\\environment-smoke-bu1uly3o\\.venv",
+    "receipt": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\probes\\work\\environment-smoke-bu1uly3o\\.venv\\lab-environment.json",
+    "receipt_sha256": "e1b04ae465e73469bb75bfbb4d09d8d948561dddcfcddba6bd5d69623910d637",
+    "resolved_requirements": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\probes\\work\\environment-smoke-bu1uly3o\\.venv\\lab-resolved-requirements.txt",
+    "resolved_sha256": "5c12d85e7c08038d1dd9ffbf8119d12ce808885230a47e2bf65dcd9f114659d5"
+  },
+  "source_hashes": {
+    "lab/baseline.py": "446aae2c39fc87077062ba6fc78b0be63f4e02a77123845b09737501ad6fad09"
+  },
+  "external_fixture": "probes/work/environment-smoke-bu1uly3o"
+}
