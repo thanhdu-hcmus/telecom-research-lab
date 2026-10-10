@@ -1,6 +1,6 @@
 {
-  "status": "software_acceptance_passed",
-  "timestamp": "2026-10-10T08:53:41.980066+00:00",
+  "status": "complete",
+  "timestamp": "2026-10-10T09:19:34.844623+00:00",
   "evaluations": {
     "novelty-detect": {
       "passed": 3,
@@ -1008,5 +1008,9 @@
       "sha256": "1f35bfc6dcadc4ea1b0ceddb857675e3e343542ce635dca1ff97c84bc0423aae"
     }
   },
-  "remaining": "M10 PI confirmation of one actual Overleaf compilation"
+  "remaining": null,
+  "overleaf_confirmation": {
+    "receipt": "docs/evidence/m10-overleaf-confirmation.json",
+    "sha256": "55e9b0602171e9ca6493fe39398e059f1796070ce1e3d6aaa4c7b5a9e5b0b577"
+  }
 }

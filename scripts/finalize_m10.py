@@ -70,19 +70,38 @@ for name in [
 integration = load(ROOT / "docs/evidence/m8-m10-local-integration.json")
 if sha256(ROOT / integration["zip"]) != integration["zip_sha256"]:
     raise RuntimeError("Handoff ZIP changed")
+confirmation_file = ROOT / "docs/evidence/m10-overleaf-confirmation.json"
+confirmation = load(confirmation_file, {})
+overleaf_confirmed = (
+    confirmation.get("status") == "PASS"
+    and confirmation.get("confirmed_by") == "PI"
+    and confirmation.get("zip_sha256") == integration["zip_sha256"]
+    and confirmation.get("pdf_inspection", {}).get("status") == "PASS"
+)
+if confirmation and not overleaf_confirmed:
+    raise RuntimeError("Overleaf confirmation does not match the accepted handoff")
 acceptance = {
-    "status": "software_acceptance_passed",
+    "status": "complete" if overleaf_confirmed else "software_acceptance_passed",
     "timestamp": now(),
     "evaluations": evaluations,
     "receipts": receipts,
-    "remaining": "M10 PI confirmation of one actual Overleaf compilation",
+    "remaining": None
+    if overleaf_confirmed
+    else "M10 PI confirmation of one actual Overleaf compilation",
 }
+if overleaf_confirmed:
+    acceptance["overleaf_confirmation"] = {
+        "receipt": confirmation_file.relative_to(ROOT).as_posix(),
+        "sha256": sha256(confirmation_file),
+    }
 save(ROOT / "docs/evidence/m5-m10-acceptance.json", acceptance)
 state = load(ROOT / "implementation-state.json")
 state.update(
     updated_at=now(),
     active_milestone="M10",
-    status="software_complete_pending_pi_overleaf",
+    status="software_build_complete"
+    if overleaf_confirmed
+    else "software_complete_pending_pi_overleaf",
     verification_complete=True,
 )
 state["pi_approval"] = {
@@ -91,9 +110,15 @@ state["pi_approval"] = {
 }
 for milestone in ["M5", "M6", "M7", "M8", "M9"]:
     state["milestones"][milestone] = "complete"
-state["milestones"]["M10"] = "software_complete_pending_pi_overleaf"
+state["milestones"]["M10"] = (
+    "complete" if overleaf_confirmed else "software_complete_pending_pi_overleaf"
+)
 state["unresolved"] = [
-    "PI confirms the exported synthetic ZIP compiles on Overleaf once (M10 source plan)",
+    *(
+        []
+        if overleaf_confirmed
+        else ["PI confirms the exported synthetic ZIP compiles on Overleaf once (M10 source plan)"]
+    ),
     "PI fills thesis profile and target venues before real P3 ideation",
     "M11/M12 and scientific gates G1-G7 require PI participation",
     "Optional Gemini unavailable; manual independent review packets provided",
@@ -106,8 +131,12 @@ state["last_acceptance"] = {
     "matlab_mcp_and_batch_dispatch": "PASS",
     "journal_and_conference": "PASS",
     "clean_zip_compilation": "PASS",
-    "overleaf_pi_confirmation": "pending",
+    "overleaf_pi_confirmation": "PASS" if overleaf_confirmed else "pending",
 }
 state["repository"] = "https://github.com/thanhdu-hcmus/telecom-research-lab"
 save(ROOT / "implementation-state.json", state)
-print("Recorded audited M5-M10 software acceptance; PI Overleaf confirmation remains pending.")
+print(
+    "Recorded complete M5-M10 acceptance including PI Overleaf confirmation."
+    if overleaf_confirmed
+    else "Recorded audited M5-M10 software acceptance; PI Overleaf confirmation remains pending."
+)

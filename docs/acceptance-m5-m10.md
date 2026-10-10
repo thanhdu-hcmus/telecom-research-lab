@@ -70,10 +70,15 @@ original evaluated replies and execution transcripts remain byte-for-byte intact
 ## M10 manual acceptance
 
 The local ZIP `to_human/framework-overleaf-smoke.zip` compiles in a clean folder.
-Upload it to an Overleaf project, set `main.tex` as the main document and compile
-with pdfLaTeX. Confirm that it compiles once. The source plan explicitly requires
-this PI confirmation; it remains pending. No Overleaf account or Git integration
-was assumed. The ZIP is a synthetic framework example, not a submission draft.
+The PI confirmed successful Overleaf compilation on 2026-10-10 and supplied
+`../test.pdf`. Its one page was inspected visually; the figure, caption, sections
+and bibliography render, and both reported means match the exported macros
+(3.091944 and 2.90319 bit/s/Hz). The PDF reports pdfTeX-1.40.29 as producer.
+[Confirmation receipt](evidence/m10-overleaf-confirmation.json) records the PI's
+statement and PDF/ZIP checksums. This satisfies the source plan's final M10
+requirement. The PDF stays outside Git. The ZIP is a synthetic framework example,
+not a submission draft. Overleaf execution is PI-reported; local PDF inspection
+is recorded separately.
 
 For real research, complete the thesis profile and target venues, choose a scoped
 project and act at each scientific gate. No further build milestone approval is

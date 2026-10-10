@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-10T08:53:41.986269+00:00",
+  "updated_at": "2026-10-10T09:19:34.846093+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
   "active_milestone": "M10",
-  "status": "software_complete_pending_pi_overleaf",
+  "status": "software_build_complete",
   "verification_complete": true,
   "pi_approval": {
     "quote": "Approve M0, continue M1–M10 automatically, and create the new private repository.",
@@ -19,7 +19,7 @@
     "M7": "complete",
     "M8": "complete",
     "M9": "complete",
-    "M10": "software_complete_pending_pi_overleaf",
+    "M10": "complete",
     "M11": "not_started",
     "M12": "not_started"
   },
@@ -38,7 +38,6 @@
     "Run independent reviewers in separately configured read-only root sessions; verify shell enforcement before L4 acceptance"
   ],
   "unresolved": [
-    "PI confirms the exported synthetic ZIP compiles on Overleaf once (M10 source plan)",
     "PI fills thesis profile and target venues before real P3 ideation",
     "M11/M12 and scientific gates G1-G7 require PI participation",
     "Optional Gemini unavailable; manual independent review packets provided",
@@ -62,7 +61,7 @@
     "matlab_mcp_and_batch_dispatch": "PASS",
     "journal_and_conference": "PASS",
     "clean_zip_compilation": "PASS",
-    "overleaf_pi_confirmation": "pending"
+    "overleaf_pi_confirmation": "PASS"
   },
   "repository": "https://github.com/thanhdu-hcmus/telecom-research-lab"
 }

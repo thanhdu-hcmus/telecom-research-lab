@@ -5,7 +5,7 @@ and MATLAB simulations, independent verification and IEEE manuscripts.
 
 The PI authorized the software build through M10. Scientific gates G1-G7 require
 separate PI decisions; this repository contains no approved original research.
-M10's final manual acceptance is one Overleaf compilation confirmation.
+M0-M10 are complete, including the PI's successful Overleaf compilation check.
 
 ```powershell
 uv sync --locked --dev

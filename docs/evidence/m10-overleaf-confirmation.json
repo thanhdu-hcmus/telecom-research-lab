@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "recorded_at": "2026-10-10T09:19:32.056723+00:00",
+  "confirmed_by": "PI",
+  "user_statement": "It succeeds. You can see the test pdf here. test.pdf",
+  "overleaf_execution_evidence": "PI-reported successful compilation; account was not accessed by the assistant",
+  "zip": "to_human/framework-overleaf-smoke.zip",
+  "zip_sha256": "4679b9bbcacb8aa184ff102eded776bea3c2f18a056bd13c31867d9848c89b5f",
+  "pdf": "../test.pdf",
+  "pdf_sha256": "997eb00fe607c65467835e913fa4bfa88e150ee99c20ba45e54dd8fed130f46b",
+  "pdf_bytes": 65744,
+  "pdf_inspection": {
+    "status": "PASS",
+    "pages": 1,
+    "metadata": {
+      "format": "PDF 1.5",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "TeX",
+      "producer": "pdfTeX-1.40.29",
+      "creationDate": "D:20261010091554Z",
+      "modDate": "D:20261010091554Z",
+      "trapped": "",
+      "encryption": null
+    },
+    "text_sha256": "636a8769334ae36655b93e928fc8a0f69667d6dc6f303f08fba9b1a62ae30869",
+    "matched_result_macros": {
+      "nomaMean": "3.091944",
+      "omaMean": "2.90319"
+    },
+    "visual_review": "Page 1 inspected: figure, caption, sections and bibliography render without clipped content."
+  },
+  "scope": "Completes M10 build acceptance only; scientific gates G1-G7 and M11/M12 remain unstarted."
+}

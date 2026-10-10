@@ -196,5 +196,6 @@ current receipts, manuscript review and disclosure, then compiles the ZIP in a
 clean folder. Final submission and G7 approval belong to the PI.
 
 Both journal and conference templates are available. The local synthetic handoff
-is `to_human/framework-overleaf-smoke.zip`; the plan's one-time PI Overleaf
-compilation confirmation remains pending. See [acceptance](acceptance-m5-m10.md).
+is `to_human/framework-overleaf-smoke.zip`; the PI confirmed the plan's one-time
+Overleaf compilation check on 2026-10-10 and supplied `../test.pdf`.
+M10 is complete. See [acceptance](acceptance-m5-m10.md).

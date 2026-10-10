@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-10 - M10 Overleaf confirmation
+
+- PI confirmed successful Overleaf compilation and supplied `../test.pdf`.
+- Inspected the one-page PDF visually and checked that both displayed means
+  match the handoff macros. Recorded PDF and ZIP hashes in a confirmation receipt.
+- Marked M10 and the authorized M0-M10 build complete. The finalizer preserves
+  this confirmation when rerun. M11/M12 and G1-G7 remain unstarted.
+
 ## 2026-10-10 - M5-M10 software implementation
 
 - Enabled all twenty-one operational skills and the remaining specialist roles.
