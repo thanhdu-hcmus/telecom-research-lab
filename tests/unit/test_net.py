@@ -21,7 +21,7 @@ def configured(tmp_path):
 
 @pytest.mark.parametrize("url", ["https://sci-hub.se/a", "https://libgen.is/a", "https://annas-archive.org/a",
     "https://z-library.sk/a", "https://researchgate.net/a", "http://arxiv.org/a", "https://api.openalex.org.evil.test/a",
-    "https://user:password@arxiv.org/a", "https://arxiv.org:444/a", "https://127.0.0.1/a"])
+    "https://user:password@arxiv.org/a", "https://arxiv.org:444/a", "https://127.0.0.1/a"])  # pragma: allowlist secret
 def test_policy_rejects_before_network(url):
     with pytest.raises(LabError):
         validate_url(url, {"arxiv.org", "127.0.0.1", "sci-hub.se"})
