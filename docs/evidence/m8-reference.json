@@ -1,0 +1,9 @@
+{
+  "primary_reference": "https://arxiv.org/abs/1406.1516",
+  "doi": "10.1109/LSP.2014.2343971",
+  "specialization": "Ordered iid unit-mean exponential gains, no random-location path-loss mixture; derivation and code are self-authored",
+  "equations": {
+    "weak": "1-exp(-2*tweak)",
+    "strong": "(1-exp(-max(tweak,tstrong)))^2"
+  }
+}

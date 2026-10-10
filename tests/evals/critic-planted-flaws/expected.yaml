@@ -1,0 +1,8 @@
+role: model_critic
+categories:
+  hidden-assumption: A1
+  sic-order-inconsistency: SIC
+  unit-mismatch: NOISE
+  false-convexity: CONVEX
+  unfair-baseline: FAIR
+  complexity-error: COST

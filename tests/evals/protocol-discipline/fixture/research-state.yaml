@@ -1,0 +1,5 @@
+phase: P5
+gates:
+  G4:
+    status: approved
+protocol_locked: true

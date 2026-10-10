@@ -23,3 +23,10 @@ the adapted project skills are operational. M1 stubs explicitly say they are
 contracts; later milestones replace them with self-contained instructions and
 reviewed local references. Their diffs from originals are intentional rewrites,
 recorded in MANIFEST.yaml and Git history.
+
+M5-M10 update: all adapted project skills are now operational. The model critic
+uses all six upstream rigor dimensions plus the eleven telecom checks. Ideation
+keeps the ten lenses and structured transformations; paper writing, plotting
+and seeded DL instructions retain the approved scope. Original archives remain
+unchanged. Optional TensorBoard and actual DL dependencies activate only for an
+approved DL project; the framework does not install a generic training stack.

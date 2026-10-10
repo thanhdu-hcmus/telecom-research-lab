@@ -4,4 +4,5 @@ contact_email: null
 optional_gemini: false
 latex_bin: .tools/texlive/bin/windows
 matlab_root: 'C:/Program Files/MATLAB/R2021b'
+matlab_route: mcp
 large_result_bytes: 52428800

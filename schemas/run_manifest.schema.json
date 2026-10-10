@@ -8,6 +8,15 @@
           "title": "Path",
           "type": "string"
         },
+        "storage": {
+          "default": "project",
+          "enum": [
+            "project",
+            "library"
+          ],
+          "title": "Storage",
+          "type": "string"
+        },
         "sha256": {
           "pattern": "^[a-f0-9]{64}$",
           "title": "Sha256",

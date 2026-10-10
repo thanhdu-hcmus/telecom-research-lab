@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-09T17:56:33.581918+00:00",
+  "updated_at": "2026-10-10T08:53:41.986269+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
-  "active_milestone": "M4",
-  "status": "in_progress",
+  "active_milestone": "M10",
+  "status": "software_complete_pending_pi_overleaf",
   "verification_complete": true,
   "pi_approval": {
-    "quote": "Approve M0, continue M1ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“M10 automatically, and create the new private repository.",
-    "scope": "M0 acceptance and software build M1ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“M10; no scientific gate approval"
+    "quote": "Approve M0, continue M1–M10 automatically, and create the new private repository.",
+    "scope": "M0 acceptance and software build M1-M10; no scientific gate approval"
   },
   "milestones": {
     "M0": "approved",
@@ -14,12 +14,12 @@
     "M2": "complete",
     "M3": "complete",
     "M4": "complete",
-    "M5": "not_started",
-    "M6": "not_started",
-    "M7": "not_started",
-    "M8": "not_started",
-    "M9": "not_started",
-    "M10": "not_started",
+    "M5": "complete",
+    "M6": "complete",
+    "M7": "complete",
+    "M8": "complete",
+    "M9": "complete",
+    "M10": "software_complete_pending_pi_overleaf",
     "M11": "not_started",
     "M12": "not_started"
   },
@@ -38,18 +38,31 @@
     "Run independent reviewers in separately configured read-only root sessions; verify shell enforcement before L4 acceptance"
   ],
   "unresolved": [
-    "Current sandbox blocks scholarly HTTP and credential access",
-    "Custom-agent sandbox default overridden by parent live policy",
-    "Nested Codex child shell process creation fails with helper_unknown_error",
-    "Separate DL workstation hardware and launch route not supplied"
+    "PI confirms the exported synthetic ZIP compiles on Overleaf once (M10 source plan)",
+    "PI fills thesis profile and target venues before real P3 ideation",
+    "M11/M12 and scientific gates G1-G7 require PI participation",
+    "Optional Gemini unavailable; manual independent review packets provided",
+    "DL workstation launch route remains unspecified; not required for framework fixtures"
   ],
   "optional_gemini": "FAIL",
   "m1_ci": "https://github.com/thanhdu-hcmus/telecom-research-lab/actions/runs/38015477790",
   "last_acceptance": {
-    "tests": 52,
-    "lit-recall": "3/3",
-    "card-grounding": "3/3",
-    "gap-evidence": "2/3",
-    "code-scout-discrimination": "3/3"
-  }
+    "tests": 80,
+    "novelty-detect": "3/3",
+    "idea-card-completeness": "2/3",
+    "repro-small": "3/3",
+    "critic-planted-flaws": "3/3",
+    "modeler-derivation": "3/3",
+    "protocol-discipline": "3/3",
+    "verifier-planted-bugs": "3/3",
+    "writer-no-fabrication": "3/3",
+    "reviewer-catches-overclaim": "3/3",
+    "orchestrator-gate-respect": "3/3",
+    "matlab_physics": "PASS",
+    "matlab_mcp_and_batch_dispatch": "PASS",
+    "journal_and_conference": "PASS",
+    "clean_zip_compilation": "PASS",
+    "overleaf_pi_confirmation": "pending"
+  },
+  "repository": "https://github.com/thanhdu-hcmus/telecom-research-lab"
 }

@@ -1,0 +1,53 @@
+{
+  "started": "2026-10-10T08:42:21.558102+00:00",
+  "checks": [
+    {
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\ruff.exe",
+        "check",
+        "lab",
+        "tests/unit",
+        "tests/contracts",
+        "tests/physics"
+      ],
+      "exit": 0,
+      "elapsed_s": 0.06596349999017548,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit": 0,
+      "elapsed_s": 198.6265781999973,
+      "stdout": "........................................................................ [ 92%]\n......                                                                   [100%]\n78 passed in 196.93s (0:03:16)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+        "scripts/check_skills.py"
+      ],
+      "exit": 0,
+      "elapsed_s": 3.153203299996676,
+      "stdout": "{'skills': 21, 'failures': []}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+        "scripts/check_secrets.py"
+      ],
+      "exit": 1,
+      "elapsed_s": 22.258781600001385,
+      "stdout": "{\"status\": \"FAIL\", \"findings\": [[\"tests\\\\fixtures\\\\modeler-derived-outage.yaml\", 2, \"Hex High Entropy String\"]]}\n",
+      "stderr": ""
+    }
+  ],
+  "status": "FAIL",
+  "tests_passed": 78
+}

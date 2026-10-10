@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "retrieved": "2026-10-10T07:42:20.795074+00:00",
+  "source": "Crossref REST exact DOI lookups",
+  "dois": [
+    "10.1109/lsp.2014.2343971",
+    "10.1109/jsac.2020.3007039",
+    "10.1109/lcomm.2021.3091807",
+    "10.1109/twc.2020.3047632",
+    "10.1109/jproc.2022.3174140",
+    "10.1109/tcomm.2021.3066587",
+    "10.1109/twc.2022.3192211",
+    "10.1109/tvt.2022.3213334",
+    "10.1109/mwc.102.2100363",
+    "10.1109/tvt.2021.3068774"
+  ],
+  "real_entries": 10,
+  "faults": "3 authored fabricated titles and1 wrong year; all using actual DOI records to test mismatches"
+}

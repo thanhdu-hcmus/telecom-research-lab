@@ -1,0 +1,1 @@
+Read fixture works.yaml and ideas.yaml and novelty-audit. Return JSON {verdicts:[{id,verdict,citation,reason}]}. Detect equivalent published ideas. For unmatched ideas use unclear unless evidence supports stronger novelty. Only the bounded fixture corpus is available.

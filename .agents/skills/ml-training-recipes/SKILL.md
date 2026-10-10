@@ -1,7 +1,12 @@
 ---
 name: ml-training-recipes
-description: Contract stub for sim_engineer in P5; do not use until its implementation milestone enables the workflow.
+description: Use by sim_engineer for reproducible training configuration and diagnostics in approved wireless experiments.
 ---
+
 # ml-training-recipes
-M1 contract only. This skill is not an operational research workflow yet.
-Do not produce scientific artifacts or claim completed research from this stub.
+
+Operational adaptation of reviewed Orchestra ml-training-recipes (MIT in vendor).
+Pin framework versions and datasets, save initial seeds/configs/checkpoints,
+separate tuning data from test and log validation curves. Check NaNs, gradients,
+constraint violations and multiple-seed variance. Use conservative CPU settings
+until actual accelerator inventory is known. No automatic cloud spend or GPU claim.

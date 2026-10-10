@@ -98,3 +98,103 @@ Metadata corpus receipts, gold-card provenance and synthetic repository licences
 are in tests/fixtures and docs/evidence. Raw execution transcripts stay local;
 Git retains concise grades and source hashes. Concurrent evaluations serialize
 their results-index updates with a process lock.
+
+## Ideas and modeling
+
+Before real P3 ideation, complete `config/thesis-profile.yaml` and review venues.
+The tests use a synthetic profile. Keep at least fifteen schema-valid cards,
+distinct closest papers, venue comparators and dated scholarly/web novelty
+searches. Weights are positive integers summing to ten; rank and sensitivity
+outputs are checked against the current cards. The PI selects the idea at G3.
+
+```powershell
+uv run lab ideas rank --project my-project --json
+uv run lab ideas sensitivity --project my-project --json
+uv run lab model check --project my-project --json
+uv run lab review-packet model --project my-project --json
+```
+
+During approved P4, write notation, assumptions, falsifiable predictions and
+symbolic checks under `model/`. The parser accepts bounded arithmetic and named
+functions, with declared symbols. Unknown curvature does not count as convex.
+Resolve major/critical critique findings within three rounds; then request G4.
+Independent packets omit earlier reviews, responses and author reasoning.
+
+## Baselines and simulations
+
+Use a full forty-character commit SHA. Clone stores reviewed archives under the
+ignored `external/` folder. A clean heuristic scan grants no execution permission.
+Review source hashes, dependencies, licence and data explicitly before `env`.
+
+```powershell
+uv run lab baseline clone owner/repo FULL_COMMIT_SHA --project my-project
+uv run lab baseline scan external/CLONE_FOLDER --json
+uv run lab baseline env external/CLONE_FOLDER review.yaml --project my-project
+uv run lab baseline score baseline-record.yaml --project my-project --json
+uv run lab sim lock --project my-project --json
+uv run lab sim run --project my-project --json
+uv run lab sim status --project my-project --json
+uv run lab sim collect --project my-project --json
+```
+
+P5 requires G4. Commit reviewed protocol and inputs before locking. The lock pins
+the protocol, framework Python/MATLAB sources, `uv.lock` and declared inputs to a real
+Git ancestor. Protocols specify scenarios, unique seeds, trial policy, metrics
+and equal power/bandwidth/CSI/channel/QoS contracts. Average CI halfwidth defaults
+to at most one percent; outage requires at least one hundred observed events.
+DL requires disjoint train/validation/test IDs and at least three training seeds.
+
+Python custom entrypoints receive `--seed`, `--output-dir` and JSON `--params`.
+MATLAB functions receive `(seed, output_dir)` and read `params.json` in that
+folder. `matlab_route: mcp` is preferred; select `batch` explicitly for the host
+fallback. Runs record the actual MATLAB release/toolboxes. Use v7 MAT or CSV.
+
+Completed jobs resume only after all hashes pass. Partial output is retained for
+inspection and archival. Files over fifty MB move to the configured library,
+with location and digest retained in the manifest. New metrics or scientific
+changes need a PI deviation. A committed code correction can be relocked with
+`lab sim relock "..." --project my-project`; previous runs are archived
+and G5 and downstream approvals require fresh review.
+
+## Verification and manuscripts
+
+```powershell
+uv run lab verify --project my-project --json
+uv run lab paper init --project my-project --style journal
+uv run lab cite bib-from 'doi:...' --project my-project
+uv run lab cite verify --project my-project --json
+uv run lab fig make paper/figures/figure.yaml --project my-project
+uv run lab paper trace --project my-project --json
+uv run lab paper overlap --project my-project --json
+uv run lab paper build --project my-project --json
+uv run lab paper disclosure --project my-project
+uv run lab review-packet paper --project my-project
+uv run lab paper export --project my-project --json
+```
+
+P6 verifies saved raw channels with independent algebra, exact binomial and
+Student-t intervals, paired comparisons and prediction tolerances. Zero observed
+outage is reported with an upper bound. Custom simulators need a distinct,
+reviewed `verification_entrypoint` pinned in protocol inputs. It writes typed
+verification items and explicit evidence for recomputation, units, constraints,
+convergence, fairness, statistical precision, sensitivity and ablations. It must
+not import the simulator's metric implementation; source review is still needed.
+The checked report and verification items are checksum-bound.
+
+`results/claims.json` binds every claim to one manifest output and an executable
+JSON operation (`mean`, `count` or `paired_mean_difference`) on named CSV columns.
+P7 requires G6. Write reported numbers using `\res{claimKey}`; `paper trace`
+regenerates authoritative macros and checks included TeX files, Abstract, Results
+and Discussion. Its lexical checker cannot replace manual semantic review.
+
+Citations are checked against primary DOI/arXiv metadata, including title,
+authors, year and venue. Figures require manifest-bound data and vector output.
+Overlap checks compare twelve-word spans with downloaded library text; they are
+bounded local checks, not a comprehensive plagiarism service. Builds run actual
+latexmk with shell escape and manuscript rc files disabled. Export validates
+current receipts, manuscript review and disclosure, then compiles the ZIP in a
+clean folder. Final submission and G7 approval belong to the PI.
+
+Both journal and conference templates are available. The local synthetic handoff
+is `to_human/framework-overleaf-smoke.zip`; the plan's one-time PI Overleaf
+compilation confirmation remains pending. See [acceptance](acceptance-m5-m10.md).

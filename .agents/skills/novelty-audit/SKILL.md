@@ -1,7 +1,16 @@
 ---
 name: novelty-audit
-description: Contract stub for novelty_auditor in P3; do not use until its implementation milestone enables the workflow.
+description: Use by novelty_auditor in P3 for independent targeted searches and evidence-backed novelty verdicts.
 ---
+
 # novelty-audit
-M1 contract only. This skill is not an operational research workflow yet.
-Do not produce scientific artifacts or claim completed research from this stub.
+
+Read the idea and grounded closest works, not the author's reasoning. For each
+idea run at least five distinct targeted queries across scholarly sources and
+web author/code pages. Include equivalent formulations and renamed mechanisms.
+Save a dated report with query, source, receipt/evidence, closest IDs, overlap,
+precise delta and verdict: already-done, unclear, novel or
+incremental-but-publishable. Missing search results alone do not establish novelty.
+If an idea reproduces a published formulation, cite the exact existing work and
+mark already-done. Unsupported or unsearched deltas are unclear. Closed fixtures
+cannot justify global novelty; state their scope. Never invent citations.

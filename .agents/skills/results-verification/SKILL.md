@@ -1,7 +1,18 @@
 ---
 name: results-verification
-description: Contract stub for results_verifier in P6; do not use until its implementation milestone enables the workflow.
+description: Use by results_verifier in approved P6 to independently recompute metrics, test predictions and build numeric claim lineage.
 ---
+
 # results-verification
-M1 contract only. This skill is not an operational research workflow yet.
-Do not produce scientific artifacts or claim completed research from this stub.
+
+Read artifacts and raw manifest outputs only, not author reasoning. Write only
+analysis/. Recompute metrics with an independent implementation; never call the
+simulator's metric function. Check units/path loss/noise, constraints/convergence,
+common draws/equal power/CSI/QoS, baseline ordering, sensitivities and ablations.
+Test approved predictions with declared regimes/tolerances. Averages need target
+CI halfwidth; outage needs >=100 observed events and exact/Wilson CIs. Zero events
+means an upper bound. Save independent checks, input hashes and verification items.
+Triage failures as implementation-bug, theory-error, approximation-gap or
+statistical-noise. Inconclusive is not PASS. Every numeric claim must name a valid
+manifest output and executable JSON computation, with intended manuscript usage.
+Use lab verify and lab.verification.evaluate_claim; never invent a claim value.

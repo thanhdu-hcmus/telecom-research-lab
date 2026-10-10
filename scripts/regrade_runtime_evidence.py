@@ -1,4 +1,5 @@
 """Preserve initial false-negative grades and add verified child-runtime evidence."""
+
 import json
 import sys
 from pathlib import Path
@@ -17,14 +18,32 @@ for original in [r for r in records if r["evaluation"] == name][-3:]:
         continue
     workspace = ROOT / ".cache/evals" / original["id"]
     evidence = ROOT / original["raw_evidence"]
-    events = [json.loads(line) for line in (evidence / "events.jsonl").read_text(encoding="utf-8").splitlines() if line.startswith("{")]
+    events = [
+        json.loads(line)
+        for line in (evidence / "events.jsonl").read_text(encoding="utf-8").splitlines()
+        if line.startswith("{")
+    ]
     audit = audit_spawn(events, load(folder / "expected.yaml")["role"], workspace)
     save(evidence / "spawn-audit.json", audit)
-    updated = {**original, "initial_grader": original["grader"], "runtime_audit": audit,
-               "regrade_reason": "CLI omitted child IDs; actual session metadata audited. No model output changed."}
+    updated = {
+        **original,
+        "initial_grader": original["grader"],
+        "runtime_audit": audit,
+        "regrade_reason": "CLI omitted child IDs; actual session metadata audited. No model output changed.",
+    }
     if audit["verified"] and original["fixture_unchanged"]:
-        updated["grader"] = grade(folder, json.loads((evidence / "reply.json").read_text(encoding="utf-8")), workspace)
+        updated["grader"] = grade(
+            folder, json.loads((evidence / "reply.json").read_text(encoding="utf-8")), workspace
+        )
     updates.append(updated)
     save(ROOT / "docs/evidence/evals" / (original["id"] + "-audited.json"), updated)
 write_jsonl(index, [*records, *updates])
-print(json.dumps({"evaluation": name, "audited_trials": len(updates), "passing_trials": sum(r["grader"]["passed"] for r in updates)}))
+print(
+    json.dumps(
+        {
+            "evaluation": name,
+            "audited_trials": len(updates),
+            "passing_trials": sum(r["grader"]["passed"] for r in updates),
+        }
+    )
+)

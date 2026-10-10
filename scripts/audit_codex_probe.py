@@ -1,4 +1,5 @@
 """Extract only probe metadata from local Codex rollouts, never whole chats."""
+
 from __future__ import annotations
 
 import argparse
@@ -28,24 +29,38 @@ def main() -> int:
                 continue
             metadata = first_event.get("payload", {})
             source = metadata.get("source", {})
-            spawn = source.get("subagent", {}).get("thread_spawn", {}) if isinstance(source, dict) else {}
+            spawn = (
+                source.get("subagent", {}).get("thread_spawn", {})
+                if isinstance(source, dict)
+                else {}
+            )
             is_parent = metadata.get("id") == parent
             is_child = spawn.get("parent_thread_id") == parent
             if not (is_parent or is_child):
                 continue
-            summary = {"thread_id": metadata.get("id"), "role": metadata.get("agent_role"),
-                       "spawn": spawn, "runtime": [], "scope_fixture_in_skill_catalog": False}
+            summary = {
+                "thread_id": metadata.get("id"),
+                "role": metadata.get("agent_role"),
+                "spawn": spawn,
+                "runtime": [],
+                "scope_fixture_in_skill_catalog": False,
+            }
             for line in handle:
                 event = json.loads(line)
                 payload = event.get("payload", {})
                 if event.get("type") == "turn_context":
-                    summary["runtime"].append({key: payload.get(key) for key in
-                        ["model", "effort", "sandbox_policy", "approval_policy"]})
+                    summary["runtime"].append(
+                        {
+                            key: payload.get(key)
+                            for key in ["model", "effort", "sandbox_policy", "approval_policy"]
+                        }
+                    )
                 if event.get("type") == "response_item" and payload.get("role") == "developer":
                     text = "\n".join(item.get("text", "") for item in payload.get("content", []))
                     # Do not infer skill visibility from a user mention or tool read.
                     summary["scope_fixture_in_skill_catalog"] |= (
-                        "## Skills" in text and "- m0-scope-canary:" in text)
+                        "## Skills" in text and "- m0-scope-canary:" in text
+                    )
             if is_parent:
                 found["parent"] = summary
             else:
@@ -63,9 +78,14 @@ def main() -> int:
         parent_catalog = found.get("parent", {}).get("scope_fixture_in_skill_catalog")
         child_catalog = roles[0]["scope_fixture_in_skill_catalog"]
         found["per_agent_skill_disable"] = (
-            "FAIL" if parent_catalog and child_catalog else "PASS" if parent_catalog else "UNVERIFIED")
+            "FAIL"
+            if parent_catalog and child_catalog
+            else "PASS"
+            if parent_catalog
+            else "UNVERIFIED"
+        )
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(found, indent=2) + "\n", encoding="utf-8")
+    args.output.write_text(json.dumps(found, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps({k: v for k, v in found.items() if k not in {"children", "parent"}}, indent=2))
     return 0 if found["custom_role_spawn"] == "PASS" else 1
 

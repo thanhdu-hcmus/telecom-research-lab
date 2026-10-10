@@ -1,7 +1,12 @@
 ---
 name: creative-thinking-for-research
-description: Contract stub for ideator in P3; do not use until its implementation milestone enables the workflow.
+description: Use by ideator in P3 to explore alternative formulations while preserving evidence and feasibility.
 ---
+
 # creative-thinking-for-research
-M1 contract only. This skill is not an operational research workflow yet.
-Do not produce scientific artifacts or claim completed research from this stub.
+
+Adapted from the reviewed Orchestra creative-thinking source with MIT license in
+vendor/orchestra. Explore counterexamples, reversed assumptions, boundary cases,
+mechanism transfer and minimal models. Record why each change should matter and
+what would falsify it. Separate conjecture from established results; compare at
+least three existing works. Do not claim novelty before independent audit.

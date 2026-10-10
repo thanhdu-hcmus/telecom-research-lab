@@ -53,6 +53,10 @@ results or a change to an approved scientific model.
 
 ## Implementation sequence and current boundary
 
+Update after M0: the PI explicitly approved M0 and automatic M1-M10 progress.
+Software implementation is complete through M10; the Overleaf confirmation
+remains pending. The historical approval analysis below preceded that decision.
+
 M0 creates bounded environment probes, installs workspace-local tools, records
 sandbox and host evidence separately, and checks the native runtime. It does
 not approve a research phase or satisfy M1's schemas, skills or CI.

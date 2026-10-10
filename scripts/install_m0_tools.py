@@ -4,6 +4,7 @@ Downloads use official release endpoints. MATLAB release digests are checked
 against the GitHub release metadata. TeX Live bootstrap files are recorded with
 their SHA-256 digest and final TLS download URL before use.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -26,12 +27,14 @@ def fetch(url: str) -> tuple[bytes, str]:
 def receipt(name: str, data: dict) -> None:
     target = ROOT / "docs" / "evidence" / (name + ".json")
     target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+    target.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
 def matlab() -> None:
     # Deliberately pinned, rather than silently updating on each execution.
-    metadata, _ = fetch("https://api.github.com/repos/matlab/matlab-mcp-server/releases/tags/v0.14.0")
+    metadata, _ = fetch(
+        "https://api.github.com/repos/matlab/matlab-mcp-server/releases/tags/v0.14.0"
+    )
     release = json.loads(metadata)
     asset = next(a for a in release["assets"] if a["name"] == "matlab-mcp-server-windows-x64.exe")
     url = asset["browser_download_url"]
@@ -44,9 +47,18 @@ def matlab() -> None:
     target = TOOLS / "matlab-mcp-server" / asset["name"]
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_bytes(payload)
-    receipt("matlab-mcp-install", {"release": release["tag_name"], "source": url,
-            "final_url": final_url, "sha256": digest[7:], "digest_verified": True,
-            "path": str(target), "size_bytes": len(payload)})
+    receipt(
+        "matlab-mcp-install",
+        {
+            "release": release["tag_name"],
+            "source": url,
+            "final_url": final_url,
+            "sha256": digest[7:],
+            "digest_verified": True,
+            "path": str(target),
+            "size_bytes": len(payload),
+        },
+    )
     print(f"Installed MATLAB MCP {release['tag_name']} with verified digest")
 
 
@@ -85,12 +97,22 @@ def tex_bootstrap() -> None:
         "tlpdbopt_install_srcfiles 0\n"
         "tlpdbopt_autobackup 0\n",
         encoding="utf-8",
+        newline="\n",
     )
     installer = next(extracted.rglob("install-tl-windows.bat"))
-    receipt("texlive-bootstrap", {"source": url, "final_url": final_url,
-            "sha256": hashlib.sha256(payload).hexdigest(), "size_bytes": len(payload),
-            "installer": str(installer), "profile": str(profile), "portable": True,
-            "changes_system_path": False})
+    receipt(
+        "texlive-bootstrap",
+        {
+            "source": url,
+            "final_url": final_url,
+            "sha256": hashlib.sha256(payload).hexdigest(),
+            "size_bytes": len(payload),
+            "installer": str(installer),
+            "profile": str(profile),
+            "portable": True,
+            "changes_system_path": False,
+        },
+    )
     print(f"TeX Live installer: {installer}")
     print(f"Profile: {profile}")
 

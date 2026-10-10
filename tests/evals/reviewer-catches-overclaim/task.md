@@ -1,0 +1,1 @@
+Read fixture draft.md and ieee-peer-review. Return JSON {findings:[{id,severity,location,issue,fix}]}. Identify unsupported claims relative to verified results. No gate decision.

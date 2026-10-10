@@ -249,7 +249,9 @@ def screen_export(path: Path) -> dict:
         ],
     )
     with (path / "literature/screening.csv").open("w", encoding="utf-8", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=["id", "title", "authors", "year", "abstract"])
+        writer = csv.DictWriter(
+            stream, fieldnames=["id", "title", "authors", "year", "abstract"], lineterminator="\n"
+        )
         writer.writeheader()
         writer.writerows({k: r.get(k) for k in writer.fieldnames} for r in records)
     return {"status": "PASS", "records": len(records)}
@@ -325,7 +327,7 @@ def manual(path: Path, item: dict, failures: list[str]) -> dict:
         "failures": "; ".join(failures),
     }
     with destination.open("w", encoding="utf-8", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=fields)
+        writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows([r for r in previous if r["id"] != item["id"]] + [row])
     return {
@@ -496,6 +498,7 @@ def extract(repo: Path, path: Path, identifier: str) -> dict:
             for i, text in enumerate(pages)
         ),
         encoding="utf-8",
+        newline="\n",
     )
     return {"status": "PASS", "cached": False, "path": str(destination), "pages": len(pages)}
 

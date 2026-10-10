@@ -1,0 +1,1 @@
+Read fixture bugs.md and clean.md and results-verification. Return JSON {bugs:[{id,location,issue,triage,fix}],clean_findings:[]}. Distinguish implementation errors from insufficient statistical evidence; four bracketed issue labels identify locations. Do not alter results.

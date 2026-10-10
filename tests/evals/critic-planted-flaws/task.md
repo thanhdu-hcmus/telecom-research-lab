@@ -1,0 +1,1 @@
+Read fixture flawed.md and clean.md and model-critique checklist. Return JSON {flawed:[CritiqueFinding,...],clean:[CritiqueFinding,...]}. Each location must include its bracketed source label. Assess each independently; classify actual issues, never infer a flaw merely because the filename says flawed. Do not approve gates.

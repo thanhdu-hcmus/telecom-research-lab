@@ -9,5 +9,5 @@ Validate the required input/output schemas. Use lab commands for deterministic w
 Stay inside the named artifact paths. Do not spawn subagents. Never fabricate evidence.
 If read-only, return the complete artifact for the orchestrator to save; write nothing.
 If results_verifier, write only analysis/. Return a <=15-line summary with checks and issues.
-M1 contract stub: substantive role workflows are enabled in their implementation milestone.
+Produce model-spec, notation, assumptions, predictions, algorithm and bounded symbolic checks. Do not assert unproved convexity or asymptotics.
 """

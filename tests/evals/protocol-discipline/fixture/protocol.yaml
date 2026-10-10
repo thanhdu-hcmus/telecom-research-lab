@@ -1,0 +1,4 @@
+locked: true
+metrics:
+- outage
+baseline_power_watt: 1

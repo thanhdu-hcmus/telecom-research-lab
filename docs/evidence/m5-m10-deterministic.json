@@ -1,0 +1,111 @@
+{
+  "started": "2026-10-10T08:46:53.143127+00:00",
+  "checks": [
+    {
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\ruff.exe",
+        "check",
+        "lab",
+        "tests/unit",
+        "tests/contracts",
+        "tests/physics"
+      ],
+      "exit": 0,
+      "elapsed_s": 0.048141699997358955,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit": 0,
+      "elapsed_s": 148.07456439999805,
+      "stdout": "........................................................................ [ 90%]\n........                                                                 [100%]\n80 passed in 147.14s (0:02:27)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+        "scripts/check_skills.py"
+      ],
+      "exit": 0,
+      "elapsed_s": 2.7041629000013927,
+      "stdout": "{'skills': 21, 'failures': []}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+        "scripts/check_secrets.py"
+      ],
+      "exit": 0,
+      "elapsed_s": 22.954287600005046,
+      "stdout": "{\"status\": \"PASS\", \"findings\": []}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=D:/02_EDUCATION/THESIS/telecom-research-lab",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "elapsed_s": 0.02674069999193307,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "status": "PASS",
+  "tests_passed": 80,
+  "finished": "2026-10-10T08:49:46.962958+00:00",
+  "source_hashes": {
+    "lab/__init__.py": "8874c33694274a04e7681a43ced8803943b46c01d6971e0602ad3ec59aaffa4a",
+    "lab/baseline.py": "e8d4aea6d1cd893f8f555ef191da94755ff15e5ef4e6056477da6c70a175c468",
+    "lab/citations.py": "9cc2e8a22248886777c91d649074ad39555f41d4a026e46ddcf7075d6354adbd",
+    "lab/cli.py": "9b443bfdfeda3ff90889fecb42eb94159eed39f8ba15493dc3c21312d295629f",
+    "lab/cli_literature.py": "38201a2a4a18f729d5d90b40cad61b98ad7febbaf72da0e2bf7b3e1f608ba27d",
+    "lab/cli_paper.py": "6ca33f20371a325db3c531005014490519f6ccb9c0f13b4c0afe1863a943a394",
+    "lab/cli_research.py": "ee7e0ea65d749256caf9cb434fb93945d18726139d2837d06d6c6b444e3f224b",
+    "lab/cli_state.py": "5b17ceb28be1a6d69cfd0a2503b2fcd6f84a1217c379782ffc6a8a95e8541520",
+    "lab/doctor.py": "7639cb7b477dc911fcd9c91b792e6d7e38c7a43e5d1d6d9b2a93255469e68de7",
+    "lab/eval_graders.py": "5380f7c1d1984678d027f869349fb6f1cf34eadffb857a44ec057610d7e3a343",
+    "lab/evaluation.py": "c0b35722810c3b710a82b9b2a3bc732db7656ea22839df747f6c779d3e9f96e9",
+    "lab/figures.py": "abec1cbb847d912b2b07f98beaf371d8b3a6bd949de39cd337c93bd3d33c688e",
+    "lab/ideas.py": "4aba95ccd786f61b05e93773e4f9ce770c7b0052af31768ee1828e87f2bd9321",
+    "lab/io.py": "7eb7d5d67dc1b103b68065db9242ba0286310b7f2203266c52531870892a17cc",
+    "lab/literature.py": "1ba77511f635f2b7b85a89216765b98b8d02198511820a643b3be4357dec2b91",
+    "lab/matlab.py": "9a51244c7b0b9d0dcbd2f1ca70c49dd6ba322f928f4312c6db2870b4b3ed1976",
+    "lab/modeling.py": "3a3ba823e08cf2f27e0e1990ef38268a1f4880ed99833b45cbf0b3a12f14cb15",
+    "lab/models.py": "b01fb74dcc485a32ee0117d0ee3bb7274788d46fe832eda9832788863dba740f",
+    "lab/net.py": "39222840755ad0cce1f5f1d59722b6439f89639cb4f63d351efc61b9ceb40662",
+    "lab/paper.py": "99db91459ff128fcbc451624810694970f554043a57b813de867bbba467350e7",
+    "lab/simkit/__init__.py": "6e6d32b5e39446236f1f15f51f693dc53c6bc1b59c9a28394a8fe70cb8dd8a81",
+    "lab/simkit/wireless.py": "e429166426e8b057c6d422b2f334842537be6cba586bd93ae8635d99beef7309",
+    "lab/simulation.py": "67ddfe1cad13af10f2546e6ce99b0152bcd69c926d6944bc528d898a9361eb13",
+    "lab/sources.py": "fff8a9cab3dbdac087abccf496b01c0a5230f78c88846f1fde2f739a94fb9097",
+    "lab/state.py": "3cc47082566707448f9877ebdc7390ec3b777638a5e656dd72aa928e3e3e6e81",
+    "lab/venues.py": "5c5f0ab9f8a6e1fe2d639d54750597c9f201a57138f7e69a105896c4f04decc0",
+    "lab/verification.py": "f37e028f5395923197e697fe1e522f088caa11d4966499350bf0dbbbbacb30cb",
+    "tests/unit/test_baseline_model.py": "a36b2951cac377c9c5d48c0a3832b483a32682cd3dde32cf166936e21c70408e",
+    "tests/unit/test_cli_research.py": "4ee798a5985dd885e1afaea76365c5b44196d83b537e45ecfbfac6cfd52d0de7",
+    "tests/unit/test_evaluation.py": "9fc325f5073af4bffa58974ff619395b3f0610acede27ccc36bec8f4b32a6c4f",
+    "tests/unit/test_gates.py": "a6ff529af8d5adde1b90d0ffda912364300a31379c52c4d3e4ffc0b638d413e8",
+    "tests/unit/test_ideas.py": "67ceddf1d702bca23aa8b25803e443cb284a2ede5f799cdf09a24f0c6e8a5d68",
+    "tests/unit/test_io_models.py": "aa252187d31feede1e90af2e3d242b954194811436f897337d40836cf5cf91dd",
+    "tests/unit/test_literature.py": "a7bf5fa9c8cfa1721a03f483fbbc4926e77da1b85d7999da6a8966efdb1df144",
+    "tests/unit/test_m4_graders.py": "ff7e6dc720d9ed42e8241f6b57036c044e2729cd07ae97a6555bf9d39b12118c",
+    "tests/unit/test_net.py": "129d5e349afdbb4b6274c08eb9f635bc35076c59f46a98f3604df76a0faf505f",
+    "tests/unit/test_paper.py": "51ed8cd2216551eec58010559572fa7efc3dae589c4f6df88ad3858cd334c776",
+    "tests/unit/test_simulation.py": "2bb0f39a8415ee2339f50fda34ed958919383123d42e49276621b10761f6573b",
+    "tests/unit/test_verification.py": "edd0c48d6a00d26de2d36908d473c51c81a2228da93e7f3acede0720371a38ae",
+    "tests/contracts/test_contracts.py": "7e6bb7e83429d83ed6bec044298b3620b096dd13be0e37926f4f08f605a65e69",
+    "tests/contracts/test_eval_fixtures.py": "f8a735f9f20e623da99d3246fe9a135767f3aece249934cdd4a0022ba70d7e80",
+    "tests/physics/test_wireless.py": "034ad45fc6f3f572998b67676a6408cc735e203a9c3c6c7c500c673213a6742f"
+  }
+}

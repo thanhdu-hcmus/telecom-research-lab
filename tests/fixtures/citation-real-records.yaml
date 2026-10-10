@@ -1,0 +1,264 @@
+- id: doi:10.1109/lsp.2014.2343971
+  title: On the Performance of Non-Orthogonal Multiple Access in 5G Systems with Randomly
+    Deployed Users
+  authors:
+  - Zhiguo Ding
+  - Zheng Yang
+  - Pingzhi Fan
+  - H. Vincent Poor
+  year: 2014
+  abstract: null
+  doi: 10.1109/lsp.2014.2343971
+  arxiv_id: null
+  venue: IEEE Signal Processing Letters
+  citations: 1789
+  oa_url: null
+  sources:
+  - crossref
+  retrieved: '2026-10-10T07:42:12.187066+00:00'
+  source_ids:
+    crossref: 10.1109/lsp.2014.2343971
+  links:
+  - URL: http://xplorestaging.ieee.org/ielx7/97/6866947/06868214.pdf?arnumber=6868214
+    content-type: unspecified
+    content-version: vor
+    intended-application: similarity-checking
+- id: doi:10.1109/jsac.2020.3007039
+  title: Reconfigurable Intelligent Surface Aided NOMA Networks
+  authors:
+  - Tianwei Hou
+  - Yuanwei Liu
+  - Zhengyu Song
+  - Xin Sun
+  - Yue Chen
+  - Lajos Hanzo
+  year: 2020
+  abstract: null
+  doi: 10.1109/jsac.2020.3007039
+  arxiv_id: null
+  venue: IEEE Journal on Selected Areas in Communications
+  citations: 350
+  oa_url: null
+  sources:
+  - crossref
+  retrieved: '2026-10-10T07:42:12.664362+00:00'
+  source_ids:
+    crossref: 10.1109/jsac.2020.3007039
+  links:
+  - URL: http://xplorestaging.ieee.org/ielx7/49/9226634/09133094.pdf?arnumber=9133094
+    content-type: unspecified
+    content-version: vor
+    intended-application: similarity-checking
+- id: doi:10.1109/lcomm.2021.3091807
+  title: 'Coverage Characterization of STAR-RIS Networks: NOMA and OMA'
+  authors:
+  - Chenyu Wu
+  - Yuanwei Liu
+  - Xidong Mu
+  - Xuemai Gu
+  - Octavia A. Dobre
+  year: 2021
+  abstract: null
+  doi: 10.1109/lcomm.2021.3091807
+  arxiv_id: null
+  venue: IEEE Communications Letters
+  citations: 218
+  oa_url: null
+  sources:
+  - crossref
+  retrieved: '2026-10-10T07:42:13.672961+00:00'
+  source_ids:
+    crossref: 10.1109/lcomm.2021.3091807
+  links:
+  - URL: http://xplorestaging.ieee.org/ielx7/4234/9531652/09462949.pdf?arnumber=9462949
+    content-type: unspecified
+    content-version: vor
+    intended-application: similarity-checking
+- id: doi:10.1109/twc.2020.3047632
+  title: Reconfigurable Intelligent Surface-Assisted Non-Orthogonal Multiple Access
+  authors:
+  - Gang Yang
+  - Xinyue Xu
+  - Ying-Chang Liang
+  - Marco Di Renzo
+  year: 2021
+  abstract: null
+  doi: 10.1109/twc.2020.3047632
+  arxiv_id: null
+  venue: IEEE Transactions on Wireless Communications
+  citations: 182
+  oa_url: null
+  sources:
+  - crossref
+  retrieved: '2026-10-10T07:42:14.665150+00:00'
+  source_ids:
+    crossref: 10.1109/twc.2020.3047632
+  links:
+  - URL: http://xplorestaging.ieee.org/ielx7/7693/9426619/09316920.pdf?arnumber=9316920
+    content-type: unspecified
+    content-version: vor
+    intended-application: similarity-checking
+- id: doi:10.1109/jproc.2022.3174140
+  title: A State-of-the-Art Survey on Reconfigurable Intelligent Surface-Assisted
+    Non-Orthogonal Multiple Access Networks
+  authors:
+  - Zhiguo Ding
+  - Lu Lv
+  - Fang Fang
+  - Octavia A. Dobre
+  - George K. Karagiannidis
+  - Naofal Al-Dhahir
+  - Robert Schober
+  - H. Vincent Poor
+  year: 2022
+  abstract: null
+  doi: 10.1109/jproc.2022.3174140
+  arxiv_id: null
+  venue: Proceedings of the IEEE
+  citations: 174
+  oa_url: null
+  sources:
+  - crossref
+  retrieved: '2026-10-10T07:42:15.719546+00:00'
+  source_ids:
+    crossref: 10.1109/jproc.2022.3174140
+  links:
+  - URL: https://ieeexplore.ieee.org/ielam/5/9896612/9779790-aam.pdf
+    content-type: application/pdf
+    content-version: am
+    intended-application: syndication
+  - URL: http://xplorestaging.ieee.org/ielx7/5/9896612/09779790.pdf?arnumber=9779790
+    content-type: unspecified
+    content-version: vor
+    intended-application: similarity-checking
+- id: doi:10.1109/tcomm.2021.3066587
+  title: Reconfigurable Intelligent Surface Empowered Downlink Non-Orthogonal Multiple
+    Access
+  authors:
+  - Min Fu
+  - Yong Zhou
+  - Yuanming Shi
+  - Khaled B. Letaief
+  year: 2021
+  abstract: null
+  doi: 10.1109/tcomm.2021.3066587
+  arxiv_id: null
+  venue: IEEE Transactions on Communications
+  citations: 154
+  oa_url: null
+  sources:
+  - crossref
+  retrieved: '2026-10-10T07:42:16.683568+00:00'
+  source_ids:
+    crossref: 10.1109/tcomm.2021.3066587
+  links:
+  - URL: http://xplorestaging.ieee.org/ielx7/26/9456768/09380234.pdf?arnumber=9380234
+    content-type: unspecified
+    content-version: vor
+    intended-application: similarity-checking
+- id: doi:10.1109/twc.2022.3192211
+  title: Simultaneously Transmitting and Reflecting Reconfigurable Intelligent Surface
+    Assisted NOMA Networks
+  authors:
+  - Xinwei Yue
+  - Jin Xie
+  - Yuanwei Liu
+  - Zhihao Han
+  - Rongke Liu
+  - Zhiguo Ding
+  year: 2023
+  abstract: null
+  doi: 10.1109/twc.2022.3192211
+  arxiv_id: null
+  venue: IEEE Transactions on Wireless Communications
+  citations: 174
+  oa_url: null
+  sources:
+  - crossref
+  retrieved: '2026-10-10T07:42:17.690338+00:00'
+  source_ids:
+    crossref: 10.1109/twc.2022.3192211
+  links:
+  - URL: http://xplorestaging.ieee.org/ielx7/7693/10008384/09856598.pdf?arnumber=9856598
+    content-type: unspecified
+    content-version: vor
+    intended-application: similarity-checking
+- id: doi:10.1109/tvt.2022.3213334
+  title: Enhancing Secrecy Performance for STAR-RIS NOMA Networks
+  authors:
+  - Xingwang Li
+  - Yike Zheng
+  - Ming Zeng
+  - Yingting Liu
+  - Octavia A. Dobre
+  year: 2023
+  abstract: null
+  doi: 10.1109/tvt.2022.3213334
+  arxiv_id: null
+  venue: IEEE Transactions on Vehicular Technology
+  citations: 164
+  oa_url: null
+  sources:
+  - crossref
+  retrieved: '2026-10-10T07:42:18.682727+00:00'
+  source_ids:
+    crossref: 10.1109/tvt.2022.3213334
+  links:
+  - URL: http://xplorestaging.ieee.org/ielx7/25/10043591/09915477.pdf?arnumber=9915477
+    content-type: unspecified
+    content-version: vor
+    intended-application: similarity-checking
+- id: doi:10.1109/mwc.102.2100363
+  title: 'Reconfigurable Intelligent Surface-Aided Multi-User Networks: Interplay
+    Between NOMA and RIS'
+  authors:
+  - Yuanwei Liu
+  - Xidong Mu
+  - Xiao Liu
+  - Marco Di Renzo
+  - Zhiguo Ding
+  - Robert Schober
+  year: 2022
+  abstract: null
+  doi: 10.1109/mwc.102.2100363
+  arxiv_id: null
+  venue: IEEE Wireless Communications
+  citations: 135
+  oa_url: null
+  sources:
+  - crossref
+  retrieved: '2026-10-10T07:42:19.681764+00:00'
+  source_ids:
+    crossref: 10.1109/mwc.102.2100363
+  links:
+  - URL: http://xplorestaging.ieee.org/ielx7/7742/9801716/09801736.pdf?arnumber=9801736
+    content-type: unspecified
+    content-version: vor
+    intended-application: similarity-checking
+- id: doi:10.1109/tvt.2021.3068774
+  title: Improving Physical Layer Security for Reconfigurable Intelligent Surface
+    Aided NOMA 6G Networks
+  authors:
+  - Zhe Zhang
+  - Chensi Zhang
+  - Chengjun Jiang
+  - Fan Jia
+  - Jianhua Ge
+  - Fengkui Gong
+  year: 2021
+  abstract: null
+  doi: 10.1109/tvt.2021.3068774
+  arxiv_id: null
+  venue: IEEE Transactions on Vehicular Technology
+  citations: 152
+  oa_url: null
+  sources:
+  - crossref
+  retrieved: '2026-10-10T07:42:20.692857+00:00'
+  source_ids:
+    crossref: 10.1109/tvt.2021.3068774
+  links:
+  - URL: http://xplorestaging.ieee.org/ielx7/25/9449996/09385957.pdf?arnumber=9385957
+    content-type: unspecified
+    content-version: vor
+    intended-application: similarity-checking

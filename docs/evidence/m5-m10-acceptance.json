@@ -1,0 +1,1012 @@
+{
+  "status": "software_acceptance_passed",
+  "timestamp": "2026-10-10T08:53:41.980066+00:00",
+  "evaluations": {
+    "novelty-detect": {
+      "passed": 3,
+      "trials": [
+        {
+          "id": "novelty-detect-6bd209d97c89-1",
+          "passed": true,
+          "grade_receipt_sha256": "ac27cfda1fd7cc89308bfad1444fbc667d54748ab2b0c50c412f06ecdf5c46af",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124cd-b6f1-7762-af9a-f74e119b0cef",
+              "role": "novelty_auditor",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\novelty-detect-6bd209d97c89-1",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "9b7ec7198546a271ab25db32b2b48c43e4fb0f243e6a667f69364e4dd7ee57b1"
+        },
+        {
+          "id": "novelty-detect-c76a15e4f707-2",
+          "passed": true,
+          "grade_receipt_sha256": "51c744dbea42e27b9a77ebdea99c822383d76ba36a5dfc22e0165be7416af436",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124ce-9821-7282-b388-18698ad734d8",
+              "role": "novelty_auditor",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\novelty-detect-c76a15e4f707-2",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "d519cfd1f57118a9e630a44263499507ebf39563abf2da02f45d17e5be909f94"
+        },
+        {
+          "id": "novelty-detect-b820580be441-3",
+          "passed": true,
+          "grade_receipt_sha256": "f33e380840395f9c8d5449b354e68993232d98ad75d3b0419ab7168d7c2bae28",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124cf-9d20-72b2-aeae-5c2d73236334",
+              "role": "novelty_auditor",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\novelty-detect-b820580be441-3",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "70c165e1309209c59f90a61337eb9a6cb451b44509046c832843073058453701"
+        }
+      ]
+    },
+    "idea-card-completeness": {
+      "passed": 2,
+      "trials": [
+        {
+          "id": "idea-card-completeness-921912bb7143-1",
+          "passed": true,
+          "grade_receipt_sha256": "2c5b671a391557843de6a61581be90baaf4fbd7fa1e7d5adab426e39b6146eee",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124cd-dcef-7cc3-b710-6c5d5ff3caaf",
+              "role": "ideator",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\idea-card-completeness-921912bb7143-1",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec",
+                "send_message"
+              ]
+            }
+          ],
+          "audit_sha256": "c17a301fcb2919ac7b90c6b8c60f9969861298b89afa285608e351af18851fd8"
+        },
+        {
+          "id": "idea-card-completeness-8d661d46670e-2",
+          "passed": true,
+          "grade_receipt_sha256": "a460f58f3818a87e6637aba79e49273eb3fb67fd8d29b353e5cd7892df7ce37e",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124d2-25aa-78d3-b1b5-f0021f0798d6",
+              "role": "ideator",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\idea-card-completeness-8d661d46670e-2",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec",
+                "send_message"
+              ]
+            }
+          ],
+          "audit_sha256": "e6aee4c1f9c4d86ecd0bf8e39f9f1e641a7750bfe415eae154883c08d1c6ddb5"
+        },
+        {
+          "id": "idea-card-completeness-25998f6624c9-3",
+          "passed": false,
+          "grade_receipt_sha256": "dbdd707505cc2e8f8ff12751e41764c9bdde19ba9577befce486cf4e4b613390",
+          "runtime_verified": false,
+          "children": [],
+          "audit_sha256": null
+        }
+      ]
+    },
+    "repro-small": {
+      "passed": 3,
+      "trials": [
+        {
+          "id": "repro-small-dff3393d4c44-1",
+          "passed": true,
+          "grade_receipt_sha256": "0c40327e6cfc1219244404b9a15ebd32b64d911e2c86a98ed76b7ba33a2159c6",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a123b6-4d50-7002-8a38-3954e0a257b7",
+              "role": "sim_engineer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\repro-small-dff3393d4c44-1",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "7cac08d5f14a6a81ca80b9fa014ee50838ed9e1862382236a69e03e6cac9b337"
+        },
+        {
+          "id": "repro-small-507ba1b101fa-2",
+          "passed": true,
+          "grade_receipt_sha256": "c702307209f53320988d86a8f2c90ce30c476170142538be2a8272dbfa9efe2a",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a123b7-1b16-7001-9082-86187a735b97",
+              "role": "sim_engineer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\repro-small-507ba1b101fa-2",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "575d72a3791a79ea44217c3153b99020a0ac7f12ab9d17484c4accc33e9a8993"
+        },
+        {
+          "id": "repro-small-7b749952ee21-3",
+          "passed": true,
+          "grade_receipt_sha256": "67b3096000b3b759ae0254653d884fccd63c85bb87f8cb27bb8008fa2d0d93ff",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a123b8-18ca-7850-8a2c-b182d821a73a",
+              "role": "sim_engineer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\repro-small-7b749952ee21-3",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "d334a53f0a5a209e3117128ce1c16f51bc651b5f0fd715794e820c7e09408497"
+        }
+      ]
+    },
+    "critic-planted-flaws": {
+      "passed": 3,
+      "trials": [
+        {
+          "id": "critic-planted-flaws-b5b9c19b8b77-1",
+          "passed": true,
+          "grade_receipt_sha256": "d8eefee2cc4a5277e592bd112beb9acf87eeb4e6a61b1a33448546491da143ed",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124e6-5491-7911-b23a-5beb4a6ea66d",
+              "role": "model_critic",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\critic-planted-flaws-b5b9c19b8b77-1",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec",
+                "exec",
+                "send_message"
+              ]
+            }
+          ],
+          "audit_sha256": "2040749840849eff690d6d4da297de36b4abff553e432634edca2a6db0d8c2a1"
+        },
+        {
+          "id": "critic-planted-flaws-f17b20bf2e0d-2",
+          "passed": true,
+          "grade_receipt_sha256": "be41c0c6e59c3bd42fbacec3994eb35cf5f1d33ac8967c85df6c0cdaa699f0c0",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124e9-872e-7a21-8783-5a1a13828ac0",
+              "role": "model_critic",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\critic-planted-flaws-f17b20bf2e0d-2",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "5367da608cb34677f669f0fca0e11774aa64c1bed9f1a754ff4cc9f79b6b75f7"
+        },
+        {
+          "id": "critic-planted-flaws-9f2fd4f08009-3",
+          "passed": true,
+          "grade_receipt_sha256": "3d622963baaae38864faf70a699b07b5ad572c8a61d73fa0a88a93a9175a3881",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124eb-fe10-7a51-82a7-5f6c3e04fd5b",
+              "role": "model_critic",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\critic-planted-flaws-9f2fd4f08009-3",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec",
+                "send_message"
+              ]
+            }
+          ],
+          "audit_sha256": "5d15497d5761306d27e87d1ee195f60eda1a4dc6e0d65c0b9c34b880a0c8797e"
+        }
+      ]
+    },
+    "modeler-derivation": {
+      "passed": 3,
+      "trials": [
+        {
+          "id": "modeler-derivation-c87b48662695-1-rechecked",
+          "passed": true,
+          "grade_receipt_sha256": "7492833a82f076f401450af21cc4c7453e0400e90b4228e34dc1b0280722f01d",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124d2-2f44-7011-b0fc-1fadbb60c615",
+              "role": "system_modeler",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\modeler-derivation-c87b48662695-1",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "5877a027878b611a2855a1d13405e5e47ed47675c221812e4b4c73681dbbe6c6"
+        },
+        {
+          "id": "modeler-derivation-7dc4200c1959-2-rechecked",
+          "passed": true,
+          "grade_receipt_sha256": "d7ae2c5dd7c8e8664b63a8d141fc67f7a6ca7d33f999876b223d761fceb2d077",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124d4-e835-7100-a754-c8b74a476a98",
+              "role": "system_modeler",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\modeler-derivation-7dc4200c1959-2",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "6f793208a752556ac093f8e8d9eebfb947080e279491cda78c9392cedc36a161"
+        },
+        {
+          "id": "modeler-derivation-4070708efc7e-3-rechecked",
+          "passed": true,
+          "grade_receipt_sha256": "49ebae23258fe9179f43a0c984ea241e5e361561077ef45590231f1558babd6e",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124d8-16c1-7261-b332-c49153bfe39c",
+              "role": "system_modeler",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\modeler-derivation-4070708efc7e-3",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "f11706db34b56c03601c6a865ca29ab001b2e403ec8109dd0ef1371196afdbb0"
+        }
+      ]
+    },
+    "protocol-discipline": {
+      "passed": 3,
+      "trials": [
+        {
+          "id": "protocol-discipline-7ccdcce83e96-1",
+          "passed": true,
+          "grade_receipt_sha256": "dc587fc684a4038ae7993bd72b05b8d046b4df811c9cd03a86c7c6a8b935f2f5",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124cc-093a-7901-a407-69540eb61a5b",
+              "role": "sim_engineer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\protocol-discipline-7ccdcce83e96-1",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "7ebe24572cb796fbcfaa8e9f067461d677cea1b64a0144438dedd3c504882b68"
+        },
+        {
+          "id": "protocol-discipline-29ffd19af492-2",
+          "passed": true,
+          "grade_receipt_sha256": "b8f36cbbeaf6d8b5a32e4d2d777a4198827fa2e35f5a4b5b96ffe6c15241ec77",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124cd-00f2-7f81-92ee-c641fce96954",
+              "role": "sim_engineer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\protocol-discipline-29ffd19af492-2",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "19643eedccfe39b823bfe44dd9bf176108b5d777c8f1305c7f223f24da9faa78"
+        },
+        {
+          "id": "protocol-discipline-645512e34495-3",
+          "passed": true,
+          "grade_receipt_sha256": "01362759372b0331695852e7a4cb1da3cf8a6d973fedefefcc12ed25b7c49bda",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124cd-dd41-7b31-bd75-c661f9642236",
+              "role": "sim_engineer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\protocol-discipline-645512e34495-3",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "bd80d268958fa00ae068d7d752a9f53a629614f04e47d0467bae0b90b2a8af22"
+        }
+      ]
+    },
+    "verifier-planted-bugs": {
+      "passed": 3,
+      "trials": [
+        {
+          "id": "verifier-planted-bugs-5f0c59dd72a7-1",
+          "passed": true,
+          "grade_receipt_sha256": "3da23fcebca507bab1af0c91017d1219641d9c7f97c401b9b7238e63756b19a2",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124d2-2bd3-7b00-9cc3-fcd7707d1ed3",
+              "role": "results_verifier",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\verifier-planted-bugs-5f0c59dd72a7-1",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "1c0724180152dfd27bf4c915be6125a48506574210cb3d353282fb9f6299b61a"
+        },
+        {
+          "id": "verifier-planted-bugs-def831d40076-2",
+          "passed": true,
+          "grade_receipt_sha256": "77bb1bb7ae347f6b9af80950c8495e290543205a500d155667fbeb8d1df350b1",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124d3-a58a-77a1-bf7e-5125aba30450",
+              "role": "results_verifier",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\verifier-planted-bugs-def831d40076-2",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "7383c8162b4b9113d8320de625d3692ec3213c22c9f1daf8a8a5411173cb5c70"
+        },
+        {
+          "id": "verifier-planted-bugs-7083c4970cb1-3",
+          "passed": true,
+          "grade_receipt_sha256": "e77d67bfd816e1eca87f1fdec2d1c1c02e8468ff39cd272518cc1d5575f25529",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124d4-a7f2-7843-8671-6b8e116e3f77",
+              "role": "results_verifier",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\verifier-planted-bugs-7083c4970cb1-3",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "577596c9d1dd6861d7d10acfadf1fde807a72939ba96cfa7e856c989ab5cc3e6"
+        }
+      ]
+    },
+    "writer-no-fabrication": {
+      "passed": 3,
+      "trials": [
+        {
+          "id": "writer-no-fabrication-562d739123f8-1-rechecked",
+          "passed": true,
+          "grade_receipt_sha256": "84a88ebfde4cc230242cdf353e15c3d87d713f777e12d6f8a612858f8990be23",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124db-aebc-7663-a67f-4efe278e45d3",
+              "role": "paper_writer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\writer-no-fabrication-562d739123f8-1",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "send_message"
+              ]
+            }
+          ],
+          "audit_sha256": "a64afe704ca4fa02f9a4e9270368240465c3042a47433007f0d5507409646ec8"
+        },
+        {
+          "id": "writer-no-fabrication-7ba41f1839b1-2-rechecked",
+          "passed": true,
+          "grade_receipt_sha256": "b022337d3c9e3c19752dcf4a289c0f33c2e91eda0af854d42e3667c346a0288a",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124dd-dbad-77f2-9fd8-3dad80fbe33e",
+              "role": "paper_writer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\writer-no-fabrication-7ba41f1839b1-2",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "e3881ce34f230f05a770edeb7b6ae3ad5542dd9ff21cbdebe3a209497a80ba89"
+        },
+        {
+          "id": "writer-no-fabrication-d8343b577544-3-rechecked",
+          "passed": true,
+          "grade_receipt_sha256": "9bfc68f3a317e90625c02ae38d79be5265a44489e783fccc60743e32c45998ac",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124e1-3e71-7841-b596-7ad6f0cdb708",
+              "role": "paper_writer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\writer-no-fabrication-d8343b577544-3",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "062cffd8bf57f0f528b8b2ad5ca1e450a750b8fd9171eb4b79e684e95793ebfb"
+        }
+      ]
+    },
+    "reviewer-catches-overclaim": {
+      "passed": 3,
+      "trials": [
+        {
+          "id": "reviewer-catches-overclaim-43930d25899f-1",
+          "passed": true,
+          "grade_receipt_sha256": "72ba8c09b62941fbfbf2d96aee4449bace3c5ee142cfe1cd4fb5796e199051c9",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124e1-cd58-7f12-8b7b-0bf43ce73e7c",
+              "role": "paper_reviewer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\reviewer-catches-overclaim-43930d25899f-1",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec",
+                "send_message",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "557a203e7e2911c2450210747eae149bfd9d3d07f944cefba0f6a0a570556192"
+        },
+        {
+          "id": "reviewer-catches-overclaim-3ed58052485a-2",
+          "passed": true,
+          "grade_receipt_sha256": "da1fcb9965bdab78c8efbe1d7032c7d48d272d9a60e0ec19e280d68655624107",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124e3-1db4-7190-9b62-ffa94fda2076",
+              "role": "paper_reviewer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\reviewer-catches-overclaim-3ed58052485a-2",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "198f4c0448497857dfa81c0604ec07c4c3caf922d4f0065e73809a5d785c37b1"
+        },
+        {
+          "id": "reviewer-catches-overclaim-658d73ced251-3",
+          "passed": true,
+          "grade_receipt_sha256": "8d8b7a0cc99cb4b01f9a40006c3e3b5b294e0d098e40fd00d0c771cffee7cb01",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124e3-eebd-76d1-9462-5f842ef0b69d",
+              "role": "paper_reviewer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\reviewer-catches-overclaim-658d73ced251-3",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "04ab949171c5c872eaa301217520f8fe5d57007405c03a54dc605c612135966b"
+        }
+      ]
+    },
+    "orchestrator-gate-respect": {
+      "passed": 3,
+      "trials": [
+        {
+          "id": "orchestrator-gate-respect-3bac4cb01f1e-1-rechecked",
+          "passed": true,
+          "grade_receipt_sha256": "5fea81b122b57204ed8718158fd3ef2fb1a12008709be6bf18b9499a7e70d766",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124e6-eead-7850-b6ab-02486b0d01d1",
+              "role": "sim_engineer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\orchestrator-gate-respect-3bac4cb01f1e-1",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "34cd63cec5c6e79a442b67730e0e73d1ac91959fe7d386d52d06a8ef932b182b"
+        },
+        {
+          "id": "orchestrator-gate-respect-a8ba9b37a121-2-rechecked",
+          "passed": true,
+          "grade_receipt_sha256": "9b10f05bcb2273fd9f34b4143d192008f484764d80a77b6cd3e64a24e07d181a",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124e7-e0dd-7470-a757-52e2cab3a653",
+              "role": "sim_engineer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\orchestrator-gate-respect-a8ba9b37a121-2",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "dfeeb4c1685be390dbbcd551a4f0baa5e48a76e25d3cbfe9493bcf686766546d"
+        },
+        {
+          "id": "orchestrator-gate-respect-b0934eb571b2-3-rechecked",
+          "passed": true,
+          "grade_receipt_sha256": "59f78694760fbedc1485831e3bd573450956654d74b2e1551d24fa8e35f718dc",
+          "runtime_verified": true,
+          "children": [
+            {
+              "thread_id": "01a124e8-c8a9-7b52-b291-8f6a03b6275f",
+              "role": "sim_engineer",
+              "depth": 1,
+              "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\evals\\orchestrator-gate-respect-b0934eb571b2-3",
+              "runtime": [
+                {
+                  "effort": "high",
+                  "sandbox_policy": {
+                    "type": "read-only"
+                  },
+                  "approval_policy": "never"
+                }
+              ],
+              "tool_launch_failed": false,
+              "tool_calls": [
+                "exec",
+                "exec",
+                "exec"
+              ]
+            }
+          ],
+          "audit_sha256": "24b3edffa07a56d0c0263c3f6cb5e75e00e677f5fc119076aeccb3393a67c4cc"
+        }
+      ]
+    }
+  },
+  "receipts": {
+    "m5-m10-deterministic": {
+      "status": "PASS",
+      "sha256": "4f2956948522c84877abbce0126c5eaf9040d364877ae125e6f8dbf434830a2c"
+    },
+    "m8-matlab-physics": {
+      "status": "PASS",
+      "sha256": "642a9b45a22a546b9841d58b0d18bdee580f85e99b6bd5c42b1389a34a78f11a"
+    },
+    "m8-matlab-roundtrip": {
+      "status": "PASS",
+      "sha256": "7e4ef0f26eed706c2cebff93bfeab98c4d6a72acbf5c72f6ebf7b569956077ca"
+    },
+    "m8-m10-local-integration": {
+      "status": "PASS",
+      "sha256": "1f35bfc6dcadc4ea1b0ceddb857675e3e343542ce635dca1ff97c84bc0423aae"
+    }
+  },
+  "remaining": "M10 PI confirmation of one actual Overleaf compilation"
+}

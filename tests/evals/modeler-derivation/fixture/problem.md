@@ -1,0 +1,1 @@
+Self-authored specialization inspired by Ding et al. arXiv:1406.1516, DOI10.1109/LSP.2014.2343971. Ordered gains min/max of two iid Exp(1), fixed aweak+.astrong=1, SNR rho, rate thresholds 2^R-1; weak treats strong as interference, strong decodes weak then own. Original paper includes random-location path loss; this fixture deliberately removes it. No quoted text copied.

@@ -24,4 +24,4 @@ data["adaptations"] = {
     "ml-training-recipes": ["ml-training-recipes"],
     "tensorboard": ["tensorboard (optional, M8)"],
 }
-path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8", newline="\n")

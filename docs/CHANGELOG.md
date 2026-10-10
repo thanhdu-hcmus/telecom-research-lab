@@ -1,5 +1,27 @@
 # Changelog
 
+## 2026-10-10 - M5-M10 software implementation
+
+- Enabled all twenty-one operational skills and the remaining specialist roles.
+  Added evidence-grounded ranking, novelty contracts, pinned baseline review,
+  per-baseline environments and checksum-bound reproduction scoring.
+- Added safe symbolic checks, wireless conventions, six rigor dimensions,
+  eleven telecom checks and independent review packets.
+- Added Python and MATLAB sim kits, both-language physics acceptance, real MCP
+  and batch exchanges, scenario parameters, actual environment metadata, committed
+  locks, resumable seed jobs, large result storage and archived relocks.
+- Added independent verification, honest confidence intervals, custom verifier
+  contracts, report integrity checks and executable numeric claims.
+- Added journal/conference IEEE templates, primary-source citations, vector
+  figures, included-file numeric trace, overlap, disclosure and clean ZIP export.
+- All required specialist evaluations meet the two-of-three threshold. Actual
+  read-only child execution is audited. Earlier failures and correction receipts
+  remain available; see acceptance-m5-m10.md for exact outcomes and limits.
+- Standardized authored text and generated artifacts to UTF-8/LF for portable
+  Git checksums. Formatted Python sources and regenerated schema contracts.
+- Real scientific gates and M11/M12 remain unstarted. M10 software checks pass;
+  the plan's one-time PI Overleaf confirmation remains pending.
+
 ## 2026-10-10 — M0 environment verification
 
 - Reviewed the full implementation plan and documented 18 findings, including

@@ -28,7 +28,7 @@ def check(repo: Path, full: bool = False) -> dict:
         lib = library(repo)
         lib.mkdir(parents=True, exist_ok=True)
         probe = lib / ".lab-write-probe"
-        probe.write_text("probe", encoding="utf-8")
+        probe.write_text("probe", encoding="utf-8", newline="\n")
         probe.unlink()
         checks["library"] = {"status": "PASS", "path": str(lib)}
     except OSError as error:
@@ -68,6 +68,8 @@ def check(repo: Path, full: bool = False) -> dict:
     }
     save(repo / "docs/evidence/doctor-latest.json", report)
     (repo / "docs/doctor-report.md").write_text(
-        "# Doctor\n\n```json\n" + json.dumps(report, indent=2) + "\n```\n", encoding="utf-8"
+        "# Doctor\n\n```json\n" + json.dumps(report, indent=2) + "\n```\n",
+        encoding="utf-8",
+        newline="\n",
     )
     return report

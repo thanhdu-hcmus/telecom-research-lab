@@ -1,0 +1,16 @@
+- id: I1
+  description: Implement and evaluate exactly the formulation and method in A State-of-the-Art
+    Survey on Reconfigurable Intelligent Surface-Assisted Non-Orthogonal Multiple
+    Access Networks; rename the method Adaptive Surface Allocation.
+- id: I2
+  description: Implement and evaluate exactly the formulation and method in Reconfigurable
+    Intelligent Surface Aided NOMA Networks; rename the method Adaptive Surface Allocation.
+- id: I3
+  description: Implement and evaluate exactly the formulation and method in A Simple
+    Design of IRS-NOMA Transmission; rename the method Adaptive Surface Allocation.
+- id: I4
+  description: Quantify joint channel-estimation time and discrete-phase hardware
+    energy in a near-field model; no supplied work evaluates this.
+- id: I5
+  description: Derive finite-sample calibration guarantees for a distribution-shift
+    outage predictor; no supplied work evaluates this.

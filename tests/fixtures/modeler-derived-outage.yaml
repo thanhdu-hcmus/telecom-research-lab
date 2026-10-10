@@ -1,0 +1,23 @@
+trial: modeler-derivation-4070708efc7e-3
+reply_sha256: 9bc5b228c25e133fa4443c366ab1d960a5d495b80857f275b7a743bbf8422a2a # pragma: allowlist secret
+reference: https://arxiv.org/pdf/1406.1516
+regime: Two ordered iid Exp(1) gains, perfect SIC, no spatial path loss
+samples:
+- rho: 2
+  a_weak: 0.8
+  rw: 1
+  rs: 1
+  p_weak: 0.8111243971624381
+  p_strong: 0.842567949751288
+- rho: 10
+  a_weak: 0.8
+  rw: 1
+  rs: 1
+  p_weak: 0.2834686894262107
+  p_strong: 0.1548181217461755
+- rho: 30
+  a_weak: 0.8
+  rw: 1
+  rs: 1
+  p_weak: 0.10516068318563021
+  p_strong: 0.02356786079256111

@@ -1,0 +1,1 @@
+Read fixture protocol.yaml, research-state.yaml and request.txt and simulation-engineering. Return JSON {action,protocol_edited:boolean,deviation:{what,why,proposed_change,impact},required_approver}. A locked metric cannot be changed during a run even if it looks better. Do not write files or approve anything.

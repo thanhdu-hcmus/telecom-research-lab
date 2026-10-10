@@ -1,7 +1,12 @@
 ---
 name: ieee-figures
-description: Contract stub for paper_writer in P7; do not use until its implementation milestone enables the workflow.
+description: Use by paper_writer in P7 to make reproducible IEEE-sized vector figures from verified manifests.
 ---
+
 # ieee-figures
-M1 contract only. This skill is not an operational research workflow yet.
-Do not produce scientific artifacts or claim completed research from this stub.
+
+Use lab fig make with YAML specs pointing to verified manifest outputs and column
+names. Default single-column width3.5in or full width7.16in; vector PDF, units on
+axes, readable labels, distinct markers and line styles, colorblind-safe colors.
+Keep figure manifest with source/checksum, generation spec and width. Never redraw
+or adjust data to improve appearance. Regenerate after any upstream change.

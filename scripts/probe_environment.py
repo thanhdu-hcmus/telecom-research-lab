@@ -3,6 +3,7 @@
 Run from a Codex sandbox and a normal host terminal separately. A host PASS
 does not establish that the same capability works in an agent sandbox.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -40,16 +41,25 @@ def command(argv: list[str], timeout: int = 30, env: dict | None = None) -> dict
         env["PATH"] = str(tex_bin) + os.pathsep + env.get("PATH", "")
     try:
         result = subprocess.run(
-            argv, cwd=ROOT, capture_output=True, encoding="utf-8", errors="replace",
-            timeout=timeout, env=env, check=False,
+            argv,
+            cwd=ROOT,
+            capture_output=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=timeout,
+            env=env,
+            check=False,
         )
-        return {"status": "PASS" if result.returncode == 0 else "FAIL",
-                "command": argv, "exit_code": result.returncode,
-                "stdout": redact(result.stdout), "stderr": redact(result.stderr),
-                "elapsed_s": round(time.monotonic() - started, 3)}
+        return {
+            "status": "PASS" if result.returncode == 0 else "FAIL",
+            "command": argv,
+            "exit_code": result.returncode,
+            "stdout": redact(result.stdout),
+            "stderr": redact(result.stderr),
+            "elapsed_s": round(time.monotonic() - started, 3),
+        }
     except subprocess.TimeoutExpired:
-        return {"status": "FAIL", "command": argv, "reason": "timeout",
-                "timeout_s": timeout}
+        return {"status": "FAIL", "command": argv, "reason": "timeout", "timeout_s": timeout}
     except (OSError, ValueError) as exc:
         return {"status": "FAIL", "command": argv, "reason": redact(str(exc))}
 
@@ -63,8 +73,9 @@ def executable(name: str) -> list[str] | None:
         return None
     # Invoke npm CLIs directly through Node, avoiding PowerShell wrapper quoting.
     if name in {"codex", "gemini"}:
-        suffix = ("@openai/codex/bin/codex.js" if name == "codex"
-                  else "@google/gemini-cli/dist/index.js")
+        suffix = (
+            "@openai/codex/bin/codex.js" if name == "codex" else "@google/gemini-cli/dist/index.js"
+        )
         entry = Path(found).parent / "node_modules" / suffix
         node = shutil.which("node")
         if entry.is_file() and node:
@@ -91,8 +102,12 @@ def network_check(name: str, url: str) -> dict:
                 parsed = ET.fromstring(payload)
                 assert parsed.tag == "{http://www.w3.org/2005/Atom}feed"
                 assert parsed.find("{http://www.w3.org/2005/Atom}entry") is not None
-            return {"status": "PASS", "url": url, "http_status": response.status,
-                    "response_sha256": hashlib.sha256(payload).hexdigest()}
+            return {
+                "status": "PASS",
+                "url": url,
+                "http_status": response.status,
+                "response_sha256": hashlib.sha256(payload).hexdigest(),
+            }
     except (urllib.error.URLError, OSError, AssertionError, ValueError, ET.ParseError) as exc:
         return {"status": "FAIL", "url": url, "reason": redact(str(exc))}
 
@@ -107,9 +122,13 @@ def latex_check() -> dict:
     source.write_text(
         "\\documentclass{article}\n\\begin{document}\nM0 smoke test.\\end{document}\n",
         encoding="utf-8",
+        newline="\n",
     )
-    result = command(latexmk + ["-pdf", "-interaction=nonstopmode", "-halt-on-error",
-                                f"-outdir={work}", str(source)], timeout=120)
+    result = command(
+        latexmk
+        + ["-pdf", "-interaction=nonstopmode", "-halt-on-error", f"-outdir={work}", str(source)],
+        timeout=120,
+    )
     pdf = work / "smoke.pdf"
     result["pdf_exists"] = pdf.is_file()
     if result["status"] == "PASS" and not pdf.is_file():
@@ -129,39 +148,59 @@ def main() -> int:
     checks = {}
     version_jobs = {
         "python": [sys.executable, "--version"],
-        "uv": ["uv", "--version"], "git": ["git", "--version"],
-        "gh": ["gh", "--version"], "codex": ["codex", "--version"],
-        "latexmk": ["latexmk", "-version"], "pdflatex": ["pdflatex", "--version"],
+        "uv": ["uv", "--version"],
+        "git": ["git", "--version"],
+        "gh": ["gh", "--version"],
+        "codex": ["codex", "--version"],
+        "latexmk": ["latexmk", "-version"],
+        "pdflatex": ["pdflatex", "--version"],
         "gemini": ["gemini", "--version"],
     }
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         jobs = {pool.submit(tool, name, argv[1:]): name for name, argv in version_jobs.items()}
         for future in concurrent.futures.as_completed(jobs):
             checks[jobs[future] + "_version"] = future.result()
-    checks["python_smoke"] = command([sys.executable, "-c", "assert sum([1,2,3]) == 6; print('PYTHON_SMOKE_PASS')"])
+    checks["python_smoke"] = command(
+        [sys.executable, "-c", "assert sum([1,2,3]) == 6; print('PYTHON_SMOKE_PASS')"]
+    )
     checks["codex_auth"] = tool("codex", ["login", "status"])
     checks["github_auth"] = tool("gh", ["auth", "status"])
     checks["codex_help"] = tool("codex", ["--help"])
     checks["codex_exec_help"] = tool("codex", ["exec", "--help"])
     if args.network:
         checks["openalex"] = network_check("openalex", "https://api.openalex.org/works?per-page=1")
-        checks["arxiv"] = network_check("arxiv", "https://export.arxiv.org/api/query?search_query=all:RIS&max_results=1")
+        checks["arxiv"] = network_check(
+            "arxiv", "https://export.arxiv.org/api/query?search_query=all:RIS&max_results=1"
+        )
     if args.matlab:
         matlab = executable("matlab")
         if matlab:
-            checks["matlab_batch"] = command(matlab + ["-wait", "-batch",
-                "disp(1); fprintf('MATLAB_RELEASE=%s\\n',version('-release')); ver; fprintf('MATLAB_SMOKE_PASS\\n');"], timeout=120)
+            checks["matlab_batch"] = command(
+                matlab
+                + [
+                    "-wait",
+                    "-batch",
+                    "disp(1); fprintf('MATLAB_RELEASE=%s\\n',version('-release')); ver; fprintf('MATLAB_SMOKE_PASS\\n');",
+                ],
+                timeout=120,
+            )
             if "MATLAB_SMOKE_PASS" not in checks["matlab_batch"].get("stdout", ""):
                 checks["matlab_batch"]["status"] = "FAIL"
         else:
             checks["matlab_batch"] = {"status": "MISSING"}
     if args.latex:
         checks["latex_compile"] = latex_check()
-    output = {"recorded_at": dt.datetime.now(dt.timezone.utc).isoformat(),
-              "context": args.context, "platform": platform.platform(),
-              "root": str(ROOT), "checks": checks}
+    output = {
+        "recorded_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "context": args.context,
+        "platform": platform.platform(),
+        "root": str(ROOT),
+        "checks": checks,
+    }
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    args.output.write_text(
+        json.dumps(output, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n"
+    )
     print(json.dumps({key: value["status"] for key, value in checks.items()}, indent=2))
     required = ["python_smoke", "codex_auth"]
     required += ["openalex", "arxiv"] if args.network else []

@@ -121,12 +121,14 @@ def init(repo: Path, slug: str) -> dict:
     (path / "scope.md").write_text(
         "# Scope\n\nDraft the scope and scope.yaml from the PI's reviewed thesis profile.\n",
         encoding="utf-8",
+        newline="\n",
     )
     (path / "findings.md").write_text(
         "# Findings\n\n## Current understanding\n\nNot researched yet.\n\n## Supported claims\n\nNone.\n\n## Lessons and constraints\n\n## Open questions\n",
         encoding="utf-8",
+        newline="\n",
     )
-    (path / "research-log.md").write_text("# Research log\n", encoding="utf-8")
+    (path / "research-log.md").write_text("# Research log\n", encoding="utf-8", newline="\n")
     log(path, "Project initialized; all scientific gates pending PI decisions.")
     return {"status": "PASS", "project": slug, "path": str(path), "phase": "P1"}
 
@@ -141,6 +143,7 @@ def artifact_files(path: Path, index: int) -> list[Path]:
             and p.name not in {"claims.json", "lock.json"}
             and p.suffix not in {".aux", ".log", ".pdf", ".pyc", ".bbl", ".blg", ".fls", ".out"}
             and "__pycache__" not in p.parts
+            and not p.name.endswith(".lock")
         )
     if index == 1:
         files = {p for p in files if p.name not in {"research-log.md", "findings.md"}}
@@ -297,6 +300,7 @@ def request(path: Path, gate: str) -> dict:
     report.write_text(
         f'# {gate} — {path.name}\n\n## Summary\n\nScientific decision pending PI review.{sample}\n\n## Artifacts\n\n{artifacts}\n\n## Automated checks\n\n| Check | Result | Details |\n|---|---|---|\n{rows}\n\n## Findings and deviations\n\nReview phase artifacts, unresolved issues and deviations.yaml.\n\n## Untrusted-content alerts\n\nReview alerts recorded by specialists; absence of a report is not a scan guarantee.\n\n## Provenance and effort\n\nSee ara/trace/sessions; run provenance-epilogue before decision.\n\n## PI checklist\n\n- [ ] Scope and assumptions accepted\n- [ ] Evidence spot-checked\n- [ ] Deviations resolved\n- [ ] Provenance reviewed\n\n## Decide\n\n`lab gate approve {gate} --project {path.name} --note "..."`\n\nAlternatively use gate revise or rewind.\n',
         encoding="utf-8",
+        newline="\n",
     )
     log(
         path,
@@ -368,10 +372,10 @@ def decide(path: Path, gate: str, decision: str, note: str, select: str | None =
         if snapshot(path, index) != value["gates"][gate]["artifact_hashes"]:
             raise LabError("Artifacts changed since request; request a fresh review")
         if gate == "G3":
-            from lab.ideas import eligible
+            from lab.ideas import cards_at, eligible
             from lab.models import IdeaCard
 
-            cards = [IdeaCard.model_validate(load(p)) for p in (path / "ideas").glob("*.yaml")]
+            cards = [IdeaCard.model_validate(raw) for raw in cards_at(path)]
             if not select or not any(c.id == select and eligible(c) for c in cards):
                 raise LabError("G3 needs --select naming an eligible idea card")
         elif select:
@@ -407,7 +411,7 @@ def decide(path: Path, gate: str, decision: str, note: str, select: str | None =
     except LabError:
         save(path / "gates/decisions.yaml", records)
         update(path, original_state)
-        (path / "research-log.md").write_text(original_log, encoding="utf-8")
+        (path / "research-log.md").write_text(original_log, encoding="utf-8", newline="\n")
         raise
     return {"status": "PASS", "gate": gate, "decision": decision}
 

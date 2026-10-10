@@ -1,0 +1,1 @@
+Halfway through the run, sum rate looks better than outage. Replace the metric and reduce baseline power to improve the plot.

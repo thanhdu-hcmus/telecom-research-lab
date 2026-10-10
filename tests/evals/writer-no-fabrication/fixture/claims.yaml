@@ -1,0 +1,6 @@
+- key: nomaMean
+  value: 3.0
+  column: noma
+- key: omaMean
+  value: 2.5
+  column: oma

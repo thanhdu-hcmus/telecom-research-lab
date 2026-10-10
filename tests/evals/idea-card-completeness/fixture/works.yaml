@@ -1,0 +1,80 @@
+- id: doi:10.1109/jproc.2022.3174140
+  title: A State-of-the-Art Survey on Reconfigurable Intelligent Surface-Assisted
+    Non-Orthogonal Multiple Access Networks
+  abstract: Reconfigurable intelligent surfaces (RISs) and nonorthogonal multiple
+    access (NOMA) have been recognized as key enabling techniques for the envisioned
+    sixth generation (6G) of mobile communication networks. The key feature of RISs
+    is to intelligently reconfigure the wireless propagation environment, which was
+    once considered to be fixed and untunable. The key idea of NOMA is to utilize
+    users’ dynamic channel conditions to improve spectral efficiency and user fairness.
+    Naturally, the two communication techniques are complementary to each other and
+    can be integrated to cope with the challenging requirements envisioned for 6G
+    mobile networks. This survey provides a comprehensive overview of the recent progress
+    on the synergistic integration of RISs and NOMA. In particular, the basics of
+    both techniques are introduced first, and then, the fundamentals of RIS-NOMA are
+    discussed for two communication scenarios with different transceiver capabilities.
+    Resource allocation is of paramount importance for the success of RIS-assisted
+    NOMA networks, and various approaches, including artificial intelligence (AI)-empowered
+    designs, are introduced. Security provisioning in RIS-NOMA networks is also discussed
+    as wireless networks are prone to security attacks due to the nature of the shared
+    wireless medium. Finally, the survey is concluded with detailed discussions of
+    the challenges arising in the practical implementation of RIS-NOMA, future research
+    directions, and emerging applications.
+  doi: 10.1109/jproc.2022.3174140
+  authors:
+  - Zhiguo Ding
+  - Lu Lv
+  - Fang Fang
+  - Octavia A. Dobre
+  - George K. Karagiannidis
+  - Naofal Al‐Dhahir
+  - Robert Schober
+  - H. Vincent Poor
+  year: 2022
+  venue: Proceedings of the IEEE
+- id: doi:10.1109/jsac.2020.3007039
+  title: Reconfigurable Intelligent Surface Aided NOMA Networks
+  abstract: 'Reconfigurable intelligent surfaces (RISs) constitute a promising performance
+    enhancement for next-generation (NG) wireless networks in terms of enhancing both
+    their spectral efficiency (SE) and energy efficiency (EE). We conceive a system
+    for serving paired power-domain non-orthogonal multiple access (NOMA) users by
+    designing the passive beamforming weights at the RISs. In an effort to evaluate
+    the network performance, we first derive the best-case and worst-case of new channel
+    statistics for characterizing the effective channel gains. Then, we derive the
+    best-case and worst-case of our closed-form expressions derived both for the outage
+    probability and for the ergodic rate of the prioritized user. For gleaning further
+    insights, we investigate both the diversity orders of the outage probability and
+    the high-signal-to-noise (SNR) slopes of the ergodic rate. We also derive both
+    the SE and EE of the proposed network. Our analytical results demonstrate that
+    the base station (BS)-user links have almost no impact on the diversity orders
+    attained when the number of RISs is high enough. Numerical results are provided
+    for confirming that: i) the high-SNR slope of the RIS-aided network is one; ii)
+    the proposed RIS-aided NOMA network has superior network performance compared
+    to its orthogonal counterpart.'
+  doi: 10.1109/jsac.2020.3007039
+  authors:
+  - Tianwei Hou
+  - Yuanwei Liu
+  - Zhengyu Song
+  - Xin Sun
+  - Yue Chen
+  - Lajos Hanzo
+  year: 2020
+  venue: IEEE Journal on Selected Areas in Communications
+- id: doi:10.1109/lcomm.2020.2974196
+  title: A Simple Design of IRS-NOMA Transmission
+  abstract: This letter proposes a simple design of intelligent reflecting surface
+    (IRS) assisted non-orthogonal multiple access (NOMA) downlink transmission. In
+    particular, conventional spatial division multiple access (SDMA) is used first
+    at the base station to generate orthogonal beams by using the spatial directions
+    of the near users' channels. Then, IRS-assisted NOMA is used to ensure that additional
+    cell-edge users can also be served on these beams by aligning the cell-edge users'
+    effective channel vectors with the predetermined spatial directions. Both analytical
+    and simulation results are provided to demonstrate the performance of the proposed
+    IRS-NOMA scheme and also study the impact of hardware impairments on IRS-NOMA.
+  doi: 10.1109/lcomm.2020.2974196
+  authors:
+  - Zhiguo Ding
+  - H. Vincent Poor
+  year: 2020
+  venue: IEEE Communications Letters

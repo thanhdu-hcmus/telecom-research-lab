@@ -107,11 +107,13 @@ class IdeaCard(Artifact):
 
     @model_validator(mode="after")
     def complete(self):
+        if len({w.id for w in self.closest_works}) < 3:
+            raise ValueError("At least three distinct closest works required")
         if set(self.scores) != {"thesis_fit", "time", "venue"}:
             raise ValueError("All three scores required")
         if not self.resources.get("compute_estimate"):
             raise ValueError("Compute estimate required")
-        if len(self.scores["venue"].evidence) < 2:
+        if len(set(self.scores["venue"].evidence)) < 2:
             raise ValueError("Venue score needs at least two comparable papers")
         return self
 
@@ -158,6 +160,7 @@ class CritiqueFinding(Artifact):
 
 class OutputFile(Artifact):
     path: Text
+    storage: Literal["project", "library"] = "project"
     sha256: Digest
     bytes: int = Field(ge=0)
 

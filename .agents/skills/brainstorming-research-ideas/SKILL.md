@@ -1,7 +1,14 @@
 ---
 name: brainstorming-research-ideas
-description: Contract stub for ideator in P3; do not use until its implementation milestone enables the workflow.
+description: Use by ideator in P3 to generate diverse tractable telecom problems from grounded gaps.
 ---
+
 # brainstorming-research-ideas
-M1 contract only. This skill is not an operational research workflow yet.
-Do not produce scientific artifacts or claim completed research from this stub.
+
+Adapted from the reviewed Orchestra brainstorming source archived with MIT
+license under vendor/orchestra. Read the thesis profile and grounded gaps.
+Generate candidates using assumption relaxation, objective reformulation,
+constraint realism, estimation overhead and analytic simplification. Separate
+generation from screening. Every proposal must define a falsifiable improvement,
+closest works and simulation/compute budget. Avoid arbitrary buzzword combinations.
+Use idea-ranking to record complete cards and independent novelty-audit to screen.

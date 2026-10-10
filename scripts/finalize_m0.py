@@ -1,4 +1,5 @@
 """Assemble the M0 review packet from recorded evidence, without approving it."""
+
 from __future__ import annotations
 
 import datetime as dt
@@ -17,7 +18,9 @@ def read(name: str) -> dict:
 
 def main() -> int:
     tests = command([sys.executable, "-m", "unittest", "discover", "-s", "tests/m0", "-v"])
-    (ROOT / "docs" / "evidence" / "m0-tests.json").write_text(json.dumps(tests, indent=2) + "\n", encoding="utf-8")
+    (ROOT / "docs" / "evidence" / "m0-tests.json").write_text(
+        json.dumps(tests, indent=2) + "\n", encoding="utf-8", newline="\n"
+    )
     host = read("environment-host.json")
     sandbox = read("environment-sandbox.json")
     scope = read("codex-custom-agent-scope-runtime.json")
@@ -29,45 +32,96 @@ def main() -> int:
     installed = read("matlab-mcp-install.json")
     checks = host["checks"]
     version_rows = []
-    for key, label in [("python", "Python"), ("uv", "uv"), ("git", "Git"),
-                       ("gh", "GitHub CLI"), ("codex", "Codex CLI"),
-                       ("pdflatex", "pdfTeX / TeX Live"), ("gemini", "Gemini CLI")]:
-        version_rows.append(f"| {label} | {checks[key + '_version'].get('stdout', 'UNVERIFIED').splitlines()[0]} |")
+    for key, label in [
+        ("python", "Python"),
+        ("uv", "uv"),
+        ("git", "Git"),
+        ("gh", "GitHub CLI"),
+        ("codex", "Codex CLI"),
+        ("pdflatex", "pdfTeX / TeX Live"),
+        ("gemini", "Gemini CLI"),
+    ]:
+        version_rows.append(
+            f"| {label} | {checks[key + '_version'].get('stdout', 'UNVERIFIED').splitlines()[0]} |"
+        )
     latex_version = checks["latexmk_version"].get("stdout", "")
-    version_rows.append("| latexmk | " + next((line.strip() for line in latex_version.splitlines() if "Version" in line), "UNVERIFIED") + " |")
-    version_rows.append(f"| MATLAB | R2021b (9.11.0.1769968); verified by batch execution and `ver` |")
-    version_rows.append(f"| MATLAB MCP | {installed['release']} (official release asset, SHA-256 verified) |")
-    version_rows.append(f"| PowerShell | {platform['powershell_version'].get('stdout', '').strip()} |")
+    version_rows.append(
+        "| latexmk | "
+        + next(
+            (line.strip() for line in latex_version.splitlines() if "Version" in line), "UNVERIFIED"
+        )
+        + " |"
+    )
+    version_rows.append(
+        f"| MATLAB | R2021b (9.11.0.1769968); verified by batch execution and `ver` |"
+    )
+    version_rows.append(
+        f"| MATLAB MCP | {installed['release']} (official release asset, SHA-256 verified) |"
+    )
+    version_rows.append(
+        f"| PowerShell | {platform['powershell_version'].get('stdout', '').strip()} |"
+    )
     rows = []
-    for key, label in [("python_smoke", "Python execution"), ("matlab_batch", "MATLAB batch"),
-                       ("latex_compile", "latexmk PDF compilation"), ("codex_auth", "Codex ChatGPT login"),
-                       ("github_auth", "GitHub CLI authentication"), ("openalex", "OpenAlex parsed response"),
-                       ("arxiv", "arXiv parsed Atom response")]:
+    for key, label in [
+        ("python_smoke", "Python execution"),
+        ("matlab_batch", "MATLAB batch"),
+        ("latex_compile", "latexmk PDF compilation"),
+        ("codex_auth", "Codex ChatGPT login"),
+        ("github_auth", "GitHub CLI authentication"),
+        ("openalex", "OpenAlex parsed response"),
+        ("arxiv", "arXiv parsed Atom response"),
+    ]:
         rows.append(f"| {label} | {sandbox['checks'][key]['status']} | {checks[key]['status']} |")
-    rows.append(f"| MATLAB MCP evaluate_matlab_code | {mcp_sandbox['status']} | {mcp_host['status']} |")
+    rows.append(
+        f"| MATLAB MCP evaluate_matlab_code | {mcp_sandbox['status']} | {mcp_host['status']} |"
+    )
     required = ["python_smoke", "matlab_batch", "latex_compile", "codex_auth", "openalex", "arxiv"]
     host_ready = all(checks[key]["status"] == "PASS" for key in required)
-    runtime_ready = scope.get("custom_role_spawn") == "PASS" and scope.get("effort_override") == "PASS"
-    verification_complete = host_ready and runtime_ready and tests["status"] == "PASS" and mcp_sandbox["status"] == "PASS"
+    runtime_ready = (
+        scope.get("custom_role_spawn") == "PASS" and scope.get("effort_override") == "PASS"
+    )
+    verification_complete = (
+        host_ready
+        and runtime_ready
+        and tests["status"] == "PASS"
+        and mcp_sandbox["status"] == "PASS"
+    )
     source = ROOT.parent / "Telecom-Research-Lab-Plan.md"
     timestamp = dt.datetime.now(dt.timezone.utc).isoformat()
     state = {
-        "updated_at": timestamp, "plan_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
-        "active_milestone": "M0", "status": "awaiting_pi_review" if verification_complete else "verification_incomplete",
-        "verification_complete": verification_complete, "pi_approval": None,
-        "milestones": {"M0": "checks_recorded_awaiting_approval", **{f"M{i}": "not_started" for i in range(1, 13)}},
+        "updated_at": timestamp,
+        "plan_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+        "active_milestone": "M0",
+        "status": "awaiting_pi_review" if verification_complete else "verification_incomplete",
+        "verification_complete": verification_complete,
+        "pi_approval": None,
+        "milestones": {
+            "M0": "checks_recorded_awaiting_approval",
+            **{f"M{i}": "not_started" for i in range(1, 13)},
+        },
         "scientific_gates": {f"G{i}": "not_started" for i in range(1, 8)},
         "proposed_runtime": "native_windows_with_matlab_mcp",
-        "proposed_workarounds": ["Run scholarly HTTP through host-approved bounded commands under the current session policy",
-            "Run independent reviewers in separately configured read-only root sessions; verify shell enforcement before L4 acceptance"],
-        "unresolved": ["Current sandbox blocks scholarly HTTP and credential access",
+        "proposed_workarounds": [
+            "Run scholarly HTTP through host-approved bounded commands under the current session policy",
+            "Run independent reviewers in separately configured read-only root sessions; verify shell enforcement before L4 acceptance",
+        ],
+        "unresolved": [
+            "Current sandbox blocks scholarly HTTP and credential access",
             "Custom-agent sandbox default overridden by parent live policy",
             "Nested Codex child shell process creation fails with helper_unknown_error",
-            "Separate DL workstation hardware and launch route not supplied"],
+            "Separate DL workstation hardware and launch route not supplied",
+        ],
         "optional_gemini": optional["status"],
     }
-    (ROOT / "implementation-state.json").write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
-    backend = doctor.get("checks", {}).get("app_server.status", {}).get("details", {}).get("app-server version", "UNVERIFIED")
+    (ROOT / "implementation-state.json").write_text(
+        json.dumps(state, indent=2) + "\n", encoding="utf-8", newline="\n"
+    )
+    backend = (
+        doctor.get("checks", {})
+        .get("app_server.status", {})
+        .get("details", {})
+        .get("app-server version", "UNVERIFIED")
+    )
     report = f"""# M0 environment report
 
 Recorded: {timestamp}. Status: **checks recorded; PI review and workaround acceptance pending**.
@@ -83,16 +137,16 @@ host execution from the current Codex sandbox.
 {chr(10).join(version_rows)}
 | Running Codex app-server | {backend} (different from the installed CLI) |
 
-Local machine: {platform['os']['Caption']} {platform['os']['Version']}, 64-bit;
-{platform['computer']['Manufacturer']} {platform['computer']['Model']};
-{platform['computer']['TotalPhysicalMemory'] / 2**30:.1f} GiB RAM.
-GPU: {platform['gpu']['Name']}. CIM reports about 2 GiB adapter memory;
+Local machine: {platform["os"]["Caption"]} {platform["os"]["Version"]}, 64-bit;
+{platform["computer"]["Manufacturer"]} {platform["computer"]["Model"]};
+{platform["computer"]["TotalPhysicalMemory"] / 2**30:.1f} GiB RAM.
+GPU: {platform["gpu"]["Name"]}. CIM reports about 2 GiB adapter memory;
 that is not a verified dedicated VRAM budget for deep-learning work. No
 discrete CUDA GPU was identified. A separate workstation and its job launch
 route are **UNVERIFIED**, and are not needed to test the local framework.
 
 Ubuntu WSL2 is present and its Python reports
-`{platform['wsl_python'].get('stdout', '').strip()}`. `latexmk` was absent there
+`{platform["wsl_python"].get("stdout", "").strip()}`. `latexmk` was absent there
 in the initial host inspection. WSL enumeration is denied in the active
 sandbox, so switching to WSL does not establish a solution to this session's
 network/credential policy. A full WSL MATLAB/LaTeX route is not claimed tested.
@@ -119,8 +173,8 @@ network/credential policy. A full WSL MATLAB/LaTeX route is not claimed tested.
 
 ## Installed tooling and configuration
 
-- MATLAB MCP **{installed['release']}** is pinned in `.tools/matlab-mcp-server/`.
-  Its release asset SHA-256 is `{installed['sha256']}` and matched the
+- MATLAB MCP **{installed["release"]}** is pinned in `.tools/matlab-mcp-server/`.
+  Its release asset SHA-256 is `{installed["sha256"]}` and matched the
   digest supplied by the official GitHub release metadata.
 - The project `.codex/config.toml` registers MATLAB with the actual R2021b root,
   `WINDIR`/`SYSTEMROOT` forwarding, `nodesktop`, telemetry disabled and explicit
@@ -141,9 +195,9 @@ network/credential policy. A full WSL MATLAB/LaTeX route is not claimed tested.
 | --- | --- | --- |
 | Explicit `agents.m0_probe.config_file` registration | PASS | Child metadata records role `m0_probe` |
 | Native `.codex/agents/*.toml` discovery | PASS | Native probe used no explicit role registration; child metadata records `m0_probe` |
-| Requested reasoning effort | {scope['effort_override']} | Child runtime effort `{scope['observed_effort']}`; parent high, child medium |
-| Requested sandbox default | {scope['sandbox_override']} | Requested `read-only`; observed `{scope['observed_sandbox']}` |
-| Per-agent disabled skill | {scope['per_agent_skill_disable']} | Active discovery control lists `m0-scope-canary` in parent catalog and excludes it from child catalog |
+| Requested reasoning effort | {scope["effort_override"]} | Child runtime effort `{scope["observed_effort"]}`; parent high, child medium |
+| Requested sandbox default | {scope["sandbox_override"]} | Requested `read-only`; observed `{scope["observed_sandbox"]}` |
+| Per-agent disabled skill | {scope["per_agent_skill_disable"]} | Active discovery control lists `m0-scope-canary` in parent catalog and excludes it from child catalog |
 | Actual canary write denial | UNVERIFIED | Shell process failed to start before any write attempt could execute |
 | Usable nested child shell | FAIL | `helper_unknown_error: setup refresh had errors` |
 
@@ -180,7 +234,7 @@ M0 does not yet implement the agent-evaluation harness or declare it passing.
 
 ## Optional Gemini
 
-Gemini CLI {checks['gemini_version']['stdout'].strip()} and an OAuth credential
+Gemini CLI {checks["gemini_version"]["stdout"].strip()} and an OAuth credential
 file are present; no Gemini/Google API-key environment variables were set for
 the check. A one-response OAuth smoke failed with `IneligibleTierError` /
 `UNSUPPORTED_CLIENT`. The exact diagnostic is saved in `evidence/gemini-access.json`.
@@ -208,9 +262,16 @@ thesis state and research notes in the parent directory are preserved.
 Evidence and milestone state are in `docs/evidence/` and
 `implementation-state.json`; no successful research result is implied.
 """
-    (ROOT / "docs" / "environment-report.md").write_text(report, encoding="utf-8")
-    print(json.dumps({"verification_complete": verification_complete,
-                      "status": state["status"], "m0_tests": tests["status"]}))
+    (ROOT / "docs" / "environment-report.md").write_text(report, encoding="utf-8", newline="\n")
+    print(
+        json.dumps(
+            {
+                "verification_complete": verification_complete,
+                "status": state["status"],
+                "m0_tests": tests["status"],
+            }
+        )
+    )
     return 0 if verification_complete else 1
 
 

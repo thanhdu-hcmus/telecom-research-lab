@@ -1,5 +1,5 @@
-# M0 spike configuration, not yet the production agent roster.
-# Native discovery and inherited settings must be verified before M1.
+# Project agent roster and workstation MATLAB MCP configuration.
+# Effective child permissions must be audited; see docs/evaluation-runtime.md.
 [agents]
 max_threads = 3
 max_depth = 1

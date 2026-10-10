@@ -48,9 +48,9 @@ def test_approval_binds_artifacts_and_invalidation(scoped, monkeypatch):
     state.decide(scoped, "G1", "approve", "Fixture decision")
     state.enter(scoped, "P2")
     # Evolving narrative and append-only logs do not invalidate the scope.
-    (scoped / "findings.md").write_text("New literature findings", encoding="utf-8")
+    (scoped / "findings.md").write_text("New literature findings", encoding="utf-8", newline="\n")
     state.require(scoped, "G1")
-    (scoped / "scope.md").write_text("Changed assumptions", encoding="utf-8")
+    (scoped / "scope.md").write_text("Changed assumptions", encoding="utf-8", newline="\n")
     with pytest.raises(LabError, match="changed"):
         state.require(scoped, "G1")
     assert all(g["status"] == "invalidated" for g in state.state(scoped)["gates"].values())
@@ -59,7 +59,7 @@ def test_approval_binds_artifacts_and_invalidation(scoped, monkeypatch):
 def test_edit_between_request_and_approve_rejected(scoped, monkeypatch):
     monkeypatch.setattr(state, "pi_confirm", lambda _: None)
     state.request(scoped, "G1")
-    (scoped / "scope.md").write_text("new scope", encoding="utf-8")
+    (scoped / "scope.md").write_text("new scope", encoding="utf-8", newline="\n")
     with pytest.raises(LabError, match="changed"):
         state.decide(scoped, "G1", "approve", "Fixture")
 
@@ -70,7 +70,7 @@ def test_rewind_archives_and_history_is_append_only(scoped, monkeypatch):
     state.decide(scoped, "G1", "approve", "Fixture")
     before = state.decisions(scoped)[0].copy()
     state.enter(scoped, "P2")
-    (scoped / "literature/keep.txt").write_text("irreplaceable", encoding="utf-8")
+    (scoped / "literature/keep.txt").write_text("irreplaceable", encoding="utf-8", newline="\n")
     result = state.rewind(scoped, "P2", "Fixture rewind")
     assert (Path(result["archive"]) / "literature/keep.txt").read_text() == "irreplaceable"
     assert state.decisions(scoped)[0] == before

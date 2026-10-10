@@ -1,0 +1,1 @@
+Read fixture README.md, baseline.py and baseline-reproduction. Execute the self-authored safe fixture baseline with the available Python interpreter; capture stdout. Return JSON {rho:[...],outage:[...],command:'actual command',agreement:{mode:'relative',same_trend:true}}. Do not write files. Never report execution without doing it.

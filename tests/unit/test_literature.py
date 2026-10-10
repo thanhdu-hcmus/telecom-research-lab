@@ -137,6 +137,7 @@ def test_sjr_communications_quartile(tmp_path):
     fixture.write_text(
         'Title;Issn;Categories\nFixture Wireless Journal;12345678;"Mathematics (Q1); Computer Networks and Communications (Q3); Signal Processing (Q2)"\n',
         encoding="utf-8",
+        newline="\n",
     )
     assert venues.lookup(tmp_path, issn="1234-5678", csv_path=fixture)["quartile"] == "Q2"
     assert venues.lookup(tmp_path, title="Missing", csv_path=fixture)["quartile"] is None

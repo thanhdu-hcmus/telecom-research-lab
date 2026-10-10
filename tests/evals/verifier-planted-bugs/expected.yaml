@@ -1,0 +1,6 @@
+role: results_verifier
+triage:
+  B1: implementation-bug
+  B2: statistical-noise
+  B3: implementation-bug
+  B4: implementation-bug

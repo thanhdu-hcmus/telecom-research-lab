@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "scope": "Only child sessions matching previously audited reproduction fixture IDs; no unrelated session content copied",
+  "trials": [
+    {
+      "id": "repro-small-507ba1b101fa-2",
+      "execution_records": [
+        {
+          "tool": "exec",
+          "exit_zero": true,
+          "printed_curve": true
+        }
+      ],
+      "actual_execution_verified": true
+    },
+    {
+      "id": "repro-small-7b749952ee21-3",
+      "execution_records": [
+        {
+          "tool": "exec",
+          "exit_zero": true,
+          "printed_curve": true
+        }
+      ],
+      "actual_execution_verified": true
+    },
+    {
+      "id": "repro-small-dff3393d4c44-1",
+      "execution_records": [
+        {
+          "tool": "exec",
+          "exit_zero": true,
+          "printed_curve": true
+        },
+        {
+          "tool": "exec",
+          "exit_zero": false,
+          "printed_curve": true
+        }
+      ],
+      "actual_execution_verified": true
+    }
+  ]
+}

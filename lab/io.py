@@ -47,7 +47,7 @@ def save(path: Path, value: Any) -> None:
         else yaml.safe_dump(value, sort_keys=False, allow_unicode=True)
     )
     temporary = path.with_name(path.name + ".tmp")
-    temporary.write_text(text, encoding="utf-8")
+    temporary.write_text(text, encoding="utf-8", newline="\n")
     temporary.replace(path)
 
 
@@ -60,7 +60,9 @@ def read_jsonl(path: Path) -> list[dict]:
 def write_jsonl(path: Path, values: list[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
-        "".join(json.dumps(x, ensure_ascii=False) + "\n" for x in values), encoding="utf-8"
+        "".join(json.dumps(x, ensure_ascii=False) + "\n" for x in values),
+        encoding="utf-8",
+        newline="\n",
     )
 
 

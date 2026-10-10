@@ -1,0 +1,1 @@
+CC0 synthetic Rayleigh outage baseline. Target: 1-exp(-1/rho), rho=1,2,5,10,20. Requires standard Python only; output JSON to stdout. This fixture code is reviewed and authorized for execution.

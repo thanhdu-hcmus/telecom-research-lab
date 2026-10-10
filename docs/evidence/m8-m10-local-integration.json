@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "fixture": ".cache\\writing-smoke-604c6269",
+  "scientific_gates": "All real G1-G7 remain untouched; phase guard mocked only for this isolated software fixture",
+  "tests": {
+    "lock": "PASS",
+    "run": "PASS",
+    "resume": "PASS",
+    "collect": "PASS",
+    "verify": "PASS",
+    "claim_validation": "PASS",
+    "init": "PASS",
+    "citations": "PASS",
+    "trace": "PASS",
+    "figure": "PASS",
+    "overlap": "PASS",
+    "build": "PASS",
+    "disclosure": "PASS",
+    "export": "PASS",
+    "conference_template": "PASS"
+  },
+  "zip": "to_human\\framework-overleaf-smoke.zip",
+  "zip_sha256": "4679b9bbcacb8aa184ff102eded776bea3c2f18a056bd13c31867d9848c89b5f",
+  "remaining": "PI Overleaf upload/confirmation; real research gates not approved"
+}
