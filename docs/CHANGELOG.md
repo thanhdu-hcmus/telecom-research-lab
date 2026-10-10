@@ -65,3 +65,21 @@
   search and specific lookup returned HTTP 429; failures retained, synthetic
   parser fixture clearly labelled. M2 CI passed (Actions 38016085890).
 
+# M4 — literature specialists and frozen evaluations
+
+- Enabled lit_scout, paper_analyst and code_scout and their four operational
+  skills. Scientific fields require page grounding; unknown metadata may be null.
+- Added a frozen twenty-record public metadata corpus with ten RIS-NOMA key
+  records, three CC0 synthetic paper/gold-card fixtures, and six CC0 repo fixtures.
+  Golds are evaluator-only; specialists see artifact data. All originals and
+  synthetic versus recorded provenance are labelled.
+- Added deterministic graders/negative controls and cross-process eval index
+  locking. Included full text, checksums and valid cited pages are checked at G2.
+- Acceptance: 52 deterministic tests; skill validator passed all 21 contracts/
+  operational skills. L4 recall 3/3 (10/10, zero false positives), card grounding
+  3/3 (100%, no fabricated values or page refs), code discrimination 3/3,
+  gap evidence 2/3 (one malformed JSON failure retained). All child spawns and
+  read-only runtime policies audited; no synthetic research gate is real approval.
+- M3 CI passed: Actions 38016911747. Secret scanner's synthetic URL credential
+  fixture was explicitly annotated as nonsecret before its final CI pass.
+

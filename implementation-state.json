@@ -1,19 +1,19 @@
 {
   "updated_at": "2026-10-09T17:56:33.581918+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
-  "active_milestone": "M3",
+  "active_milestone": "M4",
   "status": "in_progress",
   "verification_complete": true,
   "pi_approval": {
-    "quote": "Approve M0, continue M1ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“M10 automatically, and create the new private repository.",
-    "scope": "M0 acceptance and software build M1ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“M10; no scientific gate approval"
+    "quote": "Approve M0, continue M1ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“M10 automatically, and create the new private repository.",
+    "scope": "M0 acceptance and software build M1ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“M10; no scientific gate approval"
   },
   "milestones": {
     "M0": "approved",
     "M1": "complete",
     "M2": "complete",
     "M3": "complete",
-    "M4": "not_started",
+    "M4": "complete",
     "M5": "not_started",
     "M6": "not_started",
     "M7": "not_started",
@@ -46,8 +46,10 @@
   "optional_gemini": "FAIL",
   "m1_ci": "https://github.com/thanhdu-hcmus/telecom-research-lab/actions/runs/38015477790",
   "last_acceptance": {
-    "tests": 47,
-    "live_literature": "PASS",
-    "semantic_scholar_anonymous": "HTTP 429"
+    "tests": 52,
+    "lit-recall": "3/3",
+    "card-grounding": "3/3",
+    "gap-evidence": "2/3",
+    "code-scout-discrimination": "3/3"
   }
 }

@@ -1,0 +1,1 @@
+Inspect all six repos/ README and LICENSE files and papers/ link evidence. Return JSON {"candidates":[repository-names],"rejections":[{"id":...,"reason":...}],"acceptance_status":"reproduction-pending"}. Accept paper-linked official and faithful independent implementations as candidates. Do not run code. Reject tutorials and unverifiable links, with reasons.

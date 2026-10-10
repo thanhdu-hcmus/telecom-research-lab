@@ -1,0 +1,207 @@
+role: paper_analyst
+gold_cards:
+- id: fixture:P1
+  title: Synthetic Passive RIS Power Allocation
+  authors:
+  - Synthetic Author 1
+  year: 2024
+  venue:
+    name: Synthetic Fixture Journal
+    type: journal
+  citations:
+    count: 0
+    source: synthetic fixture
+  system: null
+  channel:
+    fading: rayleigh
+  objective: sum-rate
+  constraints:
+  - power-budget
+  method:
+  - AO
+  baselines_compared: null
+  metrics:
+  - sum-rate
+  key_results: null
+  limitations_stated: null
+  future_work_stated: null
+  code: null
+  grounding:
+    title:
+    - source: papers/P1.txt
+      page: 1
+      location: fixture page 1
+    authors:
+    - source: papers/P1.txt
+      page: 1
+      location: fixture page 1
+    year:
+    - source: papers/P1.txt
+      page: 1
+      location: fixture page 1
+    venue:
+    - source: papers/P1.txt
+      page: 1
+      location: fixture page 1
+    citations:
+    - source: papers/P1.txt
+      page: 1
+      location: fixture page 1
+    channel:
+    - source: papers/P1.txt
+      page: 1
+      location: fixture page 1
+    objective:
+    - source: papers/P1.txt
+      page: 1
+      location: fixture page 1
+    constraints:
+    - source: papers/P1.txt
+      page: 1
+      location: fixture page 1
+    method:
+    - source: papers/P1.txt
+      page: 1
+      location: fixture page 1
+    metrics:
+    - source: papers/P1.txt
+      page: 1
+      location: fixture page 1
+  notes: Synthetic CC0 evaluation paper; not a published work.
+- id: fixture:P2
+  title: Synthetic NOMA Outage Evaluation
+  authors:
+  - Synthetic Author 2
+  year: 2024
+  venue:
+    name: Synthetic Fixture Journal
+    type: journal
+  citations:
+    count: 0
+    source: synthetic fixture
+  system: null
+  channel:
+    fading: rayleigh
+  objective: outage
+  constraints:
+  - power-budget
+  method:
+  - closed-form
+  baselines_compared: null
+  metrics:
+  - outage
+  key_results: null
+  limitations_stated: null
+  future_work_stated: null
+  code: null
+  grounding:
+    title:
+    - source: papers/P2.txt
+      page: 1
+      location: fixture page 1
+    authors:
+    - source: papers/P2.txt
+      page: 1
+      location: fixture page 1
+    year:
+    - source: papers/P2.txt
+      page: 1
+      location: fixture page 1
+    venue:
+    - source: papers/P2.txt
+      page: 1
+      location: fixture page 1
+    citations:
+    - source: papers/P2.txt
+      page: 1
+      location: fixture page 1
+    channel:
+    - source: papers/P2.txt
+      page: 1
+      location: fixture page 1
+    objective:
+    - source: papers/P2.txt
+      page: 1
+      location: fixture page 1
+    constraints:
+    - source: papers/P2.txt
+      page: 1
+      location: fixture page 1
+    method:
+    - source: papers/P2.txt
+      page: 1
+      location: fixture page 1
+    metrics:
+    - source: papers/P2.txt
+      page: 1
+      location: fixture page 1
+  notes: Synthetic CC0 evaluation paper; not a published work.
+- id: fixture:P3
+  title: Synthetic Discrete Surface Optimization
+  authors:
+  - Synthetic Author 3
+  year: 2024
+  venue:
+    name: Synthetic Fixture Journal
+    type: journal
+  citations:
+    count: 0
+    source: synthetic fixture
+  system: null
+  channel:
+    fading: rician
+  objective: energy-efficiency
+  constraints:
+  - power-budget
+  method:
+  - SCA
+  baselines_compared: null
+  metrics:
+  - energy-efficiency
+  key_results: null
+  limitations_stated: null
+  future_work_stated: null
+  code: null
+  grounding:
+    title:
+    - source: papers/P3.txt
+      page: 1
+      location: fixture page 1
+    authors:
+    - source: papers/P3.txt
+      page: 1
+      location: fixture page 1
+    year:
+    - source: papers/P3.txt
+      page: 1
+      location: fixture page 1
+    venue:
+    - source: papers/P3.txt
+      page: 1
+      location: fixture page 1
+    citations:
+    - source: papers/P3.txt
+      page: 1
+      location: fixture page 1
+    channel:
+    - source: papers/P3.txt
+      page: 1
+      location: fixture page 1
+    objective:
+    - source: papers/P3.txt
+      page: 1
+      location: fixture page 1
+    constraints:
+    - source: papers/P3.txt
+      page: 1
+      location: fixture page 1
+    method:
+    - source: papers/P3.txt
+      page: 1
+      location: fixture page 1
+    metrics:
+    - source: papers/P3.txt
+      page: 1
+      location: fixture page 1
+  notes: Synthetic CC0 evaluation paper; not a published work.
+accuracy_threshold: 0.85

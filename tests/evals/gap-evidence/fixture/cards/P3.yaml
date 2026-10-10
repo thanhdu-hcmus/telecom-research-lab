@@ -1,0 +1,68 @@
+id: fixture:P3
+title: Synthetic Discrete Surface Optimization
+authors:
+- Synthetic Author 3
+year: 2024
+venue:
+  name: Synthetic Fixture Journal
+  type: journal
+citations:
+  count: 0
+  source: synthetic fixture
+system: null
+channel:
+  fading: rician
+objective: energy-efficiency
+constraints:
+- power-budget
+method:
+- SCA
+baselines_compared: null
+metrics:
+- energy-efficiency
+key_results: null
+limitations_stated: null
+future_work_stated: null
+code: null
+grounding:
+  title:
+  - source: papers/P3.txt
+    page: 1
+    location: fixture page 1
+  authors:
+  - source: papers/P3.txt
+    page: 1
+    location: fixture page 1
+  year:
+  - source: papers/P3.txt
+    page: 1
+    location: fixture page 1
+  venue:
+  - source: papers/P3.txt
+    page: 1
+    location: fixture page 1
+  citations:
+  - source: papers/P3.txt
+    page: 1
+    location: fixture page 1
+  channel:
+  - source: papers/P3.txt
+    page: 1
+    location: fixture page 1
+  objective:
+  - source: papers/P3.txt
+    page: 1
+    location: fixture page 1
+  constraints:
+  - source: papers/P3.txt
+    page: 1
+    location: fixture page 1
+  method:
+  - source: papers/P3.txt
+    page: 1
+    location: fixture page 1
+  metrics:
+  - source: papers/P3.txt
+    page: 1
+    location: fixture page 1
+notes: Synthetic CC0 evaluation paper; not a published work.

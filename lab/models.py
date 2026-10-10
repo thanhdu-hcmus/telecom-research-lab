@@ -1,4 +1,5 @@
 """Single source of truth for Pydantic validation and exported JSON Schemas."""
+
 from __future__ import annotations
 
 from typing import Annotated, Any, Literal
@@ -24,10 +25,10 @@ class Evidence(Artifact):
 class PaperCard(Artifact):
     id: Text
     title: Text
-    authors: list[Text] = Field(min_length=1)
-    year: int = Field(ge=1900, le=2200)
-    venue: dict[str, Any]
-    citations: dict[str, Any]
+    authors: list[Text] | None = Field(min_length=1)
+    year: int | None = Field(ge=1900, le=2200)
+    venue: dict[str, Any] | None
+    citations: dict[str, Any] | None
     system: dict[str, Any] | None
     channel: dict[str, Any] | None
     objective: str | None
@@ -48,6 +49,21 @@ class PaperCard(Artifact):
             if name not in {"id", "grounding", "notes"} and getattr(self, name) is not None:
                 if not self.grounding.get(name):
                     raise ValueError(f"Non-null field needs evidence: {name}")
+                if name in {
+                    "system",
+                    "channel",
+                    "objective",
+                    "constraints",
+                    "method",
+                    "baselines_compared",
+                    "metrics",
+                    "key_results",
+                    "limitations_stated",
+                    "future_work_stated",
+                    "code",
+                }:
+                    if not any(e.page is not None for e in self.grounding[name]):
+                        raise ValueError(f"Scientific field needs a page reference: {name}")
         return self
 
 
@@ -121,9 +137,18 @@ class Prediction(Artifact):
 class CritiqueFinding(Artifact):
     id: Text
     severity: Literal["critical", "major", "minor"]
-    category: Literal["hidden-assumption", "sic-order-inconsistency", "unit-mismatch",
-                      "false-convexity", "unfair-baseline", "complexity-error",
-                      "novelty-overclaim", "prediction-error", "practicality", "other"]
+    category: Literal[
+        "hidden-assumption",
+        "sic-order-inconsistency",
+        "unit-mismatch",
+        "false-convexity",
+        "unfair-baseline",
+        "complexity-error",
+        "novelty-overclaim",
+        "prediction-error",
+        "practicality",
+        "other",
+    ]
     location: Text
     issue: Text
     why_it_matters: Text
@@ -164,7 +189,10 @@ class VerificationItem(Artifact):
     value: float | None
     tolerance: dict[str, Any]
     verdict: Literal["PASS", "FAIL", "INCONCLUSIVE"]
-    triage: Literal["implementation-bug", "theory-error", "approximation-gap", "statistical-noise"] | None
+    triage: (
+        Literal["implementation-bug", "theory-error", "approximation-gap", "statistical-noise"]
+        | None
+    )
     evidence_paths: list[Text] = Field(min_length=1)
 
 
@@ -232,10 +260,20 @@ class ResearchState(Artifact):
     open_questions: list[str] = Field(default_factory=list)
 
 
-MODELS = {name: model for name, model in {
-    "paper_card": PaperCard, "idea_card": IdeaCard, "assumption": Assumption,
-    "prediction": Prediction, "critique_finding": CritiqueFinding,
-    "run_manifest": RunManifest, "verification_item": VerificationItem, "claim": Claim,
-    "gate_decision": GateDecision, "deviation": Deviation, "scope": Scope,
-    "research_state": ResearchState,
-}.items()}
+MODELS = {
+    name: model
+    for name, model in {
+        "paper_card": PaperCard,
+        "idea_card": IdeaCard,
+        "assumption": Assumption,
+        "prediction": Prediction,
+        "critique_finding": CritiqueFinding,
+        "run_manifest": RunManifest,
+        "verification_item": VerificationItem,
+        "claim": Claim,
+        "gate_decision": GateDecision,
+        "deviation": Deviation,
+        "scope": Scope,
+        "research_state": ResearchState,
+    }.items()
+}

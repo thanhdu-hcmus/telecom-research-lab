@@ -48,29 +48,57 @@
       "type": "string"
     },
     "authors": {
-      "items": {
-        "minLength": 1,
-        "type": "string"
-      },
-      "minItems": 1,
-      "title": "Authors",
-      "type": "array"
+      "anyOf": [
+        {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Authors"
     },
     "year": {
-      "maximum": 2200,
-      "minimum": 1900,
-      "title": "Year",
-      "type": "integer"
+      "anyOf": [
+        {
+          "maximum": 2200,
+          "minimum": 1900,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Year"
     },
     "venue": {
-      "additionalProperties": true,
-      "title": "Venue",
-      "type": "object"
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Venue"
     },
     "citations": {
-      "additionalProperties": true,
-      "title": "Citations",
-      "type": "object"
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Citations"
     },
     "system": {
       "anyOf": [

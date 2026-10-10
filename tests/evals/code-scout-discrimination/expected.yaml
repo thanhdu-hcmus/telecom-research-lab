@@ -1,0 +1,9 @@
+role: code_scout
+candidates:
+- official-a
+- official-b
+- faithful-c
+rejections:
+- tutorial-d
+- tutorial-e
+- unverified-f

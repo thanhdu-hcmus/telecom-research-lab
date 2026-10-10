@@ -1,0 +1,1 @@
+Read papers/P1.txt through P3.txt and schemas/paper_card.schema.json. Return JSON {"cards":[...]} with one complete schema-valid card per paper. Ground every non-null field with source path/page/location. Use null when not stated; do not infer system details from the title. These are synthetic papers, not citations to real publications.

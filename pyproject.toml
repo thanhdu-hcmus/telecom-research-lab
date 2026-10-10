@@ -12,6 +12,7 @@ dependencies = [
   "httpx>=0.28,<1", "PyMuPDF>=1.25,<2", "bibtexparser>=1.4,<2",
   "numpy>=2,<3", "scipy>=1.14,<2", "sympy>=1.13,<2",
   "cvxpy>=1.6,<2", "matplotlib>=3.9,<4", "jsonschema>=4.23,<5",
+  "filelock>=3.20,<5",
 ]
 
 [project.scripts]

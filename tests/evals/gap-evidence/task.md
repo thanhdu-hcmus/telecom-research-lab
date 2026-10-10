@@ -1,0 +1,1 @@
+Read cards/P1.yaml through P3.yaml. Return JSON {"gaps":[{"id":...,"near_miss_ids":[...],"missing":...,"evidence":[...]}]}. Identify a research uncertainty supported by at least two near-miss cards. Null means not reported: calibrate the gap as missing evidence, not proof a topic has never been studied. No external search is available in this frozen fixture.

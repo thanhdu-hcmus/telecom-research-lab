@@ -76,3 +76,25 @@ requests. MATLAB MCP is verified; direct MATLAB batch succeeds on the host and
 fails during sandbox shutdown. Isolated Codex `--no-daemon` read-only sessions
 enforce reviewer write denial. No API keys or global configuration changes were
 needed for framework acceptance.
+
+## Literature specialists
+
+During an approved P2, the orchestrator explicitly spawns lit_scout,
+paper_analyst and code_scout with named input/output paths and done criteria.
+They produce the query plan, screening records, grounded cards, gap matrix,
+survey and baseline candidates. Independent fixture evaluations use actual
+Codex child spawns, then deterministic grading. They do not grant scientific
+approval or establish real-world novelty.
+
+```powershell
+uv run lab eval lit-recall --json
+uv run lab eval card-grounding --json
+uv run lab eval gap-evidence --json
+uv run lab eval code-scout-discrimination --json
+```
+
+Each evaluation saves all three trials; acceptance needs two passing trials.
+Metadata corpus receipts, gold-card provenance and synthetic repository licences
+are in tests/fixtures and docs/evidence. Raw execution transcripts stay local;
+Git retains concise grades and source hashes. Concurrent evaluations serialize
+their results-index updates with a process lock.

@@ -1,4 +1,5 @@
 """Small JSON outputs and consistent nonzero failures for agent-facing commands."""
+
 from __future__ import annotations
 
 import json
@@ -35,8 +36,11 @@ def execute(function, *args, **kwargs):
 
 
 @app.command()
-def doctor_command(full: bool = False, repo: Path | None = typer.Option(None, "--root"),
-                   json_output: bool = typer.Option(False, "--json")):
+def doctor_command(
+    full: bool = False,
+    repo: Path | None = typer.Option(None, "--root"),
+    json_output: bool = typer.Option(False, "--json"),
+):
     """Check tooling and schema alignment; --full repeats M0 integrations."""
     execute(doctor.check, repo.resolve() if repo else root(), full)
 
@@ -52,11 +56,18 @@ from lab import cli_state as cli_state  # noqa: E402
 def evaluate(name: str, json_output: bool = typer.Option(False, "--json")):
     """Run three real Codex trials and deterministic grading; uses Plus login."""
     from lab.evaluation import run
+
     execute(run, root(), name)
 
 
 @app.command("provenance")
-def provenance(project: Annotated[str, typer.Option("--project")], summary: str, file: list[str] = typer.Option([], "--file"),
-               tag: str = "ai", json_output: bool = typer.Option(False, "--json")):
+def provenance(
+    project: Annotated[str, typer.Option("--project")],
+    summary: str,
+    file: list[str] = typer.Option([], "--file"),
+    tag: str = "ai",
+    json_output: bool = typer.Option(False, "--json"),
+):
     from lab import state
+
     execute(state.provenance, state.project(root(), project), summary, file, tag)

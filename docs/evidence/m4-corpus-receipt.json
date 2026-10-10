@@ -1,0 +1,22 @@
+{
+  "retrieved": "2026-10-10T02:28:11.924264+00:00",
+  "source": "OpenAlex public metadata",
+  "queries": [
+    "\"reconfigurable intelligent surface\" AND NOMA",
+    "\"optical network\" routing"
+  ],
+  "key_ids": [
+    "doi:10.1109/lcomm.2020.2974196",
+    "doi:10.1109/jsac.2020.3007039",
+    "doi:10.1109/lcomm.2021.3091807",
+    "doi:10.1109/twc.2020.3047632",
+    "doi:10.1109/jproc.2022.3174140",
+    "doi:10.1109/tcomm.2021.3066587",
+    "doi:10.1109/twc.2022.3192211",
+    "doi:10.1109/tvt.2022.3213334",
+    "doi:10.1109/mwc.102.2100363",
+    "doi:10.1109/tvt.2021.3068774"
+  ],
+  "corpus_count": 20,
+  "gold_selection": "Ten most-cited returned titles explicitly mentioning surface/RIS/IRS and NOMA; not an exhaustive literature gold standard."
+}

@@ -1,4 +1,5 @@
 """Portable serialization, paths and checksums shared by every command."""
+
 from __future__ import annotations
 
 import hashlib
@@ -40,8 +41,11 @@ def load(path: Path, default: Any = None) -> Any:
 
 def save(path: Path, value: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    text = (json.dumps(value, indent=2, ensure_ascii=False) + "\n"
-            if path.suffix == ".json" else yaml.safe_dump(value, sort_keys=False, allow_unicode=True))
+    text = (
+        json.dumps(value, indent=2, ensure_ascii=False) + "\n"
+        if path.suffix == ".json"
+        else yaml.safe_dump(value, sort_keys=False, allow_unicode=True)
+    )
     temporary = path.with_name(path.name + ".tmp")
     temporary.write_text(text, encoding="utf-8")
     temporary.replace(path)
@@ -55,7 +59,9 @@ def read_jsonl(path: Path) -> list[dict]:
 
 def write_jsonl(path: Path, values: list[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("".join(json.dumps(x, ensure_ascii=False) + "\n" for x in values), encoding="utf-8")
+    path.write_text(
+        "".join(json.dumps(x, ensure_ascii=False) + "\n" for x in values), encoding="utf-8"
+    )
 
 
 def sha256(path: Path) -> str:
@@ -80,9 +86,13 @@ def within(base: Path, name: str | Path) -> Path:
 
 
 def git(repo: Path, *args: str, check: bool = True) -> str:
-    result = subprocess.run(["git", "-c", f"safe.directory={repo.resolve().as_posix()}",
-                             "-C", str(repo), *args], capture_output=True, text=True,
-                            timeout=60, env=os.environ.copy())
+    result = subprocess.run(
+        ["git", "-c", f"safe.directory={repo.resolve().as_posix()}", "-C", str(repo), *args],
+        capture_output=True,
+        text=True,
+        timeout=60,
+        env=os.environ.copy(),
+    )
     if check and result.returncode:
         raise LabError(result.stderr.strip() or "Git operation failed")
     return result.stdout.strip()

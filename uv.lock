@@ -2353,6 +2353,7 @@ source = { editable = "." }
 dependencies = [
     { name = "bibtexparser" },
     { name = "cvxpy" },
+    { name = "filelock" },
     { name = "httpx" },
     { name = "jsonschema" },
     { name = "matplotlib" },
@@ -2379,6 +2380,7 @@ dev = [
 requires-dist = [
     { name = "bibtexparser", specifier = ">=1.4,<2" },
     { name = "cvxpy", specifier = ">=1.6,<2" },
+    { name = "filelock", specifier = ">=3.20,<5" },
     { name = "httpx", specifier = ">=0.28,<1" },
     { name = "jsonschema", specifier = ">=4.23,<5" },
     { name = "matplotlib", specifier = ">=3.9,<4" },

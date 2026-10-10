@@ -15,9 +15,18 @@ def scoped(tmp_path):
     git(tmp_path, "config", "user.email", "fixture@example.invalid")
     state.init(tmp_path, "toy")
     path = state.project(tmp_path, "toy")
-    save(path / "scope.yaml", dict(area="Two-user NOMA", keywords=["NOMA"], inclusion=["Rayleigh"],
-                                  exclusion=["beam management"], year_from=2020, target_venues=["Q2"],
-                                  thesis_profile_reviewed=True))
+    save(
+        path / "scope.yaml",
+        dict(
+            area="Two-user NOMA",
+            keywords=["NOMA"],
+            inclusion=["Rayleigh"],
+            exclusion=["beam management"],
+            year_from=2020,
+            target_venues=["Q2"],
+            thesis_profile_reviewed=True,
+        ),
+    )
     git(tmp_path, "add", ".")
     git(tmp_path, "commit", "-m", "fixture init")
     return path
@@ -86,7 +95,9 @@ def test_forged_state_and_failed_validation_are_rejected(scoped, monkeypatch):
 
 
 def test_deviation_tty_and_provenance(scoped):
-    opened = state.deviation_open(scoped, "metric", "new idea", "change metric", "invalidates comparison")
+    opened = state.deviation_open(
+        scoped, "metric", "new idea", "change metric", "invalidates comparison"
+    )
     with pytest.raises(LabError, match="interactive"):
         state.deviation_resolve(scoped, opened["deviation"]["id"], "approved", "Fixture")
     result = state.provenance(scoped, "AI drafted scope", ["scope.md"])
@@ -105,8 +116,10 @@ def test_confirmation_mismatch(monkeypatch):
 def test_failed_commit_does_not_leave_approval(scoped, monkeypatch):
     monkeypatch.setattr(state, "pi_confirm", lambda _: None)
     state.request(scoped, "G1")
+
     def fail(*args):
         raise LabError("Commit failed")
+
     monkeypatch.setattr(state, "commit_decision", fail)
     with pytest.raises(LabError, match="Commit failed"):
         state.decide(scoped, "G1", "approve", "Fixture")

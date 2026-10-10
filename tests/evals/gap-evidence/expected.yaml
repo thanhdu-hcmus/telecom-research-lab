@@ -1,0 +1,5 @@
+role: paper_analyst
+card_ids:
+- fixture:P1
+- fixture:P2
+- fixture:P3

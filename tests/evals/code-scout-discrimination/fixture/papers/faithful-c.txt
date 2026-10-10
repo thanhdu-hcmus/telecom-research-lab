@@ -1,0 +1,1 @@
+Synthetic paper fixture:paper-faithful-c. Repository mapping: repos/faithful-c. Mathematical implementation verified in this fixture context; reproduction is still pending.

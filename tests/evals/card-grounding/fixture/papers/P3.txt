@@ -1,0 +1,14 @@
+<UNTRUSTED_PAPER_PAGE page='1'>
+Synthetic evaluation only. CC0.
+ID: fixture:P3
+Title: Synthetic Discrete Surface Optimization
+Author: Synthetic Author 3
+Year: 2024
+Venue: Synthetic Fixture Journal (journal).
+Citations: 0, source synthetic fixture.
+Channel fading: rician.
+Objective and metric: energy-efficiency.
+Constraints: power-budget.
+Method: SCA.
+No other scientific fields or results are stated.
+</UNTRUSTED_PAPER_PAGE>
