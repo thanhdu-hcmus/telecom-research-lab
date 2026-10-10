@@ -1,0 +1,363 @@
+version: 1
+project: m11-noma-qos
+phase: P2
+status: discovery_only
+scientific_selection: null
+accepted_baselines: []
+execution_authorized: false
+policy: config/baselines.yaml
+evidence: projects/m11-noma-qos/ara/staging/P2-code-scout-evidence.json
+unknown_convention: null means not stated or not verified; no points awarded.
+scope_guard: Only two-user scalar downlink, perfect CSI and ideal SIC, matched power
+  and bandwidth, identical per-block QoS and fixed equal-time OMA are eligible. Related
+  repository scores cannot override an incompatible system or objective.
+discovery_outcome: No existing code package was verified to implement this exact benchmark
+  in the bounded search. This is not proof that such code does not exist.
+candidates:
+- id: independent-matched-oma
+  status: proposed_not_implemented
+  kind: future_independent_analytic_implementation
+  purpose: The equal-time OMA reference already named in approved scope.
+  paper_ids:
+  - doi:10.1109/tvt.2017.2689000
+  paper_title: A Fair Power Allocation Approach to NOMA in Multiuser SISO Systems
+  paper_year: 2017
+  paper_doi: 10.1109/TVT.2017.2689000
+  paper_link_evidence:
+  - url: https://arxiv.org/abs/1703.09394
+    location: Abstract, publication comment and related DOI
+    supports: Fair-NOMA journal counterpart with two-user bounds and multi-user extension.
+  - source: ../ResearchLibrary/text/r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 2
+    location: Section III, System Model and Capacity
+    supports: Half-time OMA with full active-slot transmit power and unit-noise scalar
+      downlink.
+  prior_distinct_work:
+    id: arxiv:1605.00390
+    title: A New NOMA Approach for Fair Power Allocation
+    relationship_evidence: Journal preprint page 11 reference [16] cites the 2016
+      INFOCOM workshop paper.
+  full_text_equation_mapping: null
+  repository_url: null
+  commit: null
+  official_link_evidence: null
+  language: null
+  license: null
+  license_evidence: null
+  license_permits_research: null
+  last_commit: null
+  dependencies: null
+  data_requirements: null
+  data_permitted: null
+  self_contained_evidence: null
+  venue_tier: transactions_jsac
+  citations: null
+  tutorial: false
+  reproduction: {}
+  score_preview:
+    status: PASS
+    points:
+      venue: 3
+      citations: 0
+      official: 0
+      license: 0
+      maintenance: 0
+    total: 3
+    citations_per_year: 0.0
+    accepted: false
+    reproduction_verified: false
+    rejected_by_policy: true
+    acceptance_mode: score-preview-only
+    policy_rejection_explanation: No verified data-permission review; teaching/unmapped
+      lead also rejected when applicable. Scope rejection is recorded separately.
+  unresolved:
+  - Full-paper OMA normalization is located; implement and independently check its
+    exact expression later.
+  - Fair-NOMA also restricts strong-user power below one half; do not silently impose
+    that additional constraint.
+  - Record the chosen reference figure or table and its settings before reproduction.
+  - Source, dependency, license and synthetic-data review remain for P5.
+  limitation: This is an implementation proposal, not discovered software, an author
+    endorsement, a new baseline choice or a completed reproduction.
+- id: independent-qos-analytic-check
+  status: proposed_not_implemented
+  kind: future_independent_analytic_implementation
+  purpose: Candidate independent check of the scoped NOMA power-allocation calculation.
+  paper_ids:
+  - doi:10.1109/jsac.2017.2725618
+  - doi:10.1109/tvt.2017.2689000
+  paper_title: On Optimal Power Allocation for Downlink Non-Orthogonal Multiple Access
+    Systems
+  paper_year: 2017
+  paper_doi: 10.1109/JSAC.2017.2725618
+  paper_link_evidence:
+  - url: https://arxiv.org/abs/1707.06350
+    location: Abstract and Related DOI
+    supports: QoS sum-rate allocation and explicit power-order constraints; broader
+      multi-channel model.
+  - url: https://arxiv.org/abs/1703.09394
+    location: Abstract
+    supports: Two-user fair power region tied to OMA rates; not arbitrary fixed QoS.
+  - source: ../ResearchLibrary/text/r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 3
+    location: Section II and problem (3)
+    supports: Strong-first CNR order, opposite transmit-power order and QoS sum-rate
+      formulation.
+  - source: ../ResearchLibrary/text/r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 6
+    location: Section IV-B, SR Maximization with QoS
+    supports: Relevant analytical section to assess without transferring its extra
+      constraints.
+  full_text_equation_mapping: null
+  repository_url: null
+  commit: null
+  official_link_evidence: null
+  language: null
+  license: null
+  license_evidence: null
+  license_permits_research: null
+  last_commit: null
+  dependencies: null
+  data_requirements: null
+  data_permitted: null
+  self_contained_evidence: null
+  venue_tier: transactions_jsac
+  citations: null
+  tutorial: false
+  reproduction: {}
+  score_preview:
+    status: PASS
+    points:
+      venue: 3
+      citations: 0
+      official: 0
+      license: 0
+      maintenance: 0
+    total: 3
+    citations_per_year: 0.0
+    accepted: false
+    reproduction_verified: false
+    rejected_by_policy: true
+    acceptance_mode: score-preview-only
+    policy_rejection_explanation: No verified data-permission review; teaching/unmapped
+      lead also rejected when applicable. Scope rejection is recorded separately.
+  unresolved:
+  - Map equations from acquired full text and compare assumptions against approved
+    scalar scope.
+  - Do not silently add the paper's power-order constraint to this benchmark.
+  - Define and approve an independent solver or exhaustive interval check in later
+    gates.
+  - Reproduce a specified paper figure or table under a locked protocol before baseline
+    acceptance.
+  limitation: Neither analytical transfer nor an implementation exists yet. These
+    paper models cannot be equated with this project's approved assumptions solely
+    because their titles or abstracts mention QoS and sum rate.
+rejected_leads:
+- id: nokia-jspa
+  repository_url: https://github.com/nokia/subcarrier-power-allocation-noma-solver
+  commit: dcf82a71739471090a01017edae92a6a5d28aa2f
+  last_commit: '2020-06-29T17:25:57Z'
+  language: Python
+  paper_title: 'Joint Subcarrier and Power Allocation in NOMA: Optimal and Approximate
+    Algorithms'
+  paper_doi: 10.1109/TSP.2020.2982786
+  paper_year: 2020
+  paper_link_evidence: https://github.com/nokia/subcarrier-power-allocation-noma-solver#readme
+  author_link_evidence: README names Salaun, Coupechoux and Chen; source header names
+    lsalaun. No independently checked paper-author page linking this repository.
+  official_link_evidence: null
+  license: CC-BY-NC-4.0
+  license_evidence: https://github.com/nokia/subcarrier-power-allocation-noma-solver/blob/master/LICENSE
+  license_permits_research: null
+  dependencies:
+    observed:
+    - Python 3
+    - NumPy
+    - Matplotlib
+    - math
+    completeness: null
+    evidence: https://github.com/nokia/subcarrier-power-allocation-noma-solver/blob/master/channel_allocation_JSPA.py
+  data_requirements:
+    observed: README describes generated gains and numerical parameter arrays.
+    external_data_required: null
+  data_permitted: null
+  self_contained_evidence: null
+  venue_tier: transactions_jsac
+  citations: null
+  tutorial: false
+  reproduction: {}
+  score_preview:
+    status: PASS
+    points:
+      venue: 3
+      citations: 0
+      official: 0
+      license: 0
+      maintenance: 0
+    total: 3
+    citations_per_year: 0.0
+    accepted: false
+    reproduction_verified: false
+    rejected_by_policy: true
+    acceptance_mode: score-preview-only
+    policy_rejection_explanation: No verified data-permission review; teaching/unmapped
+      lead also rejected when applicable. Scope rejection is recorded separately.
+  rejected_reason: README describes multicarrier weighted sum-rate optimization and
+    user selection. It does not establish the scoped two-user per-block QoS optimization
+    or matched equal-time OMA comparison. A special-case adaptation would need independent
+    derivation and review; repository presence or score does not make it a faithful
+    benchmark implementation.
+- id: mao-rsma
+  repository_url: https://github.com/YijieLinaMao/RSMA
+  commit: ec29a9a9715b09a5805a8954bc92bcf2be5bddcb
+  last_commit: '2022-05-11T09:50:29Z'
+  language: MATLAB
+  paper_title: 'Rate-splitting multiple access for downlink communication systems:
+    bridging, generalizing, and outperforming SDMA and NOMA'
+  paper_doi: null
+  paper_year: 2018
+  paper_link_evidence: https://github.com/YijieLinaMao/RSMA#readme
+  author_link_evidence: README lists Y. Mao as first author; owner name is consistent,
+    but no independently checked author-page endorsement.
+  official_link_evidence: null
+  license: GPLv2_as_stated_in_README
+  license_evidence: https://github.com/YijieLinaMao/RSMA#license-and-referencing
+  license_permits_research: null
+  dependencies:
+    observed:
+    - MATLAB
+    - CVX
+    completeness: null
+  data_requirements:
+    observed: README refers to figure packages and channel realizations.
+    external_data_required: null
+  data_permitted: null
+  self_contained_evidence: null
+  venue_tier: null
+  citations: null
+  tutorial: false
+  reproduction: {}
+  score_preview:
+    status: PASS
+    points:
+      venue: 0
+      citations: 0
+      official: 0
+      license: 0
+      maintenance: 0
+    total: 0
+    citations_per_year: 0.0
+    accepted: false
+    reproduction_verified: false
+    rejected_by_policy: true
+    acceptance_mode: score-preview-only
+    policy_rejection_explanation: No verified data-permission review; teaching/unmapped
+      lead also rejected when applicable. Scope rejection is recorded separately.
+  rejected_reason: MISO rate-splitting and spatial precoding are outside approved
+    scalar NOMA versus equal-time OMA scope.
+- id: downlink-rl
+  repository_url: https://github.com/3seoksw/Downlink-NOMA-with-RL
+  commit: 695908e904afe928da93c4ce1c0138111e763113
+  last_commit: '2026-01-28T07:48:37Z'
+  language: Python
+  paper_title: Optimal Power Allocation and Sub-Optimal Channel Assignment for Downlink
+    NOMA Systems Using Deep Reinforcement Learning
+  paper_doi: 10.7840/kics.2025.50.3.406
+  paper_year: 2025
+  paper_link_evidence: https://github.com/3seoksw/Downlink-NOMA-with-RL#citation
+  author_link_evidence: Repository names the paper's authors; no independent author-to-repository
+    link verified.
+  official_link_evidence: null
+  license: null
+  license_evidence: null
+  license_permits_research: null
+  dependencies:
+    observed:
+    - Python 3.12.2
+    - Hydra
+    completeness: null
+    evidence: https://github.com/3seoksw/Downlink-NOMA-with-RL#to-get-started
+  data_requirements: null
+  data_permitted: null
+  self_contained_evidence: null
+  venue_tier: null
+  citations: null
+  tutorial: false
+  reproduction: {}
+  score_preview:
+    status: PASS
+    points:
+      venue: 0
+      citations: 0
+      official: 0
+      license: 0
+      maintenance: 1
+    total: 1
+    citations_per_year: 0.0
+    accepted: false
+    reproduction_verified: false
+    rejected_by_policy: true
+    acceptance_mode: score-preview-only
+    policy_rejection_explanation: No verified data-permission review; teaching/unmapped
+      lead also rejected when applicable. Scope rejection is recorded separately.
+  rejected_reason: Learning and joint channel assignment are excluded. Citing Zhu
+    et al. does not establish a faithful implementation of their QoS special case.
+    No license was verified.
+- id: uav-teaching-fork
+  repository_url: https://github.com/xiaogaogaoxiao/power-allocation-UAV-NOMA-two-users
+  commit: 055c56eb69df77e190ecb29360b2ca6a75a87fe2
+  last_commit: '2021-02-27T21:33:57Z'
+  language: null
+  implementation_language_stated: Python
+  paper_title: null
+  paper_doi: null
+  paper_year: null
+  paper_link_evidence: null
+  author_link_evidence: null
+  official_link_evidence: null
+  license: GPL-3.0
+  license_evidence: https://api.github.com/repos/xiaogaogaoxiao/power-allocation-UAV-NOMA-two-users
+  license_permits_research: null
+  dependencies:
+    observed:
+    - Python
+    - NumPy
+    - Matplotlib
+    - math
+    - random
+    completeness: null
+    evidence: https://github.com/xiaogaogaoxiao/power-allocation-UAV-NOMA-two-users#requirement
+  data_requirements:
+    observed: README describes random users and UAV paths.
+    external_data_required: null
+  data_permitted: null
+  self_contained_evidence: null
+  venue_tier: null
+  citations: null
+  tutorial: true
+  reproduction: {}
+  score_preview:
+    status: PASS
+    points:
+      venue: 0
+      citations: 0
+      official: 0
+      license: 0
+      maintenance: 0
+    total: 0
+    citations_per_year: 0
+    accepted: false
+    reproduction_verified: false
+    rejected_by_policy: true
+    acceptance_mode: score-preview-only
+    policy_rejection_explanation: No verified data-permission review; teaching/unmapped
+      lead also rejected when applicable. Scope rejection is recorded separately.
+  rejected_reason: Teaching example without verified exact paper mapping; UAV/uplink,
+    residual hardware impairment and imperfect SIC assumptions conflict with the approved
+    downlink ideal scalar benchmark. Fork is not author endorsement.
+security:
+  external_material_treated_as: untrusted_data
+  injection_alerts_observed: []
+  cloned_repositories: []
+  installed_dependencies: []
+  executed_third_party_code: false

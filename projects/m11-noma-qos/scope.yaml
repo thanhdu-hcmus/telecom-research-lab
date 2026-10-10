@@ -2,18 +2,18 @@ mode: dry-run
 workflow: ideation
 profile: projects/m11-noma-qos/profile.yaml
 area: Sum-rate maximizing power allocation for two-user downlink NOMA with QoS constraints, versus OMA
-keywords: [downlink NOMA, OMA, power allocation, sum rate, QoS, ideal SIC]
+keywords: [ downlink NOMA, OMA, power allocation, sum rate, QoS, ideal SIC ]
 inclusion:
-  - Two ordered users in an ideal scalar degraded broadcast channel
-  - Perfect instantaneous CSI and ideal successive interference cancellation
-  - Equal total power, bandwidth, channel gains and per-block QoS between schemes
-  - Explicit equal-time OMA scheduler and feasible-case comparison
-  - CPU-scale deterministic checks and independently seeded Monte Carlo validation
+- Two ordered users in an ideal scalar degraded broadcast channel
+- Perfect instantaneous CSI and ideal successive interference cancellation
+- Equal total power, bandwidth, channel gains and per-block QoS between schemes
+- Explicit equal-time OMA scheduler and feasible-case comparison
+- CPU-scale deterministic checks and independently seeded Monte Carlo validation
 exclusion:
-  - Original novelty or publication-readiness claims
-  - RIS, mmWave-specific propagation, mobility, learning and imperfect SIC in this dry run
-  - Unmatched resources, ignored infeasibility or universal NOMA dominance assertions
+- Original novelty or publication-readiness claims
+- RIS, mmWave-specific propagation, mobility, learning and imperfect SIC in this dry run
+- Unmatched resources, ignored infeasibility or universal NOMA dominance assertions
 year_from: 2014
 target_venues:
-  - Internal M11 acceptance; no submission or quartile claim
-thesis_profile_reviewed: false
+- Internal M11 acceptance; no submission or quartile claim
+thesis_profile_reviewed: true

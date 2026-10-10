@@ -1,5 +1,10 @@
 # G1 review — M11 toy benchmark
 
+Historical preparation packet. The PI completed this review and approved G1 on
+2026-10-10 at 17:22:02 UTC, recorded in commit `2ea3b17`. The exact decision note
+is “Scope and synthetic profile reviewed; G1 report usable”. The instructions
+below describe the completed handoff and do not request another G1 decision.
+
 ## Decision needed now
 
 Accept or revise the proposed scope and synthetic benchmark profile. Also rate
@@ -55,7 +60,8 @@ whose checks fail. The current intentional failure is the unreviewed flags.
 P1 entered through the CLI. Scope/profile and handoffs prepared by the main
 agent; no specialist spawns, literature retrievals or experiments for M11 yet.
 No untrusted paper/repository content was processed for this scope draft.
-G1 pending, G2–G7 not started, no deviations or PI decisions recorded.
+The statements in this section describe the original P1 draft. Current state:
+G1 approved, P2 started, G2–G7 not yet approved; no deviations are open.
 
 After G1 is recorded, the next authorized work is P2's bounded literature review.
 M12's reference-paper choice is needed later, not to start this benchmark.

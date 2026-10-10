@@ -1,0 +1,35 @@
+{
+  "recorded_at": "2026-10-10T17:40:15.523791+00:00",
+  "phase": "P2",
+  "actual_spawns": [
+    {
+      "task": "/root/lit_scout",
+      "role_contract": ".codex/agents/lit_scout.toml",
+      "brief": "ara/staging/P2-lit-scout.md",
+      "purpose": "author specialist",
+      "status": "completed"
+    },
+    {
+      "task": "/root/paper_analyst",
+      "role_contract": ".codex/agents/paper_analyst.toml",
+      "brief": "ara/staging/P2-paper-analyst.md",
+      "purpose": "author specialist",
+      "status": "completed"
+    },
+    {
+      "task": "/root/code_scout",
+      "role_contract": ".codex/agents/code_scout.toml",
+      "brief": "ara/staging/P2-code-scout.md",
+      "purpose": "author specialist",
+      "status": "completed"
+    }
+  ],
+  "concurrency": "Three named author specialists maximum, depth one; no subagents.",
+  "permission_context": "Inherited parent workspace-write session with managed shell failures requiring narrowly scoped host approvals. Author handoffs, not enforced read-only reviewer sessions.",
+  "reviews": "Parent source and handoff review; no independent scientific reviewer or PI decision claimed.",
+  "experimental_runs": 0,
+  "third_party_code_execution": false,
+  "validation_receipt": "ara/staging/P2-validation.json",
+  "negative_outcomes": "ara/staging/P2-orchestrator-review.md and literature/retrieval-report.json",
+  "gate_request": "G2 runtime checks passed; scientific decision pending."
+}

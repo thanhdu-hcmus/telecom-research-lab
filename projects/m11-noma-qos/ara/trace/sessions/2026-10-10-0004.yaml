@@ -1,0 +1,23 @@
+id: 2026-10-10-0004
+timestamp: '2026-10-10T17:44:00.875111+00:00'
+phase: P2
+summary: Final P2 G2 packet refreshed after LF portability correction; scientific
+  content and approved G1 unchanged. Session 0003 exact evidence archived externally
+  with verified checksums. Six cards and 127 references validated; three author specialists
+  completed; G2 scientific decision pending.
+provenance: ai
+evidence:
+  research-state.yaml: 5f739cd05518ba6f64dc7557074bc093ec7813ebf18fe468d03838a77d92e321
+  to_human/G2-report.md: 4de81245797a8590d5ccea6d67731db9286d8b3f113a6183b967416af9ecc403
+  to_human/G2-review.md: 17a616e2619ccfadb2048d3ab3df74aeb7f571ae7d075aca37bee1366128ae0c
+  to_human/G2-spot-check.md: 9d815cc64fa076d9492c315bc17a48b9914347ad8f8d82e866b1a20c166e5e4c
+  ara/staging/P2-effort.json: 25c99cc9183939777e05ace7f0e64a884af9a620af91461186521c1ec1eeb400
+  ara/staging/P2-validation.json: b04da7e19db44110eba2796ba096e2012f00e1ebf7095eaaa2617c3cc0513acb
+  ara/staging/P2-orchestrator-review.md: fe9c6f7a14451578f783faf42f8dcda05c90e9a9485834aed511bef27eaa8a49
+  ara/staging/P2-normalization.json: 976d3aeeab78626d40128aedef306cfaddc9a39c2f4c398ee1946d814d40fd9e
+  ara/staging/P2-repository-check.json: 21d70fa81496c143514de31828d4d502270dfa6dd8d1857757220150b5b8438b
+  literature/coverage.md: f413414d691e3bd082c36171bc39f289365d80dedc35dae11dcc2dfa18160362
+  literature/retrieval-report.json: 169ec4f00705b46c98b7164101d65ce0a5fc7f5ae47cb709e51f22fee1047d7f
+  literature/survey.md: 8d82ac2733c32c4c0b883901bba1565d00e0bc0a1ac6914b3d2f66bb44a8563d
+  literature/gaps.md: 04b649fddf1683efb15e8a149e2ae11517262c3765232efaaa23dcdaa161952e
+  baselines/candidates.yaml: 6390a2fbe1bf15b601c5fc5c5ab068703b0b44dda149e852f6539a61807d9083

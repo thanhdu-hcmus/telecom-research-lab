@@ -1,0 +1,143 @@
+id: doi:10.48550/arxiv.1412.2799
+title: Impact of User Pairing on 5G Non-Orthogonal Multiple Access
+authors:
+- Zhiguo Ding
+- Pingzhi Fan
+- H. Vincent Poor
+year: 2014
+venue:
+  name: arXiv (Cornell University)
+  metadata_source: retrieved candidate record; manuscript version distinguished in notes
+citations: null
+system:
+  direction: downlink
+  users: two ordered users selected from M users
+  access: F-NOMA and cognitive-radio-inspired CR-NOMA
+channel:
+  model: ordered scalar Rayleigh fading channel gains
+  sic: strong receiver cancels weak message in rate model
+  power_adaptation: F-NOMA fixed; CR-NOMA channel-dependent primary SINR protection
+objective: Analyze pairing effects on relative sum rates, individual rates, outage and ergodic rates
+  for fixed-power and primary-QoS-protecting NOMA.
+constraints:
+- F-NOMA squared amplitude coefficients sum to one, with weak-user coefficient at least strong-user
+  coefficient.
+- CR-NOMA limits strong-user power by the weak-user targeted SINR; allocation can be zero.
+method:
+- Rayleigh order-statistic exact and high-SNR analysis.
+- Monte Carlo comparisons across different user pairs.
+baselines_compared:
+- Equal-time TDMA for F-NOMA, with one-half rate factor and shared transmit SNR.
+- Primary-user-only orthogonal service for the CR-NOMA sum-rate comparison.
+metrics:
+- Probability NOMA sum rate is below OMA
+- Individual-rate comparison probabilities
+- Strong-user outage probability
+- Ergodic additional rate
+key_results:
+- F-NOMA sum-rate loss probability decreases at high SNR in the analyzed Rayleigh model, but finite-SNR
+  loss events are included.
+- Fixed-power NOMA can disadvantage the weaker individual rate at high SNR.
+- CR-NOMA strong-user admission and outage are limited by the weak-user QoS protection.
+limitations_stated:
+- A poor weak-user channel and high SINR threshold can consume all available power and leave the strong
+  user unserved.
+future_work_stated:
+- Use the analysis as criteria for distributed dynamic user pairing or grouping.
+code: null
+grounding:
+  title:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 1
+    location: First-page title and author block
+  authors:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 1
+    location: First-page title and author block
+  year:
+  - source: projects/m11-noma-qos/literature/candidates.jsonl
+    page: null
+    location: doi:10.48550/arxiv.1412.2799; year and source_ids/query_evidence; not a verified final
+      publication version
+  venue:
+  - source: projects/m11-noma-qos/literature/candidates.jsonl
+    page: null
+    location: doi:10.48550/arxiv.1412.2799; venue and source_ids/query_evidence; not a verified final
+      publication version
+  system:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 1
+    location: Introduction pairing description
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 2
+    location: Section II model
+  channel:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 2
+    location: Section II equations (1)–(3)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 4
+    location: Section III equations (20)–(21)
+  objective:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 2
+    location: Section II-A and contribution summary
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 4
+    location: Section III and sum-rate discussion
+  constraints:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 2
+    location: Section II model
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 4
+    location: Equations (20)–(21)
+  method:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 2
+    location: Theorem 1
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 4
+    location: Theorem 2
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 6
+    location: Section IV numerical studies
+  baselines_compared:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 2
+    location: Equation (3)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 4
+    location: Equations (23)–(24)
+  metrics:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 2
+    location: Equation (4)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 3
+    location: Equations (12)–(18)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 4
+    location: Equations (22) and (25)
+  key_results:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 2
+    location: Theorem 1
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 3
+    location: Equations (15) and (18)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 4
+    location: Theorem 2 discussion
+  limitations_stated:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 4
+    location: Theorem 2 discussion and equation (21)
+  future_work_stated:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json
+    page: 8
+    location: Concluding paragraph before references
+notes: Acquired arXiv v1 dated December 2014; do not conflate with the later journal paper whose title
+  adds Downlink Transmissions. The DOI identifies the arXiv record. CR-NOMA primary-only comparison
+  is different from the approved equal-time OMA reference and does not supply both-user arbitrary-QoS
+  feasibility accounting.

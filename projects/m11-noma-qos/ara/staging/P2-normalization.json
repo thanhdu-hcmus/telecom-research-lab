@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-10T17:42:40.980110+00:00",
+  "reason": "Git index LF conversion would change ten pending G2 bound hashes; normalized P2 authored text before refreshed gate request. No scientific content or G1 binding changed.",
+  "historical_session": "2026-10-10-0003",
+  "archived_original_evidence": [
+    {
+      "path": "research-state.yaml",
+      "sha256": "2abb1bb2edf65aff0db79d6bca69ba12ccf25fc4f4b1bc944d7fe93338502e48",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P2-before-LF\\research-state.yaml"
+    },
+    {
+      "path": "to_human/G2-report.md",
+      "sha256": "07de601ebd40489f98e5f7a7cccfe62e40fca97f8214a0fd9a9d02b0759b022a",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P2-before-LF\\to_human\\G2-report.md"
+    },
+    {
+      "path": "to_human/G2-review.md",
+      "sha256": "17a616e2619ccfadb2048d3ab3df74aeb7f571ae7d075aca37bee1366128ae0c",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P2-before-LF\\to_human\\G2-review.md"
+    },
+    {
+      "path": "to_human/G2-spot-check.md",
+      "sha256": "9a6ce4a44f00f5c412e5d11cde2e8b57f85a06bd613ac86ea58c8c6e46ace360",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P2-before-LF\\to_human\\G2-spot-check.md"
+    },
+    {
+      "path": "ara/staging/P2-effort.json",
+      "sha256": "25c99cc9183939777e05ace7f0e64a884af9a620af91461186521c1ec1eeb400",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P2-before-LF\\ara\\staging\\P2-effort.json"
+    },
+    {
+      "path": "ara/staging/P2-validation.json",
+      "sha256": "767211488684233657e42374c9365b11ef6246636bdb787a0fe6c6600af00eb2",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P2-before-LF\\ara\\staging\\P2-validation.json"
+    },
+    {
+      "path": "ara/staging/P2-orchestrator-review.md",
+      "sha256": "71f6c10c391de774c91ec30c450734aa25526fb800f8b53c78d3ab7316421a29",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P2-before-LF\\ara\\staging\\P2-orchestrator-review.md"
+    },
+    {
+      "path": "literature/coverage.md",
+      "sha256": "8afd9633a6d4e470ecfe8a1efd1824203f4fd0b3cad522b50fd39bdf09d79db6",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P2-before-LF\\literature\\coverage.md"
+    },
+    {
+      "path": "literature/retrieval-report.json",
+      "sha256": "169ec4f00705b46c98b7164101d65ce0a5fc7f5ae47cb709e51f22fee1047d7f",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P2-before-LF\\literature\\retrieval-report.json"
+    },
+    {
+      "path": "literature/survey.md",
+      "sha256": "357114f79817c0bf98137de6edf948d9ae6269ee24d0259d52c5c4af92b62ce7",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P2-before-LF\\literature\\survey.md"
+    },
+    {
+      "path": "literature/gaps.md",
+      "sha256": "60e6e86ad0d2b69ce86e5a058e1ca96c244bef39a9b62faf9a460adeb41799a1",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P2-before-LF\\literature\\gaps.md"
+    },
+    {
+      "path": "baselines/candidates.yaml",
+      "sha256": "6390a2fbe1bf15b601c5fc5c5ab068703b0b44dda149e852f6539a61807d9083",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P2-before-LF\\baselines\\candidates.yaml"
+    }
+  ],
+  "normalized_files": [
+    {
+      "path": "projects/m11-noma-qos/ara/staging/P2-code-scout-evidence.json",
+      "before_sha256": "db35092afab7ef2aef430c22a23f9214d82c34c027f46551e940fac6fc48c714",
+      "after_sha256": "0c4d453dfe48d8df869bb097a44785600a69deaa3c6eb2707eb6866ba835b4e9"
+    },
+    {
+      "path": "projects/m11-noma-qos/ara/staging/P2-paper-analyst-evidence.json",
+      "before_sha256": "c8f779bec35e4723ecaf228b00905a83a339ebe2e0d1c0e77fcf45641a650866",
+      "after_sha256": "0b0661cab49f7e0947f8588ef0dab81dc637768635717b642216144fd43eb2e3"
+    },
+    {
+      "path": "projects/m11-noma-qos/baselines/discovery.md",
+      "before_sha256": "c13f252c8389cf6a88972018f8a0a1ceb41508d05af1f1c6d921b1edd0ec9bcb",
+      "after_sha256": "e51bf18631598a4b7f4fde4f502e204483934ccd3bce7079098babaf2347ef4c"
+    },
+    {
+      "path": "projects/m11-noma-qos/literature/cards/r_arxiv_1504_07751_536e29b9bda8.yaml",
+      "before_sha256": "02d73cc2527c7b2f2d9dbe6b91d305916bf342638094d020e95ea5f1d22dfdf7",
+      "after_sha256": "d4858de6d8453e9ffabcb485a0f9814d9b912c680981ded60a5e2327ec915432"
+    },
+    {
+      "path": "projects/m11-noma-qos/literature/cards/r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.yaml",
+      "before_sha256": "e9bd48ab2a947dbeb8b9c9b1fbd90825265e0008a3fadb98946d2afe2225be26",
+      "after_sha256": "42cd35cc4c8baae09c8c119b1310aca56e60c73f5cbe1c42072842febb06383f"
+    },
+    {
+      "path": "projects/m11-noma-qos/literature/cards/r_doi_10_1109_icc_2018_8422366_80611aa7eda1.yaml",
+      "before_sha256": "ecfecf0d90f407e4a2e07a1031e061cd7200699a6a840d875997694c41af0ccc",
+      "after_sha256": "24fcbd52fa7b145c32705e3006063eb4286aa7a82c10b6c8874a94324881a2a2"
+    },
+    {
+      "path": "projects/m11-noma-qos/literature/cards/r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.yaml",
+      "before_sha256": "b4d3212ab51ceb4a3c3b2413a1857cc9e676635f0fa7b12de02fe3b8d8a443df",
+      "after_sha256": "e7e461610f9ad1326ae53bd6701a01491d50e8d351f8a9b62c5b88a8c4a40a07"
+    },
+    {
+      "path": "projects/m11-noma-qos/literature/cards/r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.yaml",
+      "before_sha256": "35b410e76a19d0cf0bf3108354499239dd977db4e73d7245ee52e9d5585c11e2",
+      "after_sha256": "1d17cbd898c5b477dff7420190e2f0b51b6a6e41d693a249e4c87e9f38da181b"
+    },
+    {
+      "path": "projects/m11-noma-qos/literature/cards/r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.yaml",
+      "before_sha256": "4660a19dc0e39cb5d25eaf411cd8f40337b586a263d6365016aeb592e2703036",
+      "after_sha256": "ec0c5ae2bfc24e4b77f16c3c8a0a9ad6619b9eff8ac2bc95a6d9290ded7efe94"
+    },
+    {
+      "path": "projects/m11-noma-qos/literature/coverage.md",
+      "before_sha256": "8afd9633a6d4e470ecfe8a1efd1824203f4fd0b3cad522b50fd39bdf09d79db6",
+      "after_sha256": "f413414d691e3bd082c36171bc39f289365d80dedc35dae11dcc2dfa18160362"
+    },
+    {
+      "path": "projects/m11-noma-qos/literature/gap-matrix.csv",
+      "before_sha256": "04187ecc4eea926264a3fea17286146a16a7443a91866a86c5702a5cb377699a",
+      "after_sha256": "5a586ecb784cadd60398a1439b05c155f10538789d7986b9dc039732e1c6790d"
+    },
+    {
+      "path": "projects/m11-noma-qos/literature/gaps.md",
+      "before_sha256": "60e6e86ad0d2b69ce86e5a058e1ca96c244bef39a9b62faf9a460adeb41799a1",
+      "after_sha256": "04b649fddf1683efb15e8a149e2ae11517262c3765232efaaa23dcdaa161952e"
+    },
+    {
+      "path": "projects/m11-noma-qos/literature/survey.md",
+      "before_sha256": "357114f79817c0bf98137de6edf948d9ae6269ee24d0259d52c5c4af92b62ce7",
+      "after_sha256": "8d82ac2733c32c4c0b883901bba1565d00e0bc0a1ac6914b3d2f66bb44a8563d"
+    },
+    {
+      "path": "projects/m11-noma-qos/to_human/G2-report.md",
+      "before_sha256": "07de601ebd40489f98e5f7a7cccfe62e40fca97f8214a0fd9a9d02b0759b022a",
+      "after_sha256": "dd712e7c013b710359efb49f21c21c0db08f56cd148e34c745e97f27ee759400"
+    }
+  ],
+  "g1_binding": "PASS"
+}

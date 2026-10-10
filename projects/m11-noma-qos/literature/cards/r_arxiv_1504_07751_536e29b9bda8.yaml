@@ -1,0 +1,142 @@
+id: arxiv:1504.07751
+title: 'NOMA: An Information Theoretic Perspective'
+authors:
+- Peng Xu
+- Zhiguo Ding
+- Xuchu Dai
+- H. Vincent Poor
+year: 2015
+venue:
+  name: arXiv
+  metadata_source: retrieved candidate record; manuscript version distinguished in notes
+citations: null
+system:
+  direction: downlink
+  antennas: one transmitter antenna and one antenna at each receiver
+  users: 2
+  access: power-domain superposition; SIC at stronger-channel receiver
+channel:
+  model: ordered scalar Gaussian broadcast channel; Rayleigh order statistics for probability study
+  noise: unit variance additive Gaussian noise
+  sic: ideal cancellation in achievable-rate formulas
+  power_adaptation: fixed power split for probability study; dynamic instantaneous CSI adaptation
+    discussed as future work
+  csi: null
+objective: Characterize NOMA versus TDMA rate regions, individual rates and sum rates, and probabilities
+  of relative performance for paired users.
+constraints:
+- Power fractions sum to one and are nonnegative; paper additionally requires weak-user power fraction
+  at least the strong-user fraction.
+- TDMA time fractions sum to one; equal halves are used in the probability derivation.
+method:
+- Rate-region geometry and monotonicity/concavity propositions.
+- Rayleigh order-statistic probability analysis and Monte Carlo comparison.
+baselines_compared:
+- TDMA with generic time fractions in the region discussion and equal-length slots in probability
+  examples.
+metrics:
+- Individual achievable rates
+- Sum achievable rate
+- Probabilities of four relative-rate events
+key_results:
+- NOMA boundary concavity and increasing sum rate with the stronger-user rate support conditional
+  comparisons.
+- The fixed-power analysis explicitly includes an event in which NOMA sum rate is below TDMA sum rate;
+  arbitrary fixed-power NOMA dominance is not established.
+- Selected large channel-separation examples increase the probability that both NOMA individual rates
+  exceed equal-time TDMA.
+limitations_stated:
+- Fixed power allocation is used for simplicity; dynamic instantaneous-CSI allocation could enlarge
+  the ergodic rate region with added complexity.
+future_work_stated:
+- Dynamic power allocation based on instantaneous CSI.
+- Connecting MIMO NOMA to information theoretic MIMO broadcasting.
+code: null
+grounding:
+  title:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 1
+    location: First-page title and author block
+  authors:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 1
+    location: First-page title and author block
+  year:
+  - source: projects/m11-noma-qos/literature/candidates.jsonl
+    page: null
+    location: arxiv:1504.07751; year and source_ids/query_evidence; not a verified final publication
+      version
+  venue:
+  - source: projects/m11-noma-qos/literature/candidates.jsonl
+    page: null
+    location: arxiv:1504.07751; venue and source_ids/query_evidence; not a verified final publication
+      version
+  system:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 1
+    location: Section I; Gaussian broadcast channel, equations (1)–(2)
+  channel:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 1
+    location: Section I; equations (1)–(2)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 2
+    location: Section III-B; equation (19)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 3
+    location: Section III-B opening fixed-power assumption
+  objective:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 2
+    location: Section III-A; equations (5)–(18)
+  constraints:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 1
+    location: Equation (1) and NOMA region power-order restriction
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 2
+    location: Equations (5)–(6)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 3
+    location: Lemma 1 and naive TDMA assumption
+  method:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 2
+    location: Propositions 1–2 and Section III-B
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 4
+    location: Section IV; Figures 3–5
+  baselines_compared:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 2
+    location: Equation (6)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 3
+    location: Lemma 1 equal-half reference
+  metrics:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 2
+    location: Equations (11)–(18)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 4
+    location: Figures 3–5
+  key_results:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 2
+    location: Propositions 1–2 and event epsilon_4, equations (14)/(18)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 4
+    location: Remarks and Figures 3–5
+  limitations_stated:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 3
+    location: Section III-B opening paragraph
+  future_work_stated:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_arxiv_1504_07751_536e29b9bda8.json
+    page: 4
+    location: Section V conclusions
+notes: Retrieved arXiv v2 manuscript dated May 2015; year is preprint metadata, not verified journal
+  year. Not an arbitrary fixed-QoS constrained optimizer. Ideal SIC is inferred from the rate expressions,
+  not a hardware validation. Unknown code and citation count are null, not evidence of absence. CSI
+  availability for the probability model is not explicitly resolved here (null); fixed power allocation
+  describes adaptation, not the presence or absence of CSI.

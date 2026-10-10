@@ -1,0 +1,172 @@
+{
+  "retrieved_at": "2026-10-10T17:30:38.573904+00:00",
+  "method": "Credential-free public GitHub REST metadata GET; no repository cloned or executed.",
+  "records": [
+    {
+      "owner_repo": "nokia/subcarrier-power-allocation-noma-solver",
+      "repository": {
+        "url": "https://api.github.com/repos/nokia/subcarrier-power-allocation-noma-solver",
+        "default_branch": "master",
+        "language": "Python",
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        },
+        "archived": false,
+        "html_url": "https://github.com/nokia/subcarrier-power-allocation-noma-solver",
+        "fork": false,
+        "parent": null
+      },
+      "commit": {
+        "url": "https://api.github.com/repos/nokia/subcarrier-power-allocation-noma-solver/commits/HEAD",
+        "sha": "dcf82a71739471090a01017edae92a6a5d28aa2f",
+        "html_url": "https://github.com/nokia/subcarrier-power-allocation-noma-solver/commit/dcf82a71739471090a01017edae92a6a5d28aa2f",
+        "committer_date": "2020-06-29T17:25:57Z"
+      }
+    },
+    {
+      "owner_repo": "YijieLinaMao/RSMA",
+      "repository": {
+        "url": "https://api.github.com/repos/YijieLinaMao/RSMA",
+        "default_branch": "main",
+        "language": "MATLAB",
+        "license": null,
+        "archived": false,
+        "html_url": "https://github.com/YijieLinaMao/RSMA",
+        "fork": false,
+        "parent": null
+      },
+      "commit": {
+        "url": "https://api.github.com/repos/YijieLinaMao/RSMA/commits/HEAD",
+        "sha": "ec29a9a9715b09a5805a8954bc92bcf2be5bddcb",
+        "html_url": "https://github.com/YijieLinaMao/RSMA/commit/ec29a9a9715b09a5805a8954bc92bcf2be5bddcb",
+        "committer_date": "2022-05-11T09:50:29Z"
+      }
+    },
+    {
+      "owner_repo": "3seoksw/Downlink-NOMA-with-RL",
+      "repository": {
+        "url": "https://api.github.com/repos/3seoksw/Downlink-NOMA-with-RL",
+        "default_branch": "main",
+        "language": "Python",
+        "license": null,
+        "archived": false,
+        "html_url": "https://github.com/3seoksw/Downlink-NOMA-with-RL",
+        "fork": false,
+        "parent": null
+      },
+      "commit": {
+        "url": "https://api.github.com/repos/3seoksw/Downlink-NOMA-with-RL/commits/HEAD",
+        "sha": "695908e904afe928da93c4ce1c0138111e763113",
+        "html_url": "https://github.com/3seoksw/Downlink-NOMA-with-RL/commit/695908e904afe928da93c4ce1c0138111e763113",
+        "committer_date": "2026-01-28T07:48:37Z"
+      }
+    },
+    {
+      "owner_repo": "xiaogaogaoxiao/power-allocation-UAV-NOMA-two-users",
+      "repository": {
+        "url": "https://api.github.com/repos/xiaogaogaoxiao/power-allocation-UAV-NOMA-two-users",
+        "default_branch": "main",
+        "language": null,
+        "license": {
+          "key": "gpl-3.0",
+          "name": "GNU General Public License v3.0",
+          "spdx_id": "GPL-3.0",
+          "url": "https://api.github.com/licenses/gpl-3.0",
+          "node_id": "MDc6TGljZW5zZTk="
+        },
+        "archived": false,
+        "html_url": "https://github.com/xiaogaogaoxiao/power-allocation-UAV-NOMA-two-users",
+        "fork": true,
+        "parent": "limabrena/uavnoma"
+      },
+      "commit": {
+        "url": "https://api.github.com/repos/xiaogaogaoxiao/power-allocation-UAV-NOMA-two-users/commits/HEAD",
+        "sha": "055c56eb69df77e190ecb29360b2ca6a75a87fe2",
+        "html_url": "https://github.com/xiaogaogaoxiao/power-allocation-UAV-NOMA-two-users/commit/055c56eb69df77e190ecb29360b2ca6a75a87fe2",
+        "committer_date": "2021-02-27T21:33:57Z"
+      }
+    }
+  ],
+  "search_query_inventory": "projects/m11-noma-qos/baselines/discovery.md: Search performed (15 code-discovery queries)",
+  "browser_limitations": [
+    {
+      "url": "https://users.soe.ucsc.edu/~hamid/",
+      "outcome": "Inaccessible via web tool; no author code evidence obtained."
+    },
+    {
+      "urls": [
+        "https://github.com/nokia/subcarrier-power-allocation-noma-solver/commits/master/",
+        "https://github.com/YijieLinaMao/RSMA/commits/master/",
+        "https://github.com/3seoksw/Downlink-NOMA-with-RL/commits/main/"
+      ],
+      "outcome": "Browser cache misses. Credential-free REST metadata GET succeeded afterwards; RSMA REST confirmed default branch main."
+    }
+  ],
+  "documentation": {
+    "provider": "Context7",
+    "library_id": "/websites/github_en_rest",
+    "concept": "Public repository metadata and GET /repos/{owner}/{repo}/commits/{ref}",
+    "primary_docs": [
+      "https://docs.github.com/en/rest/commits/commits",
+      "https://docs.github.com/en/rest/repos/repos"
+    ]
+  },
+  "paper_metadata_checked": [
+    {
+      "id": "doi:10.1109/tvt.2017.2689000",
+      "url": "https://arxiv.org/abs/1703.09394",
+      "location": "Title/authors, journal acceptance comment, related DOI"
+    },
+    {
+      "id": "doi:10.1109/jsac.2017.2725618",
+      "url": "https://arxiv.org/abs/1707.06350",
+      "location": "Title/authors, QoS/power-order abstract and related DOI"
+    },
+    {
+      "id": "arxiv:1605.00390",
+      "url": "https://arxiv.org/abs/1605.00390",
+      "location": "Title/authors and conference comment; distinct prior work referenced by journal paper."
+    }
+  ],
+  "full_text_locations_checked": [
+    {
+      "id": "doi:10.1109/tvt.2017.2689000",
+      "cache": "../ResearchLibrary/text/r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json",
+      "pages": [
+        2,
+        11
+      ],
+      "locations": [
+        "Section III, OMA normalization and NOMA Eqs. (2)-(3), strong-user power restriction",
+        "Reference [16], prior conference work"
+      ]
+    },
+    {
+      "id": "doi:10.1109/jsac.2017.2725618",
+      "cache": "../ResearchLibrary/text/r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json",
+      "pages": [
+        3,
+        6,
+        7
+      ],
+      "locations": [
+        "Section II, power-order constraint and QoS problem (3)",
+        "Section IV-B, QoS sum-rate allocation",
+        "Compatibility caveats; no formula transferred"
+      ]
+    }
+  ],
+  "negative_local_trials": [
+    {
+      "action": "Initial cache excerpt print",
+      "outcome": "Console cp1252 UnicodeEncodeError on ligature; repeated with UTF-8 output, successful. No source artifact modified."
+    }
+  ],
+  "external_material_untrusted": true,
+  "executed_third_party_code": false,
+  "injection_alerts_observed": []
+}

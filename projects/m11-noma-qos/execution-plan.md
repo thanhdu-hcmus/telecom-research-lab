@@ -1,6 +1,7 @@
 # M11 handoffs and acceptance
 
-Status: P1 scope preparation; G1 review required. Later phases below are planned.
+Status: G1 approved by the PI on 2026-10-10; P2 entered through the CLI.
+P2 artifacts are prepared for G2 review. P3–P7 remain planned.
 
 | Phase | Planned work | Required PI action |
 |---|---|---|
@@ -18,13 +19,13 @@ Never substitute software-fixture gate mocks for PI decisions in this project.
 
 ## PI report usability record
 
-Pending at every gate. At approval, include the actual usability judgment and
+At approval, include the actual usability judgment and
 any issues in the PI's explanatory note. This table is updated only from recorded
 decisions; no rating is inferred from general permission to continue.
 
 | Gate | PI usability rating | Decision evidence |
 |---|---|---|
-| G1 | pending | none |
+| G1 | usable | PI decision `2ea3b17`; note: “Scope and synthetic profile reviewed; G1 report usable” |
 | G2 | pending | none |
 | G3 | pending | none |
 | G4 | pending | none |

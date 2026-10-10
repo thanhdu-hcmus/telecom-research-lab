@@ -1,0 +1,128 @@
+id: doi:10.1109/icc.2018.8422366
+title: On the Power Allocation Limits for Downlink Multi-user NOMA with QoS
+authors:
+- José Armando Oviedo
+- Hamid R. Sadjadpour
+year: 2018
+venue:
+  name: Proceedings of the International Conference on Communications (ICC), 2018
+  metadata_source: retrieved candidate record; manuscript version distinguished in notes
+citations: null
+system:
+  direction: downlink
+  users: K users on one beam
+  antennas: M transmit and N receive antennas reduced to ordered effective scalar gains
+  access: NOMA superposition and sequential decoding
+channel:
+  model: composite channel Gn=u_n^H H_n v with isotropic transmit beam and maximum-ratio receive combining
+  ordering: ascending effective channel power gains
+  sic: decoding all earlier messages is part of the success condition
+objective: Characterize power allocation limits and fixed-power coefficients for common minimum QoS
+  and compare decoding/outage events with equal-slot OMA.
+constraints:
+- All power fractions sum to one.
+- All users and their SIC decoding stages must meet the same target rate R0.
+- Interference coefficients must satisfy necessary limits; satisfying a necessary limit alone does
+  not guarantee success.
+method:
+- Derive necessary interference-power limits for avoiding certain outage.
+- Solve recurrence for fixed power fractions yielding identical SIC and own-message events.
+- Prove equality with OMA outage events and check simulations.
+baselines_compared:
+- OMA with one-Kth time/frequency share per user and the full transmit SNR while active.
+metrics:
+- Own-message outage probability
+- SIC decoding outage probability
+key_results:
+- The fixed coefficients in Lemma 1 give the same QoS decoding events as the defined OMA reference.
+- Equality of outage events explicitly does not mean equality of instantaneous capacities.
+- Necessary interference limits alone are insufficient to guarantee a target rate.
+limitations_stated:
+- Perfect instantaneous CSIT for dynamic capacity-guaranteeing allocation is described as unrealistic
+  in practical systems.
+future_work_stated:
+- Consider a distinct target rate for each user.
+- Compare the fixed-power benchmark with dynamic power allocation and regions of outage.
+code: null
+grounding:
+  title:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 1
+    location: First-page title and author block
+  authors:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 1
+    location: First-page title and author block
+  year:
+  - source: projects/m11-noma-qos/literature/candidates.jsonl
+    page: null
+    location: doi:10.1109/icc.2018.8422366; year and source_ids/query_evidence; not a verified final
+      publication version
+  venue:
+  - source: projects/m11-noma-qos/literature/candidates.jsonl
+    page: null
+    location: doi:10.1109/icc.2018.8422366; venue and source_ids/query_evidence; not a verified final
+      publication version
+  system:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 2
+    location: Section III
+  channel:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 2
+    location: Section III and equations (4)–(9)
+  objective:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 2
+    location: Section IV
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 4
+    location: Lemma 1 and Theorem 2
+  constraints:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 2
+    location: Section III total power and equation (9)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 3
+    location: Theorem 1 and caveat before equation (18)
+  method:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 3
+    location: Theorem 1 and Lemma 1
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 4
+    location: Theorem 2 and Section V
+  baselines_compared:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 2
+    location: Equation (2)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 4
+    location: Theorem 2
+  metrics:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 4
+    location: Section V
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 5
+    location: Figures 1–2
+  key_results:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 3
+    location: Caveat before equation (18)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 4
+    location: Theorem 2 and following interpretation
+  limitations_stated:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 1
+    location: Introduction practical CSIT discussion
+  future_work_stated:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json
+    page: 5
+    location: Section VI
+notes: Publication year/ICC venue from retrieved arXiv metadata refer to 2018; acquired arXiv v2 is
+  dated January 2019. Page 4 simulations use K=4, M=1, N=4, not the exact two-user SISO toy. Common
+  fixed QoS/outage-event construction does not establish a sum-rate optimum with unequal fixed QoS.
+  Extraction visibly has sign/exponent inconsistencies around Theorem 1 proof; paraphrase the result
+  and caveat only, and independently derive needed equations in P4.

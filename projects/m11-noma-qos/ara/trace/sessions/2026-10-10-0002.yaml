@@ -1,0 +1,11 @@
+id: 2026-10-10-0002
+timestamp: '2026-10-10T17:30:39.586405+00:00'
+phase: P2
+summary: 'PI recorded G1 approval with note: Scope and synthetic profile reviewed;
+  G1 report usable. Canonical CLI decision and reviewed artifacts are the evidence;
+  no later gate approval is inferred.'
+provenance: user
+evidence:
+  gates/decisions.yaml: e206dfa870d54ab26b8e66e26e98e2822740211b52e7cbb59de68e6d0b27c2e7
+  profile.yaml: 25f0f8ea5908d46c6564ba4c667aa576b867da6e3f72a3918bc595efd49c4cab
+  scope.yaml: c5c3a637d6a1a374b8b760935958414a68c8d32c648c030c573f8f94b5945df4

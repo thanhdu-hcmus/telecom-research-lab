@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-10T17:36:19.694692+00:00",
+  "method": "Parent credential-free GET through lab Network for each immutable public commit; metadata only, no code execution.",
+  "checks": [
+    {
+      "repository": "nokia/subcarrier-power-allocation-noma-solver",
+      "source": "https://api.github.com/repos/nokia/subcarrier-power-allocation-noma-solver/commits/dcf82a71739471090a01017edae92a6a5d28aa2f",
+      "sha": "dcf82a71739471090a01017edae92a6a5d28aa2f",
+      "commit_matches": true,
+      "date_matches": true
+    },
+    {
+      "repository": "YijieLinaMao/RSMA",
+      "source": "https://api.github.com/repos/YijieLinaMao/RSMA/commits/ec29a9a9715b09a5805a8954bc92bcf2be5bddcb",
+      "sha": "ec29a9a9715b09a5805a8954bc92bcf2be5bddcb",
+      "commit_matches": true,
+      "date_matches": true
+    },
+    {
+      "repository": "3seoksw/Downlink-NOMA-with-RL",
+      "source": "https://api.github.com/repos/3seoksw/Downlink-NOMA-with-RL/commits/695908e904afe928da93c4ce1c0138111e763113",
+      "sha": "695908e904afe928da93c4ce1c0138111e763113",
+      "commit_matches": true,
+      "date_matches": true
+    },
+    {
+      "repository": "xiaogaogaoxiao/power-allocation-UAV-NOMA-two-users",
+      "source": "https://api.github.com/repos/xiaogaogaoxiao/power-allocation-UAV-NOMA-two-users/commits/055c56eb69df77e190ecb29360b2ca6a75a87fe2",
+      "sha": "055c56eb69df77e190ecb29360b2ca6a75a87fe2",
+      "commit_matches": true,
+      "date_matches": true
+    }
+  ]
+}

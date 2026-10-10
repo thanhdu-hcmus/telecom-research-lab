@@ -11,5 +11,5 @@ mobility: excluded for this dry run
 target_quartiles: []
 time_budget_months_per_paper: null
 thesis_deadline: null
-pi_reviewed: false
+pi_reviewed: true
 profile_purpose: M11 synthetic benchmark only; does not select the PI's dissertation topic

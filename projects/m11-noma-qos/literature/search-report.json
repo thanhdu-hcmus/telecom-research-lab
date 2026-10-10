@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "queries": 10,
+  "new_records": 148,
+  "counts": {
+    "identified": 148,
+    "duplicates_removed": 26,
+    "unique": 122
+  },
+  "failures": [],
+  "coverage_note": "Each query is bounded by its limit and pages; absence from these results does not establish novelty."
+}

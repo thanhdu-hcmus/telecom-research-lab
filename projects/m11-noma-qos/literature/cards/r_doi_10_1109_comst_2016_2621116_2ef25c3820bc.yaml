@@ -1,0 +1,119 @@
+id: doi:10.1109/comst.2016.2621116
+title: 'Power-Domain Non-Orthogonal Multiple Access (NOMA) in 5G Systems: Potentials and Challenges'
+authors:
+- S. M. Riazul Islam
+- Nurilla Avazov
+- Octavia A. Dobre
+- Kyung-Sup Kwak
+year: 2016
+venue:
+  name: arXiv
+  metadata_source: retrieved candidate record; manuscript version distinguished in notes
+citations: null
+system:
+  coverage: survey of power-domain NOMA; scalar downlink model and broader MIMO/cooperative contexts
+  access: superposition coding and SIC
+channel:
+  illustrative_model: single-cell single-antenna users, i.i.d. block Rayleigh fading and AWGN
+  sic: perfect cancellation for illustrative achievable rates; imperfect cancellation discussed separately
+objective: Survey capacity, power allocation, fairness, pairing and implementation challenges rather
+  than solve the exact M11 optimization problem.
+constraints: null
+method:
+- Synthesize published NOMA capacity and allocation results.
+- Discuss complexity, error propagation, quantization and signalling overhead.
+baselines_compared: null
+metrics: null
+key_results:
+- The illustrative rate formula assumes perfect signal superposition and SIC.
+- The implementation discussion identifies extra decoding complexity, error propagation and CSI/SIC-order
+  signalling overhead.
+limitations_stated:
+- Additional SIC decoding complexity grows with the number of users.
+- Decoding errors can propagate through SIC stages.
+- Quantization and signalling/processing overhead can reduce practical benefit.
+future_work_stated:
+- Study practical imperfect-SIC effects and additional over-the-air demonstrations.
+code: null
+grounding:
+  title:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 1
+    location: First-page title and author block
+  authors:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 1
+    location: First-page title and author block
+  year:
+  - source: projects/m11-noma-qos/literature/candidates.jsonl
+    page: null
+    location: doi:10.1109/comst.2016.2621116; year and source_ids/query_evidence; not a verified final
+      publication version
+  venue:
+  - source: projects/m11-noma-qos/literature/candidates.jsonl
+    page: null
+    location: doi:10.1109/comst.2016.2621116; venue and source_ids/query_evidence; not a verified
+      final publication version
+  system:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 1
+    location: Abstract
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 7
+    location: Section II-C typical model
+  channel:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 7
+    location: Section II-C
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 8
+    location: Rate-model assumption and footnote
+  objective:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 1
+    location: Abstract
+  method:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 1
+    location: Abstract
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 34
+    location: Section VI-A/B
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 35
+    location: Section VI-C/D
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 36
+    location: Section VI-G
+  key_results:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 8
+    location: Rate-model condition
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 34
+    location: Section VI-A/B
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 36
+    location: Section VI-G
+  limitations_stated:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 34
+    location: Section VI-A/B
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 35
+    location: Section VI-C
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 36
+    location: Section VI-G
+  future_work_stated:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 34
+    location: Discussion before Section VI
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json
+    page: 35
+    location: Section VI-B continuation
+notes: Retrieved 2016 arXiv submission metadata carrying the ComST DOI; final publication year/venue
+  not independently reconciled here. Broad context source, not a proof or baseline for the exact M11
+  toy. Present-day absence or standardization status cannot be inferred from this historical survey.
+  Formula extraction loses symbols on pp.7–8; no equations are copied. Unstated single objective,
+  constraints, comparison metrics and code are null.

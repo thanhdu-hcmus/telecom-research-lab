@@ -1,0 +1,145 @@
+id: doi:10.1109/jsac.2017.2725618
+title: On Optimal Power Allocation for Downlink Non-Orthogonal Multiple Access Systems
+authors:
+- Jianyue Zhu
+- Jiaheng Wang
+- Yongming Huang
+- Shiwen He
+- Xiaohu You
+- Luxi Yang
+year: 2017
+venue:
+  name: arXiv
+  metadata_source: retrieved candidate record; manuscript version distinguished in notes
+citations: null
+system:
+  direction: downlink
+  users: two users per channel; multiple orthogonal channels
+  access: power-domain NOMA with SIC and joint channel assignment
+channel:
+  model: Rayleigh fading with distance-dependent path loss and AWGN
+  ordering: descending channel-to-noise ratio; user 1 strongest
+  sic: interference-free strong-user rate following ideal SIC model
+objective: Optimize power allocation for multiple objectives; relevant branch maximizes sum rate under
+  individual QoS and total-power constraints, with fixed channel assignment.
+constraints:
+- Total power budget and individual minimum rates.
+- 'Additional paper-specific power-order constraint: strong-user power no greater than weak-user power.'
+- Stated closed-form SR2 result includes weak-user rate threshold and power-budget SIC-stability conditions.
+method:
+- Decompose fixed-channel power allocation into within-channel split and across-channel budgets.
+- Differentiate the sum-rate objective to obtain a boundary solution; waterfilling across channels.
+- Matching-based joint assignment algorithm and numerical comparison.
+baselines_compared:
+- OFDMA with each user assigned B/N bandwidth and waterfilled power.
+- Difference-of-convex power allocation, conventional user pairing and exhaustive assignment search.
+metrics:
+- Minimum user rate
+- Sum rate
+- Spectral efficiency
+- Energy efficiency
+key_results:
+- Under Proposition 3 conditions the optimal strong-user allocation reaches its QoS-defined upper
+  bound, and the weak user meets its minimum rate exactly.
+- The derivative proof on page 7 shows nondecreasing sum rate with strong-user power for ordered CNRs.
+- The numerical OFDMA comparison uses multichannel assignment and optimized power; it is not the M11
+  equal-time scalar reference.
+limitations_stated:
+- Joint assignment and power allocation is a mixed integer problem; exhaustive joint optimization
+  has prohibitive complexity.
+- Their SIC-stability conditions restrict the validity of the stated allocation results.
+future_work_stated: null
+code: null
+grounding:
+  title:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 1
+    location: First-page title and author block
+  authors:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 1
+    location: First-page title and author block
+  year:
+  - source: projects/m11-noma-qos/literature/candidates.jsonl
+    page: null
+    location: doi:10.1109/jsac.2017.2725618; year and source_ids/query_evidence; not a verified final
+      publication version
+  venue:
+  - source: projects/m11-noma-qos/literature/candidates.jsonl
+    page: null
+    location: doi:10.1109/jsac.2017.2725618; venue and source_ids/query_evidence; not a verified final
+      publication version
+  system:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 2
+    location: Section II-A
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 3
+    location: Two-user restriction and rates
+  channel:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 2
+    location: Section II-A channel model
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 3
+    location: SINR and rate expressions
+  objective:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 3
+    location: Equation (3)
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 6
+    location: Section IV-B SR2 formulation
+  constraints:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 3
+    location: Power constraints
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 6
+    location: Proposition 3 conditions
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 7
+    location: Remark 5 and Corollary 3
+  method:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 6
+    location: Section IV-B and Proposition 3
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 7
+    location: Derivative proof and Theorem 3
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 10
+    location: Algorithms 2–3
+  baselines_compared:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 10
+    location: Section VII opening
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 11
+    location: Section VII first paragraph and Figures 1–3
+  metrics:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 11
+    location: Figures 1–5 and accompanying discussion
+  key_results:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 7
+    location: Proposition 3 proof, Remark 6
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 10
+    location: Section VII simulation setting
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 11
+    location: OFDMA definition
+  limitations_stated:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 3
+    location: Final paragraph of Section II-B
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json
+    page: 7
+    location: Remarks 5–6
+notes: Acquired arXiv 1707.06350v1 (July 2017) carrying the journal DOI; candidate venue currently
+  arXiv, not verified final pagination. The paper assumes p_strong<=p_weak; approved M11 scope does
+  not impose that blanket power-order condition. Do not copy it into M11 without an explicit scientific
+  decision. The published SIC-stability concept is a paper-specific modelling constraint, not a universal
+  condition for ideal degraded broadcast decoding.

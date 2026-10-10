@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-10T17:45:41.084475+00:00",
+  "bound_git_blobs_checked": 23,
+  "gates": {
+    "G1": "approved and unchanged",
+    "G2": "pending and exact working/index snapshot match"
+  },
+  "scientific_approval_G2": false
+}

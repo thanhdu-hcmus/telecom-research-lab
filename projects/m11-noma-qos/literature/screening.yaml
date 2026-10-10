@@ -1,0 +1,550 @@
+- id: arxiv:1410.5846
+  decision: exclude
+  reason: 'Title/metadata screening: Relay/cooperative architecture outside the approved
+    direct scalar downlink benchmark.'
+- id: arxiv:1501.05371
+  decision: exclude
+  reason: 'Title/metadata screening: Integrated sensing/radar objective outside the
+    approved benchmark scope.'
+- id: arxiv:1504.07751
+  decision: include
+  reason: Foundational two-user NOMA information-theoretic comparison; full text retrieved
+    and extracted.
+- id: arxiv:1606.02379
+  decision: exclude
+  reason: 'Title/metadata screening: Energy-efficiency objective differs from approved
+    sum-rate objective.'
+- id: arxiv:1610.07327
+  decision: exclude
+  reason: 'Title/metadata screening: Optical/VLC channel model outside the approved
+    benchmark scope.'
+- id: arxiv:1612.03901
+  decision: exclude
+  reason: 'Title/metadata screening: Secrecy/security objective outside the approved
+    sum-rate with ordinary QoS benchmark.'
+- id: arxiv:1706.02731
+  decision: exclude
+  reason: 'Title/metadata screening: MIMO multiantenna capacity comparison outside
+    approved scalar channel benchmark.'
+- id: arxiv:1707.01846
+  decision: exclude
+  reason: 'Title/metadata screening: Uplink resource model outside the approved two-user
+    downlink benchmark.'
+- id: arxiv:1708.01183
+  decision: exclude
+  reason: Related fairness-objective power allocation, rather than the scoped fixed-QoS
+    sum-rate objective; not selected in this bounded corpus.
+- id: arxiv:1709.07980
+  decision: exclude
+  reason: 'Title/metadata screening: mmWave/THz-specific propagation or array model
+    excluded by the approved scalar benchmark scope.'
+- id: arxiv:1711.10050
+  decision: exclude
+  reason: 'Title/metadata screening: mmWave/THz-specific propagation or array model
+    excluded by the approved scalar benchmark scope.'
+- id: arxiv:1801.00121
+  decision: exclude
+  reason: Relevant resource-allocation review; not selected for this bounded full-text
+    corpus because allocation/QoS primary papers and one full survey were acquired.
+- id: arxiv:1801.04504
+  decision: exclude
+  reason: 'Title/metadata screening: mmWave/THz-specific propagation or array model
+    excluded by the approved scalar benchmark scope.'
+- id: arxiv:1801.05227
+  decision: exclude
+  reason: 'Title/metadata screening: Secrecy/security objective outside the approved
+    sum-rate with ordinary QoS benchmark.'
+- id: arxiv:1801.07430
+  decision: exclude
+  reason: 'Title/metadata screening: Caching-assisted resource model outside the approved
+    benchmark scope.'
+- id: arxiv:1803.07866
+  decision: exclude
+  reason: 'Title/metadata screening: Multicell/network interference architecture outside
+    the approved single-link benchmark.'
+- id: arxiv:1804.06593
+  decision: exclude
+  reason: 'Title/metadata screening: Uplink resource model outside the approved two-user
+    downlink benchmark.'
+- id: arxiv:1901.07100
+  decision: exclude
+  reason: 'Title/metadata screening: Different access waveform/grant-free access model
+    outside the approved two-user power-domain benchmark.'
+- id: arxiv:1903.10674
+  decision: exclude
+  reason: 'Title/metadata screening: Multicell/network interference architecture outside
+    the approved single-link benchmark.'
+- id: arxiv:1907.08381
+  decision: exclude
+  reason: 'Title/metadata screening: Spatial multiantenna/beamforming model outside
+    the approved scalar channel benchmark.'
+- id: arxiv:1907.10001
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: arxiv:1908.09289
+  decision: exclude
+  reason: 'Title/metadata screening: Uplink resource model outside the approved two-user
+    downlink benchmark.'
+- id: arxiv:1912.08119
+  decision: exclude
+  reason: 'Title/metadata screening: Finite-blocklength/queueing/statistical delay
+    QoS differs from scoped per-block minimum spectral efficiency.'
+- id: arxiv:1912.11498
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: arxiv:2001.11423
+  decision: exclude
+  reason: 'Title/metadata screening: Uplink resource model outside the approved two-user
+    downlink benchmark.'
+- id: arxiv:2003.04758
+  decision: exclude
+  reason: 'Title/metadata screening: Uplink resource model outside the approved two-user
+    downlink benchmark.'
+- id: arxiv:2004.07395
+  decision: exclude
+  reason: 'Title/metadata screening: Learning-based resource allocation outside the
+    approved analytic/scalar benchmark.'
+- id: arxiv:2005.09143
+  decision: exclude
+  reason: 'Title/metadata screening: Relay/cooperative architecture outside the approved
+    direct scalar downlink benchmark.'
+- id: arxiv:2006.08044
+  decision: exclude
+  reason: 'Title/metadata screening: Secrecy/security objective outside the approved
+    sum-rate with ordinary QoS benchmark.'
+- id: arxiv:2006.11513
+  decision: exclude
+  reason: 'Title/metadata screening: Learning-based resource allocation outside the
+    approved analytic/scalar benchmark.'
+- id: arxiv:2006.14297
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: arxiv:2007.13919
+  decision: exclude
+  reason: 'Title/metadata screening: Uplink resource model outside the approved two-user
+    downlink benchmark.'
+- id: arxiv:2011.01449
+  decision: exclude
+  reason: 'Title/metadata screening: Aerial/mobility architecture outside the approved
+    benchmark scope.'
+- id: arxiv:2101.06028
+  decision: exclude
+  reason: 'Title/metadata screening: Uplink resource model outside the approved two-user
+    downlink benchmark.'
+- id: arxiv:2102.00119
+  decision: exclude
+  reason: 'Title/metadata screening: Multicell/network interference architecture outside
+    the approved single-link benchmark.'
+- id: arxiv:2104.11679
+  decision: exclude
+  reason: 'Title/metadata screening: Uplink resource model outside the approved two-user
+    downlink benchmark.'
+- id: arxiv:2108.08235
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: arxiv:2111.06352
+  decision: exclude
+  reason: 'Title/metadata screening: Spatial multiantenna/beamforming model outside
+    the approved scalar channel benchmark.'
+- id: arxiv:2201.09357
+  decision: exclude
+  reason: 'Title/metadata screening: mmWave/THz-specific propagation or array model
+    excluded by the approved scalar benchmark scope.'
+- id: arxiv:2204.11245
+  decision: exclude
+  reason: 'Title/metadata screening: Integrated sensing/radar objective outside the
+    approved benchmark scope.'
+- id: arxiv:2207.02653
+  decision: exclude
+  reason: 'Title/metadata screening: Spatial multiantenna/beamforming model outside
+    the approved scalar channel benchmark.'
+- id: arxiv:2209.08786
+  decision: exclude
+  reason: 'Title/metadata screening: Different access waveform/grant-free access model
+    outside the approved two-user power-domain benchmark.'
+- id: arxiv:2308.08818
+  decision: exclude
+  reason: 'Title/metadata screening: Secrecy/security objective outside the approved
+    sum-rate with ordinary QoS benchmark.'
+- id: arxiv:2309.07738
+  decision: exclude
+  reason: 'Title/metadata screening: RIS/IRS or reconfigurable-surface model excluded
+    by the approved benchmark scope.'
+- id: arxiv:2403.00189
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: arxiv:2410.07887
+  decision: exclude
+  reason: 'Title/metadata screening: Different access waveform/grant-free access model
+    outside the approved two-user power-domain benchmark.'
+- id: arxiv:2503.08466
+  decision: exclude
+  reason: 'Title/metadata screening: Spatial multiantenna/beamforming model outside
+    the approved scalar channel benchmark.'
+- id: arxiv:2602.13202
+  decision: exclude
+  reason: 'Title/metadata screening: Aerial/mobility architecture outside the approved
+    benchmark scope.'
+- id: doi:10.1002/wcm.2736
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1007/978-3-031-86203-8_21
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1016/j.phycom.2020.101043
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1049/icp.2025.0086
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1049/iet-com.2016.0836
+  decision: exclude
+  reason: 'Title/metadata screening: Relay/cooperative architecture outside the approved
+    direct scalar downlink benchmark.'
+- id: doi:10.1109/access.2015.2480117
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1109/access.2018.2835568
+  decision: exclude
+  reason: 'Title/metadata screening: Multicell/network interference architecture outside
+    the approved single-link benchmark.'
+- id: doi:10.1109/access.2019.2935169
+  decision: exclude
+  reason: 'Title/metadata screening: mmWave/THz-specific propagation or array model
+    excluded by the approved scalar benchmark scope.'
+- id: doi:10.1109/comst.2016.2621116
+  decision: include
+  reason: Foundational power-domain NOMA survey for assumptions and limitations; full
+    text retrieved and extracted. Broad survey coverage does not extend approved toy
+    scope.
+- id: doi:10.1109/comst.2018.2835558
+  decision: exclude
+  reason: Relevant highly cited broad NOMA survey; not selected for this bounded full-text
+    corpus because the acquired power-domain survey supplies background. Not a quality
+    rejection.
+- id: doi:10.1109/comst.2020.2996032
+  decision: exclude
+  reason: 'Title/metadata screening: Different access waveform/grant-free access model
+    outside the approved two-user power-domain benchmark.'
+- id: doi:10.1109/glocom.2014.7417061
+  decision: exclude
+  reason: 'Conference pairing lead not selected: closely related included Ding pairing
+    preprint provides accessible full text; differing API DOI/year identities retained,
+    not silently merged.'
+- id: doi:10.1109/glocom.2015.7417061
+  decision: exclude
+  reason: 'Conference pairing lead not selected: closely related included Ding pairing
+    preprint provides accessible full text; differing API DOI/year identities retained,
+    not silently merged.'
+- id: doi:10.1109/glocom.2016.7842156
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1109/icc.2016.7511620
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1109/icc.2018.8422366
+  decision: include
+  reason: Downlink QoS allocation limits and infeasibility; full text retrieved and
+    extracted. Multiuser conclusions need explicit specialization.
+- id: doi:10.1109/icspc57692.2023.10125888
+  decision: exclude
+  reason: 'Title/metadata screening: Relay/cooperative architecture outside the approved
+    direct scalar downlink benchmark.'
+- id: doi:10.1109/iscaie57739.2023.10165563
+  decision: exclude
+  reason: 'Title/metadata screening: Energy-efficiency objective differs from approved
+    sum-rate objective.'
+- id: doi:10.1109/iswcs.2014.6933459
+  decision: exclude
+  reason: 'Title/metadata screening: Uplink resource model outside the approved two-user
+    downlink benchmark.'
+- id: doi:10.1109/jiot.2022.3195197
+  decision: exclude
+  reason: 'Title/metadata screening: Aerial/mobility architecture outside the approved
+    benchmark scope.'
+- id: doi:10.1109/jsac.2017.2724442
+  decision: exclude
+  reason: 'Title/metadata screening: Different access waveform/grant-free access model
+    outside the approved two-user power-domain benchmark.'
+- id: doi:10.1109/jsac.2017.2724478
+  decision: exclude
+  reason: 'Title/metadata screening: Satellite topology outside the approved benchmark
+    scope.'
+- id: doi:10.1109/jsac.2017.2725618
+  decision: include
+  reason: Downlink sum-rate power allocation and minimum-rate constraints; full text
+    retrieved and extracted. Multiuser and power-order conditions must be distinguished
+    from approved toy.
+- id: doi:10.1109/jsac.2017.2729780
+  decision: exclude
+  reason: Related fairness-objective power allocation, rather than the scoped fixed-QoS
+    sum-rate objective; not selected in this bounded corpus.
+- id: doi:10.1109/jstsp.2019.2899731
+  decision: exclude
+  reason: 'Title/metadata screening: Spatial multiantenna/beamforming model outside
+    the approved scalar channel benchmark.'
+- id: doi:10.1109/jstsp.2019.2901993
+  decision: exclude
+  reason: Improper Gaussian signaling changes the transmission model beyond the scoped
+    ideal scalar power-domain benchmark.
+- id: doi:10.1109/lcomm.2015.2441064
+  decision: exclude
+  reason: 'Title/metadata screening: Relay/cooperative architecture outside the approved
+    direct scalar downlink benchmark.'
+- id: doi:10.1109/lcomm.2016.2539162
+  decision: exclude
+  reason: 'Title/metadata screening: Secrecy/security objective outside the approved
+    sum-rate with ordinary QoS benchmark.'
+- id: doi:10.1109/lcomm.2016.2596763
+  decision: exclude
+  reason: 'Title/metadata screening: Relay/cooperative architecture outside the approved
+    direct scalar downlink benchmark.'
+- id: doi:10.1109/lcomm.2017.2689763
+  decision: exclude
+  reason: 'Highly relevant individual-QoS sum-rate allocation, but not included in
+    full-text corpus: initial institutional host rejection followed by approved-host
+    retry returning a one-page PDF with no extractable title/text; identity check
+    failed. Optional manual acquisition, not required for this gate.'
+- id: doi:10.1109/lcomm.2020.3025978
+  decision: exclude
+  reason: 'Title/metadata screening: RIS/IRS or reconfigurable-surface model excluded
+    by the approved benchmark scope.'
+- id: doi:10.1109/lcomm.2023.3333313
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1109/lpt.2021.3051020
+  decision: exclude
+  reason: 'Title/metadata screening: Optical/VLC channel model outside the approved
+    benchmark scope.'
+- id: doi:10.1109/lsp.2016.2619371
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1109/lwc.2017.2712149
+  decision: exclude
+  reason: 'Title/metadata screening: MIMO multiantenna sum-rate comparison outside
+    approved scalar channel benchmark.'
+- id: doi:10.1109/lwc.2017.2741493
+  decision: exclude
+  reason: 'Title/metadata screening: mmWave/THz-specific propagation or array model
+    excluded by the approved scalar benchmark scope.'
+- id: doi:10.1109/lwc.2018.2853741
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1109/lwc.2019.2954518
+  decision: exclude
+  reason: 'Title/metadata screening: rate-splitting/MISO broadcast model outside approved
+    scalar NOMA versus equal-time OMA benchmark.'
+- id: doi:10.1109/mownet.2016.7496633
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1109/mwc.102.2100363
+  decision: exclude
+  reason: 'Title/metadata screening: RIS/IRS or reconfigurable-surface model excluded
+    by the approved benchmark scope.'
+- id: doi:10.1109/mwc.2018.1700099
+  decision: exclude
+  reason: Relevant resource-allocation review; not selected for this bounded full-text
+    corpus because allocation/QoS primary papers and one full survey were acquired.
+- id: doi:10.1109/pimrc.2015.7343467
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1109/pimrc.2015.7343509
+  decision: exclude
+  reason: 'Title/metadata screening: Optical/VLC channel model outside the approved
+    benchmark scope.'
+- id: doi:10.1109/tcomm.2016.2612195
+  decision: exclude
+  reason: 'Title/metadata screening: Optical/VLC channel model outside the approved
+    benchmark scope.'
+- id: doi:10.1109/tcomm.2017.2744640
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1109/tcomm.2018.2832643
+  decision: exclude
+  reason: 'Title/metadata screening: Finite-blocklength/queueing/statistical delay
+    QoS differs from scoped per-block minimum spectral efficiency.'
+- id: doi:10.1109/tcomm.2019.2906622
+  decision: exclude
+  reason: 'Title/metadata screening: Aerial/mobility architecture outside the approved
+    benchmark scope.'
+- id: doi:10.1109/tcomm.2021.3051912
+  decision: exclude
+  reason: 'Title/metadata screening: Optical/VLC channel model outside the approved
+    benchmark scope.'
+- id: doi:10.1109/tcomm.2021.3062651
+  decision: exclude
+  reason: 'Title/metadata screening: RIS/IRS or reconfigurable-surface model excluded
+    by the approved benchmark scope.'
+- id: doi:10.1109/tcomm.2023.3241940
+  decision: exclude
+  reason: 'Title/metadata screening: integrated sensing communication objective outside
+    approved sum-rate/QoS benchmark.'
+- id: doi:10.1109/tii.2019.2951728
+  decision: exclude
+  reason: 'Title/metadata screening: Satellite topology outside the approved benchmark
+    scope.'
+- id: doi:10.1109/tsp.2015.2480042
+  decision: exclude
+  reason: MIMO sum-rate optimization lead; spatial beamforming model falls outside
+    the approved scalar degraded-channel benchmark.
+- id: doi:10.1109/tvt.2017.2689000
+  decision: include
+  reason: SISO fair allocation compared with OMA; full text retrieved and extracted.
+    OMA-derived fairness is not automatically the toy fixed QoS.
+- id: doi:10.1109/tvt.2019.2891062
+  decision: exclude
+  reason: 'Title/metadata screening: mmWave/THz-specific propagation or array model
+    excluded by the approved scalar benchmark scope.'
+- id: doi:10.1109/tvt.2024.3432170
+  decision: exclude
+  reason: 'Title/metadata screening: Satellite topology outside the approved benchmark
+    scope.'
+- id: doi:10.1109/twc.2015.2475746
+  decision: exclude
+  reason: 'Title/metadata screening: Spatial multiantenna/beamforming model outside
+    the approved scalar channel benchmark.'
+- id: doi:10.1109/twc.2016.2599521
+  decision: exclude
+  reason: Relevant generalized downlink/uplink QoS allocation lead; not selected for
+    this bounded full-text corpus because Zhu and Oviedo allocation/feasibility papers
+    were acquired. No claim of absent coverage or inferiority.
+- id: doi:10.1109/twc.2016.2606100
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1109/twc.2017.2650987
+  decision: exclude
+  reason: 'Title/metadata screening: Secrecy/security objective outside the approved
+    sum-rate with ordinary QoS benchmark.'
+- id: doi:10.1109/twc.2018.2842725
+  decision: exclude
+  reason: 'Title/metadata screening: Spatial multiantenna/beamforming model outside
+    the approved scalar channel benchmark.'
+- id: doi:10.1109/twc.2018.2867877
+  decision: exclude
+  reason: 'Title/metadata screening: Relay/cooperative architecture outside the approved
+    direct scalar downlink benchmark.'
+- id: doi:10.1109/twc.2021.3088487
+  decision: exclude
+  reason: 'Title/metadata screening: Multicell/network interference architecture outside
+    the approved single-link benchmark.'
+- id: doi:10.1109/vtcspring.2016.7504524
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1109/wcsp.2017.8171018
+  decision: exclude
+  reason: 'Title/metadata screening: Relay/cooperative architecture outside the approved
+    direct scalar downlink benchmark.'
+- id: doi:10.1155/2018/9713450
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.1587/transcom.e98.b.403
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.19678/j.issn.1000-3428.0053682
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.31026/j.eng.2023.04.11
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.3390/e20090661
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.36948/ijfmr.2023.v05i06.10790
+  decision: exclude
+  reason: 'Title/metadata screening: RIS/IRS or reconfigurable-surface model excluded
+    by the approved benchmark scope.'
+- id: doi:10.37934/araset.43.1.227242
+  decision: exclude
+  reason: 'Title/metadata screening: Aerial/mobility architecture outside the approved
+    benchmark scope.'
+- id: doi:10.48550/arxiv.1412.2799
+  decision: include
+  reason: Two-user downlink pairing and NOMA/OMA comparison; full text retrieved and
+    extracted. Allocation assumptions must be checked, not imported.
+- id: doi:10.48550/arxiv.1609.01856
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.
+- id: doi:10.7840/kics.2019.44.10.1851
+  decision: exclude
+  reason: Related or broad metadata lead, not selected for this bounded full-text
+    corpus; the six acquired papers cover the benchmark allocation, OMA comparison,
+    pairing, QoS feasibility and limitations. No scientific absence or quality claim
+    is made.

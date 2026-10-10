@@ -1,0 +1,155 @@
+id: doi:10.1109/tvt.2017.2689000
+title: A Fair Power Allocation Approach to NOMA in Multi-user SISO Systems
+authors:
+- José Armando Oviedo
+- Hamid R. Sadjadpour
+year: 2017
+venue:
+  name: IEEE Transactions on Vehicular Technology
+  metadata_source: retrieved candidate record; manuscript version distinguished in notes
+citations: null
+system:
+  direction: downlink
+  antennas: single antenna BS and receivers
+  users: two-user analysis and extension to K users
+  access: Fair-NOMA superposition and SIC
+channel:
+  model: slow fading; i.i.d. exponential channel power gains for expectation analysis
+  noise: unit variance complex Gaussian
+  sic: strong user decodes and removes weak-user signal in achievable-rate model
+objective: Find channel-dependent NOMA allocations that give each user at least its equal-time OMA
+  rate and characterize capacity and outage gains.
+constraints:
+- Same total transmit power and full transmission period; OMA users each occupy one-half of the period
+  in the two-user case.
+- Strong-user fraction must lie between the OMA-equivalent lower bound from the strong channel and
+  upper bound from the weak channel.
+- The paper explicitly starts the two-user strong-user fraction a in (0, 1/2); this is a paper-specific
+  power-order restriction.
+method:
+- Solve both individual NOMA>=OMA rate inequalities to obtain a power interval.
+- Derive ergodic capacities, asymptotic gains and outage probabilities.
+- Compare numerical simulations and extend the allocation construction to K users.
+baselines_compared:
+- Equal-time OMA with the full instantaneous transmit power during each user slot.
+- Fixed-power NOMA for opportunistic pairing.
+metrics:
+- Individual and sum capacities
+- Outage probabilities
+- Total power required to match OMA rates
+key_results:
+- A nonempty interval of power fractions is constructed to ensure both NOMA rates meet the corresponding
+  OMA rates in the stated ideal two-user model.
+- The multiuser construction can match each equal-time OMA rate without exceeding total transmit power.
+limitations_stated:
+- The opportunistic-pairing high-SNR approximation requires larger SNR as user population increases.
+- Full signal-level bit-error-rate analysis and simulation remains necessary.
+future_work_stated:
+- Extend Fair-NOMA to MIMO with composite channel ordering.
+- Analyze and simulate bit-error-rate effects of superposition and unequal rates.
+code: null
+grounding:
+  title:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 1
+    location: First-page title and author block
+  authors:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 1
+    location: First-page title and author block
+  year:
+  - source: projects/m11-noma-qos/literature/candidates.jsonl
+    page: null
+    location: doi:10.1109/tvt.2017.2689000; year and source_ids/query_evidence; not a verified final
+      publication version
+  venue:
+  - source: projects/m11-noma-qos/literature/candidates.jsonl
+    page: null
+    location: doi:10.1109/tvt.2017.2689000; venue and source_ids/query_evidence; not a verified final
+      publication version
+  system:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 1
+    location: Introduction
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 2
+    location: Section III
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 7
+    location: Section VIII
+  channel:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 1
+    location: Abstract slow-fading statement
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 2
+    location: Section III equations (1)–(3)
+  objective:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 2
+    location: Section IV
+  constraints:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 2
+    location: Section III OMA rates; Section IV inequalities
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 3
+    location: Fair-NOMA interval discussion
+  method:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 2
+    location: Section IV
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 3
+    location: Section V
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 4
+    location: Section VI
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 7
+    location: Section VIII
+  baselines_compared:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 2
+    location: Section III OMA capacity
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 6
+    location: Figures 3–5
+  metrics:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 3
+    location: Section V
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 4
+    location: Section VI
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 7
+    location: Section VIII
+  key_results:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 2
+    location: Section IV inequalities
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 3
+    location: Fair-NOMA interval
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 7
+    location: Property 2
+  limitations_stated:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 6
+    location: Discussion of Figure 5
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 8
+    location: Section IX closing paragraph
+  future_work_stated:
+  - source: D:\02_EDUCATION\THESIS\ResearchLibrary\text\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json
+    page: 8
+    location: Section IX
+notes: Acquired arXiv 1703.09394v2 dated April 2017; candidate record also records TVT venue. Fairness
+  thresholds here are channel-dependent equal-time OMA capacities, not arbitrary fixed QoS targets.
+  Ideal SIC is inferred from equations. Do not transfer population/high-SNR numerical constants to
+  the M11 protocol. Citation count remains null despite a dated database count existing, because no
+  count is needed for scientific synthesis. The two-user model explicitly begins with a_strong in
+  (0,1/2) on p.2. This paper-specific power-order restriction must not be silently imposed on the
+  approved toy feasible set; its derived Fair-NOMA interval satisfies that bound.

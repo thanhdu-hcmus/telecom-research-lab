@@ -1,0 +1,90 @@
+{
+  "role": "paper_analyst",
+  "phase": "P2",
+  "created_at": "2026-10-10T17:36:07.312385+00:00",
+  "paper_card_count": 6,
+  "schema_validation": "PASS: PaperCard.model_validate on each written YAML",
+  "review_validation": "PASS: lab.literature.validate_review(Path(projects/m11-noma-qos)); exactly six included cards, legitimate unchanged full PDFs and four grounded comparison questions",
+  "page_numbering": "acquired PDF pages, not final journal pagination",
+  "inspected_page_coverage": {
+    "arxiv:1504.07751": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "doi:10.48550/arxiv.1412.2799": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "doi:10.1109/jsac.2017.2725618": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12
+    ],
+    "doi:10.1109/tvt.2017.2689000": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "doi:10.1109/icc.2018.8422366": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "doi:10.1109/comst.2016.2621116": [
+      1,
+      7,
+      8,
+      34,
+      35,
+      36,
+      37
+    ]
+  },
+  "uncertainties": [
+    "No final-version reconciliation for preprint-only venue metadata.",
+    "No code availability inferred from lack of code statements.",
+    "QoS-limits extraction has inconsistent signs/exponents; no formula copied into model.",
+    "Survey extraction loses equation symbols on pp.7–8; prose-grounded model only.",
+    "Individual-QoS additional paper excluded after acquisition identity failure; no abstract-only card."
+  ],
+  "external_instruction_alerts": [],
+  "negative_trials": [
+    "Initial whitespace-normalized console read failed with UnicodeEncodeError; retried successfully with UTF-8 stdout.",
+    "Large combined paper outputs truncated; scientific fields were subsequently grounded to focused readable page outputs."
+  ],
+  "artifacts": [
+    "projects\\m11-noma-qos\\literature\\cards\\r_arxiv_1504_07751_536e29b9bda8.yaml",
+    "projects\\m11-noma-qos\\literature\\cards\\r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.yaml",
+    "projects\\m11-noma-qos\\literature\\cards\\r_doi_10_1109_icc_2018_8422366_80611aa7eda1.yaml",
+    "projects\\m11-noma-qos\\literature\\cards\\r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.yaml",
+    "projects\\m11-noma-qos\\literature\\cards\\r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.yaml",
+    "projects\\m11-noma-qos\\literature\\cards\\r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.yaml",
+    "projects\\m11-noma-qos\\literature\\gap-matrix.csv",
+    "projects\\m11-noma-qos\\literature\\gaps.md",
+    "projects\\m11-noma-qos\\literature\\survey.md"
+  ],
+  "validation_command": ".venv/Scripts/python.exe - : PaperCard.model_validate for each card; lab.literature.validate_review(Path(\"projects/m11-noma-qos\"))"
+}

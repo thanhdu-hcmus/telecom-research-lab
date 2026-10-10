@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-10T16:57:24.120633+00:00",
+  "updated_at": "2026-10-10T17:40:15.530515+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
   "active_milestone": "M11",
-  "status": "awaiting_pi_scope_review",
+  "status": "awaiting_pi_literature_review",
   "verification_complete": true,
   "pi_approval": {
     "quote": "Approve M0, continue M1–M10 automatically, and create the new private repository.",
@@ -24,8 +24,8 @@
     "M12": "not_started"
   },
   "scientific_gates": {
-    "G1": "pending",
-    "G2": "not_started",
+    "G1": "approved",
+    "G2": "pending",
     "G3": "not_started",
     "G4": "not_started",
     "G5": "not_started",
@@ -38,7 +38,6 @@
     "Run independent reviewers in separately configured read-only root sessions; verify shell enforcement before L4 acceptance"
   ],
   "unresolved": [
-    "M11 G1: PI reviews proposed toy scope and synthetic profile, records approval and report usability",
     "M11 G2-G7 require actual phase artifacts and PI gate decisions",
     "M12 reference paper and code/data availability require PI selection",
     "Real thesis profile is an unreviewed draft with chapter plan, publications, deadlines and venues missing",
@@ -78,5 +77,24 @@
     "matlab_tests": 8,
     "receipt": "docs/evidence/post-m10-audit-acceptance.json",
     "sha256": "b51969f429c1ce302a5589440cce65beb0bfd9829cf750c455524696207b0352"
+  },
+  "m11_g1": {
+    "decision_commit": "2ea3b17",
+    "timestamp": "2026-10-10T17:22:02.647186+00:00",
+    "note": "Scope and synthetic profile reviewed; G1 report usable",
+    "evidence": "projects/m11-noma-qos/gates/decisions.yaml"
+  },
+  "m11_p2": {
+    "status": "prepared_for_G2",
+    "queries": 10,
+    "raw_records": 148,
+    "unique_candidates": 122,
+    "included_papers": 6,
+    "screening_pending": 0,
+    "cards": 6,
+    "comparison_questions": 4,
+    "gate_checks": "PASS",
+    "review_packet": "projects/m11-noma-qos/to_human/G2-review.md",
+    "scientific_approval": false
   }
 }

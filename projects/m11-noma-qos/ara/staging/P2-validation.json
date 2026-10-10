@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-10T17:42:40.979226+00:00",
+  "method": "Parent runtime/schema and grounding-cache identity validation, source spot-check separately recorded. This is not a scientific PI decision.",
+  "g1_binding": "PASS",
+  "prisma": {
+    "identified": 148,
+    "duplicates_removed": 26,
+    "screened": 122,
+    "excluded": 116,
+    "included": 6,
+    "pending": 0
+  },
+  "cards": [
+    {
+      "id": "arxiv:1504.07751",
+      "path": "projects/m11-noma-qos/literature/cards/r_arxiv_1504_07751_536e29b9bda8.yaml",
+      "sha256": "d4858de6d8453e9ffabcb485a0f9814d9b912c680981ded60a5e2327ec915432"
+    },
+    {
+      "id": "doi:10.1109/comst.2016.2621116",
+      "path": "projects/m11-noma-qos/literature/cards/r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.yaml",
+      "sha256": "42cd35cc4c8baae09c8c119b1310aca56e60c73f5cbe1c42072842febb06383f"
+    },
+    {
+      "id": "doi:10.1109/icc.2018.8422366",
+      "path": "projects/m11-noma-qos/literature/cards/r_doi_10_1109_icc_2018_8422366_80611aa7eda1.yaml",
+      "sha256": "24fcbd52fa7b145c32705e3006063eb4286aa7a82c10b6c8874a94324881a2a2"
+    },
+    {
+      "id": "doi:10.1109/jsac.2017.2725618",
+      "path": "projects/m11-noma-qos/literature/cards/r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.yaml",
+      "sha256": "e7e461610f9ad1326ae53bd6701a01491d50e8d351f8a9b62c5b88a8c4a40a07"
+    },
+    {
+      "id": "doi:10.1109/tvt.2017.2689000",
+      "path": "projects/m11-noma-qos/literature/cards/r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.yaml",
+      "sha256": "1d17cbd898c5b477dff7420190e2f0b51b6a6e41d693a249e4c87e9f38da181b"
+    },
+    {
+      "id": "doi:10.48550/arxiv.1412.2799",
+      "path": "projects/m11-noma-qos/literature/cards/r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.yaml",
+      "sha256": "ec0c5ae2bfc24e4b77f16c3c8a0a9ad6619b9eff8ac2bc95a6d9290ded7efe94"
+    }
+  ],
+  "page_references_checked": 127,
+  "baseline_score_previews": [
+    {
+      "id": "independent-matched-oma",
+      "total": 3,
+      "accepted": false
+    },
+    {
+      "id": "independent-qos-analytic-check",
+      "total": 3,
+      "accepted": false
+    },
+    {
+      "id": "nokia-jspa",
+      "total": 3,
+      "accepted": false
+    },
+    {
+      "id": "mao-rsma",
+      "total": 0,
+      "accepted": false
+    },
+    {
+      "id": "downlink-rl",
+      "total": 1,
+      "accepted": false
+    },
+    {
+      "id": "uav-teaching-fork",
+      "total": 0,
+      "accepted": false
+    }
+  ],
+  "phase_checks": [
+    {
+      "check": "literature/query-plan.yaml",
+      "passed": true,
+      "details": "required artifact"
+    },
+    {
+      "check": "literature/candidates.jsonl",
+      "passed": true,
+      "details": "required artifact"
+    },
+    {
+      "check": "literature/screening.yaml",
+      "passed": true,
+      "details": "required artifact"
+    },
+    {
+      "check": "literature/gap-matrix.csv",
+      "passed": true,
+      "details": "required artifact"
+    },
+    {
+      "check": "literature/gaps.md",
+      "passed": true,
+      "details": "required artifact"
+    },
+    {
+      "check": "literature/survey.md",
+      "passed": true,
+      "details": "required artifact"
+    },
+    {
+      "check": "baselines/candidates.yaml",
+      "passed": true,
+      "details": "required artifact"
+    },
+    {
+      "check": "runtime-validation",
+      "passed": true,
+      "details": "schemas and phase invariants"
+    },
+    {
+      "check": "deviations",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "format_recheck": "PASS: review validation after LF normalization; G1 binding unchanged."
+}

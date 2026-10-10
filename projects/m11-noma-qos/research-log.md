@@ -11,3 +11,13 @@
 - 2026-10-10T17:20:36.476797+00:00 — Requested G1; automated checks passed
 
 - 2026-10-10T17:22:02.738510+00:00 — PI approve G1: Scope and synthetic profile reviewed; G1 report usable
+
+- 2026-10-10T17:23:48.076847+00:00 — Entered P2
+
+- 2026-10-10T17:39:30.507619+00:00 — Requested G2; automated checks passed
+
+- 2026-10-10T17:40:39.558215+00:00 — P2 authored by lit_scout, paper_analyst and code_scout; parent checked schemas, source passages, 127 grounding references and four public repository commits. Ten queries; 122 screened; six included full papers; four benchmark questions. G2 checks passed and PI review pending. Provenance session 2026-10-10-0003; no simulations or accepted baselines.
+
+- 2026-10-10T17:43:04.091555+00:00 — Requested G2; automated checks passed
+
+- 2026-10-10T17:44:01.117545+00:00 — Refreshed pending G2 after LF portability correction; scientific content and G1 approval unchanged. Exact session 0003 sources archived in external ResearchLibrary. Final epilogue session 2026-10-10-0004; PI G2 review still pending.

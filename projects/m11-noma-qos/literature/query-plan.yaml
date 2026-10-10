@@ -1,0 +1,13 @@
+year_from: 2014
+purpose: Bounded M11 established benchmark coverage; no novelty inference.
+queries:
+  - {source: openalex, query: '"non-orthogonal multiple access" AND "orthogonal multiple access" AND "sum rate"', limit: 15, pages: 1}
+  - {source: openalex, query: '"NOMA" AND "power allocation" AND "QoS"', limit: 15, pages: 1}
+  - {source: openalex, query: '"non-orthogonal multiple access" AND "user pairing"', limit: 15, pages: 1}
+  - {source: openalex, query: '"NOMA" AND "OMA" AND "capacity"', limit: 15, pages: 1}
+  - {source: openalex, query: '"non-orthogonal multiple access" AND "information theoretic"', limit: 15, pages: 1}
+  - {source: arxiv, query: 'all:"non-orthogonal multiple access" AND all:"orthogonal multiple access" AND all:"sum rate"', limit: 15, pages: 1}
+  - {source: arxiv, query: 'all:"NOMA" AND all:"power allocation" AND all:"QoS"', limit: 15, pages: 1}
+  - {source: arxiv, query: 'all:"non-orthogonal multiple access" AND all:"user pairing"', limit: 15, pages: 1}
+  - {source: arxiv, query: 'all:"NOMA" AND all:"OMA" AND all:"capacity"', limit: 15, pages: 1}
+  - {source: arxiv, query: 'all:"non-orthogonal multiple access" AND all:"information theoretic"', limit: 15, pages: 1}

@@ -1,0 +1,22 @@
+id: 2026-10-10-0003
+timestamp: '2026-10-10T17:40:39.331829+00:00'
+phase: P2
+summary: 'P2 prepared by three named author specialists and reviewed by the parent:
+  ten queries, 122 screened candidates, six grounded full papers, four benchmark comparison
+  questions, two unimplemented proposals and four rejected code leads. G2 checks passed;
+  acquisition failures and source/version limits retained. No simulations, third-party
+  code execution, novelty claim or PI G2 decision.'
+provenance: ai
+evidence:
+  research-state.yaml: 2abb1bb2edf65aff0db79d6bca69ba12ccf25fc4f4b1bc944d7fe93338502e48
+  to_human/G2-report.md: 07de601ebd40489f98e5f7a7cccfe62e40fca97f8214a0fd9a9d02b0759b022a
+  to_human/G2-review.md: 17a616e2619ccfadb2048d3ab3df74aeb7f571ae7d075aca37bee1366128ae0c
+  to_human/G2-spot-check.md: 9a6ce4a44f00f5c412e5d11cde2e8b57f85a06bd613ac86ea58c8c6e46ace360
+  ara/staging/P2-effort.json: 25c99cc9183939777e05ace7f0e64a884af9a620af91461186521c1ec1eeb400
+  ara/staging/P2-validation.json: 767211488684233657e42374c9365b11ef6246636bdb787a0fe6c6600af00eb2
+  ara/staging/P2-orchestrator-review.md: 71f6c10c391de774c91ec30c450734aa25526fb800f8b53c78d3ab7316421a29
+  literature/coverage.md: 8afd9633a6d4e470ecfe8a1efd1824203f4fd0b3cad522b50fd39bdf09d79db6
+  literature/retrieval-report.json: 169ec4f00705b46c98b7164101d65ce0a5fc7f5ae47cb709e51f22fee1047d7f
+  literature/survey.md: 357114f79817c0bf98137de6edf948d9ae6269ee24d0259d52c5c4af92b62ce7
+  literature/gaps.md: 60e6e86ad0d2b69ce86e5a058e1ca96c244bef39a9b62faf9a460adeb41799a1
+  baselines/candidates.yaml: 6390a2fbe1bf15b601c5fc5c5ab068703b0b44dda149e852f6539a61807d9083
