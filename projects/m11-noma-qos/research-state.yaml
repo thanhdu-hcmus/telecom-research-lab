@@ -3,14 +3,14 @@ project: m11-noma-qos
 phase: P1
 gates:
   G1:
-    status: pending
-    timestamp: '2026-10-10T16:16:42.864197+00:00'
-    note: null
+    status: approved
+    timestamp: '2026-10-10T17:22:02.647186+00:00'
+    note: Scope and synthetic profile reviewed; G1 report usable
     artifact_hashes:
-      projects/m11-noma-qos/profile.yaml: dc4bdf213a81a65c2fab5ab99d5a455130e99c647422e666672fab5b33a8a79d
+      projects/m11-noma-qos/profile.yaml: 25f0f8ea5908d46c6564ba4c667aa576b867da6e3f72a3918bc595efd49c4cab
       projects/m11-noma-qos/scope.md: d58c04fcf064de9299c77d73cab651075e43805c5d912107accf53f9b39d1625
-      projects/m11-noma-qos/scope.yaml: a63f32a19a41064fee5436b6d2d07a2c233285f238175c67b0ac9b760fca66b1
-    checks_passed: false
+      projects/m11-noma-qos/scope.yaml: c5c3a637d6a1a374b8b760935958414a68c8d32c648c030c573f8f94b5945df4
+    checks_passed: true
   G2:
     status: not_started
     timestamp: null

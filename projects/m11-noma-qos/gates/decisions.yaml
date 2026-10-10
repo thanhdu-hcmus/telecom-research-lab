@@ -1,1 +1,12 @@
-[]
+- gate: G1
+  decision: approve
+  note: Scope and synthetic profile reviewed; G1 report usable
+  timestamp: '2026-10-10T17:22:02.647186+00:00'
+  git_user: thanhdu
+  selected_idea: null
+  artifact_hashes:
+    projects/m11-noma-qos/profile.yaml: 25f0f8ea5908d46c6564ba4c667aa576b867da6e3f72a3918bc595efd49c4cab
+    projects/m11-noma-qos/scope.md: d58c04fcf064de9299c77d73cab651075e43805c5d912107accf53f9b39d1625
+    projects/m11-noma-qos/scope.yaml: c5c3a637d6a1a374b8b760935958414a68c8d32c648c030c573f8f94b5945df4
+  previous_hash: null
+  record_hash: fc3449492f9769ac599af4e0b11a3ed2eb4f06463f22b4ca9a80fa0c79d50106
