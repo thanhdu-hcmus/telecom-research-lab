@@ -1,0 +1,9 @@
+sources: [openalex, arxiv, crossref, semanticscholar]
+allow_hosts: [api.openalex.org, api.crossref.org, arxiv.org, export.arxiv.org, doi.org, api.semanticscholar.org, api.unpaywall.org, core.ac.uk, api.core.ac.uk, ieeexploreapi.ieee.org, github.com, api.github.com, codeload.github.com]
+# Add reviewed institutional/publisher OA hosts explicitly; API discovery is not approval.
+approved_oa_hosts: []
+requests_per_second: 1
+retries: 3
+timeout_s: 30
+cache_hours: 24
+maximum_response_bytes: 52428800

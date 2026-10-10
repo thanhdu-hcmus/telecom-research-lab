@@ -1,0 +1,8 @@
+minimum_score: 3
+venue_points: {transactions_jsac: 3, Q1_Q2: 2, reputable_conference: 1}
+citation_thresholds: [{per_year: 10, points: 2}, {per_year: 3, points: 1}]
+official_repo_points: 2
+license_points: 1
+maintained_or_selfcontained_points: 1
+maintenance_months: 24
+agreement: {absolute_db: 0.5, relative: 0.05, require_same_ordering: true}

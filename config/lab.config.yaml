@@ -1,0 +1,7 @@
+# Outside this Git repository, inside the current writable thesis workspace.
+library_root: ../ResearchLibrary
+contact_email: null
+optional_gemini: false
+latex_bin: .tools/texlive/bin/windows
+matlab_root: 'C:/Program Files/MATLAB/R2021b'
+large_result_bytes: 52428800

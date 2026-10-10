@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "telecom-research-lab"
+version = "0.1.0"
+description = "Gated, reproducible telecommunications research tooling for Codex"
+requires-python = ">=3.11"
+dependencies = [
+  "typer>=0.15,<1", "pydantic>=2.10,<3", "PyYAML>=6,<7",
+  "httpx>=0.28,<1", "PyMuPDF>=1.25,<2", "bibtexparser>=1.4,<2",
+  "numpy>=2,<3", "scipy>=1.14,<2", "sympy>=1.13,<2",
+  "cvxpy>=1.6,<2", "matplotlib>=3.9,<4", "jsonschema>=4.23,<5",
+]
+
+[project.scripts]
+lab = "lab.cli:app"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.12,<1", "detect-secrets>=1.5,<2", "pre-commit>=4,<5"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["lab"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/unit", "tests/contracts", "tests/physics", "tests/m0"]
+pythonpath = [".", "scripts"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = ["vendor", ".tools", "external", "probes"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

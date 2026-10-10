@@ -1,0 +1,66 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "area": {
+      "minLength": 1,
+      "title": "Area",
+      "type": "string"
+    },
+    "keywords": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Keywords",
+      "type": "array"
+    },
+    "inclusion": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Inclusion",
+      "type": "array"
+    },
+    "exclusion": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Exclusion",
+      "type": "array"
+    },
+    "year_from": {
+      "minimum": 1900,
+      "title": "Year From",
+      "type": "integer"
+    },
+    "target_venues": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Target Venues",
+      "type": "array"
+    },
+    "thesis_profile_reviewed": {
+      "title": "Thesis Profile Reviewed",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "area",
+    "keywords",
+    "inclusion",
+    "exclusion",
+    "year_from",
+    "target_venues",
+    "thesis_profile_reviewed"
+  ],
+  "title": "Scope",
+  "type": "object"
+}

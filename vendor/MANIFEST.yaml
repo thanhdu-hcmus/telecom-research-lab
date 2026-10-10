@@ -1,0 +1,118 @@
+{
+  "upstream": "https://github.com/Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "license": "MIT",
+  "scope": "Selected SKILL.md source documents only; supporting scripts/assets deliberately excluded. Originals are not discovered as project skills.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+      "bytes": 1095,
+      "review": "reviewed: docs/vendor-review.md; archival text only, no execution",
+      "upstream_sha256": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+      "normalization": "CRLF to LF for portable Git contracts; upstream digest retained"
+    },
+    {
+      "path": "0-autoresearch-skill/SKILL.md",
+      "sha256": "b7ca0d7a6e905da85a8b494d3fe398ac78eaa278854f67b50a34f2b37a9a2b78",
+      "bytes": 24945,
+      "review": "reviewed: docs/vendor-review.md; archival text only, no execution",
+      "upstream_sha256": "b7ca0d7a6e905da85a8b494d3fe398ac78eaa278854f67b50a34f2b37a9a2b78",
+      "normalization": "CRLF to LF for portable Git contracts; upstream digest retained"
+    },
+    {
+      "path": "10-optimization/ml-training-recipes/SKILL.md",
+      "sha256": "d7be143e8dbbb526c9ef344ef28bf8eab4f317096285cf02560ff3008627692b",
+      "bytes": 11483,
+      "review": "reviewed: docs/vendor-review.md; archival text only, no execution",
+      "upstream_sha256": "1cb661b0d3bac57ffed65075707a9079ac23123a5a597700e85c05e03e166a57",
+      "normalization": "CRLF to LF for portable Git contracts; upstream digest retained"
+    },
+    {
+      "path": "13-mlops/tensorboard/SKILL.md",
+      "sha256": "717c4b05f88bbc888d54cc51fa390ae225d687b3b86fb616e36cc7fc26108020",
+      "bytes": 15276,
+      "review": "reviewed: docs/vendor-review.md; archival text only, no execution",
+      "upstream_sha256": "717c4b05f88bbc888d54cc51fa390ae225d687b3b86fb616e36cc7fc26108020",
+      "normalization": "CRLF to LF for portable Git contracts; upstream digest retained"
+    },
+    {
+      "path": "20-ml-paper-writing/academic-plotting/SKILL.md",
+      "sha256": "6613653d8109dcae36596b37d7414d5ae394a18f81543365222286d04485fd83",
+      "bytes": 21149,
+      "review": "reviewed: docs/vendor-review.md; archival text only, no execution",
+      "upstream_sha256": "6613653d8109dcae36596b37d7414d5ae394a18f81543365222286d04485fd83",
+      "normalization": "CRLF to LF for portable Git contracts; upstream digest retained"
+    },
+    {
+      "path": "20-ml-paper-writing/ml-paper-writing/SKILL.md",
+      "sha256": "96733e6d758642d792ed15b7c08eb90548d4775099368cd72a8312127f2fe911",
+      "bytes": 37635,
+      "review": "reviewed: docs/vendor-review.md; archival text only, no execution",
+      "upstream_sha256": "96733e6d758642d792ed15b7c08eb90548d4775099368cd72a8312127f2fe911",
+      "normalization": "CRLF to LF for portable Git contracts; upstream digest retained"
+    },
+    {
+      "path": "21-research-ideation/brainstorming-research-ideas/SKILL.md",
+      "sha256": "8422a1a6dc0a88d05f02b9fbe0f8c2ae06a77024856d18125efa13d19d855d46",
+      "bytes": 19150,
+      "review": "reviewed: docs/vendor-review.md; archival text only, no execution",
+      "upstream_sha256": "8422a1a6dc0a88d05f02b9fbe0f8c2ae06a77024856d18125efa13d19d855d46",
+      "normalization": "CRLF to LF for portable Git contracts; upstream digest retained"
+    },
+    {
+      "path": "21-research-ideation/creative-thinking-for-research/SKILL.md",
+      "sha256": "ec111f9236d7f9d72c895cebbf0f534ac93f4249172607559ad4bf92aefc5310",
+      "bytes": 21962,
+      "review": "reviewed: docs/vendor-review.md; archival text only, no execution",
+      "upstream_sha256": "ec111f9236d7f9d72c895cebbf0f534ac93f4249172607559ad4bf92aefc5310",
+      "normalization": "CRLF to LF for portable Git contracts; upstream digest retained"
+    },
+    {
+      "path": "22-agent-native-research-artifact/research-manager/SKILL.md",
+      "sha256": "f78da7627ac09a4be398ea4363fc7b8753b2dcb22bc961c5059395e33ef3ef2c",
+      "bytes": 12625,
+      "review": "reviewed: docs/vendor-review.md; archival text only, no execution",
+      "upstream_sha256": "f78da7627ac09a4be398ea4363fc7b8753b2dcb22bc961c5059395e33ef3ef2c",
+      "normalization": "CRLF to LF for portable Git contracts; upstream digest retained"
+    },
+    {
+      "path": "22-agent-native-research-artifact/rigor-reviewer/SKILL.md",
+      "sha256": "5a8169a5d069caf36a30e0106e523503ffba685215c3cd0067a72aa64a7e2dbb",
+      "bytes": 17848,
+      "review": "reviewed: docs/vendor-review.md; archival text only, no execution",
+      "upstream_sha256": "5a8169a5d069caf36a30e0106e523503ffba685215c3cd0067a72aa64a7e2dbb",
+      "normalization": "CRLF to LF for portable Git contracts; upstream digest retained"
+    }
+  ],
+  "adaptations": {
+    "0-autoresearch-skill": [
+      "lab-orchestrator"
+    ],
+    "brainstorming-research-ideas": [
+      "brainstorming-research-ideas"
+    ],
+    "creative-thinking-for-research": [
+      "creative-thinking-for-research"
+    ],
+    "rigor-reviewer": [
+      "model-critique",
+      "ieee-peer-review"
+    ],
+    "research-manager": [
+      "provenance-epilogue"
+    ],
+    "ml-paper-writing": [
+      "ieee-paper-writing"
+    ],
+    "academic-plotting": [
+      "ieee-figures"
+    ],
+    "ml-training-recipes": [
+      "ml-training-recipes"
+    ],
+    "tensorboard": [
+      "tensorboard (optional, M8)"
+    ]
+  }
+}

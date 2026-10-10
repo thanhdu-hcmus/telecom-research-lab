@@ -1,0 +1,4 @@
+target_quartiles: [Q2, Q3]
+communications_categories: [Electrical and Electronic Engineering, Signal Processing, Computer Networks and Communications]
+reputable_conferences: [IEEE ICC, IEEE GLOBECOM, IEEE WCNC, IEEE VTC, IEEE PIMRC]
+sjr_csv: null

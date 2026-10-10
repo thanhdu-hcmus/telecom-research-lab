@@ -9,3 +9,17 @@ __pycache__/
 external/
 docs/evidence/raw/
 probes/work/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.npz
+*.zip
+.pytest_cache/
+.ruff_cache/
+config/sjr/*.csv
+tests/evals/work/

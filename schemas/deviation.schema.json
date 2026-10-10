@@ -1,0 +1,87 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "minLength": 1,
+      "title": "Id",
+      "type": "string"
+    },
+    "phase": {
+      "enum": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7"
+      ],
+      "title": "Phase",
+      "type": "string"
+    },
+    "what": {
+      "minLength": 1,
+      "title": "What",
+      "type": "string"
+    },
+    "why": {
+      "minLength": 1,
+      "title": "Why",
+      "type": "string"
+    },
+    "proposed_change": {
+      "minLength": 1,
+      "title": "Proposed Change",
+      "type": "string"
+    },
+    "impact": {
+      "minLength": 1,
+      "title": "Impact",
+      "type": "string"
+    },
+    "status": {
+      "default": "open",
+      "enum": [
+        "open",
+        "approved",
+        "rejected"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "decided_by": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Decided By"
+    },
+    "decision_note": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Decision Note"
+    }
+  },
+  "required": [
+    "id",
+    "phase",
+    "what",
+    "why",
+    "proposed_change",
+    "impact"
+  ],
+  "title": "Deviation",
+  "type": "object"
+}

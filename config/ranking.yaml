@@ -1,0 +1,8 @@
+weights: {thesis_fit: 5, time: 3, venue: 2}
+maximum_score: 50
+allowed_novelty: [novel, incremental-but-publishable]
+time_thresholds_months: [3, 4, 6, 9]
+tie_breakers: [novelty, risk_rating, id]
+rubrics:
+  thesis_fit: [unrelated, weak-link, adjacent-chapter, core-new-angle, core-and-reuse]
+  venue: [unlikely, conference-only, Q3-or-strong-conference, Q2-Q3, two-named-Q2-comparators]

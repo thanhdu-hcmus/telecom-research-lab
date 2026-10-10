@@ -22,3 +22,16 @@
 - Added six deterministic tests for evidence failures and redaction; all pass.
 - M0 PI acceptance and workaround decisions remain pending. M1-M12 and all
   seven scientific gates remain unstarted. Existing thesis notes are preserved.
+# M1 — package and contracts
+
+- Recorded PI approval of M0 and automatic build M1–M10.
+- Created and verified private GitHub repository thanhdu-hcmus/telecom-research-lab.
+- Added uv lock, Typer package, Pydantic models and matching JSON Schemas,
+  project configuration, eleven role contracts, scoped skill contracts, CI and
+  Ruff/detect-secrets hooks. Pinned nine reviewed Orchestra source documents
+  plus MIT license; originals remain outside skill discovery.
+- Local acceptance: 14 tests passed; Ruff and secrets checks passed;
+  `lab doctor --full` passed using the approved M0 network workaround.
+- GitHub CI is checked after push before entering M2. Skill contracts remain
+  explicitly nonoperational until the corresponding milestone is implemented.
+

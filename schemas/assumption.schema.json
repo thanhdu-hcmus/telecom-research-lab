@@ -1,0 +1,45 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "minLength": 1,
+      "title": "Id",
+      "type": "string"
+    },
+    "statement": {
+      "minLength": 1,
+      "title": "Statement",
+      "type": "string"
+    },
+    "justification": {
+      "minLength": 1,
+      "title": "Justification",
+      "type": "string"
+    },
+    "citation": {
+      "minLength": 1,
+      "title": "Citation",
+      "type": "string"
+    },
+    "consequence_if_violated": {
+      "minLength": 1,
+      "title": "Consequence If Violated",
+      "type": "string"
+    },
+    "test_or_relaxation": {
+      "minLength": 1,
+      "title": "Test Or Relaxation",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "statement",
+    "justification",
+    "citation",
+    "consequence_if_violated",
+    "test_or_relaxation"
+  ],
+  "title": "Assumption",
+  "type": "object"
+}

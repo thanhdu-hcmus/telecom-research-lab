@@ -1,0 +1,166 @@
+{
+  "$defs": {
+    "GateState": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "default": "not_started",
+          "enum": [
+            "not_started",
+            "pending",
+            "approved",
+            "revise",
+            "invalidated"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "timestamp": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Timestamp"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        },
+        "artifact_hashes": {
+          "additionalProperties": {
+            "pattern": "^[a-f0-9]{64}$",
+            "type": "string"
+          },
+          "title": "Artifact Hashes",
+          "type": "object"
+        },
+        "checks_passed": {
+          "default": false,
+          "title": "Checks Passed",
+          "type": "boolean"
+        }
+      },
+      "title": "GateState",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "default": 1,
+      "title": "Version",
+      "type": "integer"
+    },
+    "project": {
+      "minLength": 1,
+      "title": "Project",
+      "type": "string"
+    },
+    "phase": {
+      "default": "P1",
+      "enum": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7"
+      ],
+      "title": "Phase",
+      "type": "string"
+    },
+    "gates": {
+      "additionalProperties": {
+        "$ref": "#/$defs/GateState"
+      },
+      "propertyNames": {
+        "enum": [
+          "G1",
+          "G2",
+          "G3",
+          "G4",
+          "G5",
+          "G6",
+          "G7"
+        ]
+      },
+      "title": "Gates",
+      "type": "object"
+    },
+    "selected_idea": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Selected Idea"
+    },
+    "baselines": {
+      "additionalProperties": true,
+      "title": "Baselines",
+      "type": "object"
+    },
+    "protocol_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Protocol Hash"
+    },
+    "protocol_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Protocol Commit"
+    },
+    "deviations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Deviations",
+      "type": "array"
+    },
+    "open_questions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Open Questions",
+      "type": "array"
+    }
+  },
+  "required": [
+    "project",
+    "gates"
+  ],
+  "title": "ResearchState",
+  "type": "object"
+}

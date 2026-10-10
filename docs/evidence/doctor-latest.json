@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-10-10T02:00:38.876107+00:00",
+  "status": "PASS",
+  "checks": {
+    "python": {
+      "status": "PASS",
+      "version": "3.13.5"
+    },
+    "uv": {
+      "status": "PASS",
+      "path": "C:\\Users\\ADMIN\\.local\\bin\\uv.EXE"
+    },
+    "git": {
+      "status": "PASS",
+      "path": "C:\\Program Files\\Git\\cmd\\git.EXE"
+    },
+    "gh": {
+      "status": "PASS",
+      "path": "C:\\Program Files\\GitHub CLI\\gh.EXE"
+    },
+    "codex": {
+      "status": "PASS",
+      "path": "C:\\Program Files\\nodejs\\codex.CMD"
+    },
+    "latexmk": {
+      "status": "PASS",
+      "path": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.tools\\texlive\\bin\\windows\\latexmk.exe"
+    },
+    "matlab_mcp": {
+      "status": "PASS",
+      "path": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.tools\\matlab-mcp-server\\matlab-mcp-server-windows-x64.exe"
+    },
+    "library": {
+      "status": "PASS",
+      "path": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary"
+    },
+    "schema:paper_card": {
+      "status": "PASS"
+    },
+    "schema:idea_card": {
+      "status": "PASS"
+    },
+    "schema:assumption": {
+      "status": "PASS"
+    },
+    "schema:prediction": {
+      "status": "PASS"
+    },
+    "schema:critique_finding": {
+      "status": "PASS"
+    },
+    "schema:run_manifest": {
+      "status": "PASS"
+    },
+    "schema:verification_item": {
+      "status": "PASS"
+    },
+    "schema:claim": {
+      "status": "PASS"
+    },
+    "schema:gate_decision": {
+      "status": "PASS"
+    },
+    "schema:deviation": {
+      "status": "PASS"
+    },
+    "schema:scope": {
+      "status": "PASS"
+    },
+    "schema:research_state": {
+      "status": "PASS"
+    },
+    "runtime_workarounds": {
+      "status": "PASS",
+      "evidence": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\docs\\evidence",
+      "note": "M0 approved: MATLAB MCP; bounded host network; separate reviewer sessions. This is historical evidence, not a fresh network check."
+    },
+    "full_probe": {
+      "status": "PASS",
+      "exit_code": 0
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "$defs": {
+    "OutputFile": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "minLength": 1,
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "bytes": {
+          "minimum": 0,
+          "title": "Bytes",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "bytes"
+      ],
+      "title": "OutputFile",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "run_id": {
+      "minLength": 1,
+      "title": "Run Id",
+      "type": "string"
+    },
+    "git_sha": {
+      "pattern": "^[a-f0-9]{40}$",
+      "title": "Git Sha",
+      "type": "string"
+    },
+    "protocol_commit": {
+      "pattern": "^[a-f0-9]{40}$",
+      "title": "Protocol Commit",
+      "type": "string"
+    },
+    "protocol_hash": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Protocol Hash",
+      "type": "string"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "pattern": "^[a-f0-9]{64}$",
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "scenario": {
+      "minLength": 1,
+      "title": "Scenario",
+      "type": "string"
+    },
+    "params": {
+      "additionalProperties": true,
+      "title": "Params",
+      "type": "object"
+    },
+    "seeds": {
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 1,
+      "title": "Seeds",
+      "type": "array"
+    },
+    "language": {
+      "enum": [
+        "python",
+        "matlab"
+      ],
+      "title": "Language",
+      "type": "string"
+    },
+    "env": {
+      "additionalProperties": true,
+      "title": "Env",
+      "type": "object"
+    },
+    "host": {
+      "additionalProperties": true,
+      "title": "Host",
+      "type": "object"
+    },
+    "start": {
+      "minLength": 1,
+      "title": "Start",
+      "type": "string"
+    },
+    "end": {
+      "minLength": 1,
+      "title": "End",
+      "type": "string"
+    },
+    "runtime_s": {
+      "minimum": 0,
+      "title": "Runtime S",
+      "type": "number"
+    },
+    "outputs": {
+      "items": {
+        "$ref": "#/$defs/OutputFile"
+      },
+      "minItems": 1,
+      "title": "Outputs",
+      "type": "array"
+    },
+    "status": {
+      "enum": [
+        "complete",
+        "failed"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "run_id",
+    "git_sha",
+    "protocol_commit",
+    "protocol_hash",
+    "input_hashes",
+    "scenario",
+    "params",
+    "seeds",
+    "language",
+    "env",
+    "host",
+    "start",
+    "end",
+    "runtime_s",
+    "outputs",
+    "status"
+  ],
+  "title": "RunManifest",
+  "type": "object"
+}

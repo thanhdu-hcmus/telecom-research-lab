@@ -1,0 +1,45 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "minLength": 1,
+      "title": "Id",
+      "type": "string"
+    },
+    "statement": {
+      "minLength": 1,
+      "title": "Statement",
+      "type": "string"
+    },
+    "expression_or_law": {
+      "minLength": 1,
+      "title": "Expression Or Law",
+      "type": "string"
+    },
+    "regime": {
+      "minLength": 1,
+      "title": "Regime",
+      "type": "string"
+    },
+    "test_method": {
+      "minLength": 1,
+      "title": "Test Method",
+      "type": "string"
+    },
+    "tolerance": {
+      "additionalProperties": true,
+      "title": "Tolerance",
+      "type": "object"
+    }
+  },
+  "required": [
+    "id",
+    "statement",
+    "expression_or_law",
+    "regime",
+    "test_method",
+    "tolerance"
+  ],
+  "title": "Prediction",
+  "type": "object"
+}

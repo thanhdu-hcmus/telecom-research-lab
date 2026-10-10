@@ -1,0 +1,13 @@
+working_title: ''
+abstract: ''
+chapters: []
+core_topics: [RIS, mmWave, wireless performance, optimization, NOMA, power allocation]
+own_publications: []
+existing_code: []
+preferred_methods: []
+excluded_directions: [beam management as primary contribution]
+mobility: optional
+target_quartiles: [Q2, Q3]
+time_budget_months_per_paper: null
+thesis_deadline: null
+pi_reviewed: false

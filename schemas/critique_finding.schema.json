@@ -1,0 +1,76 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "minLength": 1,
+      "title": "Id",
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "critical",
+        "major",
+        "minor"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "category": {
+      "enum": [
+        "hidden-assumption",
+        "sic-order-inconsistency",
+        "unit-mismatch",
+        "false-convexity",
+        "unfair-baseline",
+        "complexity-error",
+        "novelty-overclaim",
+        "prediction-error",
+        "practicality",
+        "other"
+      ],
+      "title": "Category",
+      "type": "string"
+    },
+    "location": {
+      "minLength": 1,
+      "title": "Location",
+      "type": "string"
+    },
+    "issue": {
+      "minLength": 1,
+      "title": "Issue",
+      "type": "string"
+    },
+    "why_it_matters": {
+      "minLength": 1,
+      "title": "Why It Matters",
+      "type": "string"
+    },
+    "suggested_fix_or_test": {
+      "minLength": 1,
+      "title": "Suggested Fix Or Test",
+      "type": "string"
+    },
+    "status": {
+      "default": "open",
+      "enum": [
+        "open",
+        "fixed",
+        "rebutted"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "severity",
+    "category",
+    "location",
+    "issue",
+    "why_it_matters",
+    "suggested_fix_or_test"
+  ],
+  "title": "CritiqueFinding",
+  "type": "object"
+}

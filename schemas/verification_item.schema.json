@@ -1,0 +1,89 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "minLength": 1,
+      "title": "Id",
+      "type": "string"
+    },
+    "prediction_ref": {
+      "minLength": 1,
+      "title": "Prediction Ref",
+      "type": "string"
+    },
+    "method": {
+      "minLength": 1,
+      "title": "Method",
+      "type": "string"
+    },
+    "metric": {
+      "minLength": 1,
+      "title": "Metric",
+      "type": "string"
+    },
+    "value": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Value"
+    },
+    "tolerance": {
+      "additionalProperties": true,
+      "title": "Tolerance",
+      "type": "object"
+    },
+    "verdict": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "INCONCLUSIVE"
+      ],
+      "title": "Verdict",
+      "type": "string"
+    },
+    "triage": {
+      "anyOf": [
+        {
+          "enum": [
+            "implementation-bug",
+            "theory-error",
+            "approximation-gap",
+            "statistical-noise"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Triage"
+    },
+    "evidence_paths": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Evidence Paths",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "prediction_ref",
+    "method",
+    "metric",
+    "value",
+    "tolerance",
+    "verdict",
+    "triage",
+    "evidence_paths"
+  ],
+  "title": "VerificationItem",
+  "type": "object"
+}

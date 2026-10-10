@@ -1,0 +1,90 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "gate": {
+      "enum": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6",
+        "G7"
+      ],
+      "title": "Gate",
+      "type": "string"
+    },
+    "decision": {
+      "enum": [
+        "approve",
+        "revise",
+        "rewind"
+      ],
+      "title": "Decision",
+      "type": "string"
+    },
+    "note": {
+      "minLength": 1,
+      "title": "Note",
+      "type": "string"
+    },
+    "timestamp": {
+      "minLength": 1,
+      "title": "Timestamp",
+      "type": "string"
+    },
+    "git_user": {
+      "minLength": 1,
+      "title": "Git User",
+      "type": "string"
+    },
+    "selected_idea": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Selected Idea"
+    },
+    "artifact_hashes": {
+      "additionalProperties": {
+        "pattern": "^[a-f0-9]{64}$",
+        "type": "string"
+      },
+      "title": "Artifact Hashes",
+      "type": "object"
+    },
+    "previous_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Previous Hash"
+    },
+    "record_hash": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Record Hash",
+      "type": "string"
+    }
+  },
+  "required": [
+    "gate",
+    "decision",
+    "note",
+    "timestamp",
+    "git_user",
+    "artifact_hashes",
+    "previous_hash",
+    "record_hash"
+  ],
+  "title": "GateDecision",
+  "type": "object"
+}

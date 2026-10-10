@@ -1,0 +1,223 @@
+{
+  "$defs": {
+    "ClosestWork": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "delta": {
+          "minLength": 1,
+          "title": "Delta",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "delta"
+      ],
+      "title": "ClosestWork",
+      "type": "object"
+    },
+    "Feasibility": {
+      "additionalProperties": false,
+      "properties": {
+        "pass": {
+          "title": "Pass",
+          "type": "boolean"
+        },
+        "reasons": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Reasons",
+          "type": "array"
+        }
+      },
+      "required": [
+        "pass",
+        "reasons"
+      ],
+      "title": "Feasibility",
+      "type": "object"
+    },
+    "Novelty": {
+      "additionalProperties": false,
+      "properties": {
+        "verdict": {
+          "enum": [
+            "novel",
+            "incremental-but-publishable",
+            "already-done",
+            "unclear"
+          ],
+          "title": "Verdict",
+          "type": "string"
+        },
+        "report": {
+          "minLength": 1,
+          "title": "Report",
+          "type": "string"
+        }
+      },
+      "required": [
+        "verdict",
+        "report"
+      ],
+      "title": "Novelty",
+      "type": "object"
+    },
+    "Score": {
+      "additionalProperties": false,
+      "properties": {
+        "score": {
+          "maximum": 5,
+          "minimum": 1,
+          "title": "Score",
+          "type": "integer"
+        },
+        "rationale": {
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "score",
+        "rationale"
+      ],
+      "title": "Score",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "minLength": 1,
+      "title": "Id",
+      "type": "string"
+    },
+    "title": {
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "problem": {
+      "minLength": 1,
+      "title": "Problem",
+      "type": "string"
+    },
+    "gap_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Gap Refs",
+      "type": "array"
+    },
+    "closest_works": {
+      "items": {
+        "$ref": "#/$defs/ClosestWork"
+      },
+      "minItems": 3,
+      "title": "Closest Works",
+      "type": "array"
+    },
+    "method_sketch": {
+      "minLength": 1,
+      "title": "Method Sketch",
+      "type": "string"
+    },
+    "expected_contributions": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Expected Contributions",
+      "type": "array"
+    },
+    "risks": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Risks",
+      "type": "array"
+    },
+    "risk_rating": {
+      "maximum": 5,
+      "minimum": 1,
+      "title": "Risk Rating",
+      "type": "integer"
+    },
+    "resources": {
+      "additionalProperties": true,
+      "title": "Resources",
+      "type": "object"
+    },
+    "time_estimate_months": {
+      "exclusiveMinimum": 0,
+      "title": "Time Estimate Months",
+      "type": "number"
+    },
+    "target_venue_class": {
+      "minLength": 1,
+      "title": "Target Venue Class",
+      "type": "string"
+    },
+    "feasibility": {
+      "$ref": "#/$defs/Feasibility"
+    },
+    "novelty": {
+      "$ref": "#/$defs/Novelty"
+    },
+    "scores": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Score"
+      },
+      "propertyNames": {
+        "enum": [
+          "thesis_fit",
+          "time",
+          "venue"
+        ]
+      },
+      "title": "Scores",
+      "type": "object"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "problem",
+    "gap_refs",
+    "closest_works",
+    "method_sketch",
+    "expected_contributions",
+    "risks",
+    "risk_rating",
+    "resources",
+    "time_estimate_months",
+    "target_venue_class",
+    "feasibility",
+    "novelty",
+    "scores"
+  ],
+  "title": "IdeaCard",
+  "type": "object"
+}

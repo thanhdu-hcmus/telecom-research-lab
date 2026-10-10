@@ -1,0 +1,44 @@
+"""Small JSON outputs and consistent nonzero failures for agent-facing commands."""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+import typer
+
+from lab import doctor
+from lab.io import LabError, root
+
+app = typer.Typer(no_args_is_help=True, pretty_exceptions_enable=False)
+
+
+@app.callback()
+def main():
+    """Telecom Research Lab: deterministic tooling with PI research gates."""
+
+
+def emit(value):
+    typer.echo(json.dumps(value, ensure_ascii=False, default=str))
+
+
+def execute(function, *args, **kwargs):
+    try:
+        result = function(*args, **kwargs)
+        emit(result)
+        if isinstance(result, dict) and result.get("status") == "FAIL":
+            raise typer.Exit(1)
+        return result
+    except (LabError, OSError, ValueError) as error:
+        emit({"status": "FAIL", "error": str(error)})
+        raise typer.Exit(1) from error
+
+
+@app.command()
+def doctor_command(full: bool = False, repo: Path | None = typer.Option(None, "--root"),
+                   json_output: bool = typer.Option(False, "--json")):
+    """Check tooling and schema alignment; --full repeats M0 integrations."""
+    execute(doctor.check, repo.resolve() if repo else root(), full)
+
+
+# Keep the public command name independent of the Python implementation name.
+app.registered_commands[-1].name = "doctor"

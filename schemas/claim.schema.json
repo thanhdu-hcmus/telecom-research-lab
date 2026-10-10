@@ -1,0 +1,48 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "key": {
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]*$",
+      "title": "Key",
+      "type": "string"
+    },
+    "value": {
+      "title": "Value",
+      "type": "number"
+    },
+    "unit": {
+      "minLength": 1,
+      "title": "Unit",
+      "type": "string"
+    },
+    "source_manifest": {
+      "minLength": 1,
+      "title": "Source Manifest",
+      "type": "string"
+    },
+    "computation": {
+      "minLength": 1,
+      "title": "Computation",
+      "type": "string"
+    },
+    "used_in": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Used In",
+      "type": "array"
+    }
+  },
+  "required": [
+    "key",
+    "value",
+    "unit",
+    "source_manifest",
+    "computation",
+    "used_in"
+  ],
+  "title": "Claim",
+  "type": "object"
+}

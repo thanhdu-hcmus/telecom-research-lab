@@ -1,0 +1,3 @@
+allowed: [bugfix, crashed-run-retry, solver-tolerance, iteration-cap, refactor, tests]
+requires_pi_deviation: [selected-idea, model-assumptions, objective, constraints, metrics, locked-protocol, baseline-set]
+scientific_gates: pi_only
