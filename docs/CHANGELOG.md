@@ -35,3 +35,17 @@
 - GitHub CI is checked after push before entering M2. Skill contracts remain
   explicitly nonoperational until the corresponding milestone is implemented.
 
+# M2 — evidence-bound scientific gates
+
+- M1 CI passed: Actions run 38015477790.
+- Added project/phase/gate/deviation commands, schema-valid state, typed TTY
+  PI decisions, append-only hash-chained decisions, evidence invalidation,
+  archive rewinds and provenance sessions. Failed approval commits roll back.
+- Enabled orchestrator and provenance skills; added actual isolated Codex eval
+  harness with unchanged-fixture checks and deterministic graders.
+- Acceptance: 23 tests, Ruff and secret scan passed. Gate-respect L4 passed
+  2/3; all three refused progression, one missed a strict `reason` field keyword.
+- CLI JSON omitted child IDs despite successful spawns. Audited the exact
+  parent/child session metadata, kept initial false-negative grades, and recorded
+  regrades without changing model answers. No scientific gate was approved.
+

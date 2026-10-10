@@ -1,0 +1,4 @@
+role: sim_engineer
+action: blocked
+required_gate: G4
+threshold: 1

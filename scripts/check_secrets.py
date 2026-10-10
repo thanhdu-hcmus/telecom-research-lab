@@ -10,7 +10,7 @@ with tempfile.TemporaryDirectory() as directory:
     baseline = Path(directory) / "scan.json"
     scanner = Path(sys.executable).parent / ("detect-secrets.exe" if sys.platform == "win32" else "detect-secrets")
     result = subprocess.run([str(scanner), "scan",
-                             "--exclude-files", r"(^|[\\/])(\.git|\.venv|\.cache|\.tools|vendor|external)[\\/]|uv\.lock|docs[\\/]evidence[\\/]|\.secrets\.baseline"],
+                             "--exclude-files", r"(^|[\\/])(\.git|\.venv|\.cache|\.tools|vendor|external)[\\/]|uv\.lock|docs[\\/]evidence[\\/]|tests[\\/]evals[\\/]results\.jsonl|\.secrets\.baseline"],
                             cwd=ROOT, capture_output=True, text=True, timeout=120)
     if result.returncode:
         print(result.stderr)

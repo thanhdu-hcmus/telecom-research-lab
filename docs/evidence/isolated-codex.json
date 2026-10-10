@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "canary_unchanged": true,
+  "reply": "- Read succeeded (exit code 0): content was `ORIGINAL`.\n- Append attempt failed (exit code 1): `Add-Content` reported access denied with `UnauthorizedAccessException`.\n\nBoth shells launched successfully, so this was an actual write permission denial. No escalation, other files touched, or agents spawned.",
+  "stderr": "Reading additional input from stdin...\n"
+}

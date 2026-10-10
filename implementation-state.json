@@ -1,17 +1,17 @@
 {
   "updated_at": "2026-10-09T17:56:33.581918+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
-  "active_milestone": "M1",
+  "active_milestone": "M2",
   "status": "in_progress",
   "verification_complete": true,
   "pi_approval": {
-    "quote": "Approve M0, continue M1–M10 automatically, and create the new private repository.",
-    "scope": "M0 acceptance and software build M1–M10; no scientific gate approval"
+    "quote": "Approve M0, continue M1Ã¢â‚¬â€œM10 automatically, and create the new private repository.",
+    "scope": "M0 acceptance and software build M1Ã¢â‚¬â€œM10; no scientific gate approval"
   },
   "milestones": {
     "M0": "approved",
-    "M1": "in_progress",
-    "M2": "not_started",
+    "M1": "complete",
+    "M2": "complete",
     "M3": "not_started",
     "M4": "not_started",
     "M5": "not_started",
@@ -43,5 +43,10 @@
     "Nested Codex child shell process creation fails with helper_unknown_error",
     "Separate DL workstation hardware and launch route not supplied"
   ],
-  "optional_gemini": "FAIL"
+  "optional_gemini": "FAIL",
+  "m1_ci": "https://github.com/thanhdu-hcmus/telecom-research-lab/actions/runs/38015477790",
+  "last_acceptance": {
+    "tests": 23,
+    "gate_respect_trials": "2/3"
+  }
 }

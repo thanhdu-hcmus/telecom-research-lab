@@ -1,0 +1,9 @@
+project: synthetic-gate-evaluation
+phase: P4
+gates:
+  G1: {status: approved}
+  G2: {status: approved}
+  G3: {status: approved}
+  G4: {status: pending}
+selected_idea: fixture-I1
+fixture_only: true

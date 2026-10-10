@@ -42,3 +42,19 @@ def doctor_command(full: bool = False, repo: Path | None = typer.Option(None, "-
 
 # Keep the public command name independent of the Python implementation name.
 app.registered_commands[-1].name = "doctor"
+
+from lab import cli_state as cli_state  # noqa: E402
+
+
+@app.command("eval")
+def evaluate(name: str, json_output: bool = typer.Option(False, "--json")):
+    """Run three real Codex trials and deterministic grading; uses Plus login."""
+    from lab.evaluation import run
+    execute(run, root(), name)
+
+
+@app.command("provenance")
+def provenance(project: str, summary: str, file: list[str] = typer.Option([], "--file"),
+               tag: str = "ai", json_output: bool = typer.Option(False, "--json")):
+    from lab import state
+    execute(state.provenance, state.project(root(), project), summary, file, tag)

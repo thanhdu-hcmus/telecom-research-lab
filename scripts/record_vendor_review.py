@@ -7,7 +7,7 @@ path = ROOT / "vendor/MANIFEST.yaml"
 data = json.loads(path.read_text(encoding="utf-8"))
 for record in data["files"]:
     source = ROOT / "vendor/orchestra" / record["path"]
-    record["upstream_sha256"] = record["sha256"]
+    record.setdefault("upstream_sha256", record["sha256"])
     normalized = source.read_bytes().replace(b"\r\n", b"\n")
     source.write_bytes(normalized)
     record["sha256"] = hashlib.sha256(normalized).hexdigest()
