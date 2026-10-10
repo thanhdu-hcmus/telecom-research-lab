@@ -49,3 +49,19 @@
   parent/child session metadata, kept initial false-negative grades, and recorded
   regrades without changing model answers. No scientific gate was approved.
 
+# M3 — literature tooling
+
+- Added one HTTP boundary with HTTPS allowlist, hard denylist, redirect checks,
+  credential stripping, decoded-byte limits, retries, rate limits and disk cache.
+- Added OpenAlex/arXiv/Crossref/Semantic Scholar parsing, bounded pagination,
+  DOI/arXiv/title dedup, snowball, screening/PRISMA, SJR lookup, metadata import,
+  legitimate PDF retrieval chain, title checks, inbox ingestion and page caches.
+- Configured the library outside Git; optional contact/key/SJR inputs remain
+  unset and do not block build fixtures. API discovery cannot autoallow OA hosts.
+- Acceptance: 47 tests and Ruff passed. Two-query live CLI search returned nine
+  unique records; fetched arxiv:1912.10044 and extracted all 30 pages in an
+  isolated synthetic integration repo. No real scientific gate was approved.
+- Recorded actual OpenAlex/arXiv/Crossref fixtures. Semantic Scholar anonymous
+  search and specific lookup returned HTTP 429; failures retained, synthetic
+  parser fixture clearly labelled. M2 CI passed (Actions 38016085890).
+

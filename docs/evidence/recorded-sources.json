@@ -1,0 +1,37 @@
+[
+  {
+    "source": "openalex",
+    "url": "https://api.openalex.org/works",
+    "params": {
+      "search": "reconfigurable intelligent surface NOMA",
+      "per_page": 3
+    },
+    "retrieved": "2026-10-10T02:18:56.276772+00:00",
+    "status": "PASS"
+  },
+  {
+    "source": "arxiv",
+    "url": "https://export.arxiv.org/api/query",
+    "params": {
+      "search_query": "all:\"reconfigurable intelligent surface\" AND all:NOMA",
+      "max_results": 3
+    },
+    "retrieved": "2026-10-10T02:18:56.880220+00:00",
+    "status": "PASS"
+  },
+  {
+    "source": "crossref",
+    "url": "https://api.crossref.org/works",
+    "params": {
+      "query": "reconfigurable intelligent surface NOMA",
+      "rows": 3
+    },
+    "retrieved": "2026-10-10T02:18:57.760563+00:00",
+    "status": "PASS"
+  },
+  {
+    "source": "semanticscholar",
+    "status": "FAIL",
+    "error": "HTTP 429 from api.semanticscholar.org"
+  }
+]

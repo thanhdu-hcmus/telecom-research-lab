@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/bXOEqa0xB4h2hn0HT6pbifjL0I4</id>
+  <title>arXiv Query: search_query=all:"reconfigurable intelligent surface" AND all:NOMA&amp;id_list=&amp;start=0&amp;max_results=3</title>
+  <updated>2026-10-10T02:18:56Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22reconfigurable+intelligent+surface%22+AND+all:NOMA&amp;start=0&amp;max_results=3&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>3</opensearch:itemsPerPage>
+  <opensearch:totalResults>181</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2208.04786v4</id>
+    <title>Reconfigurable Intelligent Surface Assisted NOMA Empowered Integrated Sensing and Communication</title>
+    <updated>2022-09-28T07:47:16Z</updated>
+    <link href="https://arxiv.org/abs/2208.04786v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2208.04786v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper exploits the potential of reconfigurable intelligent surface (RIS) to improve radar sensing in a non-orthogonal multiple access (NOMA) empowered integrated sensing and communication (NOMA-ISAC) network. The objective is to maximize the minimum radar beampattern gain by jointly optimizing the active beamforming, power allocation coefficients and passive beamforming. To tackle the formulated non-convex problem, we propose an efficient joint optimization algorithm by invoking alternating optimization, successive convex approximation (SCA) and sequential rank-one constraint relaxation (SRCR) algorithm. Numerical results show that the proposed RIS assisted NOMA-ISAC system, with the aid of proposed scheme, outperforms the RIS assisted ISAC system without NOMA.</summary>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-08-09T14:01:55Z</published>
+    <arxiv:primary_category term="cs.IT"/>
+    <author>
+      <name>Jiakuo Zuo</name>
+    </author>
+    <author>
+      <name>Yuanwei Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2002.09453v1</id>
+    <title>BER Analysis of Reconfigurable Intelligent Surface Assisted Downlink Power Domain NOMA</title>
+    <updated>2020-02-21T18:14:22Z</updated>
+    <link href="https://arxiv.org/abs/2002.09453v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2002.09453v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The use of software controlled passive Reconfigurable Intelligent Surface (RIS) in wireless communications has attracted many researchers in recent years. RIS has a certain degree of control over the scattering and reflection characteristics of the electromagnetic waves, compared to the conventional communications in which the received signal is degraded due to the uncontrollable scattering of the transmitted signal and its interaction with the objects in propagating medium. Further, in RIS assisted communications, the phases of the multiple incoming signals can be controlled to enable constructive addition of multiple signals from different channel paths to improve Signal to Noise Ratio (SNR). On the other hand, Non-Orthogonal Multiple Access (NOMA) provides massive connectivity and low latency. The power domain variant NOMA uses superposition coded symbols with different powers for different user symbols. In this paper, a novel RIS assisted downlink NOMA system is proposed by combining the merits of both RIS and NOMA to improve the reliability of the system. Analytical expressions are derived for the Bit Error Rate (BER) performance of the proposed RIS assisted power domain NOMA system. The BER performance of the proposed system is analyzed using the numerical simulation results. It is observed that the proposed system has better performance than the conventional NOMA system.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-02-21T18:14:22Z</published>
+    <arxiv:comment>4 pages, 5 figures, accepted manuscript for a conference, peer reviewed</arxiv:comment>
+    <arxiv:primary_category term="eess.SP"/>
+    <author>
+      <name>Vetrivel Chelian Thirumavalavan</name>
+    </author>
+    <author>
+      <name>Thiruvengadam S Jayaraman</name>
+    </author>
+    <arxiv:doi>10.1109/COMSNETS48256.2020.9027303</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/COMSNETS48256.2020.9027303" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2112.01336v5</id>
+    <title>Simultaneously Transmitting and Reflecting Reconfigurable Intelligent Surface Assisted NOMA Networks</title>
+    <updated>2022-09-18T09:46:48Z</updated>
+    <link href="https://arxiv.org/abs/2112.01336v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2112.01336v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Simultaneously transmitting/refracting and reflecting reconfigurable intelligent surface (STAR-RIS) has been introduced to achieve full coverage area. This paper investigate the performance of STAR-RIS assisted non-orthogonal multiple access (NOMA) networks over Rician fading channels, where the incidence signals sent by base station are reflected and transmitted to the nearby user and distant user, respectively. To evaluate the performance of STAR-RIS-NOMA networks, we derive new approximate expressions of outage probability and ergodic rate for a pair of users, in which the imperfect successive interference cancellation (ipSIC) and perfect SIC (pSIC) schemes are taken into consideration. Based on the asymptotic expressions, the diversity orders of the nearby user with ipSIC/pSIC and distant user are achieved carefully. The high signal-to-noise ratio slopes of ergodic rates for nearby user with pSIC and distant user are equal to $one$ and $zero$, respectively. In addition, the system throughput of STAR-RIS-NOMA is discussed in delay-limited and delay-tolerant modes. Simulation results are provided to verify the accuracy of the theoretical analyses and demonstrate that: 1) The outage probability of STAR-RIS-NOMA outperforms that of STAR-RIS assisted orthogonal multiple access (OMA) and conventional cooperative communication systems; 2) With the increasing of reflecting elements $K$ and Rician factor $κ$, the STAR-RIS-NOMA networks are capable of attaining the enhanced performance; and 3) The ergodic rates of STAR-RIS-NOMA are superior to that of STAR-RIS-OMA.</summary>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-12-02T15:35:50Z</published>
+    <arxiv:comment>16 pages, 12 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.IT"/>
+    <author>
+      <name>Xinwei Yue</name>
+    </author>
+    <author>
+      <name>Jin Xie</name>
+    </author>
+    <author>
+      <name>Yuanwei Liu</name>
+    </author>
+    <author>
+      <name>Zhihao Han</name>
+    </author>
+    <author>
+      <name>Rongke Liu</name>
+    </author>
+    <author>
+      <name>Zhiguo Ding</name>
+    </author>
+    <arxiv:doi>10.1109/TWC.2022.3192211</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/TWC.2022.3192211" title="doi"/>
+  </entry>
+</feed>

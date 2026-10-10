@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from typing import Annotated
 
 import typer
 
@@ -43,6 +44,7 @@ def doctor_command(full: bool = False, repo: Path | None = typer.Option(None, "-
 # Keep the public command name independent of the Python implementation name.
 app.registered_commands[-1].name = "doctor"
 
+from lab import cli_literature as cli_literature  # noqa: E402
 from lab import cli_state as cli_state  # noqa: E402
 
 
@@ -54,7 +56,7 @@ def evaluate(name: str, json_output: bool = typer.Option(False, "--json")):
 
 
 @app.command("provenance")
-def provenance(project: str, summary: str, file: list[str] = typer.Option([], "--file"),
+def provenance(project: Annotated[str, typer.Option("--project")], summary: str, file: list[str] = typer.Option([], "--file"),
                tag: str = "ai", json_output: bool = typer.Option(False, "--json")):
     from lab import state
     execute(state.provenance, state.project(root(), project), summary, file, tag)

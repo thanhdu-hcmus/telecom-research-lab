@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "synthetic_fixture": true,
+  "real_pi_gates_approved": 0,
+  "results": 9,
+  "downloaded_record": "arxiv:1912.10044",
+  "commands": [
+    {
+      "argv": [
+        "lit",
+        "search",
+        "--project",
+        "fixture",
+        "--json"
+      ],
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS\", \"queries\": 2, \"new_records\": 10, \"counts\": {\"identified\": 10, \"duplicates_removed\": 1, \"unique\": 9}, \"failures\": []}\n"
+    },
+    {
+      "argv": [
+        "lit",
+        "fetch",
+        "arxiv:1912.10044",
+        "--project",
+        "fixture",
+        "--json"
+      ],
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS\", \"route\": \"arxiv\", \"record\": {\"id\": \"arxiv:1912.10044\", \"title\": \"Reconfigurable Intelligent Surface Aided NOMA Networks\", \"path\": \"D:\\\\02_EDUCATION\\\\THESIS\\\\telecom-research-lab\\\\.cache\\\\m3-live-library\\\\pdfs\\\\r_arxiv_1912_10044_d93026f9a979.pdf\", \"sha256\": \"df499af81f2745a7bdeed103147473ea60ecf7ca3acfcb30d0b85f0624a88aa4\", \"source\": \"https://arxiv.org/pdf/1912.10044\", \"retrieved\": \"2026-10-10T02:21:31.500682+00:00\", \"pages\": 30}}\n"
+    },
+    {
+      "argv": [
+        "lit",
+        "extract",
+        "arxiv:1912.10044",
+        "--project",
+        "fixture",
+        "--json"
+      ],
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS\", \"cached\": false, \"path\": \"D:\\\\02_EDUCATION\\\\THESIS\\\\telecom-research-lab\\\\.cache\\\\m3-live-library\\\\text\\\\r_arxiv_1912_10044_d93026f9a979.json\", \"pages\": 30}\n"
+    }
+  ]
+}

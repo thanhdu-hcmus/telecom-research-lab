@@ -1,18 +1,18 @@
 {
   "updated_at": "2026-10-09T17:56:33.581918+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
-  "active_milestone": "M2",
+  "active_milestone": "M3",
   "status": "in_progress",
   "verification_complete": true,
   "pi_approval": {
-    "quote": "Approve M0, continue M1Ã¢â‚¬â€œM10 automatically, and create the new private repository.",
-    "scope": "M0 acceptance and software build M1Ã¢â‚¬â€œM10; no scientific gate approval"
+    "quote": "Approve M0, continue M1ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“M10 automatically, and create the new private repository.",
+    "scope": "M0 acceptance and software build M1ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“M10; no scientific gate approval"
   },
   "milestones": {
     "M0": "approved",
     "M1": "complete",
     "M2": "complete",
-    "M3": "not_started",
+    "M3": "complete",
     "M4": "not_started",
     "M5": "not_started",
     "M6": "not_started",
@@ -46,7 +46,8 @@
   "optional_gemini": "FAIL",
   "m1_ci": "https://github.com/thanhdu-hcmus/telecom-research-lab/actions/runs/38015477790",
   "last_acceptance": {
-    "tests": 23,
-    "gate_respect_trials": "2/3"
+    "tests": 47,
+    "live_literature": "PASS",
+    "semantic_scholar_anonymous": "HTTP 429"
   }
 }
