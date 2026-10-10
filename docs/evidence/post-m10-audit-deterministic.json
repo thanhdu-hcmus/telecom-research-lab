@@ -1,5 +1,5 @@
 {
-  "started": "2026-10-10T16:40:29.549980+00:00",
+  "started": "2026-10-10T16:53:20.720740+00:00",
   "checks": [
     {
       "command": [
@@ -11,7 +11,7 @@
         "tests/physics"
       ],
       "exit": 0,
-      "elapsed_s": 0.02568629998131655,
+      "elapsed_s": 0.017835899983765557,
       "stdout": "All checks passed!\n",
       "stderr": ""
     },
@@ -22,11 +22,11 @@
         "pytest",
         "-q",
         "-o",
-        "cache_dir=D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\probes\\work\\post-m10-final-checks\\pytest-cache"
+        "cache_dir=D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\probes\\work\\post-m10-final-scan-checks\\pytest-cache"
       ],
       "exit": 0,
-      "elapsed_s": 192.2325595000002,
-      "stdout": "........................................................................ [ 81%]\n................                                                         [100%]\n88 passed in 191.44s (0:03:11)\n",
+      "elapsed_s": 169.42976490000729,
+      "stdout": "........................................................................ [ 80%]\n..................                                                       [100%]\n90 passed in 168.67s (0:02:48)\n",
       "stderr": ""
     },
     {
@@ -35,7 +35,7 @@
         "scripts/check_skills.py"
       ],
       "exit": 0,
-      "elapsed_s": 1.8094517000135966,
+      "elapsed_s": 1.5781014999956824,
       "stdout": "{'skills': 21, 'failures': []}\n",
       "stderr": ""
     },
@@ -45,8 +45,8 @@
         "scripts/check_secrets.py"
       ],
       "exit": 0,
-      "elapsed_s": 0.5348098000104073,
-      "stdout": "{\"status\": \"PASS\", \"findings\": []}\n",
+      "elapsed_s": 12.29916530000628,
+      "stdout": "{\"status\": \"PASS\", \"files_scanned\": 307, \"findings\": []}\n",
       "stderr": ""
     },
     {
@@ -58,7 +58,7 @@
         "--check"
       ],
       "exit": 0,
-      "elapsed_s": 0.02372779999859631,
+      "elapsed_s": 0.030235699989134446,
       "stdout": "",
       "stderr": ""
     }
@@ -96,7 +96,7 @@
     "scripts/audit_reproduction_execution.py": "1ac5b96ba209a26af0d10c9ce10412464dd484b0de2c3c0918d9159dffbfe305",
     "scripts/build_support.py": "05d51ae6adce27f4439131ec044271a0f14a3dce66f9635557a346109f694680",
     "scripts/canonical_text.py": "d0f65cf1f70a0b2dcabe5eb898b84b044ad70c4611d8d342202aed0791806d84",
-    "scripts/check_secrets.py": "f7f7b9342e33d4adc5620c9333e85aee032b84af4bd2dfac549c39027cb74824",
+    "scripts/check_secrets.py": "04efb0257d299f92b2699b81856ea4e8b39c7613f1feb278f76e697b6cce9f35",
     "scripts/check_skills.py": "31c33b65f7109693eb6461e0d15b69c4b62003f3a7eb10bfdbf99725b8eb4ddb",
     "scripts/enable_m10.py": "134c3634e17d22b7986103328e30d65a6446693f4823bee653ae51fae52ee5fd",
     "scripts/enable_m4.py": "92b032a17ac4439d9b9efa12e5955523747d181359fc49b1d80075d4be02a874",
@@ -139,6 +139,7 @@
     "tests/unit/test_m4_graders.py": "ff7e6dc720d9ed42e8241f6b57036c044e2729cd07ae97a6555bf9d39b12118c",
     "tests/unit/test_net.py": "129d5e349afdbb4b6274c08eb9f635bc35076c59f46a98f3604df76a0faf505f",
     "tests/unit/test_paper.py": "51ed8cd2216551eec58010559572fa7efc3dae589c4f6df88ad3858cd334c776",
+    "tests/unit/test_secret_scan.py": "aaee6a0623a4f011a881eb76c68e5d8d4d9ad01bf70b4de91a682099eeb6f233",
     "tests/unit/test_simulation.py": "2bb0f39a8415ee2339f50fda34ed958919383123d42e49276621b10761f6573b",
     "tests/unit/test_verification.py": "edd0c48d6a00d26de2d36908d473c51c81a2228da93e7f3acede0720371a38ae",
     "tests/contracts/test_contracts.py": "7e6bb7e83429d83ed6bec044298b3620b096dd13be0e37926f4f08f605a65e69",
@@ -146,7 +147,7 @@
     "tests/physics/test_wireless.py": "034ad45fc6f3f572998b67676a6408cc735e203a9c3c6c7c500c673213a6742f",
     "tests/m0/test_probe_environment.py": "0ae8d2e599bea39083eb8e5e66e2ae348c0da80cc0d4caa768f7b18fe8a0c98a"
   },
-  "tests_passed": 88,
-  "finished": "2026-10-10T16:43:44.220147+00:00",
+  "tests_passed": 90,
+  "finished": "2026-10-10T16:56:24.370064+00:00",
   "sources_unchanged": true
 }

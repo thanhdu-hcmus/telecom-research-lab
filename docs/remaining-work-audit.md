@@ -25,6 +25,7 @@ the source plan and AGENTS.md still reserve scientific decisions for the PI.
 | MATLAB physics used assertions without the prescribed unit-test runner | Added eight matlab.unittest physics tests and a separate R2021b acceptance runner | None for the software runner |
 | Old M10 finalization could reset later milestone progress | Preserve active M11/M12 status and unresolved work | None |
 | Verification receipts could hash sources after they changed during checks | Snapshot sources before checks and require unchanged hashes at completion | None |
+| Local secret scan silently scanned no files after a Git ownership rejection | Explicit verified Git inventory and bounded file batches; missing inventory fails closed; canary regressions | None |
 
 ## M11 work remaining
 
@@ -78,6 +79,13 @@ Implementation documentation was checked through Context7 against primary
 [uv Python environments](https://github.com/astral-sh/uv/blob/main/docs/pip/environments.md),
 [MATLAB function-based tests](https://www.mathworks.com/help/matlab/matlab_prog/run-tests-in-editor.html)
 and [MATLAB verification APIs](https://www.mathworks.com/help/matlab/ref/matlab.unittest.qualifications.verifiable.verifyequal.html).
+
+The first audit push passed Linux CI tests but failed the secret scan on checksum
+fields. `docs/evidence/post-m10-secret-scan-debug.json` records the local empty-scan
+root cause and individual cryptographic checks of those false positives. The
+audited baseline marks only those exact hashes as non-secrets; detector coverage
+and unknown-secret rejection remain active. Scanner CLI behavior was checked
+against the primary [detect-secrets documentation](https://github.com/yelp/detect-secrets/blob/master/README.md).
 
 No original result, PI approval, usability rating or publication selection is
 inferred from these software checks.

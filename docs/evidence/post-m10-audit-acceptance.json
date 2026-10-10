@@ -1,13 +1,13 @@
 {
   "status": "PASS",
-  "timestamp": "2026-10-10T16:44:37.596514+00:00",
+  "timestamp": "2026-10-10T16:57:24.119409+00:00",
   "scope": "Software omissions closed and M11 P1 prepared; no scientific acceptance inferred",
-  "deterministic_tests_passed": 88,
+  "deterministic_tests_passed": 90,
   "matlab_unittest_passed": 8,
   "receipts": {
     "post-m10-audit-deterministic": {
       "path": "docs/evidence/post-m10-audit-deterministic.json",
-      "sha256": "b0d8ad11f0a6ab3e52d7c71e721dd581f6c474aee4e94062c9a94b597ad42faf"
+      "sha256": "c65650e04bc273862411ea2ffa0879d2a91a2e7c947063aa5b4e27717e21eae0"
     },
     "post-m10-matlab-unittest": {
       "path": "docs/evidence/post-m10-matlab-unittest.json",
@@ -23,5 +23,6 @@
   "scientific_gate": "G1 pending",
   "pi_decisions_recorded": 0,
   "m11_complete": false,
-  "m12_complete": false
+  "m12_complete": false,
+  "secret_scan_inventory": 307
 }

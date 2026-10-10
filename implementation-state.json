@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T16:44:37.607228+00:00",
+  "updated_at": "2026-10-10T16:57:24.120633+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
   "active_milestone": "M11",
   "status": "awaiting_pi_scope_review",
@@ -74,9 +74,9 @@
   "verification_scope": "Completed M0-M10 software; post-M10 regressions recorded separately; M11/M12 scientific acceptance pending",
   "post_m10_audit": {
     "status": "PASS",
-    "tests": 88,
+    "tests": 90,
     "matlab_tests": 8,
     "receipt": "docs/evidence/post-m10-audit-acceptance.json",
-    "sha256": "1f161c8d77cce2a6145625d1730ccc5060a179d9b425e5dc894b4d967d68a94b"
+    "sha256": "b51969f429c1ce302a5589440cce65beb0bfd9829cf750c455524696207b0352"
   }
 }
