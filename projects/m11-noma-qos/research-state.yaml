@@ -38,9 +38,9 @@ gates:
       projects/m11-noma-qos/literature/survey.md: 8d82ac2733c32c4c0b883901bba1565d00e0bc0a1ac6914b3d2f66bb44a8563d
     checks_passed: true
   G3:
-    status: pending
-    timestamp: '2026-10-11T09:14:29.844142+00:00'
-    note: null
+    status: approved
+    timestamp: '2026-10-11T09:38:32.320889+00:00'
+    note: P3 dry-run options and evidence reviewed; idea-01 selected; G3 report usable
     artifact_hashes:
       config/ranking.yaml: 10d6707284c0e1bc3627224edbb0e04479dca8393e321239281b093d5bbd2365
       projects/m11-noma-qos/ideas/design-options.md: 09c9d83c0a9b70aa57179fb05938462905ac5db446589f77bd7e2e39363cf307
@@ -145,7 +145,7 @@ gates:
     note: null
     artifact_hashes: {}
     checks_passed: false
-selected_idea: null
+selected_idea: idea-01
 baselines: {}
 protocol_hash: null
 protocol_commit: null
