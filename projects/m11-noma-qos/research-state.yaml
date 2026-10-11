@@ -138,9 +138,9 @@ gates:
       projects/m11-noma-qos/model/source-map.md: 88469e412cb23526941c2cda86efb3bca9be2f5f097d09ad021ddd54f6026d1d
     checks_passed: true
   G5:
-    status: pending
-    timestamp: '2026-10-11T14:17:51.743218+00:00'
-    note: null
+    status: approved
+    timestamp: '2026-10-11T16:15:54.550193+00:00'
+    note: P5 runs and numerical limits reviewed; G5 report usable
     artifact_hashes:
       config/baselines.yaml: b9ae205b2275d5134e5bb7e26ae7087a46d83c52abc525458a0d53ac8aa9f713
       projects/m11-noma-qos/results/.gitignore: 35c8315b5d9f0ac451d17b6feb5d5cb69689e60c48370529b5ae1656ff46445f

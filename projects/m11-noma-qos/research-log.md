@@ -45,3 +45,5 @@
 - P5 epilogue session 2026-10-11-0019 records 31 targeted checks and 90 framework checks, 145 completed jobs, and the G5 request with automated checks passing. The 4,708 oracle checks are configuration-row evaluations, including repeated deterministic cases and shared MC channel draws across settings; they are not 4,708 independent channel realizations. G5 scientific approval and P6 remain pending.
 
 - P5 provenance session 2026-10-11-0020 records the Git transport correction. The unchanged bound SVG bytes now match the Git index. Read-only final consistency checks passed for 1,001 indexed gate-bound artifacts and 290 locally retained raw CSVs; approved G1-G4 bindings remain intact.
+
+- 2026-10-11T16:16:08.874774+00:00 — PI approve G5: P5 runs and numerical limits reviewed; G5 report usable
