@@ -126,3 +126,22 @@
     projects/m11-noma-qos/ideas/sensitivity.json: 2c0311fcd4e25bc91a8bed9a97bf6b96d297df51e2cd89659115b3e95fa65158
   previous_hash: 802f8f0b507ea221fc98171aff06708e18f4d026ba061e84e3755084504e61f7
   record_hash: 00f3830c247486cc6ab1663be46e44080573f25e0404d1ebab76d92d8c0120a4
+- gate: G4
+  decision: approve
+  note: P4 model and evidence reviewed; ideal-model limits accepted; G4 report usable
+  timestamp: '2026-10-11T10:43:20.059499+00:00'
+  git_user: thanhdu
+  selected_idea: null
+  artifact_hashes:
+    projects/m11-noma-qos/model/algorithm.md: ed193d86f630202a40fa9ee9fa37ede07da4a76fb2cb4e053f03fa74a98013e0
+    projects/m11-noma-qos/model/assumptions.yaml: 48689bf9d889c0b4d4ccc9c7abe4f484cc41fde5ac27ddc4e5ea6e399ec16b4a
+    projects/m11-noma-qos/model/check-results.json: 71ee6408378ac0238dcd0c85e2b9671e335972b4103cef1dcf9e0b3aa744207e
+    projects/m11-noma-qos/model/checks.yaml: 51b14ababb3339b7871cf5be146ce9a320c2b486cc1c6a6148886a6804732bfb
+    projects/m11-noma-qos/model/critique.yaml: 26998fdd143b5995c0f2e25cb555ada7b0a249f72178b98d24edc0da99ed586e
+    projects/m11-noma-qos/model/model-spec.tex: c885769e4d0d191bd82e11891de912340a7baa64af49d9b8c4584b4a3204f76e
+    projects/m11-noma-qos/model/notation.yaml: 2e937f7f98e3240f476471c44cc2756afdfe77079aa8f5845cfe1bcfe920de22
+    projects/m11-noma-qos/model/predictions.yaml: b18859e62c3a5306b9b341331b5acd7e7ec5fb93b5fbc3cf82032fb8959a6fd2
+    projects/m11-noma-qos/model/response.md: 581a57c877e6da76f9665b74f000a20c7cfc5b0ff6e182bc5d6df650245e86a9
+    projects/m11-noma-qos/model/source-map.md: 88469e412cb23526941c2cda86efb3bca9be2f5f097d09ad021ddd54f6026d1d
+  previous_hash: 00f3830c247486cc6ab1663be46e44080573f25e0404d1ebab76d92d8c0120a4
+  record_hash: dba19cdfd19dcc28263baef01c0a27afa0b6dfcc8dd61f98263f24e2b0d7046d
