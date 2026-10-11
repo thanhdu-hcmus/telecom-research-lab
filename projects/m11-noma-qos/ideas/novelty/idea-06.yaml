@@ -1,0 +1,71 @@
+id: idea-06
+timestamp: '2026-10-11T08:34:42Z'
+scope: Approved scalar two-user M11 with independent fixed per-user QoS, perfect CSI,
+  ideal SIC, full split range, matched equal-time OMA and retained paired feasibility
+  categories.
+queries:
+- query: site:arxiv.org NOMA individual heterogeneous QoS constraints feasible power
+    allocation
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:27:28Z'
+  evidence: Found QoS-limits and Zhu; supplied pages distinguish common, arbitrary
+    and OMA-relative targets.
+  receipt_id: F06
+- query: site:github.com NOMA Jianyue Zhu individual QoS feasibility
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:27:28Z'
+  evidence: Found RL and finite-alphabet code with different assumptions.
+  receipt_id: A06
+- query: site:arxiv.org NOMA "individual QoS" optimality
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:30:53Z'
+  evidence: Displayed MISO SWIPT multicasting result is outside scope.
+  receipt_id: B06
+- query: site:arxiv.org NOMA "unequal" "target rates" feasibility
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:30:53Z'
+  evidence: No displayed results.
+  receipt_id: C06f
+- query: site:github.com NOMA heterogeneous QoS feasibility
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:30:53Z'
+  evidence: Displayed vehicular dissertation repository does not verify this feasibility
+    map.
+  receipt_id: E06
+closest_works:
+- id: doi:10.1109/jsac.2017.2725618
+  overlap: Individual minimum-rate constraints, feasible bounds and an active weak-user
+    constraint at the optimum.
+  precise_delta: M11 maps independent targets in one scalar channel without Zhu's
+    additional power-order/SIC-stability restrictions or multichannel budgets.
+  grounding: Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.3,6–7;
+    SR2, feasible bounds and Remark 6.
+- id: doi:10.1109/tvt.2017.2689000
+  overlap: Two individual rate inequalities define an allocation interval.
+  precise_delta: Those thresholds equal channel-dependent OMA capacities; substituting
+    them for arbitrary fixed target pairs would change M11.
+  grounding: Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.2–3.
+- id: doi:10.1109/icc.2018.8422366
+  overlap: QoS feasibility and decoded-message success conditions.
+  precise_delta: The paper uses a common target and lists distinct user targets as
+    future work; it does not establish this exact heterogeneous map.
+  grounding: Supplied r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json, PDF pp.2–4
+    and p.5 conclusions.
+scientific_core: Established individual-QoS constrained allocation and active-bound
+  analysis.
+validation_focus: Prospective target-pair map distinguishing empty, singleton and
+  nonempty intervals with direct-rate checks. Its resolution and exact publication
+  match are unverified.
+verdict: already-done
+rationale: Independent individual QoS is already present in the grounded Zhu formulation.
+  The map is a validation presentation of the established method, with explicit constraint
+  differences.
+limitations:
+- No target values or map resolution are selected.
+- The unacquired individual-QoS Yang paper remains metadata-only evidence.
+- No exact mapped code was verified.

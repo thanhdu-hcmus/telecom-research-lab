@@ -1,0 +1,29 @@
+{
+  "id": "shared-fairness",
+  "query": "site:arxiv.org \"Fair Power Allocation\" \"NOMA\" \"SISO\"",
+  "idea_id": null,
+  "source": "arxiv",
+  "backend": "live web search index",
+  "timestamp": "2026-10-11 08:07:53 UTC",
+  "retrieval_actor": "orchestrator",
+  "status": "returned",
+  "query_count": 1,
+  "results": [
+    {
+      "title": "A Fair Power Allocation Approach to NOMA in Multi-user SISO Systems",
+      "url": "https://arxiv.org/abs/1703.09394",
+      "tool_refs": [
+        "turn25academia0"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    }
+  ],
+  "raw_response": ".cache\\p3-search-shared-fairness.txt",
+  "raw_response_sha256": "917ef4451e11de10f56eef30dfad453ad3cb60b306e5c0036a11860c7402557d",
+  "limits": [
+    "Bounded indexed discovery, not exhaustive coverage.",
+    "No result is a verified exact M11 code baseline or a new grounded full-paper card.",
+    "Forbidden-source index hits are excluded; no such page was opened or downloaded."
+  ]
+}

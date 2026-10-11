@@ -1,0 +1,72 @@
+id: idea-09
+timestamp: '2026-10-11T08:34:42Z'
+scope: Approved two fixed ordered scalar users with ideal SIC and arbitrary fixed
+  QoS, without population pairing or additional users. Recompute constrained NOMA
+  and matched equal-time OMA per case, retaining feasibility and paired counts.
+queries:
+- query: site:arxiv.org "Impact of User Pairing" NOMA channel difference
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:27:37Z'
+  evidence: Found Ding's pairing record and a different hybrid-SIC energy-efficiency
+    lead.
+  receipt_id: F09
+- query: site:github.com "zhiguo-ding" NOMA channel pairing
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:27:37Z'
+  evidence: Found codes-for-previous-works with an 'Impact of user pairing' folder;
+    exact version, paper mapping and benchmark suitability remain unverified.
+  receipt_id: A09
+- query: site:arxiv.org NOMA "channel disparity" "power allocation"
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:31:07Z'
+  evidence: Found a clustering/channel-disparity lead; discovery metadata only.
+  receipt_id: B09
+- query: site:arxiv.org NOMA "channel gain difference" QoS
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:31:07Z'
+  evidence: Found the downlink resource-allocation review record.
+  receipt_id: C09f
+- query: site:github.com "Impact of user pairing" NOMA
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:31:07Z'
+  evidence: Rediscovered the plausible pairing-code lead; no code was inspected or
+    executed.
+  receipt_id: E09
+closest_works:
+- id: doi:10.48550/arxiv.1412.2799
+  overlap: Examines channel separation and differing behavior of fixed-power and CR
+    allocation.
+  precise_delta: M11 keeps exactly two users, optimizes both fixed QoS targets and
+    uses equal-time OMA. Population pairing and primary-only CR conclusions cannot
+    be imported.
+  grounding: Supplied r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json, PDF pp.1–4;
+    fixed-power pairing, gain gap and CR reference.
+- id: arxiv:1504.07751
+  overlap: Gain separation affects fixed-split individual and sum-rate comparison
+    probabilities.
+  precise_delta: A deterministic optimized-QoS sensitivity sweep differs from fixed-split
+    order-statistic probability analysis.
+  grounding: Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.2–4; fixed split
+    and pairing examples.
+- id: doi:10.1109/tvt.2017.2689000
+  overlap: Discusses gain variation and the Fair-NOMA sum-rate gap.
+  precise_delta: The allocation targets are OMA-dependent; M11 must separate feasibility
+    changes from conditioned rate changes with fixed targets.
+  grounding: Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.3,6.
+scientific_core: Established gain-sensitivity analysis applied to the established
+  constrained optimizer.
+validation_focus: Prospective deterministic gain contrasts with explicitly defined
+  sweep convention and no assumed monotonic conditional gain.
+verdict: already-done
+rationale: Channel contrast is an established analysis dimension. The card introduces
+  no pairing algorithm or claimed new sensitivity law; its contribution is controlled
+  benchmark interpretation.
+limitations:
+- Fixed-one-gain and fixed-aggregate-gain sweeps differ and remain undecided.
+- The public pairing repository is a discovery lead, not an accepted baseline.
+- Fresh disparity metadata was not treated as a full-paper comparison.

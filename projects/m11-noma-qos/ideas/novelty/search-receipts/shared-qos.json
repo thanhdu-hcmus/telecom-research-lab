@@ -1,0 +1,19 @@
+{
+  "id": "shared-qos",
+  "query": "site:arxiv.org \"individual QoS\" \"NOMA\" \"optimality\" power allocation",
+  "idea_id": null,
+  "source": "arxiv",
+  "backend": "live web search index",
+  "timestamp": "2026-10-11 08:07:50 UTC",
+  "retrieval_actor": "orchestrator",
+  "status": "no_results_returned",
+  "query_count": 1,
+  "results": [],
+  "raw_response": ".cache\\p3-search-shared-qos.txt",
+  "raw_response_sha256": "16ec7624db2ae01bffc621a7f02bf7da483925d597e602db957bc70f171833f1",
+  "limits": [
+    "Bounded indexed discovery, not exhaustive coverage.",
+    "No result is a verified exact M11 code baseline or a new grounded full-paper card.",
+    "Forbidden-source index hits are excluded; no such page was opened or downloaded."
+  ]
+}

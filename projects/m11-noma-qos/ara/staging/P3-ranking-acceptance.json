@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-11T09:02:37.121399+00:00",
+  "status": "PASS",
+  "eligible_cards": 15,
+  "rejected": [],
+  "score_counts": {
+    "42": 10,
+    "37": 5
+  },
+  "top_three": [
+    "idea-01",
+    "idea-07",
+    "idea-02"
+  ],
+  "weight_combinations": 7,
+  "top_three_changed": false,
+  "ranking_interpretation": "Coarse synthetic-benchmark fit and planning risk/ID tie breakers; flat time and venue scores.",
+  "selected_idea": null
+}

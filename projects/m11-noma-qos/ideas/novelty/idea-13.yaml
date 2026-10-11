@@ -1,0 +1,69 @@
+id: idea-13
+timestamp: '2026-10-11T08:34:42Z'
+scope: Two implementations of the same approved scalar two-user ideal-SIC M11, arbitrary
+  fixed QoS and full split range, matched equal-time OMA, identical deterministic
+  inputs and complete paired feasibility accounting.
+queries:
+- query: site:arxiv.org NOMA reproducible simulation power allocation numerical validation
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:30:00Z'
+  evidence: Found resource-allocation and multicarrier optimization metadata, not
+    a verified cross-language suite.
+  receipt_id: F13
+- query: site:github.com NOMA Zhu Python MATLAB validation
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:30:00Z'
+  evidence: Displayed programming-language and electricity-network repositories are
+    unrelated.
+  receipt_id: A13
+- query: site:arxiv.org NOMA "reproducibility" simulation
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:34:19Z'
+  evidence: Displayed statistical-simulation replicability project is outside telecom
+    scope.
+  receipt_id: B13
+- query: site:arxiv.org NOMA "independent" "implementation" validation
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:34:19Z'
+  evidence: Displayed particle-physics validation result is unrelated.
+  receipt_id: C13f
+- query: site:github.com NOMA Python MATLAB power allocation verification
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:34:19Z'
+  evidence: Found a Python multicarrier weighted-sum-rate solver; it does not establish
+    paired independent Python/MATLAB implementations.
+  receipt_id: E13
+closest_works:
+- id: doi:10.1109/jsac.2017.2725618
+  overlap: The analytic QoS allocation core to be implemented.
+  precise_delta: M11 uses different permitted constraints and reference accounting;
+    dual-language verification is proposed software assurance, not a new allocation
+    method.
+  grounding: Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.3,6–7,10–11.
+- id: doi:10.1109/tvt.2017.2689000
+  overlap: Scalar NOMA/OMA rates, interval and theory/simulation comparison.
+  precise_delta: Fair-NOMA's thresholds differ and its pages do not establish this
+    independent cross-language test suite.
+  grounding: Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.2–4.
+- id: arxiv:1504.07751
+  overlap: Scalar model and Monte Carlo comparison of analytic rate events.
+  precise_delta: Xu uses fixed allocations; M11 implements the constrained optimum
+    twice and compares per-case rates/statuses before aggregation.
+  grounding: Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.1–4.
+scientific_core: Established scalar constrained allocation and matched-resource comparison.
+validation_focus: Prospective independently written Python/MATLAB checks of objective,
+  rates and feasibility; flat-objective ties need not yield identical splits. Exact
+  suite publication and actual implementation independence are unverified.
+verdict: already-done
+rationale: Two programming languages do not change the scientific formulation. The
+  proposal is an established-method validation artifact, without an original result
+  or verified identical software-suite claim.
+limitations:
+- No implementation was read, written or executed.
+- A shared algebra error can survive language agreement.
+- Searches identified related code, not the exact cross-language package.

@@ -1,0 +1,68 @@
+id: idea-14
+timestamp: '2026-10-11T08:34:42Z'
+scope: Approved normalized scalar two-user M11 with unit noise/bandwidth, ideal SIC,
+  arbitrary fixed QoS, matched instantaneous resources and equal-time OMA; equivalent
+  representations must refer to the same scenario.
+queries:
+- query: site:arxiv.org NOMA normalized SNR power allocation numerical precision
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:30:17Z'
+  evidence: Found multicarrier allocation and dynamic-clustering metadata, not an
+    exact precision audit.
+  receipt_id: F14
+- query: site:github.com NOMA Xu SNR dB linear precision
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:30:17Z'
+  evidence: Found finite-alphabet reproducibility code with different rates and user
+    count.
+  receipt_id: A14
+- query: site:arxiv.org NOMA "numerical precision"
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:34:19Z'
+  evidence: Displayed MLPerf paper is unrelated.
+  receipt_id: B14
+- query: site:arxiv.org NOMA "SNR normalization"
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:34:19Z'
+  evidence: Displayed image-fusion result is unrelated.
+  receipt_id: C14f
+- query: site:github.com NOMA log1p power allocation
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:34:19Z'
+  evidence: Found the multicarrier solver; no exact log1p or normalization-invariance
+    test was verified.
+  receipt_id: E14
+closest_works:
+- id: arxiv:1504.07751
+  overlap: Normalized scalar rates expressed using transmit SNR and channel power
+    gains.
+  precise_delta: M11 optimizes fixed QoS and proposes equivalent numerical evaluations;
+    Xu's fixed-split results do not verify numerical invariance.
+  grounding: Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.1–3; definitions
+    of x,y and rate formulas.
+- id: doi:10.1109/tvt.2017.2689000
+  overlap: Unit-noise scalar NOMA/OMA formulas and transmit-SNR conventions.
+  precise_delta: Fairness thresholds differ. Stable algebra and conversion checks
+    are proposed software verification of the same physical scenario.
+  grounding: Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.2–3.
+- id: doi:10.1109/comst.2016.2621116
+  overlap: Historical scalar superposition/SIC rate context and ideal-model assumptions.
+  precise_delta: The survey is not an exact optimizer or precision-analysis source.
+    Its practical quantization discussion does not change M11's ideal physics.
+  grounding: Supplied r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json, PDF pp.7–8,34–36.
+scientific_core: Established normalized scalar rate and allocation model.
+validation_focus: Prospective algebraic equivalence, linear/dB conversion, amplitude/power
+  distinction and precision checks near numerical boundaries. Exact test layout is
+  unverified.
+verdict: already-done
+rationale: The card concerns numerical correctness of established rates and the same
+  benchmark, without proposing new noise physics or a new scientific mechanism.
+limitations:
+- Higher precision cannot by itself correct an algebra error.
+- No tolerance or reference precision is approved.
+- OCR losses in survey equations preclude copying them as exact formulas.

@@ -1,0 +1,57 @@
+{
+  "id": "crossref-individual-qos",
+  "query": "On the Optimality of Power Allocation for NOMA Downlinks With Individual QoS Constraints",
+  "source": "crossref",
+  "backend": "Crossref REST API through lab.sources/Network",
+  "timestamp": "2026-10-11T08:21:13.119469+00:00",
+  "retrieval_actor": "orchestrator",
+  "status": "returned",
+  "query_count": 1,
+  "results": [
+    {
+      "id": "doi:10.1109/lcomm.2017.2689763",
+      "title": "On the Optimality of Power Allocation for NOMA Downlinks With Individual QoS Constraints",
+      "year": 2017,
+      "url": "https://doi.org/10.1109/lcomm.2017.2689763",
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "id": "doi:10.1109/iwcmc.2019.8766486",
+      "title": "On Optimal Power Allocation for Downlink NOMA Transmissions under PHY QoS Constraints",
+      "year": 2019,
+      "url": "https://doi.org/10.1109/iwcmc.2019.8766486",
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "id": "doi:10.1109/icc.2019.8761779",
+      "title": "Joint User Association, Grouping and Power Allocation in Uplink NOMA Systems with QoS Constraints",
+      "year": 2019,
+      "url": "https://doi.org/10.1109/icc.2019.8761779",
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "id": "doi:10.36227/techrxiv.12127032.v1",
+      "title": "QoS-Oriented Dynamic Power Allocation in NOMA-based Wireless Caching Networks",
+      "year": 2020,
+      "url": "https://doi.org/10.36227/techrxiv.12127032.v1",
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "id": "doi:10.1587/transcom.2023ebp3065",
+      "title": "Power Allocation with QoS and Max-Min Fairness Constraints for Downlink MIMO-NOMA System",
+      "year": 2023,
+      "url": "https://doi.org/10.1587/transcom.2023ebp3065",
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    }
+  ],
+  "raw_response": ".cache\\p3-search-crossref-individual-qos.json",
+  "raw_response_sha256": "540a5ace18efd51e48b133fe5a7547b7854e13197d35ed3a947b8a384d92ea4c",
+  "limits": [
+    "Metadata discovery only; no new full-paper card acquired or admitted."
+  ]
+}

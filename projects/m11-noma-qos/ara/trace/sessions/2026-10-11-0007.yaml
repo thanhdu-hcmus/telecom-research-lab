@@ -1,0 +1,10 @@
+id: 2026-10-11-0007
+timestamp: '2026-10-11T07:59:45.802969+00:00'
+phase: P3
+summary: 'PI explicitly authorized the bounded independent external novelty audit
+  described in to_human/P3-review-authorization.md: ''Okie, approved''. Permission
+  covers the authenticated OpenAI Codex reviewer and public scholarly/author/code
+  searches; it is not G3 approval or a scientific option selection.'
+provenance: user
+evidence:
+  to_human/P3-review-authorization.md: ccf476cb2620e944e181d32912c0aece0c8adb916850a636d1d2300ec907b2c5

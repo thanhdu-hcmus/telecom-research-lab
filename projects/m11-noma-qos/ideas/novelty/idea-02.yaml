@@ -1,0 +1,73 @@
+id: idea-02
+timestamp: '2026-10-11T08:34:42Z'
+scope: Approved scalar two-user ideal-SIC M11 with arbitrary fixed individual QoS,
+  matched resources, full power-split range, equal-time/full-active-power OMA and
+  explicit both-feasible pairing and infeasibility counts.
+queries:
+- query: site:arxiv.org NOMA power allocation exhaustive search grid discretization
+    QoS
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:24:09Z'
+  evidence: Found Zhu and QoS-limits records; neither displayed metadata verifies
+    the proposed discretization bound.
+  receipt_id: F02
+- query: site:github.com NOMA exhaustive grid power allocation QoS Xu Ding
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:24:37Z'
+  evidence: Found multicarrier solver and hybrid-NOMA/OFDMA code, including an exhaustive-search
+    filename; exact scope is unverified.
+  receipt_id: A02
+- query: site:arxiv.org NOMA "discretization" power allocation
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:30:39Z'
+  evidence: Displayed edge-inference result is outside the scalar benchmark.
+  receipt_id: B02
+- query: site:arxiv.org NOMA "exhaustive search" "minimum rate"
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:30:39Z'
+  evidence: Displayed dynamic cell-free network result changes the model.
+  receipt_id: C02f
+- query: site:github.com "NOMA" "discretization"
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:30:39Z'
+  evidence: Displayed age-of-information repository does not verify narrow-interval
+    coverage.
+  receipt_id: E02
+closest_works:
+- id: arxiv:1504.07751
+  overlap: Scalar rates and allocation-dependent comparison with TDMA.
+  precise_delta: M11 searches the arbitrary-QoS feasible range instead of using Xu's
+    fixed split. Endpoint inclusion and grid-error accounting are validation additions.
+  grounding: Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.1–3; rate formulas,
+    geometry and fixed-power assumption.
+- id: doi:10.1109/jsac.2017.2725618
+  overlap: Analytic constrained optimum and exhaustive-search benchmarking in resource
+    allocation.
+  precise_delta: Zhu's exhaustive assignment comparison is multichannel and uses extra
+    constraints. It does not establish this exact endpoint-aware scalar grid or its
+    error bound.
+  grounding: Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.6–7,10–11;
+    Proposition 3 and exhaustive-assignment discussion.
+- id: doi:10.1109/tvt.2017.2689000
+  overlap: Closed allocation interval and matched equal-time OMA.
+  precise_delta: The interval is OMA-relative fairness, not arbitrary fixed QoS. M11's
+    refinement tests do not alter the scientific objective.
+  grounding: Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.2–3;
+    Fair-NOMA bounds.
+scientific_core: Established scalar constrained allocation, adapted to the approved
+  M11 resource convention.
+validation_focus: Endpoint-aware exhaustive evaluation, narrow-interval coverage and
+  a later justified discretization bound. An identical published test layout was not
+  verified.
+verdict: already-done
+rationale: The underlying optimization is established. Grid refinement checks its
+  implementation; the card asserts no new allocation formulation or measured result.
+limitations:
+- No grid spacing, error bound or tolerance is approved or tested.
+- Related code has not been mapped to the exact benchmark.
+- Search misses do not establish originality.

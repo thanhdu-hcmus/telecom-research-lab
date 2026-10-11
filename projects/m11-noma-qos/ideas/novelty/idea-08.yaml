@@ -1,0 +1,70 @@
+id: idea-08
+timestamp: '2026-10-11T08:34:42Z'
+scope: Approved ordered scalar two-user ideal-SIC M11, including deterministic equality
+  cases, arbitrary fixed individual QoS, full split range and matched equal-time OMA
+  with complete feasibility accounting.
+queries:
+- query: site:arxiv.org NOMA equal channel gains sum rate OMA equality
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:27:37Z'
+  evidence: Displayed uplink gain-comparison records change the channel direction.
+  receipt_id: F08
+- query: site:github.com NOMA Oviedo equal channel gains
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:27:37Z'
+  evidence: Found multicarrier and finite-alphabet repositories, without an exact
+    equality-case test match.
+  receipt_id: A08
+- query: site:arxiv.org NOMA "equal gains"
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:31:07Z'
+  evidence: Displayed Open-RAN game-theory result is unrelated.
+  receipt_id: B08
+- query: site:arxiv.org superposition coding "identical channels" OMA
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:31:07Z'
+  evidence: Displayed polarization record does not establish this test.
+  receipt_id: C08f
+- query: site:github.com NOMA equal gain sum rate
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:31:07Z'
+  evidence: Found different finite-alphabet reproducibility code.
+  receipt_id: E08
+closest_works:
+- id: arxiv:1504.07751
+  overlap: Scalar broadcast rate expressions and gain-dependent sum-rate derivative.
+  precise_delta: Xu's stated analysis uses strict gain separation and fixed allocations.
+    M11 proposes checking the exact equal-gain degeneration directly, including arbitrary
+    QoS.
+  grounding: Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.1–2; rates and
+    Proposition 1 derivative.
+- id: doi:10.1109/tvt.2017.2689000
+  overlap: Explicit discussion of the gain-equality limit and collapsing Fair-NOMA
+    interval.
+  precise_delta: That is an OMA-relative interval limit; M11's arbitrary-QoS flat-objective
+    and status tests require their own derivation.
+  grounding: Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF p.3; discussion
+    following Theorem IV.1.
+- id: doi:10.1109/jsac.2017.2725618
+  overlap: Nondecreasing sum-rate derivative under non-strict ordered CNRs.
+  precise_delta: Zhu's extra constraints remain different. Exact flat-objective tie
+    handling is a proposed implementation check.
+  grounding: Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.6–7;
+    Proposition 3 proof.
+scientific_core: Established scalar rate model and its gain-dependent monotonicity;
+  equality is a benchmark degeneracy check, not an asserted new physical effect.
+validation_focus: Prospective exact-equality, near-equality, feasibility and flat-objective
+  checks. No exact published test suite was verified.
+verdict: already-done
+rationale: The proposal examines a limiting case of established rates; Fair-NOMA already
+  discusses the equality limit. It makes no original scientific claim or claim that
+  equality has positive probability under a future fading law.
+limitations:
+- Exact equality and numerical near-equality must be distinguished.
+- The complete arbitrary-QoS equality derivation remains P4 work.
+- Searches do not verify code handling.

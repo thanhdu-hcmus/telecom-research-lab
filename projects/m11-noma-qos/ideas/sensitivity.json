@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "base_top_three": [
+    "idea-01",
+    "idea-07",
+    "idea-02"
+  ],
+  "variations": [
+    {
+      "weights": {
+        "thesis_fit": 4,
+        "time": 3,
+        "venue": 3
+      },
+      "top_three": [
+        "idea-01",
+        "idea-07",
+        "idea-02"
+      ],
+      "changed": false
+    },
+    {
+      "weights": {
+        "thesis_fit": 4,
+        "time": 4,
+        "venue": 2
+      },
+      "top_three": [
+        "idea-01",
+        "idea-07",
+        "idea-02"
+      ],
+      "changed": false
+    },
+    {
+      "weights": {
+        "thesis_fit": 5,
+        "time": 2,
+        "venue": 3
+      },
+      "top_three": [
+        "idea-01",
+        "idea-07",
+        "idea-02"
+      ],
+      "changed": false
+    },
+    {
+      "weights": {
+        "thesis_fit": 5,
+        "time": 3,
+        "venue": 2
+      },
+      "top_three": [
+        "idea-01",
+        "idea-07",
+        "idea-02"
+      ],
+      "changed": false
+    },
+    {
+      "weights": {
+        "thesis_fit": 5,
+        "time": 4,
+        "venue": 1
+      },
+      "top_three": [
+        "idea-01",
+        "idea-07",
+        "idea-02"
+      ],
+      "changed": false
+    },
+    {
+      "weights": {
+        "thesis_fit": 6,
+        "time": 2,
+        "venue": 2
+      },
+      "top_three": [
+        "idea-01",
+        "idea-07",
+        "idea-02"
+      ],
+      "changed": false
+    },
+    {
+      "weights": {
+        "thesis_fit": 6,
+        "time": 3,
+        "venue": 1
+      },
+      "top_three": [
+        "idea-01",
+        "idea-07",
+        "idea-02"
+      ],
+      "changed": false
+    }
+  ]
+}

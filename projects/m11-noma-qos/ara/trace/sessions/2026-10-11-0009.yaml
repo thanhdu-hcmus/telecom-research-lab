@@ -1,0 +1,13 @@
+id: 2026-10-11-0009
+timestamp: '2026-10-11T09:24:35.343082+00:00'
+phase: P3
+summary: 'P3 final effort metadata: actual isolated reviewer invocation, role-config
+  digest and permitted web/clock-only JavaScript wrapper recorded. Previous session
+  0008 effort bytes archived exactly before this metadata addition. G3 remains pending
+  with passing checks and no selected idea; no scientific artifact, model or protocol
+  changed.'
+provenance: ai
+evidence:
+  ara/staging/P3-review-effort.json: ae0fcf43d9bfe2c78aee41e4fa79fc6512b51361a3877522dadf63ae11bc4c83
+  ara/staging/P3-generation-archive.json: 0368f8d53ccff0781cc6d7e901d91946d8081c562310bcce3403a986b0ce5f16
+  to_human/G3-review.md: 6ddd0b03295ee5d03576784336cd6e81cadd8538576cfb6fd8fec16bb922b017

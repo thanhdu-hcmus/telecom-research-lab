@@ -1,0 +1,128 @@
+{
+  "id": "idea-05-code",
+  "query": "site:github.com NOMA successive interference cancellation decoding weak user",
+  "idea_id": "idea-05",
+  "source": "web",
+  "backend": "live web search index",
+  "timestamp": "2026-10-11 08:09:26 UTC",
+  "retrieval_actor": "orchestrator",
+  "status": "returned",
+  "query_count": 1,
+  "results": [
+    {
+      "title": "GitHub - nokia/wireless-suite · GitHub",
+      "url": "https://github.com/nokia/wireless-suite",
+      "tool_refs": [
+        "turn36search0"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "GitHub - Shyar-afrini/NOMA-System · GitHub",
+      "url": "https://github.com/Shyar-afrini/NOMA-System",
+      "tool_refs": [
+        "turn36search1"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "GitHub - Donna152/NOMA-SC-FDMA-MATLAB-Simulation: MATLAB Simulation for Downlink SISO-NOMA SC-FDMA Systems evaluating BER and PAPR performance. · GitHub",
+      "url": "https://github.com/Donna152/NOMA-SC-FDMA-MATLAB-Simulation",
+      "tool_refs": [
+        "turn36search2"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "successive-interference-cancellation · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/successive-interference-cancellation",
+      "tool_refs": [
+        "turn36search3"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "GitHub - VishakaB/M--ary-QAM-Asynchronous-NOMA-D2D-Network-with-Cyclic-Triangular-SIC-Decoding-Scheme · GitHub",
+      "url": "https://github.com/VishakaB/M--ary-QAM-Asynchronous-NOMA-D2D-Network-with-Cyclic-Triangular-SIC-Decoding-Scheme",
+      "tool_refs": [
+        "turn36search4"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "GitHub - ProfessorDong/coded-noma-finite-alphabet: Reproducibility code for 'Achievable Rates of Coded NOMA with Finite-Alphabet Inputs and Suboptimal Detection' (IEEE Trans. Commun., 2026) · GitHub",
+      "url": "https://github.com/ProfessorDong/coded-noma-finite-alphabet",
+      "tool_refs": [
+        "turn36search5"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "GitHub - ThienVanLuong/SICNet: Tensorflow implementation of SICNet: a deep learning-based successive interference cancellation (SIC) receiver for non-orthogonal downlink systems · GitHub",
+      "url": "https://github.com/thienvanluong/sicnet",
+      "tool_refs": [
+        "turn36search6"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "GitHub - qlt315/NOMA-MEC-IoVT: Evaluation code of our paper in IEEE Transactions on Vehicular Technology: ''Joint Transmission and Resource Optimization in NOMA-assisted IoVT with Mobile Edge Computing\" · GitHub",
+      "url": "https://github.com/qlt315/NOMA-MEC-IoVT",
+      "tool_refs": [
+        "turn36search7"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "GitHub - eduardotominaga/MIMO-NOMA-iterative-receivers: Simulation code for \"Performance Analysis of MIMO-NOMA Iterative Receivers for Massive Connectivity\", by Eduardo N. Tominaga, Onel L. A. López, Hirley Alves, Richard D. Souza and João L. Rebelatto. Paper published in IEEE Access. · GitHub",
+      "url": "https://github.com/eduardotominaga/MIMO-NOMA-iterative-receivers",
+      "tool_refs": [
+        "turn36search8"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "GitHub - YijieLinaMao/RSMA: Simulation code for the best paper award paper of EURASIP JWCN 2022: Y. Mao, B. Clerckx, and V.O.K. Li, \"Rate-splitting multiple access for downlink communication systems: bridging, generalizing, and outperforming SDMA and NOMA,\" EURASIP Journal on Wireless Communications and Networking, vol. 2018, no. 1, p. 133, May 2018. · GitHub",
+      "url": "https://github.com/YijieLinaMao/RSMA",
+      "tool_refs": [
+        "turn36search9"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "GitHub - limabrena/uavnoma: Numerical Simulation of an UAV-NOMA System. · GitHub",
+      "url": "https://github.com/limabrena/uavnoma",
+      "tool_refs": [
+        "turn36search10"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "finite-alphabet · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/finite-alphabet",
+      "tool_refs": [
+        "turn36search11"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    }
+  ],
+  "raw_response": ".cache\\p3-search-idea-05-code.txt",
+  "raw_response_sha256": "67bcba0166f8f4af39a037d72e5d72c56c6defcf54cbd90d9061361d7ee26abf",
+  "limits": [
+    "Bounded indexed discovery, not exhaustive coverage.",
+    "No result is a verified exact M11 code baseline or a new grounded full-paper card.",
+    "Forbidden-source index hits are excluded; no such page was opened or downloaded."
+  ]
+}

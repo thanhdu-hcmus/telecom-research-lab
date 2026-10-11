@@ -4,9 +4,11 @@
 
 The plan specifies an established two-user NOMA benchmark for M11. The PI
 approved the scope and synthetic profile at G1 on 2026-10-10 (decision commit
-`2ea3b17`), with the explicit rating “G1 report usable”. P2's bounded review is
-prepared for G2: ten queries, 148 raw records, 122 unique candidates, six included
-full papers and 116 exclusions, with no pending screening decisions. No approved
+`2ea3b17`), with the explicit rating “G1 report usable”. The PI approved G2 in
+commit `b3709e0`, noting “Bounded P2 corpus and evidence spot-checked; G2 report usable”.
+P2's accepted bounded review has ten queries, 148 raw records, 122 unique candidates, six included
+full papers and 116 exclusions, with no pending screening decisions. P3 has started
+to generate and audit established benchmark options. No approved
 model, protocol, simulation or manuscript exists for this project.
 
 ## Supported claims
@@ -47,8 +49,45 @@ attempts remain in the retrieval report, with no manual download required now.
 
 ## Open questions
 
-- Are the later gate reports usable? G1 is explicitly rated usable; record the
+- Are the later gate reports usable? G1/G2 are explicitly rated usable; record the
   PI's actual rating at each remaining gate.
-- Does the PI accept the bounded corpus, evidence cards and comparison questions
-  at G2? Model, idea selection and protocol decisions remain at later gates.
+- Which eligible benchmark option will the PI select at G3 after the audit and
+  ranking? Model and protocol decisions remain at later gates.
 - Which reference paper should be used for M12 after M11 is accepted?
+
+## P3 draft handoff and review authorization (historical)
+
+Fifteen established-benchmark design options are drafted in `ideas/` with an
+overview in `ideas/design-options.md`. Parent checks confirm all schemas and
+included-paper references, LF text, and unchanged G1/G2 approved bindings.
+Their novelty remains `unclear`; independent reports and ranking are pending.
+
+The separate read-only Codex novelty audit was rejected before launch by
+automatic approval review because it would process unpublished local artifacts
+externally and use live searches without explicit payload/destination approval.
+No retry or workaround was used. The finite review packet and permission request
+are described in `to_human/P3-review-authorization.md`; local check evidence is
+`ara/staging/P3-parent-review.json`. G3 is not ready/requested. No model or
+simulation has started.
+
+## Current P3: audit and ranking ready for G3
+
+The PI explicitly approved the bounded external audit (“Okie, approved”);
+provenance session 2026-10-11-0007 records this permission, not a scientific gate.
+The completed named independent reviewer made 82 query requests (81 distinct
+strings), with five distinct card-specific searches for each of 15 options.
+All scientific-core verdicts are already-done; exact validation layouts remain
+prospective. Parent checks matched all per-card queries to actual receipts and
+confirmed read-only runtime and unchanged supplied artifacts. Two preliminary
+attempts failed and were not accepted as complete audits.
+
+Ranking/sensitivity pass. The top three are idea-01, idea-07 and idea-02, all
+42/50, unchanged across seven tested weight combinations. Ten cards tie at 42;
+time/venue dimensions are flat, so risk and ID also determine order. Idea-01 is
+recommended for an inspectable analytic solution with an independent oracle;
+this is not a PI selection or a novelty/publication claim. Full G1/G2 bindings
+remain intact. No model, protocol or simulation has started.
+
+See to_human/G3-review.md and the generated G3-report.md for the concrete decision
+packet. The lab-orchestrator gate rule requires the PI's explicit G3 selection
+before P4. M11 remains in progress; M12 remains unstarted.

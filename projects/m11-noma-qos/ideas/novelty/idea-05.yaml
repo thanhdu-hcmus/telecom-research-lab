@@ -1,0 +1,67 @@
+id: idea-05
+timestamp: '2026-10-11T08:34:42Z'
+scope: Approved two-user ordered scalar perfect-CSI/ideal-SIC M11; arbitrary individual
+  fixed QoS, full power range, matched equal-time OMA and complete paired feasibility
+  accounting.
+queries:
+- query: site:arxiv.org NOMA weak message decoding strong receiver ideal SIC QoS
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:27:17Z'
+  evidence: Found SIC-review and imperfect-CSI uplink leads; no exact validation-suite
+    evidence.
+  receipt_id: F05
+- query: site:github.com Oviedo Sadjadpour NOMA SIC decoding
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:27:17Z'
+  evidence: Found educational/generic SIC repositories without verified paper mapping.
+  receipt_id: A05
+- query: site:arxiv.org NOMA "decodability" "downlink"
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:30:53Z'
+  evidence: Displayed MIDO coding result is outside scope.
+  receipt_id: B05
+- query: site:arxiv.org NOMA "decoding order" "individual QoS"
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:30:53Z'
+  evidence: No displayed results.
+  receipt_id: C05f
+- query: site:github.com NOMA weak message strong receiver
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:30:53Z'
+  evidence: Displayed unrelated warning-list gist.
+  receipt_id: E05
+closest_works:
+- id: doi:10.1109/icc.2018.8422366
+  overlap: Includes all required SIC and own-message decoding events in success conditions.
+  precise_delta: The paper studies common targets and effective multiantenna gains
+    for K users; M11 checks arbitrary individual QoS and two scalar receivers under
+    ideal SIC.
+  grounding: Supplied r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json, PDF pp.2–4;
+    equations (8)–(9), necessary-bound caveat and event construction.
+- id: doi:10.1109/tvt.2017.2689000
+  overlap: Explicit ordered-gain comparison of weak-message SINRs at both receivers.
+  precise_delta: M11 treats this as ideal decoding consistency, without adopting fairness
+    targets or introducing a practical SIC margin.
+  grounding: Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF p.2; Section
+    III before equations (2)–(3).
+- id: doi:10.1109/jsac.2017.2725618
+  overlap: SIC rate expressions and discussion of allocation/decoding conditions.
+  precise_delta: Zhu's practical power-order/SIC-stability restrictions are paper-specific
+    and cannot replace the approved ideal-channel consistency check.
+  grounding: Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.3,6–7.
+scientific_core: Established ordered-channel SIC decodability and QoS success accounting.
+validation_focus: Direct weak-message decoding residuals at both receivers and consistency
+  with own-rate feasibility. Exact test implementation remains prospective.
+verdict: already-done
+rationale: Fair-NOMA explicitly supplies the relevant ordered-gain decoding relation,
+  while QoS-limits supplies the success-event distinction. The proposal checks faithful
+  implementation of these established principles.
+limitations:
+- Ideal achievable-rate consistency does not validate physical SIC hardware.
+- Gain ordering must not be confused with received-power ordering.
+- No exact author-linked code was verified.

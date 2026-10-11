@@ -1,0 +1,105 @@
+{
+  "timestamp": "2026-10-11T09:11:22.678526+00:00",
+  "status": "PASS",
+  "purpose": "Preserve the exact 15 generation cards and overview bound by earlier handoffs/provenance before independent screening and later narrative edits.",
+  "archive_root": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation",
+  "files": [
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-01.yaml",
+      "generation_sha256": "504981ec713a9d39e641232b0cf68066ab85da10b6bf7438768714a3b1c3ddf6",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-01.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-02.yaml",
+      "generation_sha256": "e132db569e96295c7a3a13ab93d6ac9ca3bbd42a2aaf4951229a01530968383d",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-02.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-03.yaml",
+      "generation_sha256": "7ab09b640baa5b303d8fce2a840c24ee3ef495723cdf80d9ab7e3ebbae4826d6",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-03.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-04.yaml",
+      "generation_sha256": "982278820966fa66f79079543412808f93dc7b232419cad460f19c64168da370",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-04.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-05.yaml",
+      "generation_sha256": "31fe323f62ed2e362cccc76953704e74148fa7e98548a314418478d6915a9f5b",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-05.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-06.yaml",
+      "generation_sha256": "207170682bf03446a148432f9cd9a50e85008fd7f69dde2ebc4457aff2cb8e37",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-06.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-07.yaml",
+      "generation_sha256": "f8d6a251b787ff1f03223e57a9c4712ba9ebbc0b0a337dbad3614000335503f7",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-07.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-08.yaml",
+      "generation_sha256": "cb22d3dae6568802b204f07f5fad50da57eb9b4efd98bb8277c3721f23152b35",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-08.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-09.yaml",
+      "generation_sha256": "e1d14d5d98321d9a8222e1cc82b3998a18b5695dcd310175b5beba1350cc8125",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-09.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-10.yaml",
+      "generation_sha256": "b4593123b973c7be58bee0bb859330c963096ef549d6b72dde74fc86c3113b00",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-10.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-11.yaml",
+      "generation_sha256": "ed58f72b7f492ee3ece12f8a51a19b469fefd8c0ff9e34a49697978124483f7c",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-11.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-12.yaml",
+      "generation_sha256": "1b1f68647afa07a8e01dd7d206aae8e7a37d12d41c4a698455a15664a0f34f98",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-12.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-13.yaml",
+      "generation_sha256": "1c59cb06f9721946d48e86339d5c2198e9bc4577ff709bbeeccf71756599a5c8",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-13.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-14.yaml",
+      "generation_sha256": "2f405d4557a4a9578b7c7829052684c0f61ac17d5f6f9aad3939b6962fee673b",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-14.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/idea-15.yaml",
+      "generation_sha256": "a1e00e9b5b3e76198cff8e60f8ad80a1c49926ccfb22c46814d23a31bbd3f159",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\idea-15.yaml",
+      "verified": true
+    },
+    {
+      "file": "projects/m11-noma-qos/ideas/design-options.md",
+      "generation_sha256": "f2de231c44bef4088f2504c1d9dadf624d98d2925f3c93f2336a7c289e1d517e",
+      "archive": "D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\handoffs\\m11-noma-qos\\P3-generation\\projects\\m11-noma-qos\\ideas\\design-options.md",
+      "verified": true
+    }
+  ],
+  "card_semantic_change": "Only novelty.verdict changed after independent audit; canonical YAML serialization also changed."
+}

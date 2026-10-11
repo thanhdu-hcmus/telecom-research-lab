@@ -1,0 +1,2600 @@
+{
+  "reports": [
+    {
+      "id": "idea-01",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Approved M11 dry run: two ordered scalar downlink users, perfect instantaneous CSI, ideal SIC, arbitrary fixed individual QoS, full nonnegative power-split range, matched resources and equal-time OMA at full active-slot power. Rate comparisons use identical both-feasible realizations and retain infeasibility counts.",
+      "queries": [
+        {
+          "query": "site:arxiv.org NOMA two user QoS feasible interval endpoint optimal power allocation",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:24:09Z",
+          "evidence": "Found the QoS-limits and Fair-NOMA records; formulation comparison uses supplied pages.",
+          "receipt_id": "F01"
+        },
+        {
+          "query": "site:github.com NOMA Zhu Wang feasible interval power allocation",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:24:37Z",
+          "evidence": "Found related multicarrier and reinforcement-learning repositories; neither verifies this interval/oracle package.",
+          "receipt_id": "A01"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"QoS\" \"boundary\" \"optimal\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:39Z",
+          "evidence": "Displayed result concerns network slicing and does not establish the proposed validation layout.",
+          "receipt_id": "B01"
+        },
+        {
+          "query": "site:arxiv.org superposition coding \"minimum rates\" \"sum rate\" two users",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:39Z",
+          "evidence": "Displayed cell-free MIMO result is outside scope.",
+          "receipt_id": "C01f"
+        },
+        {
+          "query": "site:github.com \"NOMA\" \"feasible\" \"optimal\" power allocation",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:39Z",
+          "evidence": "Displayed age-of-information repository is outside scope.",
+          "receipt_id": "E01"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "doi:10.1109/jsac.2017.2725618",
+          "overlap": "Individual-QoS sum-rate maximization, feasible split bounds and monotonic boundary optimization.",
+          "precise_delta": "Zhu additionally imposes power ordering and paper-specific SIC-stability conditions and uses multichannel OFDMA. M11 requires its own unrestricted ideal-channel specialization and independent scalar oracle.",
+          "grounding": "Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.3,6–7,10–11; SR2, Proposition 3 and derivative proof."
+        },
+        {
+          "id": "doi:10.1109/tvt.2017.2689000",
+          "overlap": "Scalar allocation interval, increasing sum rate and upper-endpoint choice with matched equal-time OMA.",
+          "precise_delta": "Fair-NOMA thresholds are channel-dependent OMA rates, rather than arbitrary fixed individual QoS; its initial power-order restriction does not define M11.",
+          "grounding": "Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.1–3; Sections III–IV and interval discussion."
+        },
+        {
+          "id": "arxiv:1504.07751",
+          "overlap": "Scalar broadcast rates, rate-region geometry and sum-rate monotonicity.",
+          "precise_delta": "Xu's performance analysis uses a fixed split and retains loss events; M11 optimizes the QoS-feasible split and checks it independently.",
+          "grounding": "Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.1–3; equations (1)–(2), Propositions 1–2 and equations (14)/(18)."
+        }
+      ],
+      "scientific_core": "Already established allocation methods: scalar superposition/SIC rates and a QoS-boundary optimizer. This is a benchmark specialization, not evidence that one paper publishes every M11 convention together.",
+      "validation_focus": "Prospective analytic-interval and endpoint checks against independently written scalar maximization. The exact software layout and independence have not been verified in a publication or implementation.",
+      "verdict": "already-done",
+      "rationale": "The claimed scientific method overlaps directly with grounded existing interval and boundary arguments. An independent oracle supplies implementation assurance, without asserting a new scientific mechanism. The exact M11 derivation and conditional comparison remain later work.",
+      "limitations": [
+        "Search coverage is bounded and several focus results were unrelated.",
+        "No exact oracle package was verified or executed.",
+        "Zhu's additional constraints must not be silently transferred."
+      ]
+    },
+    {
+      "id": "idea-02",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Approved scalar two-user ideal-SIC M11 with arbitrary fixed individual QoS, matched resources, full power-split range, equal-time/full-active-power OMA and explicit both-feasible pairing and infeasibility counts.",
+      "queries": [
+        {
+          "query": "site:arxiv.org NOMA power allocation exhaustive search grid discretization QoS",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:24:09Z",
+          "evidence": "Found Zhu and QoS-limits records; neither displayed metadata verifies the proposed discretization bound.",
+          "receipt_id": "F02"
+        },
+        {
+          "query": "site:github.com NOMA exhaustive grid power allocation QoS Xu Ding",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:24:37Z",
+          "evidence": "Found multicarrier solver and hybrid-NOMA/OFDMA code, including an exhaustive-search filename; exact scope is unverified.",
+          "receipt_id": "A02"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"discretization\" power allocation",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:39Z",
+          "evidence": "Displayed edge-inference result is outside the scalar benchmark.",
+          "receipt_id": "B02"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"exhaustive search\" \"minimum rate\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:39Z",
+          "evidence": "Displayed dynamic cell-free network result changes the model.",
+          "receipt_id": "C02f"
+        },
+        {
+          "query": "site:github.com \"NOMA\" \"discretization\"",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:39Z",
+          "evidence": "Displayed age-of-information repository does not verify narrow-interval coverage.",
+          "receipt_id": "E02"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "arxiv:1504.07751",
+          "overlap": "Scalar rates and allocation-dependent comparison with TDMA.",
+          "precise_delta": "M11 searches the arbitrary-QoS feasible range instead of using Xu's fixed split. Endpoint inclusion and grid-error accounting are validation additions.",
+          "grounding": "Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.1–3; rate formulas, geometry and fixed-power assumption."
+        },
+        {
+          "id": "doi:10.1109/jsac.2017.2725618",
+          "overlap": "Analytic constrained optimum and exhaustive-search benchmarking in resource allocation.",
+          "precise_delta": "Zhu's exhaustive assignment comparison is multichannel and uses extra constraints. It does not establish this exact endpoint-aware scalar grid or its error bound.",
+          "grounding": "Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.6–7,10–11; Proposition 3 and exhaustive-assignment discussion."
+        },
+        {
+          "id": "doi:10.1109/tvt.2017.2689000",
+          "overlap": "Closed allocation interval and matched equal-time OMA.",
+          "precise_delta": "The interval is OMA-relative fairness, not arbitrary fixed QoS. M11's refinement tests do not alter the scientific objective.",
+          "grounding": "Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.2–3; Fair-NOMA bounds."
+        }
+      ],
+      "scientific_core": "Established scalar constrained allocation, adapted to the approved M11 resource convention.",
+      "validation_focus": "Endpoint-aware exhaustive evaluation, narrow-interval coverage and a later justified discretization bound. An identical published test layout was not verified.",
+      "verdict": "already-done",
+      "rationale": "The underlying optimization is established. Grid refinement checks its implementation; the card asserts no new allocation formulation or measured result.",
+      "limitations": [
+        "No grid spacing, error bound or tolerance is approved or tested.",
+        "Related code has not been mapped to the exact benchmark.",
+        "Search misses do not establish originality."
+      ]
+    },
+    {
+      "id": "idea-03",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Approved scalar two-user perfect-CSI/ideal-SIC M11, arbitrary fixed individual QoS and full split range, matched equal-time OMA, intersection-only paired rates and retained infeasibility.",
+      "queries": [
+        {
+          "query": "site:arxiv.org NOMA bounded scalar numerical optimization QoS sum rate",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:26:59Z",
+          "evidence": "Found Zhu, secrecy optimization and MISO minorization-maximization records; the latter two change the scientific problem.",
+          "receipt_id": "F03"
+        },
+        {
+          "query": "site:github.com NOMA Zhu bounded scalar optimizer QoS",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:24:37Z",
+          "evidence": "Displayed generic optimization source does not verify a NOMA solver or author mapping.",
+          "receipt_id": "A03"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"numerical optimization\" \"QoS\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:39Z",
+          "evidence": "No displayed results; this is not evidence of novelty.",
+          "receipt_id": "B03"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"golden section\" power allocation",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:39Z",
+          "evidence": "Found cooperative VLC/RF optimization, a different physical model.",
+          "receipt_id": "C03f"
+        },
+        {
+          "query": "site:github.com NOMA scalar optimization QoS power",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:39Z",
+          "evidence": "Found a multicarrier weighted-sum-rate solver, not the proposed independent scalar check.",
+          "receipt_id": "E03"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "doi:10.1109/jsac.2017.2725618",
+          "overlap": "QoS-constrained sum-rate objective and a derivative-based global boundary solution.",
+          "precise_delta": "M11 removes paper-specific constraints only through its own approved-model derivation, and proposes independent numerical objective/residual evaluation.",
+          "grounding": "Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.3,6–7; SR2 and Proposition 3 proof."
+        },
+        {
+          "id": "arxiv:1504.07751",
+          "overlap": "Scalar rate formulas and monotonic sum-rate geometry.",
+          "precise_delta": "Xu's fixed-allocation probabilities are not solver optimality evidence for arbitrary QoS.",
+          "grounding": "Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.1–3; formulas, propositions and fixed split."
+        },
+        {
+          "id": "doi:10.1109/tvt.2017.2689000",
+          "overlap": "An interval with a monotonic objective and matched OMA rates.",
+          "precise_delta": "Fairness thresholds differ from fixed individual QoS; exact solver independence and endpoint tests are prospective.",
+          "grounding": "Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.2–3; interval and endpoint discussion."
+        }
+      ],
+      "scientific_core": "Established constrained allocation and boundary optimization.",
+      "validation_focus": "Independent bounded numerical maximization with direct residuals and explicit endpoints/singletons. No exact published solver-validation package was verified.",
+      "verdict": "already-done",
+      "rationale": "Changing the validation implementation to a numerical solver does not create a new scientific objective or mechanism. Existing grounded analytic results are the relevant core overlap.",
+      "limitations": [
+        "Solver success cannot substitute for feasibility and global-optimality checks.",
+        "Package, tolerances and independence remain undecided.",
+        "The first displayed F03 output was truncated; its query was rerun."
+      ]
+    },
+    {
+      "id": "idea-04",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Approved ideal scalar two-user M11 with arbitrary fixed individual QoS, full split range and matched equal-time/full-active-power OMA; retain feasibility and pair the identical intersection.",
+      "queries": [
+        {
+          "query": "site:arxiv.org \"Fair-NOMA\" \"rate\" \"OMA\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:17Z",
+          "evidence": "Found Fair-NOMA; supplied pages establish its constructive interval.",
+          "receipt_id": "F04"
+        },
+        {
+          "query": "site:github.com Oviedo Sadjadpour NOMA rate region",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:17Z",
+          "evidence": "Displayed unrelated repository; no author-linked witness implementation verified.",
+          "receipt_id": "A04"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"rate region\" \"equal time\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:53Z",
+          "evidence": "No displayed results.",
+          "receipt_id": "B04"
+        },
+        {
+          "query": "site:arxiv.org superposition \"OMA\" \"fair power\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:53Z",
+          "evidence": "Rediscovered Fair-NOMA under alternate mechanism wording.",
+          "receipt_id": "C04f"
+        },
+        {
+          "query": "site:github.com \"Fair-NOMA\"",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:53Z",
+          "evidence": "Displayed unrelated word-game gist; exact software witness remains unverified.",
+          "receipt_id": "E04"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "doi:10.1109/tvt.2017.2689000",
+          "overlap": "Constructs a power interval meeting both equal-time OMA rates at matched active-slot power.",
+          "precise_delta": "M11 uses that construction as a comparison witness for arbitrary OMA-feasible fixed QoS, while retaining sum maximization. It must state premises and verify the extension itself.",
+          "grounding": "Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.1–3; Sections III–IV."
+        },
+        {
+          "id": "arxiv:1504.07751",
+          "overlap": "Broadcast/NOMA/TDMA region geometry and concavity arguments.",
+          "precise_delta": "Region pictures and fixed-split event analysis do not alone prove the exact M11 QoS-conditioned comparison.",
+          "grounding": "Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.1–2; capacity region and Propositions 1–2."
+        },
+        {
+          "id": "doi:10.1109/jsac.2017.2725618",
+          "overlap": "QoS sum-rate optimization and boundary choice.",
+          "precise_delta": "Zhu's extra constraints and waterfilled OFDMA comparator differ from the witness-based equal-time scalar comparison.",
+          "grounding": "Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.6–7,10–11."
+        }
+      ],
+      "scientific_core": "Established rate-region and constructive OMA-relative allocation methods.",
+      "validation_focus": "Prospective proof-transfer and witness checks for the exact fixed-QoS benchmark, including equality and infeasibility. The complete M11 theorem has not been derived or validated in this review.",
+      "verdict": "already-done",
+      "rationale": "The constructive mechanism is explicitly published in Fair-NOMA and supported by Xu's geometry. Applying it faithfully within the benchmark is established-method validation, without a new theorem claim here.",
+      "limitations": [
+        "Fair-NOMA's power-order premises and OMA-dependent thresholds must remain explicit.",
+        "No exact witness code was verified.",
+        "No universal or measured NOMA dominance is inferred."
+      ]
+    },
+    {
+      "id": "idea-05",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Approved two-user ordered scalar perfect-CSI/ideal-SIC M11; arbitrary individual fixed QoS, full power range, matched equal-time OMA and complete paired feasibility accounting.",
+      "queries": [
+        {
+          "query": "site:arxiv.org NOMA weak message decoding strong receiver ideal SIC QoS",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:17Z",
+          "evidence": "Found SIC-review and imperfect-CSI uplink leads; no exact validation-suite evidence.",
+          "receipt_id": "F05"
+        },
+        {
+          "query": "site:github.com Oviedo Sadjadpour NOMA SIC decoding",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:17Z",
+          "evidence": "Found educational/generic SIC repositories without verified paper mapping.",
+          "receipt_id": "A05"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"decodability\" \"downlink\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:53Z",
+          "evidence": "Displayed MIDO coding result is outside scope.",
+          "receipt_id": "B05"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"decoding order\" \"individual QoS\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:53Z",
+          "evidence": "No displayed results.",
+          "receipt_id": "C05f"
+        },
+        {
+          "query": "site:github.com NOMA weak message strong receiver",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:53Z",
+          "evidence": "Displayed unrelated warning-list gist.",
+          "receipt_id": "E05"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "doi:10.1109/icc.2018.8422366",
+          "overlap": "Includes all required SIC and own-message decoding events in success conditions.",
+          "precise_delta": "The paper studies common targets and effective multiantenna gains for K users; M11 checks arbitrary individual QoS and two scalar receivers under ideal SIC.",
+          "grounding": "Supplied r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json, PDF pp.2–4; equations (8)–(9), necessary-bound caveat and event construction."
+        },
+        {
+          "id": "doi:10.1109/tvt.2017.2689000",
+          "overlap": "Explicit ordered-gain comparison of weak-message SINRs at both receivers.",
+          "precise_delta": "M11 treats this as ideal decoding consistency, without adopting fairness targets or introducing a practical SIC margin.",
+          "grounding": "Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF p.2; Section III before equations (2)–(3)."
+        },
+        {
+          "id": "doi:10.1109/jsac.2017.2725618",
+          "overlap": "SIC rate expressions and discussion of allocation/decoding conditions.",
+          "precise_delta": "Zhu's practical power-order/SIC-stability restrictions are paper-specific and cannot replace the approved ideal-channel consistency check.",
+          "grounding": "Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.3,6–7."
+        }
+      ],
+      "scientific_core": "Established ordered-channel SIC decodability and QoS success accounting.",
+      "validation_focus": "Direct weak-message decoding residuals at both receivers and consistency with own-rate feasibility. Exact test implementation remains prospective.",
+      "verdict": "already-done",
+      "rationale": "Fair-NOMA explicitly supplies the relevant ordered-gain decoding relation, while QoS-limits supplies the success-event distinction. The proposal checks faithful implementation of these established principles.",
+      "limitations": [
+        "Ideal achievable-rate consistency does not validate physical SIC hardware.",
+        "Gain ordering must not be confused with received-power ordering.",
+        "No exact author-linked code was verified."
+      ]
+    },
+    {
+      "id": "idea-06",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Approved scalar two-user M11 with independent fixed per-user QoS, perfect CSI, ideal SIC, full split range, matched equal-time OMA and retained paired feasibility categories.",
+      "queries": [
+        {
+          "query": "site:arxiv.org NOMA individual heterogeneous QoS constraints feasible power allocation",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:28Z",
+          "evidence": "Found QoS-limits and Zhu; supplied pages distinguish common, arbitrary and OMA-relative targets.",
+          "receipt_id": "F06"
+        },
+        {
+          "query": "site:github.com NOMA Jianyue Zhu individual QoS feasibility",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:28Z",
+          "evidence": "Found RL and finite-alphabet code with different assumptions.",
+          "receipt_id": "A06"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"individual QoS\" optimality",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:53Z",
+          "evidence": "Displayed MISO SWIPT multicasting result is outside scope.",
+          "receipt_id": "B06"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"unequal\" \"target rates\" feasibility",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:53Z",
+          "evidence": "No displayed results.",
+          "receipt_id": "C06f"
+        },
+        {
+          "query": "site:github.com NOMA heterogeneous QoS feasibility",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:53Z",
+          "evidence": "Displayed vehicular dissertation repository does not verify this feasibility map.",
+          "receipt_id": "E06"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "doi:10.1109/jsac.2017.2725618",
+          "overlap": "Individual minimum-rate constraints, feasible bounds and an active weak-user constraint at the optimum.",
+          "precise_delta": "M11 maps independent targets in one scalar channel without Zhu's additional power-order/SIC-stability restrictions or multichannel budgets.",
+          "grounding": "Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.3,6–7; SR2, feasible bounds and Remark 6."
+        },
+        {
+          "id": "doi:10.1109/tvt.2017.2689000",
+          "overlap": "Two individual rate inequalities define an allocation interval.",
+          "precise_delta": "Those thresholds equal channel-dependent OMA capacities; substituting them for arbitrary fixed target pairs would change M11.",
+          "grounding": "Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.2–3."
+        },
+        {
+          "id": "doi:10.1109/icc.2018.8422366",
+          "overlap": "QoS feasibility and decoded-message success conditions.",
+          "precise_delta": "The paper uses a common target and lists distinct user targets as future work; it does not establish this exact heterogeneous map.",
+          "grounding": "Supplied r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json, PDF pp.2–4 and p.5 conclusions."
+        }
+      ],
+      "scientific_core": "Established individual-QoS constrained allocation and active-bound analysis.",
+      "validation_focus": "Prospective target-pair map distinguishing empty, singleton and nonempty intervals with direct-rate checks. Its resolution and exact publication match are unverified.",
+      "verdict": "already-done",
+      "rationale": "Independent individual QoS is already present in the grounded Zhu formulation. The map is a validation presentation of the established method, with explicit constraint differences.",
+      "limitations": [
+        "No target values or map resolution are selected.",
+        "The unacquired individual-QoS Yang paper remains metadata-only evidence.",
+        "No exact mapped code was verified."
+      ]
+    },
+    {
+      "id": "idea-07",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Approved ideal scalar two-user M11, arbitrary fixed individual QoS and matched equal-time OMA. Rate differences use identical both-feasible blocks, retaining all other feasibility statuses and counts.",
+      "queries": [
+        {
+          "query": "site:arxiv.org NOMA OMA outage feasibility conditional rate comparison",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:28Z",
+          "evidence": "Found QoS-limits and an average-QoS throughput/fairness lead.",
+          "receipt_id": "F07"
+        },
+        {
+          "query": "site:github.com NOMA Ding outage paired feasibility",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:28Z",
+          "evidence": "Found UAV-NOMA simulation with a different model; no exact paired ledger verified.",
+          "receipt_id": "A07"
+        },
+        {
+          "query": "site:arxiv.org NOMA OMA \"joint outage\" comparison",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:31:07Z",
+          "evidence": "Displayed STAR-RIS/SWIPT result is outside scope.",
+          "receipt_id": "B07"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"conditional\" \"feasibility\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:31:07Z",
+          "evidence": "Displayed generic convex-feasibility result is unrelated.",
+          "receipt_id": "C07f"
+        },
+        {
+          "query": "site:github.com NOMA OMA outage sample counts",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:31:07Z",
+          "evidence": "Found a MATLAB NOMA simulator, without evidence of this exact accounting layout.",
+          "receipt_id": "E07"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "doi:10.1109/icc.2018.8422366",
+          "overlap": "Explicit success/outage events and comparison with a specified equal-slot OMA reference.",
+          "precise_delta": "Event equality for common-target fixed allocation is not conditional sum-rate equality or the proposed arbitrary-QoS paired-sample ledger.",
+          "grounding": "Supplied r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json, PDF pp.2–4; success conditions and Theorem 2 interpretation."
+        },
+        {
+          "id": "doi:10.48550/arxiv.1412.2799",
+          "overlap": "Admission and outage depend on QoS and available allocation.",
+          "precise_delta": "Ding's CR comparison protects a primary user and uses primary-only service; M11 retains two-user equal-time OMA and its own complete categories.",
+          "grounding": "Supplied r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json, PDF p.4; equations (21)–(24)."
+        },
+        {
+          "id": "doi:10.1109/tvt.2017.2689000",
+          "overlap": "Matched scalar OMA rates and per-user outage comparisons.",
+          "precise_delta": "Fair-NOMA is OMA-relative; its cited passages do not verify this exact block-identifier and denominator ledger.",
+          "grounding": "Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.2–4."
+        }
+      ],
+      "scientific_core": "Established allocation and feasibility/outage comparison, with resource definitions kept explicit.",
+      "validation_focus": "A prospective per-realization accounting ledger implementing safeguards already required by the approved scope. Exact published ledger structure is unverified.",
+      "verdict": "already-done",
+      "rationale": "The ledger changes reporting and verification, not the scientific mechanism. Existing works support the need to distinguish success, admission and reference definitions; no original scientific delta is asserted.",
+      "limitations": [
+        "The exact ledger is not claimed already published.",
+        "An empty intersection yields an unavailable conditional statistic.",
+        "No sampling or boundary tolerance is approved."
+      ]
+    },
+    {
+      "id": "idea-08",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Approved ordered scalar two-user ideal-SIC M11, including deterministic equality cases, arbitrary fixed individual QoS, full split range and matched equal-time OMA with complete feasibility accounting.",
+      "queries": [
+        {
+          "query": "site:arxiv.org NOMA equal channel gains sum rate OMA equality",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:37Z",
+          "evidence": "Displayed uplink gain-comparison records change the channel direction.",
+          "receipt_id": "F08"
+        },
+        {
+          "query": "site:github.com NOMA Oviedo equal channel gains",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:37Z",
+          "evidence": "Found multicarrier and finite-alphabet repositories, without an exact equality-case test match.",
+          "receipt_id": "A08"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"equal gains\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:31:07Z",
+          "evidence": "Displayed Open-RAN game-theory result is unrelated.",
+          "receipt_id": "B08"
+        },
+        {
+          "query": "site:arxiv.org superposition coding \"identical channels\" OMA",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:31:07Z",
+          "evidence": "Displayed polarization record does not establish this test.",
+          "receipt_id": "C08f"
+        },
+        {
+          "query": "site:github.com NOMA equal gain sum rate",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:31:07Z",
+          "evidence": "Found different finite-alphabet reproducibility code.",
+          "receipt_id": "E08"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "arxiv:1504.07751",
+          "overlap": "Scalar broadcast rate expressions and gain-dependent sum-rate derivative.",
+          "precise_delta": "Xu's stated analysis uses strict gain separation and fixed allocations. M11 proposes checking the exact equal-gain degeneration directly, including arbitrary QoS.",
+          "grounding": "Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.1–2; rates and Proposition 1 derivative."
+        },
+        {
+          "id": "doi:10.1109/tvt.2017.2689000",
+          "overlap": "Explicit discussion of the gain-equality limit and collapsing Fair-NOMA interval.",
+          "precise_delta": "That is an OMA-relative interval limit; M11's arbitrary-QoS flat-objective and status tests require their own derivation.",
+          "grounding": "Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF p.3; discussion following Theorem IV.1."
+        },
+        {
+          "id": "doi:10.1109/jsac.2017.2725618",
+          "overlap": "Nondecreasing sum-rate derivative under non-strict ordered CNRs.",
+          "precise_delta": "Zhu's extra constraints remain different. Exact flat-objective tie handling is a proposed implementation check.",
+          "grounding": "Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.6–7; Proposition 3 proof."
+        }
+      ],
+      "scientific_core": "Established scalar rate model and its gain-dependent monotonicity; equality is a benchmark degeneracy check, not an asserted new physical effect.",
+      "validation_focus": "Prospective exact-equality, near-equality, feasibility and flat-objective checks. No exact published test suite was verified.",
+      "verdict": "already-done",
+      "rationale": "The proposal examines a limiting case of established rates; Fair-NOMA already discusses the equality limit. It makes no original scientific claim or claim that equality has positive probability under a future fading law.",
+      "limitations": [
+        "Exact equality and numerical near-equality must be distinguished.",
+        "The complete arbitrary-QoS equality derivation remains P4 work.",
+        "Searches do not verify code handling."
+      ]
+    },
+    {
+      "id": "idea-09",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Approved two fixed ordered scalar users with ideal SIC and arbitrary fixed QoS, without population pairing or additional users. Recompute constrained NOMA and matched equal-time OMA per case, retaining feasibility and paired counts.",
+      "queries": [
+        {
+          "query": "site:arxiv.org \"Impact of User Pairing\" NOMA channel difference",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:37Z",
+          "evidence": "Found Ding's pairing record and a different hybrid-SIC energy-efficiency lead.",
+          "receipt_id": "F09"
+        },
+        {
+          "query": "site:github.com \"zhiguo-ding\" NOMA channel pairing",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:37Z",
+          "evidence": "Found codes-for-previous-works with an 'Impact of user pairing' folder; exact version, paper mapping and benchmark suitability remain unverified.",
+          "receipt_id": "A09"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"channel disparity\" \"power allocation\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:31:07Z",
+          "evidence": "Found a clustering/channel-disparity lead; discovery metadata only.",
+          "receipt_id": "B09"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"channel gain difference\" QoS",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:31:07Z",
+          "evidence": "Found the downlink resource-allocation review record.",
+          "receipt_id": "C09f"
+        },
+        {
+          "query": "site:github.com \"Impact of user pairing\" NOMA",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:31:07Z",
+          "evidence": "Rediscovered the plausible pairing-code lead; no code was inspected or executed.",
+          "receipt_id": "E09"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "doi:10.48550/arxiv.1412.2799",
+          "overlap": "Examines channel separation and differing behavior of fixed-power and CR allocation.",
+          "precise_delta": "M11 keeps exactly two users, optimizes both fixed QoS targets and uses equal-time OMA. Population pairing and primary-only CR conclusions cannot be imported.",
+          "grounding": "Supplied r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json, PDF pp.1–4; fixed-power pairing, gain gap and CR reference."
+        },
+        {
+          "id": "arxiv:1504.07751",
+          "overlap": "Gain separation affects fixed-split individual and sum-rate comparison probabilities.",
+          "precise_delta": "A deterministic optimized-QoS sensitivity sweep differs from fixed-split order-statistic probability analysis.",
+          "grounding": "Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.2–4; fixed split and pairing examples."
+        },
+        {
+          "id": "doi:10.1109/tvt.2017.2689000",
+          "overlap": "Discusses gain variation and the Fair-NOMA sum-rate gap.",
+          "precise_delta": "The allocation targets are OMA-dependent; M11 must separate feasibility changes from conditioned rate changes with fixed targets.",
+          "grounding": "Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.3,6."
+        }
+      ],
+      "scientific_core": "Established gain-sensitivity analysis applied to the established constrained optimizer.",
+      "validation_focus": "Prospective deterministic gain contrasts with explicitly defined sweep convention and no assumed monotonic conditional gain.",
+      "verdict": "already-done",
+      "rationale": "Channel contrast is an established analysis dimension. The card introduces no pairing algorithm or claimed new sensitivity law; its contribution is controlled benchmark interpretation.",
+      "limitations": [
+        "Fixed-one-gain and fixed-aggregate-gain sweeps differ and remain undecided.",
+        "The public pairing repository is a discovery lead, not an accepted baseline.",
+        "Fresh disparity metadata was not treated as a full-paper comparison."
+      ]
+    },
+    {
+      "id": "idea-10",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Approved ideal scalar two-user M11 with nonnegative unit-sum powers, arbitrary fixed individual QoS, matched equal-time OMA and retained paired feasibility. Zero allocations remain endpoints of the same NOMA model.",
+      "queries": [
+        {
+          "query": "site:arxiv.org NOMA QoS zero power allocation boundary feasibility",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:48Z",
+          "evidence": "Found QoS-limits and Zhu records.",
+          "receipt_id": "F10"
+        },
+        {
+          "query": "site:github.com NOMA Ding zero power QoS allocation",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:48Z",
+          "evidence": "Found finite-alphabet, UAV and multicarrier code; no exact endpoint/singleton suite verified.",
+          "receipt_id": "A10"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"zero rate\" \"power allocation\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:33:45Z",
+          "evidence": "Displayed large-network throughput-scaling result is outside scope.",
+          "receipt_id": "B10"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"feasible interval\" endpoints",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:33:45Z",
+          "evidence": "Displayed cost-sharing result is unrelated.",
+          "receipt_id": "C10f"
+        },
+        {
+          "query": "site:github.com NOMA QoS endpoint singleton",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:33:45Z",
+          "evidence": "Displayed storage-system upgrade guide is unrelated.",
+          "receipt_id": "E10"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "doi:10.1109/jsac.2017.2725618",
+          "overlap": "QoS interval feasibility and boundary optimum.",
+          "precise_delta": "M11 includes its full nonnegative split range and zero-target/singleton tests without copying Zhu's extra constraints.",
+          "grounding": "Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.3,6–7."
+        },
+        {
+          "id": "doi:10.48550/arxiv.1412.2799",
+          "overlap": "Explicit zero secondary allocation when weak-user protection consumes resources.",
+          "precise_delta": "That CR allocation and primary-only comparator differ from M11's two fixed QoS targets and equal-time OMA.",
+          "grounding": "Supplied r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json, PDF p.4; equations (20)–(24)."
+        },
+        {
+          "id": "doi:10.1109/icc.2018.8422366",
+          "overlap": "Necessary allocation limits versus actual rate/SIC success.",
+          "precise_delta": "Common-target multiuser fixed-power outage construction does not establish the exact scalar endpoint classifier.",
+          "grounding": "Supplied r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json, PDF pp.2–4."
+        }
+      ],
+      "scientific_core": "Established constrained allocation and resource-boundary feasibility.",
+      "validation_focus": "Prospective zero-target, endpoint, singleton, empty-interval and power-budget checks. Exact publication/software layout remains unverified.",
+      "verdict": "already-done",
+      "rationale": "The grounded works already contain boundary optimization, allocation limits and zero-allocation examples. This card verifies boundary handling in the same benchmark, with no new science claim.",
+      "limitations": [
+        "No boundary thresholds or tolerances are selected.",
+        "Clipping is not a feasibility proof.",
+        "A primary-only reference cannot replace equal-time OMA."
+      ]
+    },
+    {
+      "id": "idea-11",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Approved ideal scalar two-user M11, holding individual QoS fixed while inspecting small-SNR behavior; matched equal-time OMA, full split range and explicit infeasibility with intersection-only rate comparisons.",
+      "queries": [
+        {
+          "query": "site:arxiv.org NOMA low SNR fixed minimum rate feasibility",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:48Z",
+          "evidence": "Displayed RIS and statistical-delay results differ from the benchmark.",
+          "receipt_id": "F11"
+        },
+        {
+          "query": "site:github.com NOMA Oviedo low SNR QoS",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:27:48Z",
+          "evidence": "Found different finite-alphabet and generic wireless implementations.",
+          "receipt_id": "A11"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"low SNR\" \"minimum rate\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:33:45Z",
+          "evidence": "Displayed RIS/mmWave imperfect-CSI paper is outside scope.",
+          "receipt_id": "B11"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"minimum transmit power\" feasibility",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:33:45Z",
+          "evidence": "Found an analytical superposition-cell minimum-power lead; metadata only, not exact M11 expansion evidence.",
+          "receipt_id": "C11f"
+        },
+        {
+          "query": "site:github.com NOMA fixed QoS low SNR feasibility",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:33:45Z",
+          "evidence": "Found finite-alphabet code with a different model.",
+          "receipt_id": "E11"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "arxiv:1504.07751",
+          "overlap": "Exact scalar rates and allocation-dependent NOMA/TDMA behavior.",
+          "precise_delta": "M11 proposes small-power checks while preserving fixed QoS, rather than importing fixed-split population comparisons.",
+          "grounding": "Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.1–3."
+        },
+        {
+          "id": "doi:10.1109/tvt.2017.2689000",
+          "overlap": "Matched OMA rates and low-SNR capacity comparisons.",
+          "precise_delta": "Its fairness thresholds vary with channel/SNR. M11 must not scale positive fixed targets merely to maintain feasibility.",
+          "grounding": "Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.2–4,6."
+        },
+        {
+          "id": "doi:10.1109/icc.2018.8422366",
+          "overlap": "QoS success requires channel/SNR conditions beyond necessary allocation bounds.",
+          "precise_delta": "The paper's common-target fixed-power construction is not an optimized unequal-target low-SNR expansion.",
+          "grounding": "Supplied r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json, PDF pp.2–4."
+        }
+      ],
+      "scientific_core": "Established exact scalar allocation and fixed-rate feasibility. The card does not propose a new low-SNR law or quantitative value.",
+      "validation_focus": "Prospective regime-limited expansions and explicit positive-fixed-QoS infeasibility checks, with zero-target cases distinguished. Exact expansion coefficients and validity bounds are unverified.",
+      "verdict": "already-done",
+      "rationale": "This is a limiting-regime validation of an established model, not an unsupported new scientific delta. No fresh search result is used to assert an identical published expansion.",
+      "limitations": [
+        "Positive fixed QoS can eliminate a sufficiently low-SNR both-feasible region.",
+        "No expansion, validity range or error bound is derived here.",
+        "Search results do not establish a matching validation publication."
+      ]
+    },
+    {
+      "id": "idea-12",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Approved ideal scalar two-user M11, individual QoS fixed through high-SNR inspection, full split range and matched equal-time OMA; retain zero/equal-gain exceptions, feasibility and paired counts.",
+      "queries": [
+        {
+          "query": "site:arxiv.org NOMA high SNR optimal power allocation fixed QoS sum rate",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:00Z",
+          "evidence": "Found Zhu and a different secrecy-objective paper.",
+          "receipt_id": "F12"
+        },
+        {
+          "query": "site:github.com \"zhiguo-ding\" NOMA high SNR power allocation",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:00Z",
+          "evidence": "Found pinching-antenna and hybrid-OFDMA code, changing the model.",
+          "receipt_id": "A12"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"high SNR\" \"fixed QoS\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:33:45Z",
+          "evidence": "Displayed satellite/aerial/ground reliability record is outside scope.",
+          "receipt_id": "B12"
+        },
+        {
+          "query": "site:arxiv.org NOMA asymptotic optimal allocation target rate",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:33:45Z",
+          "evidence": "Found multicarrier optimal-allocation metadata; no exact scalar limiting constant verified.",
+          "receipt_id": "C12f"
+        },
+        {
+          "query": "site:github.com NOMA high SNR asymptotic QoS",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:33:45Z",
+          "evidence": "Found different finite-alphabet code.",
+          "receipt_id": "E12"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "doi:10.48550/arxiv.1412.2799",
+          "overlap": "High-SNR analysis of sum-rate gaps and outage under fixed-power pairing.",
+          "precise_delta": "M11 optimizes fixed individual QoS with two fixed gains; Ding's fixed-split or primary-only constants cannot be transferred.",
+          "grounding": "Supplied r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json, PDF pp.2–4; equations (7)–(11) and CR reference."
+        },
+        {
+          "id": "doi:10.1109/tvt.2017.2689000",
+          "overlap": "High-SNR allocation/rate approximations and matched OMA comparison.",
+          "precise_delta": "Fair-NOMA targets are OMA-dependent and published ergodic constants depend on its channel/population model. M11 requires its own fixed-QoS limits.",
+          "grounding": "Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.3,6,8; approximations and population caveat."
+        },
+        {
+          "id": "doi:10.1109/jsac.2017.2725618",
+          "overlap": "QoS-boundary optimum from which regime behavior can be examined.",
+          "precise_delta": "Extra power-order/SIC constraints and multichannel reference differ; the exact M11 limit is not supplied by its numerical gains.",
+          "grounding": "Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.6–7,10–11."
+        }
+      ],
+      "scientific_core": "Established constrained allocation and asymptotic-analysis methods. No new limiting expression is asserted in the card.",
+      "validation_focus": "Prospective finite-SNR convergence to a later derived fixed-QoS limit, with exceptions and order of limits stated. Exact quantitative limits remain unverified.",
+      "verdict": "already-done",
+      "rationale": "This is established-method regime validation. The verdict does not assert identity with Ding's or Fair-NOMA's asymptotic constants, which have different premises.",
+      "limitations": [
+        "No limiting expression, SNR grid or convergence tolerance is derived or approved.",
+        "Gain and SNR limits may not commute.",
+        "Fresh multicarrier metadata is discovery evidence only."
+      ]
+    },
+    {
+      "id": "idea-13",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Two implementations of the same approved scalar two-user ideal-SIC M11, arbitrary fixed QoS and full split range, matched equal-time OMA, identical deterministic inputs and complete paired feasibility accounting.",
+      "queries": [
+        {
+          "query": "site:arxiv.org NOMA reproducible simulation power allocation numerical validation",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:00Z",
+          "evidence": "Found resource-allocation and multicarrier optimization metadata, not a verified cross-language suite.",
+          "receipt_id": "F13"
+        },
+        {
+          "query": "site:github.com NOMA Zhu Python MATLAB validation",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:00Z",
+          "evidence": "Displayed programming-language and electricity-network repositories are unrelated.",
+          "receipt_id": "A13"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"reproducibility\" simulation",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:34:19Z",
+          "evidence": "Displayed statistical-simulation replicability project is outside telecom scope.",
+          "receipt_id": "B13"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"independent\" \"implementation\" validation",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:34:19Z",
+          "evidence": "Displayed particle-physics validation result is unrelated.",
+          "receipt_id": "C13f"
+        },
+        {
+          "query": "site:github.com NOMA Python MATLAB power allocation verification",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:34:19Z",
+          "evidence": "Found a Python multicarrier weighted-sum-rate solver; it does not establish paired independent Python/MATLAB implementations.",
+          "receipt_id": "E13"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "doi:10.1109/jsac.2017.2725618",
+          "overlap": "The analytic QoS allocation core to be implemented.",
+          "precise_delta": "M11 uses different permitted constraints and reference accounting; dual-language verification is proposed software assurance, not a new allocation method.",
+          "grounding": "Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.3,6–7,10–11."
+        },
+        {
+          "id": "doi:10.1109/tvt.2017.2689000",
+          "overlap": "Scalar NOMA/OMA rates, interval and theory/simulation comparison.",
+          "precise_delta": "Fair-NOMA's thresholds differ and its pages do not establish this independent cross-language test suite.",
+          "grounding": "Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.2–4."
+        },
+        {
+          "id": "arxiv:1504.07751",
+          "overlap": "Scalar model and Monte Carlo comparison of analytic rate events.",
+          "precise_delta": "Xu uses fixed allocations; M11 implements the constrained optimum twice and compares per-case rates/statuses before aggregation.",
+          "grounding": "Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.1–4."
+        }
+      ],
+      "scientific_core": "Established scalar constrained allocation and matched-resource comparison.",
+      "validation_focus": "Prospective independently written Python/MATLAB checks of objective, rates and feasibility; flat-objective ties need not yield identical splits. Exact suite publication and actual implementation independence are unverified.",
+      "verdict": "already-done",
+      "rationale": "Two programming languages do not change the scientific formulation. The proposal is an established-method validation artifact, without an original result or verified identical software-suite claim.",
+      "limitations": [
+        "No implementation was read, written or executed.",
+        "A shared algebra error can survive language agreement.",
+        "Searches identified related code, not the exact cross-language package."
+      ]
+    },
+    {
+      "id": "idea-14",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Approved normalized scalar two-user M11 with unit noise/bandwidth, ideal SIC, arbitrary fixed QoS, matched instantaneous resources and equal-time OMA; equivalent representations must refer to the same scenario.",
+      "queries": [
+        {
+          "query": "site:arxiv.org NOMA normalized SNR power allocation numerical precision",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:17Z",
+          "evidence": "Found multicarrier allocation and dynamic-clustering metadata, not an exact precision audit.",
+          "receipt_id": "F14"
+        },
+        {
+          "query": "site:github.com NOMA Xu SNR dB linear precision",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:17Z",
+          "evidence": "Found finite-alphabet reproducibility code with different rates and user count.",
+          "receipt_id": "A14"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"numerical precision\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:34:19Z",
+          "evidence": "Displayed MLPerf paper is unrelated.",
+          "receipt_id": "B14"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"SNR normalization\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:34:19Z",
+          "evidence": "Displayed image-fusion result is unrelated.",
+          "receipt_id": "C14f"
+        },
+        {
+          "query": "site:github.com NOMA log1p power allocation",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:34:19Z",
+          "evidence": "Found the multicarrier solver; no exact log1p or normalization-invariance test was verified.",
+          "receipt_id": "E14"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "arxiv:1504.07751",
+          "overlap": "Normalized scalar rates expressed using transmit SNR and channel power gains.",
+          "precise_delta": "M11 optimizes fixed QoS and proposes equivalent numerical evaluations; Xu's fixed-split results do not verify numerical invariance.",
+          "grounding": "Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.1–3; definitions of x,y and rate formulas."
+        },
+        {
+          "id": "doi:10.1109/tvt.2017.2689000",
+          "overlap": "Unit-noise scalar NOMA/OMA formulas and transmit-SNR conventions.",
+          "precise_delta": "Fairness thresholds differ. Stable algebra and conversion checks are proposed software verification of the same physical scenario.",
+          "grounding": "Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.2–3."
+        },
+        {
+          "id": "doi:10.1109/comst.2016.2621116",
+          "overlap": "Historical scalar superposition/SIC rate context and ideal-model assumptions.",
+          "precise_delta": "The survey is not an exact optimizer or precision-analysis source. Its practical quantization discussion does not change M11's ideal physics.",
+          "grounding": "Supplied r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.json, PDF pp.7–8,34–36."
+        }
+      ],
+      "scientific_core": "Established normalized scalar rate and allocation model.",
+      "validation_focus": "Prospective algebraic equivalence, linear/dB conversion, amplitude/power distinction and precision checks near numerical boundaries. Exact test layout is unverified.",
+      "verdict": "already-done",
+      "rationale": "The card concerns numerical correctness of established rates and the same benchmark, without proposing new noise physics or a new scientific mechanism.",
+      "limitations": [
+        "Higher precision cannot by itself correct an algebra error.",
+        "No tolerance or reference precision is approved.",
+        "OCR losses in survey equations preclude copying them as exact formulas."
+      ]
+    },
+    {
+      "id": "idea-15",
+      "timestamp": "2026-10-11T08:34:42Z",
+      "scope": "Approved scalar two-user ideal-SIC M11 with arbitrary fixed QoS and matched equal-time OMA; pair schemes within each realization, retain all feasibility counts and evaluate rate differences only on the common feasible set.",
+      "queries": [
+        {
+          "query": "site:arxiv.org NOMA Monte Carlo QoS sum rate convergence outage",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:17Z",
+          "evidence": "Found optical NOMA and randomly deployed-user performance records; no exact independent-seed conditional-statistic protocol verified.",
+          "receipt_id": "F15"
+        },
+        {
+          "query": "site:github.com \"zhiguo-ding\" NOMA Monte Carlo random seed",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:30:17Z",
+          "evidence": "Found MEC and CR-NOMA reinforcement-learning code with different objectives.",
+          "receipt_id": "A15"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"Monte Carlo\" \"confidence interval\"",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:34:19Z",
+          "evidence": "Displayed railway-interlocking validation result is unrelated.",
+          "receipt_id": "B15"
+        },
+        {
+          "query": "site:arxiv.org NOMA \"sample size\" convergence QoS",
+          "source": "arxiv",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:34:19Z",
+          "evidence": "Displayed survival-analysis paper uses Noma as an author surname and is unrelated.",
+          "receipt_id": "C15f"
+        },
+        {
+          "query": "site:github.com NOMA Monte Carlo seed convergence",
+          "source": "web",
+          "backend": "live web search",
+          "timestamp": "2026-10-11T08:34:19Z",
+          "evidence": "Displayed NOMA programming-language repository is unrelated.",
+          "receipt_id": "E15"
+        }
+      ],
+      "closest_works": [
+        {
+          "id": "doi:10.48550/arxiv.1412.2799",
+          "overlap": "Analytic performance expressions checked by Monte Carlo.",
+          "precise_delta": "Ding's fixed-power population pairing and primary-only CR comparison differ from optimized fixed-QoS paired conditional statistics.",
+          "grounding": "Supplied r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json, PDF pp.2–4,6."
+        },
+        {
+          "id": "arxiv:1504.07751",
+          "overlap": "Monte Carlo verification of scalar NOMA/TDMA rate-event analysis.",
+          "precise_delta": "Xu's fixed split and order-statistic model do not establish the proposed independent-seed convergence protocol.",
+          "grounding": "Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.3–4; Lemma 1 and numerical results."
+        },
+        {
+          "id": "doi:10.1109/tvt.2017.2689000",
+          "overlap": "Theory/simulation comparison for capacity and outage under matched OMA resources.",
+          "precise_delta": "Its OMA-relative allocations and specified fading assumptions differ; M11's estimator definitions and uncertainty controls remain prospective.",
+          "grounding": "Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.3–4,6."
+        }
+      ],
+      "scientific_core": "Established constrained scalar allocation and Monte Carlo validation methods.",
+      "validation_focus": "Prospective independent streams, sample-size convergence, conditional-statistic uncertainty and denominator checks. An identical published sampling protocol was not verified.",
+      "verdict": "already-done",
+      "rationale": "Monte Carlo verification is already explicit in the grounded papers. The proposed independent-seed and accounting controls strengthen implementation assurance without asserting a new scientific formulation.",
+      "limitations": [
+        "No channel law, seed, sample count, stopping rule or uncertainty criterion is selected.",
+        "Rare both-feasible events may leave estimates inconclusive.",
+        "No code was executed and no convergence result is claimed."
+      ]
+    }
+  ],
+  "search_receipts": [
+    {
+      "receipt_id": "C01",
+      "query": "site:arxiv.org NOMA two user downlink sum rate TDMA information theoretic",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:23:40Z",
+      "tool_reference": "web__run search_query; audit query C01",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1504.07751",
+          "title": "NOMA: An Information Theoretic Perspective"
+        },
+        {
+          "url": "https://arxiv.org/abs/1708.01403",
+          "title": "Optimal Throughput Fairness Trade-offs for Downlink Non-Orthogonal Multiple Access over Fading Channels"
+        }
+      ],
+      "status": "returned",
+      "failure": null
+    },
+    {
+      "receipt_id": "C02",
+      "query": "site:arxiv.org \"On Optimal Power Allocation\" \"QoS\" NOMA",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:23:50Z",
+      "tool_reference": "web__run search_query; audit query C02",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1707.06350",
+          "title": "On Optimal Power Allocation for Downlink Non-Orthogonal Multiple Access Systems"
+        }
+      ],
+      "status": "returned",
+      "failure": null
+    },
+    {
+      "receipt_id": "C03",
+      "query": "site:arxiv.org \"Fair Power Allocation\" NOMA OMA",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:23:50Z",
+      "tool_reference": "web__run search_query; audit query C03",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1703.09394",
+          "title": "A Fair Power Allocation Approach to NOMA in Multi-user SISO Systems"
+        },
+        {
+          "url": "https://arxiv.org/abs/1605.00390",
+          "title": "A New NOMA Approach for Fair Power Allocation"
+        }
+      ],
+      "status": "returned",
+      "failure": null
+    },
+    {
+      "receipt_id": "C04",
+      "query": "site:arxiv.org Gaussian degraded broadcast channel superposition minimum rates power allocation sum rate",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:23:50Z",
+      "tool_reference": "web__run search_query; audit query C04",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/0910.3658",
+          "title": "Secrecy Rate Region of the Broadcast Channel with an Eavesdropper"
+        },
+        {
+          "url": "https://arxiv.org/abs/0904.4735",
+          "title": "The Secrecy Capacity Region of the Degraded Vector Gaussian Broadcast Channel"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "C05",
+      "query": "site:arxiv.org superposition coding NOMA \"minimum rate\" \"power allocation\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:24:09Z",
+      "tool_reference": "web__run search_query; audit query C05",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2106.08636",
+          "title": "Optimal Water-Filling Algorithm in Downlink Multi-Cluster NOMA Systems"
+        },
+        {
+          "url": "https://arxiv.org/abs/1608.01081",
+          "title": "Dynamic User Clustering and Power Allocation for Uplink and Downlink Non-Orthogonal Multiple Access (NOMA) Systems"
+        }
+      ],
+      "status": "returned_discovery_only",
+      "failure": null
+    },
+    {
+      "receipt_id": "F01",
+      "query": "site:arxiv.org NOMA two user QoS feasible interval endpoint optimal power allocation",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:24:09Z",
+      "tool_reference": "web__run search_query; audit query F01",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1801.06333",
+          "title": "On the Power Allocation Limits for Downlink Multi-user NOMA with QoS"
+        },
+        {
+          "url": "https://arxiv.org/abs/1703.09394",
+          "title": "A Fair Power Allocation Approach to NOMA in Multi-user SISO Systems"
+        }
+      ],
+      "status": "returned",
+      "failure": null
+    },
+    {
+      "receipt_id": "A01old",
+      "query": "Jianyue Zhu Jiaheng Wang NOMA optimal power allocation code feasible interval GitHub",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:24:09Z",
+      "tool_reference": "web__run search_query; initial author/code query A01old",
+      "results": [],
+      "status": "output_truncated",
+      "failure": "Displayed batch output did not permit reliable result-to-query mapping. No result evidence claimed; replaced by separately attributable A01."
+    },
+    {
+      "receipt_id": "F02",
+      "query": "site:arxiv.org NOMA power allocation exhaustive search grid discretization QoS",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:24:09Z",
+      "tool_reference": "web__run search_query; audit query F02",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1707.06350",
+          "title": "On Optimal Power Allocation for Downlink Non-Orthogonal Multiple Access Systems"
+        },
+        {
+          "url": "https://arxiv.org/abs/1801.06333",
+          "title": "On the Power Allocation Limits for Downlink Multi-user NOMA with QoS"
+        }
+      ],
+      "status": "returned",
+      "failure": null
+    },
+    {
+      "receipt_id": "A01",
+      "query": "site:github.com NOMA Zhu Wang feasible interval power allocation",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:24:37Z",
+      "tool_reference": "web__run search_query; audit query A01",
+      "results": [
+        {
+          "url": "https://github.com/nokia/subcarrier-power-allocation-noma-solver",
+          "title": "nokia/subcarrier-power-allocation-noma-solver"
+        },
+        {
+          "url": "https://github.com/3seoksw/Downlink-NOMA-with-RL",
+          "title": "3seoksw/Downlink-NOMA-with-RL"
+        }
+      ],
+      "status": "returned_related_code_unverified",
+      "failure": null
+    },
+    {
+      "receipt_id": "A02",
+      "query": "site:github.com NOMA exhaustive grid power allocation QoS Xu Ding",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:24:37Z",
+      "tool_reference": "web__run search_query; audit query A02",
+      "results": [
+        {
+          "url": "https://github.com/nokia/subcarrier-power-allocation-noma-solver",
+          "title": "nokia/subcarrier-power-allocation-noma-solver"
+        },
+        {
+          "url": "https://github.com/zhiguo-ding/hnoma-ofdma",
+          "title": "zhiguo-ding/hnoma-ofdma"
+        }
+      ],
+      "status": "returned_related_code_unverified",
+      "failure": null
+    },
+    {
+      "receipt_id": "F03old",
+      "query": "site:arxiv.org NOMA bounded scalar numerical optimization QoS sum rate",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:24:37Z",
+      "tool_reference": "web__run search_query; initial query F03old",
+      "results": [],
+      "status": "output_truncated",
+      "failure": "Displayed output did not permit reliable attribution of the complete result. Query rerun as F03."
+    },
+    {
+      "receipt_id": "A03",
+      "query": "site:github.com NOMA Zhu bounded scalar optimizer QoS",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:24:37Z",
+      "tool_reference": "web__run search_query; audit query A03",
+      "results": [
+        {
+          "url": "https://github.com/pv/scipy-work/blob/master/scipy/optimize/_minimize.py",
+          "title": "scipy-work/scipy/optimize/_minimize.py at master · pv/scipy-work"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "F03",
+      "query": "site:arxiv.org NOMA bounded scalar numerical optimization QoS sum rate",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:26:59Z",
+      "tool_reference": "web__run search_query; attributable rerun F03",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1707.06350",
+          "title": "On Optimal Power Allocation for Downlink Non-Orthogonal Multiple Access Systems"
+        },
+        {
+          "url": "https://arxiv.org/abs/1603.04290",
+          "title": "Secrecy Sum Rate Maximization in Non-Orthogonal Multiple Access"
+        },
+        {
+          "url": "https://arxiv.org/abs/1505.05735",
+          "title": "A Minorization-Maximization Method for Optimizing Sum Rate in Non-Orthogonal Multiple Access Systems"
+        }
+      ],
+      "status": "returned",
+      "failure": null
+    },
+    {
+      "receipt_id": "F04",
+      "query": "site:arxiv.org \"Fair-NOMA\" \"rate\" \"OMA\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:17Z",
+      "tool_reference": "web__run search_query; audit query F04",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1703.09394",
+          "title": "A Fair Power Allocation Approach to NOMA in Multi-user SISO Systems"
+        }
+      ],
+      "status": "returned",
+      "failure": null
+    },
+    {
+      "receipt_id": "A04",
+      "query": "site:github.com Oviedo Sadjadpour NOMA rate region",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:17Z",
+      "tool_reference": "web__run search_query; audit query A04",
+      "results": [
+        {
+          "url": "https://github.com/getnoma/noma",
+          "title": "getnoma/noma"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "F05",
+      "query": "site:arxiv.org NOMA weak message decoding strong receiver ideal SIC QoS",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:17Z",
+      "tool_reference": "web__run search_query; audit query F05",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2005.10215",
+          "title": "Unveiling the Importance of SIC in NOMA Systems: Part I -- State of the Art and Recent Findings"
+        },
+        {
+          "url": "https://arxiv.org/abs/1903.09586",
+          "title": "NOMA in the Uplink: Delay Analysis with Imperfect CSI and Finite-Length Coding"
+        }
+      ],
+      "status": "returned_discovery_only",
+      "failure": null
+    },
+    {
+      "receipt_id": "A05",
+      "query": "site:github.com Oviedo Sadjadpour NOMA SIC decoding",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:17Z",
+      "tool_reference": "web__run search_query; audit query A05",
+      "results": [
+        {
+          "url": "https://github.com/shrin18/Noma",
+          "title": "shrin18/Noma"
+        },
+        {
+          "url": "https://github.com/Shyar-afrini/NOMA-System",
+          "title": "Shyar-afrini/NOMA-System"
+        }
+      ],
+      "status": "returned_related_code_unverified",
+      "failure": null
+    },
+    {
+      "receipt_id": "F06",
+      "query": "site:arxiv.org NOMA individual heterogeneous QoS constraints feasible power allocation",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:28Z",
+      "tool_reference": "web__run search_query; audit query F06",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1801.06333",
+          "title": "On the Power Allocation Limits for Downlink Multi-user NOMA with QoS"
+        },
+        {
+          "url": "https://arxiv.org/abs/1707.06350",
+          "title": "On Optimal Power Allocation for Downlink Non-Orthogonal Multiple Access Systems"
+        }
+      ],
+      "status": "returned",
+      "failure": null
+    },
+    {
+      "receipt_id": "A06",
+      "query": "site:github.com NOMA Jianyue Zhu individual QoS feasibility",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:28Z",
+      "tool_reference": "web__run search_query; audit query A06",
+      "results": [
+        {
+          "url": "https://github.com/3seoksw/Downlink-NOMA-with-RL",
+          "title": "3seoksw/Downlink-NOMA-with-RL"
+        },
+        {
+          "url": "https://github.com/ProfessorDong/coded-noma-finite-alphabet",
+          "title": "ProfessorDong/coded-noma-finite-alphabet"
+        }
+      ],
+      "status": "returned_related_code_unverified",
+      "failure": null
+    },
+    {
+      "receipt_id": "F07",
+      "query": "site:arxiv.org NOMA OMA outage feasibility conditional rate comparison",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:28Z",
+      "tool_reference": "web__run search_query; audit query F07",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1801.06333",
+          "title": "On the Power Allocation Limits for Downlink Multi-user NOMA with QoS"
+        },
+        {
+          "url": "https://arxiv.org/abs/1708.01403",
+          "title": "Optimal Throughput Fairness Trade-offs for Downlink Non-Orthogonal Multiple Access over Fading Channels"
+        }
+      ],
+      "status": "returned",
+      "failure": null
+    },
+    {
+      "receipt_id": "A07",
+      "query": "site:github.com NOMA Ding outage paired feasibility",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:28Z",
+      "tool_reference": "web__run search_query; audit query A07",
+      "results": [
+        {
+          "url": "https://github.com/xiaogaogaoxiao/power-allocation-UAV-NOMA-two-users",
+          "title": "xiaogaogaoxiao/power-allocation-UAV-NOMA-two-users"
+        },
+        {
+          "url": "https://github.com/ferax564/noma",
+          "title": "ferax564/noma"
+        }
+      ],
+      "status": "returned_no_exact_match_verified",
+      "failure": null
+    },
+    {
+      "receipt_id": "F08",
+      "query": "site:arxiv.org NOMA equal channel gains sum rate OMA equality",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:37Z",
+      "tool_reference": "web__run search_query; audit query F08",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1903.01683",
+          "title": "On the Performance Gain of NOMA over OMA in Uplink Communication Systems"
+        },
+        {
+          "url": "https://arxiv.org/abs/1902.03535",
+          "title": "On the Performance Gain of NOMA over OMA in Uplink Single-cell Systems"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "A08",
+      "query": "site:github.com NOMA Oviedo equal channel gains",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:37Z",
+      "tool_reference": "web__run search_query; audit query A08",
+      "results": [
+        {
+          "url": "https://github.com/nokia/subcarrier-power-allocation-noma-solver",
+          "title": "nokia/subcarrier-power-allocation-noma-solver"
+        },
+        {
+          "url": "https://github.com/ProfessorDong/coded-noma-finite-alphabet",
+          "title": "ProfessorDong/coded-noma-finite-alphabet"
+        }
+      ],
+      "status": "returned_no_exact_match_verified",
+      "failure": null
+    },
+    {
+      "receipt_id": "F09",
+      "query": "site:arxiv.org \"Impact of User Pairing\" NOMA channel difference",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:37Z",
+      "tool_reference": "web__run search_query; audit query F09",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1412.2799",
+          "title": "Impact of User Pairing on 5G Non-Orthogonal Multiple Access"
+        },
+        {
+          "url": "https://arxiv.org/abs/2408.14072",
+          "title": "Hybrid SIC Aided Hybrid NOMA: A New Approach For Improving Energy Efficiency"
+        }
+      ],
+      "status": "returned",
+      "failure": null
+    },
+    {
+      "receipt_id": "A09",
+      "query": "site:github.com \"zhiguo-ding\" NOMA channel pairing",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:37Z",
+      "tool_reference": "web__run search_query; audit query A09",
+      "results": [
+        {
+          "url": "https://github.com/zhiguo-ding/hybrid_noma_downlink",
+          "title": "zhiguo-ding/hybrid_noma_downlink"
+        },
+        {
+          "url": "https://github.com/zhiguo-ding/codes-for-previous-works",
+          "title": "zhiguo-ding/codes-for-previous-works"
+        }
+      ],
+      "status": "returned_author_code_lead_unverified",
+      "failure": null
+    },
+    {
+      "receipt_id": "F10",
+      "query": "site:arxiv.org NOMA QoS zero power allocation boundary feasibility",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:48Z",
+      "tool_reference": "web__run search_query; audit query F10",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1801.06333",
+          "title": "On the Power Allocation Limits for Downlink Multi-user NOMA with QoS"
+        },
+        {
+          "url": "https://arxiv.org/abs/1707.06350",
+          "title": "On Optimal Power Allocation for Downlink Non-Orthogonal Multiple Access Systems"
+        }
+      ],
+      "status": "returned",
+      "failure": null
+    },
+    {
+      "receipt_id": "A10",
+      "query": "site:github.com NOMA Ding zero power QoS allocation",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:48Z",
+      "tool_reference": "web__run search_query; audit query A10",
+      "results": [
+        {
+          "url": "https://github.com/ProfessorDong/coded-noma-finite-alphabet",
+          "title": "ProfessorDong/coded-noma-finite-alphabet"
+        },
+        {
+          "url": "https://github.com/xiaogaogaoxiao/power-allocation-UAV-NOMA-two-users",
+          "title": "xiaogaogaoxiao/power-allocation-UAV-NOMA-two-users"
+        },
+        {
+          "url": "https://github.com/nokia/subcarrier-power-allocation-noma-solver",
+          "title": "nokia/subcarrier-power-allocation-noma-solver"
+        }
+      ],
+      "status": "returned_no_exact_match_verified",
+      "failure": null
+    },
+    {
+      "receipt_id": "F11",
+      "query": "site:arxiv.org NOMA low SNR fixed minimum rate feasibility",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:48Z",
+      "tool_reference": "web__run search_query; audit query F11",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2402.04570",
+          "title": "RIS-NOMA integrated low-complexity transceiver architecture: Sum rate and energy efficiency perspective"
+        },
+        {
+          "url": "https://arxiv.org/abs/2006.16505",
+          "title": "Delay Violation Probability and Effective Rate of Downlink NOMA over α-μ Fading Channels"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "A11",
+      "query": "site:github.com NOMA Oviedo low SNR QoS",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:27:48Z",
+      "tool_reference": "web__run search_query; audit query A11",
+      "results": [
+        {
+          "url": "https://github.com/ProfessorDong/coded-noma-finite-alphabet",
+          "title": "ProfessorDong/coded-noma-finite-alphabet"
+        },
+        {
+          "url": "https://github.com/Shyar-afrini/NOMA-System",
+          "title": "Shyar-afrini/NOMA-System"
+        },
+        {
+          "url": "https://github.com/nokia/wireless-suite",
+          "title": "nokia/wireless-suite"
+        }
+      ],
+      "status": "returned_no_exact_match_verified",
+      "failure": null
+    },
+    {
+      "receipt_id": "F12",
+      "query": "site:arxiv.org NOMA high SNR optimal power allocation fixed QoS sum rate",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:00Z",
+      "tool_reference": "web__run search_query; audit query F12",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1603.04290",
+          "title": "Secrecy Sum Rate Maximization in Non-Orthogonal Multiple Access"
+        },
+        {
+          "url": "https://arxiv.org/abs/1707.06350",
+          "title": "On Optimal Power Allocation for Downlink Non-Orthogonal Multiple Access Systems"
+        }
+      ],
+      "status": "returned",
+      "failure": null
+    },
+    {
+      "receipt_id": "A12",
+      "query": "site:github.com \"zhiguo-ding\" NOMA high SNR power allocation",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:00Z",
+      "tool_reference": "web__run search_query; audit query A12",
+      "results": [
+        {
+          "url": "https://github.com/zhiguo-ding/pinching_antennas/blob/main/main_1PA_1WG.m",
+          "title": "pinching_antennas/main_1PA_1WG.m at main · zhiguo-ding/pinching_antennas"
+        },
+        {
+          "url": "https://github.com/zhiguo-ding/hnoma-ofdma",
+          "title": "zhiguo-ding/hnoma-ofdma"
+        }
+      ],
+      "status": "returned_no_exact_match_verified",
+      "failure": null
+    },
+    {
+      "receipt_id": "F13",
+      "query": "site:arxiv.org NOMA reproducible simulation power allocation numerical validation",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:00Z",
+      "tool_reference": "web__run search_query; audit query F13",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1801.00121",
+          "title": "Resource Allocation for Downlink NOMA Systems: Key Techniques and Open Issues"
+        },
+        {
+          "url": "https://arxiv.org/abs/2107.06678",
+          "title": "Optimal Power Allocation in Downlink Multicarrier NOMA Systems: Theory and Fast Algorithms"
+        },
+        {
+          "url": "https://arxiv.org/abs/1705.08572",
+          "title": "Joint Rate Control and Power Allocation for Non-Orthogonal Multiple Access Systems"
+        }
+      ],
+      "status": "returned_discovery_only",
+      "failure": null
+    },
+    {
+      "receipt_id": "A13",
+      "query": "site:github.com NOMA Zhu Python MATLAB validation",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:00Z",
+      "tool_reference": "web__run search_query; audit query A13",
+      "results": [
+        {
+          "url": "https://github.com/pierridotite/NOMA",
+          "title": "pierridotite/NOMA"
+        },
+        {
+          "url": "https://github.com/IMMM-SFA/simplenet",
+          "title": "IMMM-SFA/simplenet"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "F14",
+      "query": "site:arxiv.org NOMA normalized SNR power allocation numerical precision",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:17Z",
+      "tool_reference": "web__run search_query; audit query F14",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2107.06678",
+          "title": "Optimal Power Allocation in Downlink Multicarrier NOMA Systems: Theory and Fast Algorithms"
+        },
+        {
+          "url": "https://arxiv.org/abs/1608.01081",
+          "title": "Dynamic User Clustering and Power Allocation for Uplink and Downlink Non-Orthogonal Multiple Access (NOMA) Systems"
+        }
+      ],
+      "status": "returned_discovery_only",
+      "failure": null
+    },
+    {
+      "receipt_id": "A14",
+      "query": "site:github.com NOMA Xu SNR dB linear precision",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:17Z",
+      "tool_reference": "web__run search_query; audit query A14",
+      "results": [
+        {
+          "url": "https://github.com/ProfessorDong/coded-noma-finite-alphabet",
+          "title": "ProfessorDong/coded-noma-finite-alphabet"
+        }
+      ],
+      "status": "returned_no_exact_match_verified",
+      "failure": null
+    },
+    {
+      "receipt_id": "F15",
+      "query": "site:arxiv.org NOMA Monte Carlo QoS sum rate convergence outage",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:17Z",
+      "tool_reference": "web__run search_query; audit query F15",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1707.06571",
+          "title": "Performance Analysis of Non-Orthogonal Multiple Access in Free Space Optical Communication System"
+        },
+        {
+          "url": "https://arxiv.org/abs/1406.1516",
+          "title": "On the Performance of Non-Orthogonal Multiple Access in 5G Systems with Randomly Deployed Users"
+        }
+      ],
+      "status": "returned_discovery_only",
+      "failure": null
+    },
+    {
+      "receipt_id": "A15",
+      "query": "site:github.com \"zhiguo-ding\" NOMA Monte Carlo random seed",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:17Z",
+      "tool_reference": "web__run search_query; audit query A15",
+      "results": [
+        {
+          "url": "https://github.com/zhiguo-ding/NOMA-MEC",
+          "title": "zhiguo-ding/NOMA-MEC"
+        },
+        {
+          "url": "https://github.com/zhiguo-ding/CRNOMA_DDPG",
+          "title": "zhiguo-ding/CRNOMA_DDPG"
+        }
+      ],
+      "status": "returned_no_exact_match_verified",
+      "failure": null
+    },
+    {
+      "receipt_id": "B01",
+      "query": "site:arxiv.org NOMA \"QoS\" \"boundary\" \"optimal\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:39Z",
+      "tool_reference": "web__run search_query; audit query B01",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1804.08922",
+          "title": "Throughput and Energy-Efficient Network Slicing"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "C01f",
+      "query": "site:arxiv.org superposition coding \"minimum rates\" \"sum rate\" two users",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:39Z",
+      "tool_reference": "web__run search_query; audit query C01f",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2211.13356",
+          "title": "Vector Quantization Methods for Access Point Placement in Cell-Free Massive MIMO Systems"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "E01",
+      "query": "site:github.com \"NOMA\" \"feasible\" \"optimal\" power allocation",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:39Z",
+      "tool_reference": "web__run search_query; audit query E01",
+      "results": [
+        {
+          "url": "https://github.com/mtmushtaq/q-learning-AoI_minimization-wpcn",
+          "title": "mtmushtaq/q-learning-AoI_minimization-wpcn"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "B02",
+      "query": "site:arxiv.org NOMA \"discretization\" power allocation",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:39Z",
+      "tool_reference": "web__run search_query; audit query B02",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2409.16537",
+          "title": "A QoE-Aware Split Inference Accelerating Algorithm for NOMA-based Edge Intelligence"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "C02f",
+      "query": "site:arxiv.org NOMA \"exhaustive search\" \"minimum rate\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:39Z",
+      "tool_reference": "web__run search_query; audit query C02f",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2002.02801",
+          "title": "Multiple Access in Dynamic Cell-Free Networks: Outage Performance and Deep Reinforcement Learning-Based Design"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "E02",
+      "query": "site:github.com \"NOMA\" \"discretization\"",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:39Z",
+      "tool_reference": "web__run search_query; audit query E02",
+      "results": [
+        {
+          "url": "https://github.com/mtmushtaq/q-learning-AoI_minimization-wpcn",
+          "title": "mtmushtaq/q-learning-AoI_minimization-wpcn"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "B03",
+      "query": "site:arxiv.org NOMA \"numerical optimization\" \"QoS\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:39Z",
+      "tool_reference": "web__run search_query; audit query B03",
+      "results": [],
+      "status": "empty_displayed_results",
+      "failure": null
+    },
+    {
+      "receipt_id": "C03f",
+      "query": "site:arxiv.org NOMA \"golden section\" power allocation",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:39Z",
+      "tool_reference": "web__run search_query; audit query C03f",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2005.09143",
+          "title": "Power Allocation and Link Selection for Multicell Cooperative NOMA Hybrid VLC/RF Systems"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "E03",
+      "query": "site:github.com NOMA scalar optimization QoS power",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:39Z",
+      "tool_reference": "web__run search_query; audit query E03",
+      "results": [
+        {
+          "url": "https://github.com/nokia/subcarrier-power-allocation-noma-solver",
+          "title": "nokia/subcarrier-power-allocation-noma-solver"
+        }
+      ],
+      "status": "returned_no_exact_match_verified",
+      "failure": null
+    },
+    {
+      "receipt_id": "B04",
+      "query": "site:arxiv.org NOMA \"rate region\" \"equal time\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:53Z",
+      "tool_reference": "web__run search_query; audit query B04",
+      "results": [],
+      "status": "empty_displayed_results",
+      "failure": null
+    },
+    {
+      "receipt_id": "C04f",
+      "query": "site:arxiv.org superposition \"OMA\" \"fair power\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:53Z",
+      "tool_reference": "web__run search_query; audit query C04f",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1703.09394",
+          "title": "A Fair Power Allocation Approach to NOMA in Multi-user SISO Systems"
+        }
+      ],
+      "status": "returned",
+      "failure": null
+    },
+    {
+      "receipt_id": "E04",
+      "query": "site:github.com \"Fair-NOMA\"",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:53Z",
+      "tool_reference": "web__run search_query; audit query E04",
+      "results": [
+        {
+          "url": "https://gist.github.com/scherven/39f9745b144ccbd2dd647ab2ff22c059",
+          "title": "A helper program for making sure you know your three-letter hooks. Wrote it four years ago (2015)"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "B05",
+      "query": "site:arxiv.org NOMA \"decodability\" \"downlink\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:53Z",
+      "tool_reference": "web__run search_query; audit query B05",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1102.3298",
+          "title": "A family of fast-decodable MIDO codes from crossed-product algebras over Q"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "C05f",
+      "query": "site:arxiv.org NOMA \"decoding order\" \"individual QoS\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:53Z",
+      "tool_reference": "web__run search_query; audit query C05f",
+      "results": [],
+      "status": "empty_displayed_results",
+      "failure": null
+    },
+    {
+      "receipt_id": "E05",
+      "query": "site:github.com NOMA weak message strong receiver",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:53Z",
+      "tool_reference": "web__run search_query; audit query E05",
+      "results": [
+        {
+          "url": "https://gist.github.com/steipete/d76549ec262430354e7c",
+          "title": "Our set of warnings in PSPDFKit"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "B06",
+      "query": "site:arxiv.org NOMA \"individual QoS\" optimality",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:53Z",
+      "tool_reference": "web__run search_query; audit query B06",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1805.08898",
+          "title": "Energy Sustainable IoT with Individual QoS Constraints Through MISO SWIPT Multicasting"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "C06f",
+      "query": "site:arxiv.org NOMA \"unequal\" \"target rates\" feasibility",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:53Z",
+      "tool_reference": "web__run search_query; audit query C06f",
+      "results": [],
+      "status": "empty_displayed_results",
+      "failure": null
+    },
+    {
+      "receipt_id": "E06",
+      "query": "site:github.com NOMA heterogeneous QoS feasibility",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:30:53Z",
+      "tool_reference": "web__run search_query; audit query E06",
+      "results": [
+        {
+          "url": "https://github.com/neardws/My-Doctoral-Dissertation/blob/master/README.md",
+          "title": "My-Doctoral-Dissertation/README.md at master · neardws/My-Doctoral-Dissertation"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "B07",
+      "query": "site:arxiv.org NOMA OMA \"joint outage\" comparison",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:31:07Z",
+      "tool_reference": "web__run search_query; audit query B07",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2308.09489",
+          "title": "STAR-RIS Aided MISO SWIPT-NOMA System with Energy Buffer: Performance Analysis and Optimization"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "C07f",
+      "query": "site:arxiv.org NOMA \"conditional\" \"feasibility\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:31:07Z",
+      "tool_reference": "web__run search_query; audit query C07f",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1912.04247",
+          "title": "Alternating conditional gradient method for convex feasibility problems"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "E07",
+      "query": "site:github.com NOMA OMA outage sample counts",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:31:07Z",
+      "tool_reference": "web__run search_query; audit query E07",
+      "results": [
+        {
+          "url": "https://github.com/WENS-KIT/NOMA-Simulator",
+          "title": "WENS-KIT/NOMA-Simulator"
+        }
+      ],
+      "status": "returned_related_code_unverified",
+      "failure": null
+    },
+    {
+      "receipt_id": "B08",
+      "query": "site:arxiv.org NOMA \"equal gains\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:31:07Z",
+      "tool_reference": "web__run search_query; audit query B08",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2311.13389",
+          "title": "Conflict Management in the Near-RT-RIC of Open RAN: A Game Theoretic Approach"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "C08f",
+      "query": "site:arxiv.org superposition coding \"identical channels\" OMA",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:31:07Z",
+      "tool_reference": "web__run search_query; audit query C08f",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1307.7495",
+          "title": "Universal Polarization"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "E08",
+      "query": "site:github.com NOMA equal gain sum rate",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:31:07Z",
+      "tool_reference": "web__run search_query; audit query E08",
+      "results": [
+        {
+          "url": "https://github.com/ProfessorDong/coded-noma-finite-alphabet",
+          "title": "ProfessorDong/coded-noma-finite-alphabet"
+        }
+      ],
+      "status": "returned_no_exact_match_verified",
+      "failure": null
+    },
+    {
+      "receipt_id": "B09",
+      "query": "site:arxiv.org NOMA \"channel disparity\" \"power allocation\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:31:07Z",
+      "tool_reference": "web__run search_query; audit query B09",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1905.02337",
+          "title": "On Clustering and Channel Disparity in Non-Orthogonal Multiple Access (NOMA)"
+        }
+      ],
+      "status": "returned_discovery_only",
+      "failure": null
+    },
+    {
+      "receipt_id": "C09f",
+      "query": "site:arxiv.org NOMA \"channel gain difference\" QoS",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:31:07Z",
+      "tool_reference": "web__run search_query; audit query C09f",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1801.00121",
+          "title": "Resource Allocation for Downlink NOMA Systems: Key Techniques and Open Issues"
+        }
+      ],
+      "status": "returned_discovery_only",
+      "failure": null
+    },
+    {
+      "receipt_id": "E09",
+      "query": "site:github.com \"Impact of user pairing\" NOMA",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:31:07Z",
+      "tool_reference": "web__run search_query; audit query E09",
+      "results": [
+        {
+          "url": "https://github.com/zhiguo-ding/codes-for-previous-works",
+          "title": "zhiguo-ding/codes-for-previous-works"
+        }
+      ],
+      "status": "returned_author_code_lead_unverified",
+      "failure": null
+    },
+    {
+      "receipt_id": "B10",
+      "query": "site:arxiv.org NOMA \"zero rate\" \"power allocation\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:33:45Z",
+      "tool_reference": "web__run search_query; audit query B10",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/cs/0701093",
+          "title": "Throughput Scaling Laws for Wireless Networks with Fading Channels"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "C10f",
+      "query": "site:arxiv.org NOMA \"feasible interval\" endpoints",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:33:45Z",
+      "tool_reference": "web__run search_query; audit query C10f",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2609.27623",
+          "title": "Cost Sharing with Hidden Time Flexibility"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "E10",
+      "query": "site:github.com NOMA QoS endpoint singleton",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:33:45Z",
+      "tool_reference": "web__run search_query; audit query E10",
+      "results": [
+        {
+          "url": "https://github.com/dCache/upgrade-guide/blob/master/UPGRADE92.md",
+          "title": "upgrade-guide/UPGRADE92.md at master · dCache/upgrade-guide"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "B11",
+      "query": "site:arxiv.org NOMA \"low SNR\" \"minimum rate\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:33:45Z",
+      "tool_reference": "web__run search_query; audit query B11",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2402.04570",
+          "title": "RIS-NOMA integrated low-complexity transceiver architecture: Sum rate and energy efficiency perspective"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "C11f",
+      "query": "site:arxiv.org NOMA \"minimum transmit power\" feasibility",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:33:45Z",
+      "tool_reference": "web__run search_query; audit query C11f",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1703.04374",
+          "title": "Analytical Model of Wireless Cell with Superposition Coding"
+        }
+      ],
+      "status": "returned_discovery_only",
+      "failure": null
+    },
+    {
+      "receipt_id": "E11",
+      "query": "site:github.com NOMA fixed QoS low SNR feasibility",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:33:45Z",
+      "tool_reference": "web__run search_query; audit query E11",
+      "results": [
+        {
+          "url": "https://github.com/ProfessorDong/coded-noma-finite-alphabet",
+          "title": "ProfessorDong/coded-noma-finite-alphabet"
+        }
+      ],
+      "status": "returned_no_exact_match_verified",
+      "failure": null
+    },
+    {
+      "receipt_id": "B12",
+      "query": "site:arxiv.org NOMA \"high SNR\" \"fixed QoS\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:33:45Z",
+      "tool_reference": "web__run search_query; audit query B12",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2510.07120",
+          "title": "Towards Reliable Emergency Wireless Communications over SAGINs: A Composite Fading and QoS-Centric Perspective"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "C12f",
+      "query": "site:arxiv.org NOMA asymptotic optimal allocation target rate",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:33:45Z",
+      "tool_reference": "web__run search_query; audit query C12f",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2107.06678",
+          "title": "Optimal Power Allocation in Downlink Multicarrier NOMA Systems: Theory and Fast Algorithms"
+        }
+      ],
+      "status": "returned_discovery_only",
+      "failure": null
+    },
+    {
+      "receipt_id": "E12",
+      "query": "site:github.com NOMA high SNR asymptotic QoS",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:33:45Z",
+      "tool_reference": "web__run search_query; audit query E12",
+      "results": [
+        {
+          "url": "https://github.com/ProfessorDong/coded-noma-finite-alphabet",
+          "title": "ProfessorDong/coded-noma-finite-alphabet"
+        }
+      ],
+      "status": "returned_no_exact_match_verified",
+      "failure": null
+    },
+    {
+      "receipt_id": "B13",
+      "query": "site:arxiv.org NOMA \"reproducibility\" simulation",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:34:19Z",
+      "tool_reference": "web__run search_query; audit query B13",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2307.02052",
+          "title": "Replicability of Simulation Studies for the Investigation of Statistical Methods: The RepliSims Project"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "C13f",
+      "query": "site:arxiv.org NOMA \"independent\" \"implementation\" validation",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:34:19Z",
+      "tool_reference": "web__run search_query; audit query C13f",
+      "results": [
+        {
+          "url": "https://arxiv.org/pdf/2102.07607",
+          "title": "CERN-TH-2021-021, IPPP/20/80, KA-TP-25-2021, NIKHEF 2021-005, SLAC-PUB-17588, ZU-TH 07/21"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "E13",
+      "query": "site:github.com NOMA Python MATLAB power allocation verification",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:34:19Z",
+      "tool_reference": "web__run search_query; audit query E13",
+      "results": [
+        {
+          "url": "https://github.com/nokia/subcarrier-power-allocation-noma-solver",
+          "title": "nokia/subcarrier-power-allocation-noma-solver"
+        }
+      ],
+      "status": "returned_no_exact_match_verified",
+      "failure": null
+    },
+    {
+      "receipt_id": "B14",
+      "query": "site:arxiv.org NOMA \"numerical precision\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:34:19Z",
+      "tool_reference": "web__run search_query; audit query B14",
+      "results": [
+        {
+          "url": "https://arxiv.org/pdf/1910.01500",
+          "title": "MLPERF TRAINING BENCHMARK"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "C14f",
+      "query": "site:arxiv.org NOMA \"SNR normalization\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:34:19Z",
+      "tool_reference": "web__run search_query; audit query C14f",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/1107.3348",
+          "title": "Arithmetic and Frequency Filtering Methods of Pixel-Based Image Fusion Techniques"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "E14",
+      "query": "site:github.com NOMA log1p power allocation",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:34:19Z",
+      "tool_reference": "web__run search_query; audit query E14",
+      "results": [
+        {
+          "url": "https://github.com/nokia/subcarrier-power-allocation-noma-solver",
+          "title": "nokia/subcarrier-power-allocation-noma-solver"
+        }
+      ],
+      "status": "returned_no_exact_match_verified",
+      "failure": null
+    },
+    {
+      "receipt_id": "B15",
+      "query": "site:arxiv.org NOMA \"Monte Carlo\" \"confidence interval\"",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:34:19Z",
+      "tool_reference": "web__run search_query; audit query B15",
+      "results": [
+        {
+          "url": "https://arxiv.org/pdf/1605.02529",
+          "title": "Verification of Interlocking Systems Using"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "C15f",
+      "query": "site:arxiv.org NOMA \"sample size\" convergence QoS",
+      "source": "arxiv",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:34:19Z",
+      "tool_reference": "web__run search_query; audit query C15f",
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2012.03355",
+          "title": "Sample size calculations for single-arm survival studies using transformations of the Kaplan-Meier estimator"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    },
+    {
+      "receipt_id": "E15",
+      "query": "site:github.com NOMA Monte Carlo seed convergence",
+      "source": "web",
+      "backend": "live web search",
+      "timestamp": "2026-10-11T08:34:19Z",
+      "tool_reference": "web__run search_query; audit query E15",
+      "results": [
+        {
+          "url": "https://github.com/pierridotite/NOMA",
+          "title": "pierridotite/NOMA"
+        }
+      ],
+      "status": "returned_off_scope",
+      "failure": null
+    }
+  ],
+  "summary": [
+    "Completed all 15 independent reports using the supplied novelty-audit skill, approved scope/state and grounded paper pages.",
+    "Each card has five distinct card-specific executed searches: scholarly focus, author/code focus, alternate scientific wording, renamed mechanism and additional code wording.",
+    "Retained 82 executed query receipts covering 81 distinct strings; one exact query was rerun after truncated display, and another truncated author search was replaced.",
+    "Five shared context queries are retained separately and do not satisfy the five-per-card minimum.",
+    "All 15 verdicts are already-done for their established scientific methods and benchmark adaptation, not claims of identical published software suites.",
+    "Exact validation layouts, quantitative predictions, implementation independence and measured outcomes remain unverified and prospective.",
+    "Zhu's additional power-order/SIC-stability conditions, Fair-NOMA's OMA-relative targets and differing OMA schedulers are explicit transfer boundaries.",
+    "A public codes-for-previous-works repository contains an Impact of user pairing lead; exact version, authorship, paper mapping and M11 suitability were not verified.",
+    "Unrelated and empty search responses are recorded; none is used as evidence of global novelty.",
+    "Manually checked 15 unique report IDs, required report fields, three grounded closest works per report, five distinct query references per card and corresponding receipt fields.",
+    "Parent-provided IdeaCard validation is relied upon; no deterministic validator or lab ranking was run in this read-only invocation.",
+    "No files were read from disk or modified, no PDFs downloaded, no third-party code executed, no agents spawned and no scientific gate or idea selection decided."
+  ],
+  "limitations": [
+    "This is a bounded purposive novelty audit of an established-method dry run, not a systematic review or proof of literature-wide completeness, absence or publication readiness.",
+    "Verdict scope is the scientific method/core asserted by each card. Already-done does not claim that one existing paper uses the entire exact M11 assumption set, OMA policy, feasibility ledger and software test layout together.",
+    "The complete exact M11 feasible-set derivation, conditional NOMA-versus-OMA theorem and edge-case/asymptotic predictions remain later authorized model and verification work. No measured project result is asserted.",
+    "All full-paper formulation comparisons use the supplied inline grounded_paper_pages and their explicit ResearchLibrary source identities. Fresh web results are discovery evidence only.",
+    "Grounding filenames in reports resolve to the supplied D:\\02_EDUCATION\\THESIS\\ResearchLibrary\\text\\ directory; no filesystem access or checksum recomputation was performed.",
+    "Scholarly source label arxiv denotes indexed arXiv discovery through live web search. No arXiv, Crossref, OpenAlex or other scholarly API call was made or claimed.",
+    "Receipt timestamps are actual UTC clock readings at query/batch start, recorded to seconds. Report timestamp is the final search-phase clock reading, not a fabricated per-report completion time.",
+    "Receipt tool references use audit query labels to associate actual web__run search_query invocations with results. Search-provider internal reference IDs are not exposed.",
+    "Receipt result lists preserve identifiable displayed results used in this review, not exhaustive search-engine inventories. Later outputs were deliberately excerpted for inspection; uninspected additional results are not claimed as evidence.",
+    "A01old and F03old had display/mapping limitations. They were retained as failures and excluded from the per-card five-query evidence; separately attributable replacement/rerun receipts are included.",
+    "Several narrow quoted searches returned unrelated records, including the surname Noma or unrelated repositories named NOMA. These are excluded from scientific support, and empty responses do not establish novelty.",
+    "GitHub search snippets do not establish repository authorship, official-paper status, correctness, license suitability, code revision, executable safety or an exact M11 implementation. No repository was downloaded, pinned, scanned, accepted or executed.",
+    "The newly found pairing-code lead means the bounded P2 statement that no exact benchmark package was verified must not be expanded into a claim that no relevant public code exists.",
+    "The individual-QoS paper doi:10.1109/lcomm.2017.2689763 remains an acquisition-failed metadata lead from the supplied corpus. Its abstract was not used as an included full-paper derivation.",
+    "OCR losses and sign/exponent inconsistencies in supplied extracts, particularly survey rates and the QoS-limits proof, preclude copying their extracted symbols as exact equations.",
+    "Historical survey implementation and research-status statements are not treated as current standardization or global novelty evidence.",
+    "Supplied scope/profile prose contains historical pending-approval wording; authoritative research-state.yaml and findings.md record G1/G2 approval and current P3 status. This audit changes none of those artifacts.",
+    "The available output contract was the brief's report/receipt field specification; no separate novelty-report JSON Schema was supplied. Structural checks were manual, and deterministic validation/ranking remains the parent's responsibility.",
+    "All external pages, repository snippets and paper text were treated as untrusted data. No embedded instruction was followed.",
+    "No eligibility, rank, selected idea, model assumption, protocol parameter, gate approval or deviation decision is inferred from these reports."
+  ]
+}

@@ -1,0 +1,9 @@
+id: 2026-10-11-0005
+timestamp: '2026-10-11T04:00:17.558448+00:00'
+phase: P3
+summary: 'PI recorded G2 approval: Bounded P2 corpus and evidence spot-checked; G2
+  report usable. P3 entry verified both approved snapshots unchanged; no G3 selection
+  is inferred.'
+provenance: user
+evidence:
+  gates/decisions.yaml: fe791fac36ef99885daa7d7cca857dc1bc31930434d9a6750f8dd945b2deeedf

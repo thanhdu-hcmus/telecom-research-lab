@@ -1,0 +1,116 @@
+id: idea-06
+title: Individual fixed-QoS feasibility map and active-bound analysis
+problem: 'Replacing independent fixed QoS targets by a common threshold or OMA-relative
+  targets changes the interval and optimum. The proposal preserves G1-approved M11:
+  two ordered scalar downlink users, perfect instantaneous CSI and ideal SIC, unit
+  normalized noise/bandwidth, matched instantaneous power and channel realization,
+  arbitrary fixed per-block individual QoS and equal-time OMA at full active-slot
+  power. Optimal-rate comparisons use the both-feasible set and retain all infeasible
+  counts. No distribution, QoS/SNR grid, seed, stopping rule, tolerance or simulation
+  is selected here.'
+gap_refs:
+- BQ1
+- BQ3
+closest_works:
+- id: doi:10.1109/jsac.2017.2725618
+  delta: 'Zhu PDF pp.6-7 gives a QoS boundary optimizer and derivative argument with
+    extra power-order/SIC-stability conditions; pp.10-11 uses multichannel waterfilled
+    OFDMA. M11 is one two-user scalar channel with equal-time OMA and does not import
+    those extra constraints. Proposed emphasis: heterogeneous QoS and active constraints.
+    This is a benchmark adaptation/validation delta, not an originality claim.'
+- id: doi:10.1109/tvt.2017.2689000
+  delta: 'Fair-NOMA PDF pp.2-3 solves individual NOMA-versus-equal-time-OMA inequalities
+    with full active-slot power. Its QoS thresholds are channel-dependent OMA rates
+    and its initial power-order restriction is paper-specific. M11 uses arbitrary
+    fixed individual QoS and the approved full split range; fairness is a potential
+    comparison witness, not a substituted objective. Proposed emphasis: heterogeneous
+    QoS and active constraints. This is a benchmark adaptation/validation delta, not
+    an originality claim.'
+- id: doi:10.1109/icc.2018.8422366
+  delta: 'QoS-limits PDF pp.2-4 distinguishes necessary interference limits from full
+    own-message/SIC success and constructs common-target OMA-equivalent outage events.
+    M11 is two-user scalar instantaneous sum-rate optimization with arbitrary individual
+    QoS; outage-event equality is not taken as capacity equality. Proposed emphasis:
+    heterogeneous QoS and active constraints. This is a benchmark adaptation/validation
+    delta, not an originality claim.'
+method_sketch: 'Derive fixed individual QoS bounds without imposing a common target.
+  Propose a deterministic map across target pairs selected at G4/G5, distinguishing
+  empty, singleton and nonempty intervals and the active optimality bound. Retain
+  matched equal-time OMA and classify both schemes for each target pair. QoS values
+  and resolution remain undecided. The proposal preserves G1-approved M11: two ordered
+  scalar downlink users, perfect instantaneous CSI and ideal SIC, unit normalized
+  noise/bandwidth, matched instantaneous power and channel realization, arbitrary
+  fixed per-block individual QoS and equal-time OMA at full active-slot power. Optimal-rate
+  comparisons use the both-feasible set and retain all infeasible counts. No distribution,
+  QoS/SNR grid, seed, stopping rule, tolerance or simulation is selected here.'
+expected_contributions:
+- An established-method M11 benchmark artifact emphasizing heterogeneous QoS and active
+  constraints; no original scientific contribution, submitted-paper result or measured
+  rate gain is claimed.
+- 'Falsifiable validation improvement over a naive unchecked implementation: Direct
+  rate feasibility and the interval classifier must agree at boundaries; replacing
+  unequal targets by a common one must be detected as an input mismatch.'
+- A traceable comparison of the same constrained optimal NOMA model and equal-time
+  OMA, with both-feasible rates and complete feasibility counts.
+risks:
+- Map granularity can miss transition boundaries.
+- An empty interval must remain infeasible, not be clipped into a valid split.
+- Outputs remain prospective until model/protocol approval and actual later simulations;
+  planning feasibility does not mean baseline acceptance.
+risk_rating: 2
+resources:
+  compute_estimate: 'AI planning estimate: CPU-only existing Python/MATLAB workstation,
+    one core per independent run, small scalar arrays or streaming/chunked records
+    with a planning envelope below 1 GB per process. Deterministic cases may take
+    minutes to several CPU hours; independent sampling or optional numerical references
+    may require more. Not measured runtime, guaranteed memory use or a locked cap;
+    exact workloads and tools are P5 decisions.'
+  hardware: Existing CPU workstation; no experimental hardware needed.
+  estimate_basis: AI planning estimate for the scoped scalar toy, not a benchmark
+    result.
+  protocol_choices: Distributions, targets, SNR grids, resolutions, seeds, sample
+    counts, solver tolerances and stopping criteria remain P4/P5 decisions.
+time_estimate_months: 1.4
+target_venue_class: Internal M11 acceptance; no submission, publication-readiness
+  or quartile claim
+feasibility:
+  pass: true
+  reasons:
+  - 'Provisional planning screen: the proposal preserves the approved scalar two-user
+    model, sum-rate objective and matched equal-time OMA.'
+  - The heterogeneous QoS and active constraints emphasis can use CPU-scale analytic,
+    deterministic and later seeded validation; no implementation or scientific result
+    is claimed.
+  - No new physical assumption or objective is introduced. Final parameters and protocol
+    require G4/G5.
+novelty:
+  verdict: already-done
+  report: ideas/novelty/idea-06.yaml
+scores:
+  thesis_fit:
+    score: 5
+    rationale: Direct core fit to the synthetic M11 topic with reusable heterogeneous
+      QoS and active constraints validation and a full core comparison; this is acceptance-profile
+      fit, not a novel real-PhD contribution.
+    evidence:
+    - scope.yaml
+    - profile.yaml
+    - BQ1
+    - BQ3
+  time:
+    score: 5
+    rationale: AI planning estimate of 1.4 months to an internal acceptance artifact,
+      within the configured <=3-month threshold. This is not a submission promise
+      or measured work duration; scientific gate review can change the estimate.
+    evidence:
+    - config/ranking.yaml
+    - profile.yaml
+  venue:
+    score: 1
+    rationale: Target is internal M11 acceptance. These included historical papers
+      provide scientific context only; no recent Q2 suitability, contemporary venue
+      comparators or publication-readiness evidence exists for this established benchmark.
+      Lowest venue score is deliberate.
+    evidence:
+    - doi:10.1109/jsac.2017.2725618
+    - doi:10.1109/tvt.2017.2689000

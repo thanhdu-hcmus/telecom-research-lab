@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "ranked": [
+    {
+      "id": "idea-01",
+      "total": 42,
+      "novelty": "already-done",
+      "risk_rating": 1
+    },
+    {
+      "id": "idea-07",
+      "total": 42,
+      "novelty": "already-done",
+      "risk_rating": 1
+    },
+    {
+      "id": "idea-02",
+      "total": 42,
+      "novelty": "already-done",
+      "risk_rating": 2
+    },
+    {
+      "id": "idea-04",
+      "total": 42,
+      "novelty": "already-done",
+      "risk_rating": 2
+    },
+    {
+      "id": "idea-05",
+      "total": 42,
+      "novelty": "already-done",
+      "risk_rating": 2
+    },
+    {
+      "id": "idea-06",
+      "total": 42,
+      "novelty": "already-done",
+      "risk_rating": 2
+    },
+    {
+      "id": "idea-10",
+      "total": 42,
+      "novelty": "already-done",
+      "risk_rating": 2
+    },
+    {
+      "id": "idea-13",
+      "total": 42,
+      "novelty": "already-done",
+      "risk_rating": 2
+    },
+    {
+      "id": "idea-14",
+      "total": 42,
+      "novelty": "already-done",
+      "risk_rating": 2
+    },
+    {
+      "id": "idea-15",
+      "total": 42,
+      "novelty": "already-done",
+      "risk_rating": 3
+    },
+    {
+      "id": "idea-08",
+      "total": 37,
+      "novelty": "already-done",
+      "risk_rating": 1
+    },
+    {
+      "id": "idea-03",
+      "total": 37,
+      "novelty": "already-done",
+      "risk_rating": 2
+    },
+    {
+      "id": "idea-09",
+      "total": 37,
+      "novelty": "already-done",
+      "risk_rating": 2
+    },
+    {
+      "id": "idea-11",
+      "total": 37,
+      "novelty": "already-done",
+      "risk_rating": 3
+    },
+    {
+      "id": "idea-12",
+      "total": 37,
+      "novelty": "already-done",
+      "risk_rating": 3
+    }
+  ],
+  "rejected": []
+}

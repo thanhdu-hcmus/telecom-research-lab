@@ -1,0 +1,69 @@
+id: idea-15
+timestamp: '2026-10-11T08:34:42Z'
+scope: Approved scalar two-user ideal-SIC M11 with arbitrary fixed QoS and matched
+  equal-time OMA; pair schemes within each realization, retain all feasibility counts
+  and evaluate rate differences only on the common feasible set.
+queries:
+- query: site:arxiv.org NOMA Monte Carlo QoS sum rate convergence outage
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:30:17Z'
+  evidence: Found optical NOMA and randomly deployed-user performance records; no
+    exact independent-seed conditional-statistic protocol verified.
+  receipt_id: F15
+- query: site:github.com "zhiguo-ding" NOMA Monte Carlo random seed
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:30:17Z'
+  evidence: Found MEC and CR-NOMA reinforcement-learning code with different objectives.
+  receipt_id: A15
+- query: site:arxiv.org NOMA "Monte Carlo" "confidence interval"
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:34:19Z'
+  evidence: Displayed railway-interlocking validation result is unrelated.
+  receipt_id: B15
+- query: site:arxiv.org NOMA "sample size" convergence QoS
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:34:19Z'
+  evidence: Displayed survival-analysis paper uses Noma as an author surname and is
+    unrelated.
+  receipt_id: C15f
+- query: site:github.com NOMA Monte Carlo seed convergence
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:34:19Z'
+  evidence: Displayed NOMA programming-language repository is unrelated.
+  receipt_id: E15
+closest_works:
+- id: doi:10.48550/arxiv.1412.2799
+  overlap: Analytic performance expressions checked by Monte Carlo.
+  precise_delta: Ding's fixed-power population pairing and primary-only CR comparison
+    differ from optimized fixed-QoS paired conditional statistics.
+  grounding: Supplied r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json, PDF pp.2–4,6.
+- id: arxiv:1504.07751
+  overlap: Monte Carlo verification of scalar NOMA/TDMA rate-event analysis.
+  precise_delta: Xu's fixed split and order-statistic model do not establish the proposed
+    independent-seed convergence protocol.
+  grounding: Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.3–4; Lemma 1 and
+    numerical results.
+- id: doi:10.1109/tvt.2017.2689000
+  overlap: Theory/simulation comparison for capacity and outage under matched OMA
+    resources.
+  precise_delta: Its OMA-relative allocations and specified fading assumptions differ;
+    M11's estimator definitions and uncertainty controls remain prospective.
+  grounding: Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.3–4,6.
+scientific_core: Established constrained scalar allocation and Monte Carlo validation
+  methods.
+validation_focus: Prospective independent streams, sample-size convergence, conditional-statistic
+  uncertainty and denominator checks. An identical published sampling protocol was
+  not verified.
+verdict: already-done
+rationale: Monte Carlo verification is already explicit in the grounded papers. The
+  proposed independent-seed and accounting controls strengthen implementation assurance
+  without asserting a new scientific formulation.
+limitations:
+- No channel law, seed, sample count, stopping rule or uncertainty criterion is selected.
+- Rare both-feasible events may leave estimates inconclusive.
+- No code was executed and no convergence result is claimed.

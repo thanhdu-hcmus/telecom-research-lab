@@ -1,0 +1,47 @@
+{
+  "id": "refine-information-theory",
+  "query": "site:arxiv.org \"NOMA\" \"Information Theoretic Perspective\"",
+  "idea_id": null,
+  "source": "arxiv",
+  "backend": "live web search index",
+  "timestamp": "2026-10-11 08:17:11 UTC",
+  "retrieval_actor": "orchestrator",
+  "status": "returned",
+  "query_count": 1,
+  "results": [
+    {
+      "title": "NOMA: An Information Theoretic Perspective",
+      "url": "https://arxiv.org/abs/1504.07751",
+      "tool_refs": [
+        "turn61academia0"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "Non-Orthogonal eMBB-URLLC Radio Access for Cloud Radio Access Networks with Analog Fronthauling",
+      "url": "https://arxiv.org/abs/1912.10519",
+      "tool_refs": [
+        "turn61academia1"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "Reconfigurable Intelligent Surface (RIS) Aided Multi-User Networks: Interplay Between NOMA and RIS",
+      "url": "https://arxiv.org/abs/2011.13336",
+      "tool_refs": [
+        "turn61academia2"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    }
+  ],
+  "raw_response": ".cache\\p3-search-refine-information-theory.txt",
+  "raw_response_sha256": "5afe4c8e9bd117315710853b77e4346979bdadeb8745a238c621dbca86ee9027",
+  "limits": [
+    "Bounded indexed discovery, not exhaustive coverage.",
+    "No result is a verified exact M11 code baseline or a new grounded full-paper card.",
+    "Forbidden-source index hits are excluded; no such page was opened or downloaded."
+  ]
+}

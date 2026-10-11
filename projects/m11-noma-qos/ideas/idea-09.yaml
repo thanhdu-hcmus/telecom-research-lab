@@ -1,0 +1,121 @@
+id: idea-09
+title: Channel-separation sensitivity without changing user pairing
+problem: 'Large-separation conclusions for fixed power or population-based pairing
+  can be misread as guaranteed gains for this optimum. The proposal preserves G1-approved
+  M11: two ordered scalar downlink users, perfect instantaneous CSI and ideal SIC,
+  unit normalized noise/bandwidth, matched instantaneous power and channel realization,
+  arbitrary fixed per-block individual QoS and equal-time OMA at full active-slot
+  power. Optimal-rate comparisons use the both-feasible set and retain all infeasible
+  counts. No distribution, QoS/SNR grid, seed, stopping rule, tolerance or simulation
+  is selected here.'
+gap_refs:
+- BQ2
+- BQ3
+- BQ4
+closest_works:
+- id: doi:10.48550/arxiv.1412.2799
+  delta: 'Ding PDF pp.2-3 studies fixed-split pairing and finite-SNR loss; p.4 uses
+    primary-only CR comparison and can give zero secondary allocation. M11 keeps two
+    scalar users, optimizes both fixed individual QoS targets and uses matched equal-time
+    OMA, not the primary-only reference. Proposed emphasis: gain contrast and conditional
+    interpretation. This is a benchmark adaptation/validation delta, not an originality
+    claim.'
+- id: arxiv:1504.07751
+  delta: 'Xu PDF pp.1-2 supplies ordered scalar broadcast rates and region geometry;
+    p.2 includes fixed-split sum-rate loss and p.3 uses a fixed split. M11 optimizes
+    the full feasible split for arbitrary fixed individual QoS and keeps equal-time
+    OMA; its paper-specific weak-power-at-least-half constraint is not imported. Proposed
+    emphasis: gain contrast and conditional interpretation. This is a benchmark adaptation/validation
+    delta, not an originality claim.'
+- id: doi:10.1109/tvt.2017.2689000
+  delta: 'Fair-NOMA PDF pp.2-3 solves individual NOMA-versus-equal-time-OMA inequalities
+    with full active-slot power. Its QoS thresholds are channel-dependent OMA rates
+    and its initial power-order restriction is paper-specific. M11 uses arbitrary
+    fixed individual QoS and the approved full split range; fairness is a potential
+    comparison witness, not a substituted objective. Proposed emphasis: gain contrast
+    and conditional interpretation. This is a benchmark adaptation/validation delta,
+    not an originality claim.'
+method_sketch: 'Retain exactly two ordered scalar users and propose deterministic
+  gain contrasts with actual gains and sweep selected in P4/P5. Recompute optimal
+  QoS-constrained NOMA and equal-time OMA for every case, separating feasibility changes
+  from paired-rate differences. Introduce no pairing algorithm, additional users or
+  Rayleigh population selection. The proposal preserves G1-approved M11: two ordered
+  scalar downlink users, perfect instantaneous CSI and ideal SIC, unit normalized
+  noise/bandwidth, matched instantaneous power and channel realization, arbitrary
+  fixed per-block individual QoS and equal-time OMA at full active-slot power. Optimal-rate
+  comparisons use the both-feasible set and retain all infeasible counts. No distribution,
+  QoS/SNR grid, seed, stopping rule, tolerance or simulation is selected here.'
+expected_contributions:
+- An established-method M11 benchmark artifact emphasizing gain contrast and conditional
+  interpretation; no original scientific contribution, submitted-paper result or measured
+  rate gain is claimed.
+- 'Falsifiable validation improvement over a naive unchecked implementation: Each
+  case must satisfy derived optimizer and resource conditions; any claimed monotonic
+  gain unsupported after feasibility conditioning is rejected rather than forced into
+  reporting.'
+- A traceable comparison of the same constrained optimal NOMA model and equal-time
+  OMA, with both-feasible rates and complete feasibility counts.
+risks:
+- Fixed-one-gain and fixed-aggregate-gain contrasts ask different questions; P5 must
+  specify the choice.
+- Conditional averages can change through feasible-set selection.
+- Outputs remain prospective until model/protocol approval and actual later simulations;
+  planning feasibility does not mean baseline acceptance.
+risk_rating: 2
+resources:
+  compute_estimate: 'AI planning estimate: CPU-only existing Python/MATLAB workstation,
+    one core per independent run, small scalar arrays or streaming/chunked records
+    with a planning envelope below 1 GB per process. Deterministic cases may take
+    minutes to several CPU hours; independent sampling or optional numerical references
+    may require more. Not measured runtime, guaranteed memory use or a locked cap;
+    exact workloads and tools are P5 decisions.'
+  hardware: Existing CPU workstation; no experimental hardware needed.
+  estimate_basis: AI planning estimate for the scoped scalar toy, not a benchmark
+    result.
+  protocol_choices: Distributions, targets, SNR grids, resolutions, seeds, sample
+    counts, solver tolerances and stopping criteria remain P4/P5 decisions.
+time_estimate_months: 1.3
+target_venue_class: Internal M11 acceptance; no submission, publication-readiness
+  or quartile claim
+feasibility:
+  pass: true
+  reasons:
+  - 'Provisional planning screen: the proposal preserves the approved scalar two-user
+    model, sum-rate objective and matched equal-time OMA.'
+  - The gain contrast and conditional interpretation emphasis can use CPU-scale analytic,
+    deterministic and later seeded validation; no implementation or scientific result
+    is claimed.
+  - No new physical assumption or objective is introduced. Final parameters and protocol
+    require G4/G5.
+novelty:
+  verdict: already-done
+  report: ideas/novelty/idea-09.yaml
+scores:
+  thesis_fit:
+    score: 4
+    rationale: Direct core synthetic M11 fit; the specialized gain contrast and conditional
+      interpretation focus has narrower reuse than a general workflow reference. No
+      original contribution or real-dissertation fit is inferred.
+    evidence:
+    - scope.yaml
+    - profile.yaml
+    - BQ2
+    - BQ3
+    - BQ4
+  time:
+    score: 5
+    rationale: AI planning estimate of 1.3 months to an internal acceptance artifact,
+      within the configured <=3-month threshold. This is not a submission promise
+      or measured work duration; scientific gate review can change the estimate.
+    evidence:
+    - config/ranking.yaml
+    - profile.yaml
+  venue:
+    score: 1
+    rationale: Target is internal M11 acceptance. These included historical papers
+      provide scientific context only; no recent Q2 suitability, contemporary venue
+      comparators or publication-readiness evidence exists for this established benchmark.
+      Lowest venue score is deliberate.
+    evidence:
+    - doi:10.48550/arxiv.1412.2799
+    - arxiv:1504.07751

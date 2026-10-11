@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-10T17:40:15.530515+00:00",
+  "updated_at": "2026-10-11T09:14:23.726105+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
   "active_milestone": "M11",
-  "status": "awaiting_pi_literature_review",
+  "status": "m11_g3_review_pending",
   "verification_complete": true,
   "pi_approval": {
     "quote": "Approve M0, continue M1–M10 automatically, and create the new private repository.",
@@ -25,8 +25,8 @@
   },
   "scientific_gates": {
     "G1": "approved",
-    "G2": "pending",
-    "G3": "not_started",
+    "G2": "approved",
+    "G3": "pending",
     "G4": "not_started",
     "G5": "not_started",
     "G6": "not_started",
@@ -38,7 +38,7 @@
     "Run independent reviewers in separately configured read-only root sessions; verify shell enforcement before L4 acceptance"
   ],
   "unresolved": [
-    "M11 G2-G7 require actual phase artifacts and PI gate decisions",
+    "M11 G3-G7 require remaining phase artifacts and PI gate decisions",
     "M12 reference paper and code/data availability require PI selection",
     "Real thesis profile is an unreviewed draft with chapter plan, publications, deadlines and venues missing",
     "Optional Gemini unavailable; manual independent review packets provided",
@@ -85,7 +85,7 @@
     "evidence": "projects/m11-noma-qos/gates/decisions.yaml"
   },
   "m11_p2": {
-    "status": "prepared_for_G2",
+    "status": "approved",
     "queries": 10,
     "raw_records": 148,
     "unique_candidates": 122,
@@ -95,6 +95,39 @@
     "comparison_questions": 4,
     "gate_checks": "PASS",
     "review_packet": "projects/m11-noma-qos/to_human/G2-review.md",
-    "scientific_approval": false
+    "scientific_approval": true
+  },
+  "m11_g2": {
+    "decision_commit": "b3709e0",
+    "note": "Bounded P2 corpus and evidence spot-checked; G2 report usable",
+    "evidence": "projects/m11-noma-qos/gates/decisions.yaml"
+  },
+  "m11_p3": {
+    "status": "ready_for_G3_PI_selection",
+    "card_count": 15,
+    "local_schema_checks": "PASS",
+    "approved_bindings": "unchanged",
+    "independent_audit": "PASS",
+    "authorization_packet": "projects/m11-noma-qos/to_human/P3-review-authorization.md",
+    "ranking": "PASS; 15 eligible options",
+    "scientific_selection": null,
+    "external_audit_authorization": "explicitly approved; provenance session 2026-10-11-0007",
+    "effort_receipt": "projects/m11-noma-qos/ara/staging/P3-review-effort.json",
+    "independent_query_requests": 82,
+    "independent_distinct_queries": 81,
+    "independent_queries_per_card": 5,
+    "novelty_verdicts": {
+      "already-done": 15
+    },
+    "sensitivity": "PASS; top three unchanged in 7 tested weight combinations",
+    "top_three": [
+      "idea-01",
+      "idea-07",
+      "idea-02"
+    ],
+    "recommendation": "idea-01; not a PI selection",
+    "gate_checks": "PASS",
+    "review_packet": "projects/m11-noma-qos/to_human/G3-review.md",
+    "gate_report": "projects/m11-noma-qos/to_human/G3-report.md"
   }
 }

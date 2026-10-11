@@ -1,0 +1,79 @@
+id: idea-01
+timestamp: '2026-10-11T08:34:42Z'
+scope: 'Approved M11 dry run: two ordered scalar downlink users, perfect instantaneous
+  CSI, ideal SIC, arbitrary fixed individual QoS, full nonnegative power-split range,
+  matched resources and equal-time OMA at full active-slot power. Rate comparisons
+  use identical both-feasible realizations and retain infeasibility counts.'
+queries:
+- query: site:arxiv.org NOMA two user QoS feasible interval endpoint optimal power
+    allocation
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:24:09Z'
+  evidence: Found the QoS-limits and Fair-NOMA records; formulation comparison uses
+    supplied pages.
+  receipt_id: F01
+- query: site:github.com NOMA Zhu Wang feasible interval power allocation
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:24:37Z'
+  evidence: Found related multicarrier and reinforcement-learning repositories; neither
+    verifies this interval/oracle package.
+  receipt_id: A01
+- query: site:arxiv.org NOMA "QoS" "boundary" "optimal"
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:30:39Z'
+  evidence: Displayed result concerns network slicing and does not establish the proposed
+    validation layout.
+  receipt_id: B01
+- query: site:arxiv.org superposition coding "minimum rates" "sum rate" two users
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:30:39Z'
+  evidence: Displayed cell-free MIMO result is outside scope.
+  receipt_id: C01f
+- query: site:github.com "NOMA" "feasible" "optimal" power allocation
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:30:39Z'
+  evidence: Displayed age-of-information repository is outside scope.
+  receipt_id: E01
+closest_works:
+- id: doi:10.1109/jsac.2017.2725618
+  overlap: Individual-QoS sum-rate maximization, feasible split bounds and monotonic
+    boundary optimization.
+  precise_delta: Zhu additionally imposes power ordering and paper-specific SIC-stability
+    conditions and uses multichannel OFDMA. M11 requires its own unrestricted ideal-channel
+    specialization and independent scalar oracle.
+  grounding: Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.3,6–7,10–11;
+    SR2, Proposition 3 and derivative proof.
+- id: doi:10.1109/tvt.2017.2689000
+  overlap: Scalar allocation interval, increasing sum rate and upper-endpoint choice
+    with matched equal-time OMA.
+  precise_delta: Fair-NOMA thresholds are channel-dependent OMA rates, rather than
+    arbitrary fixed individual QoS; its initial power-order restriction does not define
+    M11.
+  grounding: Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.1–3;
+    Sections III–IV and interval discussion.
+- id: arxiv:1504.07751
+  overlap: Scalar broadcast rates, rate-region geometry and sum-rate monotonicity.
+  precise_delta: Xu's performance analysis uses a fixed split and retains loss events;
+    M11 optimizes the QoS-feasible split and checks it independently.
+  grounding: Supplied r_arxiv_1504_07751_536e29b9bda8.json, PDF pp.1–3; equations
+    (1)–(2), Propositions 1–2 and equations (14)/(18).
+scientific_core: 'Already established allocation methods: scalar superposition/SIC
+  rates and a QoS-boundary optimizer. This is a benchmark specialization, not evidence
+  that one paper publishes every M11 convention together.'
+validation_focus: Prospective analytic-interval and endpoint checks against independently
+  written scalar maximization. The exact software layout and independence have not
+  been verified in a publication or implementation.
+verdict: already-done
+rationale: The claimed scientific method overlaps directly with grounded existing
+  interval and boundary arguments. An independent oracle supplies implementation assurance,
+  without asserting a new scientific mechanism. The exact M11 derivation and conditional
+  comparison remain later work.
+limitations:
+- Search coverage is bounded and several focus results were unrelated.
+- No exact oracle package was verified or executed.
+- Zhu's additional constraints must not be silently transferred.

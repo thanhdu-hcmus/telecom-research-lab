@@ -1,0 +1,67 @@
+id: idea-12
+timestamp: '2026-10-11T08:34:42Z'
+scope: Approved ideal scalar two-user M11, individual QoS fixed through high-SNR inspection,
+  full split range and matched equal-time OMA; retain zero/equal-gain exceptions,
+  feasibility and paired counts.
+queries:
+- query: site:arxiv.org NOMA high SNR optimal power allocation fixed QoS sum rate
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:30:00Z'
+  evidence: Found Zhu and a different secrecy-objective paper.
+  receipt_id: F12
+- query: site:github.com "zhiguo-ding" NOMA high SNR power allocation
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:30:00Z'
+  evidence: Found pinching-antenna and hybrid-OFDMA code, changing the model.
+  receipt_id: A12
+- query: site:arxiv.org NOMA "high SNR" "fixed QoS"
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:33:45Z'
+  evidence: Displayed satellite/aerial/ground reliability record is outside scope.
+  receipt_id: B12
+- query: site:arxiv.org NOMA asymptotic optimal allocation target rate
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:33:45Z'
+  evidence: Found multicarrier optimal-allocation metadata; no exact scalar limiting
+    constant verified.
+  receipt_id: C12f
+- query: site:github.com NOMA high SNR asymptotic QoS
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:33:45Z'
+  evidence: Found different finite-alphabet code.
+  receipt_id: E12
+closest_works:
+- id: doi:10.48550/arxiv.1412.2799
+  overlap: High-SNR analysis of sum-rate gaps and outage under fixed-power pairing.
+  precise_delta: M11 optimizes fixed individual QoS with two fixed gains; Ding's fixed-split
+    or primary-only constants cannot be transferred.
+  grounding: Supplied r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json, PDF pp.2–4;
+    equations (7)–(11) and CR reference.
+- id: doi:10.1109/tvt.2017.2689000
+  overlap: High-SNR allocation/rate approximations and matched OMA comparison.
+  precise_delta: Fair-NOMA targets are OMA-dependent and published ergodic constants
+    depend on its channel/population model. M11 requires its own fixed-QoS limits.
+  grounding: Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.3,6,8;
+    approximations and population caveat.
+- id: doi:10.1109/jsac.2017.2725618
+  overlap: QoS-boundary optimum from which regime behavior can be examined.
+  precise_delta: Extra power-order/SIC constraints and multichannel reference differ;
+    the exact M11 limit is not supplied by its numerical gains.
+  grounding: Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.6–7,10–11.
+scientific_core: Established constrained allocation and asymptotic-analysis methods.
+  No new limiting expression is asserted in the card.
+validation_focus: Prospective finite-SNR convergence to a later derived fixed-QoS
+  limit, with exceptions and order of limits stated. Exact quantitative limits remain
+  unverified.
+verdict: already-done
+rationale: This is established-method regime validation. The verdict does not assert
+  identity with Ding's or Fair-NOMA's asymptotic constants, which have different premises.
+limitations:
+- No limiting expression, SNR grid or convergence tolerance is derived or approved.
+- Gain and SNR limits may not commute.
+- Fresh multicarrier metadata is discovery evidence only.

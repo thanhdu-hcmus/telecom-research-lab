@@ -1,0 +1,101 @@
+{
+  "id": "idea-01-scholar",
+  "query": "site:arxiv.org NOMA two user analytic feasible interval closed form derivative",
+  "idea_id": "idea-01",
+  "source": "arxiv",
+  "backend": "live web search index",
+  "timestamp": "2026-10-11 08:08:40 UTC",
+  "retrieval_actor": "orchestrator",
+  "status": "returned",
+  "query_count": 1,
+  "results": [
+    {
+      "title": "Uplink Non-Orthogonal Multiple Access with Finite-Alphabet Inputs",
+      "url": "https://arxiv.org/abs/1709.00509",
+      "tool_refs": [
+        "turn27academia0"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "Asymptotic Performance Analysis of NOMA Uplink Networks Under Statistical QoS Delay Constraints",
+      "url": "https://arxiv.org/abs/2007.13919",
+      "tool_refs": [
+        "turn27academia1"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "Cooperation in NOMA Networks Under Limited User-to-User Communications: Solution and Analysis",
+      "url": "https://arxiv.org/abs/1803.10258",
+      "tool_refs": [
+        "turn27academia2"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "Exploiting Full/Half-Duplex User Relaying in NOMA Systems",
+      "url": "https://arxiv.org/abs/1812.07389",
+      "tool_refs": [
+        "turn27academia3"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "Efficient Error Certification for Physics-Informed Neural Networks",
+      "url": "https://arxiv.org/pdf/2305.10157",
+      "tool_refs": [
+        "turn27search4"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "Fisher’s Mirage: Noise Tightening of Cosmological Constraints in Simulation-Based Inference",
+      "url": "https://arxiv.org/pdf/2406.06067",
+      "tool_refs": [
+        "turn27search5"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "The Quantum Esscher Transform",
+      "url": "https://arxiv.org/pdf/2401.07561",
+      "tool_refs": [
+        "turn27search6"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "IBP Regularization for Verified Adversarial Robustness via Branch-and-Bound",
+      "url": "https://arxiv.org/pdf/2206.14772",
+      "tool_refs": [
+        "turn27search7"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "September 2014",
+      "url": "https://arxiv.org/pdf/1409.7174",
+      "tool_refs": [
+        "turn27search8"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    }
+  ],
+  "raw_response": ".cache\\p3-search-idea-01-scholar.txt",
+  "raw_response_sha256": "8b58335dca39fbd041f7b317b47b8af40790bf7d8532658f063e2af9604ecaca",
+  "limits": [
+    "Bounded indexed discovery, not exhaustive coverage.",
+    "No result is a verified exact M11 code baseline or a new grounded full-paper card.",
+    "Forbidden-source index hits are excluded; no such page was opened or downloaded."
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "shared-core",
+  "query": "site:arxiv.org two user downlink NOMA Gaussian broadcast channel sum rate QoS optimal power allocation",
+  "idea_id": null,
+  "source": "arxiv",
+  "backend": "live web search index",
+  "timestamp": "2026-10-11 08:07:47 UTC",
+  "retrieval_actor": "orchestrator",
+  "status": "returned",
+  "query_count": 1,
+  "results": [
+    {
+      "title": "Optimal Throughput Fairness Trade-offs for Downlink Non-Orthogonal Multiple Access over Fading Channels",
+      "url": "https://arxiv.org/abs/1708.01403",
+      "tool_refs": [
+        "turn23academia0"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "On Optimal Power Allocation for Downlink Non-Orthogonal Multiple Access Systems",
+      "url": "https://arxiv.org/abs/1707.06350",
+      "tool_refs": [
+        "turn23academia1"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "Dynamic User Clustering and Power Allocation for Uplink and Downlink Non-Orthogonal Multiple Access (NOMA) Systems",
+      "url": "https://arxiv.org/abs/1608.01081",
+      "tool_refs": [
+        "turn23academia2"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "Secrecy Sum Rate Maximization in Non-Orthogonal Multiple Access",
+      "url": "https://arxiv.org/abs/1603.04290",
+      "tool_refs": [
+        "turn23academia3"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "1 Physical Layer Security for UAV Communications i",
+      "url": "https://arxiv.org/pdf/2105.11332",
+      "tool_refs": [
+        "turn23search4"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "1 A Novel Terabit Grid-of-Beam Optical Wireless Mu",
+      "url": "https://arxiv.org/pdf/2404.04443",
+      "tool_refs": [
+        "turn23search5"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    }
+  ],
+  "raw_response": ".cache\\p3-search-shared-core.txt",
+  "raw_response_sha256": "1c1e32639a0c55604e948a17e9b84f20ac802bffbd859e7a971da83d906f8c61",
+  "limits": [
+    "Bounded indexed discovery, not exhaustive coverage.",
+    "No result is a verified exact M11 code baseline or a new grounded full-paper card.",
+    "Forbidden-source index hits are excluded; no such page was opened or downloaded."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "idea-05-scholar",
+  "query": "site:arxiv.org NOMA two user strong user decoding weak message SIC constraint",
+  "idea_id": "idea-05",
+  "source": "arxiv",
+  "backend": "live web search index",
+  "timestamp": "2026-10-11 08:09:23 UTC",
+  "retrieval_actor": "orchestrator",
+  "status": "returned",
+  "query_count": 1,
+  "results": [
+    {
+      "title": "Cooperative Asynchronous Non-Orthogonal Multiple Access with Power Minimization Under QoS Constraints",
+      "url": "https://arxiv.org/abs/1902.07862",
+      "tool_refs": [
+        "turn35academia0"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "Is NOMA Efficient in Multi-Antenna Networks? A Critical Look at Next Generation Multiple Access Techniques",
+      "url": "https://arxiv.org/abs/2101.04802",
+      "tool_refs": [
+        "turn35academia1"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "User Clustering in mmWave-NOMA Systems with User Decoding Capability Constraints for B5G Networks",
+      "url": "https://arxiv.org/abs/2011.08670",
+      "tool_refs": [
+        "turn35academia2"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "Non-Orthogonal Multiple Access (NOMA) in Cellular Uplink and Downlink: Challenges and Enabling Techniques",
+      "url": "https://arxiv.org/abs/1608.05783",
+      "tool_refs": [
+        "turn35academia3"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "1 A Novel Terabit Grid-of-Beam Optical Wireless Mu",
+      "url": "https://arxiv.org/pdf/2404.04443",
+      "tool_refs": [
+        "turn35search4"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "Chapter 1 Optical Wireless Communications Using In",
+      "url": "https://arxiv.org/pdf/2304.04014",
+      "tool_refs": [
+        "turn35search5"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "1 Physical Layer Security for UAV Communications i",
+      "url": "https://arxiv.org/pdf/2105.11332",
+      "tool_refs": [
+        "turn35search6"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    },
+    {
+      "title": "IEEE COMMUNICATIONS SURVEYS & TUTORIALS (DRAFT)",
+      "url": "https://arxiv.org/pdf/2002.08811",
+      "tool_refs": [
+        "turn35search7"
+      ],
+      "evidence_class": "primary_metadata",
+      "used_for_scientific_claims": false
+    }
+  ],
+  "raw_response": ".cache\\p3-search-idea-05-scholar.txt",
+  "raw_response_sha256": "be18a83a2f36741e5c6cb936716190deab88290ce64a9d06e89e8f770d7ecc86",
+  "limits": [
+    "Bounded indexed discovery, not exhaustive coverage.",
+    "No result is a verified exact M11 code baseline or a new grounded full-paper card.",
+    "Forbidden-source index hits are excluded; no such page was opened or downloaded."
+  ]
+}

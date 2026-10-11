@@ -1,0 +1,65 @@
+id: idea-10
+timestamp: '2026-10-11T08:34:42Z'
+scope: Approved ideal scalar two-user M11 with nonnegative unit-sum powers, arbitrary
+  fixed individual QoS, matched equal-time OMA and retained paired feasibility. Zero
+  allocations remain endpoints of the same NOMA model.
+queries:
+- query: site:arxiv.org NOMA QoS zero power allocation boundary feasibility
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:27:48Z'
+  evidence: Found QoS-limits and Zhu records.
+  receipt_id: F10
+- query: site:github.com NOMA Ding zero power QoS allocation
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:27:48Z'
+  evidence: Found finite-alphabet, UAV and multicarrier code; no exact endpoint/singleton
+    suite verified.
+  receipt_id: A10
+- query: site:arxiv.org NOMA "zero rate" "power allocation"
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:33:45Z'
+  evidence: Displayed large-network throughput-scaling result is outside scope.
+  receipt_id: B10
+- query: site:arxiv.org NOMA "feasible interval" endpoints
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:33:45Z'
+  evidence: Displayed cost-sharing result is unrelated.
+  receipt_id: C10f
+- query: site:github.com NOMA QoS endpoint singleton
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:33:45Z'
+  evidence: Displayed storage-system upgrade guide is unrelated.
+  receipt_id: E10
+closest_works:
+- id: doi:10.1109/jsac.2017.2725618
+  overlap: QoS interval feasibility and boundary optimum.
+  precise_delta: M11 includes its full nonnegative split range and zero-target/singleton
+    tests without copying Zhu's extra constraints.
+  grounding: Supplied r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.json, PDF pp.3,6–7.
+- id: doi:10.48550/arxiv.1412.2799
+  overlap: Explicit zero secondary allocation when weak-user protection consumes resources.
+  precise_delta: That CR allocation and primary-only comparator differ from M11's
+    two fixed QoS targets and equal-time OMA.
+  grounding: Supplied r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json, PDF p.4; equations
+    (20)–(24).
+- id: doi:10.1109/icc.2018.8422366
+  overlap: Necessary allocation limits versus actual rate/SIC success.
+  precise_delta: Common-target multiuser fixed-power outage construction does not
+    establish the exact scalar endpoint classifier.
+  grounding: Supplied r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json, PDF pp.2–4.
+scientific_core: Established constrained allocation and resource-boundary feasibility.
+validation_focus: Prospective zero-target, endpoint, singleton, empty-interval and
+  power-budget checks. Exact publication/software layout remains unverified.
+verdict: already-done
+rationale: The grounded works already contain boundary optimization, allocation limits
+  and zero-allocation examples. This card verifies boundary handling in the same benchmark,
+  with no new science claim.
+limitations:
+- No boundary thresholds or tolerances are selected.
+- Clipping is not a feasibility proof.
+- A primary-only reference cannot replace equal-time OMA.

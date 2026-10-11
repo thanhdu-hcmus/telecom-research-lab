@@ -23,3 +23,9 @@
 - 2026-10-10T17:44:01.117545+00:00 — Refreshed pending G2 after LF portability correction; scientific content and G1 approval unchanged. Exact session 0003 sources archived in external ResearchLibrary. Final epilogue session 2026-10-10-0004; PI G2 review still pending.
 
 - 2026-10-11T03:55:59.367185+00:00 — PI approve G2: Bounded P2 corpus and evidence spot-checked; G2 report usable
+
+- 2026-10-11T03:58:18.943370+00:00 — Entered P3
+
+- 2026-10-11T09:02:42.235517+00:00 — Requested G3; automated checks passed
+
+- 2026-10-11T09:14:29.851121+00:00 — Requested G3; automated checks passed

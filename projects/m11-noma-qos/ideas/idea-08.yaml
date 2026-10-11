@@ -1,0 +1,119 @@
+id: idea-08
+title: Equal-channel degeneracy as an equality and optimizer check
+problem: 'Strict-separation-only code can divide by zero gain difference or invent
+  an advantage at equal gains. The proposal preserves G1-approved M11: two ordered
+  scalar downlink users, perfect instantaneous CSI and ideal SIC, unit normalized
+  noise/bandwidth, matched instantaneous power and channel realization, arbitrary
+  fixed per-block individual QoS and equal-time OMA at full active-slot power. Optimal-rate
+  comparisons use the both-feasible set and retain all infeasible counts. No distribution,
+  QoS/SNR grid, seed, stopping rule, tolerance or simulation is selected here.'
+gap_refs:
+- BQ1
+- BQ2
+- BQ4
+closest_works:
+- id: arxiv:1504.07751
+  delta: 'Xu PDF pp.1-2 supplies ordered scalar broadcast rates and region geometry;
+    p.2 includes fixed-split sum-rate loss and p.3 uses a fixed split. M11 optimizes
+    the full feasible split for arbitrary fixed individual QoS and keeps equal-time
+    OMA; its paper-specific weak-power-at-least-half constraint is not imported. Proposed
+    emphasis: equal ordered gains and flat-objective handling. This is a benchmark
+    adaptation/validation delta, not an originality claim.'
+- id: doi:10.1109/tvt.2017.2689000
+  delta: 'Fair-NOMA PDF pp.2-3 solves individual NOMA-versus-equal-time-OMA inequalities
+    with full active-slot power. Its QoS thresholds are channel-dependent OMA rates
+    and its initial power-order restriction is paper-specific. M11 uses arbitrary
+    fixed individual QoS and the approved full split range; fairness is a potential
+    comparison witness, not a substituted objective. Proposed emphasis: equal ordered
+    gains and flat-objective handling. This is a benchmark adaptation/validation delta,
+    not an originality claim.'
+- id: doi:10.1109/jsac.2017.2725618
+  delta: 'Zhu PDF pp.6-7 gives a QoS boundary optimizer and derivative argument with
+    extra power-order/SIC-stability conditions; pp.10-11 uses multichannel waterfilled
+    OFDMA. M11 is one two-user scalar channel with equal-time OMA and does not import
+    those extra constraints. Proposed emphasis: equal ordered gains and flat-objective
+    handling. This is a benchmark adaptation/validation delta, not an originality
+    claim.'
+method_sketch: 'Keep ordered gains with equality permitted and derive the equal-gain
+  case directly from approved rates. Check whether the sum objective is flat across
+  feasible splits and how equal-time OMA compares under both-feasible QoS. Include
+  feasible, singleton and infeasible targets selected later. A deterministic equality
+  case does not give equality positive probability under any future fading law. The
+  proposal preserves G1-approved M11: two ordered scalar downlink users, perfect instantaneous
+  CSI and ideal SIC, unit normalized noise/bandwidth, matched instantaneous power
+  and channel realization, arbitrary fixed per-block individual QoS and equal-time
+  OMA at full active-slot power. Optimal-rate comparisons use the both-feasible set
+  and retain all infeasible counts. No distribution, QoS/SNR grid, seed, stopping
+  rule, tolerance or simulation is selected here.'
+expected_contributions:
+- An established-method M11 benchmark artifact emphasizing equal ordered gains and
+  flat-objective handling; no original scientific contribution, submitted-paper result
+  or measured rate gain is claimed.
+- 'Falsifiable validation improvement over a naive unchecked implementation: Direct
+  rates and feasibility must match the P4-derived equality case, with no unstable
+  endpoint choice or claimed strict gain; discrepancies falsify degeneracy handling.'
+- A traceable comparison of the same constrained optimal NOMA model and equal-time
+  OMA, with both-feasible rates and complete feasibility counts.
+risks:
+- Strict-order derivations cannot be extrapolated without checking equality.
+- Near-equality rounding must be distinguished from exact equality.
+- Outputs remain prospective until model/protocol approval and actual later simulations;
+  planning feasibility does not mean baseline acceptance.
+risk_rating: 1
+resources:
+  compute_estimate: 'AI planning estimate: CPU-only existing Python/MATLAB workstation,
+    one core per independent run, small scalar arrays or streaming/chunked records
+    with a planning envelope below 1 GB per process. Deterministic cases may take
+    minutes to several CPU hours; independent sampling or optional numerical references
+    may require more. Not measured runtime, guaranteed memory use or a locked cap;
+    exact workloads and tools are P5 decisions.'
+  hardware: Existing CPU workstation; no experimental hardware needed.
+  estimate_basis: AI planning estimate for the scoped scalar toy, not a benchmark
+    result.
+  protocol_choices: Distributions, targets, SNR grids, resolutions, seeds, sample
+    counts, solver tolerances and stopping criteria remain P4/P5 decisions.
+time_estimate_months: 1.0
+target_venue_class: Internal M11 acceptance; no submission, publication-readiness
+  or quartile claim
+feasibility:
+  pass: true
+  reasons:
+  - 'Provisional planning screen: the proposal preserves the approved scalar two-user
+    model, sum-rate objective and matched equal-time OMA.'
+  - The equal ordered gains and flat-objective handling emphasis can use CPU-scale
+    analytic, deterministic and later seeded validation; no implementation or scientific
+    result is claimed.
+  - No new physical assumption or objective is introduced. Final parameters and protocol
+    require G4/G5.
+novelty:
+  verdict: already-done
+  report: ideas/novelty/idea-08.yaml
+scores:
+  thesis_fit:
+    score: 4
+    rationale: Direct core synthetic M11 fit; the specialized equal ordered gains
+      and flat-objective handling focus has narrower reuse than a general workflow
+      reference. No original contribution or real-dissertation fit is inferred.
+    evidence:
+    - scope.yaml
+    - profile.yaml
+    - BQ1
+    - BQ2
+    - BQ4
+  time:
+    score: 5
+    rationale: AI planning estimate of 1.0 months to an internal acceptance artifact,
+      within the configured <=3-month threshold. This is not a submission promise
+      or measured work duration; scientific gate review can change the estimate.
+    evidence:
+    - config/ranking.yaml
+    - profile.yaml
+  venue:
+    score: 1
+    rationale: Target is internal M11 acceptance. These included historical papers
+      provide scientific context only; no recent Q2 suitability, contemporary venue
+      comparators or publication-readiness evidence exists for this established benchmark.
+      Lowest venue score is deliberate.
+    evidence:
+    - arxiv:1504.07751
+    - doi:10.1109/tvt.2017.2689000

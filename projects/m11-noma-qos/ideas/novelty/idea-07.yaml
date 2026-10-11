@@ -1,0 +1,69 @@
+id: idea-07
+timestamp: '2026-10-11T08:34:42Z'
+scope: Approved ideal scalar two-user M11, arbitrary fixed individual QoS and matched
+  equal-time OMA. Rate differences use identical both-feasible blocks, retaining all
+  other feasibility statuses and counts.
+queries:
+- query: site:arxiv.org NOMA OMA outage feasibility conditional rate comparison
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:27:28Z'
+  evidence: Found QoS-limits and an average-QoS throughput/fairness lead.
+  receipt_id: F07
+- query: site:github.com NOMA Ding outage paired feasibility
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:27:28Z'
+  evidence: Found UAV-NOMA simulation with a different model; no exact paired ledger
+    verified.
+  receipt_id: A07
+- query: site:arxiv.org NOMA OMA "joint outage" comparison
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:31:07Z'
+  evidence: Displayed STAR-RIS/SWIPT result is outside scope.
+  receipt_id: B07
+- query: site:arxiv.org NOMA "conditional" "feasibility"
+  source: arxiv
+  backend: live web search
+  timestamp: '2026-10-11T08:31:07Z'
+  evidence: Displayed generic convex-feasibility result is unrelated.
+  receipt_id: C07f
+- query: site:github.com NOMA OMA outage sample counts
+  source: web
+  backend: live web search
+  timestamp: '2026-10-11T08:31:07Z'
+  evidence: Found a MATLAB NOMA simulator, without evidence of this exact accounting
+    layout.
+  receipt_id: E07
+closest_works:
+- id: doi:10.1109/icc.2018.8422366
+  overlap: Explicit success/outage events and comparison with a specified equal-slot
+    OMA reference.
+  precise_delta: Event equality for common-target fixed allocation is not conditional
+    sum-rate equality or the proposed arbitrary-QoS paired-sample ledger.
+  grounding: Supplied r_doi_10_1109_icc_2018_8422366_80611aa7eda1.json, PDF pp.2–4;
+    success conditions and Theorem 2 interpretation.
+- id: doi:10.48550/arxiv.1412.2799
+  overlap: Admission and outage depend on QoS and available allocation.
+  precise_delta: Ding's CR comparison protects a primary user and uses primary-only
+    service; M11 retains two-user equal-time OMA and its own complete categories.
+  grounding: Supplied r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.json, PDF p.4; equations
+    (21)–(24).
+- id: doi:10.1109/tvt.2017.2689000
+  overlap: Matched scalar OMA rates and per-user outage comparisons.
+  precise_delta: Fair-NOMA is OMA-relative; its cited passages do not verify this
+    exact block-identifier and denominator ledger.
+  grounding: Supplied r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.json, PDF pp.2–4.
+scientific_core: Established allocation and feasibility/outage comparison, with resource
+  definitions kept explicit.
+validation_focus: A prospective per-realization accounting ledger implementing safeguards
+  already required by the approved scope. Exact published ledger structure is unverified.
+verdict: already-done
+rationale: The ledger changes reporting and verification, not the scientific mechanism.
+  Existing works support the need to distinguish success, admission and reference
+  definitions; no original scientific delta is asserted.
+limitations:
+- The exact ledger is not claimed already published.
+- An empty intersection yields an unavailable conditional statistic.
+- No sampling or boundary tolerance is approved.
