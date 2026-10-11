@@ -1,0 +1,138 @@
+{
+  "run_id": "r_mc-10-q1-11011-250ccb4ad292-b2a7cf17890b_e2b8f590b669",
+  "git_sha": "2823b89fedaa6bb93e3d25f370001e7d85e8dea9",
+  "protocol_commit": "b2a7cf17890b499b07f5c23bbc871351cc3909b1",
+  "protocol_hash": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+  "input_hashes": {
+    "projects/m11-noma-qos/sim/protocol.yaml": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+    "projects/m11-noma-qos/sim/protocol.md": "93bdad13f228362b232f66e7e5ba50a751836c7039516bc77895eb52eeaf0e25",
+    "projects/m11-noma-qos/sim/cases.yaml": "1f76d4897394371498250edb71d8ae31c08f1f497bd0b3296c48c55718dd5840",
+    "projects/m11-noma-qos/sim/src/analytic.py": "aa9f72e749f60fc268e5ee356dd59149a860f09e0ecef5b6ce4c75362c7a8c09",
+    "projects/m11-noma-qos/sim/src/oracle.py": "2b145f6ef8633cf675a4ab34f6632dc09a13156cac0b83bd37f42b0df1dc0055",
+    "projects/m11-noma-qos/sim/src/experiment.py": "ad2928214044d56a6aaafde5dd461160d2e9eaaeb7913202fc4f81580014efe8",
+    "projects/m11-noma-qos/sim/src/aggregate.py": "56517468a733b1fd850fd4a16b1505dbeeabc19b5bcecca5082a65fc3e0d05e5",
+    "projects/m11-noma-qos/sim/src/verifier.py": "1aefd2052cfbdbf39f82bb70e5b4c14f1017202cfd3911f456a180ecdf1317b9",
+    "projects/m11-noma-qos/ara/staging/P5-engineer-design.md": "c80862c715022bb7e2ad86c5553952131b9c3fc0b7b20c87f5059a408eed31c2",
+    "projects/m11-noma-qos/sim/src/__init__.py": "6be43bc45bfe6bbe09dac040304e70a43e63cdd9536b52d60677b28e98d72a58",
+    "projects/m11-noma-qos/sim/tests/test_noma_physics.py": "641f844d17e44304d8aa8b595549fc9cb4f21c04c01b24e007e7c3d33f31fee3",
+    "lab/__init__.py": "8874c33694274a04e7681a43ced8803943b46c01d6971e0602ad3ec59aaffa4a",
+    "lab/baseline.py": "446aae2c39fc87077062ba6fc78b0be63f4e02a77123845b09737501ad6fad09",
+    "lab/citations.py": "9cc2e8a22248886777c91d649074ad39555f41d4a026e46ddcf7075d6354adbd",
+    "lab/cli.py": "c325f37e6d419750f94adb29b500f8d71110f63afaf50999436818cc335c3d0c",
+    "lab/cli_literature.py": "38201a2a4a18f729d5d90b40cad61b98ad7febbaf72da0e2bf7b3e1f608ba27d",
+    "lab/cli_paper.py": "6ca33f20371a325db3c531005014490519f6ccb9c0f13b4c0afe1863a943a394",
+    "lab/cli_research.py": "f53bf66104cb90f8b85843ba6656c349467cede4e53e2a9a87b5dab3987ed810",
+    "lab/cli_state.py": "7ad2fdd581c997514e91fb1d847ccdb975d0b3fa756a19aa2566bc8e9f1b6028",
+    "lab/doctor.py": "7639cb7b477dc911fcd9c91b792e6d7e38c7a43e5d1d6d9b2a93255469e68de7",
+    "lab/eval_graders.py": "5380f7c1d1984678d027f869349fb6f1cf34eadffb857a44ec057610d7e3a343",
+    "lab/evaluation.py": "c0b35722810c3b710a82b9b2a3bc732db7656ea22839df747f6c779d3e9f96e9",
+    "lab/figures.py": "abec1cbb847d912b2b07f98beaf371d8b3a6bd949de39cd337c93bd3d33c688e",
+    "lab/ideas.py": "35f114889183ed17f6838aae573da39a21adff441a8fbc97bebbbc0fb8f4fa3b",
+    "lab/io.py": "7eb7d5d67dc1b103b68065db9242ba0286310b7f2203266c52531870892a17cc",
+    "lab/literature.py": "1ba77511f635f2b7b85a89216765b98b8d02198511820a643b3be4357dec2b91",
+    "lab/matlab.py": "9a51244c7b0b9d0dcbd2f1ca70c49dd6ba322f928f4312c6db2870b4b3ed1976",
+    "lab/modeling.py": "3a3ba823e08cf2f27e0e1990ef38268a1f4880ed99833b45cbf0b3a12f14cb15",
+    "lab/models.py": "1d7740e59e95b6b3976c4704081e4b19c1fe4d2770de10613508f0b4f82b3d09",
+    "lab/net.py": "39222840755ad0cce1f5f1d59722b6439f89639cb4f63d351efc61b9ceb40662",
+    "lab/paper.py": "99db91459ff128fcbc451624810694970f554043a57b813de867bbba467350e7",
+    "lab/simkit/__init__.py": "6e6d32b5e39446236f1f15f51f693dc53c6bc1b59c9a28394a8fe70cb8dd8a81",
+    "lab/simkit/wireless.py": "e429166426e8b057c6d422b2f334842537be6cba586bd93ae8635d99beef7309",
+    "lab/simulation.py": "67ddfe1cad13af10f2546e6ce99b0152bcd69c926d6944bc528d898a9361eb13",
+    "lab/sources.py": "fff8a9cab3dbdac087abccf496b01c0a5230f78c88846f1fde2f739a94fb9097",
+    "lab/state.py": "4ef827175368f3a6d0488261f54093262f3c8b4f2cd841bf0cb40a75dfc40502",
+    "lab/venues.py": "5c5f0ab9f8a6e1fe2d639d54750597c9f201a57138f7e69a105896c4f04decc0",
+    "lab/verification.py": "c549b8cca4d34dd2fa66501f79072a946e579fe919d4109769673a328fc3dcfb",
+    "matlab/+simkit/dbmToWatt.m": "bfee94fa989f482cbb1c1b7167de5949cbe9be067670568bd7bcfa34cd42a90d",
+    "matlab/+simkit/dbToLinear.m": "84b6993014b1f3586dd8b1807cd71714e73edd2b70f2bdf678aacd9ff9743307",
+    "matlab/+simkit/noiseWatt.m": "25ac405bd0e87a84c783a71b1e11571c69fc0e7531b53bd30a4cd9d768234a9c",
+    "matlab/+simkit/nomaOutage.m": "1d29a7442d5057b7eb42a1d00b26b7f91ef4262fa02e38e3c0e1028d86041c6e",
+    "matlab/+simkit/nomaSinr.m": "86faee88e2d1c1637cca59d209806a1c9a47dea4c6efb0fe0025b01118c6ba60",
+    "matlab/+simkit/pathGain.m": "354a6808b3595391637eba937edd6394e927c02f002949ea550e8d3a6aa80f08",
+    "matlab/+simkit/rates.m": "244572806b7ed04c4d80fa30c1a88fdca37bd90e9b0d9ead5aa0fa82ceb63df5",
+    "matlab/+simkit/rayleigh.m": "1c777467705598a17852e99b2eef84e5d220685e52c7c588712fcb82c4f15a6d",
+    "matlab/+simkit/rician.m": "c28489693cd64d6deff609c2cfaf9fb7c87654fc7067d88b6613df6bd8f7c490",
+    "matlab/+simkit/risCascade.m": "ec5c721a04c56316649e507e172b9a6870ffd99d49d9ab73ad45d8542c3f75a1",
+    "matlab/+simkit/streams.m": "1de90f826dbeb512406dda95d2a9a7cc51e04c6db21419f1b27697647ad1f53f",
+    "matlab/+simkit/wattToDbm.m": "69257ad48c9db0181865c2fe63326cfebd7f9a7461cb87bfd32a14bde3061fe3",
+    "uv.lock": "95cfadf0006f0afa417f12c3e2f8cbbdfc86fd1c5514bae054870024e17e601b"
+  },
+  "scenario": "mc-10-q1",
+  "params": {
+    "kind": "monte-carlo",
+    "trials": 32768,
+    "rate_tolerance": 1e-09,
+    "split_tolerance": 1e-12,
+    "objective_tolerance": 1e-07,
+    "oracle_rows": 32,
+    "sensitivity_rows": 8,
+    "P_db": 10,
+    "P": 10.0,
+    "qw": 0.25,
+    "qs": 0.25
+  },
+  "seeds": [
+    11011
+  ],
+  "language": "python",
+  "env": {
+    "python": "3.13.5 (main, Jun 12 2025, 12:42:35) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "packages": {
+      "scipy": "1.18.1",
+      "sympy": "1.14.0",
+      "cvxpy": "1.9.3"
+    }
+  },
+  "host": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64"
+  },
+  "start": "2026-10-11T17:13:44.510045+00:00",
+  "end": "2026-10-11T17:13:58.757468+00:00",
+  "runtime_s": 14.247138600010658,
+  "outputs": [
+    {
+      "path": "results/runs/r_mc-10-q1-11011-250ccb4ad292-b2a7cf17890b_e2b8f590b669/channels.csv",
+      "storage": "project",
+      "sha256": "3a9590e59a8746e716d298baa8ff0ce658d7165b1dee5e1da6ff4486f81f269f",
+      "bytes": 26133528
+    },
+    {
+      "path": "results/runs/r_mc-10-q1-11011-250ccb4ad292-b2a7cf17890b_e2b8f590b669/ledger.json",
+      "storage": "project",
+      "sha256": "4e870fa931b17ab8a99f45c5b052dfbcc2e69ff6b27c8db7f58a410e3c94d2eb",
+      "bytes": 123
+    },
+    {
+      "path": "results/runs/r_mc-10-q1-11011-250ccb4ad292-b2a7cf17890b_e2b8f590b669/metrics.csv",
+      "storage": "project",
+      "sha256": "27b40f9a07a32e2f9b96fc90cafc04211a2e1f08dec963581d7dc7b7e1c9ec01",
+      "bytes": 3739931
+    },
+    {
+      "path": "results/runs/r_mc-10-q1-11011-250ccb4ad292-b2a7cf17890b_e2b8f590b669/oracle.json",
+      "storage": "project",
+      "sha256": "3f8e67dd546d78ace96056d97d03990438a8197c9f22d7e000255ad6ee519de4",
+      "bytes": 83061
+    },
+    {
+      "path": "results/runs/r_mc-10-q1-11011-250ccb4ad292-b2a7cf17890b_e2b8f590b669/sampling.json",
+      "storage": "project",
+      "sha256": "55269bd35eaea62c0ca2a7bf7e6e4f7bbb60c4aa65ee4f47dffe7a790de32753",
+      "bytes": 345
+    },
+    {
+      "path": "results/runs/r_mc-10-q1-11011-250ccb4ad292-b2a7cf17890b_e2b8f590b669/stderr.txt",
+      "storage": "project",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "results/runs/r_mc-10-q1-11011-250ccb4ad292-b2a7cf17890b_e2b8f590b669/stdout.txt",
+      "storage": "project",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "status": "complete"
+}

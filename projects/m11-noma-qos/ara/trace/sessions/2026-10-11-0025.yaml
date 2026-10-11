@@ -1,0 +1,17 @@
+id: 2026-10-11-0025
+timestamp: '2026-10-11T17:33:35.050646+00:00'
+phase: P5
+summary: 'Completed all 145 fresh P5 R2 native jobs with zero resumptions. Read and
+  hashed actual archived and fresh bytes: all 1015 output files and both manifest
+  size/hash bindings match; environment and parameters match. Only verifier-wrapper
+  framework input changed; physical protocol and simulation sources unchanged. Fresh
+  guarded collection/statistics/diagnostics/channel recomputation running; no G5 approval
+  or scientific P6 execution inferred. A preliminary inline PowerShell quoting trial
+  failed before executing the checksum helper; corrected file-based helper passed
+  its partial check and full pipeline comparison passed.'
+provenance: ai
+evidence:
+  ara/staging/P5-rerun-output-comparison.json: d8c237b9c8b516b90048aaedca1bc0025ec861a334dfef57d6ab482322186a9c
+  ara/evidence/P5-rerun-helpers/pipeline.py: 90888f76e80bf536360d6a430e6e9d24c4e8ffdaf6e865aa9408b7af7262fb5c
+  ara/evidence/P5-rerun-helpers/diagnostics.py: 26d2836b02d7d3d6102f2889f46c3a9c525e30214971fd03970338ededd436fe
+  ara/evidence/P5-rerun-helpers/channel_audit.py: 57198866bc944117c3f9ed9e0da7fbe1657e905031d97f26b0e38d3f516245eb
