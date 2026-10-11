@@ -1,0 +1,228 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\newtheorem{theorem}{Theorem}
+\title{M11: Two-user NOMA with arbitrary fixed QoS}
+\author{Internal benchmark model; selected idea-01}
+\date{P4 draft for independent review and G4; no simulation results}
+\begin{document}
+\maketitle
+
+\section{Scope, normalization and physical model}
+This is an established-method dry run under approved G1--G3, not an
+originality claim. Every statement below concerns a single constant-channel
+block. Parameters are finite real numbers with
+\(P\geq0\), \(0\leq g_w\leq g_s\), and fixed individual targets
+\(q_w,q_s\geq0\) in bit/s/Hz over the whole block. No fading distribution,
+physical deployment, numerical tolerance or experimental protocol is selected.
+Noise variance and bandwidth are normalized to one. Thus \(P\) is linear
+transmit power relative to normalized noise, not a dBm input or a physical
+power value in watts; \(A=Pg_w\), \(B=Pg_s\) are dimensionless received
+SNRs if a user receives full power. No unreported path-loss or SNR conversion
+is used. Let scalar complex channels satisfy \(g_i=|h_i|^2\), for
+\(i\in\{w,s\}\). Perfect instantaneous CSI and ideal SIC are scoped
+idealizations. Independent unit-energy Gaussian codebook symbols \(s_w,s_s\)
+give the information-theoretic rate model, not a finite-modulation link model.
+Receiver noise \(z_i\sim\mathcal{CN}(0,1)\) has real and imaginary
+variance \(1/2\). The full-range strong-user power fraction is
+\(a\in[0,1]\); its weak-user counterpart is \(1-a\). The signal equations are
+\begin{align}
+ x&=\sqrt{P(1-a)}s_w+\sqrt{Pa}s_s, & y_i&=h_ix+z_i.
+\end{align}
+The average transmitted power is \(P\). An endpoint can carry a zero-rate
+message with zero allocated power. There is no constraint \(a\leq1/2\),
+SIC margin, residual interference, adaptive time split or altered objective.
+
+\section{Both weak-message decoding sites and rates}
+The weak receiver treats the strong message as noise. The strong receiver
+first decodes the weak message while treating its own message as noise,
+then removes the decoded weak message exactly. Their weak-message SINRs are
+\begin{align}
+ \gamma_{w\to w}(a)&=\frac{(1-a)A}{1+aA}, &
+ \gamma_{w\to s}(a)&=\frac{(1-a)B}{1+aB}, &
+ \gamma_{s\to s}(a)&=aB.
+\end{align}
+In particular,
+\begin{equation}
+ \gamma_{w\to s}-\gamma_{w\to w}
+ =\frac{(1-a)(B-A)}{(1+aA)(1+aB)}\geq0.
+\end{equation}
+The weak code rate must not exceed either weak-message decoding capacity;
+their minimum equals the weak receiver's capacity even at equal gains and
+endpoints. Hence the achievable boundary rates and objective are
+\begin{align}
+ R_w(a)&=\log_2\frac{1+A}{1+aA}, &R_s(a)&=\log_2(1+aB),\\
+ F(a)&=R_w(a)+R_s(a).
+\end{align}
+Choosing a smaller actual code rate is permitted, but cannot improve the
+sum-rate maximum. Capacity equalities are ideal asymptotic achievable-rate
+limits; no finite-block error probability or practical SIC claim is inferred.
+Both target inequalities use \(\geq\), so equality is feasible in exact
+real arithmetic.
+
+\section{Exact QoS feasible set, including zero cases}
+Define \(T_i=2^{q_i}-1\). For \(B>0\), strong QoS is exactly
+\(a\geq T_s/B\). For \(A>0\), weak QoS is exactly
+\begin{equation}
+ (1-a)A\geq T_w(1+aA)
+ \quad\Longleftrightarrow\quad
+ a\leq\frac{A-T_w}{A(1+T_w)}.
+\end{equation}
+These follow by applying a strictly increasing logarithm and multiplying
+strictly positive denominators; SIC imposes no additional bound because
+the second weak decoding site has no smaller capacity.
+Use the following branches, without division by zero:
+\begin{itemize}
+ \item If \(B=0\), ordering also gives \(A=0\). Feasible iff
+ \(q_w=q_s=0\), with feasible set \([0,1]\); otherwise infeasible.
+ \item If \(A=0<B\), feasible weak QoS requires \(q_w=0\).
+ Then set \(L=T_s/B\), \(U=1\).
+ \item If \(A>0\) (therefore \(B>0\)), set
+ \(L=T_s/B\), \(U=\min\{1,(A-T_w)/(A(1+T_w))\}\).
+\end{itemize}
+For either positive-\(B\) branch, the set is \(\mathcal A=[L,U]\)
+iff \(L\leq U\); otherwise it is empty. Nonnegative targets ensure
+\(L\geq0\) and \(U\leq1\). A negative \(U\), \(L>1\), or
+\(L>U\) is infeasibility, not an instruction to clamp an answer into
+\([0,1]\). For \(A>0\) an equivalent complete feasibility condition is
+\begin{equation}
+ \frac{T_s}{B}+\frac{T_w}{A}+\frac{T_wT_s}{B}\leq1.
+\end{equation}
+A singleton \(L=U\) is feasible. Zero total power, zero strong gain,
+and both zero gains all enter the \(A=B=0\) branch. Zero weak gain at
+positive received strong SNR enters the second branch. Zero QoS gives
+the corresponding inactive bound: \(T_s=0\) implies \(L=0\);
+\(T_w=0\) implies \(U=1\). Arbitrarily large finite targets can simply
+make the interval empty; they are not restricted to paper-specific regimes.
+
+\section{Optimizer, curvature and degeneracies}
+\begin{theorem}[Exact scalar solution]
+If the feasible set is nonempty, \(a^\star=U\) is a maximizer (use
+\(U=1\) in the all-zero branch). If \(B>A\), it is the unique maximizer.
+If \(B=A\), every feasible split is optimal. An empty set has no optimizer
+and no constrained optimum sum rate.
+\end{theorem}
+\begin{proof}
+On \([0,1]\), direct differentiation gives
+\begin{align}
+ F'(a)&=\frac{1}{\ln2}\left(\frac{B}{1+aB}-\frac{A}{1+aA}\right)
+       =\frac{B-A}{\ln2(1+aA)(1+aB)},\\
+ F''(a)&=\frac{1}{\ln2}\left(\frac{A^2}{(1+aA)^2}
+                              -\frac{B^2}{(1+aB)^2}\right)\\
+ &=-\frac{(B-A)(A+B+2aAB)}{\ln2(1+aA)^2(1+aB)^2}.
+\end{align}
+Positive denominators give monotonicity; if \(B>A\), then \(B>0\)
+and both the first derivative is strictly positive and second derivative
+strictly negative. Consequently the largest feasible split is the unique
+maximum, including a singleton. If \(B=A\), \(F(a)=\log_2(1+A)\)
+is constant. This includes \(A=B=0\), when every rate is zero.
+\end{proof}
+For \(A>0\), the selected endpoint exactly meets weak QoS,
+\(R_w(U)=q_w\), including \(q_w=0,U=1\). For \(A=0<B\),
+\(U=1\) gives weak rate zero and strong rate \(\log_2(1+B)\).
+Equal gains do not imply equal user rates or equal targets; they only
+make the sum constant on the feasible interval. For \(A=B>0\), feasibility
+is equivalently \(q_w+q_s\leq\log_2(1+A)\).
+
+The reduced optimization is maximization of a concave scalar function over
+an interval, equivalently convex minimization of \(-F\). Strict concavity
+holds only for \(B>A\). The weak rate alone is convex and nonincreasing
+in \(a\), and the strong rate is concave and nondecreasing; their QoS
+sets become affine interval inequalities by exact algebra. No claim of
+joint convexity in channels, targets or total power is made. There are
+no alternating blocks or iterative convergence claims. Endpoint evaluation
+requires a constant number of real-arithmetic operations and elementary
+functions, hence \(O(1)\) work and storage per block in that model.
+This is not constant bit complexity or constant floating-point latency.
+
+\section{Matched equal-time OMA and conditional comparison}
+OMA serves each user for half the same block, using all the same bandwidth
+and transmit power \(P\) while active, with the same channels and targets.
+It has
+\begin{align}
+ R_w^{O}&=\tfrac12\log_2(1+A), &R_s^{O}&=\tfrac12\log_2(1+B), &
+ F^O&=R_w^O+R_s^O.
+\end{align}
+OMA is feasible iff \(R_i^O\geq q_i\) for both users, equivalently
+\(A\geq2^{2q_w}-1\) and \(B\geq2^{2q_s}-1\).
+The baseline rate is per whole block, not per active slot. If block duration
+is \(\tau\), both schemes spend normalized energy \(P\tau\):
+NOMA transmits at \(P\) throughout, OMA uses \(P\) in each disjoint
+half-slot. Neither OMA user uses \(2P\) or \(P/2\). Both occupy one
+bandwidth-block resource; noise bandwidth stays one during an active slot.
+No optimized OMA scheduling or hardware/CSI/SIC overhead adjustment is included.
+
+\begin{theorem}[Scope-wide OMA inclusion and sum comparison]
+With this model and matched reference, OMA feasibility implies NOMA
+feasibility. On the both-feasible set, \(F(a^\star)\geq F^O\).
+Equality occurs iff \(A=B\); if \(B>A\), the sum inequality is strict.
+These conclusions need no fading distribution or high-SNR approximation.
+\end{theorem}
+\begin{proof}
+First suppose \(A>0\). Let \(c(v)=1/(1+\sqrt{1+v})\) for
+\(v\geq0\). This function is decreasing, so \(c(B)\leq c(A)\).
+Solving the two individual inequalities against their OMA rates gives
+\(a\leq c(A)\) for the weak user and \(a\geq c(B)\) for the strong.
+The witness \(a_F=c(A)\) therefore attains
+\(R_w(a_F)=R_w^O\) and \(R_s(a_F)\geq R_s^O\).
+If OMA meets the fixed targets, this same witness meets them too, so it
+belongs to \(\mathcal A\). Optimality gives
+\(F(a^\star)\geq F(a_F)\geq F^O\). When \(B>A\),
+\(c(A)>c(B)\) and the strong inequality is strict since \(B>0\).
+For \(A=0<B\), OMA feasibility forces \(q_w=0\), and the separate
+witness \(a_F=1\) gives \(R_w=R_w^O=0\) and
+\(R_s=\log_2(1+B)>R_s^O\); it also meets \(q_s\).
+For \(A=B=0\), OMA feasibility requires both targets zero and the
+all-zero NOMA branch is feasible with equal zero sums. Finally if
+\(A=B>0\), every feasible NOMA sum is \(\log_2(1+A)=F^O\).
+\end{proof}
+The fairness witness is a proof device, not a substituted objective,
+new QoS choice, or selected implementation split. A sum-optimal split may
+give the weak user less than its OMA rate when its fixed target is lower
+than that OMA rate. No individual-rate dominance is asserted for the
+optimizer. The theorem says nothing about arbitrary fixed NOMA splits,
+unmatched OMA, imperfect SIC/CSI, finite-block coding or other scopes.
+
+\section{Feasibility ledger and prospective validation}
+For a later ensemble of \(N\) matched blocks, let \(I_N(j),I_O(j)\)
+be feasibility indicators, and \(n_{uv}\) count blocks with
+\((I_N,I_O)=(u,v)\), \(u,v\in\{0,1\}\). Report all four counts,
+\(N=\sum_{u,v}n_{uv}\), NOMA fraction \((n_{10}+n_{11})/N\),
+OMA fraction \((n_{01}+n_{11})/N\), and paired count \(n_{11}\).
+The exact theorem predicts \(n_{01}=0\); a numerical positive count
+requires diagnosis, not deletion. Fractions for \(N=0\) are undefined.
+Rate differences \(\Delta(j)=F(a^\star(j))-F^O(j)\) and their paired
+summary use only \(n_{11}\), with that denominator explicitly reported;
+if \(n_{11}=0\), the paired summary is undefined, not zero.
+For infeasible NOMA, retain a failure status and undefined constrained
+optimum; do not substitute zero rate. OMA's unconstrained reference rates
+may still be recorded outside its feasible set, explicitly labeled, but
+do not enter the accepted feasible-case comparison.
+
+All identities and inequalities here are exact derivations. The bounded
+symbolic file checks selected algebraic identities, limits and decidable
+curvature cases; it cannot prove every inequality, domain branch, source
+claim, or future implementation. Independent scalar-oracle validation is
+proposed in algorithm.md, not executed. Numerical cancellation in
+\(2^q-1\), subtraction near \(A=T_w\), overflow in products/exponentials,
+and misclassification near a singleton interval must be addressed in P5.
+Stable log1p/expm1 forms, scaled comparisons and higher precision are
+prospective tools; tolerances, resolutions, caps and stopping criteria
+remain unstated pending P5 approval. Never infer measured results from
+this specification.
+
+\section{Source attribution}
+The approved scope and selected idea determine the model. Source-map.md
+links the six grounded cached manuscripts with PDF page numbers and transfer
+restrictions. Xu et al. (arXiv:1504.07751, pp.1--2) supports the ordered
+Gaussian broadcast rate context and warns through fixed-split loss events.
+Zhu et al. (DOI:10.1109/JSAC.2017.2725618, pp.3,6--7) supplies a related
+boundary optimizer with extra power-order/SIC-stability restrictions that
+are not imported. Oviedo and Sadjadpour's Fair-NOMA manuscript
+(DOI:10.1109/TVT.2017.2689000, pp.2--3) supplies the matched OMA and
+individual fairness interval context. The exact arbitrary-QoS derivation,
+zero-case extensions and scoped comparison proof above are this project's
+own rederivations of established principles, not copied project results
+or an original contribution. No asymptotic numerical gain is asserted.
+\end{document}

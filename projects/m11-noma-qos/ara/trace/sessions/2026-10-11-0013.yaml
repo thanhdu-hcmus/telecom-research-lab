@@ -1,0 +1,16 @@
+id: 2026-10-11-0013
+timestamp: '2026-10-11T09:53:41.180684+00:00'
+phase: P4
+summary: P4 authorized by PI G3 decision cb4061a selecting idea-01 and rating report
+  usable. Named system_modeler completed seven draft artifacts; local schemas and
+  13 bounded symbolic checks pass. External model_critic launch was rejected before
+  process start because prior bounded permission covered P3 only. Prepared the exact
+  local P4 payload and requested explicit authorization. No independent critique,
+  G4 request, new numerical protocol or simulations. Session0012 corrects stale-state
+  errors in0011.
+provenance: ai
+evidence:
+  ara/staging/P4-parent-checks.json: 3f2934bb000377a21670cb098ee1073168765cf9a2a2b7b6738368f5a230c1e5
+  ara/staging/P4-review-effort.json: fb4be1278fe87cee7782604329a3576e39125c51e7cf4fe79dc89d933d3df4a1
+  ara/staging/P4-review-payload.json: be2d719e2fcefa062a95691720d486d07d2121e2cca68f0114cf28dd163da2a3
+  to_human/P4-review-authorization.md: 4240b8c0913fc3b7f4437a9a2b3dbc06e442df8abdbad7cd27bc6d14eb455dee

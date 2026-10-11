@@ -1,0 +1,81 @@
+- id: P1
+  statement: Exact weak-message SIC dominance.
+  expression_or_law: gamma_w_to_s-gamma_w_to_w = (1-a)*(B-A)/((1+a*A)*(1+a*B)) >= 0
+  regime: 0 <= a <= 1, finite 0 <= A <= B, including endpoints/equal/zero gains
+  test_method: Verify factor identity and denominator signs; later independent direct-SINR evaluation
+    must not find the strong decoding capacity smaller.
+  tolerance:
+    symbolic_residual: 0
+    numerical: not stated; P5 approval required
+    interpretation: Exact real-arithmetic law; finite symbolic checks cover selected identities only
+- id: P2
+  statement: Exact complete QoS feasibility interval and zero-case classification.
+  expression_or_law: 'B>0: L=Ts/B; U=1 if A=0 and qw=0, else U=min(1,(A-Tw)/(A*(1+Tw))); feasible iff
+    L<=U. B=0 feasible iff both targets zero. A=0 and qw>0 always infeasible.'
+  regime: Finite nonnegative ordered received SNRs and targets; inequalities include equality.
+  test_method: Derive from original rates; independently challenge with direct rate constraints, especially
+    singleton/zero cases. Any exact outside-interval feasible split or inside-interval violation falsifies
+    the law.
+  tolerance:
+    symbolic_residual: 0
+    numerical: not stated; P5 approval required
+    interpretation: Exact real-arithmetic law; finite symbolic checks cover selected identities only
+- id: P3
+  statement: Exact sum optimizer and total scalar curvature.
+  expression_or_law: F_prime=(B-A)/(ln(2)*(1+a*A)*(1+a*B)); F_second=-(B-A)*(A+B+2*a*A*B)/(ln(2)*(1+a*A)^2*(1+a*B)^2).
+    If feasible, U maximizes; strict uniqueness for B>A; all feasible splits tie for B=A.
+  regime: Full a interval, finite 0 <= A <= B. Equal-gain ties unique only for a singleton.
+  test_method: Check derivative factor identities and domain signs; any exact feasible better split falsifies
+    optimum. No joint-channel/target curvature is asserted.
+  tolerance:
+    symbolic_residual: 0
+    numerical: not stated; P5 approval required
+    interpretation: Exact real-arithmetic law; finite symbolic checks cover selected identities only
+- id: P4
+  statement: Exact weak-target activation at selected endpoint for positive weak SNR.
+  expression_or_law: R_w(U)=q_w when A>0 and feasible; for A=0<B, U=1 and R_w=0.
+  regime: Nonnegative arbitrary targets and nonempty interval; includes zero target/endpoints.
+  test_method: Substitute bound in rate ratio; independently evaluate weak rate at the optimizer. Equality
+    does not prove practical finite-block decodability.
+  tolerance:
+    symbolic_residual: 0
+    numerical: not stated; P5 approval required
+    interpretation: Exact real-arithmetic law; finite symbolic checks cover selected identities only
+- id: P5
+  statement: Exact OMA-feasible subset and scoped optimal sum comparison.
+  expression_or_law: OMA_feasible => NOMA_feasible; both-feasible F_star >= F_OMA, strictly > for B>A
+    and equality for B=A.
+  regime: Matched equal-time/full active-slot power OMA, ideal scalar channel/CSI/SIC and identical fixed
+    targets; no distribution or asymptotic regime.
+  test_method: Audit fairness witness proof and zero branches; a genuine exact OMA-only block or negative
+    paired optimum difference falsifies claim. No optimizer individual-rate dominance is claimed.
+  tolerance:
+    symbolic_residual: 0
+    numerical: not stated; P5 approval required
+    interpretation: Exact real-arithmetic law; finite symbolic checks cover selected identities only
+- id: P6
+  statement: Exact ledger and undefined-denominator behavior.
+  expression_or_law: N=n00+n01+n10+n11; NOMA fraction=(n10+n11)/N; OMA fraction=(n01+n11)/N; paired denominator=n11;
+    exact n01=0. Fractions undefined at N=0; paired summary undefined at n11=0.
+  regime: Any later matched finite ensemble; no N value chosen.
+  test_method: Reconstruct all categories from original indicators; any dropped instance, count mismatch,
+    OMA-only exact sample or substituted zero mean falsifies the ledger implementation.
+  tolerance:
+    symbolic_residual: 0
+    numerical: not stated; P5 approval required
+    interpretation: Exact real-arithmetic law; finite symbolic checks cover selected identities only
+- id: P7
+  statement: Prospective numerical implementation should agree with independently certified scalar oracle
+    and direct constraints.
+  expression_or_law: Analytic candidate satisfies both QoS/decoding sites; independently certified oracle
+    maximum agrees within a later approved tolerance. Narrow/singleton intervals require certificate or
+    unresolved status.
+  regime: Later P5-approved deterministic cases and matched samples, including all stated degeneracies;
+    no protocol parameters selected.
+  test_method: Separate oracle must use original SINRs/full split interval rather than copied L/U/endpoint
+    logic; better certified feasible split or candidate violation falsifies implementation. No validation
+    has been executed.
+  tolerance:
+    symbolic_residual: null
+    numerical: not stated; P5 approval required
+    interpretation: Prospective implementation validation, not a measured outcome

@@ -1,0 +1,12 @@
+id: 2026-10-11-0012
+timestamp: '2026-10-11T09:40:23.457335+00:00'
+phase: P4
+summary: 'Correction to session 2026-10-11-0011: its statements about pending canonical
+  G3, missing usability rating and no P4 start were recorded from stale assumptions
+  and are incorrect. Verified existing PI G3 decision timestamp 2026-10-11T09:38:32.320889+00:00
+  selects idea-01 and explicitly rates the G3 report usable. The phase-start command
+  already succeeded before session 0011 and the current phase is P4. The agent did
+  not approve G3 or enter a PI confirmation. Preserve the earlier mistaken record
+  and use the canonical decision and this correction.'
+provenance: ai
+evidence: {}

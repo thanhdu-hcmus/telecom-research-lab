@@ -27,7 +27,7 @@ decisions; no rating is inferred from general permission to continue.
 |---|---|---|
 | G1 | usable | PI decision `2ea3b17`; note: “Scope and synthetic profile reviewed; G1 report usable” |
 | G2 | usable | PI decision `b3709e0`; note: “Bounded P2 corpus and evidence spot-checked; G2 report usable” |
-| G3 | pending | none |
+| G3 | usable | PI decision cb4061a; idea-01 selected |
 | G4 | pending | none |
 | G5 | pending | none |
 | G6 | pending | none |
@@ -71,3 +71,25 @@ remain intact. No model, protocol or simulation has started.
 See to_human/G3-review.md and the generated G3-report.md for the concrete decision
 packet. The lab-orchestrator gate rule requires the PI's explicit G3 selection
 before P4. M11 remains in progress; M12 remains unstarted.
+
+## Current P4: model development
+
+The PI approved G3 in commit cb4061a, selecting idea-01 and recording G3 report
+usability as usable. P4 started successfully. The named system_modeler is preparing
+the exact QoS interval, optimizer, degeneracies, matched OMA comparison and
+falsifiable predictions. Independent critique and G4 remain pending. No
+implementation protocol or simulation has started.
+
+## P4 draft checks and independent review permission
+
+The named system_modeler completed seven draft artifacts. Parent schema checks
+pass (7 assumptions, 7 predictions, 40 notation entries), and all 13 bounded
+symbolic checks pass. These are local checks, not an independent critique or
+measured simulation results. The artifact review packet was regenerated after
+a pseudocode clarification.
+
+Automatic approval review rejected the isolated external model_critic launch
+before any process started because previous permission covered P3 only. The
+exact new P4 payload is prepared locally, not transmitted. Explicit bounded
+authorization is requested in to_human/P4-review-authorization.md. G4 is not
+requested; no independent verdict or numerical protocol is claimed.

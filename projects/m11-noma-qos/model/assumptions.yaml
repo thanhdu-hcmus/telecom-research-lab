@@ -1,0 +1,83 @@
+- id: A1
+  statement: Each block is a two-user single-antenna scalar ordered channel, with finite 0 <= g_w <= g_s
+    and nonnegative finite total P; no fading distribution is specified.
+  justification: Formalizes the G1 ideal scalar benchmark and includes degenerate realizations without
+    borrowing a paper distribution.
+  citation: 'Approved scope.md: Proposed comparison and Boundaries; scope.yaml inclusion; G1 decision
+    2ea3b17. Xu arxiv:1504.07751 cached PDF p.1 Section I supplies ordered scalar Gaussian BC context.'
+  consequence_if_violated: Rate formulas, SIC-order argument and sum/feasibility theorem may fail; do
+    not extrapolate to vector channels or reverse ordering.
+  test_or_relaxation: P5 validation must include equal and zero gains and reject unordered invalid inputs;
+    any MIMO/mobility/fading-model extension requires an explicit approved deviation.
+- id: A2
+  statement: Perfect instantaneous channel knowledge is available for selecting each block power split;
+    overhead and estimation error are excluded.
+  justification: Exact per-block optimization is the approved dry-run objective; this is an idealization
+    rather than a practical CSIT assertion.
+  citation: Approved scope.md Proposed comparison and Boundaries; scope.yaml inclusion; G1 decision 2ea3b17.
+    QoS limits doi:10.1109/icc.2018.8422366 cached PDF p.1 discusses practical CSIT limitations, not a
+    justification for inferring perfect CSI in every paper.
+  consequence_if_violated: An allocation based on erroneous or delayed channels can violate QoS/SIC and
+    the matched instantaneous theorem is not applicable.
+  test_or_relaxation: Keep exact CSI in this benchmark; a future error model/robust allocation requires
+    scope deviation and PI review.
+- id: A3
+  statement: 'Gaussian broadcast achievable-rate idealization: independent unit-energy codebook symbols,
+    proper unit-variance complex AWGN and unit normalized bandwidth; rates are information-theoretic whole-block
+    spectral efficiencies.'
+  justification: Makes the approved unit-noise ideal scalar degraded broadcast rate model explicit; excludes
+    finite-modulation/error-rate claims.
+  citation: Approved scope.md Proposed comparison and scope.yaml ideal scalar degraded broadcast inclusion.
+    Xu arxiv:1504.07751 cached PDF p.1 equation (1) and Gaussian/unit-variance description; Fair-NOMA
+    doi:10.1109/tvt.2017.2689000 cached PDF p.2 Section III noise and symbol-energy normalization.
+  consequence_if_violated: Physical-unit conversions or finite modulation/coding may change achievable
+    rates; these equations cannot imply packet success or finite-block performance.
+  test_or_relaxation: Check normalized units and P5 direct rate calculations; physical noise/bandwidth
+    or finite-block extensions require separately approved models.
+- id: A4
+  statement: Strong receiver first decodes the weak codeword treating its own as noise, then cancels it
+    perfectly; weak receiver treats strong signal as noise. Both weak decoding sites constrain the weak
+    rate.
+  justification: Approved ideal SIC and ordered gains make the strong weak-message capacity no smaller;
+    no additional half-power or stability restriction is needed in this ideal model.
+  citation: Approved scope.md Proposed comparison and scope.yaml ideal SIC inclusion. Fair-NOMA doi:10.1109/tvt.2017.2689000
+    cached PDF p.2 equations (1)-(3); Ding doi:10.48550/arxiv.1412.2799 cached PDF p.2 weak-message SIC
+    inequality.
+  consequence_if_violated: Residual interference or decoding error invalidates strong rate aB and can
+    break interval, optimum and OMA comparison.
+  test_or_relaxation: P5 must evaluate both decoding capacities directly, including endpoints/equal gains.
+    Imperfect SIC requires a new approved model, not a hidden margin.
+- id: A5
+  statement: Full nonnegative unit-sum power split a in [0,1], fixed arbitrary finite nonnegative individual
+    QoS q_w,q_s, and unweighted sum-rate maximization per block.
+  justification: Preserves G1 and selected idea-01; endpoint zero-rate allocations and unequal targets
+    are legitimate.
+  citation: Approved scope.md Proposed comparison; selected ideas/idea-01.yaml method_sketch and problem;
+    G3 decision cb4061a. Zhu doi:10.1109/jsac.2017.2725618 cached PDF pp.3,6-7 is related context with
+    extra restrictions explicitly not transferred.
+  consequence_if_violated: Weights, imposed a<=1/2, positive minimum powers or different QoS notions change
+    optimizer, feasibility or both.
+  test_or_relaxation: P5 must cover zero targets, all endpoints and infeasible/singleton cases; new constraints/objectives
+    require approved deviation.
+- id: A6
+  statement: OMA serves each user in exactly half of the same constant-channel block at full identical
+    active-slot power P and identical unit bandwidth/noise, channels and whole-block QoS.
+  justification: Matched duration/bandwidth/energy makes the intended baseline comparison well-defined.
+  citation: Approved scope.md Proposed comparison and scope.yaml equal-time OMA inclusion. Fair-NOMA doi:10.1109/tvt.2017.2689000
+    cached PDF pp.1-2 Section III supplies half-period full-power reference.
+  consequence_if_violated: Using 2P, P/2, a different channel block, adaptive slots or unmatched QoS changes
+    the fairness witness and comparison.
+  test_or_relaxation: P5 must independently audit rate factor 1/2 and energy P*tau; other schedulers need
+    a separately approved baseline.
+- id: A7
+  statement: Report all four joint feasibility categories and their denominators; accepted paired sums
+    use only both-feasible blocks and no infeasible optimum is silently set to zero.
+  justification: Preserves approved comparison safeguards and distinguishes rates, necessary bounds and
+    feasibility.
+  citation: Approved scope.md Proposed comparison; scope.yaml exclusion of ignored infeasibility; idea-01.yaml
+    expected_contributions. QoS limits doi:10.1109/icc.2018.8422366 cached PDF pp.3-4 distinguishes necessary
+    interference bounds and success/capacity claims.
+  consequence_if_violated: Dropped failures or wrong denominators bias feasibility and rate comparisons
+    and can create a false benefit claim.
+  test_or_relaxation: P5/P6 ledger audits must reconstruct total and paired counts; zero denominators
+    produce undefined summaries, and numerical ambiguity is retained separately pending protocol handling.

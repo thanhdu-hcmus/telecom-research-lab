@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "SIC-difference-factor",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "id": "first-derivative-factor",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "id": "second-derivative-factor",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "id": "weak-bound-rate-ratio",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "id": "strong-bound-sinr",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "id": "fairness-weak-ratio",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "id": "fairness-strong-ratio",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "id": "equal-gain-constant-sum",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "id": "zero-strong-fraction-limit",
+      "passed": true,
+      "detail": "log(A + 1)/log(2)"
+    },
+    {
+      "id": "all-strong-fraction-limit",
+      "passed": true,
+      "detail": "log(B + 1)/log(2)"
+    },
+    {
+      "id": "zero-total-power-limit",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "id": "strong-rate-concavity",
+      "passed": true,
+      "detail": "Matrix([[-B**2/((B*a + 1)**2*log(2))]])"
+    },
+    {
+      "id": "weak-rate-convexity",
+      "passed": true,
+      "detail": "Matrix([[A**2/((A*a + 1)**2*log(2))]])"
+    }
+  ],
+  "input_sha256": "51b14ababb3339b7871cf5be146ce9a320c2b486cc1c6a6148886a6804732bfb"
+}

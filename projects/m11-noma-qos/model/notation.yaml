@@ -1,0 +1,162 @@
+i:
+  definition: User index w (weak) or s (strong)
+  unit: index
+  dimension: scalar categorical
+w,s:
+  definition: Labels of weaker and stronger ordered scalar receivers
+  unit: index
+  dimension: categorical labels
+P:
+  definition: Finite total linear transmit power divided by unit normalized receiver-noise power; P >=
+    0. No physical watts/dBm input selected.
+  unit: dimensionless
+  dimension: scalar real
+h_i:
+  definition: Constant complex scalar channel coefficient during one block
+  unit: normalized channel amplitude
+  dimension: scalar complex
+g_w,g_s:
+  definition: Squared channel magnitudes |h_i|^2, ordered 0 <= g_w <= g_s
+  unit: dimensionless
+  dimension: scalar real
+A:
+  definition: Full-power received weak-user SNR P*g_w; A >= 0
+  unit: dimensionless
+  dimension: scalar real
+B:
+  definition: Full-power received strong-user SNR P*g_s; B >= A
+  unit: dimensionless
+  dimension: scalar real
+d:
+  definition: Nonnegative difference B-A, used in symbolic order-preserving expressions
+  unit: dimensionless
+  dimension: scalar real
+q_w,q_s:
+  definition: Fixed nonnegative individual QoS spectral efficiency, defined over the whole block
+  unit: bit/s/Hz
+  dimension: scalar real
+T_w,T_s:
+  definition: Nonnegative target SINRs 2^(q_i)-1
+  unit: dimensionless
+  dimension: scalar real
+T:
+  definition: Generic weak target SINR T_w in bounded symbolic checks
+  unit: dimensionless
+  dimension: scalar real
+a:
+  definition: Strong-user power fraction in [0,1]; weak-user fraction is 1-a
+  unit: dimensionless
+  dimension: scalar real
+s_w,s_s:
+  definition: Independent Gaussian codebook symbols of unit average squared magnitude
+  unit: normalized amplitude
+  dimension: scalar complex
+x:
+  definition: Transmitted superposition signal with average squared magnitude P
+  unit: normalized amplitude
+  dimension: scalar complex
+y_i:
+  definition: Received scalar signal h_i*x+z_i
+  unit: normalized amplitude
+  dimension: scalar complex
+z_i:
+  definition: Proper complex unit-variance AWGN; real and imaginary variances 1/2
+  unit: normalized amplitude
+  dimension: scalar complex random variable
+gamma_w_to_w,gamma_w_to_s,gamma_s_to_s:
+  definition: Weak-message SINRs at weak/strong receiver and post-SIC strong-message SINR
+  unit: dimensionless
+  dimension: scalar real
+R_w,R_s:
+  definition: NOMA achievable boundary spectral efficiencies per whole block
+  unit: bit/s/Hz
+  dimension: scalar real
+C_w_at_s:
+  definition: Weak-message decoding capacity at strong receiver, evaluated independently for SIC checks
+  unit: bit/s/Hz
+  dimension: scalar real
+F:
+  definition: Sum of NOMA boundary rates at a
+  unit: bit/s/Hz
+  dimension: scalar real
+F_prime,F_second:
+  definition: First/second derivatives of F with respect to dimensionless a
+  unit: bit/s/Hz
+  dimension: scalar real
+L,U:
+  definition: Exact lower/upper feasible strong-power fraction endpoints, with zero-product branches
+  unit: dimensionless
+  dimension: scalar real
+mathcal_A:
+  definition: 'QoS-feasible split set: closed interval or empty set'
+  unit: dimensionless
+  dimension: subset of real line
+a_star:
+  definition: Chosen sum-optimal split U when feasible; undefined when infeasible
+  unit: dimensionless
+  dimension: scalar real
+F_star:
+  definition: Constrained optimal sum rate; undefined when NOMA infeasible
+  unit: bit/s/Hz
+  dimension: scalar real
+R_w_OMA,R_s_OMA,F_OMA:
+  definition: Matched equal-time OMA individual/sum efficiencies per whole block
+  unit: bit/s/Hz
+  dimension: scalar real
+c(v):
+  definition: Fairness bound function 1/(1+sqrt(1+v)) for v >= 0
+  unit: dimensionless
+  dimension: scalar real function
+v:
+  definition: Generic nonnegative received SNR argument to c
+  unit: dimensionless
+  dimension: scalar real
+a_F:
+  definition: Fairness witness c(A) for A>0, separately 1 for A=0<B; used only in proof
+  unit: dimensionless
+  dimension: scalar real
+tau:
+  definition: Common block duration, used only to state matched energy
+  unit: normalized time
+  dimension: scalar real
+N:
+  definition: Unspecified number of later matched blocks; no sample count chosen
+  unit: count
+  dimension: nonnegative integer
+j:
+  definition: Later matched block index
+  unit: index
+  dimension: positive integer
+I_N(j),I_O(j):
+  definition: NOMA/OMA exact feasibility indicators for block j
+  unit: dimensionless
+  dimension: binary scalar
+u,v (ledger):
+  definition: Binary feasibility values in n_uv; v here is categorical, distinct from generic SNR v
+  unit: index
+  dimension: binary scalar indices
+n_uv:
+  definition: Number of later blocks with NOMA indicator u and OMA indicator v
+  unit: count
+  dimension: nonnegative integer
+Delta(j):
+  definition: Paired optimal NOMA minus OMA sum, only on both-feasible blocks
+  unit: bit/s/Hz
+  dimension: scalar real
+K:
+  definition: Unspecified number of independent scalar-oracle candidate evaluations; not a chosen grid
+    count
+  unit: count
+  dimension: nonnegative integer
+log2,ln:
+  definition: Base-two and natural logarithms, respectively
+  unit: dimensionless
+  dimension: scalar real functions on positive arguments
+CN(0,1):
+  definition: Proper unit-complex-variance Gaussian distribution; real/imaginary variance 1/2
+  unit: normalized amplitude
+  dimension: probability distribution
+E[.]:
+  definition: Expectation used for symbol-energy normalization, not a selected fading ensemble
+  unit: same unit as its argument
+  dimension: scalar operator

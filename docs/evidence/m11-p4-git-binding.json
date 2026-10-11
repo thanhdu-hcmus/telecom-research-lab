@@ -1,0 +1,727 @@
+{
+  "timestamp": "2026-10-11T09:55:00.183422+00:00",
+  "status": "PASS",
+  "bound_artifacts": 101,
+  "checks": [
+    {
+      "gate": "G1",
+      "file": "projects/m11-noma-qos/profile.yaml",
+      "bound_sha256": "25f0f8ea5908d46c6564ba4c667aa576b867da6e3f72a3918bc595efd49c4cab",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G1",
+      "file": "projects/m11-noma-qos/scope.md",
+      "bound_sha256": "d58c04fcf064de9299c77d73cab651075e43805c5d912107accf53f9b39d1625",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G1",
+      "file": "projects/m11-noma-qos/scope.yaml",
+      "bound_sha256": "c5c3a637d6a1a374b8b760935958414a68c8d32c648c030c573f8f94b5945df4",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/baselines/candidates.yaml",
+      "bound_sha256": "6390a2fbe1bf15b601c5fc5c5ab068703b0b44dda149e852f6539a61807d9083",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/candidates.jsonl",
+      "bound_sha256": "4a1c0882cc414a7ce71ad8b13a2d3e21634f7ec1ea2dcb5682be41e44dd9a055",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/cards/r_arxiv_1504_07751_536e29b9bda8.yaml",
+      "bound_sha256": "d4858de6d8453e9ffabcb485a0f9814d9b912c680981ded60a5e2327ec915432",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/cards/r_doi_10_1109_comst_2016_2621116_2ef25c3820bc.yaml",
+      "bound_sha256": "42cd35cc4c8baae09c8c119b1310aca56e60c73f5cbe1c42072842febb06383f",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/cards/r_doi_10_1109_icc_2018_8422366_80611aa7eda1.yaml",
+      "bound_sha256": "24fcbd52fa7b145c32705e3006063eb4286aa7a82c10b6c8874a94324881a2a2",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/cards/r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.yaml",
+      "bound_sha256": "e7e461610f9ad1326ae53bd6701a01491d50e8d351f8a9b62c5b88a8c4a40a07",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/cards/r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.yaml",
+      "bound_sha256": "1d17cbd898c5b477dff7420190e2f0b51b6a6e41d693a249e4c87e9f38da181b",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/cards/r_doi_10_48550_arxiv_1412_2799_1f2a4bca8547.yaml",
+      "bound_sha256": "ec0c5ae2bfc24e4b77f16c3c8a0a9ad6619b9eff8ac2bc95a6d9290ded7efe94",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/coverage.md",
+      "bound_sha256": "f413414d691e3bd082c36171bc39f289365d80dedc35dae11dcc2dfa18160362",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/gap-matrix.csv",
+      "bound_sha256": "5a586ecb784cadd60398a1439b05c155f10538789d7986b9dc039732e1c6790d",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/gaps.md",
+      "bound_sha256": "04b649fddf1683efb15e8a149e2ae11517262c3765232efaaa23dcdaa161952e",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/library.jsonl",
+      "bound_sha256": "f9de5cd8bbe465044749cf14d8a2a991effd8363372fa737bfe812669bf68369",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/prisma.json",
+      "bound_sha256": "4daf5e05b00db0aa234db9c43128a9d80fca51cbbb85d250b1ebd9c1030d5f99",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/query-plan.yaml",
+      "bound_sha256": "af18d89b0e90363aecc3215c3b23cf128295e07dcf97ee3175d171b180ef8317",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/retrieval-report.json",
+      "bound_sha256": "169ec4f00705b46c98b7164101d65ce0a5fc7f5ae47cb709e51f22fee1047d7f",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/screening.csv",
+      "bound_sha256": "12867728e76bca12c6d9e2ff5150cd7fcd25f9b1f511a9c9519de78d3bb14a47",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/screening.yaml",
+      "bound_sha256": "f4e12ea7a32858365e08471db4ef5374fbc58b9e7486f0b8598d2370f5cc3539",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/search-records.jsonl",
+      "bound_sha256": "c323bbae077046d4b8308fa73e0f563ff3cd0eafb87945f6129787c564e6207b",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/search-report.json",
+      "bound_sha256": "b4f4248607433c87ed5350489d3ae9972422fa55d41a6141ec736cfc6ab2a923",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G2",
+      "file": "projects/m11-noma-qos/literature/survey.md",
+      "bound_sha256": "8d82ac2733c32c4c0b883901bba1565d00e0bc0a1ac6914b3d2f66bb44a8563d",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "config/ranking.yaml",
+      "bound_sha256": "10d6707284c0e1bc3627224edbb0e04479dca8393e321239281b093d5bbd2365",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/design-options.md",
+      "bound_sha256": "09c9d83c0a9b70aa57179fb05938462905ac5db446589f77bd7e2e39363cf307",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-01.yaml",
+      "bound_sha256": "e782190efed7a7d832030395c638af4a5e05a676709c9d938bea21ccdd1fbae1",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-02.yaml",
+      "bound_sha256": "b9707dfc62d0c851a54ee0d0e032db92f2cb96ecf82cf81e1056f5b19c8ebf0f",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-03.yaml",
+      "bound_sha256": "d2db4021b926e3644a0ef25112db61418dfca324b8b7a91648aad5ce75f0ceac",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-04.yaml",
+      "bound_sha256": "cb9e3e3eb146ba59e27154050e04156137170b36233c6d2cf314cef1097e27dc",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-05.yaml",
+      "bound_sha256": "c2bd55bb2b55deabd1e537ad6220531a48922cc45749e3f617d5e84c513df840",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-06.yaml",
+      "bound_sha256": "a71b29f13c82352b99cdf033f7013145d73113992940d66fbcc5d67c56745764",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-07.yaml",
+      "bound_sha256": "4565836574f16710524a7221aa625a4155c779cc9040a222830d81f471e32f3c",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-08.yaml",
+      "bound_sha256": "02e35c48e7d3d7a04414e33dbbe1c489568cfa5b8d123f8342255229e97606ea",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-09.yaml",
+      "bound_sha256": "173a47b17f57e523d0b4b0640728c24ed088bd8d861a1619a7d41ca441dcc2c4",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-10.yaml",
+      "bound_sha256": "9f5ee67e38997c29251b097fe7a72b4fd4e2a841a088ec5d232558962a808b88",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-11.yaml",
+      "bound_sha256": "e0d3bf4fba3952a772320f89b1cd480e82cd0f5329bd7004ddbd7f006065c6ab",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-12.yaml",
+      "bound_sha256": "7ac12996889761356f4a2b318da88e7be77213abab9906baa0b8f348f6a54f33",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-13.yaml",
+      "bound_sha256": "2ac062c24adb1e3d096ef25cb934f68945fb0885b5014e95f2f3eb589919b423",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-14.yaml",
+      "bound_sha256": "5f5fd40c0ab4a0e029f35abc5cf871b04167112f4fa645d7c92008aff60182f1",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/idea-15.yaml",
+      "bound_sha256": "d5657deeb79f79145ffe9fb63be5c7d1ad9a6ffb38ad1459cbff75452ee7c261",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-01.yaml",
+      "bound_sha256": "1e88f5fd496942ce5437dd33f80c5287d3be58321f1f98dfd8b517976be9d15b",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-02.yaml",
+      "bound_sha256": "ba8e4484a13527b105491b3ab346581e053f6921436638db83fe9ecf935ee054",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-03.yaml",
+      "bound_sha256": "0d994f8c08fa8d03e5ce0a709a3e3f7494c8b34286df0cd5d7b39bcce687e23a",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-04.yaml",
+      "bound_sha256": "e3114b5021156fc9afcbe4145836b54303c04c8f29ad12dfa764564c90723244",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-05.yaml",
+      "bound_sha256": "9826249deb3b278314881e4d6f3e7c4b23191480fd06650aac494d12a60024ca",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-06.yaml",
+      "bound_sha256": "ad55736a7250bd5dbcb5aa2af307f70f3c94ef4f091d17a7abd1d3409edad998",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-07.yaml",
+      "bound_sha256": "5496ea4fc8b1f2f72dae040d1d9d5d58bfcfc00b81a8dfd4c7962966e21543cb",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-08.yaml",
+      "bound_sha256": "1cd3d6548387d2d1a2c3084fdd4c34c2b79c736039863745fb85642d78824663",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-09.yaml",
+      "bound_sha256": "8f7422c6618dc237033c615e998118886a9c683b04df64a1daec0db6f8c36bb7",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-10.yaml",
+      "bound_sha256": "896a2c203a1ae3c451579d876f1a4db30fb369f562474764b535fc4d06e7c47d",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-11.yaml",
+      "bound_sha256": "ea044714ec16e3e8a12dd5bf6ecd17954c4d58a3d5bd6a3bf43644e73943416e",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-12.yaml",
+      "bound_sha256": "1667e2b5648308d1eacdbf679a8ce97af1593ef70a61a0d18333ca85cacebe70",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-13.yaml",
+      "bound_sha256": "dec3fc6a0a1c58e9a0da940a9a4db60a34d0e16e491b93a780b3326e39f8d154",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-14.yaml",
+      "bound_sha256": "12da2c2259460e5eeb25cb0591f81e9b4138acc9feb38a3ae5b5aa46dac64270",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/idea-15.yaml",
+      "bound_sha256": "7a6747ab42c743aba2d101929ea12ae3fe1abc508b20c28649f206328a2b0b2a",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/reviewer-search-receipts.json",
+      "bound_sha256": "50ffaec5edf8b724da5a6e64fc8ea239df0102de8349e8da09550fa3b8464cd2",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/crossref-individual-qos.json",
+      "bound_sha256": "b93c80fafa3fe7517f9838395c6aaa35aef81cd2576e88cc0565709f2ccce980",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-01-code.json",
+      "bound_sha256": "eac33bb112593cc0af4d7dbda0d3722e5db9e09ef94135b2cb5fbe24405bcb2c",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-01-scholar.json",
+      "bound_sha256": "07b0401d933632757913ebdb8dada9c05b1f3d873075b68c16ca0cf834e8bb1e",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-02-code.json",
+      "bound_sha256": "b75c1391d28c038b6bd078765b8a1067727d1294187dc72c18b6c3d4f04a2140",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-02-scholar.json",
+      "bound_sha256": "0be41c88b2fd9fb2fcab9b8f2e72700b16d7b33afcf3860ace51af74a7de11f8",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-03-code.json",
+      "bound_sha256": "5eaae6a9fed2fed2d2af9b860553dd64300948ebe9b4d3e59b909b483514e383",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-03-scholar.json",
+      "bound_sha256": "b4751b0f69547e6474adfa59d2cb42df5924035c04e978eb8f599c6db23c31e6",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-04-code.json",
+      "bound_sha256": "6003ce50a16e31dbf84b947a5abd389554e9dbe58cad968d0d4a37fc73b4cc96",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-04-scholar.json",
+      "bound_sha256": "709c438da6a759ad8aa37287d18887d3e3190bdd32e7fce3d9f94db27a563abf",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-05-code.json",
+      "bound_sha256": "65acdf7fb4ae11351cb0c04f222bc5a0dc9f7a479e9dea1ae9255753f51de775",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-05-scholar.json",
+      "bound_sha256": "11a5f5daa6390ef867d532add42819b9836e42b2f68b905ff508cc35d4dc4e96",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-06-code.json",
+      "bound_sha256": "097e5fed53657da80ded8f22944afcad6b40908013445f5e11fe28499fd940c9",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-06-scholar.json",
+      "bound_sha256": "51e1f357a2cf0043f6faf4b8e792f9976693bdb7efde17aac82be30c8aa86da7",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-07-code.json",
+      "bound_sha256": "8f7a8b0aa923ee145ef46c577bab8585844f86c80a5f5921a288b2eadf3ee7e6",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-07-scholar.json",
+      "bound_sha256": "c5e225ec56a812bf3f2d5c17b12593779543d7fafa18571fc8d87a306e78b664",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-08-code.json",
+      "bound_sha256": "3f96915f5b39c5f5600c66391d05ad5720c6e26d119a4b7f44e78cce5d1b4a4b",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-08-scholar.json",
+      "bound_sha256": "4dff933bc54889b7a00ae9afe5b4b4b7c0b2b4fe512b955c767b9bce702baac1",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-09-code.json",
+      "bound_sha256": "4130159779305a7ce988ba57c48482f8988446371c66acb17473810a373d4dd0",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-09-scholar.json",
+      "bound_sha256": "f72eee3a10b0cc0fbeb8b617f31530e8a4da9e203ace98330abe9f348c07e3b3",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-10-code.json",
+      "bound_sha256": "6ac09e22aece2d66b54500e5006704bef7a7533855f5fce334eed98c4dcfc364",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-10-scholar.json",
+      "bound_sha256": "479534dd66f4bc7fb09173a088a75cdd298aede97b1dd2d07b5045e25b64673e",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-11-code.json",
+      "bound_sha256": "671568b7804e82819eb9641c7520f6804b0023e69df0f5e3b755bff7bf5a6453",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-11-scholar.json",
+      "bound_sha256": "b1ac6974b00f1fc21cf34cf70982d4a9506ed88414f6d8c36f0a4fe0f9cf1505",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-12-code.json",
+      "bound_sha256": "8fbd87d50f4cd22d0e4fa8091303e9a41384309519d37418bb8e3764d7bcc490",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-12-scholar.json",
+      "bound_sha256": "45b17700bd8923b1475be6fe94e1f9caa7745ba475b6941f558e3a79f8eff5e9",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-13-code.json",
+      "bound_sha256": "acc14b5a346bc68767df18b73cef7b6ad3373fdb7faf22e4e85820fae06904a7",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-13-scholar.json",
+      "bound_sha256": "2ec938802bf9acecdba4a1b4f6ab56c3fb57728c8c4ecdc6eb9a627d7e412a16",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-14-code.json",
+      "bound_sha256": "6b0f3082c50457858604eebdb2a3406507d1d7ef465d5838330715019a6506d1",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-14-scholar.json",
+      "bound_sha256": "77e832d29e68d0564f813134a1b35c1af10bfcbf0e950e251b8ad6e5e42a580f",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-15-code.json",
+      "bound_sha256": "5ff3e4bd33b6b249a878a8665798486ae75c6ae0f8f398adbe44fd5e808218a7",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/idea-15-scholar.json",
+      "bound_sha256": "e7dea5bf224b0a6bcfcc3fd8d5726e6132306c4a163a5301fd8ed9d541be1f37",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/refine-downlink-code.json",
+      "bound_sha256": "43bebd388001492589290820abf44ab218ebb089efbbcde797c53562eb9f231a",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/refine-individual-qos.json",
+      "bound_sha256": "6313ad39dbc84da5a7162cbd4b5989abb78cdf7c07ae64a9044fa3d991a730cf",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/refine-information-theory.json",
+      "bound_sha256": "86a8b38014d1060fb817e6b95e9137e4852751932f076209acb89dd593bd65c6",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/refine-known-qos-doi.json",
+      "bound_sha256": "5227441479fd8c999f94792e9a2a2626ea5d092ae331235ed6afc27a5bbea229",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/refine-survey.json",
+      "bound_sha256": "3f5b54974928193b3a604908c2145e210cd14028487a77825b03605655f286e4",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/refine-user-pairing.json",
+      "bound_sha256": "2ebf3c45e30db3b06ce5eed43fad419cc0d0293b0b2106f01b30476b1d468afc",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/refine-wireless-qos-code.json",
+      "bound_sha256": "35fe01ad58d7ace94ad6898f80791c26a74256fbbb5980aee805eb30be6e082c",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/shared-boundary.json",
+      "bound_sha256": "b6f253dbbb06ad2712c626ee0ae697b3172b33633bf55fbfbec5aa9b5dfc8f59",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/shared-core.json",
+      "bound_sha256": "a9ac52456dc2acd865331e6618522fc936804b0158f9dd92fa4688d561a9661e",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/shared-fairness.json",
+      "bound_sha256": "3c12c6509febd62e7b0bbce20b10bc80bf9f08ded4b474bfef889f802c786294",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/novelty/search-receipts/shared-qos.json",
+      "bound_sha256": "7868dd4f9270c88bcfdde3922d7acfe035c0172ae87417237f52f975e607e8e7",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/ranking.json",
+      "bound_sha256": "129cfa44a0a7497f9e041d426e982f4fd59dc3d9e5f1801e76994f13db3f65ea",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/ranking.md",
+      "bound_sha256": "324bac6f9d7d5856266bdd6fa4d4907d97b4eb0062e2b44141ff64c1ed0f5a07",
+      "working_matches": true,
+      "git_index_matches": true
+    },
+    {
+      "gate": "G3",
+      "file": "projects/m11-noma-qos/ideas/sensitivity.json",
+      "bound_sha256": "2c0311fcd4e25bc91a8bed9a97bf6b96d297df51e2cd89659115b3e95fa65158",
+      "working_matches": true,
+      "git_index_matches": true
+    }
+  ],
+  "draft_model_hashes": {
+    "projects/m11-noma-qos/model/algorithm.md": "ff42cf2a3ca937793af9e7aef6596c1edd302e1a46451c64aec0d9b26bb76f74",
+    "projects/m11-noma-qos/model/assumptions.yaml": "8e70ba208872105e8a34b0c5f247f3fe7f8e89f741e449934ed9654d32ea21a5",
+    "projects/m11-noma-qos/model/check-results.json": "71ee6408378ac0238dcd0c85e2b9671e335972b4103cef1dcf9e0b3aa744207e",
+    "projects/m11-noma-qos/model/checks.yaml": "51b14ababb3339b7871cf5be146ce9a320c2b486cc1c6a6148886a6804732bfb",
+    "projects/m11-noma-qos/model/model-spec.tex": "c885769e4d0d191bd82e11891de912340a7baa64af49d9b8c4584b4a3204f76e",
+    "projects/m11-noma-qos/model/notation.yaml": "2e937f7f98e3240f476471c44cc2756afdfe77079aa8f5845cfe1bcfe920de22",
+    "projects/m11-noma-qos/model/predictions.yaml": "b18859e62c3a5306b9b341331b5acd7e7ec5fb93b5fbc3cf82032fb8959a6fd2",
+    "projects/m11-noma-qos/model/source-map.md": "88469e412cb23526941c2cda86efb3bca9be2f5f097d09ad021ddd54f6026d1d"
+  },
+  "selected_idea": "idea-01",
+  "G4_status": "not requested; independent critique pending external authorization",
+  "method": "Read-only file and Git index digests; no gate operations"
+}

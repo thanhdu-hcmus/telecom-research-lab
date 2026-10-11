@@ -1,0 +1,86 @@
+symbols:
+  a:
+    nonnegative: true
+  A:
+    nonnegative: true
+  B:
+    nonnegative: true
+  d:
+    nonnegative: true
+  T:
+    nonnegative: true
+  P:
+    nonnegative: true
+  g_w:
+    nonnegative: true
+  g_s:
+    nonnegative: true
+scope: Bounded algebraic aid only. B=A+d encodes ordering in selected identities; upper a<=1, denominator
+  signs, target branches, theorem strictness and full inequalities are proved in model-spec, not inferred
+  from check count. Curvature Hessians here cover component/zero-weak-SNR cases, while the full objective
+  second derivative is factored explicitly.
+checks:
+- id: SIC-difference-factor
+  kind: identity
+  expression: (1-a)*(A+d)/(1+a*(A+d))-(1-a)*A/(1+a*A)
+  expected: (1-a)*d/((1+a*A)*(1+a*(A+d)))
+- id: first-derivative-factor
+  kind: identity
+  expression: (A+d)/(log(2)*(1+a*(A+d)))-A/(log(2)*(1+a*A))
+  expected: d/(log(2)*(1+a*A)*(1+a*(A+d)))
+- id: second-derivative-factor
+  kind: identity
+  expression: (A**2/(1+a*A)**2-(A+d)**2/(1+a*(A+d))**2)/log(2)
+  expected: -d*(2*A+d+2*a*A*(A+d))/(log(2)*(1+a*A)**2*(1+a*(A+d))**2)
+- id: weak-bound-rate-ratio
+  kind: identity
+  expression: (1+A)/(1+((A-T)/(A*(1+T)))*A)
+  expected: 1+T
+  regime: A>0; identity is checked on its rational domain, zero branch separately specified
+- id: strong-bound-sinr
+  kind: identity
+  expression: (T/B)*B
+  expected: T
+  regime: B>0; T denotes generic nonnegative target here
+- id: fairness-weak-ratio
+  kind: identity
+  expression: (1+A)/(1+A/(1+sqrt(1+A)))
+  expected: sqrt(1+A)
+- id: fairness-strong-ratio
+  kind: identity
+  expression: 1+B/(1+sqrt(1+B))
+  expected: sqrt(1+B)
+- id: equal-gain-constant-sum
+  kind: identity
+  expression: (log(1+A)-log(1+a*A)+log(1+a*A))/log(2)
+  expected: log(1+A)/log(2)
+- id: zero-strong-fraction-limit
+  kind: limit
+  expression: (log(1+A)-log(1+a*A)+log(1+a*B))/log(2)
+  variable: a
+  at: 0
+  expected: log(1+A)/log(2)
+- id: all-strong-fraction-limit
+  kind: limit
+  expression: (log(1+A)-log(1+a*A)+log(1+a*B))/log(2)
+  variable: a
+  at: 1
+  expected: log(1+B)/log(2)
+- id: zero-total-power-limit
+  kind: limit
+  expression: (log(1+P*g_w)-log(1+a*P*g_w)+log(1+a*P*g_s))/log(2)
+  variable: P
+  at: 0
+  expected: '0'
+- id: strong-rate-concavity
+  kind: hessian
+  expression: log(1+a*B)/log(2)
+  variables:
+  - a
+  curvature: concave
+- id: weak-rate-convexity
+  kind: hessian
+  expression: (log(1+A)-log(1+a*A))/log(2)
+  variables:
+  - a
+  curvature: convex

@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-11T09:52:33.824391+00:00",
+  "status": "PASS",
+  "assumptions": 7,
+  "predictions": 7,
+  "notation_entries": 40,
+  "symbolic_checks": 13,
+  "model_hashes": {
+    "model/algorithm.md": "ff42cf2a3ca937793af9e7aef6596c1edd302e1a46451c64aec0d9b26bb76f74",
+    "model/assumptions.yaml": "8e70ba208872105e8a34b0c5f247f3fe7f8e89f741e449934ed9654d32ea21a5",
+    "model/check-results.json": "71ee6408378ac0238dcd0c85e2b9671e335972b4103cef1dcf9e0b3aa744207e",
+    "model/checks.yaml": "51b14ababb3339b7871cf5be146ce9a320c2b486cc1c6a6148886a6804732bfb",
+    "model/model-spec.tex": "c885769e4d0d191bd82e11891de912340a7baa64af49d9b8c4584b4a3204f76e",
+    "model/notation.yaml": "2e937f7f98e3240f476471c44cc2756afdfe77079aa8f5845cfe1bcfe920de22",
+    "model/predictions.yaml": "b18859e62c3a5306b9b341331b5acd7e7ec5fb93b5fbc3cf82032fb8959a6fd2",
+    "model/source-map.md": "88469e412cb23526941c2cda86efb3bca9be2f5f097d09ad021ddd54f6026d1d"
+  },
+  "independent_critique": "not completed; bounded external authorization pending",
+  "simulations_run": false
+}

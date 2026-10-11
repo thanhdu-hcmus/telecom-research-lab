@@ -91,3 +91,25 @@ remain intact. No model, protocol or simulation has started.
 See to_human/G3-review.md and the generated G3-report.md for the concrete decision
 packet. The lab-orchestrator gate rule requires the PI's explicit G3 selection
 before P4. M11 remains in progress; M12 remains unstarted.
+
+## Current P4: PI selection verified
+
+Canonical G3 decision cb4061a selects idea-01 and rates the report usable.
+P4 phase start passed. Earlier P3 pending/selection statements above describe
+the pre-decision state. Model artifacts and independent critique are in progress;
+no approved G4 model, protocol or simulation exists yet. Provenance session 0012
+corrects the stale-state assertions mistakenly recorded in session 0011.
+
+## P4 draft checks and independent review permission
+
+The named system_modeler completed seven draft artifacts. Parent schema checks
+pass (7 assumptions, 7 predictions, 40 notation entries), and all 13 bounded
+symbolic checks pass. These are local checks, not an independent critique or
+measured simulation results. The artifact review packet was regenerated after
+a pseudocode clarification.
+
+Automatic approval review rejected the isolated external model_critic launch
+before any process started because previous permission covered P3 only. The
+exact new P4 payload is prepared locally, not transmitted. Explicit bounded
+authorization is requested in to_human/P4-review-authorization.md. G4 is not
+requested; no independent verdict or numerical protocol is claimed.
