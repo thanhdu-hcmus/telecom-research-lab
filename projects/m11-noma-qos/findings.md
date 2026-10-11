@@ -167,3 +167,22 @@ G5 automated checks pass; review to_human/G5-review.md and G5-report.md. The
 lab-orchestrator rule requires the PI G5 decision before independent P6
 verification. M11 remains in progress; M12 remains unstarted. Earlier preparation
 and pending-test sections are historical. Approved G1-G4 bindings remain intact.
+
+## Current P6: G5 approved; framework repair awaits PI rewind
+
+PI commit b289a06 records G5 approval. Native P6 phase start passed, but the
+entrypoint preflight stopped before any verifier ran: the protocol's `verifier`
+key is not recognized by the framework's `verification_entrypoint` reader.
+An isolated compatibility patch preserves the native independence/pinning
+checks and rejects conflicting keys. A bounded 3600-second execution budget is
+also proposed; no actual P6 timeout is claimed. The original-code failed trials
+are retained, seven final targeted tests pass, and the isolated full regression
+passes all 97 tests. Ruff passes. All 51 canonical locked inputs remain unchanged.
+
+Review to_human/P6-repair.md and ara/staging/P6-fix-preparation.json. Applying the
+fix changes a locked framework input; the PI-only canonical rewind to P5 must
+precede relocking and fresh manifest runs. Existing data will be archived by the
+rewind. G1-G5 currently remain approved; G6/G7 are not started. No independent
+P6 result, external reviewer verdict or scientific acceptance is claimed. M11
+remains in progress; M12 remains unstarted. Earlier pending statements above
+are historical.

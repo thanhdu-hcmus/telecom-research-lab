@@ -47,3 +47,7 @@
 - P5 provenance session 2026-10-11-0020 records the Git transport correction. The unchanged bound SVG bytes now match the Git index. Read-only final consistency checks passed for 1,001 indexed gate-bound artifacts and 290 locally retained raw CSVs; approved G1-G4 bindings remain intact.
 
 - 2026-10-11T16:16:08.874774+00:00 — PI approve G5: P5 runs and numerical limits reviewed; G5 report usable
+
+- 2026-10-11T16:18:12.679013+00:00 — Entered P6
+
+- 2026-10-11T16:39:53.000794+00:00 — P6 entrypoint preflight implementation-bug; isolated repair prepared with 7 targeted and 97 full regression tests PASS; all 51 locked inputs unchanged; awaiting PI-only rewind P5 before applying fix. No scientific verifier executed or G6 requested.

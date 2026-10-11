@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-11T14:19:01.121890+00:00",
+  "updated_at": "2026-10-11T16:36:49.940604+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
   "active_milestone": "M11",
-  "status": "m11_g5_review_pending",
+  "status": "m11_p6_repair_awaiting_pi_rewind",
   "verification_complete": true,
   "pi_approval": {
-    "quote": "Approve M0, continue M1–M10 automatically, and create the new private repository.",
+    "quote": "Approve M0, continue M1\u2013M10 automatically, and create the new private repository.",
     "scope": "M0 acceptance and software build M1-M10; no scientific gate approval"
   },
   "milestones": {
@@ -28,7 +28,7 @@
     "G2": "approved",
     "G3": "approved",
     "G4": "approved",
-    "G5": "pending",
+    "G5": "approved",
     "G6": "not_started",
     "G7": "not_started"
   },
@@ -38,7 +38,7 @@
     "Run independent reviewers in separately configured read-only root sessions; verify shell enforcement before L4 acceptance"
   ],
   "unresolved": [
-    "M11 G5-G7 require remaining phase artifacts and PI gate decisions",
+    "M11 requires PI rewind P5 for a tested locked-framework repair, renewed G5, then P6-P7 artifacts and PI gate decisions",
     "M12 reference paper and code/data availability require PI selection",
     "Real thesis profile is an unreviewed draft with chapter plan, publications, deadlines and venues missing",
     "Optional Gemini unavailable; manual independent review packets provided",
@@ -160,13 +160,13 @@
     "evidence": "projects/m11-noma-qos/gates/decisions.yaml"
   },
   "m11_p5": {
-    "status": "complete; G5 PI review pending",
+    "status": "approved",
     "protocol": "projects/m11-noma-qos/sim/protocol.yaml",
     "planned_jobs": 145,
     "test_status": "PASS;31 targeted simulation/physics tests and90 framework regression tests",
     "simulations": "PASS;145 fixed manifest jobs completed and checksum-validated",
     "protocol_locked": true,
-    "scientific_approval": false,
+    "scientific_approval": true,
     "protocol_commit": "ebb68ac514beeb89d5d1e3dfcb20aecdeaf440ca",
     "gate_checks": "PASS",
     "review_packet": "projects/m11-noma-qos/to_human/G5-review.md",
@@ -186,6 +186,28 @@
     "joint_unresolved_rows": 5,
     "baseline_reproduction_agreement": true,
     "baseline_maximum_relative_error": 0.001716158336917628,
-    "independent_P6_verification": "not_started"
+    "independent_P6_verification": "blocked at native entrypoint preflight; not run"
+  },
+  "m11_g5": {
+    "status": "approved",
+    "timestamp": "2026-10-11T16:15:54.550193+00:00",
+    "note": "P5 runs and numerical limits reviewed; G5 report usable",
+    "decision_commit": "b289a06ea40c6eedba369409a430e92aaa45226f",
+    "record_hash": "da854205f8f213b7af803eead59b3977bee3cefce92edf52573913be4a458e19"
+  },
+  "m11_p6": {
+    "status": "implementation-bug; tested repair prepared; PI rewind P5 required",
+    "phase_start": "PASS",
+    "native_preflight": "FAIL before verifier execution",
+    "isolated_regression_tests": 97,
+    "final_targeted_tests": 7,
+    "lint": "PASS",
+    "locked_inputs_unchanged": 51,
+    "canonical_source_changed": false,
+    "independent_review_rounds": 0,
+    "scientific_verification": "NOT RUN",
+    "repair_packet": "projects/m11-noma-qos/to_human/P6-repair.md",
+    "repair_receipt": "projects/m11-noma-qos/ara/staging/P6-fix-preparation.json",
+    "gate_status": "G6 not_started"
   }
 }

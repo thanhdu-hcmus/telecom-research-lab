@@ -1,0 +1,8 @@
+id: 2026-10-11-0021
+timestamp: '2026-10-11T16:37:06.519731+00:00'
+phase: P6
+summary: 'PI stated: Done. Approved. Canonical G5 approval independently verified
+  at b289a06; this chat statement is not a rewind or a G6 decision.'
+provenance: user
+evidence:
+  ara/staging/P6-fix-preparation.json: 7b7df4a7b9093015b6f43dd7955645006cb15d45d7377ec9ba1ca2c9788bb661

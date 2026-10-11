@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-11T16:39:20.198483+00:00",
+  "status": "PASS",
+  "phase": "P6",
+  "G1_G5": "approved; all indexed artifact hashes unchanged in working tree and index",
+  "indexed_bindings_checked": 1001,
+  "locked_inputs_checked": 51,
+  "new_provenance_sessions_checked": 2,
+  "local_raw_outputs_not_rehashed_this_check": 290,
+  "limitation": "This metadata/source preservation check does not replace independent P6 raw-output recomputation. Existing local CSV hashes were validated in P5; no P6 verifier has run.",
+  "canonical_source_changed": false,
+  "G6": "not_started"
+}

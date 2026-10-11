@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-11T16:21:39.579779+00:00",
+  "status": "FAIL",
+  "triage": "implementation-bug",
+  "operation": "Native custom_verify entrypoint preflight; no verifier executed",
+  "error": "Custom simulations need a distinct independently reviewed verifier pinned in protocol inputs",
+  "approved_protocol_field": {
+    "verifier": "projects/m11-noma-qos/sim/src/verifier.py"
+  },
+  "framework_expected_field": {
+    "verification_entrypoint": null
+  },
+  "analysis_stage_created": false,
+  "locked_artifacts_changed": false
+}

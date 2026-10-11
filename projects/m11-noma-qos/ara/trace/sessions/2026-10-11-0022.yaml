@@ -1,0 +1,15 @@
+id: 2026-10-11-0022
+timestamp: '2026-10-11T16:37:08.627130+00:00'
+phase: P6
+summary: Native P6 start passed; entrypoint preflight failed before verifier execution.
+  Prepared compatibility and execution-budget proposal only in an isolated copy; original-code
+  failed trials retained, final targeted tests 7 PASS, full regression 97 PASS, Ruff
+  PASS. All 51 canonical locked inputs unchanged. No reviewer launched and no P6 numerical
+  verification or G6 request. PI-only rewind P5 required before applying locked framework
+  repair.
+provenance: ai
+evidence:
+  ara/staging/P6-fix-preparation.json: 7b7df4a7b9093015b6f43dd7955645006cb15d45d7377ec9ba1ca2c9788bb661
+  ara/staging/P6-framework-fix.patch: 80c597db80cbd77cd743a9060cf4e342e5aa63cb99169decfccde81939fc1297
+  ara/staging/P6-entrypoint-tests.py: 215ac95c754becea9d6caf91fef791d60f712aeb9108687a548a095dd41d5f12
+  to_human/P6-repair.md: 030e4a699af8065d8658b7b876e0636f2a5be5a81df70b2faab786e6dcbe76ca

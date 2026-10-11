@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-10-11T16:39:53.000960+00:00",
+  "full_cached_diff_check": "FAIL on one syntactically required unified-diff blank context line in the proposed patch",
+  "editable_text_check": "PASS; git diff --cached --check with only the valid unified-diff artifact excluded",
+  "excluded_file": "projects/m11-noma-qos/ara/staging/P6-framework-fix.patch",
+  "reason": "Unified diff uses a leading space for unchanged context, including an otherwise blank line. The exact patch bytes are provenance-bound and tested in an isolated copy; not an active source-file whitespace defect."
+}

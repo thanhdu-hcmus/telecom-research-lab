@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-10-11T16:36:49.939592+00:00",
+  "status": "isolated repair and full regression PASS; canonical fix awaits PI rewind",
+  "triage": "implementation-bug",
+  "root_cause": "Locked protocol declares verifier; framework reads only verification_entrypoint",
+  "G5": {
+    "status": "approved",
+    "timestamp": "2026-10-11T16:15:54.550193+00:00",
+    "note": "P5 runs and numerical limits reviewed; G5 report usable",
+    "decision_commit": "b289a06ea40c6eedba369409a430e92aaa45226f",
+    "record_hash": "da854205f8f213b7af803eead59b3977bee3cefce92edf52573913be4a458e19"
+  },
+  "proposed_changes": [
+    "Accept verifier alias with canonical-key compatibility and fail closed on conflicting declarations",
+    "Retain distinct-script, pinning, simulator-import and result validation guards",
+    "Increase bounded custom verifier wall-clock budget from 600 to 3600 seconds; prospective execution-budget change, no actual timeout observed"
+  ],
+  "test_workspace": ".cache/p6-compatibility-01",
+  "trials": [
+    {
+      "scope": "initial alias reproduction",
+      "local_junit": ".cache/m11-p6-alias-red.xml",
+      "sha256": "c1a8a27ff4e6c8bc5f8fa20a19666a854f31d4270614090bb4c8ee8665d1b1ed",
+      "tests": 7,
+      "failures": 2,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 9.979
+    },
+    {
+      "scope": "alias and proposed execution budget on original code",
+      "local_junit": ".cache/m11-p6-alias-red-02.xml",
+      "sha256": "c0e3d8657f98f988415b46ae20d01d2b1ba54720c63056ae4eb6550e36e14b5c",
+      "tests": 7,
+      "failures": 4,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 1.064
+    },
+    {
+      "scope": "patched isolated code",
+      "local_junit": ".cache/m11-p6-alias-green.xml",
+      "sha256": "a13b1bc352ac370163568ba71c3a967eed8d769bd232762a9af0b8155e0ee6e3",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 1.026
+    },
+    {
+      "scope": "formatted final proposal on patched isolated code",
+      "local_junit": ".cache/m11-p6-alias-final.xml",
+      "sha256": "ed8c645ef353247231c71337d449abcaa00ad1953920f9ca3959b53d9e03315f",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.919
+    }
+  ],
+  "lint": "PASS; isolated lab and formatted proposed tests",
+  "locked_inputs_checked": 51,
+  "canonical_locked_inputs_unchanged": true,
+  "canonical_source_sha256": "f37e028f5395923197e697fe1e522f088caa11d4966499350bf0dbbbbacb30cb",
+  "isolated_patched_source_sha256": "c549b8cca4d34dd2fa66501f79072a946e579fe919d4109769673a328fc3dcfb",
+  "test_execution_boundary": "Targeted tests mock only isolated synthetic lock and subprocess; no scientific verifier executed",
+  "budget_evidence": {
+    "receipt": ".cache/m11-p5-status-01.json",
+    "sha256": "ef89e808a922896f4098f8f7381b07342ef928fa105870a31e30e4f14920982e",
+    "created_utc": "2026-10-11T11:26:05+00:00",
+    "last_written_utc": "2026-10-11T11:38:32+00:00",
+    "observed_receipt_interval_seconds": 747,
+    "limitation": "Filesystem timestamp interval is approximate timing evidence, not a benchmark or observed P6 timeout"
+  },
+  "proposal_files": {
+    "ara/staging/P6-framework-fix.patch": "80c597db80cbd77cd743a9060cf4e342e5aa63cb99169decfccde81939fc1297",
+    "ara/staging/P6-entrypoint-tests.py": "215ac95c754becea9d6caf91fef791d60f712aeb9108687a548a095dd41d5f12"
+  },
+  "P6_numerical_verification": "NOT RUN; native entrypoint preflight failed before analysis stage creation",
+  "independent_review_rounds": 0,
+  "G6": "not_started",
+  "next_required_PI_action": "Canonical gate rewind P5; only PI may execute it",
+  "rewind_effect": "Archive sim, results, analysis and paper; invalidate G5-G7; retain G1-G4; fresh locked runs and G5 review required",
+  "receipt_preparation_trials": [
+    {
+      "status": "failed before writes",
+      "cause": "Receipt builder asserted decision spelling approved; canonical decision field is approve",
+      "resolution": "Use actual canonical field spelling; no gate or source changed"
+    }
+  ],
+  "regression": {
+    "scope": "isolated patched framework: all existing unit, contract, physics and environment tests plus seven entrypoint tests",
+    "local_junit": ".cache/m11-p6-framework-green.xml",
+    "sha256": "0ab222b8df8303789eb9751b9e25e098be59b10c188c9836488a821b06ba2218",
+    "tests": 97,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 228.56
+  },
+  "formatted_final_targeted_tests": "7 PASS after formatting; full regression also 97 PASS"
+}
