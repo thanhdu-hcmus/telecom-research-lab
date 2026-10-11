@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-11T09:53:35.679441+00:00",
-  "status": "model draft complete; independent critique authorization pending",
+  "timestamp": "2026-10-11T10:32:11.849722+00:00",
+  "status": "model complete for G4 PI review; approval not made",
   "phase_start": "PASS; existing PI G3 decision cb4061a; selected idea-01",
   "writer": {
     "task": "/root/system_modeler",
@@ -26,13 +26,37 @@
     "model_review_packet": "regenerated after pseudocode clarification"
   },
   "independent_critic": {
-    "actual_spawns": 0,
-    "attempted_launches": 1,
-    "process_started": false,
+    "actual_spawns": 2,
+    "attempted_launches": 3,
+    "process_started": true,
     "automatic_approval_rejected": true,
     "reason": "Prior permission covered bounded P3 audit, not the new unpublished P4 model payload for external OpenAI Codex session.",
     "safe_action": "Prepared exact local payload and requested explicit bounded authorization; no alternate route or transmission attempted.",
-    "planned_tool_policy": "no reviewer tools/network; separate root read-only, approval never, no-daemon; one named model_critic at depth one"
+    "planned_tool_policy": "no reviewer tools/network; separate root read-only, approval never, no-daemon; one named model_critic at depth one",
+    "successful_launches": 2,
+    "historical_rejection_before_authorization": true,
+    "rounds": [
+      {
+        "round": 1,
+        "run": ".cache\\p4-model-review\\ad84c99f9c574a3c87a2ad1b1d7a14ce",
+        "packet_sha256": "c2290ff70c260733972de64cef7191136f813d616a53188c5c4c2647850bcfed",
+        "reviewer_reply_sha256": "14d8365fd09bf6f6093be57bbc2cd49f897ff1ec1352cdf27eb6d13545d78fe9",
+        "recommendation": "ready",
+        "findings": 0,
+        "runtime_verified": true,
+        "no_reviewer_tools": true
+      },
+      {
+        "round": 2,
+        "run": ".cache\\p4-model-review\\d69f6bb18be14cdd8093919fbb587a60",
+        "packet_sha256": "ff281967500f5f897ec577ea9efba8088510b7814041f37ab0a323e52f3f801b",
+        "reviewer_reply_sha256": "d732083af38b22ed5551e912089177c3fb24cdc4904859fbcf942f955aae5024",
+        "recommendation": "ready",
+        "findings": 0,
+        "runtime_verified": true,
+        "no_reviewer_tools": true
+      }
+    ]
   },
   "other_rejection": {
     "action": "Redundant lab gate require G3",
@@ -42,6 +66,14 @@
   },
   "provenance_correction": "Session0011 mistakenly reported pending canonical G3 and no P4 start; session0012 explicitly corrects it against actual PI decision and successful phase start. Earlier record preserved.",
   "simulations_run": false,
-  "G4_requested": false,
-  "new_protocol_parameters_selected": false
+  "G4_requested": true,
+  "new_protocol_parameters_selected": false,
+  "external_review_authorization": "PI Approved; provenance session2026-10-11-0014",
+  "parent_clarifications": "A4 SINR/rate wording and explicit zero-branch outputs; final revisions reviewed in round2",
+  "handoff_validator_correction": "Initial round1 acceptance assumed summary was a list; actual six-line string was valid. Corrected line counting for string/list without changing reviewer handoff, then validation passed.",
+  "historical_effort_archive": {
+    "path": "ResearchLibrary\\handoffs\\m11-noma-qos\\P4-before-parent-clarifications\\P4-review-effort.json",
+    "sha256": "fb4be1278fe87cee7782604329a3576e39125c51e7cf4fe79dc89d933d3df4a1"
+  },
+  "G4_gate_checks": "PASS; scientific approval pending PI"
 }

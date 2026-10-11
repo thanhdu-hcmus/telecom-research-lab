@@ -33,3 +33,5 @@
 - 2026-10-11T09:38:32.415011+00:00 — PI approve G3: P3 dry-run options and evidence reviewed; idea-01 selected; G3 report usable
 
 - 2026-10-11T09:39:48.617330+00:00 — Entered P4
+
+- 2026-10-11T10:32:14.288686+00:00 — Requested G4; automated checks passed

@@ -1,0 +1,247 @@
+{
+  "round": 1,
+  "findings": [],
+  "checklist": [
+    {
+      "item": "1. Hidden/explicit and realistic/convenient assumptions?",
+      "answer": "The assumptions are explicit and sufficient for the scoped mathematical benchmark: a constant scalar ordered Gaussian channel, perfect CSI, ideal SIC, arbitrary finite nonnegative QoS, full-range power fractions and unweighted sum rate. These are convenient information-theoretic idealizations, not demonstrated deployment conditions. No additional power-order restriction is needed for the stated decoding capacities.",
+      "locations": [
+        "model/model-spec.tex, Scope, normalization and physical model",
+        "model/assumptions.yaml, A1–A5",
+        "scope.yaml, inclusion and exclusion"
+      ],
+      "limitations": "The conclusions do not cover estimation errors, residual SIC, finite modulation, finite blocklength or hardware overhead."
+    },
+    {
+      "item": "2. CSI justified; RIS channel-estimation overhead acknowledged?",
+      "answer": "Perfect instantaneous CSI is justified as an explicit benchmark assumption enabling per-block allocation, rather than inferred from literature. Estimation and feedback overhead are expressly excluded. RIS is outside scope, so RIS estimation overhead is inapplicable.",
+      "locations": [
+        "model/assumptions.yaml, A2",
+        "model/model-spec.tex, Scope, normalization and physical model",
+        "scope.yaml, exclusion",
+        "grounded_paper_pages, doi:10.1109/icc.2018.8422366, p.1, practical CSIT discussion",
+        "grounded_paper_pages, doi:10.1109/comst.2016.2621116, p.36, Section VI-G"
+      ],
+      "limitations": "No practical CSI acquisition cost or robustness claim has been established."
+    },
+    {
+      "item": "3. SIC order consistent with channels and power allocation?",
+      "answer": "Yes. Both weak-message decoding sites are modeled. Their SINR difference is (1-a)(B-A)/((1+aA)(1+aB)), which is nonnegative throughout the stated domain. Thus the weak receiver determines the weak boundary rate and the strong receiver can decode that rate before ideal cancellation. Equal gains give equal decoding capacities; a=1 gives a zero-rate weak message; a=0 gives zero strong rate. This argument remains valid when the strong user receives more transmit power.",
+      "locations": [
+        "model/model-spec.tex, Both weak-message decoding sites and rates",
+        "model/assumptions.yaml, A4",
+        "model/predictions.yaml, P1",
+        "grounded_paper_pages, doi:10.1109/tvt.2017.2689000, p.2, Section III",
+        "grounded_paper_pages, doi:10.48550/arxiv.1412.2799, p.2, SIC-capacity inequality"
+      ],
+      "limitations": "Capacity-boundary decoding is an asymptotic idealization; the inequality does not establish finite-block decoding reliability."
+    },
+    {
+      "item": "4. Dimensions and units correct in every equation?",
+      "answer": "The model equations are dimensionally consistent. P is normalized linear power, gains and A,B are dimensionless, logarithm arguments are dimensionless, and rates and QoS are whole-block spectral efficiencies. Independent symbols have unit average energy, so the superposition has average power P. CN(0,1) correctly assigns variance 1/2 to each real component. OMA's half-time factor and normalized energy P*tau are consistent.",
+      "locations": [
+        "model/model-spec.tex, Scope, normalization and physical model",
+        "model/model-spec.tex, Matched equal-time OMA and conditional comparison",
+        "model/notation.yaml, P, A, B, s_w,s_s, z_i, R_w,R_s and tau",
+        "model/assumptions.yaml, A3 and A6"
+      ],
+      "limitations": "No conversion to physical watts, dBm, noise spectral density or deployment bandwidth is specified or claimed."
+    },
+    {
+      "item": "5. Block convexity correct; relaxation tightness/gap quantified?",
+      "answer": "The scalar curvature claim is correct. F'=(B-A)/(ln(2)(1+aA)(1+aB)); F''=-(B-A)(A+B+2aAB)/(ln(2)(1+aA)^2(1+aB)^2). Both derivatives have the claimed strict signs when B>A. At B=A the sum is constant. The transformed QoS constraints are exact affine bounds, so maximizing the concave scalar objective over the interval requires no relaxation and has no relaxation gap. Component convexity is correctly distinguished from objective curvature.",
+      "locations": [
+        "model/model-spec.tex, Exact QoS feasible set, including zero cases",
+        "model/model-spec.tex, Optimizer, curvature and degeneracies",
+        "model/checks.yaml, scope and derivative checks",
+        "model/predictions.yaml, P2–P4"
+      ],
+      "limitations": "No joint convexity in power, channels or targets, and no alternating-optimization convergence claim, follows from this scalar result."
+    },
+    {
+      "item": "6. Predictions consistent with the formulation and regime?",
+      "answer": "Yes. The interval is necessary and sufficient, not merely a necessary interference bound. For A>0, feasibility is equivalently Ts/B+Tw/A+Tw*Ts/B<=1. B=0 implies A=0 and requires both targets zero; A=0<B requires qw=0 and Ts<=B. Singleton intervals are feasible. For equal positive SNRs, feasibility is qw+qs<=log2(1+A), and every feasible split ties. For unequal SNRs U is uniquely optimal, including singleton cases. Zero targets correctly deactivate their corresponding bounds; infeasible targets produce no constrained optimum. P7 is explicitly prospective.",
+      "locations": [
+        "model/model-spec.tex, Exact QoS feasible set, including zero cases",
+        "model/model-spec.tex, Optimizer, curvature and degeneracies",
+        "model/algorithm.md, Analytic optimizer",
+        "model/predictions.yaml, P1–P7"
+      ],
+      "limitations": "The supplied symbolic PASS record does not independently establish inequalities, branch completeness or numerical implementation behavior."
+    },
+    {
+      "item": "7. Fair power, CSI, channel realizations and strongest relevant baselines?",
+      "answer": "The approved equal-time OMA baseline is resource matched: identical channels, targets, bandwidth, duration and active-slot power P, giving energy P*tau in both schemes. The comparison proof is valid: for A>0, c(B)<=c(A) supplies a feasible witness meeting both OMA rates; A=0<B and A=B=0 are separately handled. Consequently OMA feasibility implies NOMA feasibility, and the optimal paired sum is strictly larger precisely when B>A, with equality when A=B. The optimizer itself need not dominate each individual OMA rate.",
+      "locations": [
+        "model/model-spec.tex, Matched equal-time OMA and conditional comparison",
+        "model/assumptions.yaml, A6–A7",
+        "model/predictions.yaml, P5–P6",
+        "grounded_paper_pages, doi:10.1109/tvt.2017.2689000, pp.2–3, OMA rates and fairness interval",
+        "grounded_paper_pages, doi:10.1109/jsac.2017.2725618, pp.10–11, distinct OFDMA comparator"
+      ],
+      "limitations": "Equal-time OMA is the specified reference, not an optimized OMA scheduler. The theorem does not establish dominance over every OMA policy or arbitrary fixed NOMA allocation."
+    },
+    {
+      "item": "8. Realistic frequency, bandwidth, distances and RIS geometry?",
+      "answer": "Physical deployment settings are intentionally absent. Unit bandwidth and unit noise define a normalized scalar benchmark, and its proofs require no frequency, distance, geometry or fading distribution. RIS geometry is inapplicable.",
+      "locations": [
+        "model/model-spec.tex, Scope, normalization and physical model",
+        "model/assumptions.yaml, A1 and A3",
+        "scope.yaml, exclusion"
+      ],
+      "limitations": "These results cannot be interpreted as deployment-specific throughput or coverage predictions."
+    },
+    {
+      "item": "9. Correct complexity; multiple seeds?",
+      "answer": "O(1) optimizer work and storage are correctly qualified as a fixed number of exact-real operations and elementary-function evaluations. They are not bit-complexity or latency guarantees. The proposed oracle's O(K) candidate evaluation cost excludes certification and precision costs, and no convergence guarantee is asserted. Multiple independently seeded trials remain part of later validation; no seeds or measured trials are supplied.",
+      "locations": [
+        "model/model-spec.tex, Optimizer, curvature and degeneracies, complexity paragraph",
+        "model/algorithm.md, Structurally independent scalar oracle proposal, complexity paragraphs",
+        "model/algorithm.md, Numerical risks and falsification cases for P5",
+        "scope.yaml, inclusion"
+      ],
+      "limitations": "Arbitrarily large finite real inputs need not be representable safely in fixed precision. Numerical settings and seed selection belong to P5; their deferral is not a P4 mathematical flaw."
+    },
+    {
+      "item": "10. Novelty delta supported by grounded closest-work cards?",
+      "answer": "The packet makes no original novelty claim. The enclosed pages support established ordered Gaussian broadcast rates, a related QoS endpoint optimizer and the OMA-relative fairness witness. Restrictions in those sources are identified rather than silently transferred. The arbitrary-QoS and degenerate branches are explicitly rederived in the model.",
+      "locations": [
+        "model/model-spec.tex, Source attribution",
+        "model/source-map.md, Grounded literature and Project derivations and limits",
+        "literature/cards/r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.yaml, constraints and notes",
+        "literature/cards/r_doi_10_1109_tvt_2017_2689000_33a4e1b77753.yaml, constraints and notes",
+        "grounded_paper_pages, arxiv:1504.07751, pp.1–3",
+        "grounded_paper_pages, doi:10.1109/jsac.2017.2725618, pp.6–7",
+        "grounded_paper_pages, doi:10.1109/tvt.2017.2689000, pp.2–3"
+      ],
+      "limitations": "This bounded packet cannot establish a literature-wide novelty verdict or authenticate manuscript versions and bibliographic metadata externally."
+    },
+    {
+      "item": "11. Scalability and practical implementation concerns?",
+      "answer": "The optimizer solves only a fixed two-user scalar block; multi-block aggregation scales linearly as stated. Practical SIC complexity, error propagation, CSI signaling, finite-block behavior and hardware effects are acknowledged exclusions. The scalar oracle proposal is structurally independent: it receives original inputs, evaluates both decoding sites, searches the full domain and forbids copied endpoint logic. Its independence is specified, not demonstrated by an implementation.",
+      "locations": [
+        "model/algorithm.md, Structurally independent scalar oracle proposal",
+        "model/model-spec.tex, Feasibility ledger and prospective validation",
+        "model/source-map.md, Project derivations and limits",
+        "grounded_paper_pages, doi:10.1109/comst.2016.2621116, pp.34–36, Sections VI-A–G"
+      ],
+      "limitations": "No many-user, pairing, multichannel or practical receiver guarantee is established. Finite root bracketing or increased precision alone cannot universally decide exact singleton equality; a certificate or unresolved status remains necessary."
+    }
+  ],
+  "rigor_dimensions": [
+    {
+      "dimension": "Evidence relevance",
+      "score": 4,
+      "strengths": [
+        "Enclosed Xu pp.1–3 support ordered Gaussian broadcast rates and fixed-split loss countercontext.",
+        "Enclosed Zhu pp.6–7 support a related boundary optimizer while exposing its additional restrictions.",
+        "Enclosed Fair-NOMA pp.2–3 directly support the matched reference and fairness interval.",
+        "The model's complete-domain claims are supported by explicit rederivation rather than source authority alone."
+      ],
+      "weaknesses": [
+        "Original PDFs, extraction fidelity, hashes and final bibliographic metadata cannot be authenticated from the inline packet.",
+        "Some published equations are visibly damaged in extraction; the packet appropriately avoids relying on them."
+      ],
+      "tests": [
+        "For any later source-based claim, compare its cited manuscript passage against the original version and retain the transfer restrictions in model/source-map.md."
+      ]
+    },
+    {
+      "dimension": "Falsifiability quality",
+      "score": 5,
+      "strengths": [
+        "model/predictions.yaml P1–P7 identify direct counterexamples involving decoding capacity, feasible-set membership, better feasible splits, OMA-only instances and ledger errors.",
+        "model/algorithm.md retains failed and unresolved instances instead of erasing contradictions."
+      ],
+      "weaknesses": [
+        "Numerical detection thresholds and certification procedures are not yet selected; this is an acknowledged P5 dependency."
+      ],
+      "tests": [
+        "Challenge interval necessity and sufficiency using original rate inequalities at endpoints and on either side of each active boundary.",
+        "Use A=B=3, qw=qs=1 as an exact singleton example: L=U=1/3 and both rates equal 1.",
+        "Treat these examples as proposed tests, not executed validation."
+      ]
+    },
+    {
+      "dimension": "Scope calibration",
+      "score": 5,
+      "strengths": [
+        "model/model-spec.tex limits dominance to the matched equal-time reference and optimal feasible allocations.",
+        "Strictness is stated in received SNRs: B>A; equality includes zero power even when original channel gains differ.",
+        "Practical performance, novelty and measured numerical gains are expressly excluded."
+      ],
+      "weaknesses": [
+        "No mathematical scope overreach was identified; deployment relevance remains intentionally limited."
+      ],
+      "tests": [
+        "Keep the scheduler, ideal CSI/SIC assumptions and both-feasible denominator attached to every later reported comparison.",
+        "Verify equal received SNRs and zero power produce equality rather than a strict-gain claim."
+      ]
+    },
+    {
+      "dimension": "Argument coherence",
+      "score": 5,
+      "strengths": [
+        "The chain from original SINRs through both-site decoding, exact QoS bounds, derivative signs and endpoint optimality is complete.",
+        "The OMA inclusion proof establishes an admissible witness before invoking optimality.",
+        "Zero, equal-SNR, singleton and empty-set cases are explicitly separated."
+      ],
+      "weaknesses": [
+        "No substantive gap was identified in the stated exact-real proofs."
+      ],
+      "tests": [
+        "Check A=B>0 reduces feasibility to qw+qs<=log2(1+A).",
+        "Check A=0<B with qw=0 and qs=log2(1+B) gives the feasible singleton a=1.",
+        "Check A=B=0 is feasible only when both targets vanish."
+      ]
+    },
+    {
+      "dimension": "Exploration integrity",
+      "score": 5,
+      "strengths": [
+        "model/source-map.md retains fixed-split loss events and distinguishes unmatched published comparators.",
+        "model/model-spec.tex records all four feasibility categories and leaves infeasible optima undefined.",
+        "model/algorithm.md requires numerical ambiguities and contradictions to be retained."
+      ],
+      "weaknesses": [
+        "There are no executed trials or measured negative outcomes to evaluate at this specification stage."
+      ],
+      "tests": [
+        "Reconstruct N from all categories and report paired differences only with denominator n11.",
+        "For A=B=3, qw=2, qs=0, verify NOMA-only feasibility at a=0.",
+        "Verify fractions are undefined at N=0 and paired summaries are undefined at n11=0."
+      ]
+    },
+    {
+      "dimension": "Methodological rigor",
+      "score": 5,
+      "strengths": [
+        "Normalization and OMA energy accounting are explicit.",
+        "Exact mathematical feasibility is separated from finite-precision computation and undefined statistics.",
+        "The oracle specification forbids reuse of the analytic interval, endpoint and derivative sign.",
+        "Numerical validation and reproducibility proposals are clearly distinguished from measured results."
+      ],
+      "weaknesses": [
+        "Oracle independence, certification, precision behavior and reproducibility have not been demonstrated by implementation.",
+        "The supplied check-results.json is bounded symbolic evidence, not a comprehensive validation result."
+      ],
+      "tests": [
+        "Later audit the oracle's data flow and implementation for reuse of analytic bounds or endpoint logic.",
+        "Require independently justified certification or unresolved status for narrow intervals, singleton equality and infeasibility.",
+        "Exercise overflow, cancellation, nearly equal SNRs and near-boundary targets under the eventual P5 numerical protocol."
+      ]
+    }
+  ],
+  "limitations": [
+    "Review used only the complete inline packet and mathematical reasoning; no tools, filesystem access, network access, simulations or agent spawning were used.",
+    "No original PDF, hash, symbolic execution record or historical approval was independently authenticated.",
+    "Published extracts were treated as untrusted evidence, and visibly damaged equations were not accepted as proof.",
+    "The mathematical conclusions concern finite real inputs and exact arithmetic; they do not guarantee uniformly terminating finite-precision decisions for arbitrary real boundary cases.",
+    "The feasibility fractions are finite-ensemble summaries. A population probability or outage interpretation requires a specified sampling model.",
+    "The independent oracle, numerical settings, stopping rules, seeds and uncertainty reporting remain prospective P5 work; their deferral does not invalidate the P4 derivations.",
+    "Rigor scores use the supplied one-to-five scale and assess the P4 specification, not completed empirical validation.",
+    "The recommendation is an artifact-review assessment, not a scientific gate decision."
+  ],
+  "summary": "No actionable mathematical validity flaw was identified.\nThe complete QoS interval, degenerate branches, optimizer and curvature claims are correct under the stated assumptions.\nBoth decoding sites and matched OMA resource accounting support the conditional strict/equality theorem.\nFeasibility categories and undefined-denominator behavior are correctly separated from paired rates.\nSource restrictions are respected; symbolic checks and proposed validation are not treated as measured results.\nOracle implementation and numerical certification remain future work.",
+  "recommendation": "ready"
+}

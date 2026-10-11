@@ -43,7 +43,7 @@
   citation: Approved scope.md Proposed comparison and scope.yaml ideal SIC inclusion. Fair-NOMA doi:10.1109/tvt.2017.2689000
     cached PDF p.2 equations (1)-(3); Ding doi:10.48550/arxiv.1412.2799 cached PDF p.2 weak-message SIC
     inequality.
-  consequence_if_violated: Residual interference or decoding error invalidates strong rate aB and can
+  consequence_if_violated: Residual interference or decoding error invalidates strong post-SIC SINR aB and its rate log2(1+aB) and can
     break interval, optimum and OMA comparison.
   test_or_relaxation: P5 must evaluate both decoding capacities directly, including endpoints/equal gains.
     Imperfect SIC requires a new approved model, not a hidden margin.

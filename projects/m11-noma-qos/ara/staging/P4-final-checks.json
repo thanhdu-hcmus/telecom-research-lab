@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-10-11T10:32:11.857238+00:00",
+  "status": "PASS",
+  "model_validation": "PASS",
+  "assumptions": 7,
+  "predictions": 7,
+  "notation_entries": 40,
+  "symbolic_checks": 13,
+  "independent_rounds": 2,
+  "final_recommendation": "ready",
+  "final_findings": 0,
+  "simulations_run": false,
+  "model_hashes": {
+    "model/algorithm.md": "ed193d86f630202a40fa9ee9fa37ede07da4a76fb2cb4e053f03fa74a98013e0",
+    "model/assumptions.yaml": "48689bf9d889c0b4d4ccc9c7abe4f484cc41fde5ac27ddc4e5ea6e399ec16b4a",
+    "model/check-results.json": "71ee6408378ac0238dcd0c85e2b9671e335972b4103cef1dcf9e0b3aa744207e",
+    "model/checks.yaml": "51b14ababb3339b7871cf5be146ce9a320c2b486cc1c6a6148886a6804732bfb",
+    "model/critique.yaml": "26998fdd143b5995c0f2e25cb555ada7b0a249f72178b98d24edc0da99ed586e",
+    "model/model-spec.tex": "c885769e4d0d191bd82e11891de912340a7baa64af49d9b8c4584b4a3204f76e",
+    "model/notation.yaml": "2e937f7f98e3240f476471c44cc2756afdfe77079aa8f5845cfe1bcfe920de22",
+    "model/predictions.yaml": "b18859e62c3a5306b9b341331b5acd7e7ec5fb93b5fbc3cf82032fb8959a6fd2",
+    "model/response.md": "581a57c877e6da76f9665b74f000a20c7cfc5b0ff6e182bc5d6df650245e86a9",
+    "model/source-map.md": "88469e412cb23526941c2cda86efb3bca9be2f5f097d09ad021ddd54f6026d1d"
+  }
+}

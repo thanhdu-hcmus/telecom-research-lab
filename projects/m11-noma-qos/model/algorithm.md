@@ -11,6 +11,7 @@ and sum; undefined values stay undefined for an infeasible scheme.
 ```text
 Reject inputs outside the specified domain.
 NOMA_feasible <- false; infeasibility_declared <- false
+interval,a_star,R_w,R_s,C_w_at_s,F_star,optimizer_unique <- undefined
 A <- P*g_w; B <- P*g_s
 T_w <- 2^q_w - 1; T_s <- 2^q_s - 1
 If B = 0:
@@ -18,7 +19,8 @@ If B = 0:
         NOMA <- infeasible; infeasibility_declared <- true
     Else:
         NOMA_feasible <- true
-        interval <- [0,1]; a_star <- 1; all rates <- 0
+        interval <- [0,1]; a_star <- 1; optimizer_unique <- false
+        R_w,R_s,C_w_at_s,F_star <- 0
 Else:
     L <- T_s/B
     If A = 0:
@@ -27,7 +29,8 @@ Else:
         Else: U <- 1
     Else: U <- min(1,(A-T_w)/(A*(1+T_w)))
     If not infeasibility_declared:
-        If L > U: NOMA <- infeasible
+        If L > U:
+            NOMA <- infeasible; infeasibility_declared <- true
         Else:
             NOMA_feasible <- true
             interval <- [L,U]; a_star <- U

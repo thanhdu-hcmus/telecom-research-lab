@@ -113,3 +113,21 @@ before any process started because previous permission covered P3 only. The
 exact new P4 payload is prepared locally, not transmitted. Explicit bounded
 authorization is requested in to_human/P4-review-authorization.md. G4 is not
 requested; no independent verdict or numerical protocol is claimed.
+
+## Current P4: independent critique complete
+
+The PI approved the bounded external model review in provenance session0014.
+Two actual named read-only model_critic rounds recommended ready and reported
+zero actionable findings; both complete eleven checklist items and six rigor
+dimensions. The parent clarified SINR/rate terminology and zero-branch output
+assignments between rounds. Final current model validation and all13 bounded
+symbolic checks pass. No approved assumptions, objectives or baselines changed.
+
+The exact model proves the full QoS interval and endpoint optimizer, and that
+matched equal-time OMA feasibility implies NOMA feasibility. On both-feasible
+blocks optimal NOMA sum is strictly greater when B>A and equal when A=B.
+These are ideal-model derivations, not measured simulation results or novelty.
+Scalar-oracle implementation, numerical certificates and unresolved statuses,
+sampling settings, tolerances and uncertainty reporting remain P5 proposals.
+G4 review is ready for a separate PI decision; M11 remains in progress and M12
+remains unstarted. Earlier permission-pending sections are historical.

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-10-11T10:27:17.604249+00:00",
+  "status": "two presentation clarifications applied; same approved mathematics",
+  "before": {
+    "model/assumptions.yaml": {
+      "sha256": "8e70ba208872105e8a34b0c5f247f3fe7f8e89f741e449934ed9654d32ea21a5",
+      "archive": "ResearchLibrary\\handoffs\\m11-noma-qos\\P4-before-parent-clarifications\\assumptions.yaml"
+    },
+    "model/algorithm.md": {
+      "sha256": "ff42cf2a3ca937793af9e7aef6596c1edd302e1a46451c64aec0d9b26bb76f74",
+      "archive": "ResearchLibrary\\handoffs\\m11-noma-qos\\P4-before-parent-clarifications\\algorithm.md"
+    },
+    "model/critique.yaml": {
+      "sha256": "50c1d21fa74ed675259475393c49c72a0ac337f35114a82c82815c06e662fb0a",
+      "archive": "ResearchLibrary\\handoffs\\m11-noma-qos\\P4-before-parent-clarifications\\critique.yaml"
+    },
+    "ara/staging/P4-critic-acceptance.json": {
+      "sha256": "95737df913fe8dc1ae75b712d41c82fbcd6af31c2fd38c916361e3108ba8e2c3",
+      "archive": "ResearchLibrary\\handoffs\\m11-noma-qos\\P4-before-parent-clarifications\\P4-critic-acceptance.json"
+    },
+    "ara/staging/P4-review-effort.json": {
+      "sha256": "fb4be1278fe87cee7782604329a3576e39125c51e7cf4fe79dc89d933d3df4a1",
+      "archive": "ResearchLibrary\\handoffs\\m11-noma-qos\\P4-before-parent-clarifications\\P4-review-effort.json"
+    }
+  },
+  "after": {
+    "model/assumptions.yaml": "48689bf9d889c0b4d4ccc9c7abe4f484cc41fde5ac27ddc4e5ea6e399ec16b4a",
+    "model/algorithm.md": "ed193d86f630202a40fa9ee9fa37ede07da4a76fb2cb4e053f03fa74a98013e0"
+  },
+  "clarifications": [
+    "A4: distinguish SINR aB from rate log2(1+aB).",
+    "Algorithm: initialize undefined outputs and explicitly assign all zero-SNR branch rates, objective and non-uniqueness."
+  ],
+  "independent_round_1": "ready; zero findings; source handoff preserved",
+  "second_round": "requested to independently check final artifact wording; within approved up-to-three-round authorization",
+  "scope_changed": false,
+  "numerical_parameters_selected": false
+}

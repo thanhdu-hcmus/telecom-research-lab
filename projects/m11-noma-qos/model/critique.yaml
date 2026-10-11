@@ -1,0 +1,328 @@
+round: 2
+findings: []
+checklist:
+- item: 1. Hidden/explicit and realistic/convenient assumptions?
+  answer: 'The assumptions are explicit and sufficient for the scoped ideal benchmark:
+    finite nonnegative power, ordered scalar gains, Gaussian signalling, unit noise,
+    perfect CSI, ideal SIC, arbitrary nonnegative fixed whole-block QoS, and the full
+    split interval. The degenerate branches are complete. B=0 implies A=0 and permits
+    feasibility only when both targets are zero; A=0<B requires q_w=0 and T_s<=B;
+    positive A requires L<=U. Zero targets, singleton intervals and infeasible targets
+    are handled without clamping or substituting a zero optimum.'
+  locations:
+  - model/model-spec.tex, sections 'Scope, normalization and physical model' and 'Exact
+    QoS feasible set, including zero cases'
+  - model/assumptions.yaml, A1–A5
+  - model/algorithm.md, 'Analytic optimizer'
+  limitations:
+  - These are convenient information-theoretic assumptions, not validated deployment
+    assumptions.
+  - Arbitrary finite real inputs do not imply arbitrary inputs can be represented
+    or classified exactly by a numerical implementation.
+- item: 2. CSI justified; RIS channel-estimation overhead acknowledged?
+  answer: Perfect instantaneous CSI is an explicit scoped idealization enabling per-block
+    adaptation. The artifacts acknowledge estimation errors and overhead as exclusions
+    and do not infer perfect CSI from fixed-power literature. RIS is excluded, so
+    RIS estimation overhead is inapplicable.
+  locations:
+  - model/assumptions.yaml, A2
+  - model/model-spec.tex, 'Scope, normalization and physical model'
+  - scope.yaml, inclusion and exclusion
+  - grounded_paper_pages, doi:10.1109/icc.2018.8422366, p.1 Introduction
+  - grounded_paper_pages, doi:10.1109/comst.2016.2621116, p.36 Section VI-G
+  limitations:
+  - No CSI acquisition cost or robustness result is established.
+- item: 3. SIC order consistent with channels and power allocation?
+  answer: Yes. Both weak-message decoding sites are included. Subtraction gives gamma_w_to_s-gamma_w_to_w=(1-a)(B-A)/((1+aA)(1+aB)),
+    which is nonnegative throughout the admissible domain. Consequently the weak receiver
+    limits the weak code rate, and the strong post-SIC rate is log2(1+aB). Equality
+    at equal channels, a=1 or zero received power is handled. A blanket a<=1/2 restriction
+    is unnecessary for this ideal Gaussian decoding model.
+  locations:
+  - model/model-spec.tex, 'Both weak-message decoding sites and rates'
+  - model/assumptions.yaml, A4–A5
+  - model/algorithm.md, 'Structurally independent scalar oracle proposal'
+  - grounded_paper_pages, doi:10.1109/tvt.2017.2689000, p.2 Section III
+  - grounded_paper_pages, doi:10.48550/arxiv.1412.2799, p.2 Section II
+  limitations:
+  - The capacity inequalities do not certify finite-block decoding or practical SIC
+    stability.
+- item: 4. Dimensions and units correct in every equation?
+  answer: The model equations are dimensionally consistent. P, gains, A, B, SINRs
+    and power fractions are normalized dimensionless quantities; logarithm arguments
+    are positive and dimensionless. Rates and targets use whole-block bit/s/Hz. Independent
+    unit-energy symbols give average transmit power P. CN(0,1) correctly assigns variance
+    1/2 to each real component. Differentiation with respect to dimensionless a preserves
+    the stated rate units.
+  locations:
+  - model/model-spec.tex, 'Scope, normalization and physical model'
+  - model/model-spec.tex, rate, derivative and OMA equations
+  - model/notation.yaml, P, A, B, z_i, R_w/R_s and F_prime/F_second
+  limitations:
+  - No physical watts/dBm conversion or physical noise bandwidth has been selected;
+    none is needed for the normalized theorem.
+- item: 5. Block convexity correct; relaxation tightness/gap quantified?
+  answer: The exact scalar reduction is correct and introduces no relaxation. Positive
+    denominators make weak QoS equivalent to a<=U and strong QoS equivalent to a>=L.
+    For A>0, rearrangement gives the stated necessary-and-sufficient condition T_s/B+T_w/A+T_w*T_s/B<=1.
+    Independently differentiating the objective yields the stated F' and F''. F is
+    strictly increasing and strictly concave when B>A, and constant when B=A. Thus
+    U is the unique optimum for unequal received SNRs; equal-SNR optima are unique
+    only when the feasible interval is a singleton. Weak-rate convexity does not invalidate
+    the interval reduction.
+  locations:
+  - model/model-spec.tex, 'Exact QoS feasible set, including zero cases'
+  - model/model-spec.tex, 'Optimizer, curvature and degeneracies'
+  - model/algorithm.md, optimizer_unique assignment
+  - model/checks.yaml, derivative and component-curvature checks
+  limitations:
+  - No joint convexity in power, channels or targets follows from this scalar result.
+  - The reported symbolic checks are supporting algebraic evidence, not substitutes
+    for the domain and sign arguments.
+- item: 6. Predictions consistent with the formulation and regime?
+  answer: P1–P6 follow from the equations and stated domains. For feasible positive
+    A, the selected U activates weak QoS, including q_w=0 at U=1. Equal received SNRs
+    give constant sum log2(1+A) and feasibility q_w+q_s<=log2(1+A). P7 is explicitly
+    a prospective implementation-validation requirement, not a measured result. The
+    conditional OMA strictness and equality cases agree with the proof.
+  locations:
+  - model/predictions.yaml, P1–P7
+  - model/model-spec.tex, 'Optimizer, curvature and degeneracies'
+  - model/model-spec.tex, 'Matched equal-time OMA and conditional comparison'
+  limitations:
+  - No numerical agreement, Monte Carlo result or implementation correctness has been
+    demonstrated.
+- item: 7. Fair power, CSI, channel realizations and strongest relevant baselines?
+  answer: 'Resources are matched for the designated equal-time OMA reference: identical
+    channels, noise, bandwidth, whole-block targets, active-slot power P and total
+    energy P*tau. The dominance proof is valid: c(B)<=c(A), so a=c(A) matches the
+    weak OMA rate and meets or exceeds the strong OMA rate. The increase is strict
+    for B>A; the separate A=0<B witness a=1 also gives strict improvement. Equal received
+    SNRs give equality. OMA feasibility therefore implies NOMA feasibility. Optimizer
+    individual-rate dominance is correctly not asserted.'
+  locations:
+  - model/model-spec.tex, 'Matched equal-time OMA and conditional comparison', resource
+    accounting and theorem proof
+  - model/assumptions.yaml, A6
+  - model/source-map.md, Fair-NOMA and Zhu transfer restrictions
+  - grounded_paper_pages, doi:10.1109/tvt.2017.2689000, pp.2–3 Sections III–IV
+  - grounded_paper_pages, doi:10.1109/jsac.2017.2725618, p.11 OFDMA baseline definition
+  limitations:
+  - Equal-time OMA is the approved reference, not an optimized OMA scheduler.
+  - No conclusion is established for unmatched resources or arbitrary fixed NOMA splits.
+- item: 8. Realistic frequency, bandwidth, distances and RIS geometry?
+  answer: The normalized scalar benchmark intentionally selects no deployment frequency,
+    distances, propagation distribution or RIS geometry. Unit bandwidth and noise
+    are explicit. This is consistent with the approved synthetic scope and does not
+    undermine its mathematical validity.
+  locations:
+  - scope.yaml, inclusion and exclusion
+  - scope.md, 'Boundaries'
+  - model/model-spec.tex, 'Scope, normalization and physical model'
+  - model/assumptions.yaml, A1 and A3
+  limitations:
+  - The model cannot support a deployment-specific performance claim.
+- item: 9. Correct complexity; multiple seeds?
+  answer: O(1) analytic work and storage are justified in the explicitly stated real-arithmetic
+    model with elementary functions treated as operations. The artifacts correctly
+    distinguish this from bit complexity and floating-point latency. O(K) oracle evaluation
+    cost excludes certification and precision costs, and no unspecified solver convergence
+    guarantee is claimed. Independent Monte Carlo seeds are a future scope requirement,
+    not completed evidence.
+  locations:
+  - model/model-spec.tex, 'Optimizer, curvature and degeneracies', complexity paragraph
+  - model/algorithm.md, oracle complexity and multi-block aggregation paragraphs
+  - scope.yaml, inclusion
+  - model/algorithm.md, 'Numerical risks and falsification cases for P5'
+  limitations:
+  - Numerical precision, solver work, sample counts and seeds remain unselected.
+  - Their P5 deferral is not a mathematical validity flaw.
+- item: 10. Novelty delta supported by grounded closest-work cards?
+  answer: The artifacts make no original novelty claim. The supplied pages support
+    the established scalar rate context, related QoS boundary optimizer, fairness
+    witness and fixed-split countercontext. Zhu's additional power-order and SIC-stability
+    restrictions, Fair-NOMA's OMA-relative targets, and Ding's primary-only CR-NOMA
+    reference are explicitly separated from this model. The arbitrary-QoS and degenerate-case
+    arguments are independently derivable from the displayed equations.
+  locations:
+  - model/model-spec.tex, 'Source attribution'
+  - model/source-map.md, 'Grounded literature' and 'Project derivations and limits'
+  - literature/cards/r_doi_10_1109_jsac_2017_2725618_92eae3178c8b.yaml, constraints
+    and notes
+  - grounded_paper_pages, arxiv:1504.07751, pp.1–3
+  - grounded_paper_pages, doi:10.1109/jsac.2017.2725618, pp.6–7
+  - grounded_paper_pages, doi:10.1109/tvt.2017.2689000, pp.2–3
+  - grounded_paper_pages, doi:10.48550/arxiv.1412.2799, p.4
+  limitations:
+  - The supplied extracted pages support a bounded attribution review, not independent
+    authentication of original PDFs or publication metadata.
+- item: 11. Scalability and practical implementation concerns?
+  answer: 'The implementation proposal identifies cancellation, overflow, representability
+    and boundary classification risks. Oracle independence is appropriately specified:
+    original inputs and both-site SINRs, full [0,1] search, no copied L/U formulas
+    or derivative sign, and explicit unresolved numerical status. A finite grid alone
+    cannot establish feasibility completeness or exact infeasibility. Scalability
+    claims concern independent block aggregation, while practical CSI/SIC, coding
+    and hardware effects remain excluded.'
+  locations:
+  - model/algorithm.md, 'Structurally independent scalar oracle proposal'
+  - model/algorithm.md, 'Numerical risks and falsification cases for P5'
+  - model/model-spec.tex, 'Feasibility ledger and prospective validation'
+  - model/assumptions.yaml, A2–A4
+  - grounded_paper_pages, doi:10.1109/comst.2016.2621116, pp.34–36 Section VI
+  limitations:
+  - Oracle independence and certification are requirements awaiting implementation,
+    not demonstrated properties.
+  - Higher precision or root bracketing alone does not guarantee finite-time exact
+    classification of every arbitrary-real boundary case; unresolved status remains
+    necessary.
+  - No multiuser, hardware or finite-block scalability theorem is established.
+rigor_dimensions:
+- dimension: Evidence relevance
+  score: 4
+  strengths:
+  - The supplied Fair-NOMA pp.2–3 directly support the matched OMA rates and fairness
+    interval.
+  - Zhu pp.6–7 support the related boundary-optimizer context while exposing restrictions
+    that the project does not import.
+  - Xu p.2 and Ding p.2 retain fixed-split sum-loss countercontext.
+  - The model's conclusions can be checked from its own equations without trusting
+    literature summaries.
+  weaknesses:
+  - Some extracted equations are damaged, particularly the QoS-limits proof and survey
+    rate formulas.
+  - Original PDFs, hashes and final publication metadata cannot be independently authenticated
+    in this inline review.
+  tests:
+  - 'Prospective source audit: compare each retained attribution with the cited original
+    PDF page, especially damaged equations; do not use those equations as proof of
+    the project theorem.'
+  - 'Prospective bibliographic audit: reconcile manuscript versions and final venue
+    metadata before manuscript export.'
+- dimension: Falsifiability quality
+  score: 5
+  strengths:
+  - Predictions specify their exact domains and distinguish identities from future
+    numerical validation.
+  - An inside-interval violation, outside-interval feasible split, better certified
+    feasible split, exact OMA-only instance or negative paired difference would contradict
+    a precise claim.
+  - The proposed validator evaluates both weak decoding sites.
+  weaknesses:
+  - The future oracle's numerical certificates and uncertainty handling have not yet
+    been selected.
+  tests:
+  - 'Prospective boundary cases: A=B=3 with q_w=q_s=1 gives the singleton a=1/3 and
+    equal scheme sums.'
+  - 'Prospective unequal-channel singleton: A=1, B=3, q_w=log2(4/3), q_s=log2(5/2)
+    gives a=1/2.'
+  - 'Prospective zero-branch cases: test A=B=0 with zero and positive targets, and
+    A=0<B with q_w=0 and q_w>0.'
+- dimension: Scope calibration
+  score: 5
+  strengths:
+  - Dominance is restricted to the matched equal-time reference and ideal scalar model.
+  - Strict sum improvement is tied to B>A; equality includes equal channels and zero
+    power.
+  - The artifacts avoid optimizer individual-rate dominance, practical decoding, universal
+    fixed-split dominance and original novelty claims.
+  - Numerical validation is explicitly prospective.
+  weaknesses:
+  - Practical relevance is limited to an ideal benchmark, as stated.
+  tests:
+  - 'Prospective reporting audit: ensure every later comparison names the equal-time
+    scheduler and both-feasible conditioning.'
+  - 'Prospective claim audit: keep measured implementation findings distinct from
+    exact mathematical predictions.'
+- dimension: Argument coherence
+  score: 5
+  strengths:
+  - The SIC inequality, necessary-and-sufficient interval, derivative signs and endpoint
+    optimizer form a complete chain.
+  - The equal-SNR feasibility condition follows from the constant-sum rate boundary.
+  - The fairness witness establishes both feasibility inclusion and strict/equality
+    sum cases, including zero branches.
+  - Uniqueness reporting agrees between the proof and pseudocode.
+  weaknesses:
+  - No actionable mathematical gap was found within the stated model.
+  - The proof does not establish correctness of an eventual finite-precision implementation.
+  tests:
+  - 'Prospective direct-rate checks: evaluate a=0 and a=1 with each individual target
+    zero in turn.'
+  - 'Prospective infeasibility checks: increase a singleton''s positive strong target
+    while keeping its weak target fixed and verify that the feasible set becomes empty.'
+  - 'Prospective tie checks: A=B=3 and both targets zero should allow every split
+    with sum 2.'
+- dimension: Exploration integrity
+  score: 5
+  strengths:
+  - All four feasibility categories are retained, including the category predicted
+    impossible by the exact theorem.
+  - Negative paired differences and candidate violations must be diagnosed rather
+    than erased.
+  - The ledger uses N for feasibility fractions and n_11 for paired summaries; zero
+    denominators are undefined.
+  - Different literature comparators and practical limitations are preserved.
+  weaknesses:
+  - No ensemble or negative numerical trial exists yet; integrity is specified prospectively.
+  tests:
+  - 'Prospective ledger audit: reconstruct N=n_00+n_01+n_10+n_11 from original indicators.'
+  - 'Prospective empty-ensemble and no-pair tests: require undefined fractions at
+    N=0 and undefined paired summaries at n_11=0.'
+  - 'Prospective unresolved-case audit: retain numerical ambiguity separately without
+    silently changing accepted denominators.'
+- dimension: Methodological rigor
+  score: 5
+  strengths:
+  - Units, Gaussian-noise normalization, resource accounting and exact inequality
+    conventions are explicit.
+  - The analytic solution separates infeasible status from undefined constrained optimum
+    values.
+  - Symbolic checks are explicitly bounded and are not offered as complete proof.
+  - Oracle independence, boundary certification and computational limitations are
+    acknowledged.
+  - P5 numerical settings are appropriately deferred without being presented as results.
+  weaknesses:
+  - Executable reproducibility, numerical reliability and oracle independence remain
+    untested.
+  tests:
+  - 'Prospective implementation audit: ensure the validator receives original inputs
+    and does not call the optimizer or reuse its endpoint formulas.'
+  - 'Prospective numerical stress tests: challenge nearly singleton intervals, near-equal
+    SNRs, very small targets, large finite inputs and overflow-prone exponentials.'
+  - 'Prospective certification audit: require a valid certificate or unresolved status
+    when finite precision cannot distinguish equality from infeasibility.'
+  - 'Prospective seeded validation: record independent seeds, complete category counts
+    and paired denominators under the later approved protocol.'
+limitations:
+- Review was confined to the complete inline packet; no tools, network, filesystem,
+  simulations or symbolic execution were used.
+- The reported PASS checks were inspected as artifact data, not independently rerun
+  or treated as complete proofs.
+- Supplied paper extracts were treated as untrusted evidence; damaged extraction limits
+  verification of some published equations.
+- Original source PDFs, evidence hashes, omitted source pages and external publication
+  metadata were not authenticated.
+- No implementation, oracle certificate, numerical tolerance, Monte Carlo sample or
+  measured result was reviewed.
+- P5 settings and their deferral are outside this mathematical-validity review.
+- The recommendation concerns the scoped model artifacts only and is not a scientific
+  gate decision.
+summary: 'No actionable mathematical flaw was found in the scoped P4 artifacts.
+
+  Both-site SIC, complete feasibility branches, scalar curvature and optimizer degeneracies
+  are correct.
+
+  Matched equal-time OMA inclusion and strict/equality sum comparison follow from
+  the displayed witness proof.
+
+  Feasibility fractions and paired summaries use the correct distinct denominators.
+
+  Source transfer restrictions are appropriately bounded; damaged extracts limit source
+  authentication.
+
+  Oracle independence and numerical reproducibility remain proposals, not measured
+  results.
+
+  The model is ready within its established-method synthetic scope.'
+recommendation: ready

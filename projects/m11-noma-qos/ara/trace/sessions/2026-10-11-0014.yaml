@@ -1,0 +1,12 @@
+id: 2026-10-11-0014
+timestamp: '2026-10-11T10:20:36.067686+00:00'
+phase: P4
+summary: PI said 'Approved' in response to the bounded P4 independent model-review
+  authorization request. Authorizes the documented 21 text-artifact and 35 published-paper-page
+  payload to the existing authenticated OpenAI Codex account, up to three artifact-only
+  critique rounds within approved idea-01 scope; no reviewer tools/network. This is
+  external-review permission, not G4 approval or protocol/simulation authorization.
+provenance: user
+evidence:
+  to_human/P4-review-authorization.md: 4240b8c0913fc3b7f4437a9a2b3dbc06e442df8abdbad7cd27bc6d14eb455dee
+  ara/staging/P4-review-payload.json: be2d719e2fcefa062a95691720d486d07d2121e2cca68f0114cf28dd163da2a3
