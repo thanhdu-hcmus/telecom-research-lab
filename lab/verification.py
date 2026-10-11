@@ -220,7 +220,11 @@ def custom_verify(path, spec, predictions):
 
     repo = path.parents[1]
     _, lock = locked(path)
-    script_name = spec.get("verification_entrypoint")
+    canonical_name = spec.get("verification_entrypoint")
+    declared_alias = spec.get("verifier")
+    if canonical_name and declared_alias and canonical_name != declared_alias:
+        raise LabError("Conflicting verification entrypoint declarations")
+    script_name = canonical_name or declared_alias
     if (
         not script_name
         or script_name == spec["entrypoint"]
@@ -247,7 +251,7 @@ def custom_verify(path, spec, predictions):
         env=env,
         capture_output=True,
         text=True,
-        timeout=600,
+        timeout=3600,
     )
     (stage / "stdout.txt").write_text(result.stdout, encoding="utf-8", newline="\n")
     (stage / "stderr.txt").write_text(result.stderr, encoding="utf-8", newline="\n")

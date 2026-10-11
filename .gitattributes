@@ -6,3 +6,6 @@
 *.zip binary
 # Preserve the exact bytes bound to the M11 G5 figure checksum.
 projects/m11-noma-qos/results/oma-reference-overlay.svg -text
+
+# Preserve the exact bytes of the PI-archived G5 figure.
+projects/m11-noma-qos/archive/2026-10-11T16-51-50.467789+00-00/results/oma-reference-overlay.svg -text

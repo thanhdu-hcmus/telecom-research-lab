@@ -1,0 +1,3 @@
+# Raw draws and per-block outputs remain local and checksum-bound in manifests.
+runs/**/*.csv
+runs/**/*.npz

@@ -1,0 +1,240 @@
+version: 1
+language: python
+entrypoint: projects/m11-noma-qos/sim/src/experiment.py
+verifier: projects/m11-noma-qos/sim/src/verifier.py
+scenarios:
+- id: mc-00-q0
+  seeds: &id001
+  - 11001
+  - 11002
+  - 11003
+  - 11004
+  - 11005
+  - 11006
+  - 11007
+  - 11008
+  - 11009
+  - 11010
+  - 11011
+  - 11012
+  trials: 32768
+  params:
+    kind: monte-carlo
+    trials: 32768
+    rate_tolerance: 1.0e-09
+    split_tolerance: 1.0e-12
+    objective_tolerance: 1.0e-07
+    oracle_rows: 32
+    sensitivity_rows: 8
+    P_db: 0
+    P: 1.0
+    qw: 0
+    qs: 0
+- id: mc-00-q1
+  seeds: *id001
+  trials: 32768
+  params:
+    kind: monte-carlo
+    trials: 32768
+    rate_tolerance: 1.0e-09
+    split_tolerance: 1.0e-12
+    objective_tolerance: 1.0e-07
+    oracle_rows: 32
+    sensitivity_rows: 8
+    P_db: 0
+    P: 1.0
+    qw: 0.25
+    qs: 0.25
+- id: mc-00-q2
+  seeds: *id001
+  trials: 32768
+  params:
+    kind: monte-carlo
+    trials: 32768
+    rate_tolerance: 1.0e-09
+    split_tolerance: 1.0e-12
+    objective_tolerance: 1.0e-07
+    oracle_rows: 32
+    sensitivity_rows: 8
+    P_db: 0
+    P: 1.0
+    qw: 0.5
+    qs: 0.5
+- id: mc-10-q0
+  seeds: *id001
+  trials: 32768
+  params:
+    kind: monte-carlo
+    trials: 32768
+    rate_tolerance: 1.0e-09
+    split_tolerance: 1.0e-12
+    objective_tolerance: 1.0e-07
+    oracle_rows: 32
+    sensitivity_rows: 8
+    P_db: 10
+    P: 10.0
+    qw: 0
+    qs: 0
+- id: mc-10-q1
+  seeds: *id001
+  trials: 32768
+  params:
+    kind: monte-carlo
+    trials: 32768
+    rate_tolerance: 1.0e-09
+    split_tolerance: 1.0e-12
+    objective_tolerance: 1.0e-07
+    oracle_rows: 32
+    sensitivity_rows: 8
+    P_db: 10
+    P: 10.0
+    qw: 0.25
+    qs: 0.25
+- id: mc-10-q2
+  seeds: *id001
+  trials: 32768
+  params:
+    kind: monte-carlo
+    trials: 32768
+    rate_tolerance: 1.0e-09
+    split_tolerance: 1.0e-12
+    objective_tolerance: 1.0e-07
+    oracle_rows: 32
+    sensitivity_rows: 8
+    P_db: 10
+    P: 10.0
+    qw: 0.5
+    qs: 0.5
+- id: mc-20-q0
+  seeds: *id001
+  trials: 32768
+  params:
+    kind: monte-carlo
+    trials: 32768
+    rate_tolerance: 1.0e-09
+    split_tolerance: 1.0e-12
+    objective_tolerance: 1.0e-07
+    oracle_rows: 32
+    sensitivity_rows: 8
+    P_db: 20
+    P: 100.0
+    qw: 0
+    qs: 0
+- id: mc-20-q1
+  seeds: *id001
+  trials: 32768
+  params:
+    kind: monte-carlo
+    trials: 32768
+    rate_tolerance: 1.0e-09
+    split_tolerance: 1.0e-12
+    objective_tolerance: 1.0e-07
+    oracle_rows: 32
+    sensitivity_rows: 8
+    P_db: 20
+    P: 100.0
+    qw: 0.25
+    qs: 0.25
+- id: mc-20-q2
+  seeds: *id001
+  trials: 32768
+  params:
+    kind: monte-carlo
+    trials: 32768
+    rate_tolerance: 1.0e-09
+    split_tolerance: 1.0e-12
+    objective_tolerance: 1.0e-07
+    oracle_rows: 32
+    sensitivity_rows: 8
+    P_db: 20
+    P: 100.0
+    qw: 0.5
+    qs: 0.5
+- id: mc-30-q0
+  seeds: *id001
+  trials: 32768
+  params:
+    kind: monte-carlo
+    trials: 32768
+    rate_tolerance: 1.0e-09
+    split_tolerance: 1.0e-12
+    objective_tolerance: 1.0e-07
+    oracle_rows: 32
+    sensitivity_rows: 8
+    P_db: 30
+    P: 1000.0
+    qw: 0
+    qs: 0
+- id: mc-40-q0
+  seeds: *id001
+  trials: 32768
+  params:
+    kind: monte-carlo
+    trials: 32768
+    rate_tolerance: 1.0e-09
+    split_tolerance: 1.0e-12
+    objective_tolerance: 1.0e-07
+    oracle_rows: 32
+    sensitivity_rows: 8
+    P_db: 40
+    P: 10000.0
+    qw: 0
+    qs: 0
+- id: mc-50-q0
+  seeds: *id001
+  trials: 32768
+  params:
+    kind: monte-carlo
+    trials: 32768
+    rate_tolerance: 1.0e-09
+    split_tolerance: 1.0e-12
+    objective_tolerance: 1.0e-07
+    oracle_rows: 32
+    sensitivity_rows: 8
+    P_db: 50
+    P: 100000.0
+    qw: 0
+    qs: 0
+- id: deterministic
+  seeds:
+  - 11999
+  trials: 100
+  params:
+    kind: deterministic
+    trials: 100
+    rate_tolerance: 1.0e-09
+    split_tolerance: 1.0e-12
+    objective_tolerance: 1.0e-07
+    oracle_rows: 100
+    sensitivity_rows: 8
+metrics:
+- joint_feasibility_ledger
+- both_feasible_noma_sum
+- both_feasible_oma_sum
+- paired_sum_difference
+- constraint_residuals
+- oracle_agreement
+- allocation_ablations
+- oma_reference_reproduction
+fairness:
+  same_power: true
+  same_bandwidth: true
+  same_csi: true
+  common_channels: true
+  same_qos: true
+trial_policy:
+  relative_ci_halfwidth: 0.01
+  minimum_events: 100
+  confidence: 0.95
+  adaptive_stopping: false
+  undefined_denominators: null; retain unresolved ledger
+inputs:
+- projects/m11-noma-qos/sim/cases.yaml
+- projects/m11-noma-qos/sim/src/analytic.py
+- projects/m11-noma-qos/sim/src/oracle.py
+- projects/m11-noma-qos/sim/src/experiment.py
+- projects/m11-noma-qos/sim/src/aggregate.py
+- projects/m11-noma-qos/sim/src/verifier.py
+- projects/m11-noma-qos/ara/staging/P5-engineer-design.md
+- projects/m11-noma-qos/sim/src/__init__.py
+- projects/m11-noma-qos/sim/tests/test_noma_physics.py
