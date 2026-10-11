@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-10-11T14:06:29.847682+00:00",
+  "status": "PASS",
+  "jobs": 145,
+  "canonical_receipts": {
+    "lock": {
+      "file": ".cache/m11-p5-lock-01.json",
+      "sha256": "804b18a99827cce3817f67ca8d6cc68488304c4eb492bb1a126e2364b7f1c898",
+      "result": {
+        "status": "PASS"
+      }
+    },
+    "run": {
+      "file": ".cache/m11-p5-run-01.json",
+      "sha256": "d9b805457d2eb4a8b22affc2a7135ee476e279fae195746817867f11a0d61b12",
+      "result": {
+        "status": "PASS"
+      }
+    },
+    "status": {
+      "file": ".cache/m11-p5-status-01.json",
+      "sha256": "ef89e808a922896f4098f8f7381b07342ef928fa105870a31e30e4f14920982e",
+      "result": {
+        "status": "PASS",
+        "completed": 145
+      }
+    },
+    "collect": {
+      "file": ".cache/m11-p5-collect-01.json",
+      "sha256": "b3e660f7ff4972a8e90740a9347e89f54c0a467c1a08fbaf29ad3d8bc11cc264",
+      "result": {
+        "status": "PASS",
+        "rows": 145,
+        "summary": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\results\\summary.csv"
+      }
+    }
+  },
+  "report_layout": "OMA overlay rendered and visually inspected; readable labels, legend, uncertainty marks"
+}

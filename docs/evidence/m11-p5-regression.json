@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-10-11T11:11:32.265206+00:00",
+  "status": "PASS",
+  "tests": 90,
+  "failures": 0,
+  "errors": 0,
+  "junit_path": ".cache\\m11-p5-regression-02.xml",
+  "junit_sha256": "ce208aa6fb43f9a7a55e0234b1f99ab7b46a71f2fc718dec159fbe972693342b",
+  "suites": [
+    {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "90",
+      "time": "121.675",
+      "timestamp": "2026-10-11T18:07:40.794659+07:00",
+      "hostname": "DESKTOP-VJUHLPT"
+    }
+  ],
+  "initial_failed_run": "docs/evidence/m11-p5-tests-initial.json",
+  "fix": "Use new verified absent workspace basetemp; no source change; disable cacheprovider to avoid cache ACL warning"
+}

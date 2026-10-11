@@ -1,0 +1,15 @@
+{
+  "kind": "monte-carlo",
+  "seed": 11012,
+  "trials": 32768,
+  "bit_generator": "PCG64",
+  "seed_sequence_entropy": [
+    11012,
+    0
+  ],
+  "stream": "channel",
+  "channel_law": "sorted iid exponential mean 1",
+  "common_grid_draws": true,
+  "deterministic_repeats_independent": false,
+  "no_noise_or_initialization_stream_required": true
+}

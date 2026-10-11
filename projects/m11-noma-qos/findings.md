@@ -135,3 +135,35 @@ remains unstarted. Earlier permission-pending sections are historical.
 ## Current P5: G4 approval verified
 
 PI commit08808d8 approves the model and rates G4 usable. P5 phase start passed. Protocol and implementation are being prepared; simulations have not started. Historical pending statements above refer to earlier states. Approved G1-G4 artifacts remain intact.
+
+## Current P5: experiments complete, G5 pending
+
+The user's explicit test and P5 execution request is retained in session0018.
+All 31 targeted simulation/physics tests passed. The first framework attempt had
+49 passes and 41 setup errors from the default Windows temporary-folder ACL;
+a fresh verified workspace basetemp and disabled cache plugin yielded 90 passes.
+No source fix or simulation relock was needed; the failed attempt is retained.
+
+The committed v1 protocol produced 145 completed manifest jobs: 4,718,592 Monte
+Carlo scenario evaluations plus 100 deterministic rows. All manifests, outputs
+and 51 locked input bindings validate. The 393,216 unique seeded channel pairs
+reproduce exactly and are reused across the 12 settings, not independent grid
+replicates. All conditional rate intervals meet the declared 1% halfwidth target.
+There are zero OMA-only feasible blocks, zero negative paired differences beyond
+the declared tolerance and zero candidate rate/SIC violations in this finite grid.
+
+The 4708 original-SINR oracle checks have status counts {'feasible': 4129, 'infeasible': 559, 'unresolved': 20}.
+Resolved feasibility/objective disagreements: 0. Twenty unresolved oracle rows
+represent four distinct deterministic stress cases; five joint unresolved rows
+represent the repeated fractional boundary. Unresolved outcomes are retained,
+not relabeled. Maximum resolved objective error: 6.66755539668884e-12.
+The six published OMA-subset points agree within 0.1716% (declared limit 5%);
+this does not reproduce the Fair-NOMA allocation curves or every paper figure.
+
+The protocol's incorrect root-LICENSE reference has a separate documentary
+erratum; locked input bytes and numerical settings are unchanged. No upstream
+software is accepted or executed, and no repository-wide license is claimed.
+G5 automated checks pass; review to_human/G5-review.md and G5-report.md. The
+lab-orchestrator rule requires the PI G5 decision before independent P6
+verification. M11 remains in progress; M12 remains unstarted. Earlier preparation
+and pending-test sections are historical. Approved G1-G4 bindings remain intact.

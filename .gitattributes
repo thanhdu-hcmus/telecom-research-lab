@@ -4,3 +4,5 @@
 *.npz binary
 *.png binary
 *.zip binary
+# Preserve the exact bytes bound to the M11 G5 figure checksum.
+projects/m11-noma-qos/results/oma-reference-overlay.svg -text

@@ -1,0 +1,26 @@
+id: 2026-10-11-0019
+timestamp: '2026-10-11T14:19:02.636109+00:00'
+phase: P5
+summary: P5 complete under explicit test-execution authorization in session0018.31
+  targeted checks and90 regressions passed; first regression had49 passes and41 Windows
+  temporary-folder ACL setup errors, resolved with a fresh workspace basetemp and
+  no source changes.145 fixed jobs completed;393216 unique seeded channel pairs reproduce
+  exactly across12 settings. All rate precision targets and OMA-subset reproduction
+  passed; maximum reference error0.1716%.4708 distinct original-SINR oracle checks
+  show zero resolved disagreements;20 unresolved deterministic oracle rows and5 joint
+  unresolved rows remain explicit. No source fix, relock, failed simulation, upstream
+  software acceptance or scientific scope change. Documentary LICENSE erratum recorded
+  without altering locked inputs. A wording edit was initially blocked as presumed
+  gate-bound, then permitted after read-only checks proved both draft metadata files
+  unbound. G5 requested and all automated checks passed; G5 PI decision and independent
+  P6 verification remain pending.
+provenance: ai
+evidence:
+  ara/staging/P5-execution.json: 606410c1d7c5b679969a3b7a24a495c00ce979184e2cc0a251939c7121adf592
+  to_human/G5-review.md: 3d13521faf751584db39f6770ad9bbc01f159f235d8035630b67ae4f8e3ca8e2
+  to_human/G5-report.md: 16b76f7193ad99c70839e6d36c4170be006df98a03c8277c2a7e116c499c1888
+  sim/lock.json: 9b929265424be760e6a2bf321db8300203f81ed5f98d60163f2e0a0ac31dcb4e
+  sim/protocol-errata.md: 77ea24e95efbc18e1eaa3cee292c87dabeecb0d1aed742b63d78a32a2f14037c
+  results/statistics.json: 4ad1a84f65f45e2774851f15c22d6080bc28ed96f6d78ab2f57cd2f06c80a73f
+  results/diagnostics.json: 735105b5b2698cd1f074f804bcc79fdfb97b65fe68f7505a3868c6901704f887
+  results/channel-audit.json: 7d98fa1780d449a7ab3aa72c53c91682ad3c0802a1a6911685e0876b268c4d5b

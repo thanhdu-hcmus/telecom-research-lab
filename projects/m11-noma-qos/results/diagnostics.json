@@ -1,0 +1,1676 @@
+{
+  "timestamp": "2026-10-11T11:51:57.272413+00:00",
+  "status": "diagnostics computed; independent P6 verification pending",
+  "jobs": 145,
+  "oracle_checks": 4708,
+  "oracle_status_counts": {
+    "feasible": 4129,
+    "infeasible": 559,
+    "unresolved": 20
+  },
+  "tighter_status_counts": {
+    "feasible": 1012,
+    "infeasible": 148
+  },
+  "unresolved_reasons": {
+    "Exact feasible witness found, maximum unresolved in narrow interval": 5,
+    "Narrow/singleton domain without an exact direct certificate": 10,
+    "Numerical concavity objective gap exceeds tolerance": 5
+  },
+  "disagreements": [],
+  "unresolved": [
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 12,
+      "case_id": "narrow-feasible",
+      "analytic_status": "feasible",
+      "oracle_status": "unresolved",
+      "reason": "Exact feasible witness found, maximum unresolved in narrow interval",
+      "exact_split": "1/3",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        3.0,
+        9.000000000001,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 13,
+      "case_id": "narrow-infeasible",
+      "analytic_status": "infeasible",
+      "oracle_status": "unresolved",
+      "reason": "Narrow/singleton domain without an exact direct certificate",
+      "exact_split": "",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        3.0,
+        8.999999999999,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 15,
+      "case_id": "large-finite-snr",
+      "analytic_status": "feasible",
+      "oracle_status": "unresolved",
+      "reason": "Numerical concavity objective gap exceeds tolerance",
+      "exact_split": "",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        1e+100,
+        2e+100,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 16,
+      "case_id": "fractional-boundary",
+      "analytic_status": "unresolved",
+      "oracle_status": "unresolved",
+      "reason": "Narrow/singleton domain without an exact direct certificate",
+      "exact_split": "",
+      "feasibility_certificate": "numerical-direct-bracket",
+      "inputs": [
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 32,
+      "case_id": "narrow-feasible",
+      "analytic_status": "feasible",
+      "oracle_status": "unresolved",
+      "reason": "Exact feasible witness found, maximum unresolved in narrow interval",
+      "exact_split": "1/3",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        3.0,
+        9.000000000001,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 33,
+      "case_id": "narrow-infeasible",
+      "analytic_status": "infeasible",
+      "oracle_status": "unresolved",
+      "reason": "Narrow/singleton domain without an exact direct certificate",
+      "exact_split": "",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        3.0,
+        8.999999999999,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 35,
+      "case_id": "large-finite-snr",
+      "analytic_status": "feasible",
+      "oracle_status": "unresolved",
+      "reason": "Numerical concavity objective gap exceeds tolerance",
+      "exact_split": "",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        1e+100,
+        2e+100,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 36,
+      "case_id": "fractional-boundary",
+      "analytic_status": "unresolved",
+      "oracle_status": "unresolved",
+      "reason": "Narrow/singleton domain without an exact direct certificate",
+      "exact_split": "",
+      "feasibility_certificate": "numerical-direct-bracket",
+      "inputs": [
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 52,
+      "case_id": "narrow-feasible",
+      "analytic_status": "feasible",
+      "oracle_status": "unresolved",
+      "reason": "Exact feasible witness found, maximum unresolved in narrow interval",
+      "exact_split": "1/3",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        3.0,
+        9.000000000001,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 53,
+      "case_id": "narrow-infeasible",
+      "analytic_status": "infeasible",
+      "oracle_status": "unresolved",
+      "reason": "Narrow/singleton domain without an exact direct certificate",
+      "exact_split": "",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        3.0,
+        8.999999999999,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 55,
+      "case_id": "large-finite-snr",
+      "analytic_status": "feasible",
+      "oracle_status": "unresolved",
+      "reason": "Numerical concavity objective gap exceeds tolerance",
+      "exact_split": "",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        1e+100,
+        2e+100,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 56,
+      "case_id": "fractional-boundary",
+      "analytic_status": "unresolved",
+      "oracle_status": "unresolved",
+      "reason": "Narrow/singleton domain without an exact direct certificate",
+      "exact_split": "",
+      "feasibility_certificate": "numerical-direct-bracket",
+      "inputs": [
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 72,
+      "case_id": "narrow-feasible",
+      "analytic_status": "feasible",
+      "oracle_status": "unresolved",
+      "reason": "Exact feasible witness found, maximum unresolved in narrow interval",
+      "exact_split": "1/3",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        3.0,
+        9.000000000001,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 73,
+      "case_id": "narrow-infeasible",
+      "analytic_status": "infeasible",
+      "oracle_status": "unresolved",
+      "reason": "Narrow/singleton domain without an exact direct certificate",
+      "exact_split": "",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        3.0,
+        8.999999999999,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 75,
+      "case_id": "large-finite-snr",
+      "analytic_status": "feasible",
+      "oracle_status": "unresolved",
+      "reason": "Numerical concavity objective gap exceeds tolerance",
+      "exact_split": "",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        1e+100,
+        2e+100,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 76,
+      "case_id": "fractional-boundary",
+      "analytic_status": "unresolved",
+      "oracle_status": "unresolved",
+      "reason": "Narrow/singleton domain without an exact direct certificate",
+      "exact_split": "",
+      "feasibility_certificate": "numerical-direct-bracket",
+      "inputs": [
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 92,
+      "case_id": "narrow-feasible",
+      "analytic_status": "feasible",
+      "oracle_status": "unresolved",
+      "reason": "Exact feasible witness found, maximum unresolved in narrow interval",
+      "exact_split": "1/3",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        3.0,
+        9.000000000001,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 93,
+      "case_id": "narrow-infeasible",
+      "analytic_status": "infeasible",
+      "oracle_status": "unresolved",
+      "reason": "Narrow/singleton domain without an exact direct certificate",
+      "exact_split": "",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        3.0,
+        8.999999999999,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 95,
+      "case_id": "large-finite-snr",
+      "analytic_status": "feasible",
+      "oracle_status": "unresolved",
+      "reason": "Numerical concavity objective gap exceeds tolerance",
+      "exact_split": "",
+      "feasibility_certificate": "exact-rational",
+      "inputs": [
+        1.0,
+        1e+100,
+        2e+100,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "row": 96,
+      "case_id": "fractional-boundary",
+      "analytic_status": "unresolved",
+      "oracle_status": "unresolved",
+      "reason": "Narrow/singleton domain without an exact direct certificate",
+      "exact_split": "",
+      "feasibility_certificate": "numerical-direct-bracket",
+      "inputs": [
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.5
+      ]
+    }
+  ],
+  "maximum_objective_agreement_error": 6.66755539668884e-12,
+  "maximum_numerical_objective_gap": 99998.99999999432,
+  "maximum_tighter_objective_difference": 4.2730263771773025e-12,
+  "total_job_runtime_s": 960.849745100073,
+  "raw_csv_bytes": 3547500847,
+  "job_details": [
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-ebb68ac51_cd9323d4820a",
+      "scenario": "deterministic",
+      "seed": 11999,
+      "runtime_s": 4.541201400017599,
+      "raw_bytes": 54226,
+      "start": "2026-10-11T11:24:43.737858+00:00",
+      "end": "2026-10-11T11:24:48.279135+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q0-11001-250ccb4ad292-ebb68ac514be_f1a5a169a7da",
+      "scenario": "mc-00-q0",
+      "seed": 11001,
+      "runtime_s": 5.466941899998346,
+      "raw_bytes": 22485017,
+      "start": "2026-10-11T11:08:46.971704+00:00",
+      "end": "2026-10-11T11:08:52.438705+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q0-11002-250ccb4ad292-ebb68ac514be_d9e76511cf68",
+      "scenario": "mc-00-q0",
+      "seed": 11002,
+      "runtime_s": 4.86211529999855,
+      "raw_bytes": 22487829,
+      "start": "2026-10-11T11:08:52.441098+00:00",
+      "end": "2026-10-11T11:08:57.303265+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q0-11003-250ccb4ad292-ebb68ac514be_f88110830779",
+      "scenario": "mc-00-q0",
+      "seed": 11003,
+      "runtime_s": 4.927590799983591,
+      "raw_bytes": 22481523,
+      "start": "2026-10-11T11:08:57.304532+00:00",
+      "end": "2026-10-11T11:09:02.232174+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q0-11004-250ccb4ad292-ebb68ac514be_afe4cc1f2348",
+      "scenario": "mc-00-q0",
+      "seed": 11004,
+      "runtime_s": 4.771797699999297,
+      "raw_bytes": 22483411,
+      "start": "2026-10-11T11:09:02.233622+00:00",
+      "end": "2026-10-11T11:09:07.005473+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q0-11005-250ccb4ad292-ebb68ac514be_d9537512d159",
+      "scenario": "mc-00-q0",
+      "seed": 11005,
+      "runtime_s": 4.780444799980614,
+      "raw_bytes": 22484405,
+      "start": "2026-10-11T11:09:07.006556+00:00",
+      "end": "2026-10-11T11:09:11.787046+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q0-11006-250ccb4ad292-ebb68ac514be_8e04de8e5063",
+      "scenario": "mc-00-q0",
+      "seed": 11006,
+      "runtime_s": 5.095572099991841,
+      "raw_bytes": 22484251,
+      "start": "2026-10-11T11:09:11.788889+00:00",
+      "end": "2026-10-11T11:09:16.884519+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q0-11007-250ccb4ad292-ebb68ac514be_29a2baadd1cd",
+      "scenario": "mc-00-q0",
+      "seed": 11007,
+      "runtime_s": 4.88770970000769,
+      "raw_bytes": 22483773,
+      "start": "2026-10-11T11:09:16.886096+00:00",
+      "end": "2026-10-11T11:09:21.773863+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q0-11008-250ccb4ad292-ebb68ac514be_8eac00542dd3",
+      "scenario": "mc-00-q0",
+      "seed": 11008,
+      "runtime_s": 5.183926900004735,
+      "raw_bytes": 22484221,
+      "start": "2026-10-11T11:09:21.774890+00:00",
+      "end": "2026-10-11T11:09:26.958872+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q0-11009-250ccb4ad292-ebb68ac514be_f85e88b8a53f",
+      "scenario": "mc-00-q0",
+      "seed": 11009,
+      "runtime_s": 5.216932000010274,
+      "raw_bytes": 22484287,
+      "start": "2026-10-11T11:09:26.959958+00:00",
+      "end": "2026-10-11T11:09:32.176945+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q0-11010-250ccb4ad292-ebb68ac514be_21557207059d",
+      "scenario": "mc-00-q0",
+      "seed": 11010,
+      "runtime_s": 5.072812700003851,
+      "raw_bytes": 22482081,
+      "start": "2026-10-11T11:09:32.178047+00:00",
+      "end": "2026-10-11T11:09:37.250901+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q0-11011-250ccb4ad292-ebb68ac514be_6d881e638271",
+      "scenario": "mc-00-q0",
+      "seed": 11011,
+      "runtime_s": 5.160853100009263,
+      "raw_bytes": 22481585,
+      "start": "2026-10-11T11:09:37.252912+00:00",
+      "end": "2026-10-11T11:09:42.413829+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q0-11012-250ccb4ad292-ebb68ac514be_4befd390a174",
+      "scenario": "mc-00-q0",
+      "seed": 11012,
+      "runtime_s": 5.766610199993011,
+      "raw_bytes": 22483005,
+      "start": "2026-10-11T11:09:42.414914+00:00",
+      "end": "2026-10-11T11:09:48.181579+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q1-11001-250ccb4ad292-ebb68ac514be_c3a1ebab4b19",
+      "scenario": "mc-00-q1",
+      "seed": 11001,
+      "runtime_s": 5.231813200021861,
+      "raw_bytes": 24610566,
+      "start": "2026-10-11T11:09:48.184340+00:00",
+      "end": "2026-10-11T11:09:53.416235+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q1-11002-250ccb4ad292-ebb68ac514be_7f8534e567a2",
+      "scenario": "mc-00-q1",
+      "seed": 11002,
+      "runtime_s": 6.254868699994404,
+      "raw_bytes": 24614164,
+      "start": "2026-10-11T11:09:53.417369+00:00",
+      "end": "2026-10-11T11:09:59.672305+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q1-11003-250ccb4ad292-ebb68ac514be_7b27c8c21f66",
+      "scenario": "mc-00-q1",
+      "seed": 11003,
+      "runtime_s": 5.588834299996961,
+      "raw_bytes": 24695241,
+      "start": "2026-10-11T11:09:59.673382+00:00",
+      "end": "2026-10-11T11:10:05.262276+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q1-11004-250ccb4ad292-ebb68ac514be_a0c542fc0b6d",
+      "scenario": "mc-00-q1",
+      "seed": 11004,
+      "runtime_s": 6.598430600017309,
+      "raw_bytes": 24634846,
+      "start": "2026-10-11T11:10:05.263416+00:00",
+      "end": "2026-10-11T11:10:11.861917+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q1-11005-250ccb4ad292-ebb68ac514be_d2698eacc730",
+      "scenario": "mc-00-q1",
+      "seed": 11005,
+      "runtime_s": 6.050744999985909,
+      "raw_bytes": 24653506,
+      "start": "2026-10-11T11:10:11.863095+00:00",
+      "end": "2026-10-11T11:10:17.913905+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q1-11006-250ccb4ad292-ebb68ac514be_f77d6df17847",
+      "scenario": "mc-00-q1",
+      "seed": 11006,
+      "runtime_s": 5.131390100024873,
+      "raw_bytes": 24643321,
+      "start": "2026-10-11T11:10:17.914910+00:00",
+      "end": "2026-10-11T11:10:23.046354+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q1-11007-250ccb4ad292-ebb68ac514be_264691abe4b9",
+      "scenario": "mc-00-q1",
+      "seed": 11007,
+      "runtime_s": 5.664924999990035,
+      "raw_bytes": 24672959,
+      "start": "2026-10-11T11:10:23.047337+00:00",
+      "end": "2026-10-11T11:10:28.712320+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q1-11008-250ccb4ad292-ebb68ac514be_ff0f828e6ca8",
+      "scenario": "mc-00-q1",
+      "seed": 11008,
+      "runtime_s": 5.29722400000901,
+      "raw_bytes": 24645578,
+      "start": "2026-10-11T11:10:28.713315+00:00",
+      "end": "2026-10-11T11:10:34.010594+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q1-11009-250ccb4ad292-ebb68ac514be_126e860f136c",
+      "scenario": "mc-00-q1",
+      "seed": 11009,
+      "runtime_s": 8.09516490000533,
+      "raw_bytes": 24629747,
+      "start": "2026-10-11T11:10:34.013196+00:00",
+      "end": "2026-10-11T11:10:42.108434+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q1-11010-250ccb4ad292-ebb68ac514be_1ff230d7a90f",
+      "scenario": "mc-00-q1",
+      "seed": 11010,
+      "runtime_s": 5.943405900005018,
+      "raw_bytes": 24661774,
+      "start": "2026-10-11T11:10:42.114517+00:00",
+      "end": "2026-10-11T11:10:48.058026+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q1-11011-250ccb4ad292-ebb68ac514be_462a831b752b",
+      "scenario": "mc-00-q1",
+      "seed": 11011,
+      "runtime_s": 5.053706900012912,
+      "raw_bytes": 24679586,
+      "start": "2026-10-11T11:10:48.059060+00:00",
+      "end": "2026-10-11T11:10:53.112820+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q1-11012-250ccb4ad292-ebb68ac514be_0352b235fb03",
+      "scenario": "mc-00-q1",
+      "seed": 11012,
+      "runtime_s": 5.304422099987278,
+      "raw_bytes": 24633544,
+      "start": "2026-10-11T11:10:53.114044+00:00",
+      "end": "2026-10-11T11:10:58.418526+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q2-11001-250ccb4ad292-ebb68ac514be_9a08118c21b4",
+      "scenario": "mc-00-q2",
+      "seed": 11001,
+      "runtime_s": 5.156004299991764,
+      "raw_bytes": 19739760,
+      "start": "2026-10-11T11:10:58.419766+00:00",
+      "end": "2026-10-11T11:11:03.575826+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q2-11002-250ccb4ad292-ebb68ac514be_15718378b35c",
+      "scenario": "mc-00-q2",
+      "seed": 11002,
+      "runtime_s": 6.202415500010829,
+      "raw_bytes": 19760682,
+      "start": "2026-10-11T11:11:03.577116+00:00",
+      "end": "2026-10-11T11:11:09.779587+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q2-11003-250ccb4ad292-ebb68ac514be_6dee4c9ebfb3",
+      "scenario": "mc-00-q2",
+      "seed": 11003,
+      "runtime_s": 5.229622799990466,
+      "raw_bytes": 19771865,
+      "start": "2026-10-11T11:11:09.784308+00:00",
+      "end": "2026-10-11T11:11:15.014000+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q2-11004-250ccb4ad292-ebb68ac514be_0ce3a4ab6a09",
+      "scenario": "mc-00-q2",
+      "seed": 11004,
+      "runtime_s": 5.588597800000571,
+      "raw_bytes": 19791060,
+      "start": "2026-10-11T11:11:15.015323+00:00",
+      "end": "2026-10-11T11:11:20.603979+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q2-11005-250ccb4ad292-ebb68ac514be_fe5b0cef18ee",
+      "scenario": "mc-00-q2",
+      "seed": 11005,
+      "runtime_s": 6.300817800016375,
+      "raw_bytes": 19717877,
+      "start": "2026-10-11T11:11:20.605049+00:00",
+      "end": "2026-10-11T11:11:26.905935+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q2-11006-250ccb4ad292-ebb68ac514be_3453b25dee3e",
+      "scenario": "mc-00-q2",
+      "seed": 11006,
+      "runtime_s": 5.8212220999994315,
+      "raw_bytes": 19771201,
+      "start": "2026-10-11T11:11:26.906992+00:00",
+      "end": "2026-10-11T11:11:32.728277+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q2-11007-250ccb4ad292-ebb68ac514be_5477b8952cc8",
+      "scenario": "mc-00-q2",
+      "seed": 11007,
+      "runtime_s": 6.491492800007109,
+      "raw_bytes": 19793382,
+      "start": "2026-10-11T11:11:32.729444+00:00",
+      "end": "2026-10-11T11:11:39.221005+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q2-11008-250ccb4ad292-ebb68ac514be_4ccbc5ae39fc",
+      "scenario": "mc-00-q2",
+      "seed": 11008,
+      "runtime_s": 5.213028700003633,
+      "raw_bytes": 19775618,
+      "start": "2026-10-11T11:11:39.223662+00:00",
+      "end": "2026-10-11T11:11:44.436750+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q2-11009-250ccb4ad292-ebb68ac514be_a143acd03c21",
+      "scenario": "mc-00-q2",
+      "seed": 11009,
+      "runtime_s": 4.845683299994562,
+      "raw_bytes": 19733910,
+      "start": "2026-10-11T11:11:44.437838+00:00",
+      "end": "2026-10-11T11:11:49.283572+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q2-11010-250ccb4ad292-ebb68ac514be_a9c9e5e0a146",
+      "scenario": "mc-00-q2",
+      "seed": 11010,
+      "runtime_s": 4.980361599999014,
+      "raw_bytes": 19753535,
+      "start": "2026-10-11T11:11:49.284684+00:00",
+      "end": "2026-10-11T11:11:54.265100+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q2-11011-250ccb4ad292-ebb68ac514be_5fbc339e8cbe",
+      "scenario": "mc-00-q2",
+      "seed": 11011,
+      "runtime_s": 5.459964999987278,
+      "raw_bytes": 19756860,
+      "start": "2026-10-11T11:11:54.266250+00:00",
+      "end": "2026-10-11T11:11:59.726273+00:00"
+    },
+    {
+      "run_id": "r_mc-00-q2-11012-250ccb4ad292-ebb68ac514be_e5ef9ecaf065",
+      "scenario": "mc-00-q2",
+      "seed": 11012,
+      "runtime_s": 4.694801699981326,
+      "raw_bytes": 19763340,
+      "start": "2026-10-11T11:11:59.727312+00:00",
+      "end": "2026-10-11T11:12:04.422163+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q0-11001-250ccb4ad292-ebb68ac514be_69e95847ccc6",
+      "scenario": "mc-10-q0",
+      "seed": 11001,
+      "runtime_s": 5.0910287000006065,
+      "raw_bytes": 22141276,
+      "start": "2026-10-11T11:12:04.423516+00:00",
+      "end": "2026-10-11T11:12:09.514600+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q0-11002-250ccb4ad292-ebb68ac514be_47ea0c75b30d",
+      "scenario": "mc-10-q0",
+      "seed": 11002,
+      "runtime_s": 5.128980800014688,
+      "raw_bytes": 22144165,
+      "start": "2026-10-11T11:12:09.515729+00:00",
+      "end": "2026-10-11T11:12:14.644762+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q0-11003-250ccb4ad292-ebb68ac514be_4433f5691f9b",
+      "scenario": "mc-10-q0",
+      "seed": 11003,
+      "runtime_s": 5.231319899990922,
+      "raw_bytes": 22141388,
+      "start": "2026-10-11T11:12:14.645586+00:00",
+      "end": "2026-10-11T11:12:19.876963+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q0-11004-250ccb4ad292-ebb68ac514be_075655c97201",
+      "scenario": "mc-10-q0",
+      "seed": 11004,
+      "runtime_s": 5.438714299991261,
+      "raw_bytes": 22144629,
+      "start": "2026-10-11T11:12:19.877931+00:00",
+      "end": "2026-10-11T11:12:25.316704+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q0-11005-250ccb4ad292-ebb68ac514be_4917dd9085f4",
+      "scenario": "mc-10-q0",
+      "seed": 11005,
+      "runtime_s": 4.902332500001648,
+      "raw_bytes": 22142242,
+      "start": "2026-10-11T11:12:25.317650+00:00",
+      "end": "2026-10-11T11:12:30.220030+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q0-11006-250ccb4ad292-ebb68ac514be_bf33eafe2a94",
+      "scenario": "mc-10-q0",
+      "seed": 11006,
+      "runtime_s": 5.780186299991328,
+      "raw_bytes": 22143985,
+      "start": "2026-10-11T11:12:30.223603+00:00",
+      "end": "2026-10-11T11:12:36.003882+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q0-11007-250ccb4ad292-ebb68ac514be_3649207ea6e3",
+      "scenario": "mc-10-q0",
+      "seed": 11007,
+      "runtime_s": 5.516221700003371,
+      "raw_bytes": 22141823,
+      "start": "2026-10-11T11:12:36.005964+00:00",
+      "end": "2026-10-11T11:12:41.522243+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q0-11008-250ccb4ad292-ebb68ac514be_337e1b68a56f",
+      "scenario": "mc-10-q0",
+      "seed": 11008,
+      "runtime_s": 5.736629699997138,
+      "raw_bytes": 22143191,
+      "start": "2026-10-11T11:12:41.523552+00:00",
+      "end": "2026-10-11T11:12:47.260245+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q0-11009-250ccb4ad292-ebb68ac514be_c1f4d4e48a34",
+      "scenario": "mc-10-q0",
+      "seed": 11009,
+      "runtime_s": 5.424774700019043,
+      "raw_bytes": 22141662,
+      "start": "2026-10-11T11:12:47.261459+00:00",
+      "end": "2026-10-11T11:12:52.686294+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q0-11010-250ccb4ad292-ebb68ac514be_d4084033a074",
+      "scenario": "mc-10-q0",
+      "seed": 11010,
+      "runtime_s": 5.923935500002699,
+      "raw_bytes": 22139344,
+      "start": "2026-10-11T11:12:52.687319+00:00",
+      "end": "2026-10-11T11:12:58.611319+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q0-11011-250ccb4ad292-ebb68ac514be_bdae05e30105",
+      "scenario": "mc-10-q0",
+      "seed": 11011,
+      "runtime_s": 5.533653300022706,
+      "raw_bytes": 22144780,
+      "start": "2026-10-11T11:12:58.612410+00:00",
+      "end": "2026-10-11T11:13:04.146106+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q0-11012-250ccb4ad292-ebb68ac514be_622b0fb32d28",
+      "scenario": "mc-10-q0",
+      "seed": 11012,
+      "runtime_s": 5.558751400007168,
+      "raw_bytes": 22141888,
+      "start": "2026-10-11T11:13:04.147643+00:00",
+      "end": "2026-10-11T11:13:09.706458+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q1-11001-250ccb4ad292-ebb68ac514be_07e36eedc987",
+      "scenario": "mc-10-q1",
+      "seed": 11001,
+      "runtime_s": 5.746348200016655,
+      "raw_bytes": 29862969,
+      "start": "2026-10-11T11:13:09.707571+00:00",
+      "end": "2026-10-11T11:13:15.453980+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q1-11002-250ccb4ad292-ebb68ac514be_2636402224a5",
+      "scenario": "mc-10-q1",
+      "seed": 11002,
+      "runtime_s": 5.614927299990086,
+      "raw_bytes": 29858834,
+      "start": "2026-10-11T11:13:15.455201+00:00",
+      "end": "2026-10-11T11:13:21.070191+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q1-11003-250ccb4ad292-ebb68ac514be_86d10c3b4f19",
+      "scenario": "mc-10-q1",
+      "seed": 11003,
+      "runtime_s": 5.875689099979354,
+      "raw_bytes": 29889295,
+      "start": "2026-10-11T11:13:21.071153+00:00",
+      "end": "2026-10-11T11:13:26.946905+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q1-11004-250ccb4ad292-ebb68ac514be_a7082a7f73a5",
+      "scenario": "mc-10-q1",
+      "seed": 11004,
+      "runtime_s": 9.122686599992448,
+      "raw_bytes": 29866461,
+      "start": "2026-10-11T11:13:26.947940+00:00",
+      "end": "2026-10-11T11:13:36.070721+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q1-11005-250ccb4ad292-ebb68ac514be_be70088dfee8",
+      "scenario": "mc-10-q1",
+      "seed": 11005,
+      "runtime_s": 8.525571299978765,
+      "raw_bytes": 29834092,
+      "start": "2026-10-11T11:13:36.073284+00:00",
+      "end": "2026-10-11T11:13:44.598941+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q1-11006-250ccb4ad292-ebb68ac514be_45820bbfb92e",
+      "scenario": "mc-10-q1",
+      "seed": 11006,
+      "runtime_s": 9.29505000001518,
+      "raw_bytes": 29869170,
+      "start": "2026-10-11T11:13:44.603403+00:00",
+      "end": "2026-10-11T11:13:53.898563+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q1-11007-250ccb4ad292-ebb68ac514be_f6e53aabf22b",
+      "scenario": "mc-10-q1",
+      "seed": 11007,
+      "runtime_s": 8.812827000016114,
+      "raw_bytes": 29843032,
+      "start": "2026-10-11T11:13:53.900992+00:00",
+      "end": "2026-10-11T11:14:02.713903+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q1-11008-250ccb4ad292-ebb68ac514be_0d0c2a607bbc",
+      "scenario": "mc-10-q1",
+      "seed": 11008,
+      "runtime_s": 10.90798079999513,
+      "raw_bytes": 29865788,
+      "start": "2026-10-11T11:14:02.727297+00:00",
+      "end": "2026-10-11T11:14:13.635477+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q1-11009-250ccb4ad292-ebb68ac514be_f3d4b63e582b",
+      "scenario": "mc-10-q1",
+      "seed": 11009,
+      "runtime_s": 11.785249200009275,
+      "raw_bytes": 29862197,
+      "start": "2026-10-11T11:14:13.637555+00:00",
+      "end": "2026-10-11T11:14:25.422916+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q1-11010-250ccb4ad292-ebb68ac514be_fac999bd49e1",
+      "scenario": "mc-10-q1",
+      "seed": 11010,
+      "runtime_s": 10.174931699992158,
+      "raw_bytes": 29862908,
+      "start": "2026-10-11T11:14:25.433507+00:00",
+      "end": "2026-10-11T11:14:35.608565+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q1-11011-250ccb4ad292-ebb68ac514be_2289ce1641f0",
+      "scenario": "mc-10-q1",
+      "seed": 11011,
+      "runtime_s": 8.275088299997151,
+      "raw_bytes": 29873459,
+      "start": "2026-10-11T11:14:35.611221+00:00",
+      "end": "2026-10-11T11:14:43.886379+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q1-11012-250ccb4ad292-ebb68ac514be_81fe74a047c8",
+      "scenario": "mc-10-q1",
+      "seed": 11012,
+      "runtime_s": 11.249372399994172,
+      "raw_bytes": 29841107,
+      "start": "2026-10-11T11:14:43.899869+00:00",
+      "end": "2026-10-11T11:14:55.149393+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q2-11001-250ccb4ad292-ebb68ac514be_a1b3ae44e2ee",
+      "scenario": "mc-10-q2",
+      "seed": 11001,
+      "runtime_s": 9.733212399994954,
+      "raw_bytes": 27602075,
+      "start": "2026-10-11T11:14:55.159338+00:00",
+      "end": "2026-10-11T11:15:04.892845+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q2-11002-250ccb4ad292-ebb68ac514be_d00af758e993",
+      "scenario": "mc-10-q2",
+      "seed": 11002,
+      "runtime_s": 11.68797430000268,
+      "raw_bytes": 27589448,
+      "start": "2026-10-11T11:15:04.904207+00:00",
+      "end": "2026-10-11T11:15:16.592368+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q2-11003-250ccb4ad292-ebb68ac514be_66f68daa2e92",
+      "scenario": "mc-10-q2",
+      "seed": 11003,
+      "runtime_s": 8.556196799996542,
+      "raw_bytes": 27639807,
+      "start": "2026-10-11T11:15:16.600760+00:00",
+      "end": "2026-10-11T11:15:25.157068+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q2-11004-250ccb4ad292-ebb68ac514be_7d9af066c3ea",
+      "scenario": "mc-10-q2",
+      "seed": 11004,
+      "runtime_s": 8.627620899991598,
+      "raw_bytes": 27635795,
+      "start": "2026-10-11T11:15:25.163159+00:00",
+      "end": "2026-10-11T11:15:33.790912+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q2-11005-250ccb4ad292-ebb68ac514be_7f684a6036b6",
+      "scenario": "mc-10-q2",
+      "seed": 11005,
+      "runtime_s": 8.519835399987642,
+      "raw_bytes": 27609042,
+      "start": "2026-10-11T11:15:33.796927+00:00",
+      "end": "2026-10-11T11:15:42.316836+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q2-11006-250ccb4ad292-ebb68ac514be_5e4431155742",
+      "scenario": "mc-10-q2",
+      "seed": 11006,
+      "runtime_s": 8.743760599987581,
+      "raw_bytes": 27625830,
+      "start": "2026-10-11T11:15:42.333664+00:00",
+      "end": "2026-10-11T11:15:51.077602+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q2-11007-250ccb4ad292-ebb68ac514be_126011d5980d",
+      "scenario": "mc-10-q2",
+      "seed": 11007,
+      "runtime_s": 8.60639520001132,
+      "raw_bytes": 27602739,
+      "start": "2026-10-11T11:15:51.082156+00:00",
+      "end": "2026-10-11T11:15:59.688657+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q2-11008-250ccb4ad292-ebb68ac514be_1ac227dbfa6f",
+      "scenario": "mc-10-q2",
+      "seed": 11008,
+      "runtime_s": 9.471386099990923,
+      "raw_bytes": 27646277,
+      "start": "2026-10-11T11:15:59.692154+00:00",
+      "end": "2026-10-11T11:16:09.163653+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q2-11009-250ccb4ad292-ebb68ac514be_64fdc82ef52e",
+      "scenario": "mc-10-q2",
+      "seed": 11009,
+      "runtime_s": 10.257007000007434,
+      "raw_bytes": 27621031,
+      "start": "2026-10-11T11:16:09.171147+00:00",
+      "end": "2026-10-11T11:16:19.428298+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q2-11010-250ccb4ad292-ebb68ac514be_3ab04822e5bd",
+      "scenario": "mc-10-q2",
+      "seed": 11010,
+      "runtime_s": 10.099795700021787,
+      "raw_bytes": 27620637,
+      "start": "2026-10-11T11:16:19.436326+00:00",
+      "end": "2026-10-11T11:16:29.536213+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q2-11011-250ccb4ad292-ebb68ac514be_2f3f50952d56",
+      "scenario": "mc-10-q2",
+      "seed": 11011,
+      "runtime_s": 11.226180199999362,
+      "raw_bytes": 27640074,
+      "start": "2026-10-11T11:16:29.550850+00:00",
+      "end": "2026-10-11T11:16:40.777241+00:00"
+    },
+    {
+      "run_id": "r_mc-10-q2-11012-250ccb4ad292-ebb68ac514be_2e9a85b0f89b",
+      "scenario": "mc-10-q2",
+      "seed": 11012,
+      "runtime_s": 12.259252300020307,
+      "raw_bytes": 27592211,
+      "start": "2026-10-11T11:16:40.779284+00:00",
+      "end": "2026-10-11T11:16:53.038644+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q0-11001-250ccb4ad292-ebb68ac514be_2a8f8cc30dcb",
+      "scenario": "mc-20-q0",
+      "seed": 11001,
+      "runtime_s": 11.294496700022137,
+      "raw_bytes": 21979947,
+      "start": "2026-10-11T11:16:53.045050+00:00",
+      "end": "2026-10-11T11:17:04.339670+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q0-11002-250ccb4ad292-ebb68ac514be_41a3af62a5e7",
+      "scenario": "mc-20-q0",
+      "seed": 11002,
+      "runtime_s": 12.046132700023009,
+      "raw_bytes": 21980904,
+      "start": "2026-10-11T11:17:04.351821+00:00",
+      "end": "2026-10-11T11:17:16.398147+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q0-11003-250ccb4ad292-ebb68ac514be_a783eeb524ab",
+      "scenario": "mc-20-q0",
+      "seed": 11003,
+      "runtime_s": 7.772010200016666,
+      "raw_bytes": 21979530,
+      "start": "2026-10-11T11:17:16.405961+00:00",
+      "end": "2026-10-11T11:17:24.178056+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q0-11004-250ccb4ad292-ebb68ac514be_bd8c3865b597",
+      "scenario": "mc-20-q0",
+      "seed": 11004,
+      "runtime_s": 12.598282899998594,
+      "raw_bytes": 21981175,
+      "start": "2026-10-11T11:17:24.187032+00:00",
+      "end": "2026-10-11T11:17:36.785460+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q0-11005-250ccb4ad292-ebb68ac514be_01fbd115b4e6",
+      "scenario": "mc-20-q0",
+      "seed": 11005,
+      "runtime_s": 10.267849900003057,
+      "raw_bytes": 21982952,
+      "start": "2026-10-11T11:17:36.790684+00:00",
+      "end": "2026-10-11T11:17:47.058673+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q0-11006-250ccb4ad292-ebb68ac514be_61fe50fc3968",
+      "scenario": "mc-20-q0",
+      "seed": 11006,
+      "runtime_s": 8.817679699975997,
+      "raw_bytes": 21983583,
+      "start": "2026-10-11T11:17:47.060628+00:00",
+      "end": "2026-10-11T11:17:55.878392+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q0-11007-250ccb4ad292-ebb68ac514be_c4ab53b3c59b",
+      "scenario": "mc-20-q0",
+      "seed": 11007,
+      "runtime_s": 9.933885600010399,
+      "raw_bytes": 21979966,
+      "start": "2026-10-11T11:17:55.890966+00:00",
+      "end": "2026-10-11T11:18:05.824987+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q0-11008-250ccb4ad292-ebb68ac514be_c71e5b450c4c",
+      "scenario": "mc-20-q0",
+      "seed": 11008,
+      "runtime_s": 11.526294499984942,
+      "raw_bytes": 21982775,
+      "start": "2026-10-11T11:18:05.845481+00:00",
+      "end": "2026-10-11T11:18:17.371986+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q0-11009-250ccb4ad292-ebb68ac514be_efaf1e339865",
+      "scenario": "mc-20-q0",
+      "seed": 11009,
+      "runtime_s": 9.679779599973699,
+      "raw_bytes": 21979913,
+      "start": "2026-10-11T11:18:17.380556+00:00",
+      "end": "2026-10-11T11:18:27.060443+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q0-11010-250ccb4ad292-ebb68ac514be_21f387d7a9d8",
+      "scenario": "mc-20-q0",
+      "seed": 11010,
+      "runtime_s": 9.768252599984407,
+      "raw_bytes": 21979369,
+      "start": "2026-10-11T11:18:27.063400+00:00",
+      "end": "2026-10-11T11:18:36.831735+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q0-11011-250ccb4ad292-ebb68ac514be_d51f150d1b05",
+      "scenario": "mc-20-q0",
+      "seed": 11011,
+      "runtime_s": 9.403300000005402,
+      "raw_bytes": 21983175,
+      "start": "2026-10-11T11:18:36.844608+00:00",
+      "end": "2026-10-11T11:18:46.248079+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q0-11012-250ccb4ad292-ebb68ac514be_f9e50a9e1bd3",
+      "scenario": "mc-20-q0",
+      "seed": 11012,
+      "runtime_s": 9.59763629999361,
+      "raw_bytes": 21981446,
+      "start": "2026-10-11T11:18:46.260520+00:00",
+      "end": "2026-10-11T11:18:55.858360+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q1-11001-250ccb4ad292-ebb68ac514be_62211cb0af54",
+      "scenario": "mc-20-q1",
+      "seed": 11001,
+      "runtime_s": 7.030641000019386,
+      "raw_bytes": 30931571,
+      "start": "2026-10-11T11:18:55.862526+00:00",
+      "end": "2026-10-11T11:19:02.893267+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q1-11002-250ccb4ad292-ebb68ac514be_8038c3fd474f",
+      "scenario": "mc-20-q1",
+      "seed": 11002,
+      "runtime_s": 5.8858258000109345,
+      "raw_bytes": 30931998,
+      "start": "2026-10-11T11:19:02.898525+00:00",
+      "end": "2026-10-11T11:19:08.784428+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q1-11003-250ccb4ad292-ebb68ac514be_c83922510821",
+      "scenario": "mc-20-q1",
+      "seed": 11003,
+      "runtime_s": 5.957262099982472,
+      "raw_bytes": 30926192,
+      "start": "2026-10-11T11:19:08.786575+00:00",
+      "end": "2026-10-11T11:19:14.743901+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q1-11004-250ccb4ad292-ebb68ac514be_1700095ce33f",
+      "scenario": "mc-20-q1",
+      "seed": 11004,
+      "runtime_s": 5.586065999988932,
+      "raw_bytes": 30931127,
+      "start": "2026-10-11T11:19:14.745080+00:00",
+      "end": "2026-10-11T11:19:20.331204+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q1-11005-250ccb4ad292-ebb68ac514be_9d5488c8e8e8",
+      "scenario": "mc-20-q1",
+      "seed": 11005,
+      "runtime_s": 7.92852389998734,
+      "raw_bytes": 30933137,
+      "start": "2026-10-11T11:19:20.334168+00:00",
+      "end": "2026-10-11T11:19:28.262796+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q1-11006-250ccb4ad292-ebb68ac514be_cb1e9d116c23",
+      "scenario": "mc-20-q1",
+      "seed": 11006,
+      "runtime_s": 6.672996700013755,
+      "raw_bytes": 30939125,
+      "start": "2026-10-11T11:19:28.263789+00:00",
+      "end": "2026-10-11T11:19:34.936857+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q1-11007-250ccb4ad292-ebb68ac514be_e6339c494790",
+      "scenario": "mc-20-q1",
+      "seed": 11007,
+      "runtime_s": 5.499295900022844,
+      "raw_bytes": 30933569,
+      "start": "2026-10-11T11:19:34.938032+00:00",
+      "end": "2026-10-11T11:19:40.437385+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q1-11008-250ccb4ad292-ebb68ac514be_f6c9dec140eb",
+      "scenario": "mc-20-q1",
+      "seed": 11008,
+      "runtime_s": 5.588141699990956,
+      "raw_bytes": 30931327,
+      "start": "2026-10-11T11:19:40.438754+00:00",
+      "end": "2026-10-11T11:19:46.026954+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q1-11009-250ccb4ad292-ebb68ac514be_a9ca6317a047",
+      "scenario": "mc-20-q1",
+      "seed": 11009,
+      "runtime_s": 5.346007199987071,
+      "raw_bytes": 30936958,
+      "start": "2026-10-11T11:19:46.030702+00:00",
+      "end": "2026-10-11T11:19:51.376771+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q1-11010-250ccb4ad292-ebb68ac514be_2cee770c50bc",
+      "scenario": "mc-20-q1",
+      "seed": 11010,
+      "runtime_s": 5.767584399989573,
+      "raw_bytes": 30924810,
+      "start": "2026-10-11T11:19:51.377992+00:00",
+      "end": "2026-10-11T11:19:57.145637+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q1-11011-250ccb4ad292-ebb68ac514be_e1da64eb7437",
+      "scenario": "mc-20-q1",
+      "seed": 11011,
+      "runtime_s": 6.1671331000106875,
+      "raw_bytes": 30933402,
+      "start": "2026-10-11T11:19:57.146820+00:00",
+      "end": "2026-10-11T11:20:03.314016+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q1-11012-250ccb4ad292-ebb68ac514be_1e96d777769f",
+      "scenario": "mc-20-q1",
+      "seed": 11012,
+      "runtime_s": 5.424987299978966,
+      "raw_bytes": 30920285,
+      "start": "2026-10-11T11:20:03.315401+00:00",
+      "end": "2026-10-11T11:20:08.740449+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q2-11001-250ccb4ad292-ebb68ac514be_8b29994ea394",
+      "scenario": "mc-20-q2",
+      "seed": 11001,
+      "runtime_s": 5.8088182999927085,
+      "raw_bytes": 29568160,
+      "start": "2026-10-11T11:20:08.741618+00:00",
+      "end": "2026-10-11T11:20:14.550500+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q2-11002-250ccb4ad292-ebb68ac514be_49ce4cfeace2",
+      "scenario": "mc-20-q2",
+      "seed": 11002,
+      "runtime_s": 5.429443500004709,
+      "raw_bytes": 29540240,
+      "start": "2026-10-11T11:20:14.551576+00:00",
+      "end": "2026-10-11T11:20:19.981079+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q2-11003-250ccb4ad292-ebb68ac514be_d9c74b1482cd",
+      "scenario": "mc-20-q2",
+      "seed": 11003,
+      "runtime_s": 5.7820709999941755,
+      "raw_bytes": 29543754,
+      "start": "2026-10-11T11:20:19.982112+00:00",
+      "end": "2026-10-11T11:20:25.764243+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q2-11004-250ccb4ad292-ebb68ac514be_c5af774ea25d",
+      "scenario": "mc-20-q2",
+      "seed": 11004,
+      "runtime_s": 5.450822900020285,
+      "raw_bytes": 29548532,
+      "start": "2026-10-11T11:20:25.765233+00:00",
+      "end": "2026-10-11T11:20:31.216113+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q2-11005-250ccb4ad292-ebb68ac514be_c61925fe06e1",
+      "scenario": "mc-20-q2",
+      "seed": 11005,
+      "runtime_s": 5.9113693999825045,
+      "raw_bytes": 29539211,
+      "start": "2026-10-11T11:20:31.217350+00:00",
+      "end": "2026-10-11T11:20:37.128784+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q2-11006-250ccb4ad292-ebb68ac514be_fb84783e0443",
+      "scenario": "mc-20-q2",
+      "seed": 11006,
+      "runtime_s": 6.09454970000661,
+      "raw_bytes": 29547925,
+      "start": "2026-10-11T11:20:37.130022+00:00",
+      "end": "2026-10-11T11:20:43.224638+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q2-11007-250ccb4ad292-ebb68ac514be_1cef4ce1424a",
+      "scenario": "mc-20-q2",
+      "seed": 11007,
+      "runtime_s": 6.911877000005916,
+      "raw_bytes": 29558863,
+      "start": "2026-10-11T11:20:43.226035+00:00",
+      "end": "2026-10-11T11:20:50.137981+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q2-11008-250ccb4ad292-ebb68ac514be_9b0f53b3b223",
+      "scenario": "mc-20-q2",
+      "seed": 11008,
+      "runtime_s": 6.173056999978144,
+      "raw_bytes": 29559033,
+      "start": "2026-10-11T11:20:50.139487+00:00",
+      "end": "2026-10-11T11:20:56.312616+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q2-11009-250ccb4ad292-ebb68ac514be_96c28025d0be",
+      "scenario": "mc-20-q2",
+      "seed": 11009,
+      "runtime_s": 5.4871222999936435,
+      "raw_bytes": 29557448,
+      "start": "2026-10-11T11:20:56.313526+00:00",
+      "end": "2026-10-11T11:21:01.800702+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q2-11010-250ccb4ad292-ebb68ac514be_0f04394772ca",
+      "scenario": "mc-20-q2",
+      "seed": 11010,
+      "runtime_s": 5.516154400014784,
+      "raw_bytes": 29555069,
+      "start": "2026-10-11T11:21:01.804713+00:00",
+      "end": "2026-10-11T11:21:07.320939+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q2-11011-250ccb4ad292-ebb68ac514be_f2258f5ed762",
+      "scenario": "mc-20-q2",
+      "seed": 11011,
+      "runtime_s": 7.170560200000182,
+      "raw_bytes": 29565493,
+      "start": "2026-10-11T11:21:07.321990+00:00",
+      "end": "2026-10-11T11:21:14.492621+00:00"
+    },
+    {
+      "run_id": "r_mc-20-q2-11012-250ccb4ad292-ebb68ac514be_bd90864c6dd4",
+      "scenario": "mc-20-q2",
+      "seed": 11012,
+      "runtime_s": 6.566022200015141,
+      "raw_bytes": 29528645,
+      "start": "2026-10-11T11:21:14.495264+00:00",
+      "end": "2026-10-11T11:21:21.061375+00:00"
+    },
+    {
+      "run_id": "r_mc-30-q0-11001-250ccb4ad292-ebb68ac514be_22c669e576b5",
+      "scenario": "mc-30-q0",
+      "seed": 11001,
+      "runtime_s": 4.96676509999088,
+      "raw_bytes": 22097477,
+      "start": "2026-10-11T11:21:21.063672+00:00",
+      "end": "2026-10-11T11:21:26.030491+00:00"
+    },
+    {
+      "run_id": "r_mc-30-q0-11002-250ccb4ad292-ebb68ac514be_efc35c8597a6",
+      "scenario": "mc-30-q0",
+      "seed": 11002,
+      "runtime_s": 6.442284000018844,
+      "raw_bytes": 22094851,
+      "start": "2026-10-11T11:21:26.031627+00:00",
+      "end": "2026-10-11T11:21:32.473965+00:00"
+    },
+    {
+      "run_id": "r_mc-30-q0-11003-250ccb4ad292-ebb68ac514be_2aa74166eacc",
+      "scenario": "mc-30-q0",
+      "seed": 11003,
+      "runtime_s": 7.984244299994316,
+      "raw_bytes": 22097788,
+      "start": "2026-10-11T11:21:32.482068+00:00",
+      "end": "2026-10-11T11:21:40.466409+00:00"
+    },
+    {
+      "run_id": "r_mc-30-q0-11004-250ccb4ad292-ebb68ac514be_35c41a1290ee",
+      "scenario": "mc-30-q0",
+      "seed": 11004,
+      "runtime_s": 5.617009800014785,
+      "raw_bytes": 22098335,
+      "start": "2026-10-11T11:21:40.472971+00:00",
+      "end": "2026-10-11T11:21:46.090121+00:00"
+    },
+    {
+      "run_id": "r_mc-30-q0-11005-250ccb4ad292-ebb68ac514be_745be3e443b1",
+      "scenario": "mc-30-q0",
+      "seed": 11005,
+      "runtime_s": 5.411017500009621,
+      "raw_bytes": 22095968,
+      "start": "2026-10-11T11:21:46.091299+00:00",
+      "end": "2026-10-11T11:21:51.502371+00:00"
+    },
+    {
+      "run_id": "r_mc-30-q0-11006-250ccb4ad292-ebb68ac514be_1fa7aa42dbcb",
+      "scenario": "mc-30-q0",
+      "seed": 11006,
+      "runtime_s": 5.337112599983811,
+      "raw_bytes": 22100700,
+      "start": "2026-10-11T11:21:51.504964+00:00",
+      "end": "2026-10-11T11:21:56.842154+00:00"
+    },
+    {
+      "run_id": "r_mc-30-q0-11007-250ccb4ad292-ebb68ac514be_40f8e603c708",
+      "scenario": "mc-30-q0",
+      "seed": 11007,
+      "runtime_s": 5.308869300002698,
+      "raw_bytes": 22098618,
+      "start": "2026-10-11T11:21:56.843251+00:00",
+      "end": "2026-10-11T11:22:02.152178+00:00"
+    },
+    {
+      "run_id": "r_mc-30-q0-11008-250ccb4ad292-ebb68ac514be_88b81e2d86ac",
+      "scenario": "mc-30-q0",
+      "seed": 11008,
+      "runtime_s": 5.53116320000845,
+      "raw_bytes": 22099064,
+      "start": "2026-10-11T11:22:02.153409+00:00",
+      "end": "2026-10-11T11:22:07.684631+00:00"
+    },
+    {
+      "run_id": "r_mc-30-q0-11009-250ccb4ad292-ebb68ac514be_fff4da808715",
+      "scenario": "mc-30-q0",
+      "seed": 11009,
+      "runtime_s": 5.569441200001165,
+      "raw_bytes": 22097965,
+      "start": "2026-10-11T11:22:07.685674+00:00",
+      "end": "2026-10-11T11:22:13.255174+00:00"
+    },
+    {
+      "run_id": "r_mc-30-q0-11010-250ccb4ad292-ebb68ac514be_dcac59d44cb6",
+      "scenario": "mc-30-q0",
+      "seed": 11010,
+      "runtime_s": 5.900452700007008,
+      "raw_bytes": 22096794,
+      "start": "2026-10-11T11:22:13.256443+00:00",
+      "end": "2026-10-11T11:22:19.156959+00:00"
+    },
+    {
+      "run_id": "r_mc-30-q0-11011-250ccb4ad292-ebb68ac514be_3379b45818fc",
+      "scenario": "mc-30-q0",
+      "seed": 11011,
+      "runtime_s": 5.1960445000149775,
+      "raw_bytes": 22099782,
+      "start": "2026-10-11T11:22:19.158180+00:00",
+      "end": "2026-10-11T11:22:24.354282+00:00"
+    },
+    {
+      "run_id": "r_mc-30-q0-11012-250ccb4ad292-ebb68ac514be_a7bb89cd9b1a",
+      "scenario": "mc-30-q0",
+      "seed": 11012,
+      "runtime_s": 5.475328700005775,
+      "raw_bytes": 22096393,
+      "start": "2026-10-11T11:22:24.355470+00:00",
+      "end": "2026-10-11T11:22:29.830858+00:00"
+    },
+    {
+      "run_id": "r_mc-40-q0-11001-250ccb4ad292-ebb68ac514be_bb35c1b62b1b",
+      "scenario": "mc-40-q0",
+      "seed": 11001,
+      "runtime_s": 5.211554799985606,
+      "raw_bytes": 22288141,
+      "start": "2026-10-11T11:22:29.832193+00:00",
+      "end": "2026-10-11T11:22:35.043811+00:00"
+    },
+    {
+      "run_id": "r_mc-40-q0-11002-250ccb4ad292-ebb68ac514be_2f503c0e03ef",
+      "scenario": "mc-40-q0",
+      "seed": 11002,
+      "runtime_s": 5.542256999993697,
+      "raw_bytes": 22290057,
+      "start": "2026-10-11T11:22:35.044880+00:00",
+      "end": "2026-10-11T11:22:40.587196+00:00"
+    },
+    {
+      "run_id": "r_mc-40-q0-11003-250ccb4ad292-ebb68ac514be_53b653ff8f2c",
+      "scenario": "mc-40-q0",
+      "seed": 11003,
+      "runtime_s": 4.977434800006449,
+      "raw_bytes": 22288338,
+      "start": "2026-10-11T11:22:40.588303+00:00",
+      "end": "2026-10-11T11:22:45.565791+00:00"
+    },
+    {
+      "run_id": "r_mc-40-q0-11004-250ccb4ad292-ebb68ac514be_e511b1d84268",
+      "scenario": "mc-40-q0",
+      "seed": 11004,
+      "runtime_s": 5.199085000000196,
+      "raw_bytes": 22287011,
+      "start": "2026-10-11T11:22:45.566859+00:00",
+      "end": "2026-10-11T11:22:50.765999+00:00"
+    },
+    {
+      "run_id": "r_mc-40-q0-11005-250ccb4ad292-ebb68ac514be_1d91c10076bf",
+      "scenario": "mc-40-q0",
+      "seed": 11005,
+      "runtime_s": 5.785146999987774,
+      "raw_bytes": 22286944,
+      "start": "2026-10-11T11:22:50.767073+00:00",
+      "end": "2026-10-11T11:22:56.552281+00:00"
+    },
+    {
+      "run_id": "r_mc-40-q0-11006-250ccb4ad292-ebb68ac514be_de8c929b69c4",
+      "scenario": "mc-40-q0",
+      "seed": 11006,
+      "runtime_s": 6.3614809999999125,
+      "raw_bytes": 22288670,
+      "start": "2026-10-11T11:22:56.553290+00:00",
+      "end": "2026-10-11T11:23:02.914836+00:00"
+    },
+    {
+      "run_id": "r_mc-40-q0-11007-250ccb4ad292-ebb68ac514be_225e3353e0ba",
+      "scenario": "mc-40-q0",
+      "seed": 11007,
+      "runtime_s": 8.158996899990598,
+      "raw_bytes": 22288307,
+      "start": "2026-10-11T11:23:02.916402+00:00",
+      "end": "2026-10-11T11:23:11.075489+00:00"
+    },
+    {
+      "run_id": "r_mc-40-q0-11008-250ccb4ad292-ebb68ac514be_4332407663c9",
+      "scenario": "mc-40-q0",
+      "seed": 11008,
+      "runtime_s": 5.3619381000171416,
+      "raw_bytes": 22289341,
+      "start": "2026-10-11T11:23:11.076624+00:00",
+      "end": "2026-10-11T11:23:16.438619+00:00"
+    },
+    {
+      "run_id": "r_mc-40-q0-11009-250ccb4ad292-ebb68ac514be_205b76cfc36b",
+      "scenario": "mc-40-q0",
+      "seed": 11009,
+      "runtime_s": 6.530394199973671,
+      "raw_bytes": 22288274,
+      "start": "2026-10-11T11:23:16.439763+00:00",
+      "end": "2026-10-11T11:23:22.970228+00:00"
+    },
+    {
+      "run_id": "r_mc-40-q0-11010-250ccb4ad292-ebb68ac514be_ff8a9b56f844",
+      "scenario": "mc-40-q0",
+      "seed": 11010,
+      "runtime_s": 5.36715129998629,
+      "raw_bytes": 22287377,
+      "start": "2026-10-11T11:23:22.971153+00:00",
+      "end": "2026-10-11T11:23:28.338362+00:00"
+    },
+    {
+      "run_id": "r_mc-40-q0-11011-250ccb4ad292-ebb68ac514be_f5b760ad0159",
+      "scenario": "mc-40-q0",
+      "seed": 11011,
+      "runtime_s": 4.901899100019364,
+      "raw_bytes": 22288127,
+      "start": "2026-10-11T11:23:28.339347+00:00",
+      "end": "2026-10-11T11:23:33.241300+00:00"
+    },
+    {
+      "run_id": "r_mc-40-q0-11012-250ccb4ad292-ebb68ac514be_ebd516b53ce9",
+      "scenario": "mc-40-q0",
+      "seed": 11012,
+      "runtime_s": 4.97761889998219,
+      "raw_bytes": 22287952,
+      "start": "2026-10-11T11:23:33.242357+00:00",
+      "end": "2026-10-11T11:23:38.220030+00:00"
+    },
+    {
+      "run_id": "r_mc-50-q0-11001-250ccb4ad292-ebb68ac514be_58454723ed08",
+      "scenario": "mc-50-q0",
+      "seed": 11001,
+      "runtime_s": 4.963362700014841,
+      "raw_bytes": 22258201,
+      "start": "2026-10-11T11:23:38.221154+00:00",
+      "end": "2026-10-11T11:23:43.184570+00:00"
+    },
+    {
+      "run_id": "r_mc-50-q0-11002-250ccb4ad292-ebb68ac514be_42d14ad5145c",
+      "scenario": "mc-50-q0",
+      "seed": 11002,
+      "runtime_s": 5.006344599998556,
+      "raw_bytes": 22255386,
+      "start": "2026-10-11T11:23:43.185732+00:00",
+      "end": "2026-10-11T11:23:48.192130+00:00"
+    },
+    {
+      "run_id": "r_mc-50-q0-11003-250ccb4ad292-ebb68ac514be_1c7a7fcfce3e",
+      "scenario": "mc-50-q0",
+      "seed": 11003,
+      "runtime_s": 6.493742400023621,
+      "raw_bytes": 22256514,
+      "start": "2026-10-11T11:23:48.193150+00:00",
+      "end": "2026-10-11T11:23:54.686961+00:00"
+    },
+    {
+      "run_id": "r_mc-50-q0-11004-250ccb4ad292-ebb68ac514be_5a9e92dbb568",
+      "scenario": "mc-50-q0",
+      "seed": 11004,
+      "runtime_s": 4.904046100011328,
+      "raw_bytes": 22258060,
+      "start": "2026-10-11T11:23:54.688815+00:00",
+      "end": "2026-10-11T11:23:59.592921+00:00"
+    },
+    {
+      "run_id": "r_mc-50-q0-11005-250ccb4ad292-ebb68ac514be_8ccd51e7fca6",
+      "scenario": "mc-50-q0",
+      "seed": 11005,
+      "runtime_s": 5.295674299995881,
+      "raw_bytes": 22257169,
+      "start": "2026-10-11T11:23:59.594224+00:00",
+      "end": "2026-10-11T11:24:04.889958+00:00"
+    },
+    {
+      "run_id": "r_mc-50-q0-11006-250ccb4ad292-ebb68ac514be_ff52c57206df",
+      "scenario": "mc-50-q0",
+      "seed": 11006,
+      "runtime_s": 5.39353519998258,
+      "raw_bytes": 22258337,
+      "start": "2026-10-11T11:24:04.891513+00:00",
+      "end": "2026-10-11T11:24:10.285113+00:00"
+    },
+    {
+      "run_id": "r_mc-50-q0-11007-250ccb4ad292-ebb68ac514be_b3271b00f0ed",
+      "scenario": "mc-50-q0",
+      "seed": 11007,
+      "runtime_s": 6.474477200012188,
+      "raw_bytes": 22255909,
+      "start": "2026-10-11T11:24:10.286124+00:00",
+      "end": "2026-10-11T11:24:16.760670+00:00"
+    },
+    {
+      "run_id": "r_mc-50-q0-11008-250ccb4ad292-ebb68ac514be_d1843519d501",
+      "scenario": "mc-50-q0",
+      "seed": 11008,
+      "runtime_s": 5.558748800016474,
+      "raw_bytes": 22255261,
+      "start": "2026-10-11T11:24:16.761803+00:00",
+      "end": "2026-10-11T11:24:22.320606+00:00"
+    },
+    {
+      "run_id": "r_mc-50-q0-11009-250ccb4ad292-ebb68ac514be_fcb55374f5e9",
+      "scenario": "mc-50-q0",
+      "seed": 11009,
+      "runtime_s": 5.542745299986564,
+      "raw_bytes": 22257352,
+      "start": "2026-10-11T11:24:22.322682+00:00",
+      "end": "2026-10-11T11:24:27.865489+00:00"
+    },
+    {
+      "run_id": "r_mc-50-q0-11010-250ccb4ad292-ebb68ac514be_1be56fd0ea3b",
+      "scenario": "mc-50-q0",
+      "seed": 11010,
+      "runtime_s": 5.551121600001352,
+      "raw_bytes": 22255866,
+      "start": "2026-10-11T11:24:27.867338+00:00",
+      "end": "2026-10-11T11:24:33.418528+00:00"
+    },
+    {
+      "run_id": "r_mc-50-q0-11011-250ccb4ad292-ebb68ac514be_685fa3142bfc",
+      "scenario": "mc-50-q0",
+      "seed": 11011,
+      "runtime_s": 5.0766714999917895,
+      "raw_bytes": 22257416,
+      "start": "2026-10-11T11:24:33.419490+00:00",
+      "end": "2026-10-11T11:24:38.496215+00:00"
+    },
+    {
+      "run_id": "r_mc-50-q0-11012-250ccb4ad292-ebb68ac514be_d950c0210957",
+      "scenario": "mc-50-q0",
+      "seed": 11012,
+      "runtime_s": 5.2383303999959026,
+      "raw_bytes": 22254306,
+      "start": "2026-10-11T11:24:38.497376+00:00",
+      "end": "2026-10-11T11:24:43.735759+00:00"
+    }
+  ],
+  "limitations": "Numerical secant gap is not rigorous interval arithmetic. Unresolved statuses retained; finite checks are not universal proofs."
+}

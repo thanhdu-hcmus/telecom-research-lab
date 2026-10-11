@@ -1,0 +1,15 @@
+{
+  "kind": "deterministic",
+  "seed": 11999,
+  "trials": 100,
+  "bit_generator": "PCG64",
+  "seed_sequence_entropy": [
+    11999,
+    0
+  ],
+  "stream": "none; fixed cases",
+  "channel_law": "fixed case table",
+  "common_grid_draws": true,
+  "deterministic_repeats_independent": false,
+  "no_noise_or_initialization_stream_required": true
+}

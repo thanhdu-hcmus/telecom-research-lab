@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-11T14:21:57.426538+00:00",
+  "status": "PASS",
+  "initial_check_failure": "Git normalized CRLF in the bound generated SVG when staging; index digest differed from the canonical on-disk digest",
+  "root_cause": "The inherited * text=auto eol=lf Git attribute",
+  "fix": "A -text attribute scoped to this one SVG, followed by exact-file git add --renormalize; no figure bytes edited",
+  "initial_fix_trial": "Ordinary git add retained cached LF index bytes; the read-only check caught this. A provenance attempt failed before creating a record because the asserted receipt was absent.",
+  "gitattributes_sha256": "fdbc748e807f056b6b69a80a1e4b873972ad381f7559449e176f47a6e3b3519a",
+  "figure": "projects/m11-noma-qos/results/oma-reference-overlay.svg",
+  "bound_working_and_index_sha256": "046144a921d1f21de5cc5435d05dbbb1d98d274738936b527c14784d55f04ef5",
+  "gate_bound_artifacts_changed": false,
+  "locked_inputs_changed": false,
+  "reference": "https://git-scm.com/docs/gitattributes.html",
+  "independent_P6_verification": "not started"
+}

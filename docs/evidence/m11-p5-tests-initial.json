@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-11T11:09:50.314583+00:00",
+  "physics": "PASS;31 tests",
+  "first_regression": "49 passed;41 setup errors: default pytest temp ACL",
+  "rerun": "fresh verified absent workspace basetemp; in progress",
+  "receipts": [
+    {
+      "file": ".cache/m11-p5-physics-01.xml",
+      "sha256": "e46c9bb5b1c58010a6595a55557d1452b3caa83b54b3116efcaf24ec917863db",
+      "suites": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "0",
+          "tests": "31",
+          "time": "2.320",
+          "timestamp": "2026-10-11T18:06:21.087304+07:00",
+          "hostname": "DESKTOP-VJUHLPT"
+        }
+      ]
+    },
+    {
+      "file": ".cache/m11-p5-regression-01.xml",
+      "sha256": "7fa602e5b3a47294fe2e2a67269fb06c1a375879b2746340730f4f74d01165f9",
+      "suites": [
+        {
+          "name": "pytest",
+          "errors": "41",
+          "failures": "0",
+          "skipped": "0",
+          "tests": "90",
+          "time": "8.508",
+          "timestamp": "2026-10-11T18:06:55.629686+07:00",
+          "hostname": "DESKTOP-VJUHLPT"
+        }
+      ]
+    }
+  ],
+  "protocol_lock": "ebb68ac514beeb89d5d1e3dfcb20aecdeaf440ca",
+  "user_authorization": "Run the tests, fix failures, and continue P5"
+}

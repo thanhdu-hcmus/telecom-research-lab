@@ -1,0 +1,13 @@
+id: 2026-10-11-0020
+timestamp: '2026-10-11T14:22:17.569630+00:00'
+phase: P5
+summary: The final Git-index check caught line-ending normalization of the generated
+  OMA overlay. An exact-file -text Git attribute and exact-file index refresh preserve
+  the unchanged G5-bound SVG bytes. Ordinary git add initially retained cached normalized
+  bytes, and an attempted provenance call failed before creating a record because
+  its asserted receipt was absent. The successful receipt now proves canonical working
+  and index digests match. No locked inputs, gate-bound artifacts or numerical settings
+  changed; this is a Git transport correction, not a rerun or P6 verification.
+provenance: ai
+evidence:
+  ara/evidence/P5-git-transport.json: ff2e9120c738b320b93e93a6773cf112698a9624726312a070bdfd80a8afe4e9

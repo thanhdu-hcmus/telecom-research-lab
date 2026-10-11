@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-11T14:06:29.843919+00:00",
+  "status": "PASS",
+  "command": [
+    "check",
+    "lab",
+    "tests/unit",
+    "tests/contracts",
+    "tests/physics",
+    "projects/m11-noma-qos/sim/src",
+    "projects/m11-noma-qos/sim/tests",
+    "--output-format",
+    "concise"
+  ],
+  "exit_code": 0,
+  "stdout": "All checks passed!\n",
+  "stderr": ""
+}

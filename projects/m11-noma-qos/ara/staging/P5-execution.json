@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-10-11T14:04:12.959081+00:00",
+  "status": "completed; G5 PI review pending",
+  "protocol_commit": "ebb68ac514beeb89d5d1e3dfcb20aecdeaf440ca",
+  "protocol_hash": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+  "jobs": 145,
+  "scenario_evaluations": 4718692,
+  "unique_channel_pairs": 393216,
+  "physics_checks": 31,
+  "regression_checks": 90,
+  "initial_regression_setup_errors": 41,
+  "test_failure_fix": "fresh workspace basetemp; no source change",
+  "simulation_source_changes": false,
+  "relocks": 0,
+  "failed_simulation_jobs": 0,
+  "oracle_status_counts": {
+    "feasible": 4129,
+    "infeasible": 559,
+    "unresolved": 20
+  },
+  "oracle_disagreement_count": 0,
+  "joint_unresolved_count": 5,
+  "oma_only_count": 0,
+  "negative_paired_count": 0,
+  "rate_precision_failure_settings": [],
+  "baseline_reproduction_agreement": true,
+  "baseline_maximum_relative_error": 0.001716158336917628,
+  "baseline_scope": "published Figure 1 OMA subset equations; no upstream package acceptance",
+  "documentary_erratum": "sim/protocol-errata.md; no numeric/source-input changes",
+  "independent_P6_verification": "NOT STARTED; verifier prepared only",
+  "evidence": {
+    "results/statistics.json": "4ad1a84f65f45e2774851f15c22d6080bc28ed96f6d78ab2f57cd2f06c80a73f",
+    "results/diagnostics.json": "735105b5b2698cd1f074f804bcc79fdfb97b65fe68f7505a3868c6901704f887",
+    "results/channel-audit.json": "7d98fa1780d449a7ab3aa72c53c91682ad3c0802a1a6911685e0876b268c4d5b",
+    "results/collection.json": "93fb12da4f5d764495267a0bde2cf6e68819a03779eed8cfdc885adda19b3cd4",
+    "results/summary.csv": "8e7e21d8dc5a2a2c55e3f68c36b9898da4443553f362d0160cd493eedb2e8550",
+    "results/oma-reference-overlay.svg": "046144a921d1f21de5cc5435d05dbbb1d98d274738936b527c14784d55f04ef5",
+    "sim/protocol-errata.md": "77ea24e95efbc18e1eaa3cee292c87dabeecb0d1aed742b63d78a32a2f14037c",
+    "to_human/G5-review.md": "3d13521faf751584db39f6770ad9bbc01f159f235d8035630b67ae4f8e3ca8e2",
+    "docs/evidence/m11-p5-tests-initial.json": "86dd7cc8890eff47e25a76e5c5e566e7d475e5a45c0f0e7053c15570a990ee6a",
+    "docs/evidence/m11-p5-regression.json": "10df7f4164e3fd7481cd72c3e908ade9f6dc2e2ab60ee2f1fec833a4d4889927",
+    "docs/evidence/m11-p5-lint.json": "f6dfa59ed46ed25c19786b544cec051bc04f8582a3a4d9b913183e6fbe70525b",
+    "docs/evidence/m11-p5-runtime-receipts.json": "308e409a8994dc34793cf2292305c918ad28c7876060dde13ea18cc9fe4e3f52",
+    "docs/evidence/m11-p5-git-binding.json": "0e4019de1aefc6d371b24af50e61cdf2e2e67e428c2a720d078cf560fc7fa075",
+    "docs/evidence/m11-p5-gate-checks.json": "469cf6b7ee759e75c1dc16f1110179f3071734989a465e3dd844d16d1ae8d4e8"
+  },
+  "approval_review_events": [
+    {
+      "action": "Clarify unbound draft review wording and receipt",
+      "outcome": "Initially rejected as presumed gate-bound; then allowed after read-only scope and provenance checks proved neither file was bound",
+      "gate_bound_artifacts_changed": false
+    }
+  ],
+  "gate_checks": "PASS",
+  "gate_status": "pending"
+}

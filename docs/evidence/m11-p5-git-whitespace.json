@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-10-11T14:26:33.753133+00:00",
+  "status": "PASS for editable text; byte-bound generated SVG formatting warnings retained",
+  "full_check_exit": 2,
+  "generated_svg_trailing_space_lines": 1071,
+  "warning_scope": "projects/m11-noma-qos/results/oma-reference-overlay.svg",
+  "reason": "Matplotlib serializes multiline path data with trailing spaces and CRLF. This valid, rendered SVG is already checksum-bound to G5; cosmetic rewriting would alter evidence.",
+  "figure_sha256": "046144a921d1f21de5cc5435d05dbbb1d98d274738936b527c14784d55f04ef5",
+  "editable_text_command": [
+    "-c",
+    "safe.directory=D:/02_EDUCATION/THESIS/telecom-research-lab",
+    "-c",
+    "core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    ".",
+    ":(exclude)projects/m11-noma-qos/results/oma-reference-overlay.svg"
+  ],
+  "editable_text_check_exit": 0,
+  "gate_bound_file_changed": false,
+  "scientific_and_byte_integrity_checks": "PASS; see m11-p5-final-binding.json",
+  "initial_receipt_script_trial": "An assertion incorrectly expected whitespace-warning exit1; Git actually returned2. Corrected the metadata check without source/artifact changes."
+}

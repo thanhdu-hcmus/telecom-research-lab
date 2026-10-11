@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-11T11:02:21.204540+00:00",
+  "updated_at": "2026-10-11T14:19:01.121890+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
   "active_milestone": "M11",
-  "status": "m11_p5_prepared_test_execution_approval_pending",
+  "status": "m11_g5_review_pending",
   "verification_complete": true,
   "pi_approval": {
     "quote": "Approve M0, continue M1–M10 automatically, and create the new private repository.",
@@ -28,7 +28,7 @@
     "G2": "approved",
     "G3": "approved",
     "G4": "approved",
-    "G5": "not_started",
+    "G5": "pending",
     "G6": "not_started",
     "G7": "not_started"
   },
@@ -160,12 +160,32 @@
     "evidence": "projects/m11-noma-qos/gates/decisions.yaml"
   },
   "m11_p5": {
-    "status": "prepared; explicit test execution approval pending",
+    "status": "complete; G5 PI review pending",
     "protocol": "projects/m11-noma-qos/sim/protocol.yaml",
     "planned_jobs": 145,
-    "test_status": "NOT RUN; automatic approval review rejected before launch",
-    "simulations": "NOT STARTED",
-    "protocol_locked": false,
-    "scientific_approval": false
+    "test_status": "PASS;31 targeted simulation/physics tests and90 framework regression tests",
+    "simulations": "PASS;145 fixed manifest jobs completed and checksum-validated",
+    "protocol_locked": true,
+    "scientific_approval": false,
+    "protocol_commit": "ebb68ac514beeb89d5d1e3dfcb20aecdeaf440ca",
+    "gate_checks": "PASS",
+    "review_packet": "projects/m11-noma-qos/to_human/G5-review.md",
+    "gate_report": "projects/m11-noma-qos/to_human/G5-report.md",
+    "scenario_evaluations": 4718692,
+    "unique_channel_pairs": 393216,
+    "initial_regression_setup_errors": 41,
+    "source_changes": 0,
+    "relocks": 0,
+    "oracle_checks": 4708,
+    "oracle_status_counts": {
+      "feasible": 4129,
+      "infeasible": 559,
+      "unresolved": 20
+    },
+    "oracle_disagreements": 0,
+    "joint_unresolved_rows": 5,
+    "baseline_reproduction_agreement": true,
+    "baseline_maximum_relative_error": 0.001716158336917628,
+    "independent_P6_verification": "not_started"
   }
 }

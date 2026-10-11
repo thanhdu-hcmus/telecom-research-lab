@@ -1,0 +1,9 @@
+id: 2026-10-11-0018
+timestamp: '2026-10-11T11:06:55.178274+00:00'
+phase: P5
+summary: 'Explicit execution authorization: Run the tests, fix failures, and continue
+  P5. This permits prepared unit/physics checks, implementation fixes and locked P5
+  experiments; scientific G5-G7 decisions remain PI-only.'
+provenance: user
+evidence:
+  sim/protocol.yaml: 250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51
