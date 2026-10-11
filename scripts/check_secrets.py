@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -51,6 +52,10 @@ def check(repo):
             cwd=repo,
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            # The scanner ignores files it cannot decode. Force UTF-8 so
+            # Windows scans the same research text as Linux CI.
+            env={**os.environ, "PYTHONUTF8": "1"},
             timeout=120,
         )
         if result.returncode:

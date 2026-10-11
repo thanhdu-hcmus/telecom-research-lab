@@ -1,0 +1,11 @@
+id: 2026-10-11-0010
+timestamp: '2026-10-11T09:33:28.385537+00:00'
+phase: P3
+summary: 'P3 upload CI exposed a scanner coverage defect: platform-default decoding
+  silently skipped UTF-8 files on Windows. Confirmed 0 versus 42 findings for the
+  same receipt file before and after UTF-8 mode. Fixed scanner subprocess encoding
+  and audited all 44 additional CI findings against actual receipt bytes; exact checksums
+  only. Initial local scan counts described inventory, not successful text decoding.
+  G3 remains pending and no idea is selected.'
+provenance: ai
+evidence: {}

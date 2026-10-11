@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-11T09:33:28.586484+00:00",
+  "initial_commit": "a4f90a9",
+  "failed_ci_run": 38128516015,
+  "cause": "detect-secrets default Windows cp1252 decoding silently skipped UTF-8 files on UnicodeDecodeError",
+  "reproduction": {
+    "same_file": "projects/m11-noma-qos/ara/staging/P3-search-receipts.json",
+    "default_findings": 0,
+    "utf8_findings": 42
+  },
+  "fix": "Force PYTHONUTF8=1 in scanner subprocess and decode scanner JSON as UTF-8",
+  "additional_exact_verified_checksum_entries": 44,
+  "unreviewed_findings": 0,
+  "prior_local_scan_limitation": "files_scanned counted Git inventory; it did not guarantee successful decoder coverage",
+  "scientific_artifacts_changed": false,
+  "G3": "pending PI selection"
+}
