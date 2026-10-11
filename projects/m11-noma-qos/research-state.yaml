@@ -12,9 +12,9 @@ gates:
       projects/m11-noma-qos/scope.yaml: c5c3a637d6a1a374b8b760935958414a68c8d32c648c030c573f8f94b5945df4
     checks_passed: true
   G2:
-    status: pending
-    timestamp: '2026-10-10T17:43:04.087706+00:00'
-    note: null
+    status: approved
+    timestamp: '2026-10-11T03:55:59.285244+00:00'
+    note: Bounded P2 corpus and evidence spot-checked; G2 report usable
     artifact_hashes:
       projects/m11-noma-qos/baselines/candidates.yaml: 6390a2fbe1bf15b601c5fc5c5ab068703b0b44dda149e852f6539a61807d9083
       projects/m11-noma-qos/literature/candidates.jsonl: 4a1c0882cc414a7ce71ad8b13a2d3e21634f7ec1ea2dcb5682be41e44dd9a055
