@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-10-11T18:23:48.519973+00:00",
+  "status": "PASS",
+  "root_evidence_sha256": {
+    "docs/evidence/m11-p5-rerun-final-binding.json": "5ed48cd2c0933034fff528e002a91f816fafc4bf73fd4c85e20912294eaae960",
+    "docs/evidence/m11-p5-rerun-secret-audit-preparation.json": "a52f204fa110f543710449cfa614be67e9c06a57b5c8d34f9a09403d5d967eae",
+    "docs/evidence/m11-p5-rerun-secret-audit-checkpoint.json": "2a6141bbef0582f0a8a10ce3434740657dcc06e55d520443cc42c9120b030fd4",
+    "docs/evidence/m11-p5-rerun-checkpoint-native-secrets.json": "b73c417722b520e88b116311f642961f586ba6b8860f89d64ddda6385a6c918e",
+    "docs/evidence/m11-p5-rerun-checkpoint-ci.json": "a3593be4042847c05ab50dc13d041819fa7e68d30e72412d8be9c6a264634788",
+    "docs/evidence/m11-p5-rerun-integrity-timing.json": "baca6706536d3b61d0f1fb749a17c493aa86efc85b03bf26662f0134df91c056"
+  },
+  "retained_execution_sources_match": {
+    "ara/evidence/P5-rerun-helpers/report.py": "30e468421a9aa4609a850e7c34f4cb9fdc6372f55efff8e98bc398fe79948ce3",
+    "ara/evidence/P5-rerun-helpers/finalize.py": "38e097b662b80e8a12017bbb1af576413d792e11d6db9547e9a4f9bcfd0bad12",
+    "ara/evidence/P5-rerun-helpers/gate_request.py": "fc18d3d67e50b7b6030e203d8bf5bd6034a1a01f9810a3fe4189a2fc7cdac4df",
+    "ara/evidence/P5-rerun-helpers/compare_derived.py": "89f185064b7a5e298c64d4d94e900da6bbe9210b88a16b444266f23a88d49a66"
+  },
+  "local_raw_csv_count": 290,
+  "indexed_bound_artifacts": 1002,
+  "locked_index_inputs_match": 51,
+  "CI_scope": "Checkpoint 09a8270; final publication commit CI checked separately after push",
+  "scientific_approval": false,
+  "independent_P6_verification": false,
+  "publication_checks": "Final secret scan and owned-file checks follow this receipt; no completion claim for them here"
+}

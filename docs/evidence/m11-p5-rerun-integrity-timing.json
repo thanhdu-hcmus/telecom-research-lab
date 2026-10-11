@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-10-11T17:55:54.092214+00:00",
+  "status": "PASS",
+  "one_native_lock_check_wall_s": 4.816213799989782,
+  "locked_inputs": 51,
+  "context": "One observational integrity call while four ordinary P5 recomputation processes run concurrently; not a universal performance benchmark or P6 runtime measurement",
+  "guards_bypassed": false
+}

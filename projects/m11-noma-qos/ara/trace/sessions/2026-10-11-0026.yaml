@@ -1,0 +1,31 @@
+id: 2026-10-11-0026
+timestamp: '2026-10-11T18:24:30.058729+00:00'
+phase: P5
+summary: P5 R2 complete after canonical PI rewind and tested code-only repair:123
+  combined tests and Ruff PASS;145 fresh native jobs with zero resumptions;1015 actual
+  old/new outputs byte-identical and manifest-bound. Fresh guarded collection, conditional
+  statistics, oracle diagnostics and seeded channel audit PASS;four derived numerical
+  artifacts match archived R1 with explicit lineage/runtime exclusions.393216 unique
+  seeded pairs reproduce exactly;4708 oracle checks retain20 unresolved rows, zero
+  resolved disagreements and five joint unresolved deterministic rows. OMA-subset
+  error0.1716 percent;positive-QoS outage event minima pass. Figure visually reviewed.
+  Fresh native G5 request PASS, all1002 indexed phase bindings and290 local raw CSV
+  bindings match,51 locked inputs match Git index. Original G5 report preserved;11
+  author-engineering coverage findings and P6 supplement brief are preparation, not
+  independent verification. G1-G4 approved;G5 pending;G6-G7 invalidated;no new scientific
+  decision. Checkpoint secrets/CI PASS;final publication scans and exact-head CI follow.
+provenance: ai
+evidence:
+  ara/staging/P5-rerun-execution.json: 00afd5e5eb5348c4bbfb55c4c31f6affab7bd68c7f5993428cead9b3bc8fb8df
+  ara/staging/P5-rerun-recomputation.json: 98857b3e9f12dd85ac29201f545cea580ff9112b9ac1ea1e4541977e5691b718
+  ara/staging/P5-rerun-derived-comparison.json: edc6fabe014ca95587046e49662b8637f2bc4783136163706545472082ee5220
+  ara/staging/P5-rerun-figure-review.json: 56a5fca53976c11e063db2dfb59b1458c3d7ae8ea8bab6552994429bbf865654
+  ara/staging/P5-rerun-gate-request.json: 669c74597545985e6df52ac9d3daf79b905c6ae9775f6574701634aebaf06947
+  ara/staging/P5-rerun-repository-checks.json: 506eaa12af09180a5413c8543213fbb313632fd2b7ef47bf0b24f7852429d4e7
+  ara/evidence/G5-original-report.md: 16b76f7193ad99c70839e6d36c4170be006df98a03c8277c2a7e116c499c1888
+  ara/evidence/P5-rerun-helpers/report.py: 30e468421a9aa4609a850e7c34f4cb9fdc6372f55efff8e98bc398fe79948ce3
+  ara/evidence/P5-rerun-helpers/gate_request.py: fc18d3d67e50b7b6030e203d8bf5bd6034a1a01f9810a3fe4189a2fc7cdac4df
+  ara/evidence/P5-rerun-helpers/finalize.py: 38e097b662b80e8a12017bbb1af576413d792e11d6db9547e9a4f9bcfd0bad12
+  ara/evidence/P5-rerun-helpers/compare_derived.py: 89f185064b7a5e298c64d4d94e900da6bbe9210b88a16b444266f23a88d49a66
+  to_human/G5-rerun-review.md: 7c4c380fb0a3a88d48d4cac28f4d48278965f2cea70fd6c45337e6781a4a7ee6
+  to_human/G5-report.md: 0b1a25ef15234e43b307cb3d40a64db53903fd76b948a01ee8f538439a1cac37

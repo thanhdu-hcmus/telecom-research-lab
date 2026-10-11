@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-11T18:23:26.842118+00:00",
+  "status": "PASS",
+  "native_request": {
+    "status": "PASS",
+    "gate": "G5",
+    "checks": [
+      {
+        "check": "sim/protocol.md",
+        "passed": true,
+        "details": "required artifact"
+      },
+      {
+        "check": "sim/protocol.yaml",
+        "passed": true,
+        "details": "required artifact"
+      },
+      {
+        "check": "sim/lock.json",
+        "passed": true,
+        "details": "required artifact"
+      },
+      {
+        "check": "runtime-validation",
+        "passed": true,
+        "details": "schemas and phase invariants"
+      },
+      {
+        "check": "deviations",
+        "passed": true,
+        "details": []
+      }
+    ],
+    "report": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\to_human\\G5-report.md"
+  },
+  "local_stdout": ".cache/m11-p5-rerun-gate-request.json",
+  "stdout_sha256": "64113dbe8e4c22af1d53c8bb8cb68b98bf9a551009a8f438a0beae5b32257afd",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scientific_decision_added": false,
+  "G5": "pending; PI decision required",
+  "G6_G7": "invalidated"
+}

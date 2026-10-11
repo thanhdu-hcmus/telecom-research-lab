@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-11 — M11 P5 R2 verifier compatibility repair and rerun
+
+- Verified the canonical PI rewind, preserving archived results and original
+  G5 review evidence; fixed archived SVG byte transport with a scoped attribute.
+- Accepted the verifier protocol alias, rejected conflicting declarations and
+  preserved native integrity/independence guards; bounded verifier budget 3600s.
+- Passed 123 combined tests and Ruff before relocking the code-only repair.
+- Completed 145 fresh native jobs; 1,015 actual output files match archived R1.
+  Recomputed collection, statistics, oracle diagnostics and seeded channel audit.
+- Prepared a new passing G5 request and review packet. P6 coverage supplements
+  remain preparation; scientific verification and independent review await G5.
+
 ## 2026-10-10 - M10 Overleaf confirmation
 
 - PI confirmed successful Overleaf compilation and supplied `../test.pdf`.

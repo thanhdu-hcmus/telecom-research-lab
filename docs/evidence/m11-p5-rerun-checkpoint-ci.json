@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-11T17:51:15.119055+00:00",
+  "status": "PASS",
+  "actual_github_run": {
+    "conclusion": "success",
+    "headSha": "09a8270508d633a7322df0ff2969361575a8dcb3",
+    "status": "completed",
+    "url": "https://github.com/thanhdu-hcmus/telecom-research-lab/actions/runs/38160744609"
+  },
+  "scope": "Exact checkpoint commit software CI; not scientific gate approval"
+}

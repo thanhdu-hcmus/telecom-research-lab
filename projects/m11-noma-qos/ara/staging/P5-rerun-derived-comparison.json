@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-10-11T18:05:01.198158+00:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "artifact": "statistics.json",
+      "numerical_fields_match": true,
+      "excluded": [
+        "input_manifest_hashes",
+        "scenarios[].runtime_s"
+      ]
+    },
+    {
+      "artifact": "diagnostics.json",
+      "numerical_fields_match": true,
+      "excluded": [
+        "timestamp",
+        "job_details (new run lineage and measured runtime)",
+        "total_job_runtime_s"
+      ],
+      "mapping": "Archived unresolved/disagreement run IDs mapped through full output comparison"
+    },
+    {
+      "artifact": "channel-audit.json",
+      "numerical_fields_match": true,
+      "excluded": [
+        "timestamp",
+        "checks[].run_id",
+        "checks[].manifest_path",
+        "checks[].manifest_sha256"
+      ],
+      "order": "Checks compared by scenario and seed"
+    },
+    {
+      "artifact": "summary.csv",
+      "numerical_fields_match": true,
+      "excluded": [
+        "run_id"
+      ],
+      "method": "Exact remaining CSV field strings, matched by scenario/seed; NaN markers retained"
+    }
+  ],
+  "method": "Compare fresh computations with archived R1, excluding only declared run provenance and measured runtime fields. All raw output bytes were separately read and matched. This is author reproducibility evidence, not independent P6 verification.",
+  "source_copies_match_executed_helpers": true,
+  "files": {
+    "projects\\m11-noma-qos\\archive\\2026-10-11T16-51-50.467789+00-00\\results\\statistics.json": "4ad1a84f65f45e2774851f15c22d6080bc28ed96f6d78ab2f57cd2f06c80a73f",
+    "projects\\m11-noma-qos\\archive\\2026-10-11T16-51-50.467789+00-00\\results\\diagnostics.json": "735105b5b2698cd1f074f804bcc79fdfb97b65fe68f7505a3868c6901704f887",
+    "projects\\m11-noma-qos\\archive\\2026-10-11T16-51-50.467789+00-00\\results\\channel-audit.json": "7d98fa1780d449a7ab3aa72c53c91682ad3c0802a1a6911685e0876b268c4d5b",
+    "projects\\m11-noma-qos\\archive\\2026-10-11T16-51-50.467789+00-00\\results\\summary.csv": "8e7e21d8dc5a2a2c55e3f68c36b9898da4443553f362d0160cd493eedb2e8550",
+    "projects\\m11-noma-qos\\results\\statistics.json": "c3068a2635fc7e07dfb28ecb5265a0872ef8e0062a5eb561b6f8c54fa3874180",
+    "projects\\m11-noma-qos\\results\\diagnostics.json": "393639d5dadb4b0bfeb60f7ef89952e779aa71dc3764ce4fd5b806fca80590fa",
+    "projects\\m11-noma-qos\\results\\channel-audit.json": "6acb6db7c9272167144d47ee61dd7d5fd1f14b8c5e8d5c2175cdffbe95b2ba8e",
+    "projects\\m11-noma-qos\\results\\summary.csv": "cf4c72e214e601f7b63a2a22a3df77ed9d5597e4000d830c141ccb3000901c65"
+  }
+}

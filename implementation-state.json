@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-11T17:34:20.247053+00:00",
+  "updated_at": "2026-10-11T18:23:26.797150+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
   "active_milestone": "M11",
-  "status": "m11_p5_rerun_postprocessing",
+  "status": "m11_g5_rerun_review_pending",
   "verification_complete": true,
   "pi_approval": {
     "quote": "Approve M0, continue M1–M10 automatically, and create the new private repository.",
@@ -28,7 +28,7 @@
     "G2": "approved",
     "G3": "approved",
     "G4": "approved",
-    "G5": "invalidated",
+    "G5": "pending",
     "G6": "invalidated",
     "G7": "invalidated"
   },
@@ -38,7 +38,7 @@
     "Run independent reviewers in separately configured read-only root sessions; verify shell enforcement before L4 acceptance"
   ],
   "unresolved": [
-    "M11 fresh P5 recomputation in progress; renewed G5 PI decision required before independent P6/P7 work",
+    "M11 awaits fresh G5 PI approval, then independent P6 verification and P7 manuscript artifacts with PI gate decisions",
     "M12 reference paper and code/data availability require PI selection",
     "Real thesis profile is an unreviewed draft with chapter plan, publications, deadlines and venues missing",
     "Optional Gemini unavailable; manual independent review packets provided",
@@ -160,20 +160,24 @@
     "evidence": "projects/m11-noma-qos/gates/decisions.yaml"
   },
   "m11_p5": {
-    "status": "R2 fresh simulations complete; guarded collection and recomputation running",
+    "status": "R2 complete; fresh G5 PI review pending",
+    "code_revision": "R2",
+    "physical_protocol_version": "v1 unchanged",
     "protocol": "projects/m11-noma-qos/sim/protocol.yaml",
+    "protocol_commit": "b2a7cf17890b499b07f5c23bbc871351cc3909b1",
+    "protocol_hash": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
     "planned_jobs": 145,
+    "completed_jobs": 145,
+    "resumed_jobs": 0,
     "test_status": "PASS;123 combined framework/project checks",
-    "simulations": "Native runner PASS;145 fresh jobs; full postprocessing validation pending",
+    "simulations": "PASS;145 fresh native manifest jobs",
     "protocol_locked": true,
     "scientific_approval": false,
-    "protocol_commit": "b2a7cf17890b499b07f5c23bbc871351cc3909b1",
-    "gate_checks": "fresh request not yet run",
-    "review_packet": "projects/m11-noma-qos/to_human/G5-review.md",
+    "gate_checks": "PASS",
+    "review_packet": "projects/m11-noma-qos/to_human/G5-rerun-review.md",
     "gate_report": "projects/m11-noma-qos/to_human/G5-report.md",
     "scenario_evaluations": 4718692,
     "unique_channel_pairs": 393216,
-    "initial_regression_setup_errors": 41,
     "source_changes": 1,
     "relocks": 1,
     "oracle_checks": 4708,
@@ -186,18 +190,78 @@
     "joint_unresolved_rows": 5,
     "baseline_reproduction_agreement": true,
     "baseline_maximum_relative_error": 0.001716158336917628,
-    "independent_P6_verification": "blocked at native entrypoint preflight; not run"
+    "independent_P6_verification": "NOT RUN; awaits renewed G5"
   },
   "m11_g5": {
-    "status": "invalidated",
+    "status": "pending",
+    "checks_passed": true,
+    "previous_approval_invalidated_by": "canonical PI rewind 76525a2",
+    "timestamp": "2026-10-11T18:23:25.651171+00:00",
+    "review_packet": "projects/m11-noma-qos/to_human/G5-rerun-review.md"
+  },
+  "m11_p6": {
+    "status": "awaits renewed G5 approval",
+    "gate_status": "invalidated",
+    "scientific_verification": "NOT RUN",
+    "framework_entrypoint_repair": "applied/tested in P5 R2",
+    "independent_review_rounds": 0,
+    "engineering_review_independent": false,
+    "engineering_findings": 11,
+    "supplement_brief": "projects/m11-noma-qos/ara/staging/P6-supplement-preparation.md"
+  },
+  "m11_p5_rerun": {
+    "status": "complete; fresh G5 pending",
+    "tests": 123,
+    "simulation_sources_unchanged": true,
+    "physical_protocol_unchanged": true,
+    "new_runs_completed": 145,
+    "preparation_receipt": "projects/m11-noma-qos/ara/staging/P5-rerun-preparation.json",
+    "protocol_commit": "b2a7cf17890b499b07f5c23bbc871351cc3909b1",
+    "protocol_hash": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+    "engineering_coverage_findings": 11,
+    "resumed_jobs": 0,
+    "output_files_byte_identical": 1015,
+    "fresh_recomputation": true,
+    "execution_receipt": "projects/m11-noma-qos/ara/staging/P5-rerun-execution.json"
+  },
+  "m11_p5_initial": {
+    "status": "approved",
+    "protocol": "projects/m11-noma-qos/sim/protocol.yaml",
+    "planned_jobs": 145,
+    "test_status": "PASS;31 targeted simulation/physics tests and90 framework regression tests",
+    "simulations": "PASS;145 fixed manifest jobs completed and checksum-validated",
+    "protocol_locked": true,
+    "scientific_approval": true,
+    "protocol_commit": "ebb68ac514beeb89d5d1e3dfcb20aecdeaf440ca",
+    "gate_checks": "PASS",
+    "review_packet": "projects/m11-noma-qos/to_human/G5-review.md",
+    "gate_report": "projects/m11-noma-qos/to_human/G5-report.md",
+    "scenario_evaluations": 4718692,
+    "unique_channel_pairs": 393216,
+    "initial_regression_setup_errors": 41,
+    "source_changes": 0,
+    "relocks": 0,
+    "oracle_checks": 4708,
+    "oracle_status_counts": {
+      "feasible": 4129,
+      "infeasible": 559,
+      "unresolved": 20
+    },
+    "oracle_disagreements": 0,
+    "joint_unresolved_rows": 5,
+    "baseline_reproduction_agreement": true,
+    "baseline_maximum_relative_error": 0.001716158336917628,
+    "independent_P6_verification": "blocked at native entrypoint preflight; not run"
+  },
+  "m11_g5_initial": {
+    "status": "approved",
     "timestamp": "2026-10-11T16:15:54.550193+00:00",
     "note": "P5 runs and numerical limits reviewed; G5 report usable",
     "decision_commit": "b289a06ea40c6eedba369409a430e92aaa45226f",
-    "record_hash": "da854205f8f213b7af803eead59b3977bee3cefce92edf52573913be4a458e19",
-    "current_note": "Canonical PI rewind invalidated the earlier approval; fresh request pending completion of recomputation"
+    "record_hash": "da854205f8f213b7af803eead59b3977bee3cefce92edf52573913be4a458e19"
   },
-  "m11_p6": {
-    "status": "PI rewound to P5; framework repair applied; numerical P6 verification deferred until renewed G5",
+  "m11_p6_initial": {
+    "status": "implementation-bug; tested repair prepared; PI rewind P5 required",
     "phase_start": "PASS",
     "native_preflight": "FAIL before verifier execution",
     "isolated_regression_tests": 97,
@@ -209,19 +273,6 @@
     "scientific_verification": "NOT RUN",
     "repair_packet": "projects/m11-noma-qos/to_human/P6-repair.md",
     "repair_receipt": "projects/m11-noma-qos/ara/staging/P6-fix-preparation.json",
-    "gate_status": "invalidated"
-  },
-  "m11_p5_rerun": {
-    "status": "145 fresh runs and actual-byte comparison PASS; guarded recomputation in progress",
-    "tests": 123,
-    "simulation_sources_unchanged": true,
-    "physical_protocol_unchanged": true,
-    "new_runs_completed": 145,
-    "preparation_receipt": "projects/m11-noma-qos/ara/staging/P5-rerun-preparation.json",
-    "protocol_commit": "b2a7cf17890b499b07f5c23bbc871351cc3909b1",
-    "protocol_hash": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
-    "engineering_coverage_findings": 11,
-    "resumed_jobs": 0,
-    "output_files_byte_identical": 1015
+    "gate_status": "G6 not_started"
   }
 }

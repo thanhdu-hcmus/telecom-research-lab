@@ -1,0 +1,131 @@
+{
+  "timestamp": "2026-10-11T18:05:01.217391+00:00",
+  "status": "fresh P5 results complete; fresh G5 request next",
+  "code_revision": "R2",
+  "physical_protocol_version": "v1 unchanged",
+  "protocol_commit": "b2a7cf17890b499b07f5c23bbc871351cc3909b1",
+  "protocol_hash": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+  "jobs": 145,
+  "resumed_jobs": 0,
+  "scenario_evaluations": 4718692,
+  "unique_channel_pairs": 393216,
+  "combined_tests": 123,
+  "changed_locked_inputs": [
+    "lab/verification.py"
+  ],
+  "relocks": 1,
+  "oracle_status_counts": {
+    "feasible": 4129,
+    "infeasible": 559,
+    "unresolved": 20
+  },
+  "oracle_disagreements": 0,
+  "joint_unresolved_count": 5,
+  "rate_precision_failure_settings": [],
+  "positive_qos_outage_event_checks": [
+    {
+      "scenario": "mc-00-q1",
+      "metric": "noma_infeasibility",
+      "events": 162073,
+      "minimum_events": 100,
+      "passed": true
+    },
+    {
+      "scenario": "mc-00-q1",
+      "metric": "oma_infeasibility",
+      "events": 222220,
+      "minimum_events": 100,
+      "passed": true
+    },
+    {
+      "scenario": "mc-00-q2",
+      "metric": "noma_infeasibility",
+      "events": 296661,
+      "minimum_events": 100,
+      "passed": true
+    },
+    {
+      "scenario": "mc-00-q2",
+      "metric": "oma_infeasibility",
+      "events": 340176,
+      "minimum_events": 100,
+      "passed": true
+    },
+    {
+      "scenario": "mc-10-q1",
+      "metric": "noma_infeasibility",
+      "events": 15788,
+      "minimum_events": 100,
+      "passed": true
+    },
+    {
+      "scenario": "mc-10-q1",
+      "metric": "oma_infeasibility",
+      "events": 31048,
+      "minimum_events": 100,
+      "passed": true
+    },
+    {
+      "scenario": "mc-10-q2",
+      "metric": "noma_infeasibility",
+      "events": 36824,
+      "minimum_events": 100,
+      "passed": true
+    },
+    {
+      "scenario": "mc-10-q2",
+      "metric": "oma_infeasibility",
+      "events": 71304,
+      "minimum_events": 100,
+      "passed": true
+    },
+    {
+      "scenario": "mc-20-q1",
+      "metric": "noma_infeasibility",
+      "events": 1466,
+      "minimum_events": 100,
+      "passed": true
+    },
+    {
+      "scenario": "mc-20-q1",
+      "metric": "oma_infeasibility",
+      "events": 3204,
+      "minimum_events": 100,
+      "passed": true
+    },
+    {
+      "scenario": "mc-20-q2",
+      "metric": "noma_infeasibility",
+      "events": 3329,
+      "minimum_events": 100,
+      "passed": true
+    },
+    {
+      "scenario": "mc-20-q2",
+      "metric": "oma_infeasibility",
+      "events": 7751,
+      "minimum_events": 100,
+      "passed": true
+    }
+  ],
+  "baseline_maximum_relative_error": 0.001716158336917628,
+  "fresh_raw_output_recomputation": true,
+  "independent_P6_verification": "NOT RUN",
+  "engineering_audit_independent": false,
+  "evidence": {
+    "sim/lock.json": "b01177976ab7f614bb387c19f1537445f04ffb84fb186a6f27ea107a7bd09c9c",
+    "results/statistics.json": "c3068a2635fc7e07dfb28ecb5265a0872ef8e0062a5eb561b6f8c54fa3874180",
+    "results/diagnostics.json": "393639d5dadb4b0bfeb60f7ef89952e779aa71dc3764ce4fd5b806fca80590fa",
+    "results/channel-audit.json": "6acb6db7c9272167144d47ee61dd7d5fd1f14b8c5e8d5c2175cdffbe95b2ba8e",
+    "results/collection.json": "5ef70eb95cefd2fa97969e828de5611fbec8d4fdafa1ded72565052155951430",
+    "results/summary.csv": "cf4c72e214e601f7b63a2a22a3df77ed9d5597e4000d830c141ccb3000901c65",
+    "results/oma-reference-overlay.svg": "d3b49c0c09916f73f4e7cc1008b8202c2a9154811f6127c49bfe91642c7fab32",
+    "ara/staging/P5-rerun-output-comparison.json": "d8c237b9c8b516b90048aaedca1bc0025ec861a334dfef57d6ab482322186a9c",
+    "ara/staging/P5-rerun-recomputation.json": "98857b3e9f12dd85ac29201f545cea580ff9112b9ac1ea1e4541977e5691b718",
+    "ara/staging/P5-rerun-derived-comparison.json": "edc6fabe014ca95587046e49662b8637f2bc4783136163706545472082ee5220",
+    "ara/staging/P5-rerun-preparation.json": "27a20b201036f74275aaa66db44826f698199967f718bd211851898196b13032",
+    "ara/staging/P5-rerun-engineering-review.json": "3c234267bf9d41121935e7de2165eaf423b4db2e554caf2e33a1899e92c17e67",
+    "ara/staging/P6-supplement-preparation.md": "5e5b536555c73086cd04113c4c29532e765df01127cfc1ef3b42dff5d61a9f80",
+    "to_human/G5-rerun-review.md": "7c4c380fb0a3a88d48d4cac28f4d48278965f2cea70fd6c45337e6781a4a7ee6"
+  }
+}

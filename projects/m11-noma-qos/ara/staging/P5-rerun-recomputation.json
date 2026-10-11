@@ -1,0 +1,74 @@
+{
+  "started_at": "2026-10-11T17:31:38.026153+00:00",
+  "status": "PASS",
+  "commands": {
+    "collect": {
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\lab.exe",
+        "sim",
+        "collect",
+        "--project",
+        "m11-noma-qos",
+        "--json"
+      ],
+      "pid": 39836,
+      "status": "PASS",
+      "stdout": ".cache/m11-p5-rerun-collect.stdout.txt",
+      "stderr": ".cache/m11-p5-rerun-collect.stderr.txt",
+      "exit_code": 0,
+      "ended_at": "2026-10-11T17:57:23.301215+00:00"
+    },
+    "aggregate": {
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\sim\\src\\aggregate.py",
+        "--project",
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos"
+      ],
+      "pid": 38816,
+      "status": "PASS",
+      "stdout": ".cache/m11-p5-rerun-aggregate.stdout.txt",
+      "stderr": ".cache/m11-p5-rerun-aggregate.stderr.txt",
+      "exit_code": 0,
+      "ended_at": "2026-10-11T18:04:58.382633+00:00"
+    },
+    "diagnostics": {
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\p5_analyze_checks.py"
+      ],
+      "pid": 38528,
+      "status": "PASS",
+      "stdout": ".cache/m11-p5-rerun-diagnostics.stdout.txt",
+      "stderr": ".cache/m11-p5-rerun-diagnostics.stderr.txt",
+      "exit_code": 0,
+      "ended_at": "2026-10-11T17:56:58.294649+00:00"
+    },
+    "channels": {
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\p5_channel_audit.py"
+      ],
+      "pid": 9036,
+      "status": "PASS",
+      "stdout": ".cache/m11-p5-rerun-channels.stdout.txt",
+      "stderr": ".cache/m11-p5-rerun-channels.stderr.txt",
+      "exit_code": 0,
+      "ended_at": "2026-10-11T17:57:13.297290+00:00"
+    }
+  },
+  "ended_at": "2026-10-11T18:04:58.389037+00:00",
+  "method": "Fresh raw-output recomputation with each original program and all native lock/manifest checks enabled.",
+  "raw_comparison_receipt_sha256": "d8c237b9c8b516b90048aaedca1bc0025ec861a334dfef57d6ab482322186a9c",
+  "logs": {
+    ".cache/m11-p5-rerun-collect.stdout.txt": "b3e660f7ff4972a8e90740a9347e89f54c0a467c1a08fbaf29ad3d8bc11cc264",
+    ".cache/m11-p5-rerun-collect.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".cache/m11-p5-rerun-aggregate.stdout.txt": "f9b9c0ad498c99bd51035c586323f7a8362801ecb7fb3c5c2f13179c163cde73",
+    ".cache/m11-p5-rerun-aggregate.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".cache/m11-p5-rerun-diagnostics.stdout.txt": "0be31f478e503c54ae8263470f95d82296e1b4883826052d57afafaa40f05826",
+    ".cache/m11-p5-rerun-diagnostics.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".cache/m11-p5-rerun-channels.stdout.txt": "226f3793b47165f2dbfba96a6dffa922420cfdfc59e7fd7819e844a0cf5f914e",
+    ".cache/m11-p5-rerun-channels.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "independent_P6_verification": false
+}

@@ -26,3 +26,12 @@ The conditional aggregate is the unchanged pinned
 `projects/m11-noma-qos/sim/src/aggregate.py`; collection uses `lab sim collect`.
 No production guard is bypassed by these helpers. Numerical evidence remains
 bound to the native simulation manifests and the committed protocol lock.
+
+`compare_derived.py` checks freshly regenerated summaries against archived R1.
+It declares the exact lineage/runtime fields excluded from equality. It does
+not reuse old summaries to generate fresh results or assert P6 independence.
+
+`report.py`, `gate_request.py` and `finalize.py` retain the report generation,
+native G5 request and progress-document update steps. They never approve a
+scientific gate. They are historical execution sources; do not execute them
+against a pending/approved project or overwrite its preserved review receipts.

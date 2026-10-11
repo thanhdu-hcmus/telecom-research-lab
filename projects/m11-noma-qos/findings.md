@@ -200,3 +200,26 @@ identifies analysis-only P6 supplements; no independent P6 verification is claim
 The archived initial G5 SVG transport is preserved with a scoped byte attribute.
 See ara/staging/P5-rerun-preparation.json. Earlier P6 repair-pending notes are
 historical; this rewind authorizes applying the prepared implementation repair.
+
+## Current P5 R2: fresh experiments complete; G5 pending
+
+Following canonical PI rewind 76525a2, the committed code-only repair and fresh
+lock produced all 145 planned native jobs with zero resumptions. All 1,015 saved
+output files are byte-identical to archived R1, checked from actual old/new bytes
+against both generations of manifests. Only lab/verification.py changes among
+51 locked inputs. The physical v1 protocol and simulation sources remain unchanged.
+
+All 123 combined tests and Ruff pass. Native collection, conditional statistics,
+oracle diagnostics and seeded channel audit were freshly recomputed with their
+ordinary integrity checks enabled. The fresh G5 request passes. G1-G4 remain
+approved; G5 is pending; G6-G7 are invalidated. Earlier approval and repair-pending
+sections above are historical and are preserved.
+
+The finite-grid results retain five joint unresolved deterministic rows and
+20 oracle-unresolved rows (four distinct stress cases repeated five times).
+Resolved oracle disagreements are zero. Published OMA-subset maximum relative
+error remains 0.1716%.
+No scientific P6 verifier has run. The author engineering audit identifies 11
+coverage findings; its supplement brief does not substitute for independent
+verification or an enforced artifact review. Review to_human/G5-rerun-review.md
+and the newly generated G5-report.md. M11 remains in progress; M12 is unstarted.

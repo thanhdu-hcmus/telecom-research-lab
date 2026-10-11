@@ -29,12 +29,20 @@ the source plan and AGENTS.md still reserve scientific decisions for the PI.
 
 ## M11 work remaining
 
-G1 is pending. Its automated check deliberately fails until the PI marks the
-scope/profile reviewed; no agent marks those flags. P2–P7 remain unstarted. Each
-phase needs its actual evidence, specialist handoffs, validation, PI decision and
-report usability rating. The proposed NOMA/OMA comparison states matched budgets,
-equal-time scheduling, ideal SIC and explicit feasible-case handling; the
-conditional prediction must be derived and checked later.
+Current status: G1–G4 approved. The canonical PI rewind to P5 invalidated the
+first G5 approval and G6–G7. P5 R2 applies a tested verifier-entrypoint repair,
+with the physical protocol unchanged, and completes 145 fresh native jobs.
+All 123 combined tests pass. Actual output bytes match archived R1 and fresh
+collection/statistics/channel/oracle summaries are regenerated. The new G5
+request passes and awaits PI review in
+`projects/m11-noma-qos/to_human/G5-rerun-review.md`.
+
+After renewed G5 approval, P6 must execute the pinned verifier and independently
+address the 11 coverage findings with analysis-only supplements, then obtain
+enforced independent artifact review and a PI G6 decision. P7 still requires an
+evidence-traced manuscript, verified citations, compilation, independent paper
+review and PI G7 approval/report usability judgment. No P6 result or M11
+completion is claimed. Earlier G1-pending preparation statements are historical.
 
 ## M12 work remaining
 

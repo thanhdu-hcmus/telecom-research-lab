@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-11T18:07:01.486542+00:00",
+  "status": "PASS",
+  "scope": "Author visual layout inspection; not independent scientific P6 verification",
+  "vector_artifact": "results/oma-reference-overlay.svg",
+  "svg_sha256": "d3b49c0c09916f73f4e7cc1008b8202c2a9154811f6127c49bfe91642c7fab32",
+  "local_render": ".cache/m11-oma-overlay.png",
+  "render_sha256": "0c0af034966d9c3216d9552f45d7494c6066993dedb3cdc2e977bcb4a4f06e01",
+  "observations": [
+    "Title explicitly restricts reproduction to OMA curves",
+    "Both axes and rate/SNR units are readable without clipping",
+    "Legend distinguishes weak/strong equations and MC 95% CI marks",
+    "Six sampled SNR points visually align with their reference curves",
+    "Strong-user curve remains above weak-user curve"
+  ],
+  "numerical_basis": "Fresh statistics.json confirms reference agreement, ordering and trend; visual review alone is not numeric validation",
+  "binary_render_committed": false
+}
