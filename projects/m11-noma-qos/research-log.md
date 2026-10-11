@@ -51,3 +51,5 @@
 - 2026-10-11T16:18:12.679013+00:00 — Entered P6
 
 - 2026-10-11T16:39:53.000794+00:00 — P6 entrypoint preflight implementation-bug; isolated repair prepared with 7 targeted and 97 full regression tests PASS; all 51 locked inputs unchanged; awaiting PI-only rewind P5 before applying fix. No scientific verifier executed or G6 requested.
+
+- 2026-10-11T16:51:50.728597+00:00 — PI rewind to P5: Repair verifier entrypoint compatibility and execution budget; preserve approved numerical evidence; archived at 2026-10-11T16-51-50.467789+00-00

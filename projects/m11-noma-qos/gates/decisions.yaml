@@ -1334,3 +1334,13 @@
     projects/m11-noma-qos/sim/tests/test_noma_physics.py: 641f844d17e44304d8aa8b595549fc9cb4f21c04c01b24e007e7c3d33f31fee3
   previous_hash: dba19cdfd19dcc28263baef01c0a27afa0b6dfcc8dd61f98263f24e2b0d7046d
   record_hash: da854205f8f213b7af803eead59b3977bee3cefce92edf52573913be4a458e19
+- gate: G5
+  decision: rewind
+  note: Repair verifier entrypoint compatibility and execution budget; preserve approved
+    numerical evidence
+  timestamp: '2026-10-11T16:51:50.549298+00:00'
+  git_user: thanhdu
+  selected_idea: null
+  artifact_hashes: {}
+  previous_hash: da854205f8f213b7af803eead59b3977bee3cefce92edf52573913be4a458e19
+  record_hash: ea2d143ce5e510fd0a23274df5cbd6e5ce225a1cba9f1aaf7ce8209dfcbf656f

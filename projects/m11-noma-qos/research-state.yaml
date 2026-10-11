@@ -1,6 +1,6 @@
 version: 1
 project: m11-noma-qos
-phase: P6
+phase: P5
 gates:
   G1:
     status: approved
@@ -138,7 +138,7 @@ gates:
       projects/m11-noma-qos/model/source-map.md: 88469e412cb23526941c2cda86efb3bca9be2f5f097d09ad021ddd54f6026d1d
     checks_passed: true
   G5:
-    status: approved
+    status: invalidated
     timestamp: '2026-10-11T16:15:54.550193+00:00'
     note: P5 runs and numerical limits reviewed; G5 report usable
     artifact_hashes:
@@ -1322,22 +1322,22 @@ gates:
       projects/m11-noma-qos/sim/src/oracle.py: 2b145f6ef8633cf675a4ab34f6632dc09a13156cac0b83bd37f42b0df1dc0055
       projects/m11-noma-qos/sim/src/verifier.py: 1aefd2052cfbdbf39f82bb70e5b4c14f1017202cfd3911f456a180ecdf1317b9
       projects/m11-noma-qos/sim/tests/test_noma_physics.py: 641f844d17e44304d8aa8b595549fc9cb4f21c04c01b24e007e7c3d33f31fee3
-    checks_passed: true
+    checks_passed: false
   G6:
-    status: not_started
+    status: invalidated
     timestamp: null
     note: null
     artifact_hashes: {}
     checks_passed: false
   G7:
-    status: not_started
+    status: invalidated
     timestamp: null
     note: null
     artifact_hashes: {}
     checks_passed: false
 selected_idea: idea-01
 baselines: {}
-protocol_hash: 250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51
-protocol_commit: ebb68ac514beeb89d5d1e3dfcb20aecdeaf440ca
+protocol_hash: null
+protocol_commit: null
 deviations: []
 open_questions: []
