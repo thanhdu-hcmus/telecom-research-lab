@@ -1,0 +1,254 @@
+{
+  "version": 1,
+  "project": "m11-noma-qos",
+  "role": "sim_engineer",
+  "review_kind": "P5 engineering preparation; static source audit",
+  "scientific_verdict": null,
+  "execution": {
+    "scientific_verifier_executed": false,
+    "simulations_executed": false,
+    "tests_executed": false,
+    "network_used": false,
+    "source_protocol_model_results_edited": false,
+    "pi_gate_or_deviation_actions": false,
+    "subagents_spawned": false
+  },
+  "independence": {
+    "enforced_independent_scientific_review": false,
+    "effective_role": "Engineering audit by the specialist that previously authored analytic.py and oracle.py",
+    "oracle_scope": "The pinned oracle is distinct from the analytic closed form, but repeating it is use of a shared numerical reference, not a third independently written optimizer.",
+    "required_next_review": "Fresh enforced independent artifact review must examine the pinned verifier and P6 supplemental analysis before any complete scientific P6 acceptance claim. Native PASS alone will not establish complete P6 coverage."
+  },
+  "state_at_read": {
+    "phase": "P5",
+    "G1_G4": "approved",
+    "G5_G7": "invalidated",
+    "protocol_hash": null,
+    "protocol_commit": null,
+    "pi_rewind_commit_reported_by_parent": "76525a2"
+  },
+  "observed_or_reported_failures": [
+    {
+      "kind": "historical entrypoint preflight failure, reported in local findings",
+      "evidence": "findings.md section 'Current P6: G5 approved; framework repair awaits PI rewind' reports that the protocol verifier key was unrecognized and no scientific verifier ran.",
+      "current_source_observation": "The audited lab/verification.py now selects verification_entrypoint or verifier, rejects conflicts, retains script pinning/independence checks, and sets timeout=3600.",
+      "limitation": "This audit did not execute compatibility tests or a verifier. The parent owns test receipts and final framework repair acceptance."
+    }
+  ],
+  "scientific_failures_observed_by_this_audit": [],
+  "findings": [
+    {
+      "id": "E01",
+      "location": "sim/src/verifier.py:172; sim/src/aggregate.py:ablations",
+      "severity": "high",
+      "evidence": "The native ablations boolean reads minimum_loss from results/statistics.json repeatedly. That file is produced by aggregate.py from saved simulator columns. The verifier does not recompute fixed a=.25 rates, grid split feasibility, the 101-point grid maximum, masks, paired denominators, or loss values from original gains/targets. Its 'or 0' substitutes zero for absent minimum_loss, and all() can be vacuous on an empty scenario list.",
+      "consequence": "Ablation summaries can agree with themselves while their raw allocation metrics or scenario coverage are wrong; native ablations PASS is not independent raw recomputation.",
+      "fix_or_supplement": "Preserve pinned source bytes for this framework repair. In analysis-only P6 code, independently evaluate original SINRs for a=.25 and the protocol's 101 splits, retain grid misses as diagnostic misses, reconstruct feasibility/counts/losses on the declared masks, compare every scenario's raw and aggregate fields, and bind the supplemental evidence. Enforced independent review must assess this supplement."
+    },
+    {
+      "id": "E02",
+      "location": "sim/src/verifier.py:85,107,108,123,169,205",
+      "severity": "high",
+      "evidence": "OMA rate sums are independently evaluated, but OMA feasibility/status is never reconstructed from individual targets. Both-feasible and OMA-only masks use stored category. Ledger checks compare category to stored feasible/oma_feasible rather than independent indicators. NOMA status and its feasible indicator are not explicitly compared.",
+      "consequence": "Consistently wrong stored indicators and categories can pass ledger/fairness checks and select the wrong conditional population. No genuine data error is asserted here; this is a demonstrated source coverage gap.",
+      "fix_or_supplement": "P6 analysis should independently classify both OMA targets with the protocol boundary policy and exact integer-target certificates when needed, compare status/indicator/category fields, reconstruct N_total/N_resolved/N_unresolved and all four counts, and compare raw ledger.json and aggregate denominators/fractions. Keep numerical ambiguities separate rather than forcing binary membership."
+    },
+    {
+      "id": "E03",
+      "location": "sim/src/verifier.py:95,104,148; sim/src/experiment.py:metrics",
+      "severity": "high",
+      "evidence": "Recomputation compares only feasible sum_rate and unfiltered oma_sum. It does not compare saved rw, rs, both weak decoding rates, original SINRs, individual OMA rates, saved residuals, paired_difference, or metrics.csv against independently computed values. Precision calculations directly consume saved paired_difference.",
+      "consequence": "Individual-rate or paired-difference errors can evade recomputation while a total sum remains correct. Conditional means/CIs can then use incorrect saved values despite a native consistency boolean.",
+      "fix_or_supplement": "Analysis-only P6 recomputation should compare the full declared per-row metric set, both channels.csv and metrics.csv, and independently recompute paired differences and conditional summaries. Validate undefined fields outside the accepted masks and report raw residuals, including small negative numerical values."
+    },
+    {
+      "id": "E04",
+      "location": "sim/src/verifier.py:132-138; sim/src/oracle.py:solve",
+      "severity": "medium",
+      "evidence": "Repeated oracle.solve receives checked.inputs from oracle.json. These inputs and checked.row are not cross-checked against the raw row, row IDs, or manifest parameters. The native status comparison is repeated oracle status versus saved oracle status, not independently repeated oracle versus analytic feasibility status. Calls rely on oracle defaults rather than explicitly passing the manifest tolerances/caps.",
+      "consequence": "A misplaced or incompletely selected oracle receipt could be repeated successfully for the wrong instance. Numerical disagreement counts do not establish the declared per-seed 32-row/100-row coverage by themselves.",
+      "fix_or_supplement": "P6 analysis should validate unique checked row IDs, exact input equality to raw P/gw/gs/qw/qs, deterministic/all-row versus first-32 selection, manifest tolerance/cap settings, resolved analytic/oracle status agreement, and retained unresolved cases. Repetition of the same oracle remains shared-reference evidence; do not call it a third independent optimizer."
+    },
+    {
+      "id": "E05",
+      "location": "sim/src/verifier.py:140-142,171",
+      "severity": "medium",
+      "evidence": "Sensitivity compares saved tighter_oracle sum_rate to saved original oracle sum_rate. It does not rerun the tighter settings, bind their inputs/settings to the raw row, compare statuses, require exactly the first eight rows, or audit missing/skipped/null outcomes. bool(tighter_differences) requires only one included difference somewhere.",
+      "consequence": "The sensitivity boolean is a stored-result comparison and can omit failed or absent cases while still passing globally.",
+      "fix_or_supplement": "P6 analysis should independently repeat or otherwise separately recompute all declared first-eight sensitivity cases with explicit ten-times-tighter settings, validate coverage/statuses and uncertainty, compare finite differences, and preserve unresolved/failure cases. This uses the existing physical protocol rather than adding sampling or a new metric."
+    },
+    {
+      "id": "E06",
+      "location": "sim/src/verifier.py:143-155,170; sim/protocol.md:Statistical policy",
+      "severity": "medium",
+      "evidence": "The native statistical-precision check covers the three both-feasible rate means with average_ci. It does not independently recompute exact binomial event intervals, validate >=100 observed event qualifications, audit zero-event upper bounds, compare aggregate event statistics, or compare conditional counts/means/CIs to the independent values.",
+      "consequence": "Native statistical-precision PASS does not cover the whole declared event policy. Zero-QoS regimes legitimately have zero infeasibility events, so blindly requiring >=100 events there would itself misrepresent the protocol.",
+      "fix_or_supplement": "P6 analysis should independently recompute resolved-denominator event counts and exact binomial intervals, retain explicit conclusive/inconclusive flags and zero-event upper bounds, explain the separate exact zero-QoS mathematical regime, and reconstruct the three rate means/CIs from recomputed both-feasible values. Record pointwise, not familywise, coverage and conditional denominators."
+    },
+    {
+      "id": "E07",
+      "location": "sim/src/verifier.py:80-86,160,169; lab/simulation.py:verify_manifest",
+      "severity": "medium",
+      "evidence": "Manifest verification binds planned params, seeds, file hashes and byte sizes, but the scientific verifier does not independently check raw row count/IDs, raw P/qw/qs versus manifest params or fixed cases, finite/nonnegative ordered gains, channel stream reproduction/common grid draws, P_db conversion, or individual OMA normalization. The units boolean merely reuses the OMA total-sum error.",
+      "consequence": "Hash integrity and OMA formula consistency alone do not establish that raw inputs represent the declared sampling design and matched resources.",
+      "fix_or_supplement": "P6 analysis should bind raw rows to manifest trials/parameters/case table, regenerate the declared seeded gains or compare against an independently reproduced sampling receipt, verify common draws across settings and ordering/domain, check full active-slot P and factor1/2 on each OMA rate, and report normalized units/energy explicitly. No alternative physical model is requested."
+    },
+    {
+      "id": "E08",
+      "location": "sim/src/verifier.py:71,95-105,109,125,152",
+      "severity": "medium",
+      "evidence": "There is no explicit finiteness/range check on feasible a_star, feasible sums, recomputed rate values or stored OMA sums before comparisons. The maxima update max(previous, float(np.max(...))) can retain previous=0 when the new error is NaN, and comparisons of NaN residuals are false. Undefined-output audit checks only sum_rate. all_precision is vacuous on an empty precision mapping, though native validate_runs normally prevents missing planned jobs.",
+      "consequence": "Nonfinite values or invalid feasible fields can evade some booleans or cause later errors without precise scientific triage. This is a source-level fail-open risk; no corrupted canonical result was inspected or executed.",
+      "fix_or_supplement": "P6 analysis must validate legal statuses, indicators, split range, and field-specific finite/undefined masks before any maximum/CI calculation, explicitly reject NaN errors, require expected scenario/sample coverage, and audit undefined a_star/rw/rs/SINR/paired fields according to their documented semantics."
+    },
+    {
+      "id": "E09",
+      "location": "sim/src/verifier.py:111-121,199-205",
+      "severity": "medium",
+      "evidence": "The full-domain vector bracket skips classification comparison for |margin|<=1e-9, whereas the protocol split ambiguity band is 1e-12. Exact certificate checks challenge only feasible rows tagged exact-rational; exact-rational infeasibility has no direct empty-domain challenge. P3 maps to aggregate oracle sum agreement, without independently checking curvature, equal-gain tie/nonunique flags or singleton flags. P5 checks numerical nonnegative differences and stored OMA-only count, not every strict/equality subcase of the exact theorem.",
+      "consequence": "The finite prediction receipt has narrower coverage than the full P2/P3/P5 statements, especially narrow infeasibility and degeneracies. It cannot replace the approved exact P4 derivations or certify all singleton mathematics numerically.",
+      "fix_or_supplement": "P6 analysis should enumerate skipped boundary rows and adjudicate the committed integer-QoS stress cases with independent original-SINR rational bracketing/certificates or unresolved status, inspect deterministic tie/singleton/endpoint behavior, and distinguish tested numerical comparisons from the exact proof's strict/equality and curvature claims. Do not relax feasibility to close an ambiguity."
+    },
+    {
+      "id": "E10",
+      "location": "sim/src/verifier.py:72,79,129,145; lab/simulation.py:verify_manifest; lab/verification.py:custom_verify",
+      "severity": "medium",
+      "evidence": "The verifier retains structured raw arrays for all MC runs in groups, then allocates a concatenated scenario array. The declared workload contains 4,718,592 MC rows with many numeric/string fields. Each verify_manifest also rechecks the lock and Git bindings; native validation surrounds the custom verifier. Current timeout=3600 is a prepared repair budget, not a measured successful P6 run.",
+      "consequence": "High peak memory and repeated lock/manifest overhead are untested execution risks. No timeout, out-of-memory failure or P6 runtime is asserted by this audit.",
+      "fix_or_supplement": "Parent should retain any actual execution failure and measure runtime/memory before acceptance. Analysis-only supplements should process seed files/chunks and use independent sufficient-statistic aggregation when possible. Do not assert that increasing the timeout proves feasibility, and do not alter the locked physical workload to hide a budget problem."
+    },
+    {
+      "id": "E11",
+      "location": "sim/tests/test_noma_physics.py; sim/src/verifier.py",
+      "severity": "low",
+      "evidence": "The supplied P5 tests exercise analytic/oracle functions and degeneracies. They do not exercise verifier output schemas, prediction/check coverage, sensitivity receipt alignment, independent ablation recomputation, or deliberate mismatches in saved data. The audit executed no tests.",
+      "consequence": "Prior physics test receipts do not validate all verifier semantics or fail-closed handling.",
+      "fix_or_supplement": "Retain existing physics receipts, require a fresh enforced independent review of the verifier/supplements, and ensure P6 analysis contains explicit schema/coverage and mismatch checks. Any tests the parent elects to run need their own actual receipts and must not be described as this audit's executed checks."
+    }
+  ],
+  "native_check_coverage": {
+    "independent-recomputation": {
+      "implemented": "Separate original-rate evaluation of feasible NOMA total and unfiltered OMA total; checksum-bound manifests.",
+      "status": "partial; supplement required",
+      "gaps": [
+        "E03",
+        "E04",
+        "E08"
+      ],
+      "supplement": "Full per-row raw/metric recomputation and finite/undefined masks, oracle receipt alignment."
+    },
+    "units": {
+      "implemented": "Independent OMA total formula with factor1/2.",
+      "status": "partial; supplement required",
+      "gaps": [
+        "E03",
+        "E07"
+      ],
+      "supplement": "Individual rate units, manifest-to-row parameter mapping, normalized power/bandwidth/energy audit."
+    },
+    "constraints": {
+      "implemented": "Feasible candidate weak/strong/SIC residuals, full-domain 48-step numerical brackets outside a separation band, feasible integer-target rational witness check.",
+      "status": "partial; supplement required",
+      "gaps": [
+        "E02",
+        "E08",
+        "E09"
+      ],
+      "supplement": "Independent indicators, exact boundary/empty-domain challenges or retained unresolveds, legal domain/split and coverage checks."
+    },
+    "convergence": {
+      "implemented": "Repeat the pinned distinct oracle; compare statuses to saved oracle and finite objective to analytic totals.",
+      "status": "partial; supplement required",
+      "gaps": [
+        "E04",
+        "E09"
+      ],
+      "supplement": "Bind all declared inputs/settings/rows, compare analytic and reference statuses, retain caps/gap diagnostics and degeneracy limits; no third-optimizer independence claim."
+    },
+    "fairness": {
+      "implemented": "Zero stored OMA-only categories and no recomputed negative paired sums beyond rate tolerance.",
+      "status": "partial; supplement required",
+      "gaps": [
+        "E02",
+        "E07",
+        "E09"
+      ],
+      "supplement": "Independent OMA/QoS classification and shared resource/channel checks; separate numerical observations from strict ideal-model proof claims."
+    },
+    "statistical-precision": {
+      "implemented": "Student-t CIs on stored both-feasible values, three conditional rate statistics, deterministic cases excluded.",
+      "status": "partial; supplement required",
+      "gaps": [
+        "E02",
+        "E03",
+        "E06",
+        "E07"
+      ],
+      "supplement": "Recomputed conditional data, independent denominators/sampling, exact event intervals and honest event-policy qualification."
+    },
+    "sensitivity": {
+      "implemented": "Finite saved original-versus-tighter oracle sum comparison.",
+      "status": "partial; supplement required",
+      "gaps": [
+        "E04",
+        "E05"
+      ],
+      "supplement": "Independently repeat and bind the declared first-eight settings and report failures/unresolveds/coverage."
+    },
+    "ablations": {
+      "implemented": "Nonnegative aggregate minimum_loss fields from author-produced statistics.json.",
+      "status": "not independently recomputed; supplement required",
+      "gaps": [
+        "E01"
+      ],
+      "supplement": "Independent fixed/grid raw allocation feasibility, maxima, counts and paired losses for every declared scenario."
+    }
+  },
+  "additional_declared_protocol_coverage": {
+    "published_oma_subset_reproduction": "Pinned verifier does not independently recompute aggregate.py's six published OMA reference points, exp1 expression, individual curve CIs, <=5% agreement, trend or ordering. P6 analysis should check the declared OMA subset from source-grounded equations and all unfiltered zero-QoS raw draws; do not imply full Fair-NOMA reproduction.",
+    "ledger_and_undefined_denominators": "P6 outcomes check stored indicator/category consistency and nonfeasible sum NaNs, but do not independently reconstruct all full/resolved counts, conditional denominators, aggregate fractions or zero-denominator behavior.",
+    "evidence_lineage": "Native run validation protects manifest hashes, planned job inventory and raw files. Supplemental outputs must bind actual raw/manifest/protocol/source hashes and be included in the reviewed P6 evidence; checksum integrity is not itself scientific independence."
+  },
+  "required_p6_analysis_supplements": [
+    "Independent row/domain/metric/OMA/ledger recomputation with field-specific undefined masks and manifest parameter mapping.",
+    "Independent fixed/grid ablation evaluation and comparison to both raw columns and aggregate summaries.",
+    "Independent declared sampling/common-draw/resource audit and conditional/event statistical recomputation.",
+    "Oracle and tighter-sensitivity receipt/input/settings/coverage binding, explicit unresolved/cap/gap summaries, deterministic boundary certificates or qualified unresolveds.",
+    "Independent declared published OMA-subset reference reproduction and numerical equality/tie/endpoint diagnostics.",
+    "Fresh enforced independent artifact review of pinned verifier plus analysis supplements; scientific P6 acceptance requires the complete reviewed evidence, not only eight native booleans."
+  ],
+  "repair_boundary": {
+    "recommendation": "Preserve protocol/model/project-source numerical bytes for the tested framework compatibility/budget repair. Make the coverage supplementation explicit in future P6 analysis and review.",
+    "new_physical_protocol_requested": false,
+    "new_scientific_metrics_requested": false,
+    "locked_source_edits_authorized_by_this_audit": false,
+    "actual_p6_acceptance_claim": false
+  },
+  "limitations": [
+    "Static engineering review only; no scientific verifier, simulation, test, numerical result, or future execution budget was exercised.",
+    "Historical P5 numerical observations in findings.md are not independently revalidated by this audit.",
+    "Findings establish source coverage limitations and execution risks, not that canonical raw results are scientifically wrong.",
+    "The specialist shares authorship of earlier numerical code; this artifact cannot substitute for the enforced independent P6 reviewer."
+  ],
+  "input_sha256": {
+    "AGENTS.md": "79353031a7f8a0c03d8063e2eda5d9f9b7bf9151879495924e90e8da0d54db63",
+    ".codex/agents/sim_engineer.toml": "238bcf3d82a785e95e14673a8cefe9d4e4fe62f08e43f734d512235110af9aef",
+    ".agents/skills/simulation-engineering/SKILL.md": "272baf186c9193a0662fa70225ab7b5993ecb324709cfbedd4048a4b9e41f4a2",
+    "projects/m11-noma-qos/research-state.yaml": "7903fe0037a673140a3752199159b7d08a52cc76ce9a42fe94e5b672267ea63e",
+    "projects/m11-noma-qos/findings.md": "3ca3e02b9023c8e9a2013f6e6017b92b8e0e69e55bea3b36b50073468fb7eaf7",
+    "projects/m11-noma-qos/sim/protocol.yaml": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+    "projects/m11-noma-qos/sim/protocol.md": "93bdad13f228362b232f66e7e5ba50a751836c7039516bc77895eb52eeaf0e25",
+    "projects/m11-noma-qos/sim/cases.yaml": "1f76d4897394371498250edb71d8ae31c08f1f497bd0b3296c48c55718dd5840",
+    "projects/m11-noma-qos/sim/src/verifier.py": "1aefd2052cfbdbf39f82bb70e5b4c14f1017202cfd3911f456a180ecdf1317b9",
+    "projects/m11-noma-qos/sim/src/oracle.py": "2b145f6ef8633cf675a4ab34f6632dc09a13156cac0b83bd37f42b0df1dc0055",
+    "projects/m11-noma-qos/sim/src/analytic.py": "aa9f72e749f60fc268e5ee356dd59149a860f09e0ecef5b6ce4c75362c7a8c09",
+    "projects/m11-noma-qos/sim/src/experiment.py": "ad2928214044d56a6aaafde5dd461160d2e9eaaeb7913202fc4f81580014efe8",
+    "projects/m11-noma-qos/sim/src/aggregate.py": "56517468a733b1fd850fd4a16b1505dbeeabc19b5bcecca5082a65fc3e0d05e5",
+    "projects/m11-noma-qos/model/predictions.yaml": "b18859e62c3a5306b9b341331b5acd7e7ec5fb93b5fbc3cf82032fb8959a6fd2",
+    "lab/verification.py": "c549b8cca4d34dd2fa66501f79072a946e579fe919d4109769673a328fc3dcfb",
+    "lab/simulation.py": "67ddfe1cad13af10f2546e6ce99b0152bcd69c926d6944bc528d898a9361eb13",
+    "lab/models.py": "1d7740e59e95b6b3976c4704081e4b19c1fe4d2770de10613508f0b4f82b3d09",
+    "projects/m11-noma-qos/sim/tests/test_noma_physics.py": "641f844d17e44304d8aa8b595549fc9cb4f21c04c01b24e007e7c3d33f31fee3"
+  },
+  "written_utc": "2026-10-11T17:00:00.532176+00:00"
+}

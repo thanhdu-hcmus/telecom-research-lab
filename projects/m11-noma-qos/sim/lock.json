@@ -1,5 +1,5 @@
 {
-  "protocol_commit": "ebb68ac514beeb89d5d1e3dfcb20aecdeaf440ca",
+  "protocol_commit": "b2a7cf17890b499b07f5c23bbc871351cc3909b1",
   "protocol_hash": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
   "input_hashes": {
     "projects/m11-noma-qos/sim/protocol.yaml": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
@@ -39,7 +39,7 @@
     "lab/sources.py": "fff8a9cab3dbdac087abccf496b01c0a5230f78c88846f1fde2f739a94fb9097",
     "lab/state.py": "4ef827175368f3a6d0488261f54093262f3c8b4f2cd841bf0cb40a75dfc40502",
     "lab/venues.py": "5c5f0ab9f8a6e1fe2d639d54750597c9f201a57138f7e69a105896c4f04decc0",
-    "lab/verification.py": "f37e028f5395923197e697fe1e522f088caa11d4966499350bf0dbbbbacb30cb",
+    "lab/verification.py": "c549b8cca4d34dd2fa66501f79072a946e579fe919d4109769673a328fc3dcfb",
     "matlab/+simkit/dbmToWatt.m": "bfee94fa989f482cbb1c1b7167de5949cbe9be067670568bd7bcfa34cd42a90d",
     "matlab/+simkit/dbToLinear.m": "84b6993014b1f3586dd8b1807cd71714e73edd2b70f2bdf678aacd9ff9743307",
     "matlab/+simkit/noiseWatt.m": "25ac405bd0e87a84c783a71b1e11571c69fc0e7531b53bd30a4cd9d768234a9c",
@@ -54,5 +54,5 @@
     "matlab/+simkit/wattToDbm.m": "69257ad48c9db0181865c2fe63326cfebd7f9a7461cb87bfd32a14bde3061fe3",
     "uv.lock": "95cfadf0006f0afa417f12c3e2f8cbbdfc86fd1c5514bae054870024e17e601b"
   },
-  "locked_at": "2026-10-11T11:08:28.178172+00:00"
+  "locked_at": "2026-10-11T17:01:40.238882+00:00"
 }

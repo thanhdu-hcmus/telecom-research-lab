@@ -1337,7 +1337,7 @@ gates:
     checks_passed: false
 selected_idea: idea-01
 baselines: {}
-protocol_hash: null
-protocol_commit: null
+protocol_hash: 250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51
+protocol_commit: b2a7cf17890b499b07f5c23bbc871351cc3909b1
 deviations: []
 open_questions: []

@@ -53,3 +53,9 @@
 - 2026-10-11T16:39:53.000794+00:00 — P6 entrypoint preflight implementation-bug; isolated repair prepared with 7 targeted and 97 full regression tests PASS; all 51 locked inputs unchanged; awaiting PI-only rewind P5 before applying fix. No scientific verifier executed or G6 requested.
 
 - 2026-10-11T16:51:50.728597+00:00 — PI rewind to P5: Repair verifier entrypoint compatibility and execution budget; preserve approved numerical evidence; archived at 2026-10-11T16-51-50.467789+00-00
+
+- 2026-10-11T16:52:42.114502+00:00 — Entered P5
+
+- 2026-10-11T17:01:33.450834+00:00 — Relock: R2 code-only repair after canonical PI rewind: accept verifier alias, reject conflicts, preserve guards and increase bounded verifier execution budget; physical protocol unchanged
+
+- 2026-10-11T17:01:40.775095+00:00 — Archived previous runs before relock; R2 code-only repair after canonical PI rewind: accept verifier alias, reject conflicts, preserve guards and increase bounded verifier execution budget; physical protocol unchanged

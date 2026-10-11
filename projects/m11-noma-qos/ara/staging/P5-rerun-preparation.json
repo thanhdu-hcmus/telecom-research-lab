@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-10-11T17:02:57.425261+00:00",
+  "status": "repair applied; 123 tests PASS; fresh R2 code-only lock ready",
+  "canonical_PI_rewind": {
+    "gate": "G5",
+    "decision": "rewind",
+    "note": "Repair verifier entrypoint compatibility and execution budget; preserve approved numerical evidence",
+    "timestamp": "2026-10-11T16:51:50.549298+00:00",
+    "git_user": "thanhdu",
+    "selected_idea": null,
+    "previous_hash": "da854205f8f213b7af803eead59b3977bee3cefce92edf52573913be4a458e19",
+    "record_hash": "ea2d143ce5e510fd0a23274df5cbd6e5ce225a1cba9f1aaf7ce8209dfcbf656f"
+  },
+  "archive": "projects/m11-noma-qos/archive/2026-10-11T16-51-50.467789+00-00",
+  "new_code_revision": "R2; fresh code commit and lock, unchanged physical protocol v1",
+  "changed_existing_locked_inputs": [
+    "lab/verification.py"
+  ],
+  "physical_protocol_sha256": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+  "physical_protocol_unchanged": true,
+  "simulation_sources_unchanged": true,
+  "tests": {
+    "count": 123,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 200.452,
+    "local_junit": ".cache/m11-p5-rerun-tests.xml",
+    "sha256": "5a862a070766721a9d285f5da54dff208c2a9c985150446e6c38e0852c31d7b3"
+  },
+  "lint": "PASS",
+  "framework_source_sha256": "c549b8cca4d34dd2fa66501f79072a946e579fe919d4109769673a328fc3dcfb",
+  "new_regression_test_sha256": "215ac95c754becea9d6caf91fef791d60f712aeb9108687a548a095dd41d5f12",
+  "planned_jobs": 145,
+  "new_runs_completed": 0,
+  "scientific_verifier_executed": false,
+  "P6_coverage": "Supplemental independent raw-based analysis remains required; engineering audit does not establish independence",
+  "figure_archive_transport": "Scoped -text attribute restores archived initial G5 SVG exact bytes after PI rewind Git normalization",
+  "repairs": [
+    "verifier alias accepted with conflicting-key rejection and existing pinning/independence guards",
+    "bounded verifier timeout raised 600 to 3600 seconds; not a solver tolerance or physical setting change"
+  ],
+  "new_protocol_commit": "b2a7cf17890b499b07f5c23bbc871351cc3909b1",
+  "new_protocol_hash": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+  "new_lock_sha256": "b01177976ab7f614bb387c19f1537445f04ffb84fb186a6f27ea107a7bd09c9c",
+  "native_relock": "PASS; requires fresh G5",
+  "engineering_audit": {
+    "path": "ara/staging/P5-rerun-engineering-review.json",
+    "sha256": "3c234267bf9d41121935e7de2165eaf423b4db2e554caf2e33a1899e92c17e67",
+    "findings": 11,
+    "independent_scientific_review": false
+  },
+  "failed_cli_trials": [
+    {
+      "operation": "sim relock --reason ...",
+      "outcome": "argument parsing failure before mutation; reason is positional",
+      "resolution": "Native sim relock positional reason succeeded"
+    }
+  ]
+}

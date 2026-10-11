@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-10-11T17:01:10.496836+00:00",
+  "status": "PASS",
+  "staged_input_files_scanned": 17,
+  "unreviewed_findings": [],
+  "method": "Explicit staged restored-source/test/attribute inventory; existing exact reviewed baseline entries only",
+  "whitespace": "PASS for editable input text; exact archived SVG alone excluded from check",
+  "limits": "Full final repository scan remains required before push; this source-scoped check does not classify all newly archived metadata"
+}

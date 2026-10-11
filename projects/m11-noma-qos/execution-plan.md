@@ -166,3 +166,17 @@ rewind. G1-G5 currently remain approved; G6/G7 are not started. No independent
 P6 result, external reviewer verdict or scientific acceptance is claimed. M11
 remains in progress; M12 remains unstarted. Earlier pending statements above
 are historical.
+
+## Current P5 R2: PI rewind verified; tested repair applied
+
+PI commit 76525a2 canonically rewound to P5, archiving the initial simulation
+inputs and results. G1-G4 remain approved; G5-G7 are invalidated. Native P5
+phase start passed. Only lab/verification.py changes among the 51 previous locked
+inputs: verifier-key compatibility and a bounded 3600-second execution budget.
+The physical protocol, model and simulation sources are byte-identical to R1.
+All 123 combined framework and project tests pass, and Ruff passes. A fresh code
+commit, relock and 145 manifest reruns are next. The engineering verifier audit
+identifies analysis-only P6 supplements; no independent P6 verification is claimed.
+The archived initial G5 SVG transport is preserved with a scoped byte attribute.
+See ara/staging/P5-rerun-preparation.json. Earlier P6 repair-pending notes are
+historical; this rewind authorizes applying the prepared implementation repair.

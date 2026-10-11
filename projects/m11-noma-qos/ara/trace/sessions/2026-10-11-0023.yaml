@@ -1,0 +1,8 @@
+id: 2026-10-11-0023
+timestamp: '2026-10-11T17:02:59.582163+00:00'
+phase: P5
+summary: PI stated Done after executing the requested canonical P5 rewind; actual
+  rewind commit 76525a2 and record are verified. Fresh G5 approval is not inferred.
+provenance: user
+evidence:
+  ara/staging/P5-rerun-preparation.json: 27a20b201036f74275aaa66db44826f698199967f718bd211851898196b13032
