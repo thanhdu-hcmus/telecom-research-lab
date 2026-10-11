@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-11T09:14:23.726105+00:00",
+  "updated_at": "2026-10-11T11:02:21.204540+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
   "active_milestone": "M11",
-  "status": "m11_g4_review_pending",
+  "status": "m11_p5_prepared_test_execution_approval_pending",
   "verification_complete": true,
   "pi_approval": {
     "quote": "Approve M0, continue M1–M10 automatically, and create the new private repository.",
@@ -27,7 +27,7 @@
     "G1": "approved",
     "G2": "approved",
     "G3": "approved",
-    "G4": "pending",
+    "G4": "approved",
     "G5": "not_started",
     "G6": "not_started",
     "G7": "not_started"
@@ -38,7 +38,7 @@
     "Run independent reviewers in separately configured read-only root sessions; verify shell enforcement before L4 acceptance"
   ],
   "unresolved": [
-    "M11 G4-G7 require remaining phase artifacts and PI gate decisions",
+    "M11 G5-G7 require remaining phase artifacts and PI gate decisions",
     "M12 reference paper and code/data availability require PI selection",
     "Real thesis profile is an unreviewed draft with chapter plan, publications, deadlines and venues missing",
     "Optional Gemini unavailable; manual independent review packets provided",
@@ -137,12 +137,12 @@
     "evidence": "projects/m11-noma-qos/gates/decisions.yaml"
   },
   "m11_p4": {
-    "status": "ready_for_G4_PI_review",
+    "status": "approved",
     "selected_idea": "idea-01",
     "phase_start": "PASS",
     "model_artifacts": "complete; final schema/model validation and13 symbolic checks PASS",
     "independent_critique": "PASS; 2 actual read-only rounds, ready, zero findings",
-    "scientific_approval": false,
+    "scientific_approval": true,
     "authorization_packet": "projects/m11-noma-qos/to_human/P4-review-authorization.md",
     "model_review_packet": "projects/m11-noma-qos/to_human/model-review.md",
     "external_review_authorization": "explicitly approved for up to three artifact-only rounds within same scope",
@@ -151,6 +151,21 @@
     "review_packet": "projects/m11-noma-qos/to_human/G4-review.md",
     "gate_report": "projects/m11-noma-qos/to_human/G4-report.md",
     "gate_checks": "PASS",
-    "gate_status": "pending PI approval"
+    "gate_status": "approved"
+  },
+  "m11_g4": {
+    "decision_commit": "08808d8",
+    "timestamp": "2026-10-11T10:43:20.059499+00:00",
+    "note": "P4 model and evidence reviewed; ideal-model limits accepted; G4 report usable",
+    "evidence": "projects/m11-noma-qos/gates/decisions.yaml"
+  },
+  "m11_p5": {
+    "status": "prepared; explicit test execution approval pending",
+    "protocol": "projects/m11-noma-qos/sim/protocol.yaml",
+    "planned_jobs": 145,
+    "test_status": "NOT RUN; automatic approval review rejected before launch",
+    "simulations": "NOT STARTED",
+    "protocol_locked": false,
+    "scientific_approval": false
   }
 }

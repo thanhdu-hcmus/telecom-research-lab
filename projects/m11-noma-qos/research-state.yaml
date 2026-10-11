@@ -1,6 +1,6 @@
 version: 1
 project: m11-noma-qos
-phase: P4
+phase: P5
 gates:
   G1:
     status: approved

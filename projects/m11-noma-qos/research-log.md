@@ -37,3 +37,5 @@
 - 2026-10-11T10:32:14.288686+00:00 — Requested G4; automated checks passed
 
 - 2026-10-11T10:43:20.130315+00:00 — PI approve G4: P4 model and evidence reviewed; ideal-model limits accepted; G4 report usable
+
+- 2026-10-11T10:46:59.839537+00:00 — Entered P5

@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-10-11T11:02:21.190639+00:00",
+  "status": "prepared; test execution approval pending",
+  "phase": "P5",
+  "G4_decision_commit": "08808d8",
+  "specialists": [
+    {
+      "name": "sim_engineer",
+      "invocation": "collaboration.spawn_agent",
+      "outputs": "analytic.py, oracle.py, prepared physics tests, engineer design",
+      "effective_permissions": "inherited parent workspace-write; author, not independent reviewer",
+      "child_report": "No tests, simulations, commits, locks or gate actions executed"
+    }
+  ],
+  "static_review": "Protocol contract and all named inputs exist; approved G1-G4 file digests unchanged",
+  "parent_corrections": [
+    "Corrected brief singleton example before implementation",
+    "Recursive JSON null serialization for undefined oracle outputs",
+    "Finite oracle values required in prepared P6 comparison",
+    "Ruff import ordering and formatting"
+  ],
+  "tests": {
+    "status": "NOT RUN",
+    "reason": "Automatic approval review rejected pytest before launch: developer instruction requires explicit user test request",
+    "attempted_command": ".venv/Scripts/python.exe -m pytest projects/m11-noma-qos/sim/tests tests/physics -q --junitxml=.cache/m11-p5-physics.xml",
+    "request": "May I run prepared unit/physics tests, fix failures, then execute locked P5 simulations?",
+    "approval": "pending; elapsed time is not approval"
+  },
+  "simulation": {
+    "status": "NOT STARTED",
+    "protocol_locked": false,
+    "planned_jobs": 145,
+    "planned_monte_carlo_blocks": 4718592,
+    "planned_deterministic_rows": 100
+  },
+  "P6_verifier": "Prepared and pinned for later independent review; not executed or accepted",
+  "G5": "not requested; completed runs and physics evidence required",
+  "input_hashes": {
+    "projects/m11-noma-qos/sim/cases.yaml": "1f76d4897394371498250edb71d8ae31c08f1f497bd0b3296c48c55718dd5840",
+    "projects/m11-noma-qos/sim/src/analytic.py": "aa9f72e749f60fc268e5ee356dd59149a860f09e0ecef5b6ce4c75362c7a8c09",
+    "projects/m11-noma-qos/sim/src/oracle.py": "2b145f6ef8633cf675a4ab34f6632dc09a13156cac0b83bd37f42b0df1dc0055",
+    "projects/m11-noma-qos/sim/src/experiment.py": "ad2928214044d56a6aaafde5dd461160d2e9eaaeb7913202fc4f81580014efe8",
+    "projects/m11-noma-qos/sim/src/aggregate.py": "56517468a733b1fd850fd4a16b1505dbeeabc19b5bcecca5082a65fc3e0d05e5",
+    "projects/m11-noma-qos/sim/src/verifier.py": "1aefd2052cfbdbf39f82bb70e5b4c14f1017202cfd3911f456a180ecdf1317b9",
+    "projects/m11-noma-qos/ara/staging/P5-engineer-design.md": "c80862c715022bb7e2ad86c5553952131b9c3fc0b7b20c87f5059a408eed31c2",
+    "projects/m11-noma-qos/sim/src/__init__.py": "6be43bc45bfe6bbe09dac040304e70a43e63cdd9536b52d60677b28e98d72a58",
+    "projects/m11-noma-qos/sim/tests/test_noma_physics.py": "641f844d17e44304d8aa8b595549fc9cb4f21c04c01b24e007e7c3d33f31fee3"
+  }
+}

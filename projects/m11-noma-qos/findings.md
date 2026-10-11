@@ -131,3 +131,7 @@ Scalar-oracle implementation, numerical certificates and unresolved statuses,
 sampling settings, tolerances and uncertainty reporting remain P5 proposals.
 G4 review is ready for a separate PI decision; M11 remains in progress and M12
 remains unstarted. Earlier permission-pending sections are historical.
+
+## Current P5: G4 approval verified
+
+PI commit08808d8 approves the model and rates G4 usable. P5 phase start passed. Protocol and implementation are being prepared; simulations have not started. Historical pending statements above refer to earlier states. Approved G1-G4 artifacts remain intact.

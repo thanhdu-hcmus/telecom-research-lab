@@ -1,0 +1,17 @@
+id: 2026-10-11-0017
+timestamp: '2026-10-11T11:03:07.065046+00:00'
+phase: P5
+summary: Prepared P5 protocol and code after canonical G4 approval. Named sim_engineer
+  supplied closed form, independent original-SINR oracle, prepared physics tests and
+  design; parent supplied manifest entrypoint, statistical aggregation, OMA reference
+  reproduction script and prepared P6 verifier. Static lint and protocol input contract
+  pass, 111 G1-G4 bindings unchanged. Automatic approval review rejected pytest before
+  launch because explicit test request is required; asked user for test-execution
+  approval. No tests or simulations executed, no protocol lock, no reproduction agreement
+  or G5 request claimed. Draft protocol plans145 jobs and preserves unresolved cases.
+provenance: ai
+evidence:
+  ara/staging/P5-preparation.json: 4874394258ea34a93518af6ad72dc280a64fb52f9055639559b4711d63d35188
+  sim/protocol.yaml: 250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51
+  sim/protocol.md: 93bdad13f228362b232f66e7e5ba50a751836c7039516bc77895eb52eeaf0e25
+  to_human/P5-prepared.md: bccbc17e01bce78234efaa2e0225c285111f8fe1b32492608d988ce9ab3accf2

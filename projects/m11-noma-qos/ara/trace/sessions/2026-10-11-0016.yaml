@@ -1,0 +1,9 @@
+id: 2026-10-11-0016
+timestamp: '2026-10-11T10:49:57.148615+00:00'
+phase: P5
+summary: 'PI approved G4 in canonical commit 08808d8: P4 model and evidence reviewed;
+  ideal-model limits accepted; G4 report usable. Chat: Approved, go ahead. This approves
+  G4 only; P5 phase start PASS.'
+provenance: user
+evidence:
+  gates/decisions.yaml: d93482f319df824bb00962f3d73b684b5b9535b17eeadeb85873fafd12b50e2a
