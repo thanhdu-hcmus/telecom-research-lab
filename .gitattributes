@@ -100,3 +100,12 @@ projects/m11-noma-qos/analysis/source-review-03/repair/repository-checks/audit_p
 projects/m11-noma-qos/analysis/supplement/unit-runs/b564b49f97744862a3293623f1a4d73e/junit.xml -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 
 projects/m11-noma-qos/analysis/source-review-03/repair/repository-checks/check_p6_source_repair_index.py -text whitespace=cr-at-eol
+
+# Preserve exact approved fourth-review and execution-control evidence bytes.
+projects/m11-noma-qos/analysis/source-review-04/execution-control/finish_p6_canonical_assessment.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-04/execution-control/record_p6_round4_authorization.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-04/execution-control/run_p6_canonical_step.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-04/execution-control/save_p6_review_round4.py -text whitespace=cr-at-eol
+
+# Preserve exact native source-ready secret-check output bytes.
+docs/evidence/m11-p6-source-ready-native-secrets.json -text whitespace=cr-at-eol

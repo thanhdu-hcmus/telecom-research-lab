@@ -1,0 +1,26 @@
+[
+  {
+    "session_id": "01a1309d-8c1e-7e71-84b6-5928df8c5afb",
+    "model_provider": "openai",
+    "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\p6-source-review\\38dc545c799e4f5e96f7d1f15a5897cf\\artifacts",
+    "agent_role": null,
+    "spawn_calls": [
+      {
+        "name": "spawn_agent",
+        "arguments": {
+          "agent_type": "results_verifier",
+          "task_name": "results_verifier",
+          "fork_turns": "none"
+        },
+        "transport_message_omitted": true
+      }
+    ]
+  },
+  {
+    "session_id": "01a1309d-cde2-7502-8852-edb87f3b65e5",
+    "model_provider": "openai",
+    "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\p6-source-review\\38dc545c799e4f5e96f7d1f15a5897cf\\artifacts",
+    "agent_role": "results_verifier",
+    "spawn_calls": []
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "status": "RUNNING",
+  "kind": "native",
+  "started": "2026-10-12T15:09:52.572218+00:00",
+  "command": [
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\checker.py",
+    "--native"
+  ],
+  "directory": ".cache\\p6-canonical\\ca935cae4a4d4433b8115653c4a93a5d-native",
+  "source_ready_sha256": "d303b5f0ab3a6363cf78ec32519558dcb6ee54dc2371e9dd78535fe30be02583",
+  "canonical_execution_requested": true,
+  "scientific_acceptance": false,
+  "pid": 39164
+}

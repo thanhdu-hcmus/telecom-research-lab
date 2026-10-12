@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-10-12T15:56:31.549413+00:00",
+  "kind": "LOCAL_DIAGNOSTIC_ONLY",
+  "run_id": "r_mc-00-q1-11001-250ccb4ad292-b2a7cf17890b_5f23c8954129",
+  "rows": 32768,
+  "original_crossing_error_counts": {
+    "interval_upper": 65
+  },
+  "canonical_row_errors_for_this_completed_job": 65,
+  "all_65_explained_by_crossing_check": true,
+  "samples": [
+    {
+      "row": 177,
+      "field": "interval_upper",
+      "status": "infeasible",
+      "stored": -93.92730663031637,
+      "checker_expected": -93.9273066303151,
+      "reference_80_digit": "-93.927306630316374715726087069939153717191997632646022284335255307638684255068380",
+      "stored_reference_residual": "8.761667376584242361114652935132646022284335255307638684255068380E-15",
+      "checker_reference_residual": "1.273527737029562573211715849224195146022284335255307638684255068380E-12",
+      "affine_f0": -0.18752824403510568,
+      "affine_f1": -0.1895247693349654,
+      "root_outside_unit_interval": true
+    },
+    {
+      "row": 397,
+      "field": "interval_upper",
+      "status": "infeasible",
+      "stored": -233.71383553261882,
+      "checker_expected": -233.71383553261987,
+      "reference_80_digit": "-233.71383553261883351253652741627628777938042773857881414263691847745922420219875",
+      "stored_reference_residual": "1.735272542369978363488631402148857881414263691847745922420219875E-14",
+      "checker_reference_residual": "1.03425052350124849145437760199413642118585736308152254077579780125E-12",
+      "affine_f0": -0.18852879321647953,
+      "affine_f1": -0.18933545831093931,
+      "root_outside_unit_interval": true
+    },
+    {
+      "row": 743,
+      "field": "interval_upper",
+      "status": "infeasible",
+      "stored": -1791.3531250686854,
+      "checker_expected": -1791.3531250682197,
+      "reference_80_digit": "-1791.3531250686854846699997418887151130938467535282139437560534516248881290395077",
+      "stored_reference_residual": "1.264689625808364880928301748785282139437560534516248881290395077E-13",
+      "checker_reference_residual": "4.657877562703200943005928301748785282139437560534516248881290395077E-10",
+      "affine_f0": -0.1891183391320067,
+      "affine_f1": -0.1892239120291008,
+      "root_outside_unit_interval": true
+    }
+  ],
+  "source_modified": false,
+  "locked_inputs_modified": false,
+  "canonical_execution_modified": false,
+  "full_scientific_status": "PENDING",
+  "limitation": "This checks the diagnostic crossing fields of one completed job only. It does not certify the remaining jobs, original feasibility, objectives, aggregation, or full scientific acceptance."
+}

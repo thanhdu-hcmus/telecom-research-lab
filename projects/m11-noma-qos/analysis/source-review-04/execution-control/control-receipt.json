@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-12T15:43:22.751414+00:00",
+  "status": "RUNNING",
+  "scientific_acceptance": false,
+  "source_ready_sha256": "d303b5f0ab3a6363cf78ec32519558dcb6ee54dc2371e9dd78535fe30be02583",
+  "evidence": {
+    "assessment-launch-snapshot.json": "cfe791686d7dce16d3440708b979d9bbdec65cadf1e14b3195ebabaa925b48cc",
+    "finish_p6_canonical_assessment.py": "d5b67056956d9a0198fc2870c4c19630781f658bb8b5b3da93b56f4a15973574",
+    "native-launch-snapshot.json": "afd79f84d23fd26bf24e3c6c7f5e82b5f486fdfe5c67b6694d9ee30bdf7ff97d",
+    "record_p6_round4_authorization.py": "b92ac05ba3a3fc910a7bd6f823c033e2d893381e788b2f3018b8561fdefce350",
+    "run_p6_canonical_step.py": "a5375bf5d4fdc178b9391f38c598955ae1c79ed956cbe0be01a54c3566ee25f3",
+    "save_p6_review_round4.py": "0fd975a7661379698b4f96d9a2d7b9103ef7430face10d3e4f4024ad4582a944",
+    "supplement-launch-snapshot.json": "9318548189b183920ba222269e51aaeed2ec3cc875abfb9d853a97303b80d31b"
+  },
+  "note": "Launch snapshots are historical. Live operation markers and logs remain in .cache; reviewed scientific routines retain their own unique receipts. Combined assessment watcher performs no gate decisions or external result review."
+}

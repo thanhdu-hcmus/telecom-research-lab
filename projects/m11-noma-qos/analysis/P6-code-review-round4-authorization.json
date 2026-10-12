@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-12T14:55:40.889716+00:00",
+  "user_statement": "Approve the fourth P6 source review",
+  "packet": "analysis/P6-code-review-round4-packet.json",
+  "packet_sha256": "bc8ca0505fe94107ba8970f97c46c55e72cb9aa8144a5d479795978cd2c4ea9f",
+  "packet_bytes": 388193,
+  "destination": "Separate authenticated OpenAI Codex review session using the existing account",
+  "scope": "One additional enforced read-only artifact-only source review (round 4), of this exact packet. Reviewer uses no tools or writes. Later numerical-results review and scientific gate decisions are excluded.",
+  "authorized_round": 4,
+  "additional_rounds": 1,
+  "source_artifacts": 19,
+  "illustrative_rows": 24,
+  "authorizes_source_review": true,
+  "authorizes_numerical_results_review": false,
+  "authorizes_scientific_gate_decisions": false,
+  "transmitted_at_record_creation": false,
+  "provider": "openai",
+  "authenticated_cli": "ChatGPT login verified",
+  "alternate_endpoint_detected": false
+}

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-10-12T15:57:38.411125+00:00",
+  "status": "PASS",
+  "scope": "projects/m11-noma-qos/findings.md",
+  "full_native_scan": "m11-p6-source-ready-native-secrets.json",
+  "note": "Findings was the sole scannable content change after the full native PASS; other additions are scanner-excluded evidence or byte-preserving Git attributes.",
+  "unknown": []
+}

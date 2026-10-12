@@ -284,3 +284,34 @@ See to_human/P6-additional-source-review-authorization.md.
 Encrypted spawn-message transport is retained only locally. Sanitized runtime
 metadata preserves provider, role, fork, identifiers and effective-policy audits.
 A digest binds the omitted original content; no encrypted transport is published.
+
+## Current P6: fourth source review ready; canonical verification running
+
+The PI approved one fourth source review of the exact388193-byte packet. The
+fourth enforced read-only review returned READY with no findings. Actual root
+and reviewer permissions, fresh role/fork, OpenAI provider, no reviewer tools,
+and unchanged 19-source bindings are retained in analysis/source-review-04.
+The source-ready mapping is analysis/source-review-ready.json. This is source
+readiness; numerical verification and scientific gate acceptance remain pending.
+The prior additional-authorization-pending section is historical.
+
+Full native and independently recomputed supplemental verification launched on
+2026-10-12 at15:09UTC, in separate unique execution directories. Both retain
+ordinary production integrity guards. The planned supplement covers145 jobs,
+4,718,692 rows,4,708 base oracle replays and1,160 tighter replays. Shared replay
+remains separately identified. No completion or scientific PASS is claimed.
+G1-G5 remain approved; G6/G7 remain invalidated. No external numerical-results
+review is authorized by the fourth source-review approval.
+
+## P6 ongoing fractional-boundary diagnostic
+
+At the latest local snapshot, 18 of 145 supplemental jobs and 557,156 rows
+have completed, with 396 row discrepancies retained. The first completed
+fractional-QoS job has 65 discrepancies, all reproduced in its diagnostic upper
+crossing check. An 80-digit comparison of three examples identifies cancellation
+in the supplemental subtraction used for out-of-domain diagnostic roots. The
+stored values are closer to the high-precision references in these examples.
+See docs/evidence/m11-p6-fractional-crossing-diagnostic.json for exact scope.
+This explains one job only and does not certify the remaining run. The frozen
+reviewed checker, locked inputs, active execution and scientific tolerances have
+not been changed. Full results and the combined assessment remain pending.

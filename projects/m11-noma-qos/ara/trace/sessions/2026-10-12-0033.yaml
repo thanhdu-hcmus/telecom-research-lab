@@ -1,0 +1,13 @@
+id: 2026-10-12-0033
+timestamp: '2026-10-12T14:55:42.414300+00:00'
+phase: P6
+summary: 'PI explicitly approved the fourth P6 source review: one additional enforced
+  read-only artifact-only review of the exact388193-byte packet, same 19 source paths
+  and24 illustrative rows, via the existing separate authenticated OpenAI Codex account.
+  No numerical-results review or scientific gate authority granted. Source bytes,
+  G1-G5 approvals, provider and authenticated endpoint checked before transmission.'
+provenance: user
+evidence:
+  analysis/P6-code-review-round4-authorization.json: e9f751f9f646d4048f9d49aa0fe112ff864b24064d24ee1c05d00b3d8b6f570f
+  analysis/P6-code-review-round4-payload.json: 270577d0e503be6e8349a2ced7eaec55e06b425ee5b495109ff6995ca1654028
+  to_human/P6-additional-source-review-authorization.md: 88c31ad1397c9051111a41eaaee9364c9e6a5cebf031c46b26ef5bbf8a2dc500
