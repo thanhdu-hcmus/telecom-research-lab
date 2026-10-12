@@ -109,3 +109,24 @@ projects/m11-noma-qos/analysis/source-review-04/execution-control/save_p6_review
 
 # Preserve exact native source-ready secret-check output bytes.
 docs/evidence/m11-p6-source-ready-native-secrets.json -text whitespace=cr-at-eol
+
+# Preserve exact P6 crossing-repair test and diagnostic evidence.
+docs/evidence/p6-crossing-r5/audit_p6_completed_crossings.py -text whitespace=cr-at-eol,-blank-at-eof
+docs/evidence/p6-crossing-r5/diagnose_p6_candidate_saved_rows.py -text whitespace=cr-at-eol,-blank-at-eof
+docs/evidence/p6-crossing-r5/p6-r5-evidence-baseline-supplement.txt -text whitespace=cr-at-eol,-blank-at-eof
+docs/evidence/p6-crossing-r5/p6-r5-evidence-final-green.txt -text whitespace=cr-at-eol,-blank-at-eof
+docs/evidence/p6-crossing-r5/p6-r5-evidence-full-green.txt -text whitespace=cr-at-eol,-blank-at-eof
+docs/evidence/p6-crossing-r5/p6-r5-evidence-green.txt -text whitespace=cr-at-eol,-blank-at-eof
+docs/evidence/p6-crossing-r5/p6-r5-evidence-red.txt -text whitespace=cr-at-eol,-blank-at-eof
+docs/evidence/p6-crossing-r5/p6-r5-evidence-red.xml -text whitespace=cr-at-eol,-blank-at-eof
+docs/evidence/p6-crossing-r5/p6-r5-evidence-roundoff-red.txt -text whitespace=cr-at-eol,-blank-at-eof
+docs/evidence/p6-crossing-r5/p6-r5-evidence-roundoff-red.xml -text whitespace=cr-at-eol,-blank-at-eof
+docs/evidence/p6-crossing-r5/p6-r5-framework-baseline-stdout.txt -text whitespace=cr-at-eol,-blank-at-eof
+docs/evidence/p6-crossing-r5/p6-r5-framework-final-stdout.txt -text whitespace=cr-at-eol,-blank-at-eof
+docs/evidence/p6-crossing-r5/p6-r5-evidence-red.txt -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+docs/evidence/p6-crossing-r5/p6-r5-evidence-red.xml -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+docs/evidence/p6-crossing-r5/p6-r5-evidence-roundoff-red.txt -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+docs/evidence/p6-crossing-r5/p6-r5-evidence-roundoff-red.xml -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+docs/evidence/p6-crossing-r5/native-secrets-first-failed.json -text whitespace=cr-at-eol
+docs/evidence/p6-crossing-r5/native-secrets-serialization-failed.json -text whitespace=cr-at-eol
+docs/evidence/p6-crossing-r5/native-secrets-final.json -text whitespace=cr-at-eol

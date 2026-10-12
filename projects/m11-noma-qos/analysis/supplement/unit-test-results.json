@@ -1,20 +1,20 @@
 {
-  "timestamp": "2026-10-12T10:07:45.171888+00:00",
+  "timestamp": "2026-10-12T17:52:12.593532+00:00",
   "command": [
     "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
     "-m",
     "pytest",
-    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\test_supplement.py",
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\worktrees\\p6-crossing-r5\\projects\\m11-noma-qos\\analysis\\supplement\\test_supplement.py",
     "-q",
     "-p",
     "no:cacheprovider",
     "--junitxml",
-    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\unit-runs\\34d532f47f6541e8a5167014d1597d58\\junit.xml",
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\worktrees\\p6-crossing-r5\\projects\\m11-noma-qos\\analysis\\supplement\\unit-runs\\680cd3735df64733823b78bf4bea35d8\\junit.xml",
     "--basetemp",
-    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\unit-runs\\34d532f47f6541e8a5167014d1597d58\\tmp"
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\worktrees\\p6-crossing-r5\\projects\\m11-noma-qos\\analysis\\supplement\\unit-runs\\680cd3735df64733823b78bf4bea35d8\\tmp"
   ],
   "status": "PASS",
-  "tests_run": 117,
+  "tests_run": 133,
   "failures": 0,
   "errors": 0,
   "skipped": 0,
@@ -129,25 +129,41 @@
     "projects.m11-noma-qos.analysis.supplement.test_supplement.RoundThreeTests.test_fresh_prediction_failures_retained_with_precision_failure",
     "projects.m11-noma-qos.analysis.supplement.test_supplement.RoundThreeTests.test_lineage_design_cannot_claim_mc_for_fixed_cases",
     "projects.m11-noma-qos.analysis.supplement.test_supplement.RoundThreeTests.test_lineage_manifest_kind_must_be_compatible",
-    "projects.m11-noma-qos.analysis.supplement.test_supplement.DeterministicLineageExecutionTests.test_written_record_and_executed_recipe_suppress_deterministic_ci"
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.DeterministicLineageExecutionTests.test_written_record_and_executed_recipe_suppress_deterministic_ci",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_small_gain_original_crossing_does_not_lose_precision[raw0]",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_small_gain_original_crossing_does_not_lose_precision[raw1]",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_small_gain_original_crossing_does_not_lose_precision[raw2]",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_out_of_domain_crossing_corruption_remains_rejected[-93.91730663031638]",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_out_of_domain_crossing_corruption_remains_rejected[0.5]",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_out_of_domain_crossing_corruption_remains_rejected[nan]",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_out_of_domain_crossing_corruption_remains_rejected[inf]",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_physical_crossing_keeps_absolute_split_tolerance",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_outside_crossing_one_or_two_ulps_is_retained_as_diagnostic[raw0]",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_outside_crossing_one_or_two_ulps_is_retained_as_diagnostic[raw1]",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_outside_crossing_one_or_two_ulps_is_retained_as_diagnostic[raw2]",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_large_outside_crossing_material_shift_remains_rejected[raw0]",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_large_outside_crossing_material_shift_remains_rejected[raw1]",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_large_outside_crossing_material_shift_remains_rejected[raw2]",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_fractional_positive_outside_crossing_roundoff_is_diagnostic",
+    "projects.m11-noma-qos.analysis.supplement.test_supplement.test_exact_integer_outside_crossing_does_not_get_fractional_roundoff_allowance"
   ],
   "python": "3.13.5",
   "canonical_execution": false,
   "native_validation_on_synthetic_fixtures": false,
-  "run_directory": "unit-runs/34d532f47f6541e8a5167014d1597d58",
+  "run_directory": "unit-runs/680cd3735df64733823b78bf4bea35d8",
   "source_hashes": {
     "benchmark_synthetic.py": "c8b20f4600859248c980a120dae535cb23bc61bf587a39ee4a17b12c0ffb2830",
     "checker.py": "5917100f8fefe37b3955d48e87c2b6c9d4f2b32e8957308f75dbb06751a4037f",
-    "independent.py": "b2df159ab3d17d1ed4186df4ad3387fb730a52895721a718a8a84621837cbc83",
+    "independent.py": "ba888893efcd357fedfa9f5992d577e33389b3def2040cdbe04e4af976fd5aac",
     "replay.py": "4838fef8a023e94dff52ecd5bdddeffd6f24613c5b54f9ede827de0f1449824d",
     "run_unit_tests.py": "4bb6e3b922757cbfa9a7bcd706b107c108ad1966465f603c648fa5902654f4f4",
-    "test_supplement.py": "87852446cfd24434dc48921020da25b81f3f94ae2da9206e240ca5e91fdf2f60"
+    "test_supplement.py": "edda9a3e5007e08dc71e1fd8245fe3e48492319c23e37ad264e8fa6239e0dfdd"
   },
-  "elapsed_s": 2.179136599996127,
+  "elapsed_s": 1.8751159000094049,
   "source_hashes_unchanged": true,
   "evidence": {
-    "junit.xml": "68527aa600df43e812110d6591d2f1b2edac1374d2d1098396585611f313ac9b",
+    "junit.xml": "2fe7c4a5f32dcadc9da27a7b113fee6a01f27dae81531ba720ad1db1aa0de4f6",
     "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "stdout.txt": "5eb5adc942a9b9fc3485a3a46ff1146343222c150360b638b45c7adbb8ce82fc"
+    "stdout.txt": "2f2e4abfcccac582b3d01d2e0f3898c9efe6d2c0a8f79a28b96b26f97ca69fc4"
   }
 }

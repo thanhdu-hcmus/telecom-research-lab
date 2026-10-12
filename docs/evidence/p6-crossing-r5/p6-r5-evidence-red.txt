@@ -1,0 +1,61 @@
+FFF.....                                                                 [100%]
+================================== FAILURES ===================================
+_ test_fractional_small_gain_original_crossing_does_not_lose_precision[raw0] __
+
+raw = {'A': '0.0016788709676153631', 'B': '0.593918137470147', 'P': '1.0', 'a_star': 'nan', ...}
+
+    @pytest.mark.parametrize("raw", _FRACTIONAL_CROSSING_REGRESSIONS)
+    def test_fractional_small_gain_original_crossing_does_not_lose_precision(raw):
+        metric = {k: raw[k] for k in ind.METRIC_COLUMNS}
+        inputs = tuple(float(raw[k]) for k in ("P", "gw", "gs", "qw", "qs"))
+        audit = Audit()
+        ind.check_row(raw, metric, inputs, "", int(raw["row"]), audit)
+>       assert audit.counts == {}
+E       AssertionError: assert {'interval_up..._crossing': 1} == {}
+E         
+E         Left contains 1 more item:
+E         {'interval_upper.original_crossing': 1}
+E         Use -v to get more diff
+
+projects\m11-noma-qos\analysis\supplement\test_supplement.py:2139: AssertionError
+_ test_fractional_small_gain_original_crossing_does_not_lose_precision[raw1] __
+
+raw = {'A': '0.0006783217862415355', 'B': '0.37842689922106304', 'P': '1.0', 'a_star': 'nan', ...}
+
+    @pytest.mark.parametrize("raw", _FRACTIONAL_CROSSING_REGRESSIONS)
+    def test_fractional_small_gain_original_crossing_does_not_lose_precision(raw):
+        metric = {k: raw[k] for k in ind.METRIC_COLUMNS}
+        inputs = tuple(float(raw[k]) for k in ("P", "gw", "gs", "qw", "qs"))
+        audit = Audit()
+        ind.check_row(raw, metric, inputs, "", int(raw["row"]), audit)
+>       assert audit.counts == {}
+E       AssertionError: assert {'interval_up..._crossing': 1} == {}
+E         
+E         Left contains 1 more item:
+E         {'interval_upper.original_crossing': 1}
+E         Use -v to get more diff
+
+projects\m11-noma-qos\analysis\supplement\test_supplement.py:2139: AssertionError
+_ test_fractional_small_gain_original_crossing_does_not_lose_precision[raw2] __
+
+raw = {'A': '8.877587071434792e-05', 'B': '1.624855478613857', 'P': '1.0', 'a_star': 'nan', ...}
+
+    @pytest.mark.parametrize("raw", _FRACTIONAL_CROSSING_REGRESSIONS)
+    def test_fractional_small_gain_original_crossing_does_not_lose_precision(raw):
+        metric = {k: raw[k] for k in ind.METRIC_COLUMNS}
+        inputs = tuple(float(raw[k]) for k in ("P", "gw", "gs", "qw", "qs"))
+        audit = Audit()
+        ind.check_row(raw, metric, inputs, "", int(raw["row"]), audit)
+>       assert audit.counts == {}
+E       AssertionError: assert {'interval_up..._crossing': 1} == {}
+E         
+E         Left contains 1 more item:
+E         {'interval_upper.original_crossing': 1}
+E         Use -v to get more diff
+
+projects\m11-noma-qos\analysis\supplement\test_supplement.py:2139: AssertionError
+=========================== short test summary info ===========================
+FAILED projects/m11-noma-qos/analysis/supplement/test_supplement.py::test_fractional_small_gain_original_crossing_does_not_lose_precision[raw0]
+FAILED projects/m11-noma-qos/analysis/supplement/test_supplement.py::test_fractional_small_gain_original_crossing_does_not_lose_precision[raw1]
+FAILED projects/m11-noma-qos/analysis/supplement/test_supplement.py::test_fractional_small_gain_original_crossing_does_not_lose_precision[raw2]
+3 failed, 5 passed, 110 deselected in 0.99s

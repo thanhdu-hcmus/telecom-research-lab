@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-10-12T17:53:54.118236+00:00",
+  "kind": "LOCAL_AUTHOR_DIAGNOSTIC_ONLY",
+  "canonical_execution": false,
+  "scientific_acceptance": false,
+  "rows": 65536,
+  "candidate_source_hashes": {
+    "benchmark_synthetic.py": "c8b20f4600859248c980a120dae535cb23bc61bf587a39ee4a17b12c0ffb2830",
+    "checker.py": "5917100f8fefe37b3955d48e87c2b6c9d4f2b32e8957308f75dbb06751a4037f",
+    "independent.py": "ba888893efcd357fedfa9f5992d577e33389b3def2040cdbe04e4af976fd5aac",
+    "replay.py": "4838fef8a023e94dff52ecd5bdddeffd6f24613c5b54f9ede827de0f1449824d",
+    "run_unit_tests.py": "4bb6e3b922757cbfa9a7bcd706b107c108ad1966465f603c648fa5902654f4f4",
+    "test_supplement.py": "edda9a3e5007e08dc71e1fd8245fe3e48492319c23e37ad264e8fa6239e0dfdd"
+  },
+  "candidate_sources_unchanged": true,
+  "canonical_reviewed_sources_unchanged": true,
+  "locked_inputs_unchanged": true,
+  "results": [
+    {
+      "run_id": "r_mc-00-q1-11001-250ccb4ad292-b2a7cf17890b_5f23c8954129",
+      "rows": 32768,
+      "error_counts": {},
+      "errors": [],
+      "diagnostic_counts": {
+        "interval_upper.original_crossing.roundoff": 2
+      },
+      "ambiguities": [],
+      "manifest_sha256": "37d53ea9f749e6d5dfb5fea2fb16af7199d1322d59e95769bc4104e18e78c4ad",
+      "channels_sha256": "cbfb52f5b8b07cd64d0d47e58453b0de0a755c60b60b03e0a95762111f85d170",
+      "metrics_sha256": "739aa475f30a6d466809a6f4e21cc3db0139da1b1427e6bec053f28fb4b5255b"
+    },
+    {
+      "run_id": "r_mc-00-q2-11001-250ccb4ad292-b2a7cf17890b_ea5f89f65af3",
+      "rows": 32768,
+      "error_counts": {},
+      "errors": [],
+      "diagnostic_counts": {
+        "interval_upper.original_crossing.roundoff": 2
+      },
+      "ambiguities": [],
+      "manifest_sha256": "ff15a41511334c3e12e58442032e8b745c302843a25b98bc56673a06861a57f4",
+      "channels_sha256": "67bf99eb3dc028968bd1fb8decc904e3231f7ea205bffe9a19fb76a92f114580",
+      "metrics_sha256": "643095268c86ffb5773ee885427faddbe4691208b45a62264201ade2ed5ff7c6"
+    }
+  ],
+  "runtime_s": 33.07603709999239,
+  "scope": "check_row and seeded-channel regeneration for two completed saved jobs; excludes shared oracle replay, global statistics, combined assessment and canonical production guards."
+}

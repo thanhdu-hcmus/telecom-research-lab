@@ -1,0 +1,58 @@
+FFF...                                                                   [100%]
+================================== FAILURES ===================================
+_ test_fractional_outside_crossing_one_or_two_ulps_is_retained_as_diagnostic[raw0] _
+
+raw = {'A': '8.980521268095308e-06', 'B': '2.2617600063359746', 'P': '1.0', 'a_star': 'nan', ...}
+
+    @pytest.mark.parametrize("raw", _FRACTIONAL_OUTSIDE_ROUNDOFF_REGRESSIONS)
+    def test_fractional_outside_crossing_one_or_two_ulps_is_retained_as_diagnostic(raw):
+        inputs = tuple(float(raw[k]) for k in ("P", "gw", "gs", "qw", "qs"))
+        audit = Audit()
+        ind.check_row(raw, {k: raw[k] for k in ind.METRIC_COLUMNS}, inputs, "", int(raw["row"]), audit)
+>       assert audit.counts == {}
+E       AssertionError: assert {'interval_up..._crossing': 1} == {}
+E         
+E         Left contains 1 more item:
+E         {'interval_upper.original_crossing': 1}
+E         Use -v to get more diff
+
+projects\m11-noma-qos\analysis\supplement\test_supplement.py:2346: AssertionError
+_ test_fractional_outside_crossing_one_or_two_ulps_is_retained_as_diagnostic[raw1] _
+
+raw = {'A': '3.0898376835494e-05', 'B': '0.9953266366518917', 'P': '1.0', 'a_star': 'nan', ...}
+
+    @pytest.mark.parametrize("raw", _FRACTIONAL_OUTSIDE_ROUNDOFF_REGRESSIONS)
+    def test_fractional_outside_crossing_one_or_two_ulps_is_retained_as_diagnostic(raw):
+        inputs = tuple(float(raw[k]) for k in ("P", "gw", "gs", "qw", "qs"))
+        audit = Audit()
+        ind.check_row(raw, {k: raw[k] for k in ind.METRIC_COLUMNS}, inputs, "", int(raw["row"]), audit)
+>       assert audit.counts == {}
+E       AssertionError: assert {'interval_up..._crossing': 1} == {}
+E         
+E         Left contains 1 more item:
+E         {'interval_upper.original_crossing': 1}
+E         Use -v to get more diff
+
+projects\m11-noma-qos\analysis\supplement\test_supplement.py:2346: AssertionError
+_ test_fractional_outside_crossing_one_or_two_ulps_is_retained_as_diagnostic[raw2] _
+
+raw = {'A': '3.3501100015201812e-06', 'B': '0.2120996129475399', 'P': '1.0', 'a_star': 'nan', ...}
+
+    @pytest.mark.parametrize("raw", _FRACTIONAL_OUTSIDE_ROUNDOFF_REGRESSIONS)
+    def test_fractional_outside_crossing_one_or_two_ulps_is_retained_as_diagnostic(raw):
+        inputs = tuple(float(raw[k]) for k in ("P", "gw", "gs", "qw", "qs"))
+        audit = Audit()
+        ind.check_row(raw, {k: raw[k] for k in ind.METRIC_COLUMNS}, inputs, "", int(raw["row"]), audit)
+>       assert audit.counts == {}
+E       AssertionError: assert {'interval_up..._crossing': 1} == {}
+E         
+E         Left contains 1 more item:
+E         {'interval_upper.original_crossing': 1}
+E         Use -v to get more diff
+
+projects\m11-noma-qos\analysis\supplement\test_supplement.py:2346: AssertionError
+=========================== short test summary info ===========================
+FAILED projects/m11-noma-qos/analysis/supplement/test_supplement.py::test_fractional_outside_crossing_one_or_two_ulps_is_retained_as_diagnostic[raw0]
+FAILED projects/m11-noma-qos/analysis/supplement/test_supplement.py::test_fractional_outside_crossing_one_or_two_ulps_is_retained_as_diagnostic[raw1]
+FAILED projects/m11-noma-qos/analysis/supplement/test_supplement.py::test_fractional_outside_crossing_one_or_two_ulps_is_retained_as_diagnostic[raw2]
+3 failed, 3 passed, 118 deselected in 1.03s

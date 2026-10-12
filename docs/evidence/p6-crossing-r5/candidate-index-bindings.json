@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-12T18:01:53.553870+00:00",
+  "status": "PASS",
+  "indexed_files_checked": 1094,
+  "approved_index_bindings": 1002,
+  "owned_files_checked": 92,
+  "locked_inputs_checked": 51,
+  "locked_inputs_unchanged": true,
+  "candidate_source_bindings_current": true,
+  "candidate_source_review_transmitted": false,
+  "candidate_applied_to_canonical": false,
+  "raw_encrypted_runtime_transport_excluded": true,
+  "mismatches": []
+}

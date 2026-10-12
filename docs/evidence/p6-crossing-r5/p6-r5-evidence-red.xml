@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="8" time="0.989" timestamp="2026-10-13T00:44:59.476641+07:00" hostname="DESKTOP-VJUHLPT"><testcase classname="projects.m11-noma-qos.analysis.supplement.test_supplement" name="test_fractional_small_gain_original_crossing_does_not_lose_precision[raw0]" time="0.001"><failure message="AssertionError: assert {'interval_up..._crossing': 1} == {}&#10;  &#10;  Left contains 1 more item:&#10;  {'interval_upper.original_crossing': 1}&#10;  Use -v to get more diff">raw = {'A': '0.0016788709676153631', 'B': '0.593918137470147', 'P': '1.0', 'a_star': 'nan', ...}
+
+    @pytest.mark.parametrize("raw", _FRACTIONAL_CROSSING_REGRESSIONS)
+    def test_fractional_small_gain_original_crossing_does_not_lose_precision(raw):
+        metric = {k: raw[k] for k in ind.METRIC_COLUMNS}
+        inputs = tuple(float(raw[k]) for k in ("P", "gw", "gs", "qw", "qs"))
+        audit = Audit()
+        ind.check_row(raw, metric, inputs, "", int(raw["row"]), audit)
+&gt;       assert audit.counts == {}
+E       AssertionError: assert {'interval_up..._crossing': 1} == {}
+E         
+E         Left contains 1 more item:
+E         {'interval_upper.original_crossing': 1}
+E         Use -v to get more diff
+
+projects\m11-noma-qos\analysis\supplement\test_supplement.py:2139: AssertionError</failure></testcase><testcase classname="projects.m11-noma-qos.analysis.supplement.test_supplement" name="test_fractional_small_gain_original_crossing_does_not_lose_precision[raw1]" time="0.001"><failure message="AssertionError: assert {'interval_up..._crossing': 1} == {}&#10;  &#10;  Left contains 1 more item:&#10;  {'interval_upper.original_crossing': 1}&#10;  Use -v to get more diff">raw = {'A': '0.0006783217862415355', 'B': '0.37842689922106304', 'P': '1.0', 'a_star': 'nan', ...}
+
+    @pytest.mark.parametrize("raw", _FRACTIONAL_CROSSING_REGRESSIONS)
+    def test_fractional_small_gain_original_crossing_does_not_lose_precision(raw):
+        metric = {k: raw[k] for k in ind.METRIC_COLUMNS}
+        inputs = tuple(float(raw[k]) for k in ("P", "gw", "gs", "qw", "qs"))
+        audit = Audit()
+        ind.check_row(raw, metric, inputs, "", int(raw["row"]), audit)
+&gt;       assert audit.counts == {}
+E       AssertionError: assert {'interval_up..._crossing': 1} == {}
+E         
+E         Left contains 1 more item:
+E         {'interval_upper.original_crossing': 1}
+E         Use -v to get more diff
+
+projects\m11-noma-qos\analysis\supplement\test_supplement.py:2139: AssertionError</failure></testcase><testcase classname="projects.m11-noma-qos.analysis.supplement.test_supplement" name="test_fractional_small_gain_original_crossing_does_not_lose_precision[raw2]" time="0.001"><failure message="AssertionError: assert {'interval_up..._crossing': 1} == {}&#10;  &#10;  Left contains 1 more item:&#10;  {'interval_upper.original_crossing': 1}&#10;  Use -v to get more diff">raw = {'A': '8.877587071434792e-05', 'B': '1.624855478613857', 'P': '1.0', 'a_star': 'nan', ...}
+
+    @pytest.mark.parametrize("raw", _FRACTIONAL_CROSSING_REGRESSIONS)
+    def test_fractional_small_gain_original_crossing_does_not_lose_precision(raw):
+        metric = {k: raw[k] for k in ind.METRIC_COLUMNS}
+        inputs = tuple(float(raw[k]) for k in ("P", "gw", "gs", "qw", "qs"))
+        audit = Audit()
+        ind.check_row(raw, metric, inputs, "", int(raw["row"]), audit)
+&gt;       assert audit.counts == {}
+E       AssertionError: assert {'interval_up..._crossing': 1} == {}
+E         
+E         Left contains 1 more item:
+E         {'interval_upper.original_crossing': 1}
+E         Use -v to get more diff
+
+projects\m11-noma-qos\analysis\supplement\test_supplement.py:2139: AssertionError</failure></testcase><testcase classname="projects.m11-noma-qos.analysis.supplement.test_supplement" name="test_fractional_out_of_domain_crossing_corruption_remains_rejected[-93.91730663031638]" time="0.001" /><testcase classname="projects.m11-noma-qos.analysis.supplement.test_supplement" name="test_fractional_out_of_domain_crossing_corruption_remains_rejected[0.5]" time="0.000" /><testcase classname="projects.m11-noma-qos.analysis.supplement.test_supplement" name="test_fractional_out_of_domain_crossing_corruption_remains_rejected[nan]" time="0.000" /><testcase classname="projects.m11-noma-qos.analysis.supplement.test_supplement" name="test_fractional_out_of_domain_crossing_corruption_remains_rejected[inf]" time="0.000" /><testcase classname="projects.m11-noma-qos.analysis.supplement.test_supplement" name="test_fractional_physical_crossing_keeps_absolute_split_tolerance" time="0.001" /></testsuite></testsuites>
