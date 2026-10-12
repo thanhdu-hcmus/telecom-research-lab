@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-12T18:07:37.611608+00:00",
+  "commit": "aa68d62ac47da40a1a9f2b4890ee780d4ccb1755",
+  "branch": "fix/p6-crossing-r5",
+  "status": "TESTED_CANDIDATE_NOT_APPLIED",
+  "packet_sha256": "58b0a1787afbf47296cc66b5e8a9ccd07cdbf01152e82cb62edaddb7de8a54c4",
+  "unit_cases": 133,
+  "framework_tests": 97,
+  "saved_row_diagnostic": 65536,
+  "secret_scan": "PASS; 2508 files; zero unreviewed findings",
+  "canonical_sources_unchanged": true,
+  "scientific_acceptance": false,
+  "source_review_approval": "PENDING",
+  "evidence": "Candidate branch docs/evidence/p6-crossing-r5"
+}

@@ -1,0 +1,15 @@
+id: 2026-10-12-0036
+timestamp: '2026-10-12T18:11:42.381469+00:00'
+phase: P6
+summary: Native canonical verifier completed PASS. Supplemental run remains frozen
+  and running. Author diagnosis accounts for 2750 crossing discrepancies in a 56-job
+  snapshot; an isolated candidate corrects affine cancellation and retains out-of-domain
+  binary64 roundoff separately. Candidate passes133 unit cases and97 framework tests,
+  with zero row errors in a65536-row author diagnostic. Exact round5 source packet
+  prepared; transmission authorization pending. No candidate applied, external review
+  launched or scientific gate changed.
+provenance: ai
+evidence:
+  analysis/P6-code-review-round5-payload.json: db3ec436d8c392777658555ae623b0c781189ab5dc8a792a5e27a4a1f53a2bf1
+  to_human/P6-fifth-source-review-authorization.md: 17fac10c39c8228e6d91b9ff56b499c2851bd9cdbbde9635663e387233179c62
+  analysis/supplement/runs/2026-10-12T15-09-53.545767+00-00-86665a33b2b84ec08c39b45d32ef23c5-native/native-receipt.json: db9b8973b7d5008496c9afb56f51e4ce25e5208521e9e626563e3d8e3803f23f

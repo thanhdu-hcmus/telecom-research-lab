@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-10-12T18:04:53.431215+00:00",
+  "status": "PREPARED_ONLY_NOT_AUTHORIZED_NOT_TRANSMITTED",
+  "packet": "analysis/P6-code-review-round5-packet.json",
+  "packet_sha256": "58b0a1787afbf47296cc66b5e8a9ccd07cdbf01152e82cb62edaddb7de8a54c4",
+  "packet_bytes": 406937,
+  "source_hashes": {
+    "model/model-spec.tex": "c885769e4d0d191bd82e11891de912340a7baa64af49d9b8c4584b4a3204f76e",
+    "model/notation.yaml": "2e937f7f98e3240f476471c44cc2756afdfe77079aa8f5845cfe1bcfe920de22",
+    "model/assumptions.yaml": "48689bf9d889c0b4d4ccc9c7abe4f484cc41fde5ac27ddc4e5ea6e399ec16b4a",
+    "model/predictions.yaml": "b18859e62c3a5306b9b341331b5acd7e7ec5fb93b5fbc3cf82032fb8959a6fd2",
+    "sim/protocol.md": "93bdad13f228362b232f66e7e5ba50a751836c7039516bc77895eb52eeaf0e25",
+    "sim/protocol.yaml": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+    "sim/protocol-errata.md": "77ea24e95efbc18e1eaa3cee292c87dabeecb0d1aed742b63d78a32a2f14037c",
+    "sim/cases.yaml": "1f76d4897394371498250edb71d8ae31c08f1f497bd0b3296c48c55718dd5840",
+    "sim/lock.json": "b01177976ab7f614bb387c19f1537445f04ffb84fb186a6f27ea107a7bd09c9c",
+    "sim/src/verifier.py": "1aefd2052cfbdbf39f82bb70e5b4c14f1017202cfd3911f456a180ecdf1317b9",
+    "sim/src/oracle.py": "2b145f6ef8633cf675a4ab34f6632dc09a13156cac0b83bd37f42b0df1dc0055",
+    "analysis/supplement/benchmark_synthetic.py": "c8b20f4600859248c980a120dae535cb23bc61bf587a39ee4a17b12c0ffb2830",
+    "analysis/supplement/checker.py": "5917100f8fefe37b3955d48e87c2b6c9d4f2b32e8957308f75dbb06751a4037f",
+    "analysis/supplement/independent.py": "ba888893efcd357fedfa9f5992d577e33389b3def2040cdbe04e4af976fd5aac",
+    "analysis/supplement/replay.py": "4838fef8a023e94dff52ecd5bdddeffd6f24613c5b54f9ede827de0f1449824d",
+    "analysis/supplement/run_unit_tests.py": "4bb6e3b922757cbfa9a7bcd706b107c108ad1966465f603c648fa5902654f4f4",
+    "analysis/supplement/test_supplement.py": "edda9a3e5007e08dc71e1fd8245fe3e48492319c23e37ad264e8fa6239e0dfdd",
+    "@repo/lab/verification.py": "c549b8cca4d34dd2fa66501f79072a946e579fe919d4109769673a328fc3dcfb",
+    "@repo/schemas/verification_item.schema.json": "0f170d8a63840534de3ac3d87ce0c4a43c1edcc8c262bbf038025810e9c5f972"
+  },
+  "source_artifacts": 19,
+  "changed_source_paths": [
+    "analysis/supplement/independent.py",
+    "analysis/supplement/test_supplement.py"
+  ],
+  "illustrative_rows": 24,
+  "embedded_saved_row_regression_snapshots": 6,
+  "embedded_regression_source_manifests": 3,
+  "raw_example_manifests": 3,
+  "whole_raw_dataset_included": false,
+  "candidate_repo_relative": ".cache/worktrees/p6-crossing-r5",
+  "candidate_branch": "fix/p6-crossing-r5",
+  "candidate_base_commit": "9d62b079817fdac8eb848e9e44f04b97d95115bf",
+  "prior_packet_sha256": "bc8ca0505fe94107ba8970f97c46c55e72cb9aa8144a5d479795978cd2c4ea9f",
+  "destination": "Separate authenticated OpenAI Codex review session using the existing account",
+  "requested_scope": "One enforced read-only artifact-only source review, round 5, of this exact isolated candidate packet. Reviewer uses no tools or writes. The current canonical run remains frozen. Numerical-results transmission, later source reviews and scientific gates are excluded.",
+  "excluded": [
+    "Credentials",
+    "PDFs",
+    "Full raw dataset",
+    "Author reasoning or repair narrative",
+    "Earlier reviews",
+    "Provenance",
+    "Test verdicts"
+  ]
+}

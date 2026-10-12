@@ -109,3 +109,6 @@ projects/m11-noma-qos/analysis/source-review-04/execution-control/save_p6_review
 
 # Preserve exact native source-ready secret-check output bytes.
 docs/evidence/m11-p6-source-ready-native-secrets.json -text whitespace=cr-at-eol
+
+# Preserve exact P6 fifth-packet preparation secret-check evidence.
+docs/evidence/m11-p6-round5-preparation-native-secrets-final.json -text whitespace=cr-at-eol

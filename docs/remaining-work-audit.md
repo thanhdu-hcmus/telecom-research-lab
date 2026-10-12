@@ -2,7 +2,7 @@
 
 ## Current boundary
 
-M0–M10 software acceptance is complete, including the successful PI Overleaf
+M0â€“M10 software acceptance is complete, including the successful PI Overleaf
 check and `test.pdf` receipt. M11's actual seven-gate dry run and M12's published
 reference reproduction remain unfinished. The earlier isolated software smoke
 fixture used test-only gate substitutes and does not satisfy either milestone.
@@ -29,20 +29,37 @@ the source plan and AGENTS.md still reserve scientific decisions for the PI.
 
 ## M11 work remaining
 
-Current status: G1–G4 approved. The canonical PI rewind to P5 invalidated the
-first G5 approval and G6–G7. P5 R2 applies a tested verifier-entrypoint repair,
-with the physical protocol unchanged, and completes 145 fresh native jobs.
-All 123 combined tests pass. Actual output bytes match archived R1 and fresh
-collection/statistics/channel/oracle summaries are regenerated. The new G5
-request passes and awaits PI review in
-`projects/m11-noma-qos/to_human/G5-rerun-review.md`.
+Current state: G1–G5 approved; phase P6; G6/G7 invalidated. The canonical G5
+reapproval supersedes the historical G5-pending audit. P5 R2 completed 145 fresh
+native jobs without changing the physical protocol. The fourth enforced
+read-only source review returned READY with zero findings; its exact source
+mapping is `analysis/source-review-ready.json` under the M11 project.
 
-After renewed G5 approval, P6 must execute the pinned verifier and independently
-address the 11 coverage findings with analysis-only supplements, then obtain
-enforced independent artifact review and a PI G6 decision. P7 still requires an
-evidence-traced manuscript, verified citations, compilation, independent paper
-review and PI G7 approval/report usability judgment. No P6 result or M11
-completion is claimed. Earlier G1-pending preparation statements are historical.
+The full native verifier finished with PASS on 2026-10-12 at 16:05 UTC. Its
+report is `projects/m11-noma-qos/analysis/verification.json`; the unique native
+attempt receipt is retained under `analysis/supplement/runs/`. This result does
+not complete P6 acceptance or approve G6.
+
+Supplemental verification remains RUNNING. Snapshot at 2026-10-12T17:54:12.923194+00:00:
+57/145 jobs, 1,835,108/4,718,692 rows, 2,755 recorded discrepancies.
+The combined assessment watcher waits for the exact native and supplement
+receipts. The frozen reviewed source and all 51 locked inputs remain unchanged.
+
+A separate worktree on `fix/p6-crossing-r5` prepares an analysis-only correction.
+A bounded diagnosis of the first 56 completed jobs accounts for all 2,750 recorded
+errors in their diagnostic crossing checks. Direct affine slopes remove
+cancellation; one/two-ULP differences in out-of-domain diagnostics require a
+separate engineering check. Physical split, rate and objective tolerances,
+independent feasibility classification and exact-integer checks are preserved.
+Candidate unit checks pass 133 cases; this is not canonical scientific acceptance.
+A changed source packet requires a fresh explicit review authorization before
+external transmission. The fourth approval covers its completed exact packet.
+
+P6 still needs complete discrepancy triage, any necessary repair/rerun, combined
+assessment, executable manuscript claims and enforced independent results review.
+P7 requires the evidence-traced manuscript, verified citations, figures,
+compilation, independent paper review, Overleaf export and actual PI G6/G7
+approval/report usability judgments. M11 completion is not claimed.
 
 ## M12 work remaining
 
@@ -50,7 +67,7 @@ The reference paper is unspecified. Prefer the PI's own published RIS/NOMA work
 with available code/data; otherwise code_scout can propose an official-code IEEE
 Transactions reference for PI selection. Narrow P2 to the selected paper and
 references, then record the reproduction/ablation choice at G3 and complete
-P4–P7. Reference figures, numeric agreement and actual manuscript quality must
+P4â€“P7. Reference figures, numeric agreement and actual manuscript quality must
 be demonstrated; no reproduction is claimed yet.
 
 ## Optional capabilities and acceptance limits
@@ -71,7 +88,7 @@ be demonstrated; no reproduction is claimed yet.
 
 ## Evidence and failures
 
-Post-M10 regression evidence is recorded separately from historical M5–M10
+Post-M10 regression evidence is recorded separately from historical M5â€“M10
 acceptance. See `docs/evidence/post-m10-audit-deterministic.json` and
 `docs/evidence/post-m10-audit-failures.json`. Initial targeted checks encountered
 Windows temporary/cache directory access errors. Rerunning with workspace-local

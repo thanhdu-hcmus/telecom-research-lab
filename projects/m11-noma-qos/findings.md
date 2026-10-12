@@ -315,3 +315,19 @@ See docs/evidence/m11-p6-fractional-crossing-diagnostic.json for exact scope.
 This explains one job only and does not certify the remaining run. The frozen
 reviewed checker, locked inputs, active execution and scientific tolerances have
 not been changed. Full results and the combined assessment remain pending.
+
+## P6 native PASS and isolated supplemental repair
+
+The full native operation finished at 2026-10-12 16:05 UTC with PASS and exit zero.
+The exact native attempt remains in analysis/supplement/runs; the full report is
+analysis/verification.json. G6/G7 remain invalidated and no combined acceptance
+is claimed. The active supplement snapshot at 2026-10-12T17:54:12.923689+00:00 is 57/145 jobs,
+1,835,108 rows and 2,755 retained discrepancies.
+
+An author-only diagnostic of 56 completed jobs reproduces all 2,750 recorded
+errors in crossing fields. The candidate in isolated branch fix/p6-crossing-r5
+corrects affine-slope cancellation and records out-of-domain binary64 roundoff
+separately. All 133 candidate unit cases pass, including corruption controls.
+The canonical reviewed source, active run, locked inputs and scientific
+tolerances have not changed. Full results, combined assessment, claim lineage
+and enforced numerical-results review remain pending.
