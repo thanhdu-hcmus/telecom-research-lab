@@ -1,0 +1,290 @@
+{
+  "timestamp": "2026-10-12T04:48:39.189935+00:00",
+  "status": "LOCAL_PREPARATION_COMPLETE; EXTERNAL_SOURCE_REVIEW_PENDING",
+  "phase": "P6",
+  "locked_input_byte_check": {
+    "status": "PASS",
+    "inputs": 51
+  },
+  "local_helpers_lint": {
+    "status": "PASS",
+    "initial_errors": 22,
+    "resolution": "Four import fixes plus formatting of three local-only helper sources; final Ruff check passed"
+  },
+  "helpers": {
+    "finalize.py": "7a466ce72f4683eb27fe059386705103417bb0492128dd5892a1fac0a1a56455",
+    "packet.py": "3872e2926584a5d89f800b3e88b64245283a2c62baed7a4b7f2dc8d1eb3c5322",
+    "secret_audit.py": "92487f41a43e34e71a2894cc8e28eb69daac298dcbced464bdc5eaa8de36b285"
+  },
+  "gates": {
+    "G1": "approved",
+    "G2": "approved",
+    "G3": "approved",
+    "G4": "approved",
+    "G5": "approved",
+    "G6": "invalidated",
+    "G7": "invalidated"
+  },
+  "tests": {
+    "command": "python projects/m11-noma-qos/analysis/supplement/run_unit_tests.py",
+    "status": "PASS",
+    "tests_run": 37,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "test_ids": [
+      "test_supplement.CorruptionTests.test_bad_oma_coherent_bits_and_category",
+      "test_supplement.CorruptionTests.test_bad_rational_witness",
+      "test_supplement.CorruptionTests.test_boundary_and_status_indicators",
+      "test_supplement.CorruptionTests.test_category_identity",
+      "test_supplement.CorruptionTests.test_every_numeric_field_compensation",
+      "test_supplement.CorruptionTests.test_fixed_and_grid_fields",
+      "test_supplement.CorruptionTests.test_fixture_clean",
+      "test_supplement.CorruptionTests.test_illegal_splits_and_nans",
+      "test_supplement.CorruptionTests.test_mask_and_undefined_cannot_pass",
+      "test_supplement.CorruptionTests.test_residuals_and_paired",
+      "test_supplement.CorruptionTests.test_row_ids_metrics_alignment",
+      "test_supplement.CorruptionTests.test_seed_gain_corruption",
+      "test_supplement.CorruptionTests.test_undefined_zero_substitution",
+      "test_supplement.PhysicsTests.test_bracket_not_grid_miss",
+      "test_supplement.PhysicsTests.test_exact_singletons_and_narrow_cases",
+      "test_supplement.PhysicsTests.test_invalid_inputs_and_splits",
+      "test_supplement.PhysicsTests.test_oma_published_equations_six_points",
+      "test_supplement.PhysicsTests.test_original_powers_sites",
+      "test_supplement.PhysicsTests.test_seed_and_shared_settings",
+      "test_supplement.PhysicsTests.test_vector_grid_matches_original_scalar_exhaustive_search",
+      "test_supplement.PhysicsTests.test_zero_equal_and_fractional_boundary",
+      "test_supplement.PolicyRegressionTests.test_attempted_candidate_for_undefined_optimum",
+      "test_supplement.PolicyRegressionTests.test_dimensionless_sinr_uses_implied_rate_and_retains_raw_difference",
+      "test_supplement.PolicyRegressionTests.test_negative_pair_uses_rate_policy",
+      "test_supplement.PolicyRegressionTests.test_undefined_replay_nan_is_only_a_declared_null_mask",
+      "test_supplement.PolicyRegressionTests.test_zero_capacity_tiny_positive_targets_are_exactly_infeasible",
+      "test_supplement.ReplayTests.test_replay_bad_input_coverage_caps_and_certificates",
+      "test_supplement.ReplayTests.test_replay_clean_and_missing_tighter",
+      "test_supplement.ReplayTests.test_replay_compensating_rates_and_mask",
+      "test_supplement.ReplayTests.test_tighter_comparison_uses_tighter_policy",
+      "test_supplement.StatisticsTests.test_bad_ci_and_paired_denominator",
+      "test_supplement.StatisticsTests.test_empty_missing_duplicate_jobs",
+      "test_supplement.StatisticsTests.test_streaming_moments_and_student_t",
+      "test_supplement.StatisticsTests.test_undefined_and_exact_binomial_semantics",
+      "test_supplement.StructuralTests.test_bad_event_counts_denominators_and_unresolved",
+      "test_supplement.StructuralTests.test_disposable_csv_empty_missing_duplicate_and_schema",
+      "test_supplement.StructuralTests.test_oma_reference_corrupt_equation_and_missing_point"
+    ],
+    "elapsed_s": 0.06439870002213866,
+    "python": "3.13.5",
+    "canonical_execution": false,
+    "native_validation_on_synthetic_fixtures": false,
+    "log": "unit-tests.log"
+  },
+  "expected_full_execution": {
+    "jobs": 145,
+    "rows": 4718692,
+    "oracle": 4708,
+    "tighter": 1160
+  },
+  "supplement_lint": {
+    "lint_command": "ruff check --no-cache projects/m11-noma-qos/analysis/supplement",
+    "format_exit_code": 0,
+    "format_command": "ruff format --check projects/m11-noma-qos/analysis/supplement",
+    "lint_log": "lint-final.log",
+    "format_log": "format-final.log",
+    "policy": "repository E4 E7 E9 F I",
+    "lint_exit_code": 0,
+    "status": "PASS",
+    "initial_log": "lint-initial.log"
+  },
+  "synthetic_timing_only": {
+    "status": "MEASURED_SYNTHETIC_ONLY",
+    "canonical_execution": false,
+    "inputs": [
+      10.0,
+      1.0,
+      3.0,
+      0.25,
+      0.25
+    ],
+    "samples": [
+      {
+        "traced": false,
+        "synthetic_rows": 1000,
+        "elapsed_s": 0.2922619000310078,
+        "seconds_per_row": 0.0002922619000310078,
+        "extrapolated_4718692_rows_s": 1379.0938895811164,
+        "peak_traced_bytes": null
+      },
+      {
+        "traced": true,
+        "synthetic_rows": 1000,
+        "elapsed_s": 1.3213885999866761,
+        "seconds_per_row": 0.0013213885999866762,
+        "extrapolated_4718692_rows_s": 6235.2258156483285,
+        "peak_traced_bytes": 10377
+      }
+    ],
+    "limitations": [
+      "Repeated ordinary feasible synthetic row; distribution mix not represented.",
+      "Extrapolation excludes native guards, CSV IO, hashing and shared oracle replay.",
+      "This is a cost estimate, not a canonical runtime or completion certificate."
+    ]
+  },
+  "failed_trials": {
+    "trials": [
+      {
+        "phase": "initial isolated unit run",
+        "command": ".venv/Scripts/python.exe -m unittest discover -s projects/m11-noma-qos/analysis/supplement -p test_supplement.py -v",
+        "tests_run": 27,
+        "failures": 1,
+        "errors": 0,
+        "test": "PhysicsTests.test_bracket_not_grid_miss",
+        "observed": "Original affine weak-message residual at strong site equals Fraction(2,1), not test expectation Fraction(3,1).",
+        "classification": "incorrect test expectation",
+        "correction": "Expected affine residual corrected to 2; original independent calculation retained.",
+        "canonical_execution": false
+      }
+    ]
+  },
+  "canonical_scientific_verifier_executed": false,
+  "supplement_canonical_execution_performed": false,
+  "independent_review_rounds": 0,
+  "source_review_open_items": [
+    "Top-level oracle_status_counts and maximum_oracle_sum_difference reconciliation remains to be reviewed.",
+    "Explicit oracle objective versus independent bracket optimum reconciliation remains to be reviewed.",
+    "Full canonical runtime is unmeasured; synthetic tracing estimates omit guards/IO/hash/replays."
+  ],
+  "gate_G6_requested": false,
+  "parent_engineering_feedback": "Local source inspection and feedback were not an enforced independent review.",
+  "review_payload": {
+    "timestamp": "2026-10-12T04:48:08.732514+00:00",
+    "status": "PREPARED LOCALLY; REVIEW NOT LAUNCHED",
+    "packet": "analysis/P6-code-review-packet.json",
+    "packet_sha256": "4c0991c42bac89a188c460cd8433709b86ce8443c654ead71512a54c41ab0111",
+    "packet_bytes": 277412,
+    "artifact_paths": [
+      "model/model-spec.tex",
+      "model/notation.yaml",
+      "model/assumptions.yaml",
+      "model/predictions.yaml",
+      "sim/protocol.md",
+      "sim/protocol.yaml",
+      "sim/protocol-errata.md",
+      "sim/cases.yaml",
+      "sim/lock.json",
+      "sim/src/verifier.py",
+      "sim/src/oracle.py",
+      "analysis/supplement/benchmark_synthetic.py",
+      "analysis/supplement/checker.py",
+      "analysis/supplement/independent.py",
+      "analysis/supplement/replay.py",
+      "analysis/supplement/run_unit_tests.py",
+      "analysis/supplement/test_supplement.py",
+      "@repo/lab/verification.py",
+      "@repo/schemas/verification_item.schema.json"
+    ],
+    "original_input_hashes": {
+      "model/model-spec.tex": "c885769e4d0d191bd82e11891de912340a7baa64af49d9b8c4584b4a3204f76e",
+      "model/notation.yaml": "2e937f7f98e3240f476471c44cc2756afdfe77079aa8f5845cfe1bcfe920de22",
+      "model/assumptions.yaml": "48689bf9d889c0b4d4ccc9c7abe4f484cc41fde5ac27ddc4e5ea6e399ec16b4a",
+      "model/predictions.yaml": "b18859e62c3a5306b9b341331b5acd7e7ec5fb93b5fbc3cf82032fb8959a6fd2",
+      "sim/protocol.md": "93bdad13f228362b232f66e7e5ba50a751836c7039516bc77895eb52eeaf0e25",
+      "sim/protocol.yaml": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+      "sim/protocol-errata.md": "77ea24e95efbc18e1eaa3cee292c87dabeecb0d1aed742b63d78a32a2f14037c",
+      "sim/cases.yaml": "1f76d4897394371498250edb71d8ae31c08f1f497bd0b3296c48c55718dd5840",
+      "sim/lock.json": "b01177976ab7f614bb387c19f1537445f04ffb84fb186a6f27ea107a7bd09c9c",
+      "sim/src/verifier.py": "1aefd2052cfbdbf39f82bb70e5b4c14f1017202cfd3911f456a180ecdf1317b9",
+      "sim/src/oracle.py": "2b145f6ef8633cf675a4ab34f6632dc09a13156cac0b83bd37f42b0df1dc0055",
+      "analysis/supplement/benchmark_synthetic.py": "c8b20f4600859248c980a120dae535cb23bc61bf587a39ee4a17b12c0ffb2830",
+      "analysis/supplement/checker.py": "58f4385313c57ef1543d3e477937eda118c6661a79b8f2c31397934b3b9e1213",
+      "analysis/supplement/independent.py": "99f38944495bd628520c1bc2f08525e644fc34bb8841b42786125b00100229ba",
+      "analysis/supplement/replay.py": "6ab84a949283b696d3bd271ca0297ae6827fd35abecb486230d7899cdef0f0b3",
+      "analysis/supplement/run_unit_tests.py": "b444a232536035648ea1b8bd136d2e538a0b8826dd41011fcdb211d741381d72",
+      "analysis/supplement/test_supplement.py": "3683070638028bad3e3e12d0eb14b6b1666af31285be1b5ab0cdf697a0ecbeb7"
+    },
+    "repository_input_hashes": {
+      "lab/verification.py": "c549b8cca4d34dd2fa66501f79072a946e579fe919d4109769673a328fc3dcfb",
+      "schemas/verification_item.schema.json": "0f170d8a63840534de3ac3d87ce0c4a43c1edcc8c262bbf038025810e9c5f972"
+    },
+    "raw_examples": {
+      "jobs": 3,
+      "rows": 24,
+      "whole_raw_dataset_included": false
+    },
+    "excluded": "Credentials, PDFs, unrelated files, author reasoning, previous reviews, provenance and full raw dataset",
+    "requested_destination": "Separate authenticated OpenAI Codex review session using the existing account",
+    "requested_scope": "Up to three bounded artifact-only source-review rounds on these sources and routine analysis-only fixes; any later review of numerical results requires a new exact packet",
+    "required_policy": "Fresh read-only root, approval never, MCP disabled, one named results_verifier at depth one, reviewer uses no tools or writes; actual permissions/source hashes audited",
+    "automatic_review_block": "Creation of the external transmission helper was rejected: general independent-review authorization did not specifically authorize this private payload and destination",
+    "local_tests": {
+      "command": "python projects/m11-noma-qos/analysis/supplement/run_unit_tests.py",
+      "status": "PASS",
+      "tests_run": 37,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "test_ids": [
+        "test_supplement.CorruptionTests.test_bad_oma_coherent_bits_and_category",
+        "test_supplement.CorruptionTests.test_bad_rational_witness",
+        "test_supplement.CorruptionTests.test_boundary_and_status_indicators",
+        "test_supplement.CorruptionTests.test_category_identity",
+        "test_supplement.CorruptionTests.test_every_numeric_field_compensation",
+        "test_supplement.CorruptionTests.test_fixed_and_grid_fields",
+        "test_supplement.CorruptionTests.test_fixture_clean",
+        "test_supplement.CorruptionTests.test_illegal_splits_and_nans",
+        "test_supplement.CorruptionTests.test_mask_and_undefined_cannot_pass",
+        "test_supplement.CorruptionTests.test_residuals_and_paired",
+        "test_supplement.CorruptionTests.test_row_ids_metrics_alignment",
+        "test_supplement.CorruptionTests.test_seed_gain_corruption",
+        "test_supplement.CorruptionTests.test_undefined_zero_substitution",
+        "test_supplement.PhysicsTests.test_bracket_not_grid_miss",
+        "test_supplement.PhysicsTests.test_exact_singletons_and_narrow_cases",
+        "test_supplement.PhysicsTests.test_invalid_inputs_and_splits",
+        "test_supplement.PhysicsTests.test_oma_published_equations_six_points",
+        "test_supplement.PhysicsTests.test_original_powers_sites",
+        "test_supplement.PhysicsTests.test_seed_and_shared_settings",
+        "test_supplement.PhysicsTests.test_vector_grid_matches_original_scalar_exhaustive_search",
+        "test_supplement.PhysicsTests.test_zero_equal_and_fractional_boundary",
+        "test_supplement.PolicyRegressionTests.test_attempted_candidate_for_undefined_optimum",
+        "test_supplement.PolicyRegressionTests.test_dimensionless_sinr_uses_implied_rate_and_retains_raw_difference",
+        "test_supplement.PolicyRegressionTests.test_negative_pair_uses_rate_policy",
+        "test_supplement.PolicyRegressionTests.test_undefined_replay_nan_is_only_a_declared_null_mask",
+        "test_supplement.PolicyRegressionTests.test_zero_capacity_tiny_positive_targets_are_exactly_infeasible",
+        "test_supplement.ReplayTests.test_replay_bad_input_coverage_caps_and_certificates",
+        "test_supplement.ReplayTests.test_replay_clean_and_missing_tighter",
+        "test_supplement.ReplayTests.test_replay_compensating_rates_and_mask",
+        "test_supplement.ReplayTests.test_tighter_comparison_uses_tighter_policy",
+        "test_supplement.StatisticsTests.test_bad_ci_and_paired_denominator",
+        "test_supplement.StatisticsTests.test_empty_missing_duplicate_jobs",
+        "test_supplement.StatisticsTests.test_streaming_moments_and_student_t",
+        "test_supplement.StatisticsTests.test_undefined_and_exact_binomial_semantics",
+        "test_supplement.StructuralTests.test_bad_event_counts_denominators_and_unresolved",
+        "test_supplement.StructuralTests.test_disposable_csv_empty_missing_duplicate_and_schema",
+        "test_supplement.StructuralTests.test_oma_reference_corrupt_equation_and_missing_point"
+      ],
+      "elapsed_s": 0.06439870002213866,
+      "python": "3.13.5",
+      "canonical_execution": false,
+      "native_validation_on_synthetic_fixtures": false,
+      "log": "unit-tests.log"
+    },
+    "scientific_verification_executed": false,
+    "scientific_gate_decision": false
+  },
+  "evidence": {
+    "analysis/supplement/preparation.json": "6752d71d93eff2ddcd4c73c6b3c0278c35f79ec6081425cd5ff2963a3114ee24",
+    "analysis/supplement/unit-test-results.json": "39ac9c1ac3ababacdba223790a76566b76a9886f18f1c9487f42917faf53a0c3",
+    "analysis/supplement/README.md": "7c3e3c56810ad5103d0cf54e4eb7ff829c8a9923c068d1eb5f96641a6261e0a8",
+    "analysis/supplement/lint-results.json": "b91490020cf16b5a6eceba546a5debae6aac66747254f7885998142c2d9120b2",
+    "analysis/supplement/synthetic-timing.json": "eb82271fa73f145badc8b5636895d3d5ecebfef79aba398d5842ba4d02a45135",
+    "analysis/supplement/failed-trials.json": "f8eb4f45a8375d6d41b1f02f3097a3dbb879100d035d0509fe7dc373ad8cc9eb",
+    "analysis/supplement/synthetic-timing-before-grid-vectorization.json": "3949621e55e62aa510cd666960064f63e3ab6f23006aa7d3137980452a1b0a29",
+    "analysis/P6-code-review-packet.json": "4c0991c42bac89a188c460cd8433709b86ce8443c654ead71512a54c41ab0111",
+    "analysis/P6-code-review-payload.json": "82ee85814613e1bd012f9e6733acbd6a0693ff10f37a3531a68c0489a0560b2f",
+    "to_human/P6-code-review-authorization.md": "b17754f9c00b065be77e969e58ef4f6061a8bf5c9ff2ef05ec3fbda031da2fd4"
+  },
+  "failed_action": {
+    "action": "Create helper for external Codex source review",
+    "outcome": "AUTOMATIC APPROVAL REVIEW REJECTED",
+    "reason": "The helper would transmit private project source, protocol, model and result artifacts to a separate Codex/OpenAI session. General independent-review authorization did not specifically authorize this sensitive payload and destination.",
+    "resolution": "Rejected helper was not created. Only a local bounded packet was prepared; no external review launched. Exact packet/destination approval is required before transmission."
+  }
+}

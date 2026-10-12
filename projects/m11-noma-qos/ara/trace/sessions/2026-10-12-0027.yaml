@@ -1,0 +1,12 @@
+id: 2026-10-12-0027
+timestamp: '2026-10-12T04:16:23.356177+00:00'
+phase: P6
+summary: PI stated Approved. Keep working after the fresh G5 rerun review request.
+  Canonical CLI G5 approval is verified in commit398f26d230b7de0194091a36617e0ca0b157f952
+  at2026-10-12T04:10:45.162699Z with note P5 R2 rerun and numerical limits reviewed;
+  G5 report usable. Native P6 phase start passed. This is approval of G5 evidence
+  and continuation into P6, not G6/G7 acceptance.
+provenance: user
+evidence:
+  to_human/G5-rerun-review.md: 7c4c380fb0a3a88d48d4cac28f4d48278965f2cea70fd6c45337e6781a4a7ee6
+  gates/decisions.yaml: b5c51c0e9c157164e108636e66eb304f1a7f44f07cbc640d17651f342505cd15

@@ -1,0 +1,11 @@
+{
+  "lint_command": "ruff check --no-cache projects/m11-noma-qos/analysis/supplement",
+  "format_exit_code": 0,
+  "format_command": "ruff format --check projects/m11-noma-qos/analysis/supplement",
+  "lint_log": "lint-final.log",
+  "format_log": "format-final.log",
+  "policy": "repository E4 E7 E9 F I",
+  "lint_exit_code": 0,
+  "status": "PASS",
+  "initial_log": "lint-initial.log"
+}

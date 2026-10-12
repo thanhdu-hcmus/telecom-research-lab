@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-11T18:23:26.797150+00:00",
+  "updated_at": "2026-10-12T04:19:43.741220+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
   "active_milestone": "M11",
-  "status": "m11_g5_rerun_review_pending",
+  "status": "m11_p6_external_source_review_authorization_pending",
   "verification_complete": true,
   "pi_approval": {
     "quote": "Approve M0, continue M1–M10 automatically, and create the new private repository.",
@@ -28,7 +28,7 @@
     "G2": "approved",
     "G3": "approved",
     "G4": "approved",
-    "G5": "pending",
+    "G5": "approved",
     "G6": "invalidated",
     "G7": "invalidated"
   },
@@ -38,7 +38,7 @@
     "Run independent reviewers in separately configured read-only root sessions; verify shell enforcement before L4 acceptance"
   ],
   "unresolved": [
-    "M11 awaits fresh G5 PI approval, then independent P6 verification and P7 manuscript artifacts with PI gate decisions",
+    "M11 P6 independent raw-based checks, enforced reviews and P7 manuscript remain; G6/G7 PI decisions required",
     "M12 reference paper and code/data availability require PI selection",
     "Real thesis profile is an unreviewed draft with chapter plan, publications, deadlines and venues missing",
     "Optional Gemini unavailable; manual independent review packets provided",
@@ -160,7 +160,7 @@
     "evidence": "projects/m11-noma-qos/gates/decisions.yaml"
   },
   "m11_p5": {
-    "status": "R2 complete; fresh G5 PI review pending",
+    "status": "R2 approved by PI",
     "code_revision": "R2",
     "physical_protocol_version": "v1 unchanged",
     "protocol": "projects/m11-noma-qos/sim/protocol.yaml",
@@ -172,7 +172,7 @@
     "test_status": "PASS;123 combined framework/project checks",
     "simulations": "PASS;145 fresh native manifest jobs",
     "protocol_locked": true,
-    "scientific_approval": false,
+    "scientific_approval": true,
     "gate_checks": "PASS",
     "review_packet": "projects/m11-noma-qos/to_human/G5-rerun-review.md",
     "gate_report": "projects/m11-noma-qos/to_human/G5-report.md",
@@ -190,27 +190,35 @@
     "joint_unresolved_rows": 5,
     "baseline_reproduction_agreement": true,
     "baseline_maximum_relative_error": 0.001716158336917628,
-    "independent_P6_verification": "NOT RUN; awaits renewed G5"
+    "independent_P6_verification": "NOT RUN; G5 approved, P6 source review prerequisite pending"
   },
   "m11_g5": {
-    "status": "pending",
+    "status": "approved",
     "checks_passed": true,
-    "previous_approval_invalidated_by": "canonical PI rewind 76525a2",
-    "timestamp": "2026-10-11T18:23:25.651171+00:00",
-    "review_packet": "projects/m11-noma-qos/to_human/G5-rerun-review.md"
+    "decision_commit": "398f26d230b7de0194091a36617e0ca0b157f952",
+    "timestamp": "2026-10-12T04:10:45.162699+00:00",
+    "note": "P5 R2 rerun and numerical limits reviewed; G5 report usable",
+    "record_hash": "d0f9c56c419a685f8bf236afb43e2783f647d8be54c37d1f8fc97a1a37688d6c"
   },
   "m11_p6": {
-    "status": "awaits renewed G5 approval",
+    "status": "LOCAL_PREPARATION_COMPLETE; EXTERNAL_SOURCE_REVIEW_PENDING",
     "gate_status": "invalidated",
     "scientific_verification": "NOT RUN",
     "framework_entrypoint_repair": "applied/tested in P5 R2",
     "independent_review_rounds": 0,
     "engineering_review_independent": false,
     "engineering_findings": 11,
-    "supplement_brief": "projects/m11-noma-qos/ara/staging/P6-supplement-preparation.md"
+    "supplement_brief": "projects/m11-noma-qos/ara/staging/P6-supplement-preparation.md",
+    "phase_start": "PASS",
+    "local_supplement_preparation": "complete; not independently reviewed",
+    "isolated_tests": 37,
+    "isolated_test_status": "PASS",
+    "external_review_authorization": "Pending exact bounded private artifact packet/destination approval after automatic approval rejection",
+    "review_authorization_packet": "projects/m11-noma-qos/to_human/P6-code-review-authorization.md",
+    "preparation_receipt": "projects/m11-noma-qos/ara/staging/P6-local-preparation.json"
   },
   "m11_p5_rerun": {
-    "status": "complete; fresh G5 pending",
+    "status": "approved; P6 entered",
     "tests": 123,
     "simulation_sources_unchanged": true,
     "physical_protocol_unchanged": true,

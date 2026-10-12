@@ -1,0 +1,15 @@
+id: 2026-10-12-0028
+timestamp: '2026-10-12T04:48:40.204183+00:00'
+phase: P6
+summary: P6 local independent-calculation checker preparation and isolated tests completed.
+  Automatic approval review rejected the external transmission helper; no external
+  review or canonical scientific verification ran. Prepared the exact bounded local
+  source packet and destination/scope for PI authorization. Parent engineering feedback
+  is not enforced independence; G6/G7 remain invalidated.
+provenance: ai
+evidence:
+  ara/staging/P6-local-preparation.json: d286e3510b93b356497ad0e014eb77c6de38ff047c8edc9d1519df5f41665c74
+  analysis/P6-code-review-payload.json: 82ee85814613e1bd012f9e6733acbd6a0693ff10f37a3531a68c0489a0560b2f
+  analysis/supplement/preparation.json: 6752d71d93eff2ddcd4c73c6b3c0278c35f79ec6081425cd5ff2963a3114ee24
+  analysis/supplement/unit-test-results.json: 39ac9c1ac3ababacdba223790a76566b76a9886f18f1c9487f42917faf53a0c3
+  to_human/P6-code-review-authorization.md: b17754f9c00b065be77e969e58ef4f6061a8bf5c9ff2ef05ec3fbda031da2fd4

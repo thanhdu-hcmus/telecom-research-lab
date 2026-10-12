@@ -9,3 +9,9 @@ projects/m11-noma-qos/results/oma-reference-overlay.svg -text
 
 # Preserve the exact bytes of the PI-archived G5 figure.
 projects/m11-noma-qos/archive/2026-10-11T16-51-50.467789+00-00/results/oma-reference-overlay.svg -text
+
+# Preserve exact bytes of the evidence-bound P6 preparation receipts.
+projects/m11-noma-qos/analysis/supplement/lint-results.json -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/supplement/synthetic-timing-before-grid-vectorization.json -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/supplement/synthetic-timing.json -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/supplement/unit-test-results.json -text whitespace=cr-at-eol

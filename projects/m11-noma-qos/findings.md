@@ -223,3 +223,11 @@ No scientific P6 verifier has run. The author engineering audit identifies 11
 coverage findings; its supplement brief does not substitute for independent
 verification or an enforced artifact review. Review to_human/G5-rerun-review.md
 and the newly generated G5-report.md. M11 remains in progress; M12 is unstarted.
+
+## Current P6: local checker prepared; source review authorization pending
+
+Canonical G5 approval commit398f26d230b7de0194091a36617e0ca0b157f952 was verified, and native P6 phase start passed. G1-G5 are approved; G6-G7 remain invalidated. Earlier G5-pending sections are historical.
+
+The supplemental checker was prepared under analysis/supplement, with 37 isolated tests passing. Its preparation binds 145 planned jobs and 4,718,692 stored rows; preparation is not execution. The shared pinned oracle replay is separately labelled. Parent engineering feedback is not an independent review.
+
+Automatic approval review rejected creating the external review helper because the private source/model/protocol/results payload and separate authenticated OpenAI Codex destination were not specifically authorized. The helper was not created and no review session was launched. A bounded local packet and exact authorization scope are in to_human/P6-code-review-authorization.md. Native and supplemental canonical scientific verification await enforced independent source review. No G6 request or scientific acceptance is claimed.
