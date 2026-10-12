@@ -1,0 +1,28 @@
+{
+  "scope": "analysis-only F03/F08 engineering repair; no scientific acceptance",
+  "artifacts": [
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/replay.py",
+      "sha256": "630f9fd83aa25760ce6dea3f1bb0b9247b2ea95275e356d513a8746aecc9f6a7",
+      "syntax": "pass",
+      "trailing_whitespace": "pass"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/source-review-01/oracle-repair/test_oracle_repair.py",
+      "sha256": "b06d6a8ab33290ade1383d091c0df32b381fba20110e393f3faf62b931b1f80f",
+      "syntax": "pass",
+      "trailing_whitespace": "pass"
+    }
+  ],
+  "isolated_tests": "19 passed in 0.70s",
+  "lint": "All checks passed!",
+  "red_receipts": [
+    "red-20261012.txt",
+    "red-mask-edge-20261012.txt"
+  ],
+  "green_receipt": "green-final-20261012.txt",
+  "lint_receipt": "lint-final-20261012.txt",
+  "git_whitespace_limit": "git diff --check unavailable: Not a git repository in this execution view",
+  "protected_source_edits": false,
+  "canonical_runs": false
+}

@@ -1,0 +1,67 @@
+test_deterministic_recipe_has_no_inferential_ci (__main__.RoundThreeTests.test_deterministic_recipe_has_no_inferential_ci) ... FAIL
+test_fresh_prediction_failures_retained_with_passing_checks (__main__.RoundThreeTests.test_fresh_prediction_failures_retained_with_passing_checks) ... FAIL
+test_fresh_prediction_failures_retained_with_precision_failure (__main__.RoundThreeTests.test_fresh_prediction_failures_retained_with_precision_failure) ... FAIL
+test_lineage_design_cannot_claim_mc_for_fixed_cases (__main__.RoundThreeTests.test_lineage_design_cannot_claim_mc_for_fixed_cases) ... ERROR
+test_lineage_manifest_kind_must_be_compatible (__main__.RoundThreeTests.test_lineage_manifest_kind_must_be_compatible) ... ERROR
+
+======================================================================
+ERROR: test_lineage_design_cannot_claim_mc_for_fixed_cases (__main__.RoundThreeTests.test_lineage_design_cannot_claim_mc_for_fixed_cases)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round3_repairs.py", line 24, in test_lineage_design_cannot_claim_mc_for_fixed_cases
+    with self.assertRaises(ValueError):checker.validate_lineage_design([one],r)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'checker' has no attribute 'validate_lineage_design'
+
+======================================================================
+ERROR: test_lineage_manifest_kind_must_be_compatible (__main__.RoundThreeTests.test_lineage_manifest_kind_must_be_compatible)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round3_repairs.py", line 20, in test_lineage_manifest_kind_must_be_compatible
+    with self.assertRaises(ValueError):checker.validate_lineage_design([one,two],lineage_recipe())
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'checker' has no attribute 'validate_lineage_design'
+
+======================================================================
+FAIL: test_deterministic_recipe_has_no_inferential_ci (__main__.RoundThreeTests.test_deterministic_recipe_has_no_inferential_ci)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round3_repairs.py", line 16, in test_deterministic_recipe_has_no_inferential_ci
+    self.assertEqual(value['n'],5);self.assertIsNone(value['statistics']['ci95']);self.assertIsNone(value['statistics']['halfwidth'])
+                                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [2.321928094887362, 2.321928094887362] is not None
+
+======================================================================
+FAIL: test_fresh_prediction_failures_retained_with_passing_checks (__main__.RoundThreeTests.test_fresh_prediction_failures_retained_with_passing_checks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round3_repairs.py", line 25, in test_fresh_prediction_failures_retained_with_passing_checks
+    def test_fresh_prediction_failures_retained_with_passing_checks(self):self.check_prediction_failure(False)
+                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round3_repairs.py", line 36, in check_prediction_failure
+    self.assertEqual(value['status'],'FAIL');self.assertEqual(value['failed_native_prediction_refs'],['P4','P6']);self.assertEqual(value['failure_kind'],'numerical-contradiction')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'INCOMPLETE' != 'FAIL'
+- INCOMPLETE
++ FAIL
+
+
+======================================================================
+FAIL: test_fresh_prediction_failures_retained_with_precision_failure (__main__.RoundThreeTests.test_fresh_prediction_failures_retained_with_precision_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round3_repairs.py", line 26, in test_fresh_prediction_failures_retained_with_precision_failure
+    def test_fresh_prediction_failures_retained_with_precision_failure(self):self.check_prediction_failure(True)
+                                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round3_repairs.py", line 36, in check_prediction_failure
+    self.assertEqual(value['status'],'FAIL');self.assertEqual(value['failed_native_prediction_refs'],['P4','P6']);self.assertEqual(value['failure_kind'],'numerical-contradiction')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'INCONCLUSIVE' != 'FAIL'
+- INCONCLUSIVE
++ FAIL
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.109s
+
+FAILED (failures=3, errors=2)

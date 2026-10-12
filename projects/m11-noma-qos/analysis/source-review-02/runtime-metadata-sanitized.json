@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-10-12T10:10:05.846538+00:00",
+  "original_runtime_metadata_sha256": "437468d0845cb4e6030e015a7f8351cb4eac5f764f27494eb3a4b7766e5eae5c",
+  "metadata": [
+    {
+      "session_id": "01a12f75-8541-76e2-8474-45109dc33a54",
+      "model_provider": "openai",
+      "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\p6-source-review\\58c9863557a14dac9e5135df6c0cf51e\\artifacts",
+      "agent_role": null,
+      "spawn_calls": [
+        {
+          "name": "spawn_agent",
+          "arguments": {
+            "task_name": "results_verifier",
+            "agent_type": "results_verifier",
+            "fork_turns": "none",
+            "message_sha256": "34b03ed2d3596c6990a3fc9a13ad16788dd28ae35b11759de74674f24f092b51",
+            "message_omitted": "Encrypted transport content retained only in local runtime evidence; role/fork audit is published."
+          }
+        }
+      ]
+    },
+    {
+      "session_id": "01a12f75-b507-75a0-8761-2225b1d9b295",
+      "model_provider": "openai",
+      "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\p6-source-review\\58c9863557a14dac9e5135df6c0cf51e\\artifacts",
+      "agent_role": "results_verifier",
+      "spawn_calls": []
+    }
+  ],
+  "redaction": "Only encrypted spawn-message transport argument omitted; effective policies and role/fork fields retained."
+}

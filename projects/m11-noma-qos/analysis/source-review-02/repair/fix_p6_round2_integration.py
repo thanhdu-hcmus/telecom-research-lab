@@ -1,0 +1,3 @@
+from pathlib import Path
+p=Path('projects/m11-noma-qos/analysis/supplement/checker.py');s=p.read_text();s=s.replace('receipt.update(finished=now(), peak_traced_memory_bytes=tracemalloc.get_traced_memory()[1])','receipt.update(finished=now(), runtime_s=time.monotonic() - started, peak_traced_memory_bytes=tracemalloc.get_traced_memory()[1])');p.write_text(s,encoding='utf-8',newline='\n')
+p=Path('projects/m11-noma-qos/analysis/supplement/test_supplement.py');s=p.read_text().replace('mock.patch.object(checker, "require_ready_source_review", create=True)','mock.patch.object(checker, "require_ready_source_review", return_value={"source_hashes": {}})');p.write_text(s,encoding='utf-8',newline='\n')

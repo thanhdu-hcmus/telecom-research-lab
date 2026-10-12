@@ -1,0 +1,56 @@
+{
+  "sessions": [
+    {
+      "id": "01a12e9c-e26f-7911-b42e-3f652b0e159f",
+      "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\p6-source-review\\e6453dbc1f8544929c18ed00b4496627\\artifacts",
+      "agent_role": null,
+      "model_provider": "openai",
+      "source": "exec",
+      "runtime": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "sandbox_policy": {
+            "type": "read-only"
+          },
+          "approval_policy": "never"
+        }
+      ],
+      "spawns": [
+        {
+          "agent_type": "results_verifier",
+          "fork_turns": "none"
+        }
+      ]
+    },
+    {
+      "id": "01a12e9d-0e76-7490-8637-de0ccc14cf24",
+      "cwd": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.cache\\p6-source-review\\e6453dbc1f8544929c18ed00b4496627\\artifacts",
+      "agent_role": "results_verifier",
+      "model_provider": "openai",
+      "source": {
+        "subagent": {
+          "thread_spawn": {
+            "parent_thread_id": "01a12e9c-e26f-7911-b42e-3f652b0e159f",
+            "depth": 1,
+            "agent_path": "/root/results_verifier",
+            "agent_nickname": "Volta",
+            "agent_role": "results_verifier"
+          }
+        }
+      },
+      "runtime": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "sandbox_policy": {
+            "type": "read-only"
+          },
+          "approval_policy": "never"
+        }
+      ],
+      "spawns": []
+    }
+  ],
+  "unrelated_session_contents_read": false
+}

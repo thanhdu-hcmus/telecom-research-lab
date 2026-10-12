@@ -1,0 +1,200 @@
+{
+  "round": 3,
+  "recommendation": "revise",
+  "findings": [
+    {
+      "id": "R3-F01",
+      "severity": "major",
+      "category": "statistical-lineage",
+      "location": "analysis/supplement/checker.py: write_lineage, lineage_value, execute_lineage_recipe",
+      "issue": "Deterministic claim-lineage records and recipe execution call Moments.summary() without deterministic=True. The planned deterministic scenario repeats its fixed cases five times, so these paths generate Student-t confidence intervals from dependent repetitions. compare_scenario correctly suppresses those intervals, creating inconsistent statistical handling within the supplement.",
+      "why_it_matters": "The executable lineage artifacts can attach unsupported confidence intervals and precision assessments to deterministic numeric claims, contrary to the approved protocol.",
+      "suggested_fix_or_test": "Within analysis/, carry a validated deterministic designation from the source manifests into lineage recipes and records, suppress inferential intervals for deterministic rows, and reject incompatible mixed-source recipes. Add a regression checking that both a deterministic lineage record and its executed recipe have null CI and halfwidth fields while preserving the descriptive mean and denominator.",
+      "status": "open"
+    },
+    {
+      "id": "R3-F02",
+      "severity": "minor",
+      "category": "native-failure-receipts",
+      "location": "analysis/supplement/checker.py: run_native exception handling; sim/src/verifier.py: checks_boolean and outcomes; @repo/lab/verification.py: custom_verify",
+      "issue": "A rejected native invocation is diagnosed only from checks.yaml. Fresh verification.yaml prediction failures are ignored. P4 activation and P6 ledger failures can occur without a corresponding failed checks_boolean entry. If statistical-precision is the sole failed check while a prediction item also fails, run_native labels the attempt solely as statistical INCONCLUSIVE; with no failed checks it leaves such a prediction rejection INCOMPLETE.",
+      "why_it_matters": "The receipt can misdescribe a native prediction contradiction as a precision or execution limitation. The supplement provides additional protection, but the selected native attempt still needs an accurate failure account.",
+      "suggested_fix_or_test": "Within analysis/, inspect and validate fresh stage VerificationItems when available, record their failed prediction references separately, and preserve numerical failures alongside precision failures. Do not read a pre-existing stage as evidence of the new attempt. Add isolated cases for P4/P6 FAIL items with passing checks and with statistical-precision also failing.",
+      "status": "open"
+    }
+  ],
+  "checks": [
+    {
+      "dimension": "approved model and units",
+      "assessment": "The enclosed model algebra is consistent with normalized linear power, unit noise and bandwidth, whole-block rates, and full-range strong-user fraction a. The reviewed rate paths use the corresponding original SINRs. No geographical path-loss factor, dBm conversion or additional power-order restriction appears in these paths.",
+      "locations": [
+        "model/model-spec.tex",
+        "model/notation.yaml",
+        "sim/protocol.md",
+        "sim/src/verifier.py: rates",
+        "sim/src/oracle.py: direct_rates",
+        "analysis/supplement/independent.py: rates and oma"
+      ],
+      "limitations": [
+        "The actual scenario conversion and simulator implementation are not enclosed.",
+        "This does not validate physical deployments, finite coding, CSI errors or imperfect SIC."
+      ]
+    },
+    {
+      "dimension": "decoding sites and original feasibility",
+      "assessment": "The supplement recomputes both weak-message decoding sites, strong post-SIC rates, original constraints and classifications independently of stored feasibility flags. Integer-target adjudication uses exact original affine residuals; noninteger touching or narrow domains retain unresolved status. The native verifier alone has weaker classification and boundary coverage.",
+      "locations": [
+        "model/model-spec.tex: Both weak-message decoding sites and Exact QoS feasible set",
+        "analysis/supplement/independent.py: exact_residuals, noma_adjudicate, oma_adjudicate and check_row",
+        "sim/src/verifier.py: bracket and verify"
+      ],
+      "limitations": [
+        "Floating noninteger brackets are numerical evidence, not validated interval-arithmetic certificates.",
+        "Unsupported received-product domains cannot be treated as verified feasible or infeasible."
+      ]
+    },
+    {
+      "dimension": "zero, equal-gain, singleton and boundary cases",
+      "assessment": "The model's zero branches, closed inequalities, equal-gain ties and singleton solution are mathematically consistent. The supplement distinguishes exact singleton membership from its rounded split representation and checks selected endpoint, weak-target activation and uniqueness separately. Positive product underflow is explicitly unsupported rather than converted into an exact zero case.",
+      "locations": [
+        "model/model-spec.tex: Exact QoS feasible set and Optimizer",
+        "sim/cases.yaml",
+        "analysis/supplement/independent.py: finite_inputs, noma_adjudicate and check_row",
+        "analysis/supplement/test_supplement.py: ReviewPhysicsRepairTests",
+        "illustrative_manifest_bound_samples: deterministic rows 0–19"
+      ],
+      "limitations": [
+        "The illustrative fractional-boundary row remains unresolved.",
+        "Twenty distinct deterministic cases, repeated five times, do not establish arbitrary-input coverage."
+      ]
+    },
+    {
+      "dimension": "accepted optima, attempted candidates and discrete structure",
+      "assessment": "The supplement separately checks final and attempted splits and rates, undefined masks, exact binary indicators, row alignment, categories and grid indices. Candidate flags are reconstructed from rates, with explicitly bounded roundoff diagnostics rather than unrestricted reliance on serialized flags.",
+      "locations": [
+        "analysis/supplement/independent.py: check_candidate_flags and check_row",
+        "analysis/supplement/replay.py: recursive_compare and check_oracle_original",
+        "analysis/supplement/checker.py: process_job"
+      ],
+      "limitations": [
+        "SINR equality is assessed through its implied rate tolerance while raw discrepancies remain diagnostic; this is not exact SINR equality.",
+        "Some diagnostics receive less coverage when independent boundary adjudication is unresolved."
+      ]
+    },
+    {
+      "dimension": "oracle independence, convergence and sensitivity",
+      "assessment": "The pinned oracle has no analytic imports and searches original constraints before bounded objective evaluation. It records caps, attempts, unresolved statuses and numerical gap evidence. The supplement correctly labels its invocation as shared pinned-oracle replay and separately compares independent original-constraint endpoint evaluations. Base and tighter replay coverage and transitions are checked explicitly.",
+      "locations": [
+        "sim/src/oracle.py",
+        "analysis/supplement/replay.py",
+        "analysis/supplement/checker.py: process_job and execute",
+        "sim/protocol.yaml: oracle_rows and sensitivity_rows"
+      ],
+      "limitations": [
+        "Replay is not a third independent optimizer.",
+        "The floating secant envelope expressly lacks a rigorous numerical error certificate.",
+        "Tighter deterministic checks cover only the first eight cases, leaving later narrow and extreme-SNR cases outside that sensitivity subset.",
+        "No convergence or runtime has been observed in this review."
+      ]
+    },
+    {
+      "dimension": "common draws, matched OMA and denominators",
+      "assessment": "The supplement regenerates PCG64 draws from SeedSequence([seed,0]), checks exact recorded inputs and sampling metadata, and uses full-power half-block OMA. Joint categories, unresolved rows, conditional paired denominators and undefined optima are reconstructed. The OMA reference equations are consistent with the specified ordered exponential gains.",
+      "locations": [
+        "sim/protocol.md",
+        "analysis/supplement/independent.py: seeded, oma, category and reference",
+        "analysis/supplement/checker.py: process_job, update, compare_scenario and compare_reference"
+      ],
+      "limitations": [
+        "The full 145-job draw inventory has not been checked.",
+        "Stored-mask summaries and independently resolved summaries remain distinct when adjudication is unsupported.",
+        "The reference reproduction covers the approved OMA subset only."
+      ]
+    },
+    {
+      "dimension": "paired statistics and event intervals",
+      "assessment": "Streaming moments use the paired samples and n11 denominator, sample variance and Student-t quantiles. Exact-binomial formulas use two-sided 95% bounds, including nonzero zero-event upper bounds and undefined zero denominators. Probability comparisons use a dimensionless roundoff allowance; rate and objective comparisons use their respective units. Deterministic scenario summaries suppress CIs, but lineage handling has finding R3-F01.",
+      "locations": [
+        "analysis/supplement/independent.py: Moments and binomial",
+        "analysis/supplement/checker.py: compare_moments, compare_probability, compare_scenario and combined_assessment",
+        "@repo/lab/verification.py: average_ci and outage_ci"
+      ],
+      "limitations": [
+        "Numerical interoperability between beta quantiles and the native exact-binomial implementation requires execution; the enclosed tests are source, not verdicts.",
+        "Student-t intervals are pointwise inferential intervals, not exact finite-sample guarantees for these conditional distributions.",
+        "Zero-event bounds do not prove zero outage."
+      ]
+    },
+    {
+      "dimension": "predictions and ablations",
+      "assessment": "The supplement provides substantial finite-input coverage of P1–P7 through original constraints, endpoint selection, activation, classifications, paired differences, shared-oracle comparisons and ledger reconstruction. Fixed allocation and the 101-point grid are recomputed; a grid miss is not used as an infeasibility certificate. Combined assessment retains stored ambiguity, unsupported adjudications, oracle uncertainty and precision failures.",
+      "locations": [
+        "model/predictions.yaml",
+        "analysis/supplement/independent.py: ablations and check_row",
+        "analysis/supplement/replay.py: replay_job",
+        "analysis/supplement/checker.py: assessment_coverage and combined_assessment"
+      ],
+      "limitations": [
+        "Selected-row checks do not independently establish universal curvature, uniqueness or strict OMA dominance.",
+        "Native PASS items alone do not demonstrate complete original-classification or unresolved coverage.",
+        "The illustrative retained ambiguity prevents an unqualified full-packet scientific PASS."
+      ]
+    },
+    {
+      "dimension": "inventories, guards, limits and receipts",
+      "assessment": "The supplement binds the 19-source review inventory, planned job identities, manifest paths, output hashes and sizes, and rechecks bindings after work. Unique directories and completion receipts preserve attempts. Cooperative time and traced-memory limits are explicitly scoped; native execution uses the framework's separate subprocess timeout.",
+      "locations": [
+        "sim/lock.json",
+        "analysis/supplement/checker.py: require_ready_source_review, input_snapshot, Budget, execute and validate_assessment_inputs",
+        "analysis/supplement/run_unit_tests.py",
+        "@repo/lab/verification.py: custom_verify"
+      ],
+      "limitations": [
+        "No supplied hash has been recomputed.",
+        "Implementations of locked, verify_manifest, validate_runs and within are not enclosed.",
+        "Cooperative deadlines may overshoot individual calls; tracemalloc is not an OS resident-memory bound.",
+        "Declared test and benchmark receipts are not available execution evidence in this packet."
+      ]
+    },
+    {
+      "dimension": "native entrypoint and VerificationItem interoperability",
+      "assessment": "The framework accepts the protocol's verifier alias, checks conflicting declarations, invokes the distinct pinned script with matching arguments, retains subprocess logs and validates prediction items. Generated item fields conform structurally to the enclosed schema. The supplement separates native acceptance from combined assessment and requires an explicitly selected native receipt.",
+      "locations": [
+        "sim/protocol.yaml: verifier",
+        "sim/src/verifier.py: main and verification.yaml generation",
+        "@repo/lab/verification.py: custom_verify",
+        "@repo/schemas/verification_item.schema.json",
+        "analysis/supplement/checker.py: run_native, validate_assessment_inputs and combined_assessment"
+      ],
+      "limitations": [
+        "The actual RunManifest and VerificationItem model implementations are not enclosed.",
+        "Native verifier compatibility with verify_manifest's return contract remains unconfirmed; the supplement explicitly handles a None return while the pinned verifier does not.",
+        "Fresh native prediction rejection handling needs finding R3-F02.",
+        "Supplemental conditional recipes are separate from the native Claim evaluator's supported operations."
+      ]
+    }
+  ],
+  "limitations": [
+    "This review used only the complete inline packet and mathematical/source reasoning; no tools, files, network, mutations or agents were used.",
+    "No canonical execution, unit-test result, benchmark measurement, hash verification or scientific PASS is asserted.",
+    "Only 24 illustrative rows and three illustrative manifests are enclosed; they do not replace the planned 145 jobs, 4,718,692 rows, 4,708 base oracle checks and 1,160 tighter checks.",
+    "Several locked inputs and framework dependencies appear only as hash inventory entries, so their implementation and integrity cannot be independently established here.",
+    "Finite planned numerical checks do not validate all finite real inputs or prove universal mathematical claims.",
+    "Stored unresolved rows, independently unsupported adjudications and oracle uncertainty must remain explicit in any subsequent report.",
+    "Source review has no scientific gate authority. Routine suggested changes target analysis/; altering locked model, protocol or source inputs requires PI handling."
+  ],
+  "summary": [
+    "Revise the analysis supplement before treating its lineage and native-attempt receipts as review-ready.",
+    "Deterministic lineage currently creates unsupported Student-t intervals from repeated fixed cases.",
+    "Native rejection receipts can omit failed prediction items and misclassify the failure reason.",
+    "The reviewed normalized physics and exact model derivations are internally consistent.",
+    "The supplement substantially improves original-constraint, mask, ledger and endpoint checks over the native verifier alone.",
+    "Shared oracle replay is correctly distinguished from an additional independent optimizer.",
+    "Common draws, matched OMA and conditional denominators are explicitly checked in source.",
+    "Exact-binomial bounds and undefined-denominator handling are present.",
+    "Hashes, full coverage, numerical interoperability and execution costs remain unverified.",
+    "The illustrated fractional boundary remains unresolved and cannot support an unqualified scientific PASS.",
+    "After the analysis fixes, finite canonical checks may precede an honestly scoped P6 report that preserves all remaining uncertainty.",
+    "No gate decision or locked-science change is made by this review."
+  ]
+}

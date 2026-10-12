@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-10-12T09:52:23.120322+00:00",
+  "command": [
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\test_supplement.py",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--junitxml",
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\unit-runs\\b564b49f97744862a3293623f1a4d73e\\junit.xml",
+    "--basetemp",
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\unit-runs\\b564b49f97744862a3293623f1a4d73e\\tmp"
+  ],
+  "status": "FAIL",
+  "tests_run": 1,
+  "failures": 0,
+  "errors": 1,
+  "skipped": 0,
+  "exit_code": 2,
+  "test_ids": [
+    ".projects.m11-noma-qos.analysis.supplement.test_supplement"
+  ],
+  "python": "3.13.5",
+  "canonical_execution": false,
+  "native_validation_on_synthetic_fixtures": false,
+  "run_directory": "unit-runs/b564b49f97744862a3293623f1a4d73e",
+  "source_hashes": {
+    "benchmark_synthetic.py": "c8b20f4600859248c980a120dae535cb23bc61bf587a39ee4a17b12c0ffb2830",
+    "checker.py": "80129b7e6fde8a585b1184e0c5f4c982027ca8a7e79dfa2324a35261b73ff978",
+    "independent.py": "b2df159ab3d17d1ed4186df4ad3387fb730a52895721a718a8a84621837cbc83",
+    "replay.py": "4838fef8a023e94dff52ecd5bdddeffd6f24613c5b54f9ede827de0f1449824d",
+    "run_unit_tests.py": "4bb6e3b922757cbfa9a7bcd706b107c108ad1966465f603c648fa5902654f4f4",
+    "test_supplement.py": "349cddf24f6562211d94415a214eb27103df6fd9e9620229fbf95064f7963183"
+  },
+  "elapsed_s": 0.8943400999996811,
+  "source_hashes_unchanged": true,
+  "evidence": {
+    "junit.xml": "1b835b4321f32e2853b09d167cec702f6f7c83dfe2f8db87bd6b32ce4d7ecdc9",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "618bc82b68eebf62fd5a94ff5df962502f81e28a1803eff0f09c7a700c4b5e04"
+  }
+}

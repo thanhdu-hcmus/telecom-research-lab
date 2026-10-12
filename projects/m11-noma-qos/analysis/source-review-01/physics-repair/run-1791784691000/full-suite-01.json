@@ -1,0 +1,5 @@
+{
+  "command": "python -m unittest discover -s projects/m11-noma-qos/analysis/supplement -p test*.py -v",
+  "canonical_execution": false,
+  "exit_code": 1
+}

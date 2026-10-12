@@ -1,0 +1,236 @@
+{
+  "round": 2,
+  "recommendation": "revise",
+  "findings": [
+    {
+      "id": "R2-01",
+      "severity": "major",
+      "category": "assessment-integrity",
+      "location": "analysis/supplement/checker.py: combined_assessment and main --assess",
+      "issue": "Combined acceptance checks aggregate totals and scenario count without requiring the planned job identities, per-job coverage, scenario identities, or complete statistical fields. Empty paired/events dictionaries satisfy the precision loops. The enclosed complete() fixture illustrates this acceptance gap structurally. The assessment also does not revalidate receipt hashes or bind the selected supplement to the native invocation whose outcome is being assessed.",
+      "why_it_matters": "An incomplete, stale, or unrelated report can satisfy the aggregate checks and receive PASS. A failed native retry can leave older analysis/verification.json and verification.yaml available for --assess.",
+      "suggested_fix_or_test": "In analysis/, validate assessment inputs against the exact protocol inventory, per-job row/replay counts, required scenario metrics, and current evidence hashes. Require an explicitly selected native invocation receipt and validate VerificationItems before combining them. Add corruption cases for empty summaries, redistributed job totals, wrong scenario identities, and a failed retry following an older PASS.",
+      "status": "open"
+    },
+    {
+      "id": "R2-02",
+      "severity": "major",
+      "category": "statistical-policy",
+      "location": "analysis/supplement/checker.py: combined_assessment precision loop; independent.py: Moments.summary",
+      "issue": "Deterministic scenarios enter the relative-precision loop despite their required absence of statistical CIs. Their nonempty Moments summaries have precision_met=false, so all three deterministic paired metrics are added to failed_precision.",
+      "why_it_matters": "The approved deterministic repetitions are deliberately excluded from statistical precision requirements. The assessment reports an artificial precision failure independently of the legitimate retained boundary uncertainty.",
+      "suggested_fix_or_test": "Exclude deterministic scenarios from statistical precision assessment in analysis/. Preserve their absolute residual checks and undefined CIs. Add a combined-assessment test containing a real-shaped deterministic summary with a positive paired denominator and no CI.",
+      "status": "open"
+    },
+    {
+      "id": "R2-03",
+      "severity": "major",
+      "category": "source-and-inventory-binding",
+      "location": "analysis/supplement/checker.py: source_snapshot, input_snapshot, execute finally, execute_lineage_recipe finally",
+      "issue": "The final source comparison covers only supplemental Python files. It does not recheck the full 19-source review binding, including the pinned oracle, native verifier, framework verification source, and schema. Final input comparison also reuses the original manifest list rather than detecting additions or removals in the inventory.",
+      "why_it_matters": "source_bindings_rechecked can be true despite changes to reviewed dependencies used during execution. Newly added manifests are outside the final comparison, weakening the claimed inventory stability.",
+      "suggested_fix_or_test": "In analysis/, retain and recheck the complete reviewed-source mapping and exact manifest-path set at completion. Include the dependencies needed by lineage replay. Add tests changing a pinned dependency and adding a manifest between initial and final checks.",
+      "status": "open"
+    },
+    {
+      "id": "R2-04",
+      "severity": "major",
+      "category": "verdict-and-triage",
+      "location": "@repo/lab/verification.py: custom_verify; analysis/supplement/checker.py: run_native and combined_assessment",
+      "issue": "The native acceptance route raises an error when statistical-precision is false. run_native converts that rejection into FAIL, and combined_assessment treats every non-PASS native status as scientific failure with implementation-bug triage. This conflates insufficient precision or incomplete execution with an independently established implementation contradiction.",
+      "why_it_matters": "The protocol requires insufficient precision to remain inconclusive. A clean numerical audit with an unmet precision target must not become an implementation-bug finding solely because the legacy native acceptance route rejected it.",
+      "suggested_fix_or_test": "In analysis/, retain the native acceptance outcome separately and derive scientific FAIL versus INCONCLUSIVE from structured failure reasons and independently checked evidence. Preserve rejection of unsupported gate requests. Test native precision rejection and timeout separately from actual constraint or recomputation failures. Any native source change requires PI handling.",
+      "status": "open"
+    },
+    {
+      "id": "R2-05",
+      "severity": "minor",
+      "category": "limits-and-receipts",
+      "location": "analysis/supplement/checker.py: execute finally and execute_lineage_recipe finally",
+      "issue": "Final binding rechecks run without budget checkpoints. execute records runtime_s and finished before those rechecks; lineage records finished without a final deadline check.",
+      "why_it_matters": "Completion hashing can exceed the cooperative deadline without changing a successful status, and the execution duration excludes part of the verification work.",
+      "suggested_fix_or_test": "Keep final rechecks within cooperative budget accounting, retain a receipt when the deadline is exceeded, and record completion timestamps and elapsed time after final checks. Add a delayed-final-recheck fixture.",
+      "status": "open"
+    },
+    {
+      "id": "R2-06",
+      "severity": "minor",
+      "category": "failure-receipts",
+      "location": "analysis/supplement/run_unit_tests.py: subprocess invocation and JUnit parsing",
+      "issue": "The unit runner has no exception-safe receipt path around subprocess timeout or missing/malformed JUnit output. Those failures occur before stdout/stderr and receipt creation.",
+      "why_it_matters": "A failed preparation check can leave a directory without an explanatory receipt, contrary to the intended retained-failure evidence policy.",
+      "suggested_fix_or_test": "Add an analysis-only try/finally receipt path retaining timeout output, exception details, exit status, and available evidence even when JUnit parsing fails. Test timeout and missing-JUnit cases without canonical execution.",
+      "status": "open"
+    }
+  ],
+  "checks": [
+    {
+      "dimension": "approved mathematics and units",
+      "assessment": "The enclosed interval derivation, derivatives, endpoint optimizer, and matched OMA inclusion proof are consistent with the stated normalized scalar model. Reviewed rate paths use unit noise, linear P, both received gains, and half-block OMA rates without an added path-loss conversion.",
+      "locations": [
+        "model/model-spec.tex",
+        "model/notation.yaml",
+        "sim/src/verifier.py: rates",
+        "sim/src/oracle.py: direct_rates",
+        "analysis/supplement/independent.py: rates and oma"
+      ],
+      "limitations": [
+        "No physical deployment, finite-block decoding, or measured power/noise validation is established.",
+        "The simulation producer and dB conversion helper bodies are not enclosed."
+      ]
+    },
+    {
+      "dimension": "original feasibility and degeneracies",
+      "assessment": "The supplement independently adjudicates original constraints, uses exact affine crossings for supported integer targets, preserves noninteger boundary uncertainty, and checks selected endpoints, activation, singleton status, and uniqueness. Zero-capacity positive targets are handled explicitly.",
+      "locations": [
+        "analysis/supplement/independent.py: noma_adjudicate, oma_adjudicate, exact_residuals and check_row",
+        "sim/cases.yaml",
+        "illustrative_manifest_bound_samples: deterministic rows"
+      ],
+      "limitations": [
+        "The native bracket skips near-boundary disagreements using a 1e-9 split-margin band rather than the declared 1e-12 split tolerance.",
+        "The native bracket is consequently insufficient by itself for boundary classification.",
+        "The fractional-boundary row remains unresolved under the approved protocol."
+      ]
+    },
+    {
+      "dimension": "accepted and attempted candidates",
+      "assessment": "Supplemental row and oracle checks distinguish final optima from attempted candidates, enforce undefined masks, recompute individual rates and residuals, and reconstruct discrete indicators rather than accepting flags alone.",
+      "locations": [
+        "analysis/supplement/independent.py: check_candidate_flags and check_row",
+        "analysis/supplement/replay.py: recursive_compare and check_oracle_original",
+        "analysis/supplement/test_supplement.py"
+      ],
+      "limitations": [
+        "Serialized strict-predicate disagreements within the explicit roundoff allowance are diagnostics, not exact feasibility certificates.",
+        "Native candidate and mask coverage is substantially narrower."
+      ]
+    },
+    {
+      "dimension": "oracle convergence and sensitivity",
+      "assessment": "The pinned oracle searches original constraints over the full domain, records caps and unsuccessful attempts, and separates rational feasibility evidence from numerical objective evidence. Supplemental replay explicitly compares analytic, independent endpoint, base, and tighter results and retains unresolved transitions.",
+      "locations": [
+        "sim/src/oracle.py: _bracket, solve and _concavity_upper_bound",
+        "analysis/supplement/replay.py: replay_job"
+      ],
+      "limitations": [
+        "Replay uses the author's pinned oracle implementation; it is not a third independent optimizer.",
+        "The supplemental endpoint calculation uses the approved monotonicity result.",
+        "Secant bounds and floating root predicates are not validated interval arithmetic.",
+        "Actual convergence, iteration counts, and tighter-run coverage remain unexecuted in this review."
+      ]
+    },
+    {
+      "dimension": "common draws, OMA matching and denominators",
+      "assessment": "Supplemental source regenerates the prescribed PCG64 draws, compares inputs exactly, audits CSV alignment and schemas, reconstructs categories, and maintains stored and independent ledgers separately. Paired statistics use both-feasible rows; OMA reproduction uses unfiltered zero-QoS draws.",
+      "locations": [
+        "sim/protocol.md",
+        "analysis/supplement/independent.py: seeded, category and check_jobs",
+        "analysis/supplement/checker.py: process_job, update and compare_scenario"
+      ],
+      "limitations": [
+        "Only 24 illustrative rows and three declared manifests are enclosed.",
+        "Full 145-job coverage and common-draw reproduction have not been checked."
+      ]
+    },
+    {
+      "dimension": "statistical recomputation and events",
+      "assessment": "Streaming moments implement the prescribed paired Student-t calculation. Binomial intervals use the two-sided Clopper-Pearson construction, including the zero-event upper endpoint 1 - 0.025^(1/n). Empty denominators remain undefined and deterministic CIs are excluded during summary recomputation.",
+      "locations": [
+        "analysis/supplement/independent.py: Moments and binomial",
+        "analysis/supplement/checker.py: compare_moments, compare_probability and compare_scenario",
+        "@repo/lab/verification.py: average_ci and outage_ci"
+      ],
+      "limitations": [
+        "Assessment incorrectly applies precision requirements to deterministic summaries.",
+        "Cross-routine binomial endpoint agreement at the declared probability-roundoff allowance still requires execution.",
+        "Zero-event bounds do not establish a conclusive outage point estimate.",
+        "Student-t intervals have the approved nominal interpretation, not universal finite-sample coverage."
+      ]
+    },
+    {
+      "dimension": "ablations and prediction coverage",
+      "assessment": "The supplement recomputes both fixed and exhaustive-grid diagnostics, validates discrete grid indices, checks allocation feasibility and loss, and checks endpoint selection even for equal-gain ties. Finite checks address the main implementation consequences of P1-P7.",
+      "locations": [
+        "model/predictions.yaml",
+        "analysis/supplement/independent.py: ablations and check_row",
+        "analysis/supplement/checker.py: compare_reference",
+        "analysis/supplement/replay.py"
+      ],
+      "limitations": [
+        "A grid miss is diagnostic rather than certified infeasibility.",
+        "Curvature and scope-wide strictness are supported by the enclosed derivations, not a universal numerical test.",
+        "The combined items currently share one global verdict rather than prediction-specific coverage explanations."
+      ]
+    },
+    {
+      "dimension": "native interoperability and VerificationItems",
+      "assessment": "Native dispatch recognizes the locked verifier alias, invokes matching command-line arguments, and validates VerificationItems. Both native and combined item dictionaries contain the required schema fields; INCONCLUSIVE is an allowed verdict.",
+      "locations": [
+        "sim/protocol.yaml",
+        "sim/src/verifier.py: entrypoint and output construction",
+        "@repo/lab/verification.py: custom_verify and validate_verification",
+        "@repo/schemas/verification_item.schema.json",
+        "analysis/supplement/checker.py: run_native and combined_assessment"
+      ],
+      "limitations": [
+        "lab/simulation.py and the actual VerificationItem model implementation are not enclosed.",
+        "The native verifier assumes verify_manifest returns a manifest, while the supplement accommodates None; that contract requires an interoperability check.",
+        "Native acceptance is binary and does not enforce the supplemental scientific assessment."
+      ]
+    },
+    {
+      "dimension": "hash inventories, guards and execution limits",
+      "assessment": "Source includes readiness and phase guards, planned job checks, output checksum/size comparisons, unique execution directories, and retained canonical execution exceptions. Resource limits are expressly described as cooperative time checks and traced Python allocations.",
+      "locations": [
+        "sim/lock.json",
+        "analysis/supplement/checker.py: require_ready_source_review, input_snapshot, Budget, execute and run_native",
+        "analysis/supplement/run_unit_tests.py"
+      ],
+      "limitations": [
+        "Declared hashes have not been recomputed.",
+        "Final full-source and manifest-inventory stability is not currently established.",
+        "Memory limits exclude native allocations and operating-system resident memory.",
+        "Unit-runner exceptional failures lack guaranteed receipts."
+      ]
+    },
+    {
+      "dimension": "independence, ambiguity and numeric lineage",
+      "assessment": "Supplemental physics and statistics do not import the producer's metric implementation. Stored ambiguity, independently unsupported predicates, and oracle uncertainty are represented separately. Lineage recipes recompute original rates using an independent both-feasible mask and preserve undefined denominators.",
+      "locations": [
+        "analysis/supplement/independent.py",
+        "analysis/supplement/replay.py",
+        "analysis/supplement/checker.py: lineage_value, write_lineage and execute_lineage_recipe",
+        "@repo/lab/verification.py: evaluate_claim"
+      ],
+      "limitations": [
+        "Supplemental recipes require a supplied standalone recipe object; the generated collection is not directly selected by record key.",
+        "Native claim evaluation supports different, single-manifest operations and does not execute the supplemental conditional recipe.",
+        "No actual claims file or executed lineage receipt is enclosed.",
+        "Native PASS alone cannot establish an unqualified scientific conclusion."
+      ]
+    }
+  ],
+  "limitations": [
+    "This review used only the complete inline packet and mathematical/source reasoning; no tools, filesystem access, execution, mutation, or delegation occurred.",
+    "No test verdict, benchmark result, canonical completion, or scientific PASS is established.",
+    "Illustrative rows establish schema examples only; their manifests, hashes, and declared ledgers remain unverified data.",
+    "Producer, aggregation, framework manifest-guard, dependency-lock, and model-class implementations are not enclosed.",
+    "Finite planned checks cannot validate arbitrary real inputs or prove all approved predictions universally.",
+    "The approved noninteger boundary policy retains uncertainty; unresolved coverage must remain explicit in any P6 report.",
+    "Shared oracle replay provides reproducibility evidence rather than an additional independent optimizer.",
+    "Routine suggested fixes target analysis/. Changes to locked source, model, or protocol require PI handling.",
+    "This source review has no scientific gate authority."
+  ],
+  "summary": [
+    "Revise the analysis assessment and receipt handling before canonical verification.",
+    "The enclosed model algebra and normalized NOMA/OMA bookkeeping are consistent.",
+    "Supplemental constraint, candidate-mask, grid, and statistical checks provide substantial independent coverage.",
+    "Combined assessment can accept incomplete or stale report structures.",
+    "Deterministic summaries incorrectly incur statistical precision failures.",
+    "Final bindings omit part of the reviewed source and inventory.",
+    "Native acceptance rejection needs separation from scientific FAIL and INCONCLUSIVE.",
+    "Retained boundary uncertainty prevents an unqualified full-ensemble PASS.",
+    "No execution or scientific result is asserted."
+  ]
+}

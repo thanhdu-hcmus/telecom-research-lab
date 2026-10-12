@@ -1,0 +1,21 @@
+test_initial_source_read_failure_retains_receipt (__main__.RunnerInitializationTests.test_initial_source_read_failure_retains_receipt) ... ERROR
+
+======================================================================
+ERROR: test_initial_source_read_failure_retains_receipt (__main__.RunnerInitializationTests.test_initial_source_read_failure_retains_receipt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_runner_initialization.py", line 14, in test_initial_source_read_failure_retains_receipt
+    with mock.patch.object(Path,'read_bytes',fail):value=runner.run_tests(p)
+                                                         ~~~~~~~~~~~~~~~~^^^
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\projects\m11-noma-qos\analysis\supplement\run_unit_tests.py", line 22, in run_tests
+    before = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in here.glob("*.py")}
+                                     ~~~~~~~~~~~~^^
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_runner_initialization.py", line 10, in fail
+    if file.name=='fixture.py':raise OSError('fixture unavailable source')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: fixture unavailable source
+
+----------------------------------------------------------------------
+Ran 1 test in 0.005s
+
+FAILED (errors=1)

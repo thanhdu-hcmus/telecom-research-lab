@@ -1,0 +1,15 @@
+test_actual_constraint_failure_is_scientific_fail (__main__.RoundTwoTests.test_actual_constraint_failure_is_scientific_fail) ... ok
+test_deterministic_precision_is_not_statistical_failure (__main__.RoundTwoTests.test_deterministic_precision_is_not_statistical_failure) ... ok
+test_empty_statistical_fields_do_not_complete_coverage (__main__.RoundTwoTests.test_empty_statistical_fields_do_not_complete_coverage) ... ok
+test_final_inventory_change_detected (__main__.RoundTwoTests.test_final_inventory_change_detected) ... ok
+test_full_reviewed_dependency_change_detected (__main__.RoundTwoTests.test_full_reviewed_dependency_change_detected) ... ok
+test_native_precision_exception_records_structured_reason (__main__.RoundTwoTests.test_native_precision_exception_records_structured_reason) ... ok
+test_native_precision_rejection_is_inconclusive (__main__.RoundTwoTests.test_native_precision_rejection_is_inconclusive) ... ok
+test_native_timeout_does_not_establish_scientific_failure (__main__.RoundTwoTests.test_native_timeout_does_not_establish_scientific_failure) ... ok
+test_unit_runner_missing_junit_retains_receipt (__main__.RoundTwoTests.test_unit_runner_missing_junit_retains_receipt) ... ok
+test_unit_runner_timeout_retains_output_and_receipt (__main__.RoundTwoTests.test_unit_runner_timeout_retains_output_and_receipt) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.140s
+
+OK

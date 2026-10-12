@@ -31,12 +31,18 @@ def boolean(x):
     raise ValueError(f"Invalid boolean: {x}")
 
 
+class NumericDomainError(ValueError):
+    """The original positive inputs cannot be represented by the numeric rate path."""
+
+
 def finite_inputs(inputs):
     v = list(map(float, inputs))
     if len(v) != 5 or not all(math.isfinite(x) and x >= 0 for x in v) or v[1] > v[2]:
         raise ValueError("invalid original P/gains/QoS")
     if not all(math.isfinite(v[0] * x) for x in v[1:3]):
         raise ValueError("received SNR overflow")
+    if any(v[0] > 0 and gain > 0 and v[0] * gain == 0 for gain in v[1:3]):
+        raise NumericDomainError("positive received-product underflow; numeric domain unsupported")
     return v
 
 
@@ -118,7 +124,17 @@ def affine_crossing(f, increasing):
 
 
 def noma_adjudicate(inputs):
-    v = finite_inputs(inputs)
+    try:
+        v = finite_inputs(inputs)
+    except NumericDomainError as exc:
+        return dict(
+            status="unresolved",
+            certificate="numeric-domain-unsupported",
+            reason=str(exc),
+            numeric_domain=False,
+            low=None,
+            high=None,
+        )
     if (v[0] * v[1] == 0 and v[3] > 0) or (v[0] * v[2] == 0 and v[4] > 0):
         return dict(status="infeasible", certificate="exact-zero-capacity", low=None, high=None)
     if v[3] == 0 and v[4] == 0:
@@ -158,6 +174,15 @@ def noma_adjudicate(inputs):
             return dict(status="infeasible", certificate="bracket-separated", low=bs[0], high=bw[1])
         return dict(status="unresolved", certificate="rate-boundary", low=bs[0], high=bw[1])
     if bs[1] <= bw[0]:
+        if bw[0] - bs[1] <= SPLIT:
+            return dict(
+                status="unresolved",
+                certificate="uncertified-narrow-noninteger-domain",
+                low=bs[1],
+                high=bw[0],
+                lower_bracket=list(bs),
+                upper_bracket=list(bw),
+            )
         return dict(
             status="feasible",
             certificate="original-monotone-brackets",
@@ -171,7 +196,10 @@ def noma_adjudicate(inputs):
 
 
 def oma_adjudicate(inputs):
-    v = finite_inputs(inputs)
+    try:
+        v = finite_inputs(inputs)
+    except NumericDomainError:
+        return "unresolved"
     if (v[0] * v[1] == 0 and v[3] > 0) or (v[0] * v[2] == 0 and v[4] > 0):
         return "infeasible"
     d = oma(v)
@@ -375,6 +403,45 @@ def category(ns, os):
     return "n" + str(int(ns == "feasible")) + str(int(os == "feasible"))
 
 
+def check_candidate_flags(raw, computed, inputs, row_id, audit):
+    """Check serialized diagnostics and independently recomputed predicates separately.
+
+    Only binary64 roundoff can explain a diagnostic sign disagreement. This is
+    not a feasibility certificate or a change to the approved rate tolerance.
+    """
+    stored = [number(raw["candidate_" + k]) for k in ("rw", "rs")]
+    actual = [computed[k] for k in ("rw", "rs")]
+    targets = inputs[3:]
+    predicates = (
+        ("candidate_constraints_pass", lambda r: all(x >= q for x, q in zip(r, targets))),
+        (
+            "candidate_within_rate_tolerance",
+            lambda r: all(x >= q - RATE for x, q in zip(r, targets)),
+        ),
+        ("candidate_violation", lambda r: min(x - q for x, q in zip(r, targets)) < -RATE),
+    )
+    for field, predicate in predicates:
+        reported = boolean(raw[field])
+        expected_serialized = predicate(stored)
+        expected_independent = predicate(actual)
+        audit.eq(field, reported, expected_serialized, row_id)
+        if expected_serialized != expected_independent:
+            # Engineering roundoff in each rate, distinct from a scientific band.
+            roundoff_only = all(
+                math.isfinite(x) and abs(x - y) <= 64 * math.ulp(max(1.0, abs(x), abs(y), abs(q)))
+                for x, y, q in zip(stored, actual, targets)
+            )
+            if roundoff_only:
+                audit.diagnostic(
+                    field + ".roundoff",
+                    float(expected_serialized),
+                    float(expected_independent),
+                    row_id,
+                )
+            else:
+                audit.error(field + ".independent", reported, expected_independent, row_id)
+
+
 def check_row(raw, metric, expected_inputs, expected_case, row_id, audit):
     inputs = finite_inputs([number(raw[k]) for k in ("P", "gw", "gs", "qw", "qs")])
     for k, x, y in zip(("P", "gw", "gs", "qw", "qs"), inputs, expected_inputs):
@@ -522,24 +589,7 @@ def check_row(raw, metric, expected_inputs, expected_case, row_id, audit):
     candidate = number(raw["candidate_a"])
     if math.isfinite(candidate) and 0 <= candidate <= 1:
         cr = rates(inputs, candidate)
-        audit.eq(
-            "candidate_constraints_pass",
-            boolean(raw["candidate_constraints_pass"]),
-            cr["rw"] >= inputs[3] and cr["rs"] >= inputs[4],
-            row_id,
-        )
-        audit.eq(
-            "candidate_within_rate_tolerance",
-            boolean(raw["candidate_within_rate_tolerance"]),
-            cr["rw"] >= inputs[3] - RATE and cr["rs"] >= inputs[4] - RATE,
-            row_id,
-        )
-        audit.eq(
-            "candidate_violation",
-            boolean(raw["candidate_violation"]),
-            min(cr["rw"] - inputs[3], cr["rs"] - inputs[4]) < -RATE,
-            row_id,
-        )
+        check_candidate_flags(raw, cr, inputs, row_id, audit)
     else:
         for k in (
             "candidate_constraints_pass",
@@ -560,6 +610,9 @@ def check_row(raw, metric, expected_inputs, expected_case, row_id, audit):
                 audit.error("original_constraint." + k, raw[k], ">=-rate_tolerance", row_id)
         audit.close("candidate_a.identity", raw["candidate_a"], raw["a_star"], 0.0, row_id)
         if ns["status"] == "feasible" and ns["high"] is not None:
+            # Compare the chosen endpoint representation, not exact Fraction(a_star)
+            # membership: a certified singleton may need a rounded binary64 split.
+            audit.close("selected_endpoint", raw["a_star"], ns["high"], SPLIT, row_id)
             audit.close(
                 "optimal_objective",
                 raw["sum_rate"],
@@ -574,25 +627,11 @@ def check_row(raw, metric, expected_inputs, expected_case, row_id, audit):
             else:
                 audit.close("interval_upper", raw["interval_upper"], ns["high"], SPLIT, row_id)
             audit.close("interval_lower", raw["interval_lower"], ns["low"], SPLIT, row_id)
-        pass_exact = rd["rw"] >= inputs[3] and rd["rs"] >= inputs[4]
-        audit.eq(
-            "candidate_constraints_pass",
-            boolean(raw["candidate_constraints_pass"]),
-            pass_exact,
-            row_id,
-        )
-        audit.eq(
-            "candidate_within_rate_tolerance",
-            boolean(raw["candidate_within_rate_tolerance"]),
-            rd["rw"] >= inputs[3] - RATE and rd["rs"] >= inputs[4] - RATE,
-            row_id,
-        )
-        audit.eq(
-            "candidate_violation",
-            boolean(raw["candidate_violation"]),
-            min(rd["rw"] - inputs[3], rd["rs"] - inputs[4]) < -RATE,
-            row_id,
-        )
+        for field, target in (("rw_site", inputs[3]), ("cw_at_s", inputs[3]), ("rs", inputs[4])):
+            if rd[field] < target - RATE:
+                audit.error("selected_original_constraint." + field, rd[field], target, row_id)
+        weak_expected = inputs[3] if inputs[0] > 0 and inputs[1] > 0 else 0.0
+        audit.close("weak_target_activation", rd["rw_site"], weak_expected, RATE, row_id)
         audit.eq("numeric_domain", boolean(raw["numeric_domain"]), True, row_id)
         if raw["exact_split"]:
             f = Fraction(raw["exact_split"])
@@ -608,7 +647,9 @@ def check_row(raw, metric, expected_inputs, expected_case, row_id, audit):
         singleton = bool(ns.get("singleton", False))
         if ns["status"] == "feasible":
             audit.eq("singleton", boolean(raw["singleton"]), singleton, row_id)
-            unique = inputs[0] * inputs[1] != inputs[0] * inputs[2] or singleton
+            # Common nonnegative P gives exact product equality iff P=0 or gw=gs.
+            # Rounded received products can collapse even when exact B>A.
+            unique = (inputs[0] > 0 and inputs[1] != inputs[2]) or singleton
             audit.eq("optimizer_unique", boolean(raw["optimizer_unique"]), unique, row_id)
             audit.eq("nonunique", boolean(raw["nonunique"]), not unique, row_id)
     else:
@@ -631,10 +672,55 @@ def check_row(raw, metric, expected_inputs, expected_case, row_id, audit):
         audit.close(k, raw[k], ab[k], OBJECTIVE if k.endswith("sum") else 0.0, row_id)
     ga = number(raw["grid_a"])
     if ab["grid_found_feasible"]:
-        if not math.isfinite(ga) or ga not in ab["grid_ties"]:
-            audit.error("grid_a", ga, "feasible maximizing grid tie", row_id)
+        if not math.isfinite(ga) or not 0 <= ga <= 1:
+            audit.error("grid_a", ga, "split in [0,1] with an integer grid index", row_id)
+        else:
+            # Recover the discrete index, then validate its representation.
+            # 0.69 and 0.6900000000000001 both represent index 69.
+            index = round(ga * 100)
+            canonical = index / 100
+            maximizing_indices = {round(a * 100) for a in ab["grid_ties"]}
+            if (
+                type(index) is not int
+                or not 0 <= index <= 100
+                or abs(ga - canonical) > SPLIT
+                or index not in maximizing_indices
+            ):
+                audit.error("grid_a", ga, "feasible maximizing integer grid index", row_id)
+            recorded_grid = rates(inputs, ga)
+            for field, target in (
+                ("rw_site", inputs[3]),
+                ("cw_at_s", inputs[3]),
+                ("rs", inputs[4]),
+            ):
+                if recorded_grid[field] < target - RATE:
+                    audit.error(
+                        "grid.recorded_constraint." + field, recorded_grid[field], target, row_id
+                    )
+            audit.close(
+                "grid.recorded_objective",
+                recorded_grid["sum_rate"],
+                ab["grid_sum"],
+                OBJECTIVE,
+                row_id,
+            )
+            audit.close(
+                "grid.recorded_sum", raw["grid_sum"], recorded_grid["sum_rate"], OBJECTIVE, row_id
+            )
     else:
         audit.close("grid_a", ga, float("nan"), 0.0, row_id)
+    if feasible and math.isfinite(number(raw["a_star"])) and 0 <= number(raw["a_star"]) <= 1:
+        selected_sum = rates(inputs, number(raw["a_star"]))["sum_rate"]
+        for kind, flag in (("fixed", "fixed_feasible"), ("grid", "grid_found_feasible")):
+            if ab[flag] == 1:
+                loss = selected_sum - ab[kind + "_sum"]
+                if loss < -OBJECTIVE:
+                    audit.error(
+                        "ablation." + kind + ".negative_loss",
+                        loss,
+                        ">=-objective_tolerance",
+                        row_id,
+                    )
     return inputs, ns, os, cat, paired, od, ab
 
 

@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-12T05:34:18.072573+00:00",
+  "user_statement": "Approved",
+  "context": "Explicit approval after the final request for the exact277412-byte P6 source-review packet and separate OpenAI Codex destination.",
+  "packet": "analysis/P6-code-review-packet.json",
+  "packet_sha256": "4c0991c42bac89a188c460cd8433709b86ce8443c654ead71512a54c41ab0111",
+  "packet_bytes": 277412,
+  "destination": "Separate authenticated OpenAI Codex review session using the existing account",
+  "scope": "Up to three bounded artifact-only source-review rounds on these sources and routine analysis-only fixes; any later review of numerical results requires a new exact packet",
+  "policy": "Fresh read-only root, approval never, MCP disabled, one named results_verifier at depth one, reviewer uses no tools or writes; actual permissions/source hashes audited",
+  "source_artifacts": 19,
+  "illustrative_rows": 24,
+  "maximum_rounds": 3,
+  "authorizes_source_review_and_analysis_only_fixes": true,
+  "authorizes_scientific_gate_decisions": false,
+  "authorizes_numerical_results_review": false,
+  "transmitted_at_record_creation": false
+}

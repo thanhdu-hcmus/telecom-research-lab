@@ -1,0 +1,19 @@
+id: 2026-10-12-0032
+timestamp: '2026-10-12T10:14:16.295994+00:00'
+phase: P6
+summary: P6 third enforced source review returned REVISE with two findings. Analysis-only
+  repairs suppress dependent deterministic lineage CIs, validate source statistical
+  design/scenario, and preserve fresh failed native prediction items alongside precision
+  failures. All 117 JUnit cases and Ruff pass; 51 locked inputs unchanged. Three approved
+  review rounds are consumed. Exact 388193-byte fourth packet is prepared, same 19
+  source paths and 24 illustrative rows, and additional authorization is pending.
+  No fourth transmission, full canonical verification, G6 request or scientific acceptance
+  occurred.
+provenance: ai
+evidence:
+  analysis/source-review-03/findings.json: 5201ffda288988ba5be1edd8430322c005aea11971cf1a80fe3638e7f4d715d1
+  analysis/source-review-03/runtime-audit.json: 9202cdd691cbb8c923c3cad3f5ff4b2c212ef90732cdf1cc7ad64364cb8be6d7
+  analysis/source-review-03/repair/checkpoint.json: 5a93d6c59c41a5b3f1924fcefb880d2c2ab4face136069931ffe69b5c6e5b1e1
+  analysis/P6-code-review-round4-payload.json: 270577d0e503be6e8349a2ced7eaec55e06b425ee5b495109ff6995ca1654028
+  to_human/P6-additional-source-review-authorization.md: 88c31ad1397c9051111a41eaaee9364c9e6a5cebf031c46b26ef5bbf8a2dc500
+  analysis/supplement/unit-runs/34d532f47f6541e8a5167014d1597d58/receipt.json: a86594fed8bc26878a1e7e8fbba195ab852b80bfe3f5ecda7cf7fca5495f3c49

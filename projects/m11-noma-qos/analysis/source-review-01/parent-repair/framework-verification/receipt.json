@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-12T09:39:36.476386+00:00",
+  "framework": {
+    "status": "PASS",
+    "tests": 97,
+    "elapsed_s": 226.72,
+    "command": ".venv/Scripts/python.exe -m pytest -q -p no:cacheprovider --basetemp=.cache/p6-source-repair-framework"
+  },
+  "project_physics": {
+    "status": "PASS",
+    "tests": 26,
+    "elapsed_s": 0.49,
+    "command": ".venv/Scripts/python.exe -m pytest projects/m11-noma-qos/sim/tests -q -p no:cacheprovider --basetemp=.cache/p6-source-repair-physics"
+  },
+  "canonical_full_verification": false,
+  "evidence": {
+    "p6-source-repair-framework.txt": "bd1f0fee16cb2dfd333799cf2679adce1ca8b0c05d7caf26f7fd95c35633fc41",
+    "p6-source-repair-physics.txt": "6c7c3d0d49faa49022dc4ac336c0d5ed56be906025e0a29793dac75b99365ef6"
+  }
+}

@@ -1,0 +1,19 @@
+id: 2026-10-12-0031
+timestamp: '2026-10-12T10:00:30.957470+00:00'
+phase: P6
+summary: P6 second enforced source review returned REVISE with six assessment, statistical
+  policy, source inventory, triage, final-budget and runner-receipt findings. Analysis-only
+  repairs retain explicit native invocation and evidence hashes, exact planned coverage,
+  deterministic CI exclusion, full 19-source and manifest inventories, structured
+  inconclusive versus contradiction outcomes, final budget accounting and exception-safe
+  runner receipts. The isolated suite passes 111 JUnit cases; all 51 locked inputs
+  remain unchanged. Third authorized bounded review is running. No full canonical
+  verification, numerical-results external review, G6 request or scientific acceptance
+  occurred.
+provenance: ai
+evidence:
+  analysis/source-review-02/findings.json: 1b469fbdaf6e7ef0731ce8314c2722d48eb12e3bde289699ed7bf5d2f6258e79
+  analysis/source-review-02/runtime-audit.json: 797b8c8356ddf0fc75fadd52fbd077032bd1f7be07780f94d769ba284869a98a
+  analysis/source-review-02/receipt.json: 7d9c65e3c3f16d43f192cc1dbfb366ab242b508f56bd4d9fb1ff0a878276c869
+  analysis/source-review-02/repair/checkpoint.json: d8fa8a9e32832b7b7269dedefc16d96940d6974c750d37c9886caf775f09f2e6
+  analysis/supplement/unit-runs/c0f102057b6448ffa67d990be235ba70/receipt.json: db8c755b8f3afac826b65efb435e2c063d9e8376930ffb9f9cb15585d832755b

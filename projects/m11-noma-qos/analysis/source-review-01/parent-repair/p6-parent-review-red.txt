@@ -1,0 +1,105 @@
+test_budget_deadline (__main__.ParentReviewTests.test_budget_deadline) ... ERROR
+test_combined_keeps_declared_uncertainty_and_native_failure (__main__.ParentReviewTests.test_combined_keeps_declared_uncertainty_and_native_failure) ... ERROR
+test_combined_rejects_insufficient_precision (__main__.ParentReviewTests.test_combined_rejects_insufficient_precision) ... ERROR
+test_initial_guard_failure_retains_unique_receipts (__main__.ParentReviewTests.test_initial_guard_failure_retains_unique_receipts) ... FAIL
+test_limit_validation (__main__.ParentReviewTests.test_limit_validation) ... ERROR
+test_lineage_executable_conditional_mask_and_undefined (__main__.ParentReviewTests.test_lineage_executable_conditional_mask_and_undefined) ... ERROR
+test_lineage_invalid_mask_rejected (__main__.ParentReviewTests.test_lineage_invalid_mask_rejected) ... ERROR
+test_native_timeout_retains_stdout_and_receipt (__main__.ParentReviewTests.test_native_timeout_retains_stdout_and_receipt) ... ERROR
+test_probability_corruption_and_invalid_range (__main__.ParentReviewTests.test_probability_corruption_and_invalid_range) ... ERROR
+test_probability_roundoff_interoperation (__main__.ParentReviewTests.test_probability_roundoff_interoperation) ... ERROR
+
+======================================================================
+ERROR: test_budget_deadline (__main__.ParentReviewTests.test_budget_deadline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_parent_repairs.py", line 29, in test_budget_deadline
+    with mock.patch.object(checker.time,'monotonic',return_value=0):b=checker.Budget(options(max_total_seconds=1))
+                                                                      ^^^^^^^^^^^^^^
+AttributeError: module 'checker' has no attribute 'Budget'
+
+======================================================================
+ERROR: test_combined_keeps_declared_uncertainty_and_native_failure (__main__.ParentReviewTests.test_combined_keeps_declared_uncertainty_and_native_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_parent_repairs.py", line 49, in test_combined_keeps_declared_uncertainty_and_native_failure
+    value=checker.combined_assessment(native,supp,[],['analysis/fixture.json'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'checker' has no attribute 'combined_assessment'
+
+======================================================================
+ERROR: test_combined_rejects_insufficient_precision (__main__.ParentReviewTests.test_combined_rejects_insufficient_precision)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_parent_repairs.py", line 55, in test_combined_rejects_insufficient_precision
+    self.assertEqual(checker.combined_assessment({'status':'PASS'},supp,[],['analysis/fixture.json'])['status'],'INCONCLUSIVE')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'checker' has no attribute 'combined_assessment'
+
+======================================================================
+ERROR: test_limit_validation (__main__.ParentReviewTests.test_limit_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_parent_repairs.py", line 27, in test_limit_validation
+    with self.assertRaises(ValueError):checker.Budget(options(**{key:value}))
+                                       ^^^^^^^^^^^^^^
+AttributeError: module 'checker' has no attribute 'Budget'
+
+======================================================================
+ERROR: test_lineage_executable_conditional_mask_and_undefined (__main__.ParentReviewTests.test_lineage_executable_conditional_mask_and_undefined)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_parent_repairs.py", line 59, in test_lineage_executable_conditional_mask_and_undefined
+    value=checker.lineage_value(rows,recipe)
+          ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'checker' has no attribute 'lineage_value'
+
+======================================================================
+ERROR: test_lineage_invalid_mask_rejected (__main__.ParentReviewTests.test_lineage_invalid_mask_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_parent_repairs.py", line 63, in test_lineage_invalid_mask_rejected
+    with self.assertRaises(ValueError):checker.lineage_value([],{ 'op':'independent_conditional_mean','column':'sum_rate','mask':'author_flags_only'})
+                                       ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'checker' has no attribute 'lineage_value'
+
+======================================================================
+ERROR: test_native_timeout_retains_stdout_and_receipt (__main__.ParentReviewTests.test_native_timeout_retains_stdout_and_receipt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_parent_repairs.py", line 44, in test_native_timeout_retains_stdout_and_receipt
+    report=checker.run_native(Path(t))
+           ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'checker' has no attribute 'run_native'
+
+======================================================================
+ERROR: test_probability_corruption_and_invalid_range (__main__.ParentReviewTests.test_probability_corruption_and_invalid_range)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_parent_repairs.py", line 23, in test_probability_corruption_and_invalid_range
+    a=Audit();checker.compare_probability(a,'p',x,.5);self.assertFalse(a.ok())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'checker' has no attribute 'compare_probability'
+
+======================================================================
+ERROR: test_probability_roundoff_interoperation (__main__.ParentReviewTests.test_probability_roundoff_interoperation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_parent_repairs.py", line 19, in test_probability_roundoff_interoperation
+    checker.compare_probability(a,'low',exact.low,own[0]);checker.compare_probability(a,'high',exact.high,own[1])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'checker' has no attribute 'compare_probability'
+
+======================================================================
+FAIL: test_initial_guard_failure_retains_unique_receipts (__main__.ParentReviewTests.test_initial_guard_failure_retains_unique_receipts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_parent_repairs.py", line 38, in test_initial_guard_failure_retains_unique_receipts
+    self.assertEqual(len(receipts),2)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 2
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.008s
+
+FAILED (failures=1, errors=9)

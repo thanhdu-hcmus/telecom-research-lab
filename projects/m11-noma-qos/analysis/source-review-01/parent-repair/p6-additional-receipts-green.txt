@@ -1,0 +1,12 @@
+test_combined_false_binding_is_fail (__main__.AdditionalReceiptTests.test_combined_false_binding_is_fail) ... ok
+test_combined_missing_binding_or_coverage_is_not_pass (__main__.AdditionalReceiptTests.test_combined_missing_binding_or_coverage_is_not_pass) ... ok
+test_combined_oracle_uncertainty_is_not_pass (__main__.AdditionalReceiptTests.test_combined_oracle_uncertainty_is_not_pass) ... ok
+test_combined_positive_low_event_precision_is_inconclusive (__main__.AdditionalReceiptTests.test_combined_positive_low_event_precision_is_inconclusive) ... ok
+test_independent_lineage_moment_excludes_unsupported_stored_mask (__main__.AdditionalReceiptTests.test_independent_lineage_moment_excludes_unsupported_stored_mask) ... ok
+test_lineage_guard_failure_has_unique_receipts (__main__.AdditionalReceiptTests.test_lineage_guard_failure_has_unique_receipts) ... ok
+test_lineage_rejects_equal_gain_interior_endpoint (__main__.AdditionalReceiptTests.test_lineage_rejects_equal_gain_interior_endpoint) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.020s
+
+OK

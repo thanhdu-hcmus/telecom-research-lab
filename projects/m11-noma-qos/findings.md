@@ -231,3 +231,56 @@ Canonical G5 approval commit398f26d230b7de0194091a36617e0ca0b157f952 was verifie
 The supplemental checker was prepared under analysis/supplement, with 37 isolated tests passing. Its preparation binds 145 planned jobs and 4,718,692 stored rows; preparation is not execution. The shared pinned oracle replay is separately labelled. Parent engineering feedback is not an independent review.
 
 Automatic approval review rejected creating the external review helper because the private source/model/protocol/results payload and separate authenticated OpenAI Codex destination were not specifically authorized. The helper was not created and no review session was launched. A bounded local packet and exact authorization scope are in to_human/P6-code-review-authorization.md. Native and supplemental canonical scientific verification await enforced independent source review. No G6 request or scientific acceptance is claimed.
+
+## Current P6: authorized source review and analysis repairs
+
+The PI explicitly approved the exact bounded private source packet and separate
+OpenAI Codex destination, for up to three source-review rounds. This approval is
+recorded in analysis/P6-code-review-authorization.json and provenance 0029. It does
+not approve a scientific gate or an external numerical-results review. Earlier
+source-authorization-pending notes are historical.
+
+The first enforced read-only review completed with recommendation REVISE and 12
+findings. Actual parent/child permissions, no-tool reviewer behavior and unchanged
+source bytes are retained in analysis/source-review-01. Analysis-only repairs and
+red/green evidence now cover report uncertainty, original constraints, objective
+comparisons, discrete grid/masks, exact statistical interval interoperability,
+selected endpoint/activation, narrow fractional boundaries, underflow, receipts,
+cooperative limits and executable conditional claim lineage. The isolated suite
+passes 87 tests and seven subtests; all 51 locked inputs remain byte-identical.
+These are source and fixture checks, not full canonical scientific verification.
+
+The second authorized enforced review is running on the same approved 19 source
+paths and 24 illustrative rows, with only analysis source updated. No native full
+verifier or full supplemental run has occurred; no G6 request or scientific
+acceptance is claimed. Repair checkpoint:
+analysis/source-review-01/parent-repair/repair-checkpoint.json.
+
+## Current P6: three source reviews complete; final repairs tested
+
+The three authorized read-only source-review rounds completed with REVISE.
+Round 1 found 12 issues, round 2 six, and round 3 two. Their original source,
+findings, actual role/permission audits and negative trials are retained.
+
+The last two analysis-only repairs are complete locally:
+
+- Deterministic lineage records and executed recipes suppress inferential CIs;
+  descriptive means and denominators remain. Statistical design and scenario
+  come from source manifests; mixed/incompatible recipes fail.
+- Native attempt receipts validate fresh P1–P7 items and retain failed prediction
+  references, including alongside precision failures. Old stages cannot diagnose
+  a new failed invocation.
+
+All 117 JUnit cases pass (110 tests plus seven subtests). Ruff passes. All 51
+locked inputs are unchanged. Full canonical verification remains unexecuted,
+source readiness is not claimed, and G6/G7 remain invalidated.
+
+An exact 388,193-byte fourth-review packet is prepared: the same 19 approved
+source paths and the same 24 illustrative rows; only analysis source changed.
+The fourth transmission has not occurred. Additional approval is needed because
+the earlier transmission authorization ended after three source-review rounds.
+See to_human/P6-additional-source-review-authorization.md.
+
+Encrypted spawn-message transport is retained only locally. Sanitized runtime
+metadata preserves provider, role, fork, identifiers and effective-policy audits.
+A digest binds the omitted original content; no encrypted transport is published.

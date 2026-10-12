@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-12T10:14:50.123930+00:00",
+  "framework": {
+    "status": "PASS",
+    "tests": 97,
+    "elapsed_s": 179.85
+  },
+  "project_physics": {
+    "status": "PASS",
+    "tests": 26
+  },
+  "canonical_full_verification": false,
+  "locked_inputs_checked": 51,
+  "locked_inputs_unchanged": true,
+  "evidence": {
+    "p6-round3-framework.txt": "fddf820cf8e9d3010551104e6bb00ab8de2944559fa8ed4ca14555fe1fd6842c",
+    "p6-round3-physics.txt": "c9010e1b7336ea50af6b29021f23d2f6ee9ce86adeff09f6cbb89dc068bc4556"
+  }
+}

@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('.cache/test_p6_round2_coverage.py');s=p.read_text();s=s.replace('p=Path(t);clock=[0.];calls=[0]','p=Path(t);clock=[0.];calls=[0];original_load=checker.load');s=s.replace("mock.patch.object(checker,'load',return_value={'cases':[]})","mock.patch.object(checker,'load',side_effect=lambda f:{'cases':[]} if Path(f).name=='cases.yaml' else original_load(f))");p.write_text(s,encoding='utf-8',newline='\n')

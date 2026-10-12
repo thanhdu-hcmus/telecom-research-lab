@@ -1,0 +1,156 @@
+{
+  "timestamp": "2026-10-12T05:42:23.594780+00:00",
+  "status": "PLANNED_ONLY",
+  "claims": [
+    {
+      "key": "mc_00_q0_seed11001_noma_sum",
+      "source_manifest": "results/runs/r_mc-00-q0-11001-250ccb4ad292-b2a7cf17890b_71a0714cd1ed/manifest.json",
+      "source_manifest_sha256": "b5aab3afd4dc3f35ce39bb891633ab8e10eacd5a8553bca80b723d2c39babe51",
+      "computation": "{\"op\":\"mean\",\"path\":\"results/runs/r_mc-00-q0-11001-250ccb4ad292-b2a7cf17890b_71a0714cd1ed/metrics.csv\",\"column\":\"sum_rate\"}",
+      "value": null,
+      "status": "PLANNED_ONLY; not computed or accepted",
+      "intended_manuscript_usage": "Explicitly labelled per-seed zero-QoS example; numeric value must be computed by native evaluate_claim after P6 checks.",
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-00-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "unit": "bit/s/Hz"
+    },
+    {
+      "key": "mc_00_q0_seed11001_oma_sum",
+      "source_manifest": "results/runs/r_mc-00-q0-11001-250ccb4ad292-b2a7cf17890b_71a0714cd1ed/manifest.json",
+      "source_manifest_sha256": "b5aab3afd4dc3f35ce39bb891633ab8e10eacd5a8553bca80b723d2c39babe51",
+      "computation": "{\"op\":\"mean\",\"path\":\"results/runs/r_mc-00-q0-11001-250ccb4ad292-b2a7cf17890b_71a0714cd1ed/metrics.csv\",\"column\":\"oma_sum\"}",
+      "value": null,
+      "status": "PLANNED_ONLY; not computed or accepted",
+      "intended_manuscript_usage": "Explicitly labelled per-seed zero-QoS example; numeric value must be computed by native evaluate_claim after P6 checks.",
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-00-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "unit": "bit/s/Hz"
+    },
+    {
+      "key": "mc_00_q0_seed11001_noma_feasible_rows",
+      "source_manifest": "results/runs/r_mc-00-q0-11001-250ccb4ad292-b2a7cf17890b_71a0714cd1ed/manifest.json",
+      "source_manifest_sha256": "b5aab3afd4dc3f35ce39bb891633ab8e10eacd5a8553bca80b723d2c39babe51",
+      "computation": "{\"op\":\"count\",\"path\":\"results/runs/r_mc-00-q0-11001-250ccb4ad292-b2a7cf17890b_71a0714cd1ed/metrics.csv\",\"column\":\"feasible\"}",
+      "value": null,
+      "status": "PLANNED_ONLY; not computed or accepted",
+      "intended_manuscript_usage": "Explicitly labelled per-seed zero-QoS example; numeric value must be computed by native evaluate_claim after P6 checks.",
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-00-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "unit": "channel realizations"
+    },
+    {
+      "key": "mc_20_q0_seed11001_noma_sum",
+      "source_manifest": "results/runs/r_mc-20-q0-11001-250ccb4ad292-b2a7cf17890b_9b64c46d75e3/manifest.json",
+      "source_manifest_sha256": "1afdcbda5f902c2ce3dc18e1f87d54ee63972848c81e672ec702d67ecae3ebc2",
+      "computation": "{\"op\":\"mean\",\"path\":\"results/runs/r_mc-20-q0-11001-250ccb4ad292-b2a7cf17890b_9b64c46d75e3/metrics.csv\",\"column\":\"sum_rate\"}",
+      "value": null,
+      "status": "PLANNED_ONLY; not computed or accepted",
+      "intended_manuscript_usage": "Explicitly labelled per-seed zero-QoS example; numeric value must be computed by native evaluate_claim after P6 checks.",
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-20-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "unit": "bit/s/Hz"
+    },
+    {
+      "key": "mc_20_q0_seed11001_oma_sum",
+      "source_manifest": "results/runs/r_mc-20-q0-11001-250ccb4ad292-b2a7cf17890b_9b64c46d75e3/manifest.json",
+      "source_manifest_sha256": "1afdcbda5f902c2ce3dc18e1f87d54ee63972848c81e672ec702d67ecae3ebc2",
+      "computation": "{\"op\":\"mean\",\"path\":\"results/runs/r_mc-20-q0-11001-250ccb4ad292-b2a7cf17890b_9b64c46d75e3/metrics.csv\",\"column\":\"oma_sum\"}",
+      "value": null,
+      "status": "PLANNED_ONLY; not computed or accepted",
+      "intended_manuscript_usage": "Explicitly labelled per-seed zero-QoS example; numeric value must be computed by native evaluate_claim after P6 checks.",
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-20-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "unit": "bit/s/Hz"
+    },
+    {
+      "key": "mc_20_q0_seed11001_noma_feasible_rows",
+      "source_manifest": "results/runs/r_mc-20-q0-11001-250ccb4ad292-b2a7cf17890b_9b64c46d75e3/manifest.json",
+      "source_manifest_sha256": "1afdcbda5f902c2ce3dc18e1f87d54ee63972848c81e672ec702d67ecae3ebc2",
+      "computation": "{\"op\":\"count\",\"path\":\"results/runs/r_mc-20-q0-11001-250ccb4ad292-b2a7cf17890b_9b64c46d75e3/metrics.csv\",\"column\":\"feasible\"}",
+      "value": null,
+      "status": "PLANNED_ONLY; not computed or accepted",
+      "intended_manuscript_usage": "Explicitly labelled per-seed zero-QoS example; numeric value must be computed by native evaluate_claim after P6 checks.",
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-20-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "unit": "channel realizations"
+    },
+    {
+      "key": "mc_50_q0_seed11001_noma_sum",
+      "source_manifest": "results/runs/r_mc-50-q0-11001-250ccb4ad292-b2a7cf17890b_94ba5ccee8f3/manifest.json",
+      "source_manifest_sha256": "172386b5269c0d77939f7224184a25fd536794bb02328c15642a7831ebb62251",
+      "computation": "{\"op\":\"mean\",\"path\":\"results/runs/r_mc-50-q0-11001-250ccb4ad292-b2a7cf17890b_94ba5ccee8f3/metrics.csv\",\"column\":\"sum_rate\"}",
+      "value": null,
+      "status": "PLANNED_ONLY; not computed or accepted",
+      "intended_manuscript_usage": "Explicitly labelled per-seed zero-QoS example; numeric value must be computed by native evaluate_claim after P6 checks.",
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-50-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "unit": "bit/s/Hz"
+    },
+    {
+      "key": "mc_50_q0_seed11001_oma_sum",
+      "source_manifest": "results/runs/r_mc-50-q0-11001-250ccb4ad292-b2a7cf17890b_94ba5ccee8f3/manifest.json",
+      "source_manifest_sha256": "172386b5269c0d77939f7224184a25fd536794bb02328c15642a7831ebb62251",
+      "computation": "{\"op\":\"mean\",\"path\":\"results/runs/r_mc-50-q0-11001-250ccb4ad292-b2a7cf17890b_94ba5ccee8f3/metrics.csv\",\"column\":\"oma_sum\"}",
+      "value": null,
+      "status": "PLANNED_ONLY; not computed or accepted",
+      "intended_manuscript_usage": "Explicitly labelled per-seed zero-QoS example; numeric value must be computed by native evaluate_claim after P6 checks.",
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-50-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "unit": "bit/s/Hz"
+    },
+    {
+      "key": "mc_50_q0_seed11001_noma_feasible_rows",
+      "source_manifest": "results/runs/r_mc-50-q0-11001-250ccb4ad292-b2a7cf17890b_94ba5ccee8f3/manifest.json",
+      "source_manifest_sha256": "172386b5269c0d77939f7224184a25fd536794bb02328c15642a7831ebb62251",
+      "computation": "{\"op\":\"count\",\"path\":\"results/runs/r_mc-50-q0-11001-250ccb4ad292-b2a7cf17890b_94ba5ccee8f3/metrics.csv\",\"column\":\"feasible\"}",
+      "value": null,
+      "status": "PLANNED_ONLY; not computed or accepted",
+      "intended_manuscript_usage": "Explicitly labelled per-seed zero-QoS example; numeric value must be computed by native evaluate_claim after P6 checks.",
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-50-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "unit": "channel realizations"
+    }
+  ],
+  "limits": [
+    "Native claim evaluator accepts one actual manifest output per computation.",
+    "Positive-QoS conditional means require filtering unavailable in the pinned evaluator, so they are not invented as native executable claims.",
+    "Pooled setting statistics may be analyzed with full source/output bindings; these planned claims remain per-seed examples."
+  ],
+  "canonical_scientific_verification_performed": false
+}

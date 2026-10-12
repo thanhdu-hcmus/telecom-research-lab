@@ -1,0 +1,15 @@
+test_budget_deadline (__main__.ParentReviewTests.test_budget_deadline) ... ok
+test_combined_keeps_declared_uncertainty_and_native_failure (__main__.ParentReviewTests.test_combined_keeps_declared_uncertainty_and_native_failure) ... ok
+test_combined_rejects_insufficient_precision (__main__.ParentReviewTests.test_combined_rejects_insufficient_precision) ... ok
+test_initial_guard_failure_retains_unique_receipts (__main__.ParentReviewTests.test_initial_guard_failure_retains_unique_receipts) ... ok
+test_limit_validation (__main__.ParentReviewTests.test_limit_validation) ... ok
+test_lineage_executable_conditional_mask_and_undefined (__main__.ParentReviewTests.test_lineage_executable_conditional_mask_and_undefined) ... ok
+test_lineage_invalid_mask_rejected (__main__.ParentReviewTests.test_lineage_invalid_mask_rejected) ... ok
+test_native_timeout_retains_stdout_and_receipt (__main__.ParentReviewTests.test_native_timeout_retains_stdout_and_receipt) ... ok
+test_probability_corruption_and_invalid_range (__main__.ParentReviewTests.test_probability_corruption_and_invalid_range) ... ok
+test_probability_roundoff_interoperation (__main__.ParentReviewTests.test_probability_roundoff_interoperation) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.044s
+
+OK

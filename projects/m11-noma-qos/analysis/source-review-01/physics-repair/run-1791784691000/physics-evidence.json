@@ -1,0 +1,74 @@
+{
+  "status": "PHYSICS_REPAIRS_PREPARED; INTEGRATION_ERRORS_RETAINED",
+  "findings_addressed": [
+    "F04",
+    "F06",
+    "F07",
+    "F11"
+  ],
+  "public_api_compatible": true,
+  "canonical_execution": false,
+  "external_transmission": false,
+  "red": {
+    "tests": 9,
+    "elapsed_s": 0.023,
+    "verdict": "FAIL",
+    "failure_summary": "failures=10"
+  },
+  "assigned_regressions": {
+    "tests": 9,
+    "elapsed_s": 0.007,
+    "verdict": "PASS",
+    "failure_summary": null
+  },
+  "full_isolated_suite": {
+    "tests": 46,
+    "elapsed_s": 0.094,
+    "verdict": "FAIL",
+    "failure_summary": "errors=5"
+  },
+  "lint": {
+    "scope": [
+      "independent.py",
+      "test_supplement.py"
+    ],
+    "lint_exit_code": 0,
+    "format_exit_code": 0
+  },
+  "source_hashes": {
+    "independent.py": "72fc99d28c0f44f867f18ffcf155e6271b4f5b07837bb7f31f26f9c8d5a2f486",
+    "test_supplement.py": "bea0e3c3f27474a8a1af72b3678296940710e2f6d398fc7fcae9862058b8bf6b"
+  },
+  "evidence_hashes": {
+    "red-01.log": "1bf4c7e8f5bf4dcc4612c864e6fce39e5e40b6642e1951b5041f6dd3e4856c16",
+    "red-01.json": "cdfe3dfd575b7d26e3ba66734fba769521e73b4234f275f20dee1c52122d61b2",
+    "green-01.log": "ded18b32aa6000d10f89902bb6d99248074bd7875257c62cadec848ac2710729",
+    "green-01.json": "a2bc75ea6670e58957c4e6ac8855fcda71575e499593407e9c687f50e4ebd268",
+    "full-suite-01.log": "6c0cf7a6f967d1d74ff17c73441fa67085483b18b6f5fabea4492f11f0f3218e",
+    "full-suite-01.json": "26209e0bbb12d5ef2e80897ffb9b56be0845ea38b8c05f13fbbd8c4a6833eefe",
+    "lint-final.log": "a4443afdcfb6d7363adb285762515ccf7cf50473b1a05c20c1a50f6bed4d26b0",
+    "format-final.log": "97d85b4b6c185a05396e2d09a3c304ff0f7cc77f8b7b7bb7989ec6cd875b3898",
+    "lint-final.json": "0f2e34539df180f083990dbe28dc8ffa17adfcc8be095533c1a87a44bda893d6"
+  },
+  "non_physics_errors": [
+    "ReplayTests.test_replay_bad_input_coverage_caps_and_certificates",
+    "ReplayTests.test_replay_clean_and_missing_tighter",
+    "ReplayTests.test_replay_compensating_rates_and_mask",
+    "ReplayTests.test_tighter_comparison_uses_tighter_policy",
+    "StructuralTests.test_disposable_csv_empty_missing_duplicate_and_schema"
+  ],
+  "non_physics_cause": "Concurrent parent replay.py expects optimality_status absent from existing synthetic solver fixture; no parent source or original fixture semantics changed.",
+  "changes": {
+    "F04": "Discrete index with SPLIT representation check, recorded-split original constraints and objective recomputation.",
+    "F06": "Selected upper endpoint and weak target activation checks; original decoding-site constraints and per-row ablation loss >= -OBJECTIVE.",
+    "F07": "Uncertified noninteger inner separation <= SPLIT retains unresolved status.",
+    "F11": "Positive received-product underflow excluded; classifiers unresolved, rates fail closed. Structural equality uses exact common-power algebra P=0 or gw=gs."
+  },
+  "limits": [
+    "Numerical endpoint/activation/grid checks use the existing declared tolerances; they are not universal floating-point proofs.",
+    "Noninteger narrow brackets remain unresolved without a certificate.",
+    "Underflow is an unsupported numeric domain, not exact zero capacity.",
+    "Full canonical execution and scientific gate decisions remain excluded.",
+    "Full isolated suite is not green until parent integrates the concurrent replay fixture requirements."
+  ]
+}

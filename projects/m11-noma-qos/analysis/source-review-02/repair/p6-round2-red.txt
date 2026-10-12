@@ -1,0 +1,110 @@
+test_actual_constraint_failure_is_scientific_fail (__main__.RoundTwoTests.test_actual_constraint_failure_is_scientific_fail) ... ok
+test_deterministic_precision_is_not_statistical_failure (__main__.RoundTwoTests.test_deterministic_precision_is_not_statistical_failure) ... FAIL
+test_empty_statistical_fields_do_not_complete_coverage (__main__.RoundTwoTests.test_empty_statistical_fields_do_not_complete_coverage) ... ERROR
+test_final_inventory_change_detected (__main__.RoundTwoTests.test_final_inventory_change_detected) ... ERROR
+test_full_reviewed_dependency_change_detected (__main__.RoundTwoTests.test_full_reviewed_dependency_change_detected) ... ok
+test_native_precision_exception_records_structured_reason (__main__.RoundTwoTests.test_native_precision_exception_records_structured_reason) ... ERROR
+test_native_precision_rejection_is_inconclusive (__main__.RoundTwoTests.test_native_precision_rejection_is_inconclusive) ... FAIL
+test_native_timeout_does_not_establish_scientific_failure (__main__.RoundTwoTests.test_native_timeout_does_not_establish_scientific_failure) ... FAIL
+test_unit_runner_missing_junit_retains_receipt (__main__.RoundTwoTests.test_unit_runner_missing_junit_retains_receipt) ... ERROR
+test_unit_runner_timeout_retains_output_and_receipt (__main__.RoundTwoTests.test_unit_runner_timeout_retains_output_and_receipt) ... ERROR
+
+======================================================================
+ERROR: test_empty_statistical_fields_do_not_complete_coverage (__main__.RoundTwoTests.test_empty_statistical_fields_do_not_complete_coverage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round2_repairs.py", line 42, in test_empty_statistical_fields_do_not_complete_coverage
+    self.assertFalse(checker.assessment_coverage(complete(),{},{}))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'checker' has no attribute 'assessment_coverage'
+
+======================================================================
+ERROR: test_final_inventory_change_detected (__main__.RoundTwoTests.test_final_inventory_change_detected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round2_repairs.py", line 29, in test_final_inventory_change_detected
+    before=checker.manifest_path_inventory(p)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'checker' has no attribute 'manifest_path_inventory'
+
+======================================================================
+ERROR: test_native_precision_exception_records_structured_reason (__main__.RoundTwoTests.test_native_precision_exception_records_structured_reason)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round2_repairs.py", line 25, in test_native_precision_exception_records_structured_reason
+    self.assertEqual(v['failure_kind'],'statistical-precision');self.assertEqual(v['status'],'INCONCLUSIVE')
+                     ~^^^^^^^^^^^^^^^^
+KeyError: 'failure_kind'
+
+======================================================================
+ERROR: test_unit_runner_missing_junit_retains_receipt (__main__.RoundTwoTests.test_unit_runner_missing_junit_retains_receipt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round2_repairs.py", line 53, in test_unit_runner_missing_junit_retains_receipt
+    path=Path(checker.HERE/'run_unit_tests.py');spec=importlib.util.spec_from_file_location('fixture_runner2',path);runner=importlib.util.module_from_spec(spec);spec.loader.exec_module(runner)
+                                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\projects\m11-noma-qos\analysis\supplement\run_unit_tests.py", line 95, in <module>
+    raise SystemExit(0 if receipt["status"] == "PASS" else 1)
+SystemExit: 0
+
+======================================================================
+ERROR: test_unit_runner_timeout_retains_output_and_receipt (__main__.RoundTwoTests.test_unit_runner_timeout_retains_output_and_receipt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round2_repairs.py", line 45, in test_unit_runner_timeout_retains_output_and_receipt
+    path=Path(checker.HERE/'run_unit_tests.py');spec=importlib.util.spec_from_file_location('fixture_runner',path);runner=importlib.util.module_from_spec(spec);spec.loader.exec_module(runner)
+                                                                                                                                                                ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\projects\m11-noma-qos\analysis\supplement\run_unit_tests.py", line 95, in <module>
+    raise SystemExit(0 if receipt["status"] == "PASS" else 1)
+SystemExit: 0
+
+======================================================================
+FAIL: test_deterministic_precision_is_not_statistical_failure (__main__.RoundTwoTests.test_deterministic_precision_is_not_statistical_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round2_repairs.py", line 12, in test_deterministic_precision_is_not_statistical_failure
+    self.assertEqual(v['failed_precision'],[])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['q.sum_rate'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'q.sum_rate'
+
+- ['q.sum_rate']
++ []
+
+======================================================================
+FAIL: test_native_precision_rejection_is_inconclusive (__main__.RoundTwoTests.test_native_precision_rejection_is_inconclusive)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round2_repairs.py", line 16, in test_native_precision_rejection_is_inconclusive
+    self.assertEqual(checker.combined_assessment({'status':'FAIL','failure_kind':'statistical-precision'},complete(),native_items(),[])['status'],'INCONCLUSIVE')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'FAIL' != 'INCONCLUSIVE'
+- FAIL
++ INCONCLUSIVE
+
+
+======================================================================
+FAIL: test_native_timeout_does_not_establish_scientific_failure (__main__.RoundTwoTests.test_native_timeout_does_not_establish_scientific_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+{"status": "PASS", "tests_run": 94, "failures": 0, "errors": 0, "skipped": 0, "elapsed_s": 1.6375807000440545, "run_directory": "unit-runs/7c90437d4764492a8205499a0dfc9494", "source_hashes_unchanged": true}
+{"status": "PASS", "tests_run": 94, "failures": 0, "errors": 0, "skipped": 0, "elapsed_s": 1.8818783999886364, "run_directory": "unit-runs/229045be3e59425abd99346d0dbbf2ac", "source_hashes_unchanged": true}
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round2_repairs.py", line 14, in test_native_timeout_does_not_establish_scientific_failure
+    self.assertEqual(checker.combined_assessment({'status':'INCOMPLETE','failure_kind':'timeout'},complete(),native_items(),[])['status'],'INCONCLUSIVE')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'FAIL' != 'INCONCLUSIVE'
+- FAIL
++ INCONCLUSIVE
+
+
+----------------------------------------------------------------------
+Ran 10 tests in 3.830s
+
+FAILED (failures=3, errors=5)

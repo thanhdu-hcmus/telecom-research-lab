@@ -15,3 +15,88 @@ projects/m11-noma-qos/analysis/supplement/lint-results.json -text whitespace=cr-
 projects/m11-noma-qos/analysis/supplement/synthetic-timing-before-grid-vectorization.json -text whitespace=cr-at-eol
 projects/m11-noma-qos/analysis/supplement/synthetic-timing.json -text whitespace=cr-at-eol
 projects/m11-noma-qos/analysis/supplement/unit-test-results.json -text whitespace=cr-at-eol
+
+# Preserve exact byte bindings of the archived original P6 source-review evidence.
+projects/m11-noma-qos/analysis/source-review-01/run_p6_source_review.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/oracle-repair/freeze-receipt-20261012.json -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/original-supplement/lint-results.json -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/original-supplement/synthetic-timing-before-grid-vectorization.json -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/original-supplement/synthetic-timing.json -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/original-supplement/unit-test-results.json -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/inspect_p6_flag_boundary.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/integrate_p6_remaining_tests.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/p6_checker_extensions.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/repair_p6_additional_receipts.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/repair_p6_checker.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/repair_p6_flag_boundary.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/test_p6_additional_receipts.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/test_p6_flag_boundary.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/test_p6_parent_repairs.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/test_p6_source_coverage.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/physics-repair/run-1791784691000/full-suite-01.json -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/physics-repair/run-1791784691000/green-01.json -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/physics-repair/run-1791784691000/lint-final.json -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/physics-repair/run-1791784691000/physics-evidence.json -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/physics-repair/run-1791784691000/red-01.json -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/physics-repair/strict-flags-1791788000000/reproduction.json -text whitespace=cr-at-eol
+
+# Preserve exact archived source-review report and failure-log bytes.
+projects/m11-noma-qos/analysis/source-review-01/oracle-repair/green-final-20261012.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/oracle-repair/green-first-20261012.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/oracle-repair/lint-final-20261012.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/oracle-repair/lint-first-20261012.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/oracle-repair/red-20261012.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/oracle-repair/red-mask-edge-20261012.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/p6-additional-receipts-green.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/p6-additional-receipts-red.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/p6-current-integrated.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/p6-flag-boundary-green.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/p6-flag-boundary-red-valid.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/p6-flag-boundary-red.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/p6-parent-review-green-second.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/p6-parent-review-red.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/p6-review-illustrative-first.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/p6-review-integration-first.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/p6-review-integration-second.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/p6-source-coverage-red.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/framework-verification/p6-source-repair-framework.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/framework-verification/p6-source-repair-physics.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-02/run_p6_source_review.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-02/repair/fix_p6_round2_fixture.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-02/repair/fix_p6_round2_integration.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-02/repair/fix_p6_runner_test_import.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-02/repair/integrate_p6_round2_repairs.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-02/repair/p6-round2-coverage-first.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-02/repair/p6-round2-coverage-red-valid.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-02/repair/p6-round2-green-first.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-02/repair/p6-round2-red.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-02/repair/p6-runner-init-red.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-02/repair/repair_p6_round2.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-02/repair/repair_p6_runner_initialization.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-02/repair/test_p6_runner_initialization.py -text whitespace=cr-at-eol
+
+# Keep original diagnostic output whitespace as exact failure evidence.
+projects/m11-noma-qos/analysis/source-review-01/oracle-repair/red-20261012.txt -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+projects/m11-noma-qos/analysis/source-review-01/oracle-repair/red-mask-edge-20261012.txt -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+projects/m11-noma-qos/analysis/source-review-01/parent-repair/test_p6_flag_boundary.py -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+projects/m11-noma-qos/analysis/supplement/unit-runs/c2a8d16296fa42a3add61ef85782968b/junit.xml -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+projects/m11-noma-qos/analysis/supplement/unit-runs/c2a8d16296fa42a3add61ef85782968b/stdout.txt -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+
+# Preserve exact latest P6 review/repair artifact bytes.
+projects/m11-noma-qos/analysis/source-review-03/run_p6_source_review.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-03/repair/p6-round3-red.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-03/repair/repair_p6_round3.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-03/repair/test_p6_round3_repairs.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-03/repair/verify_p6_deterministic_lineage.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-03/repair/framework-verification/p6-round3-framework.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-03/repair/framework-verification/p6-round3-physics.txt -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-03/repair/repository-checks/audit_p6_source_repair_checksums.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-03/repair/repository-checks/prepare_p6_round4_authorization.py -text whitespace=cr-at-eol
+projects/m11-noma-qos/analysis/source-review-03/repair/repository-checks/sanitize_p6_runtime_transport.py -text whitespace=cr-at-eol
+
+# Preserve exact executed checksum-audit helper bytes, including original whitespace.
+projects/m11-noma-qos/analysis/source-review-03/repair/repository-checks/audit_p6_source_repair_checksums_v2.py -text whitespace=cr-at-eol,-blank-at-eol
+
+projects/m11-noma-qos/analysis/supplement/unit-runs/b564b49f97744862a3293623f1a4d73e/junit.xml -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+
+projects/m11-noma-qos/analysis/source-review-03/repair/repository-checks/check_p6_source_repair_index.py -text whitespace=cr-at-eol

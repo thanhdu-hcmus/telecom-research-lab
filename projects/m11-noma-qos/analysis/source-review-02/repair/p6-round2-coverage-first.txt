@@ -1,0 +1,45 @@
+test_empty_scenario_statistics_rejected (__main__.RoundTwoCoverageTests.test_empty_scenario_statistics_rejected) ... ok
+test_final_deadline_is_accounted_and_retained (__main__.RoundTwoCoverageTests.test_final_deadline_is_accounted_and_retained) ... ERROR
+test_redistributed_job_totals_rejected (__main__.RoundTwoCoverageTests.test_redistributed_job_totals_rejected) ... ok
+test_shaped_exact_inventory_is_accepted (__main__.RoundTwoCoverageTests.test_shaped_exact_inventory_is_accepted) ... ok
+test_stale_native_checks_do_not_describe_new_failed_attempt (__main__.RoundTwoCoverageTests.test_stale_native_checks_do_not_describe_new_failed_attempt) ... FAIL
+test_wrong_scenario_identity_rejected (__main__.RoundTwoCoverageTests.test_wrong_scenario_identity_rejected) ... ok
+
+======================================================================
+ERROR: test_final_deadline_is_accounted_and_retained (__main__.RoundTwoCoverageTests.test_final_deadline_is_accounted_and_retained)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\projects\m11-noma-qos\analysis\supplement\checker.py", line 1189, in execute
+    raise ValueError("deterministic table coverage")
+ValueError: deterministic table coverage
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round2_coverage.py", line 40, in test_final_deadline_is_accounted_and_retained
+    with self.assertRaisesRegex(ValueError,'deterministic table coverage'):checker.execute(p,options(max_total_seconds=50))
+                                                                           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\projects\m11-noma-qos\analysis\supplement\checker.py", line 1352, in execute
+    write_completion_receipt(directory, project, "execution-report.json")
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\projects\m11-noma-qos\analysis\supplement\checker.py", line 189, in write_completion_receipt
+    status=load(directory / report_name)["status"],
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'status'
+
+======================================================================
+FAIL: test_stale_native_checks_do_not_describe_new_failed_attempt (__main__.RoundTwoCoverageTests.test_stale_native_checks_do_not_describe_new_failed_attempt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_round2_coverage.py", line 31, in test_stale_native_checks_do_not_describe_new_failed_attempt
+    self.assertEqual(value['status'],'INCOMPLETE');self.assertNotEqual(value.get('failure_kind'),'numerical-contradiction')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'FAIL' != 'INCOMPLETE'
+- FAIL
++ INCOMPLETE
+
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.112s
+
+FAILED (failures=1, errors=1)

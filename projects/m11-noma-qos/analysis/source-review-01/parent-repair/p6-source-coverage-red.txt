@@ -1,0 +1,15 @@
+test_ready_review_cannot_omit_source_inventory (__main__.SourceCoverageTests.test_ready_review_cannot_omit_source_inventory) ... FAIL
+
+======================================================================
+FAIL: test_ready_review_cannot_omit_source_inventory (__main__.SourceCoverageTests.test_ready_review_cannot_omit_source_inventory)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_source_coverage.py", line 10, in test_ready_review_cannot_omit_source_inventory
+    with self.assertRaises(ValueError):checker.require_ready_source_review(project)
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 1 test in 0.026s
+
+FAILED (failures=1)

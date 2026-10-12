@@ -23,3 +23,7 @@ probes/work/
 .ruff_cache/
 config/sjr/*.csv
 tests/evals/work/
+
+# Encrypted runtime spawn-message transport is local evidence; sanitized metadata is committed.
+projects/m11-noma-qos/analysis/source-review-02/runtime-metadata.json
+projects/m11-noma-qos/analysis/source-review-03/runtime-metadata.json

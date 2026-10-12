@@ -1,0 +1,72 @@
+................................................................. [ 63%]
+.......F..............................                                   [100%]
+================================== FAILURES ===================================
+______ ParentReviewTests.test_native_timeout_retains_stdout_and_receipt _______
+
+self = <test_supplement.ParentReviewTests testMethod=test_native_timeout_retains_stdout_and_receipt>
+
+    def test_native_timeout_retains_stdout_and_receipt(self):
+        import subprocess
+    
+        with tempfile.TemporaryDirectory() as t:
+            with (
+                mock.patch.object(checker, "HERE", Path(t)),
+                mock.patch.object(checker, "require_ready_source_review", create=True),
+                mock.patch(
+                    "lab.verification.verify",
+                    side_effect=subprocess.TimeoutExpired(
+                        "fixture", 1, output=b"partial-out", stderr=b"partial-err"
+                    ),
+                ),
+            ):
+>               report = checker.run_native(Path(t))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+projects\m11-noma-qos\analysis\supplement\test_supplement.py:1244: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+projects\m11-noma-qos\analysis\supplement\checker.py:275: in run_native
+    save(directory / "native-receipt.json", report)
+lab\io.py:45: in save
+    json.dumps(value, indent=2, ensure_ascii=False) + "\n"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\ADMIN\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\json\__init__.py:238: in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+C:\Users\ADMIN\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\json\encoder.py:200: in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\ADMIN\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\json\encoder.py:261: in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <json.encoder.JSONEncoder object at 0x0000023C7FF5F890>
+o = <MagicMock name='require_ready_source_review().__getitem__()' id='2458867404816'>
+
+    def default(self, o):
+        """Implement this method in a subclass such that it returns
+        a serializable object for ``o``, or calls the base implementation
+        (to raise a ``TypeError``).
+    
+        For example, to support arbitrary iterators, you could
+        implement default like this::
+    
+            def default(self, o):
+                try:
+                    iterable = iter(o)
+                except TypeError:
+                    pass
+                else:
+                    return list(iterable)
+                # Let the base class default method raise the TypeError
+                return super().default(o)
+    
+        """
+>       raise TypeError(f'Object of type {o.__class__.__name__} '
+                        f'is not JSON serializable')
+E       TypeError: Object of type MagicMock is not JSON serializable
+
+C:\Users\ADMIN\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\json\encoder.py:180: TypeError
+=========================== short test summary info ===========================
+FAILED projects/m11-noma-qos/analysis/supplement/test_supplement.py::ParentReviewTests::test_native_timeout_retains_stdout_and_receipt
+1 failed, 102 passed, 7 subtests passed in 1.81s

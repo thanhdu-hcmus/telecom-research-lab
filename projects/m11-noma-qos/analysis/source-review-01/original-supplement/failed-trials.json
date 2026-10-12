@@ -1,0 +1,16 @@
+{
+  "trials": [
+    {
+      "phase": "initial isolated unit run",
+      "command": ".venv/Scripts/python.exe -m unittest discover -s projects/m11-noma-qos/analysis/supplement -p test_supplement.py -v",
+      "tests_run": 27,
+      "failures": 1,
+      "errors": 0,
+      "test": "PhysicsTests.test_bracket_not_grid_miss",
+      "observed": "Original affine weak-message residual at strong site equals Fraction(2,1), not test expectation Fraction(3,1).",
+      "classification": "incorrect test expectation",
+      "correction": "Expected affine residual corrected to 2; original independent calculation retained.",
+      "canonical_execution": false
+    }
+  ]
+}

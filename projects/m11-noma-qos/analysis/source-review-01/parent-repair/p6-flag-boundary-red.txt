@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_flag_boundary.py", line 4, in <module>
+    from test_supplement import fixture,audit_fixture,oracle_fixture,normalize
+ImportError: cannot import name 'normalize' from 'test_supplement' (D:\02_EDUCATION\THESIS\telecom-research-lab\projects\m11-noma-qos\analysis\supplement\test_supplement.py)

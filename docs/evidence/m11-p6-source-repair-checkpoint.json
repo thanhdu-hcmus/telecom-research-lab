@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-10-12T10:29:55.020945+00:00",
+  "status": "LOCAL_REPAIRS_TESTED_SOURCE_REVIEW_PENDING_APPROVAL",
+  "supplemental_junit_cases": 117,
+  "framework_tests": 97,
+  "project_physics_tests": 26,
+  "lint": "PASS",
+  "native_secret_check": {
+    "status": "PASS",
+    "files_scanned": 2487,
+    "findings": []
+  },
+  "index_bindings": {
+    "timestamp": "2026-10-12T10:28:55.857322+00:00",
+    "status": "PASS",
+    "indexed_files_checked": 1188,
+    "approved_index_bindings": 1002,
+    "owned_files_checked": 186,
+    "locked_inputs_checked": 51,
+    "locked_inputs_unchanged": true,
+    "round4_packet_source_bindings_current": true,
+    "round4_review_transmitted": false,
+    "canonical_full_verification": false,
+    "raw_encrypted_runtime_transport_excluded": true,
+    "mismatches": []
+  },
+  "locked_inputs_unchanged": true,
+  "source_review_rounds": {
+    "authorized": 3,
+    "completed": 3,
+    "recommendations": [
+      "revise",
+      "revise",
+      "revise"
+    ]
+  },
+  "additional_source_review": {
+    "status": "PREPARED_NOT_AUTHORIZED_NOT_TRANSMITTED",
+    "packet": "projects/m11-noma-qos/analysis/P6-code-review-round4-packet.json",
+    "packet_sha256": "bc8ca0505fe94107ba8970f97c46c55e72cb9aa8144a5d479795978cd2c4ea9f",
+    "bytes": 388193
+  },
+  "canonical_full_verification": false,
+  "scientific_gate_approval": false
+}

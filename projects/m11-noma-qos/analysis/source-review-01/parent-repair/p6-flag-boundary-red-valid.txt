@@ -1,0 +1,26 @@
+test_infeasible_oracle_optimality_is_not_applicable (__main__.FlagBoundaryTests.test_infeasible_oracle_optimality_is_not_applicable) ... FAIL
+test_material_strict_flag_discrepancy_rejected (__main__.FlagBoundaryTests.test_material_strict_flag_discrepancy_rejected) ... ok
+test_verified_serialized_strict_flag_can_cross_one_ulp (__main__.FlagBoundaryTests.test_verified_serialized_strict_flag_can_cross_one_ulp) ... FAIL
+
+======================================================================
+FAIL: test_infeasible_oracle_optimality_is_not_applicable (__main__.FlagBoundaryTests.test_infeasible_oracle_optimality_is_not_applicable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_flag_boundary.py", line 22, in test_infeasible_oracle_optimality_is_not_applicable
+    self.assertEqual(out['optimality_not_established_counts']['base'],0)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_verified_serialized_strict_flag_can_cross_one_ulp (__main__.FlagBoundaryTests.test_verified_serialized_strict_flag_can_cross_one_ulp)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_flag_boundary.py", line 11, in test_verified_serialized_strict_flag_can_cross_one_ulp
+    audit=audit_fixture(r,m,v);self.assertTrue(audit.ok(),audit.counts)
+                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'candidate_constraints_pass': 2}
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.009s
+
+FAILED (failures=2)

@@ -1,9 +1,9 @@
-# P6 independent supplemental checker — prepared only
+# P6 independent supplemental checker â€” prepared only
 
 This directory contains independently written calculations from the approved
 model/protocol and raw-output schema. Preparation and isolated unit tests do not
 constitute verification of the canonical scientific results. Full execution
-must follow the parent agent's enforced independent artifact-only source review.
+must follow an enforced independent artifact-only source review that binds all 19 approved source files. Round 1 requested revisions; round 2 is reviewing the revised source. No full canonical verification has run.
 
 Run from the repository root in the existing pinned environment:
 
@@ -11,7 +11,8 @@ Run from the repository root in the existing pinned environment:
 $env:PYTHONDONTWRITEBYTECODE = '1'
 .venv/Scripts/python.exe projects/m11-noma-qos/analysis/supplement/run_unit_tests.py
 .venv/Scripts/python.exe projects/m11-noma-qos/analysis/supplement/checker.py --prepare
-# After independent review:
+# After an enforced source-ready receipt:
+.venv/Scripts/python.exe projects/m11-noma-qos/analysis/supplement/checker.py --native
 .venv/Scripts/python.exe projects/m11-noma-qos/analysis/supplement/checker.py --execute
 ```
 
@@ -48,7 +49,7 @@ original residual are checked. This certifies zero, equal-gain, singleton and
 very narrow integer cases without using the author's L/U classifier.
 
 For noninteger QoS, disjoint bracket/rate separation can certify numerical
-infeasibility; an inner overlap supplies numerical feasibility. Overlapping
+infeasibility; an inner overlap wider than SPLIT supplies numerical feasibility. An uncertified narrower overlap, overlapping
 root brackets and rate-band ambiguity remain unresolved. The independent
 ambiguity ledger is separate from stored categories, including when the author
 reported a resolved row that this checker cannot settle. Diagnostic recorded
@@ -82,8 +83,7 @@ OS resident-memory measurement. Runtime and traced memory appear in the report.
 Budget exhaustion or an exception is INCOMPLETE with an execution report.
 No timing estimate is a measured canonical runtime.
 
-Future execution writes only here: execution.jsonl, ambiguities.jsonl, and
-execution-report.json. Error counts cover all occurrences; up to 2000 detailed
+Execution creates a unique runs/<timestamp>-<uuid>-supplement directory for execution.jsonl, ambiguities.jsonl, execution-report.json and claim-lineage.json. Native attempts, combined assessments and standalone lineage runs also use separate unique receipt directories. Error counts cover all occurrences; up to 2000 detailed
 errors are retained to bound memory. Inputs and supplemental sources are bound
 before execution and rechecked afterward, including on failure. JSON forbids
 NaN in reports; CSV NaN is allowed only where an undefined value is expected.
@@ -108,18 +108,13 @@ INCOMPLETE. When all comparable fields agree and only the declared unresolved
 policy remains, the status is CHECKED_WITH_DECLARED_UNRESOLVED. The preparation
 inventory records the five stored unresolved deterministic rows explicitly.
 Neither status establishes those rows mathematically or constitutes a full
-scientific PASS. Setting summaries use the stored n11 mask; independent category
-counts and unsupported resolved predicates appear separately. The parent handles native lab verification and claim-lineage receipts;
-those are not executed or approved by this supplemental preparation.
+scientific PASS. Comparison with the retained author statistics uses its stored n11 mask, checked against independent original-constraint categories. Executable claim lineage uses a separate independently resolved both-feasible mask, with every manifest and raw-file digest bound. Unsupported stored predicates prevent completion. The analysis-only combined assessment retains native receipts and emits scoped PASS, FAIL or INCONCLUSIVE items; any retained uncertainty or insufficient precision prevents PASS.
 
 Context7 documentation was fetched for NumPy Generator/PCG64/SeedSequence and
-SciPy Student-t/beta quantiles before library-specific implementation. No
-author findings, engineering/design/review/provenance narrative, analytic,
-experiment, aggregate or native project verifier source was read.
+SciPy Student-t/beta quantiles before library-specific implementation. The original independent calculations excluded author narratives and analytic, experiment and aggregate source. The bounded external source review includes the pinned native verifier and framework entry point to assess interoperability. The parent uses the resulting findings for analysis-only repairs.
 
 Raw SINR differences are dimensionless diagnostics; comparisons use their
-implied log1p rates and the declared rate tolerance. Probabilities use exact
-count/quantile consistency. Relative CI values must satisfy their reported
+implied log1p rates and the declared rate tolerance. Event counts, denominators and point estimates remain exact. Equivalent exact-interval implementations use a dimensionless engineering roundoff allowance of 64 ULPs at one for interval endpoints. This does not change scientific or solver tolerances. Relative CI values must satisfy their reported
 mean/halfwidth identity and their implied halfwidth in rate units. Finite
 attempted candidates are checked even when the accepted optimum is undefined.
 
@@ -128,3 +123,38 @@ including the large tracing overhead; it excludes IO, native guards, hashing and
 shared replay. Runtime-budget exhaustion remains INCOMPLETE. Initial failed
 test/lint receipts and the initial timing estimate are preserved. No readiness
 for a full canonical run is claimed.
+
+## Source-review repairs and retained evidence
+
+The current isolated suite has 87 tests and seven subtests (94 JUnit cases), with
+no failures or skips. Its unique unit-runs directory records source hashes and
+full outputs. These checks include the already approved 24 illustrative rows;
+they establish bounded schema interoperability only. Original source, receipts,
+failed tests, review findings and repair evidence remain in source-review-01.
+The earlier preparation.json is an immutable historical preparation checkpoint.
+It does not describe the newly revised code or establish current readiness.
+
+Candidate diagnostic flags are checked against verified serialized rates. Their
+independently recomputed predicates are checked separately; only a discrepancy
+within 64 ULPs of each rate can be reported as binary64 diagnostic roundoff.
+Original constraint adjudication and the declared tolerances remain unchanged.
+Invalid flag semantics and material disagreement fail. Grid membership uses an
+integer index plus the approved split tolerance, then reevaluates the recorded
+split. Selected endpoint and weak-target activation are checked even for equal
+gains. Positive product underflow is unsupported, never exact zero capacity.
+
+Shared replay compares analytic, base, tighter and independent objectives and
+classifications. Missing feasible optimality and unresolved classifications are
+explicit; optimality is not applicable on a certified infeasible case. Those
+counts are carried into the combined assessment. None of these numerical checks
+establishes a universal real-input proof.
+
+Standalone lineage recipes are executable with --lineage-recipe. They enforce
+the independent endpoint and original constraints, stream all bound manifests,
+retain null for an empty denominator, and leave a unique receipt on failure.
+An output marked COMPUTED is a computation receipt, not scientific acceptance.
+Lineage from a failed audit is marked UNVERIFIED_DUE_TO_ERRORS. The --assess
+operation writes a unique combined-assessment.json and combined-verification.yaml.
+Native scientific verification continues through the unmodified lab API and its
+ordinary integrity guards. Budget checks are cooperative, including around
+hashing and replay; individual native calls may overshoot a checkpoint.

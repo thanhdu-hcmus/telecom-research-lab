@@ -1,0 +1,13 @@
+id: 2026-10-12-0029
+timestamp: '2026-10-12T05:34:18.073911+00:00'
+phase: P6
+summary: PI explicitly approved the exact277412-byte P6 source-review packet (19 source
+  artifacts and24 illustrative rows) for a separate authenticated OpenAI Codex session
+  on the existing account, up to three read-only source-review rounds and routine
+  analysis-only fixes. Numerical-result review requires a later exact packet; G6/G7
+  scientific decisions remain PI-only.
+provenance: user
+evidence:
+  analysis/P6-code-review-authorization.json: 85bbe7cbb35ea20dd08f9dbe1974103132bfbda0328dd757746c256c113d2adb
+  analysis/P6-code-review-payload.json: 82ee85814613e1bd012f9e6733acbd6a0693ff10f37a3531a68c0489a0560b2f
+  to_human/P6-code-review-authorization.md: b17754f9c00b065be77e969e58ef4f6061a8bf5c9ff2ef05ec3fbda031da2fd4

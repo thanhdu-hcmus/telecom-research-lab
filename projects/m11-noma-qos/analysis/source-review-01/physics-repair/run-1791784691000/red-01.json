@@ -1,0 +1,6 @@
+{
+  "expected_failure": true,
+  "command": "python -m unittest test_supplement.ReviewPhysicsRepairTests -v",
+  "implementation_changed": false,
+  "exit_code": 1
+}

@@ -1,0 +1,25 @@
+.........................................................F....... [ 86%]
+..........                                                               [100%]
+================================== FAILURES ===================================
+_________ test_shared_solver_round_trip_is_only_labelled_reproduction _________
+
+    def test_shared_solver_round_trip_is_only_labelled_reproduction():
+        checks, raw, params, _ = synthetic_replay()
+>       solve = load_shared(SUPPLEMENT.parents[1] / "sim" / "src" / "oracle.py")
+                            ^^^^^^^^^^
+E       NameError: name 'SUPPLEMENT' is not defined
+
+projects\m11-noma-qos\analysis\supplement\test_supplement.py:1105: NameError
+============================== warnings summary ===============================
+.venv\Lib\site-packages\_pytest\cacheprovider.py:469
+  D:\02_EDUCATION\THESIS\telecom-research-lab\.venv\Lib\site-packages\_pytest\cacheprovider.py:469: PytestCacheWarning: could not create cache path D:\02_EDUCATION\THESIS\telecom-research-lab\.pytest_cache\v\cache\nodeids: [WinError 5] Access is denied: 'D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+.venv\Lib\site-packages\_pytest\cacheprovider.py:423
+  D:\02_EDUCATION\THESIS\telecom-research-lab\.venv\Lib\site-packages\_pytest\cacheprovider.py:423: PytestCacheWarning: could not create cache path D:\02_EDUCATION\THESIS\telecom-research-lab\.pytest_cache\v\cache\lastfailed: [WinError 5] Access is denied: 'D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED projects/m11-noma-qos/analysis/supplement/test_supplement.py::test_shared_solver_round_trip_is_only_labelled_reproduction
+1 failed, 74 passed, 2 warnings, 7 subtests passed in 1.53s

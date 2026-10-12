@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-10-12T05:51:06.346528+00:00",
+  "review": "analysis/source-review-01/findings.json",
+  "status": "REPAIRING_ANALYSIS_ONLY",
+  "assignments": {
+    "results_verifier": [
+      "F04",
+      "F06",
+      "F07",
+      "F11"
+    ],
+    "parent": [
+      "F01",
+      "F02",
+      "F03",
+      "F05",
+      "F08",
+      "F09",
+      "F10",
+      "F12"
+    ]
+  },
+  "guardrails": [
+    "No edits to locked sim/model/protocol/framework sources or numerical tolerance/cap settings.",
+    "Retain original code, receipts and failed trials.",
+    "Write failing isolated tests before routine fixes.",
+    "No full canonical execution before passing enforced source review."
+  ],
+  "old_source_bindings": {
+    "benchmark_synthetic.py": "c8b20f4600859248c980a120dae535cb23bc61bf587a39ee4a17b12c0ffb2830",
+    "checker.py": "58f4385313c57ef1543d3e477937eda118c6661a79b8f2c31397934b3b9e1213",
+    "failed-trials.json": "f8eb4f45a8375d6d41b1f02f3097a3dbb879100d035d0509fe7dc373ad8cc9eb",
+    "format-final.log": "9fa2e30088122b883ebbf1c300359d4a0c9d09c988b20631e8625a40425a9723",
+    "independent.py": "99f38944495bd628520c1bc2f08525e644fc34bb8841b42786125b00100229ba",
+    "lint-final.log": "a4443afdcfb6d7363adb285762515ccf7cf50473b1a05c20c1a50f6bed4d26b0",
+    "lint-initial.log": "6735a99e59aa9bab69868a966758addca3855e938183d8efe8ff2dc9d2ca076b",
+    "lint-results.json": "b91490020cf16b5a6eceba546a5debae6aac66747254f7885998142c2d9120b2",
+    "preparation.json": "6752d71d93eff2ddcd4c73c6b3c0278c35f79ec6081425cd5ff2963a3114ee24",
+    "prepare-command.log": "36a3ef50ee524b5c56f88c9878c63a1a3d8338c41b0ff9e774293ada42ca5225",
+    "README.md": "7c3e3c56810ad5103d0cf54e4eb7ff829c8a9923c068d1eb5f96641a6261e0a8",
+    "replay.py": "6ab84a949283b696d3bd271ca0297ae6827fd35abecb486230d7899cdef0f0b3",
+    "run_unit_tests.py": "b444a232536035648ea1b8bd136d2e538a0b8826dd41011fcdb211d741381d72",
+    "synthetic-timing-before-grid-vectorization.json": "3949621e55e62aa510cd666960064f63e3ab6f23006aa7d3137980452a1b0a29",
+    "synthetic-timing.json": "eb82271fa73f145badc8b5636895d3d5ecebfef79aba398d5842ba4d02a45135",
+    "test_supplement.py": "3683070638028bad3e3e12d0eb14b6b1666af31285be1b5ab0cdf697a0ecbeb7",
+    "unit-test-results.json": "39ac9c1ac3ababacdba223790a76566b76a9886f18f1c9487f42917faf53a0c3",
+    "unit-tests-command.log": "06d10bcc25ed0a3b6c61bdeae698b7d8b6b07d145b91f079f6eb2aa5b7c985c9",
+    "unit-tests.log": "c4424477a580731a9d2b4ab95beb7897be3183ec42b5f66456573d5008b550f8"
+  }
+}

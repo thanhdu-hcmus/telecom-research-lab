@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "independent.py",
+    "test_supplement.py"
+  ],
+  "lint_exit_code": 0,
+  "format_exit_code": 0
+}

@@ -1,0 +1,198 @@
+{
+  "hypothesis": "A strict bit comparison can flip between mathematically equivalent approved original-rate equations when their evaluated endpoint residual is within one ulp.",
+  "synthetic_only": true,
+  "records": [
+    {
+      "inputs": [
+        1.0,
+        1.0,
+        4.0,
+        0.25,
+        0.0
+      ],
+      "a": 0.6817928305074291,
+      "original_sinr_log1p": 0.24999999999999997,
+      "original_equivalent_log_quotient": 0.24999999999999994,
+      "direct_flag": false,
+      "quotient_flag": false,
+      "rate_difference": -2.7755575615628914e-17,
+      "rate_difference_ulps": -0.5
+    },
+    {
+      "inputs": [
+        1.0,
+        1.0,
+        4.0,
+        0.5,
+        0.0
+      ],
+      "a": 0.4142135623730951,
+      "original_sinr_log1p": 0.5,
+      "original_equivalent_log_quotient": 0.4999999999999999,
+      "direct_flag": true,
+      "quotient_flag": false,
+      "rate_difference": -1.1102230246251565e-16,
+      "rate_difference_ulps": -1.0
+    },
+    {
+      "inputs": [
+        1.0,
+        3.0,
+        12.0,
+        0.25,
+        0.0
+      ],
+      "a": 0.7878618870049526,
+      "original_sinr_log1p": 0.2500000000000001,
+      "original_equivalent_log_quotient": 0.24999999999999994,
+      "direct_flag": true,
+      "quotient_flag": false,
+      "rate_difference": -1.6653345369377348e-16,
+      "rate_difference_ulps": -3.0
+    },
+    {
+      "inputs": [
+        1.0,
+        3.0,
+        12.0,
+        0.5,
+        0.0
+      ],
+      "a": 0.6094757082487301,
+      "original_sinr_log1p": 0.5,
+      "original_equivalent_log_quotient": 0.4999999999999999,
+      "direct_flag": true,
+      "quotient_flag": false,
+      "rate_difference": -1.1102230246251565e-16,
+      "rate_difference_ulps": -1.0
+    },
+    {
+      "inputs": [
+        1.0,
+        4.0,
+        16.0,
+        0.25,
+        0.0
+      ],
+      "a": 0.8011205190671432,
+      "original_sinr_log1p": 0.25,
+      "original_equivalent_log_quotient": 0.2500000000000002,
+      "direct_flag": true,
+      "quotient_flag": true,
+      "rate_difference": 2.220446049250313e-16,
+      "rate_difference_ulps": 4.0
+    },
+    {
+      "inputs": [
+        1.0,
+        4.0,
+        16.0,
+        0.5,
+        0.0
+      ],
+      "a": 0.6338834764831844,
+      "original_sinr_log1p": 0.5,
+      "original_equivalent_log_quotient": 0.4999999999999999,
+      "direct_flag": true,
+      "quotient_flag": false,
+      "rate_difference": -1.1102230246251565e-16,
+      "rate_difference_ulps": -1.0
+    },
+    {
+      "inputs": [
+        1.0,
+        10.0,
+        40.0,
+        0.25,
+        0.0
+      ],
+      "a": 0.824986056779086,
+      "original_sinr_log1p": 0.25000000000000006,
+      "original_equivalent_log_quotient": 0.24999999999999994,
+      "direct_flag": true,
+      "quotient_flag": false,
+      "rate_difference": -1.1102230246251565e-16,
+      "rate_difference_ulps": -2.0
+    },
+    {
+      "inputs": [
+        1.0,
+        10.0,
+        40.0,
+        0.5,
+        0.0
+      ],
+      "a": 0.6778174593052023,
+      "original_sinr_log1p": 0.49999999999999994,
+      "original_equivalent_log_quotient": 0.4999999999999999,
+      "direct_flag": false,
+      "quotient_flag": false,
+      "rate_difference": -5.551115123125783e-17,
+      "rate_difference_ulps": -0.5
+    },
+    {
+      "inputs": [
+        1.0,
+        40.0,
+        160.0,
+        0.25,
+        0.0
+      ],
+      "a": 0.8369188256350574,
+      "original_sinr_log1p": 0.25000000000000006,
+      "original_equivalent_log_quotient": 0.24999999999999994,
+      "direct_flag": true,
+      "quotient_flag": false,
+      "rate_difference": -1.1102230246251565e-16,
+      "rate_difference_ulps": -2.0
+    },
+    {
+      "inputs": [
+        1.0,
+        40.0,
+        160.0,
+        0.5,
+        0.0
+      ],
+      "a": 0.6997844507162113,
+      "original_sinr_log1p": 0.49999999999999983,
+      "original_equivalent_log_quotient": 0.4999999999999999,
+      "direct_flag": false,
+      "quotient_flag": false,
+      "rate_difference": 5.551115123125783e-17,
+      "rate_difference_ulps": 0.5
+    },
+    {
+      "inputs": [
+        1.0,
+        100.0,
+        400.0,
+        0.25,
+        0.0
+      ],
+      "a": 0.8393053794062517,
+      "original_sinr_log1p": 0.24999999999999997,
+      "original_equivalent_log_quotient": 0.24999999999999994,
+      "direct_flag": false,
+      "quotient_flag": false,
+      "rate_difference": -2.7755575615628914e-17,
+      "rate_difference_ulps": -0.5
+    },
+    {
+      "inputs": [
+        1.0,
+        100.0,
+        400.0,
+        0.5,
+        0.0
+      ],
+      "a": 0.7041778489984132,
+      "original_sinr_log1p": 0.4999999999999996,
+      "original_equivalent_log_quotient": 0.49999999999999967,
+      "direct_flag": false,
+      "quotient_flag": false,
+      "rate_difference": 5.551115123125783e-17,
+      "rate_difference_ulps": 0.5
+    }
+  ]
+}

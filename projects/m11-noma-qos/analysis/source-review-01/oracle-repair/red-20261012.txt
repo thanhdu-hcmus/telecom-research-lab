@@ -1,0 +1,173 @@
+FFFFFFFFFFF                                                              [100%]
+================================== FAILURES ===================================
+_________________ test_feasible_indicator_drift_fails_exactly _________________
+
+    def test_feasible_indicator_drift_fails_exactly():
+        audit = Audit()
+        recursive_compare(audit, "oracle.feasible", 1.0 - RATE / 2, 1.0, 0)
+>       assert "oracle.feasible" in audit.counts
+E       AssertionError: assert 'oracle.feasible' in {}
+E        +  where {} = <independent.Audit object at 0x000002298EDFE270>.counts
+
+projects\m11-noma-qos\analysis\source-review-01\oracle-repair\test_oracle_repair.py:71: AssertionError
+______ test_nonaccepted_final_rate_is_not_an_attempted_rate[infeasible] _______
+
+status = 'infeasible'
+
+    @pytest.mark.parametrize("status", ["infeasible", "unresolved"])
+    def test_nonaccepted_final_rate_is_not_an_attempted_rate(status):
+        record = oracle_fixture([1, 1, 4, 0, 0], 0.25, status)
+        record["sum_rate"] = record["candidate_sum_rate"]
+        audit = Audit()
+        check_oracle_original(audit, "oracle", record, [1, 1, 4, 0, 0], 0)
+>       assert "oracle.sum_rate.mask" in audit.counts
+E       AssertionError: assert 'oracle.sum_rate.mask' in {}
+E        +  where {} = <independent.Audit object at 0x000002298EDCF610>.counts
+
+projects\m11-noma-qos\analysis\source-review-01\oracle-repair\test_oracle_repair.py:80: AssertionError
+______ test_nonaccepted_final_rate_is_not_an_attempted_rate[unresolved] _______
+
+status = 'unresolved'
+
+    @pytest.mark.parametrize("status", ["infeasible", "unresolved"])
+    def test_nonaccepted_final_rate_is_not_an_attempted_rate(status):
+        record = oracle_fixture([1, 1, 4, 0, 0], 0.25, status)
+        record["sum_rate"] = record["candidate_sum_rate"]
+        audit = Audit()
+        check_oracle_original(audit, "oracle", record, [1, 1, 4, 0, 0], 0)
+>       assert "oracle.sum_rate.mask" in audit.counts
+E       AssertionError: assert 'oracle.sum_rate.mask' in {}
+E        +  where {} = <independent.Audit object at 0x00000229DE69E710>.counts
+
+projects\m11-noma-qos\analysis\source-review-01\oracle-repair\test_oracle_repair.py:80: AssertionError
+_______________ test_absent_attempt_cannot_keep_candidate_rate ________________
+
+    def test_absent_attempt_cannot_keep_candidate_rate():
+        record = oracle_fixture([1, 1, 4, 0, 0], None, "unresolved")
+        record["candidate_rw"] = 0.0
+        audit = Audit()
+        check_oracle_original(audit, "oracle", record, [1, 1, 4, 0, 0], 0)
+>       assert "oracle.candidate_rw.mask" in audit.counts
+E       AssertionError: assert 'oracle.candidate_rw.mask' in {}
+E        +  where {} = <independent.Audit object at 0x000002298EDE6060>.counts
+
+projects\m11-noma-qos\analysis\source-review-01\oracle-repair\test_oracle_repair.py:88: AssertionError
+_______ test_shared_reproduction_does_not_endorse_poor_accepted_optimum _______
+
+    def test_shared_reproduction_does_not_endorse_poor_accepted_optimum():
+        args = synthetic_replay(0.25, 0.25)
+        audit = Audit()
+        result = replay_job(*args, audit)
+>       assert "oracle.agreement.analytic_base.objective" in audit.counts
+E       AssertionError: assert 'oracle.agreement.analytic_base.objective' in {}
+E        +  where {} = <independent.Audit object at 0x00000229DE6BC9D0>.counts
+
+projects\m11-noma-qos\analysis\source-review-01\oracle-repair\test_oracle_repair.py:95: AssertionError
+________ test_direct_base_tighter_sensitivity_is_a_separate_comparison ________
+
+    def test_direct_base_tighter_sensitivity_is_a_separate_comparison():
+        args = synthetic_replay(1.0, 0.75)
+        audit = Audit()
+        result = replay_job(*args, audit)
+>       assert "oracle.agreement.base_tighter.objective" in audit.counts
+E       AssertionError: assert 'oracle.agreement.base_tighter.objective' in {}
+E        +  where {} = <independent.Audit object at 0x00000229DE66FE30>.counts
+
+projects\m11-noma-qos\analysis\source-review-01\oracle-repair\test_oracle_repair.py:104: AssertionError
+_________________ test_resolved_classification_conflict_fails _________________
+
+    def test_resolved_classification_conflict_fails():
+        args = synthetic_replay(None, None, "infeasible")
+        audit = Audit()
+        replay_job(*args, audit)
+>       assert "oracle.agreement.analytic_base.status" in audit.counts
+E       AssertionError: assert 'oracle.agreement.analytic_base.status' in {}
+E        +  where {} = <independent.Audit object at 0x00000229DE662E00>.counts
+
+projects\m11-noma-qos\analysis\source-review-01\oracle-repair\test_oracle_repair.py:112: AssertionError
+________ test_unresolved_replay_preserves_uncertainty_and_transitions _________
+
+    def test_unresolved_replay_preserves_uncertainty_and_transitions():
+        checks, raw, params, solve = synthetic_replay(None, 1.0, "unresolved")
+    
+        def transition_solver(*values, **policy):
+            return oracle_fixture(values, None, "unresolved", **policy) if policy[
+                "rate_tolerance"] == RATE else oracle_fixture(values, 1.0, **policy)
+    
+        checks[0]["tighter_oracle"] = transition_solver(
+            *checks[0]["inputs"], rate_tolerance=RATE / 10, split_tolerance=SPLIT / 10,
+            objective_tolerance=OBJECTIVE / 10)
+        audit = Audit()
+        result = replay_job(checks, raw, params, transition_solver, audit)
+>       assert result["base_statuses"] == {"unresolved": 1}
+               ^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'base_statuses'
+
+projects\m11-noma-qos\analysis\source-review-01\oracle-repair\test_oracle_repair.py:128: KeyError
+_______________ test_tighter_gap_acceptance_uses_tighter_policy _______________
+
+    def test_tighter_gap_acceptance_uses_tighter_policy():
+        checks, raw, params, solve = synthetic_replay()
+        checks[0]["tighter_oracle"]["objective_gap_bound"] = OBJECTIVE / 2
+    
+        def oversized_gap(*values, **policy):
+            record = solve(*values, **policy)
+            if policy["rate_tolerance"] < RATE:
+                record["objective_gap_bound"] = OBJECTIVE / 2
+            return record
+    
+        audit = Audit()
+        replay_job(checks, raw, params, oversized_gap, audit)
+>       assert "tighter_oracle.objective_gap_bound.acceptance" in audit.counts
+E       AssertionError: assert 'tighter_oracle.objective_gap_bound.acceptance' in {}
+E        +  where {} = <independent.Audit object at 0x00000229DE6EF050>.counts
+
+projects\m11-noma-qos\analysis\source-review-01\oracle-repair\test_oracle_repair.py:149: AssertionError
+____________ test_unsupported_independent_boundary_stays_explicit _____________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000229DE6BDF30>
+
+    def test_unsupported_independent_boundary_stays_explicit(monkeypatch):
+        import replay
+    
+>       monkeypatch.setattr(replay, "noma_adjudicate", lambda inputs: dict(
+            status="unresolved", certificate="synthetic unsupported boundary", low=None, high=None))
+E       AttributeError: <module 'replay' from 'D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\replay.py'> has no attribute 'noma_adjudicate'
+
+projects\m11-noma-qos\analysis\source-review-01\oracle-repair\test_oracle_repair.py:155: AttributeError
+____________ test_budget_guard_stops_replay_with_deadline_failure _____________
+
+    def test_budget_guard_stops_replay_with_deadline_failure():
+        checks, raw, params, solve = synthetic_replay()
+    
+        def deadline():
+            raise TimeoutError("synthetic replay deadline")
+    
+        with pytest.raises(TimeoutError, match="synthetic replay deadline"):
+>           replay_job(copy.deepcopy(checks), raw, params, solve, Audit(), budget_check=deadline)
+E           TypeError: replay_job() got an unexpected keyword argument 'budget_check'
+
+projects\m11-noma-qos\analysis\source-review-01\oracle-repair\test_oracle_repair.py:172: TypeError
+============================== warnings summary ===============================
+.venv\Lib\site-packages\_pytest\cacheprovider.py:469
+  D:\02_EDUCATION\THESIS\telecom-research-lab\.venv\Lib\site-packages\_pytest\cacheprovider.py:469: PytestCacheWarning: cache could not write path D:\02_EDUCATION\THESIS\telecom-research-lab\.pytest_cache\v\cache\nodeids: [Errno 13] Permission denied: 'D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.pytest_cache\\v\\cache\\nodeids'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+.venv\Lib\site-packages\_pytest\cacheprovider.py:423
+  D:\02_EDUCATION\THESIS\telecom-research-lab\.venv\Lib\site-packages\_pytest\cacheprovider.py:423: PytestCacheWarning: could not create cache path D:\02_EDUCATION\THESIS\telecom-research-lab\.pytest_cache\v\cache\lastfailed: [WinError 5] Access is denied: 'D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED projects/m11-noma-qos/analysis/source-review-01/oracle-repair/test_oracle_repair.py::test_feasible_indicator_drift_fails_exactly
+FAILED projects/m11-noma-qos/analysis/source-review-01/oracle-repair/test_oracle_repair.py::test_nonaccepted_final_rate_is_not_an_attempted_rate[infeasible]
+FAILED projects/m11-noma-qos/analysis/source-review-01/oracle-repair/test_oracle_repair.py::test_nonaccepted_final_rate_is_not_an_attempted_rate[unresolved]
+FAILED projects/m11-noma-qos/analysis/source-review-01/oracle-repair/test_oracle_repair.py::test_absent_attempt_cannot_keep_candidate_rate
+FAILED projects/m11-noma-qos/analysis/source-review-01/oracle-repair/test_oracle_repair.py::test_shared_reproduction_does_not_endorse_poor_accepted_optimum
+FAILED projects/m11-noma-qos/analysis/source-review-01/oracle-repair/test_oracle_repair.py::test_direct_base_tighter_sensitivity_is_a_separate_comparison
+FAILED projects/m11-noma-qos/analysis/source-review-01/oracle-repair/test_oracle_repair.py::test_resolved_classification_conflict_fails
+FAILED projects/m11-noma-qos/analysis/source-review-01/oracle-repair/test_oracle_repair.py::test_unresolved_replay_preserves_uncertainty_and_transitions
+FAILED projects/m11-noma-qos/analysis/source-review-01/oracle-repair/test_oracle_repair.py::test_tighter_gap_acceptance_uses_tighter_policy
+FAILED projects/m11-noma-qos/analysis/source-review-01/oracle-repair/test_oracle_repair.py::test_unsupported_independent_boundary_stays_explicit
+FAILED projects/m11-noma-qos/analysis/source-review-01/oracle-repair/test_oracle_repair.py::test_budget_guard_stops_replay_with_deadline_failure
+11 failed, 2 warnings in 0.85s

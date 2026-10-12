@@ -1,0 +1,8 @@
+test_infeasible_oracle_optimality_is_not_applicable (__main__.FlagBoundaryTests.test_infeasible_oracle_optimality_is_not_applicable) ... ok
+test_material_strict_flag_discrepancy_rejected (__main__.FlagBoundaryTests.test_material_strict_flag_discrepancy_rejected) ... ok
+test_verified_serialized_strict_flag_can_cross_one_ulp (__main__.FlagBoundaryTests.test_verified_serialized_strict_flag_can_cross_one_ulp) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.008s
+
+OK

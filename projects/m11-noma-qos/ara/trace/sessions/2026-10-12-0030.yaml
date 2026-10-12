@@ -1,0 +1,17 @@
+id: 2026-10-12-0030
+timestamp: '2026-10-12T09:36:52.021135+00:00'
+phase: P6
+summary: P6 source review round 1 enforced read-only audit returned REVISE with 12
+  findings. Analysis-only repairs and retained negative tests now pass 87 tests plus
+  7 subtests (94 JUnit cases); all 51 locked inputs are byte-identical. Round 2 is
+  running with the exact approved 19 source paths and 24 illustrative rows. Full canonical
+  native/supplemental verification has not run; no gate or numerical review approval
+  inferred. Specialist follow-ups failed before work due model capacity and parent
+  completed bounded follow-ups.
+provenance: ai
+evidence:
+  analysis/source-review-01/findings.json: dbd4a3d3fca27faf8e1cb5ae8453998de9a3af6cc501b35534368ecc313397bd
+  analysis/source-review-01/runtime-audit.json: 499e1e2129e2843012230b007ea93fefac24f33e811ecc8c7ffea37277a6f79b
+  analysis/source-review-01/parent-repair/repair-checkpoint.json: 66276e3b16611f88355c52fdf23c9698cf235f2f242ff9a3de9e5f62d30faf73
+  analysis/supplement/unit-runs/4475195e7bd74918bd84d6637cd94d4f/receipt.json: fc91e6fedede343a44ce79761499125e2849da7dc2969660a3b03ed6f04c017f
+  analysis/supplement/README.md: 8167d88d0da44a2766f4ebbe4c151dcd73aa130538c763701f2f8ffd76c9cbe4

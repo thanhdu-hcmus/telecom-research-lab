@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-10-12T09:42:15.349942+00:00",
+  "round": 2,
+  "recommendation": "revise",
+  "enforced_independent_review": true,
+  "scientific_acceptance": false,
+  "source_hashes": {
+    "model/model-spec.tex": "c885769e4d0d191bd82e11891de912340a7baa64af49d9b8c4584b4a3204f76e",
+    "model/notation.yaml": "2e937f7f98e3240f476471c44cc2756afdfe77079aa8f5845cfe1bcfe920de22",
+    "model/assumptions.yaml": "48689bf9d889c0b4d4ccc9c7abe4f484cc41fde5ac27ddc4e5ea6e399ec16b4a",
+    "model/predictions.yaml": "b18859e62c3a5306b9b341331b5acd7e7ec5fb93b5fbc3cf82032fb8959a6fd2",
+    "sim/protocol.md": "93bdad13f228362b232f66e7e5ba50a751836c7039516bc77895eb52eeaf0e25",
+    "sim/protocol.yaml": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+    "sim/protocol-errata.md": "77ea24e95efbc18e1eaa3cee292c87dabeecb0d1aed742b63d78a32a2f14037c",
+    "sim/cases.yaml": "1f76d4897394371498250edb71d8ae31c08f1f497bd0b3296c48c55718dd5840",
+    "sim/lock.json": "b01177976ab7f614bb387c19f1537445f04ffb84fb186a6f27ea107a7bd09c9c",
+    "sim/src/verifier.py": "1aefd2052cfbdbf39f82bb70e5b4c14f1017202cfd3911f456a180ecdf1317b9",
+    "sim/src/oracle.py": "2b145f6ef8633cf675a4ab34f6632dc09a13156cac0b83bd37f42b0df1dc0055",
+    "analysis/supplement/benchmark_synthetic.py": "c8b20f4600859248c980a120dae535cb23bc61bf587a39ee4a17b12c0ffb2830",
+    "analysis/supplement/checker.py": "2e71d7bc2379938e4f7d4a130a3cbd74edf2f1655d4f64fa6ce46edc9a1cd202",
+    "analysis/supplement/independent.py": "b2df159ab3d17d1ed4186df4ad3387fb730a52895721a718a8a84621837cbc83",
+    "analysis/supplement/replay.py": "4838fef8a023e94dff52ecd5bdddeffd6f24613c5b54f9ede827de0f1449824d",
+    "analysis/supplement/run_unit_tests.py": "a0729f1cd91f4063f70437870c8635534e274b8989f65210d46d4bc12b13ac59",
+    "analysis/supplement/test_supplement.py": "edd9db6b4e048588069d151aca1586e8bbe1f8e333a00dad895d2d4e203244a1",
+    "@repo/lab/verification.py": "c549b8cca4d34dd2fa66501f79072a946e579fe919d4109769673a328fc3dcfb",
+    "@repo/schemas/verification_item.schema.json": "0f170d8a63840534de3ac3d87ce0c4a43c1edcc8c262bbf038025810e9c5f972"
+  },
+  "evidence": {
+    "findings.json": "1b469fbdaf6e7ef0731ce8314c2722d48eb12e3bde289699ed7bf5d2f6258e79",
+    "invocation.json": "2b1676eeaf6f9932f6a147d454f210df77ea4dc327e7992b916b04dea8a6622d",
+    "packet.json": "c91fd800878ddd4b974f1cec4bd9ffe2a188480499fb956bbd07cc06b8d910a1",
+    "runtime-audit.json": "797b8c8356ddf0fc75fadd52fbd077032bd1f7be07780f94d769ba284869a98a",
+    "runtime-metadata.json": "437468d0845cb4e6030e015a7f8351cb4eac5f764f27494eb3a4b7766e5eae5c",
+    "run_p6_source_review.py": "e52f2c88619a30972d36cfaf9d081e41cbfe07fcb00d32595bda1ddb8e82f2f0"
+  }
+}

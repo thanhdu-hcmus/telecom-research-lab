@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-12T05:49:33.666073+00:00",
+  "status": "ENFORCED_SOURCE_REVIEW_COMPLETE; REVISE",
+  "findings": 12,
+  "scope": "source-only; canonical results not run",
+  "source_run": ".cache\\p6-source-review\\e6453dbc1f8544929c18ed00b4496627",
+  "evidence": {
+    "findings.json": "dbd4a3d3fca27faf8e1cb5ae8453998de9a3af6cc501b35534368ecc313397bd",
+    "invocation.json": "bb7a5c2779d152c7c2104595165940b5bd02032959edbecf898639aa28a71078",
+    "runtime-audit.json": "499e1e2129e2843012230b007ea93fefac24f33e811ecc8c7ffea37277a6f79b",
+    "runtime-metadata.json": "45558f47a5f5f56dea5ef65d44f65509bbe4a625f62ecea36f7138988185a3fa",
+    "run_p6_source_review.py": "e52f2c88619a30972d36cfaf9d081e41cbfe07fcb00d32595bda1ddb8e82f2f0"
+  },
+  "parent_thread": "01a12e9c-e26f-7911-b42e-3f652b0e159f",
+  "reviewer_thread": "01a12e9d-0e76-7490-8637-de0ccc14cf24"
+}

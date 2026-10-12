@@ -1,0 +1,87 @@
+test_combined_false_binding_is_fail (__main__.AdditionalReceiptTests.test_combined_false_binding_is_fail) ... FAIL
+test_combined_missing_binding_or_coverage_is_not_pass (__main__.AdditionalReceiptTests.test_combined_missing_binding_or_coverage_is_not_pass) ... FAIL
+test_combined_oracle_uncertainty_is_not_pass (__main__.AdditionalReceiptTests.test_combined_oracle_uncertainty_is_not_pass) ... FAIL
+test_combined_positive_low_event_precision_is_inconclusive (__main__.AdditionalReceiptTests.test_combined_positive_low_event_precision_is_inconclusive) ... FAIL
+test_independent_lineage_moment_excludes_unsupported_stored_mask (__main__.AdditionalReceiptTests.test_independent_lineage_moment_excludes_unsupported_stored_mask) ... ERROR
+test_lineage_guard_failure_has_unique_receipts (__main__.AdditionalReceiptTests.test_lineage_guard_failure_has_unique_receipts) ... ERROR
+test_lineage_rejects_equal_gain_interior_endpoint (__main__.AdditionalReceiptTests.test_lineage_rejects_equal_gain_interior_endpoint) ... FAIL
+
+======================================================================
+ERROR: test_independent_lineage_moment_excludes_unsupported_stored_mask (__main__.AdditionalReceiptTests.test_independent_lineage_moment_excludes_unsupported_stored_mask)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_additional_receipts.py", line 40, in test_independent_lineage_moment_excludes_unsupported_stored_mask
+    self.assertEqual(s['independent_pairs']['sum_rate'].n,0)
+                     ~^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'independent_pairs'
+
+======================================================================
+ERROR: test_lineage_guard_failure_has_unique_receipts (__main__.AdditionalReceiptTests.test_lineage_guard_failure_has_unique_receipts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_additional_receipts.py", line 33, in test_lineage_guard_failure_has_unique_receipts
+    with self.assertRaises(ValueError):checker.execute_lineage_recipe(Path(t),{},options())
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+TypeError: execute_lineage_recipe() takes 2 positional arguments but 3 were given
+
+======================================================================
+FAIL: test_combined_false_binding_is_fail (__main__.AdditionalReceiptTests.test_combined_false_binding_is_fail)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_additional_receipts.py", line 22, in test_combined_false_binding_is_fail
+    self.assertEqual(checker.combined_assessment({'status':'PASS'},s,native_items(),[])['status'],'FAIL')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'PASS' != 'FAIL'
+- PASS
++ FAIL
+
+
+======================================================================
+FAIL: test_combined_missing_binding_or_coverage_is_not_pass (__main__.AdditionalReceiptTests.test_combined_missing_binding_or_coverage_is_not_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_additional_receipts.py", line 19, in test_combined_missing_binding_or_coverage_is_not_pass
+    self.assertEqual(checker.combined_assessment({'status':'PASS'},s,native_items(),[])['status'],'INCONCLUSIVE')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'PASS' != 'INCONCLUSIVE'
+- PASS
++ INCONCLUSIVE
+
+
+======================================================================
+FAIL: test_combined_oracle_uncertainty_is_not_pass (__main__.AdditionalReceiptTests.test_combined_oracle_uncertainty_is_not_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_additional_receipts.py", line 15, in test_combined_oracle_uncertainty_is_not_pass
+    self.assertEqual(checker.combined_assessment({'status':'PASS'},s,native_items(),[])['status'],'INCONCLUSIVE')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'PASS' != 'INCONCLUSIVE'
+- PASS
++ INCONCLUSIVE
+
+
+======================================================================
+FAIL: test_combined_positive_low_event_precision_is_inconclusive (__main__.AdditionalReceiptTests.test_combined_positive_low_event_precision_is_inconclusive)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_additional_receipts.py", line 25, in test_combined_positive_low_event_precision_is_inconclusive
+    self.assertEqual(checker.combined_assessment({'status':'PASS'},s,native_items(),[])['status'],'INCONCLUSIVE')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'PASS' != 'INCONCLUSIVE'
+- PASS
++ INCONCLUSIVE
+
+
+======================================================================
+FAIL: test_lineage_rejects_equal_gain_interior_endpoint (__main__.AdditionalReceiptTests.test_lineage_rejects_equal_gain_interior_endpoint)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\02_EDUCATION\THESIS\telecom-research-lab\.cache\test_p6_additional_receipts.py", line 28, in test_lineage_rejects_equal_gain_interior_endpoint
+    with self.assertRaisesRegex(ValueError,'endpoint'):checker.lineage_value([r],{'op':'independent_conditional_mean','column':'sum_rate','mask':'independent_both_feasible'})
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.005s
+
+FAILED (failures=5, errors=2)
