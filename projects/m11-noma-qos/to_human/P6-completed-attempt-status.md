@@ -39,3 +39,17 @@ G6/G7 decisions remain required.
 
 See analysis/supplement/completed-attempt-01/closure-receipt.json,
 analysis/provisional-native-claims.md and P6-fifth-source-review-authorization.md.
+
+## Latest corrected-attempt native result
+
+Fresh native verification completed PASS on 2026-10-13 at 08:27 UTC. All eight
+checks and seven prediction items pass, with source and locked-input bindings
+unchanged. The full supplement is running; combined assessment is pending.
+Nine provisional arithmetic examples have been revalidated unchanged.
+
+An author-only certificate derives the exact fractional-boundary NOMA split
+sqrt(2)-1 and OMA equality for the five repeated saved rows, including exact
+rational bracket checks. It explains the boundary representation issue;
+existing unresolved labels and the frozen verifier remain unchanged.
+Independent numerical-results review and actual PI scientific decisions remain
+required. See analysis/supplement/attempt2-native-checkpoint.

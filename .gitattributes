@@ -131,3 +131,6 @@ docs/evidence/p6-round5-preflight/native-secrets.json -text whitespace=cr-at-eol
 
 # Preserve exact local round5 framework test capture.
 docs/evidence/p6-round5-accepted-source/framework-stdout.txt -text whitespace=cr-at-eol,-blank-at-eof
+
+# Preserve exact completed attempt2 native evidence bytes.
+projects/m11-noma-qos/analysis/supplement/attempt2-native-checkpoint/native-control/stdout.txt -text whitespace=cr-at-eol,-blank-at-eof

@@ -72,8 +72,13 @@ retained. The exact two reviewed analysis source paths are now applied, all19
 active source bindings match, and all51 locked inputs are unchanged. Original
 native outputs are archived byte-identically for a fresh canonical rerun.
 
-The fresh corrected native and supplemental canonical runs are active, with
-an automatic combined-assessment watcher. Their completion remains pending.
+The fresh corrected native verifier completed PASS on 2026-10-13 at08:27 UTC
+with all eight checks and seven prediction items passing. The full supplement
+is active and the automatic combined-assessment watcher is waiting. An
+author-only exact sqrt(2)-1 certificate explains the five fractional-boundary
+repeats; their stored unresolved labels remain unchanged. Nine provisional
+native arithmetic examples have been revalidated; no manuscript claims were
+registered. Full corrected scientific acceptance remains pending.
 P6 still needs completed corrected verification and combined assessment,
 executable accepted manuscript claims, and
 enforced independent numerical-results review.

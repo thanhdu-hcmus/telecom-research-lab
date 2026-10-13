@@ -1,0 +1,30 @@
+{
+  "status": "RECORDED",
+  "attempt": 2,
+  "review_round": 5,
+  "kind": "native",
+  "started": "2026-10-13T07:52:42.468708+00:00",
+  "command": [
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\checker.py",
+    "--native"
+  ],
+  "directory": ".cache\\p6-canonical-attempt2\\efc5a2d0bf4141cfb0685dd1721d95c7-native",
+  "source_ready_sha256": "ed5e8212099d138753b2ebb91f4634003e533335209ffa9f48c0b2502873df18",
+  "canonical_execution_requested": true,
+  "scientific_acceptance": false,
+  "pid": 11120,
+  "exit_code": 0,
+  "scientific_receipt": "analysis/supplement/runs/2026-10-13T07-52-43.369473+00-00-fa4c86fcdf654621a00a0495440e8117-native/native-receipt.json",
+  "scientific_receipt_sha256": "a49702fc24ffcc232da6a6fe26bed7c6d669bb31ddd45511fd51d1702a7371ac",
+  "scientific_status": "PASS",
+  "jobs": 0,
+  "rows": 0,
+  "finished": "2026-10-13T08:27:47.021503+00:00",
+  "runtime_s": 2104.525772199966,
+  "evidence": {
+    "launch.json": "357565b148d9edc236889fc94ff3760ce14fcb5945cde215f97cdee320367bdf",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "bdba7bf7a49049450aa2d5af90860bca042f0e34e57cb7b74605d1fe07ffaf63"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "timestamp": "2026-10-13T09:27:11.440661+00:00",
+  "status": "AUTHOR_DEDUCTIVE_CERTIFICATE_ONLY",
+  "case_id": "fractional-boundary",
+  "inputs": [
+    1,
+    1,
+    1,
+    0.5,
+    0.5
+  ],
+  "scope": "Exactly five repeats of the approved deterministic case; no Monte Carlo extrapolation.",
+  "noma_real_model_feasible": true,
+  "noma_exact_optimizer": "sqrt(2)-1",
+  "noma_feasible_set": "singleton {sqrt(2)-1}",
+  "noma_exact_rates": {
+    "weak": "1/2",
+    "weak_at_strong": "1/2",
+    "strong": "1/2",
+    "sum": "1"
+  },
+  "oma_real_model_feasible": true,
+  "oma_exact_rates": {
+    "weak": "1/2",
+    "strong": "1/2",
+    "sum": "1"
+  },
+  "polynomial": "a^2+2*a-1=0, unique root in [0,1]",
+  "binary64_split_can_satisfy_both_exact_real_targets": false,
+  "stored_rows": [
+    {
+      "row": 16,
+      "stored_noma_status": "unresolved",
+      "stored_oma_status": "unresolved",
+      "stored_certificate": "none",
+      "stored_optimizer": "nan",
+      "lower_exact_fraction": "3730904090310553/9007199254740992",
+      "upper_exact_fraction": "7461808180621107/18014398509481984",
+      "root_polynomial_lower_residual": "-3292739303401103/81129638414606681695789005144064",
+      "root_polynomial_upper_residual": "37781456166601769/324518553658426726783156020576256",
+      "bracket_width_exact": "1/18014398509481984",
+      "positive_root_strictly_inside_recorded_bracket": true
+    },
+    {
+      "row": 36,
+      "stored_noma_status": "unresolved",
+      "stored_oma_status": "unresolved",
+      "stored_certificate": "none",
+      "stored_optimizer": "nan",
+      "lower_exact_fraction": "3730904090310553/9007199254740992",
+      "upper_exact_fraction": "7461808180621107/18014398509481984",
+      "root_polynomial_lower_residual": "-3292739303401103/81129638414606681695789005144064",
+      "root_polynomial_upper_residual": "37781456166601769/324518553658426726783156020576256",
+      "bracket_width_exact": "1/18014398509481984",
+      "positive_root_strictly_inside_recorded_bracket": true
+    },
+    {
+      "row": 56,
+      "stored_noma_status": "unresolved",
+      "stored_oma_status": "unresolved",
+      "stored_certificate": "none",
+      "stored_optimizer": "nan",
+      "lower_exact_fraction": "3730904090310553/9007199254740992",
+      "upper_exact_fraction": "7461808180621107/18014398509481984",
+      "root_polynomial_lower_residual": "-3292739303401103/81129638414606681695789005144064",
+      "root_polynomial_upper_residual": "37781456166601769/324518553658426726783156020576256",
+      "bracket_width_exact": "1/18014398509481984",
+      "positive_root_strictly_inside_recorded_bracket": true
+    },
+    {
+      "row": 76,
+      "stored_noma_status": "unresolved",
+      "stored_oma_status": "unresolved",
+      "stored_certificate": "none",
+      "stored_optimizer": "nan",
+      "lower_exact_fraction": "3730904090310553/9007199254740992",
+      "upper_exact_fraction": "7461808180621107/18014398509481984",
+      "root_polynomial_lower_residual": "-3292739303401103/81129638414606681695789005144064",
+      "root_polynomial_upper_residual": "37781456166601769/324518553658426726783156020576256",
+      "bracket_width_exact": "1/18014398509481984",
+      "positive_root_strictly_inside_recorded_bracket": true
+    },
+    {
+      "row": 96,
+      "stored_noma_status": "unresolved",
+      "stored_oma_status": "unresolved",
+      "stored_certificate": "none",
+      "stored_optimizer": "nan",
+      "lower_exact_fraction": "3730904090310553/9007199254740992",
+      "upper_exact_fraction": "7461808180621107/18014398509481984",
+      "root_polynomial_lower_residual": "-3292739303401103/81129638414606681695789005144064",
+      "root_polynomial_upper_residual": "37781456166601769/324518553658426726783156020576256",
+      "bracket_width_exact": "1/18014398509481984",
+      "positive_root_strictly_inside_recorded_bracket": true
+    }
+  ],
+  "stored_labels_changed": false,
+  "independent_results_review": false,
+  "accepted_manuscript_claim": false,
+  "scientific_gate_approval": false,
+  "source_and_locked_inputs_unchanged": true,
+  "evidence": {
+    "model": "model/model-spec.tex",
+    "model_sha256": "c885769e4d0d191bd82e11891de912340a7baa64af49d9b8c4584b4a3204f76e",
+    "cases": "sim/cases.yaml",
+    "cases_sha256": "1f76d4897394371498250edb71d8ae31c08f1f497bd0b3296c48c55718dd5840",
+    "manifest": "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/manifest.json",
+    "manifest_sha256": "de28af136fadf6051baba604c3be4c8516f96bf739a9f11c55fe7a91ad44e485",
+    "channels": "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/channels.csv",
+    "channels_sha256": "8d6255650548020e604d10ccb5168cc0ccbf010c55d85d2005059618d76c0b2f",
+    "metrics": "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/metrics.csv",
+    "metrics_sha256": "0abc365629fb5577f4463ffc8f8cc6a63e54ce72f02438c050f4bab41dbbb787"
+  },
+  "limits": [
+    "Exact symbolic deduction by the author, not an independently accepted runtime certificate.",
+    "Stored NOMA/OMA unresolved labels and the combined assessment remain authoritative for the current frozen execution.",
+    "No simulation, approved source, model, protocol, tolerance, gate or deviation is changed.",
+    "A future machine-readable algebraic-certificate extension requires a separate reviewed implementation and any necessary PI decisions."
+  ]
+}

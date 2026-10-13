@@ -1,0 +1,9 @@
+{
+  "finished": "2026-10-13T08:27:46.896027+00:00",
+  "report": "native-receipt.json",
+  "evidence_hashes": {
+    "analysis/supplement/runs/2026-10-13T07-52-43.369473+00-00-fa4c86fcdf654621a00a0495440e8117-native/native-receipt.json": "a49702fc24ffcc232da6a6fe26bed7c6d669bb31ddd45511fd51d1702a7371ac"
+  },
+  "status": "PASS",
+  "scientific_gate_approval": false
+}

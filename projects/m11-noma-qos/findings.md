@@ -401,3 +401,21 @@ locked inputs match. Initial partial progress is retained in
 analysis/supplement/attempt2-launch; it is not completion or scientific PASS.
 Original first-attempt evidence and explicit unresolved scope remain retained.
 G6/G7 remain invalidated; no external numerical-results review is authorized.
+
+## P6 attempt two native PASS; full supplement pending
+
+The fresh native verifier completed PASS on 2026-10-13 at 08:27 UTC using the
+unmodified production API and a fresh stage. All eight checks and seven
+prediction items pass; all reviewed source and locked-input bindings match.
+The partial supplement snapshot at 2026-10-13T09:33:02.276247+00:00 covers
+36/145 jobs and 1,146,980 rows with 0 row errors.
+Full supplemental completion and combined assessment remain pending.
+
+Nine actual per-seed zero-QoS arithmetic values were revalidated and match the
+original provisional values exactly; no manuscript claim was registered. An
+author-only exact symbolic certificate establishes the singleton sqrt(2)-1
+and matched OMA equality for the five fractional-boundary repeats. Exact
+rational checks validate their recorded brackets. This separate certificate
+has not received independent results review and does not upgrade stored
+classifications or the frozen runtime assessment. G6/G7 remain invalidated.
+See analysis/supplement/attempt2-native-checkpoint for exact receipts and limits.

@@ -1,0 +1,16 @@
+id: 2026-10-13-0044
+timestamp: '2026-10-13T09:33:02.403060+00:00'
+phase: P6
+summary: Fresh attempt2 native verifier completed PASS with ordinary unmodified API,
+  fresh output stage, all8checks and7prediction items passing, exact reviewed19-source
+  bindings and51locks unchanged. Supplemental execution and combined assessment remain
+  pending. Retained actual partial progress, revalidated9provisional arithmetic values
+  through unmodified evaluate_claim, and derived an author-only exact sqrt(2)-1 certificate
+  for five repeated fractional-boundary rows. Existing unresolved labels, source/model/protocol,
+  gates and deviations remain unchanged; no scientific full PASS or accepted manuscript
+  claim.
+provenance: ai
+evidence:
+  analysis/supplement/attempt2-native-checkpoint/checkpoint-receipt.json: 3c8c103661f7ed0c1c73d6b5f0dbcbf134625a4f95ac3091fd87766ae365ce10
+  analysis/supplement/attempt2-native-checkpoint/fractional-boundary-author-certificate.json: 8c5d6b52e068e36aac7ba4526291f4373ca458dea3e502401d72b43e8751da37
+  analysis/supplement/attempt2-native-checkpoint/provisional-native-claims.json: e4769df7aeb633da14743a6fcf67ece57dcb030d42ea43f08666904eafd43b7c
