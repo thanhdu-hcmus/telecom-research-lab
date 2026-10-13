@@ -128,3 +128,6 @@ docs/evidence/m11-p6-completed-attempt-native-secrets-final.json -text whitespac
 # Preserve exact P6 round5 preflight evidence bytes.
 projects/m11-noma-qos/analysis/supplement/candidate-round5-author-diagnostic/run_p6_full_candidate_row_diagnostic.py -text whitespace=cr-at-eol,-blank-at-eof
 docs/evidence/p6-round5-preflight/native-secrets.json -text whitespace=cr-at-eol,-blank-at-eof
+
+# Preserve exact local round5 framework test capture.
+docs/evidence/p6-round5-accepted-source/framework-stdout.txt -text whitespace=cr-at-eol,-blank-at-eof

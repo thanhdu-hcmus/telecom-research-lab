@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-10-13T07:42:45.945616+00:00",
+  "status": "GIT_ADD_REJECTED_IGNORED_LOG",
+  "initial_helper_sha256": "605228b65c65e0157458c0fe2f4dbf8f85498ff8e1802c69723370d9202c54ed",
+  "ignored_path": "projects/m11-noma-qos/analysis/supplement/unit-tests.log",
+  "cause": ".gitignore line17 excludes *.log.",
+  "resolution": "Keep the log local; stdout/stderr/JUnit/receipt are already retained in the actual unique unit run. Remove only that redundant ignored log from the stage list. No science input or source changed."
+}

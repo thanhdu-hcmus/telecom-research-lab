@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-13T07:52:08.279990+00:00",
+  "status": "PASS",
+  "scope": "Only scannable file changed since final native scan: current remaining-work audit text. Exact explicit-file detector scan found no detections.",
+  "file": "docs/remaining-work-audit.md",
+  "before_sha256": "4dee848641ca7f6e630646b1fcaa1b612f1899c1e496b6aeaab824cc741f6faa",
+  "after_sha256": "e25853fd77cf5833fcbb876f3a10d8cb6bc7d0a6de24c306931b30b2c8b9f9c9",
+  "detections": 0,
+  "full_native_scan": "PASS:2626files",
+  "scientific_source_changed": false
+}

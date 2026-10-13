@@ -528,13 +528,29 @@ def check_row(raw, metric, expected_inputs, expected_case, row_id, audit):
         else:
             target = math.expm1(q * math.log(2))
 
-            def affine(a):
-                return a * snr - target if increasing else (1 - a) * snr - target * (1 + a * snr)
-
-            f0, f1 = affine(0.0), affine(1.0)
-            cross = -f0 / (f1 - f0)
+            # Derive the slope from the original affine constraint directly.
+            # Subtracting endpoint residuals cancels when the channel is small.
+            cross = target / snr if increasing else (snr - target) / (snr * (1 + target))
             expected_bound = cross if increasing else min(1.0, cross)
-        audit.close(field + ".original_crossing", bound, expected_bound, SPLIT, row_id)
+        label = field + ".original_crossing"
+        # Crossings outside [0,1] are diagnostics, not admissible power splits.
+        # Preserve their side of the domain and reject material corruption, but
+        # retain binary64 roundoff separately when one ULP exceeds SPLIT.
+        # All physical-domain, exact-integer and feasibility checks keep SPLIT.
+        same_outside = (bound < 0 and expected_bound < 0) or (bound > 1 and expected_bound > 1)
+        diagnostic_roundoff = (
+            not q.is_integer()
+            and snr > 0
+            and same_outside
+            and math.isfinite(expected_bound)
+            and abs(bound - expected_bound) > SPLIT
+            and abs(bound - expected_bound)
+            <= 64 * math.ulp(max(1.0, abs(bound), abs(expected_bound)))
+        )
+        if diagnostic_roundoff:
+            audit.diagnostic(label + ".roundoff", bound, expected_bound, row_id, unit="split")
+        else:
+            audit.close(label, bound, expected_bound, SPLIT, row_id)
     if ns["low"] is not None and ns["high"] is not None:
         audit.eq(
             "boundary_flag",

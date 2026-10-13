@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T07:42:45.984783+00:00",
+  "supplemental_unit_tests": 133,
+  "unit_status": "PASS",
+  "unit_failures": 0,
+  "unit_errors": 0,
+  "unit_source_hashes_unchanged": true,
+  "unit_receipt_sha256": "d75d3b3825e4f9532743ae4730cb8bcbeb296f331fbdd541ba0eb724a2b0a6f2",
+  "changed_source_lint": "PASS",
+  "changed_source_format_check": "PASS",
+  "framework_suite": "PASS",
+  "scientific_acceptance": false,
+  "canonical_rerun_started": false,
+  "framework_tests": 97,
+  "framework_test_receipt_sha256": "c0f7eb1b601a6f95f4c5b8aa0f719cd7edf362dd5b7f7534f498c6b530b0a860"
+}

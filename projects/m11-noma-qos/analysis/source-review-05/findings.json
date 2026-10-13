@@ -1,0 +1,205 @@
+{
+  "round": 5,
+  "recommendation": "ready",
+  "findings": [],
+  "checks": [
+    {
+      "dimension": "Units, power, noise and path loss",
+      "assessment": "The enclosed rate implementations use normalized linear power, unit receiver noise and squared channel gains. OMA applies full active-slot power and the whole-block factor 1/2. No geographic path-loss conversion or physical-power interpretation appears in the reviewed calculations.",
+      "locations": [
+        "model/model-spec.tex: Scope, normalization and physical model",
+        "sim/protocol.md: Physical model and comparison",
+        "sim/src/verifier.py: rates",
+        "sim/src/oracle.py: direct_rates",
+        "analysis/supplement/independent.py: rates, oma"
+      ],
+      "limitations": [
+        "The scenario-generation implementation and framework conversion helper are not enclosed.",
+        "Actual input correspondence must be established during execution."
+      ]
+    },
+    {
+      "dimension": "Both weak-message decoding sites and original predicates",
+      "assessment": "The supplement independently evaluates both weak decoding capacities, strong post-SIC capacity and original QoS constraints. Feasibility adjudication uses original constraints rather than stored feasibility bits. The native verifier supplies additional direct-rate checks, but its classification and fairness checks alone are insufficient; the supplement is necessary.",
+      "locations": [
+        "model/model-spec.tex: Both weak-message decoding sites and rates",
+        "sim/src/verifier.py: rates, bracket, verify",
+        "analysis/supplement/independent.py: exact_residuals, noma_adjudicate, oma_adjudicate, check_row"
+      ],
+      "limitations": [
+        "Noninteger adjudication remains numerical.",
+        "Finite evaluations cannot establish SIC dominance for every admissible real input."
+      ]
+    },
+    {
+      "dimension": "Boundary, zero, equal-gain and singleton cases",
+      "assessment": "Exact integer-target crossings use Fraction representations of the original binary64 inputs. Zero-capacity positive-target cases are classified explicitly. Singleton certificates are distinguished from rounded split representations, equal-gain ties from singleton uniqueness, and overlapping noninteger domains remain unresolved. The illustrative fractional-boundary row preserves ambiguity.",
+      "locations": [
+        "sim/cases.yaml",
+        "sim/src/oracle.py: _exact_constraints, _rational_witness, solve",
+        "analysis/supplement/independent.py: affine_crossing, noma_adjudicate, check_row",
+        "analysis/supplement/test_supplement.py: boundary and numeric-domain tests",
+        "illustrative_manifest_bound_samples: deterministic rows 0–19"
+      ],
+      "limitations": [
+        "The illustrative rows are not independent repetitions or full verification.",
+        "Noninteger exact boundaries and unsupported numeric domains cannot receive an unqualified numerical acceptance."
+      ]
+    },
+    {
+      "dimension": "Root convergence, optimizer caps and objective evidence",
+      "assessment": "The oracle records root and optimizer caps, iterations, attempted candidates, reasons and unresolved outcomes. Solver success alone is insufficient for acceptance. The supplement replays both declared policies and checks original candidate rates. Numerical supporting-line bounds are explicitly distinguished from validated interval certificates.",
+      "locations": [
+        "sim/src/oracle.py: _bracket, _concavity_upper_bound, solve",
+        "analysis/supplement/replay.py: replay_job, check_oracle_original"
+      ],
+      "limitations": [
+        "The secant roundoff allowance is not a rigorous floating-point error bound.",
+        "Independent endpoint comparisons rely on the approved mathematical optimizer law.",
+        "No convergence or cap outcome was measured in this review."
+      ]
+    },
+    {
+      "dimension": "Final versus attempted candidates, masks and structural checks",
+      "assessment": "The supplement checks accepted optimum fields separately from attempted candidate fields, requires undefined final fields outside accepted feasibility, recomputes candidate diagnostics, checks discrete indicators and categories, and validates grid indices. Small serialized predicate sign changes receive an explicit roundoff diagnostic rather than a feasibility certificate.",
+      "locations": [
+        "analysis/supplement/independent.py: Audit, check_candidate_flags, check_row",
+        "analysis/supplement/replay.py: recursive_compare, check_oracle_original",
+        "analysis/supplement/test_supplement.py: corruption and mask tests"
+      ],
+      "limitations": [
+        "Shared oracle metadata reproduction is not independent certification of every solver field.",
+        "The test source describes checks; it supplies no executed test verdict."
+      ]
+    },
+    {
+      "dimension": "Numerical quantities and tolerance units",
+      "assessment": "Rate, split and objective comparisons are separated. SINR comparisons use their implied rates while retaining raw discrepancies. Probability comparisons use dimensionless roundoff. Large noninteger crossings outside the physical split domain receive a bounded diagnostic allowance without relaxing physical-domain split checks or feasibility classification.",
+      "locations": [
+        "sim/protocol.md: Implementation, numerical uncertainty and oracle",
+        "analysis/supplement/independent.py: Audit.sinr, check_row",
+        "analysis/supplement/checker.py: compare_probability, compare_moments",
+        "analysis/supplement/replay.py: recursive_compare"
+      ],
+      "limitations": [
+        "The native bracket uses a broader separation threshold than the declared split tolerance and cannot independently settle narrow boundaries.",
+        "Interoperability of independently computed statistical endpoints still requires execution."
+      ]
+    },
+    {
+      "dimension": "Seeded common draws, OMA matching and denominators",
+      "assessment": "The supplement reconstructs PCG64 draws using SeedSequence([seed,0]), checks scenario parameters and sampling declarations, and compares every planned row against expected gains or fixed cases. Conditional sums use n11; unresolved rows remain adjacent to resolved denominators. Reference OMA moments use unfiltered zero-QoS draws.",
+      "locations": [
+        "sim/protocol.yaml",
+        "analysis/supplement/independent.py: seeded, check_jobs",
+        "analysis/supplement/checker.py: process_job, update, compare_scenario, compare_reference"
+      ],
+      "limitations": [
+        "Generator agreement and complete row coverage have not been executed.",
+        "Cross-setting draws are deliberately dependent; no cross-setting significance conclusion follows."
+      ]
+    },
+    {
+      "dimension": "Paired statistics, precision and event intervals",
+      "assessment": "Streaming moments recompute conditional means, sample variance and Student-t intervals. Counts and denominators are checked exactly; deterministic repetitions receive no inferential CI. Binomial intervals use the two-sided exact construction, with undefined zero denominators and explicit zero-event upper bounds. Positive event counts below the required threshold remain inconclusive in the combined assessment.",
+      "locations": [
+        "sim/protocol.md: Statistical policy",
+        "analysis/supplement/independent.py: Moments, binomial",
+        "analysis/supplement/checker.py: compare_moments, compare_scenario, combined_assessment",
+        "@repo/lab/verification.py: average_ci, outage_ci"
+      ],
+      "limitations": [
+        "Zero-event bounds do not establish zero outage.",
+        "Pointwise intervals provide no familywise guarantee.",
+        "Student-t intervals are the approved statistical procedure, not distribution-free finite-sample guarantees."
+      ]
+    },
+    {
+      "dimension": "Sensitivities, ablations and approved predictions",
+      "assessment": "The supplement checks planned base and tighter row inventories, replays the tighter policy, records classification and optimality transitions, independently reconstructs both ablations, and checks objective losses. Endpoint selection and weak-target activation are checked separately, including equal-gain cases. The OMA reproduction equations and six-point coverage are explicit.",
+      "locations": [
+        "model/predictions.yaml",
+        "analysis/supplement/replay.py: replay_job",
+        "analysis/supplement/independent.py: ablations, check_row",
+        "analysis/supplement/checker.py: assessment_coverage, compare_reference, combined_assessment"
+      ],
+      "limitations": [
+        "Replay of oracle.py is shared implementation reproduction, not a third independent optimizer.",
+        "P3 curvature and scope-wide strict inequalities are mathematical claims; finite objective comparisons do not universally validate them.",
+        "No full sensitivity, ablation or reference result was recomputed here."
+      ]
+    },
+    {
+      "dimension": "Hash inventories, native guards, limits and failure receipts",
+      "assessment": "The supplement binds the approved source inventory, manifests and declared outputs, checks hashes and byte counts, invokes native production guards, and rechecks sources, inputs and manifest paths. Unique run directories and completion receipts retain failed attempts. Time and memory limits are honestly described as cooperative checkpoints and traced Python allocations.",
+      "locations": [
+        "sim/lock.json",
+        "analysis/supplement/checker.py: require_ready_source_review, input_snapshot, Budget, execute, run_native",
+        "analysis/supplement/run_unit_tests.py: run_tests",
+        "@repo/lab/verification.py: verify, custom_verify"
+      ],
+      "limitations": [
+        "No digest or inventory was verified with tools.",
+        "Bodies of locked, verify_manifest, validate_runs, within and ensure_phase are not enclosed.",
+        "Native calls may exceed a cooperative deadline before the next checkpoint; traced allocations exclude OS and native memory."
+      ]
+    },
+    {
+      "dimension": "Native entrypoint and VerificationItem interoperability",
+      "assessment": "The native route accepts the declared verifier alias, checks conflicting entrypoint declarations, requires a distinct pinned verifier, retains stage evidence and validates VerificationItem records. The supplied item schema permits null values and the emitted verdict and triage vocabulary. The analysis wrapper distinguishes stale stages, fresh prediction failures, precision rejection and incomplete execution; combined acceptance requires complete coverage and passing native items.",
+      "locations": [
+        "sim/protocol.yaml: verifier",
+        "sim/src/verifier.py: verification.yaml emission",
+        "@repo/lab/verification.py: custom_verify",
+        "@repo/schemas/verification_item.schema.json",
+        "analysis/supplement/checker.py: run_native, validate_assessment_inputs, combined_assessment"
+      ],
+      "limitations": [
+        "Actual runtime model definitions and manifest-validator return behavior are not enclosed.",
+        "A legacy native PASS alone does not establish full scientific verification.",
+        "Source inspection cannot establish successful subprocess execution or runtime interoperability."
+      ]
+    },
+    {
+      "dimension": "Independent uncertainty and executable claim lineage",
+      "assessment": "Stored unresolved rows and independently unsupported resolved predicates are preserved separately. Oracle uncertainty prevents combined PASS. Lineage recipes independently select both-feasible rows, recompute rates and conditional moments, bind source manifests, validate statistical design and suppress deterministic CIs. Undefined conditional means remain null.",
+      "locations": [
+        "analysis/supplement/checker.py: process_job, update, write_lineage, lineage_value, execute_lineage_recipe, combined_assessment",
+        "analysis/supplement/replay.py: replay_job",
+        "@repo/lab/verification.py: evaluate_claim"
+      ],
+      "limitations": [
+        "Supplemental recipes do not extend the native Claim operation vocabulary.",
+        "No manuscript claim inventory is enclosed or validated.",
+        "The supplied deterministic ledger declares unresolved coverage, which must remain explicit and prevents an unqualified full-packet scientific PASS."
+      ]
+    }
+  ],
+  "limitations": [
+    "This is complete inline source inspection and mathematical reasoning only; no tools, filesystem access, execution, mutation or agents were used.",
+    "No canonical verification, benchmark, test verdict, runtime measurement or scientific PASS is asserted.",
+    "The 24 illustrative rows and six embedded saved-row snapshots do not replace the planned 145-job verification.",
+    "Declared hashes, manifest bindings and source authenticity were not computationally verified.",
+    "Several framework guard implementations, production analytic and experiment implementations, aggregate results and runtime model definitions are outside the enclosed packet.",
+    "Numerical oracle bounds are not validated interval arithmetic certificates.",
+    "Shared pinned-oracle replay is reproducibility evidence, not independent optimization evidence.",
+    "Finite planned checks cannot prove correctness for arbitrary admissible real inputs.",
+    "Unresolved boundaries, unsupported predicates, oracle uncertainty, incomplete execution and failed precision thresholds must remain explicit in the eventual report.",
+    "Ready means suitable to proceed to bounded verification with honest scoping; it grants no scientific gate authority and authorizes no alteration of locked science."
+  ],
+  "summary": [
+    "The bounded packet is ready for finite verification execution.",
+    "No actionable defect preventing an honestly scoped report was identified.",
+    "Normalized power, noise and matched OMA bookkeeping are consistent.",
+    "The supplement supplies independent predicates beyond native author-mask checks.",
+    "Integer boundaries and singleton witnesses receive exact checks.",
+    "Noninteger narrow boundaries remain explicitly unresolved.",
+    "Final and attempted candidates have separate masks and diagnostics.",
+    "Shared oracle replay is correctly distinguished from independent optimization.",
+    "Statistics, event bounds and conditional denominators are recomputed by source.",
+    "Source bindings, inventories and failure receipts require actual execution.",
+    "Native acceptance must be interpreted alongside the combined assessment.",
+    "Declared unresolved deterministic coverage cannot become scientific PASS.",
+    "No execution result, benchmark result or gate approval is claimed."
+  ]
+}

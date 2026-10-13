@@ -31,12 +31,14 @@ the source plan and AGENTS.md still reserve scientific decisions for the PI.
 
 Current state: G1â€“G5 approved; phase P6; G6/G7 invalidated. The canonical G5
 reapproval supersedes the historical G5-pending audit. P5 R2 completed 145 fresh
-native jobs without changing the physical protocol. The fourth enforced
-read-only source review returned READY with zero findings; its exact source
-mapping is `analysis/source-review-ready.json` under the M11 project.
+native jobs without changing the physical protocol. The active source mapping now binds the fifth enforced read-only review,
+which returned READY with zero findings. Its exact 19-source mapping is
+`analysis/source-review-ready.json` under the M11 project. The fourth review
+and first completed verification remain retained historical evidence.
 
-The full native verifier finished with PASS on 2026-10-12 at 16:05 UTC. Its
-report is `projects/m11-noma-qos/analysis/verification.json`; the unique native
+The first full native verifier finished with PASS on 2026-10-12 at 16:05 UTC.
+Its original report is now archived at `analysis/supplement/native-output-archive-attempt1/verification.json`
+under the M11 project; the unique original native
 attempt receipt is retained under `analysis/supplement/runs/`. This result does
 not complete P6 acceptance or approve G6.
 
@@ -63,11 +65,14 @@ external transmission. The fourth approval covers its completed exact packet.
 Complete discrepancy triage is retained. The candidate author diagnostic has
 completed all 145 jobs / 4,718,692 rows with zero row errors; it retains the
 deterministic ambiguities and omits canonical guards, shared replay and global
-statistics. The automatic approval review rejected the fifth external review
-launch pending explicit private-packet/destination authorization. No review
-was launched or transmitted.
+statistics. The PI explicitly authorized the exact fifth private source packet transfer.
+The fifth enforced independent source review returned READY with zero findings;
+its effective read-only/no-tool/fresh-fork/provider and byte-integrity audits are
+retained. The exact two reviewed analysis source paths are now applied, all19
+active source bindings match, and all51 locked inputs are unchanged. Original
+native outputs are archived byte-identically for a fresh canonical rerun.
 
-P6 still needs independent candidate source review, the corrected canonical
+P6 still needs the corrected canonical
 rerun and combined assessment, executable accepted manuscript claims, and
 enforced independent numerical-results review.
 P7 requires the evidence-traced manuscript, verified citations, figures,

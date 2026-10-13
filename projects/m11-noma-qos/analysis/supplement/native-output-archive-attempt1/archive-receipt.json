@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-10-13T07:37:44.853756+00:00",
+  "status": "ORIGINAL_NATIVE_OUTPUTS_ARCHIVED_WITHOUT_OVERWRITE",
+  "original_git_commit": "275a0985922f04875b43d03339d416b8af924bde",
+  "native_attempt_receipt": "analysis/supplement/runs/2026-10-12T15-09-53.545767+00-00-86665a33b2b84ec08c39b45d32ef23c5-native/native-receipt.json",
+  "native_attempt_receipt_sha256": "db9b8973b7d5008496c9afb56f51e4ce25e5208521e9e626563e3d8e3803f23f",
+  "original_source_hashes": {
+    "model/model-spec.tex": "c885769e4d0d191bd82e11891de912340a7baa64af49d9b8c4584b4a3204f76e",
+    "model/notation.yaml": "2e937f7f98e3240f476471c44cc2756afdfe77079aa8f5845cfe1bcfe920de22",
+    "model/assumptions.yaml": "48689bf9d889c0b4d4ccc9c7abe4f484cc41fde5ac27ddc4e5ea6e399ec16b4a",
+    "model/predictions.yaml": "b18859e62c3a5306b9b341331b5acd7e7ec5fb93b5fbc3cf82032fb8959a6fd2",
+    "sim/protocol.md": "93bdad13f228362b232f66e7e5ba50a751836c7039516bc77895eb52eeaf0e25",
+    "sim/protocol.yaml": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+    "sim/protocol-errata.md": "77ea24e95efbc18e1eaa3cee292c87dabeecb0d1aed742b63d78a32a2f14037c",
+    "sim/cases.yaml": "1f76d4897394371498250edb71d8ae31c08f1f497bd0b3296c48c55718dd5840",
+    "sim/lock.json": "b01177976ab7f614bb387c19f1537445f04ffb84fb186a6f27ea107a7bd09c9c",
+    "sim/src/verifier.py": "1aefd2052cfbdbf39f82bb70e5b4c14f1017202cfd3911f456a180ecdf1317b9",
+    "sim/src/oracle.py": "2b145f6ef8633cf675a4ab34f6632dc09a13156cac0b83bd37f42b0df1dc0055",
+    "analysis/supplement/benchmark_synthetic.py": "c8b20f4600859248c980a120dae535cb23bc61bf587a39ee4a17b12c0ffb2830",
+    "analysis/supplement/checker.py": "5917100f8fefe37b3955d48e87c2b6c9d4f2b32e8957308f75dbb06751a4037f",
+    "analysis/supplement/independent.py": "b2df159ab3d17d1ed4186df4ad3387fb730a52895721a718a8a84621837cbc83",
+    "analysis/supplement/replay.py": "4838fef8a023e94dff52ecd5bdddeffd6f24613c5b54f9ede827de0f1449824d",
+    "analysis/supplement/run_unit_tests.py": "4bb6e3b922757cbfa9a7bcd706b107c108ad1966465f603c648fa5902654f4f4",
+    "analysis/supplement/test_supplement.py": "87852446cfd24434dc48921020da25b81f3f94ae2da9206e240ca5e91fdf2f60",
+    "@repo/lab/verification.py": "c549b8cca4d34dd2fa66501f79072a946e579fe919d4109769673a328fc3dcfb",
+    "@repo/schemas/verification_item.schema.json": "0f170d8a63840534de3ac3d87ce0c4a43c1edcc8c262bbf038025810e9c5f972"
+  },
+  "original_file_hashes": {
+    "analysis/verifier-output/checks.yaml": "f1a4b695c7f4fcdc0d26fa26f8fad9906a4220c2f0b7a99b6a416e78cecbf7cd",
+    "analysis/verifier-output/recomputation.json": "12af2fbdefe90ac79e6e88bb664a93c6313332d7b19a1d0a666365b3bd2bbd1a",
+    "analysis/verifier-output/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis/verifier-output/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis/verifier-output/verification.yaml": "a0b932402894c74f9872740880bb30e9855ef1b6429e794898eaa7014995f752",
+    "analysis/verification.json": "3ce782b43896db2ed3675b14043174a6bceefb91551801fab248203e168065e7",
+    "analysis/verification.yaml": "a0b932402894c74f9872740880bb30e9855ef1b6429e794898eaa7014995f752",
+    "analysis/verification-report.md": "ec9399dab825e758e115057be0491f480328f6806a661eef75468cfa5bec6698"
+  },
+  "original_to_archive": {
+    "analysis/verifier-output/checks.yaml": "analysis/supplement/native-output-archive-attempt1/verifier-output/checks.yaml",
+    "analysis/verifier-output/recomputation.json": "analysis/supplement/native-output-archive-attempt1/verifier-output/recomputation.json",
+    "analysis/verifier-output/stderr.txt": "analysis/supplement/native-output-archive-attempt1/verifier-output/stderr.txt",
+    "analysis/verifier-output/stdout.txt": "analysis/supplement/native-output-archive-attempt1/verifier-output/stdout.txt",
+    "analysis/verifier-output/verification.yaml": "analysis/supplement/native-output-archive-attempt1/verifier-output/verification.yaml",
+    "analysis/verification.json": "analysis/supplement/native-output-archive-attempt1/verification.json",
+    "analysis/verification.yaml": "analysis/supplement/native-output-archive-attempt1/verification.yaml",
+    "analysis/verification-report.md": "analysis/supplement/native-output-archive-attempt1/verification-report.md"
+  },
+  "original_ready_sha256": "d303b5f0ab3a6363cf78ec32519558dcb6ee54dc2371e9dd78535fe30be02583",
+  "historical_receipts_unchanged": true,
+  "note": "Historical receipts retain original paths. Use this exact archive mapping or the recorded Git commit for first-attempt bytes; future active output paths belong to the new attempt."
+}

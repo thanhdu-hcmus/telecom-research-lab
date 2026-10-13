@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T07:42:45.923918+00:00",
+  "status": "PASS",
+  "tests": 97,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_s": 182.679,
+  "command": "python -m pytest -q --basetemp .cache/pytest-p6-round5-integrated --junitxml .cache/p6-round5-integrated-framework-tests.xml",
+  "evidence": {
+    "framework-tests.xml": "a2de93bc421fe36feda9f5856ff3001546f9c6d36daa4dac6328503e451c9636",
+    "framework-stdout.txt": "318f4972e603a8cc3b5bcce08008cd2c1eaa7160de82d5c329aadd1b8541e367",
+    "framework-stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scientific_acceptance": false
+}

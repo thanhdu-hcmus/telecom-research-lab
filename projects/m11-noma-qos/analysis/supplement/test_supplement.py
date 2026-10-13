@@ -1947,3 +1947,454 @@ class DeterministicLineageExecutionTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+# Canonical row snapshots from mc-00-q1, seed 11001. Regression data only;
+# source manifest and capture receipt are retained in parent-repair evidence.
+_FRACTIONAL_CROSSING_REGRESSIONS = [
+    {
+        "A": "0.0016788709676153631",
+        "B": "0.593918137470147",
+        "P": "1.0",
+        "a_star": "nan",
+        "boundary_flag": "False",
+        "candidate_a": "nan",
+        "candidate_constraints_pass": "False",
+        "candidate_cw_at_s": "nan",
+        "candidate_gamma_ss": "nan",
+        "candidate_gamma_ws": "nan",
+        "candidate_gamma_ww": "nan",
+        "candidate_rs": "nan",
+        "candidate_rw": "nan",
+        "candidate_rw_site": "nan",
+        "candidate_sum_rate": "nan",
+        "candidate_violation": "False",
+        "candidate_within_rate_tolerance": "False",
+        "category": "n00",
+        "certificate": "binary64-separated",
+        "cw_at_s": "nan",
+        "exact_split": "",
+        "feasible": "0.0",
+        "fixed_feasible": "0.0",
+        "fixed_sum": "nan",
+        "gamma_ss": "nan",
+        "gamma_ws": "nan",
+        "gamma_ww": "nan",
+        "grid_a": "nan",
+        "grid_found_feasible": "0.0",
+        "grid_sum": "nan",
+        "gs": "0.593918137470147",
+        "gw": "0.0016788709676153631",
+        "interval_lower": "0.3185744011938539",
+        "interval_upper": "-93.92730663031637",
+        "nonunique": "False",
+        "numeric_domain": "True",
+        "oma_boundary_flag": "False",
+        "oma_certificate": "binary64-separated",
+        "oma_feasible": "0.0",
+        "oma_residual_s": "0.08628876770727989",
+        "oma_residual_w": "-0.24878996605181788",
+        "oma_rs": "0.3362887677072799",
+        "oma_rw": "0.0012100339481821113",
+        "oma_status": "infeasible",
+        "oma_sum": "0.337498801655462",
+        "optimizer_unique": "False",
+        "paired_difference": "nan",
+        "qs": "0.25",
+        "qw": "0.25",
+        "residual_s": "nan",
+        "residual_w": "nan",
+        "row": "177",
+        "rs": "nan",
+        "rw": "nan",
+        "rw_site": "nan",
+        "sic_residual": "nan",
+        "singleton": "False",
+        "status": "infeasible",
+        "sum_rate": "nan",
+    },
+    {
+        "A": "0.0006783217862415355",
+        "B": "0.37842689922106304",
+        "P": "1.0",
+        "a_star": "nan",
+        "boundary_flag": "False",
+        "candidate_a": "nan",
+        "candidate_constraints_pass": "False",
+        "candidate_cw_at_s": "nan",
+        "candidate_gamma_ss": "nan",
+        "candidate_gamma_ws": "nan",
+        "candidate_gamma_ww": "nan",
+        "candidate_rs": "nan",
+        "candidate_rw": "nan",
+        "candidate_rw_site": "nan",
+        "candidate_sum_rate": "nan",
+        "candidate_violation": "False",
+        "candidate_within_rate_tolerance": "False",
+        "category": "n00",
+        "certificate": "binary64-separated",
+        "cw_at_s": "nan",
+        "exact_split": "",
+        "feasible": "0.0",
+        "fixed_feasible": "0.0",
+        "fixed_sum": "nan",
+        "gamma_ss": "nan",
+        "gamma_ws": "nan",
+        "gamma_ww": "nan",
+        "grid_a": "nan",
+        "grid_found_feasible": "0.0",
+        "grid_sum": "nan",
+        "gs": "0.37842689922106304",
+        "gw": "0.0006783217862415355",
+        "interval_lower": "0.4999832606830447",
+        "interval_upper": "-233.71383553261882",
+        "nonunique": "False",
+        "numeric_domain": "True",
+        "oma_boundary_flag": "False",
+        "oma_certificate": "binary64-separated",
+        "oma_feasible": "0.0",
+        "oma_residual_s": "-0.01848861983615624",
+        "oma_residual_w": "-0.24951086013979412",
+        "oma_rs": "0.23151138016384376",
+        "oma_rw": "0.0004891398602058676",
+        "oma_status": "infeasible",
+        "oma_sum": "0.23200052002404964",
+        "optimizer_unique": "False",
+        "paired_difference": "nan",
+        "qs": "0.25",
+        "qw": "0.25",
+        "residual_s": "nan",
+        "residual_w": "nan",
+        "row": "397",
+        "rs": "nan",
+        "rw": "nan",
+        "rw_site": "nan",
+        "sic_residual": "nan",
+        "singleton": "False",
+        "status": "infeasible",
+        "sum_rate": "nan",
+    },
+    {
+        "A": "8.877587071434792e-05",
+        "B": "1.624855478613857",
+        "P": "1.0",
+        "a_star": "nan",
+        "boundary_flag": "False",
+        "candidate_a": "nan",
+        "candidate_constraints_pass": "False",
+        "candidate_cw_at_s": "nan",
+        "candidate_gamma_ss": "nan",
+        "candidate_gamma_ws": "nan",
+        "candidate_gamma_ww": "nan",
+        "candidate_rs": "nan",
+        "candidate_rw": "nan",
+        "candidate_rw_site": "nan",
+        "candidate_sum_rate": "nan",
+        "candidate_violation": "False",
+        "candidate_within_rate_tolerance": "False",
+        "category": "n00",
+        "certificate": "binary64-separated",
+        "cw_at_s": "nan",
+        "exact_split": "",
+        "feasible": "0.0",
+        "fixed_feasible": "0.0",
+        "fixed_sum": "nan",
+        "gamma_ss": "nan",
+        "gamma_ws": "nan",
+        "gamma_ww": "nan",
+        "grid_a": "nan",
+        "grid_found_feasible": "0.0",
+        "grid_sum": "nan",
+        "gs": "1.624855478613857",
+        "gw": "8.877587071434792e-05",
+        "interval_lower": "0.11644550391898927",
+        "interval_upper": "-1791.3531250686854",
+        "nonunique": "False",
+        "numeric_domain": "True",
+        "oma_boundary_flag": "False",
+        "oma_certificate": "binary64-separated",
+        "oma_feasible": "0.0",
+        "oma_residual_s": "0.44611899595569005",
+        "oma_residual_w": "-0.24993596458814257",
+        "oma_rs": "0.69611899595569",
+        "oma_rw": "6.403541185742687e-05",
+        "oma_status": "infeasible",
+        "oma_sum": "0.6961830313675474",
+        "optimizer_unique": "False",
+        "paired_difference": "nan",
+        "qs": "0.25",
+        "qw": "0.25",
+        "residual_s": "nan",
+        "residual_w": "nan",
+        "row": "743",
+        "rs": "nan",
+        "rw": "nan",
+        "rw_site": "nan",
+        "sic_residual": "nan",
+        "singleton": "False",
+        "status": "infeasible",
+        "sum_rate": "nan",
+    },
+]
+
+
+@pytest.mark.parametrize("raw", _FRACTIONAL_CROSSING_REGRESSIONS)
+def test_fractional_small_gain_original_crossing_does_not_lose_precision(raw):
+    metric = {k: raw[k] for k in ind.METRIC_COLUMNS}
+    inputs = tuple(float(raw[k]) for k in ("P", "gw", "gs", "qw", "qs"))
+    audit = Audit()
+    ind.check_row(raw, metric, inputs, "", int(raw["row"]), audit)
+    assert audit.counts == {}
+
+
+@pytest.mark.parametrize("replacement", [-93.91730663031637, 0.5, "nan", "inf"])
+def test_fractional_out_of_domain_crossing_corruption_remains_rejected(replacement):
+    raw = dict(_FRACTIONAL_CROSSING_REGRESSIONS[0])
+    raw["interval_upper"] = str(replacement)
+    inputs = (1.0, 0.0016788709676153631, 0.593918137470147, 0.25, 0.25)
+    audit = Audit()
+    ind.check_row(raw, {k: raw[k] for k in ind.METRIC_COLUMNS}, inputs, "", 177, audit)
+    assert any(k.startswith("interval_upper") for k in audit.counts)
+
+
+def test_fractional_physical_crossing_keeps_absolute_split_tolerance():
+    inputs = (1.0, 1.0, 4.0, 0.25, 0.25)
+    raw, metric = fixture(inputs)
+    # 80-digit reference is 2**(3/4)-1; intentionally move past SPLIT.
+    raw["interval_upper"] = str(0.6817928305074291 + 2e-12)
+    audit = Audit()
+    ind.check_row(raw, metric, inputs, "fixture", 0, audit)
+    assert "interval_upper.original_crossing" in audit.counts
+
+
+_FRACTIONAL_OUTSIDE_ROUNDOFF_REGRESSIONS = [
+    {
+        "A": "8.980521268095308e-06",
+        "B": "2.2617600063359746",
+        "P": "1.0",
+        "a_star": "nan",
+        "boundary_flag": "False",
+        "candidate_a": "nan",
+        "candidate_constraints_pass": "False",
+        "candidate_cw_at_s": "nan",
+        "candidate_gamma_ss": "nan",
+        "candidate_gamma_ws": "nan",
+        "candidate_gamma_ww": "nan",
+        "candidate_rs": "nan",
+        "candidate_rw": "nan",
+        "candidate_rw_site": "nan",
+        "candidate_sum_rate": "nan",
+        "candidate_violation": "False",
+        "candidate_within_rate_tolerance": "False",
+        "category": "n00",
+        "certificate": "binary64-separated",
+        "cw_at_s": "nan",
+        "exact_split": "",
+        "feasible": "0.0",
+        "fixed_feasible": "0.0",
+        "fixed_sum": "nan",
+        "gamma_ss": "nan",
+        "gamma_ws": "nan",
+        "gamma_ww": "nan",
+        "grid_a": "nan",
+        "grid_found_feasible": "0.0",
+        "grid_sum": "nan",
+        "gs": "2.2617600063359746",
+        "gw": "8.980521268095308e-06",
+        "interval_lower": "0.08365481504345566",
+        "interval_upper": "-17715.67911356741",
+        "nonunique": "False",
+        "numeric_domain": "True",
+        "oma_boundary_flag": "False",
+        "oma_certificate": "binary64-separated",
+        "oma_feasible": "0.0",
+        "oma_residual_s": "0.602825317694679",
+        "oma_residual_w": "-0.24999352195233904",
+        "oma_rs": "0.852825317694679",
+        "oma_rw": "6.478047660960624e-06",
+        "oma_status": "infeasible",
+        "oma_sum": "0.8528317957423399",
+        "optimizer_unique": "False",
+        "paired_difference": "nan",
+        "qs": "0.25",
+        "qw": "0.25",
+        "residual_s": "nan",
+        "residual_w": "nan",
+        "row": "6173",
+        "rs": "nan",
+        "rw": "nan",
+        "rw_site": "nan",
+        "sic_residual": "nan",
+        "singleton": "False",
+        "status": "infeasible",
+        "sum_rate": "nan",
+    },
+    {
+        "A": "3.0898376835494e-05",
+        "B": "0.9953266366518917",
+        "P": "1.0",
+        "a_star": "nan",
+        "boundary_flag": "False",
+        "candidate_a": "nan",
+        "candidate_constraints_pass": "False",
+        "candidate_cw_at_s": "nan",
+        "candidate_gamma_ss": "nan",
+        "candidate_gamma_ws": "nan",
+        "candidate_gamma_ww": "nan",
+        "candidate_rs": "nan",
+        "candidate_rw": "nan",
+        "candidate_rw_site": "nan",
+        "candidate_sum_rate": "nan",
+        "candidate_violation": "False",
+        "candidate_within_rate_tolerance": "False",
+        "category": "n00",
+        "certificate": "binary64-separated",
+        "cw_at_s": "nan",
+        "exact_split": "",
+        "feasible": "0.0",
+        "fixed_feasible": "0.0",
+        "fixed_sum": "nan",
+        "gamma_ss": "nan",
+        "gamma_ws": "nan",
+        "gamma_ww": "nan",
+        "grid_a": "nan",
+        "grid_found_feasible": "0.0",
+        "grid_sum": "nan",
+        "gs": "0.9953266366518917",
+        "gw": "3.0898376835494e-05",
+        "interval_lower": "0.19009550034668155",
+        "interval_upper": "-5148.412916928036",
+        "nonunique": "False",
+        "numeric_domain": "True",
+        "oma_boundary_flag": "False",
+        "oma_certificate": "binary64-separated",
+        "oma_feasible": "0.0",
+        "oma_residual_s": "0.24831246808716861",
+        "oma_residual_w": "-0.2499777118768156",
+        "oma_rs": "0.4983124680871686",
+        "oma_rw": "2.2288123184401445e-05",
+        "oma_status": "infeasible",
+        "oma_sum": "0.498334756210353",
+        "optimizer_unique": "False",
+        "paired_difference": "nan",
+        "qs": "0.25",
+        "qw": "0.25",
+        "residual_s": "nan",
+        "residual_w": "nan",
+        "row": "14612",
+        "rs": "nan",
+        "rw": "nan",
+        "rw_site": "nan",
+        "sic_residual": "nan",
+        "singleton": "False",
+        "status": "infeasible",
+        "sum_rate": "nan",
+    },
+    {
+        "A": "3.3501100015201812e-06",
+        "B": "0.2120996129475399",
+        "P": "1.0",
+        "a_star": "nan",
+        "boundary_flag": "False",
+        "candidate_a": "nan",
+        "candidate_constraints_pass": "False",
+        "candidate_cw_at_s": "nan",
+        "candidate_gamma_ss": "nan",
+        "candidate_gamma_ws": "nan",
+        "candidate_gamma_ww": "nan",
+        "candidate_rs": "nan",
+        "candidate_rw": "nan",
+        "candidate_rw_site": "nan",
+        "candidate_sum_rate": "nan",
+        "candidate_violation": "False",
+        "candidate_within_rate_tolerance": "False",
+        "category": "n00",
+        "certificate": "binary64-separated",
+        "cw_at_s": "nan",
+        "exact_split": "",
+        "feasible": "0.0",
+        "fixed_feasible": "0.0",
+        "fixed_sum": "nan",
+        "gamma_ss": "nan",
+        "gamma_ws": "nan",
+        "gamma_ww": "nan",
+        "grid_a": "nan",
+        "grid_found_feasible": "0.0",
+        "grid_sum": "nan",
+        "gs": "0.2120996129475399",
+        "gw": "3.3501100015201812e-06",
+        "interval_lower": "0.8920672337554854",
+        "interval_upper": "-47491.2070286048",
+        "nonunique": "False",
+        "numeric_domain": "True",
+        "oma_boundary_flag": "False",
+        "oma_certificate": "binary64-separated",
+        "oma_feasible": "0.0",
+        "oma_residual_s": "-0.11124586627112792",
+        "oma_residual_w": "-0.2499975834105051",
+        "oma_rs": "0.13875413372887208",
+        "oma_rw": "2.4165894948947837e-06",
+        "oma_status": "infeasible",
+        "oma_sum": "0.13875655031836698",
+        "optimizer_unique": "False",
+        "paired_difference": "nan",
+        "qs": "0.25",
+        "qw": "0.25",
+        "residual_s": "nan",
+        "residual_w": "nan",
+        "row": "19341",
+        "rs": "nan",
+        "rw": "nan",
+        "rw_site": "nan",
+        "sic_residual": "nan",
+        "singleton": "False",
+        "status": "infeasible",
+        "sum_rate": "nan",
+    },
+]
+
+
+@pytest.mark.parametrize("raw", _FRACTIONAL_OUTSIDE_ROUNDOFF_REGRESSIONS)
+def test_fractional_outside_crossing_one_or_two_ulps_is_retained_as_diagnostic(raw):
+    inputs = tuple(float(raw[k]) for k in ("P", "gw", "gs", "qw", "qs"))
+    audit = Audit()
+    ind.check_row(raw, {k: raw[k] for k in ind.METRIC_COLUMNS}, inputs, "", int(raw["row"]), audit)
+    assert audit.counts == {}
+    assert audit.diagnostic_counts.get("interval_upper.original_crossing.roundoff") == 1
+
+
+@pytest.mark.parametrize("raw", _FRACTIONAL_OUTSIDE_ROUNDOFF_REGRESSIONS)
+def test_fractional_large_outside_crossing_material_shift_remains_rejected(raw):
+    corrupted = dict(raw)
+    corrupted["interval_upper"] = str(float(raw["interval_upper"]) + 0.01)
+    inputs = tuple(float(raw[k]) for k in ("P", "gw", "gs", "qw", "qs"))
+    audit = Audit()
+    ind.check_row(
+        corrupted, {k: raw[k] for k in ind.METRIC_COLUMNS}, inputs, "", int(raw["row"]), audit
+    )
+    assert "interval_upper.original_crossing" in audit.counts
+
+
+def test_fractional_positive_outside_crossing_roundoff_is_diagnostic():
+    inputs = (1.0, 5e-15, 1e-14, 0.0, 0.25)
+    raw, metric = fixture(inputs)
+    # An 80-digit reference rounds to 18920711500272.105; use its adjacent
+    # binary64 representation to exercise one ULP outside the physical domain.
+    raw["interval_lower"] = "18920711500272.11"
+    audit = Audit()
+    ind.check_row(raw, metric, inputs, "fixture", 0, audit)
+    assert audit.counts == {}
+    assert audit.diagnostic_counts.get("interval_lower.original_crossing.roundoff") == 1
+    raw["interval_lower"] = "0.5"
+    rejected = Audit()
+    ind.check_row(raw, metric, inputs, "fixture", 0, rejected)
+    assert "interval_lower.original_crossing" in rejected.counts
+
+
+def test_exact_integer_outside_crossing_does_not_get_fractional_roundoff_allowance():
+    inputs = (1.0, 1e-14, 1.0, 1.0, 0.0)
+    raw, metric = fixture(inputs)
+    raw["interval_upper"] = str(math.nextafter(-49999999999999.5, -math.inf))
+    audit = Audit()
+    ind.check_row(raw, metric, inputs, "fixture", 0, audit)
+    assert "interval_upper.original_crossing" in audit.counts

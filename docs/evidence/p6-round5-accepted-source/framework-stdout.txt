@@ -1,0 +1,9 @@
+........................................................................ [ 74%]
+.........................                                                [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\_pytest\cacheprovider.py:469
+  D:\02_EDUCATION\THESIS\telecom-research-lab\.venv\Lib\site-packages\_pytest\cacheprovider.py:469: PytestCacheWarning: cache could not write path D:\02_EDUCATION\THESIS\telecom-research-lab\.pytest_cache\v\cache\nodeids: [Errno 13] Permission denied: 'D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.pytest_cache\\v\\cache\\nodeids'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+97 passed, 1 warning in 182.69s (0:03:02)

@@ -1,0 +1,13 @@
+id: 2026-10-13-0042
+timestamp: '2026-10-13T07:37:44.932861+00:00'
+phase: P6
+summary: Applied exactly the two analysis source paths from independently reviewed
+  round5 candidate; all19 active source hashes match the ready review and all51 locked
+  inputs are unchanged. Archived all8 first native output files with byte-identical
+  mapping before fresh execution. Original failed supplement, combined assessment
+  and source-ready round4 retained. No scientific gate changed.
+provenance: ai
+evidence:
+  analysis/source-review-05/receipt.json: cf1dce8e0c58989e275f7fb9bbc164605a8710c0cd4eb2bbfd2cc52e1868a916
+  analysis/supplement/native-output-archive-attempt1/archive-receipt.json: e3ab77a1f727f8c128da2366af0ed32ca01063962e9ac9e1a09750075367d0a9
+  analysis/supplement/native-output-archive-attempt1/candidate-application-receipt.json: f7a317d8947248868859f743d63229905851638bd9aa915ac5f8353251217bcb

@@ -361,3 +361,32 @@ did not explicitly name the private payload and destination. No packet was
 transmitted and no reviewer launched. Explicit transfer authorization has been
 requested. The original round-four source remains active, its completed FAIL
 remains recorded, and G6/G7 remain invalidated.
+
+## P6 fifth source review explicitly authorized and running
+
+The PI explicitly authorized sending the exact fifth private source packet to
+one authenticated OpenAI Codex review session using the existing account. The
+earlier automatic-transfer rejection is historical. The launch uses the unchanged
+406,937-byte packet, candidate aa68d62, a separate read-only root and one fresh
+named results verifier, with no reviewer tools or writes. Effective runtime
+permissions and source integrity must be audited at completion. No numerical
+results review or scientific gate is authorized. The active original source
+and all 51 locked inputs remain unchanged until an actual READY review.
+
+## P6 fifth enforced source review READY; correction applied
+
+The fifth review returned READY with zero findings. The actual root and fresh
+results verifier were read-only with approval never; the reviewer made no tool
+calls, and all source and review-workspace bytes remained unchanged. OpenAI
+provider metadata and sanitized fresh-fork evidence are retained in
+analysis/source-review-05. The exact two reviewed analysis source paths are now
+applied, with all 19 active source hashes matching the review and all 51 locked
+inputs unchanged. All 133 supplemental unit cases and changed-source lint and
+format checks pass. All 97 framework tests pass.
+
+All eight original native output files were archived byte-identically with an
+explicit path mapping under analysis/supplement/native-output-archive-attempt1.
+The original combined FAIL and uncertainty remain historical evidence. Fresh
+canonical execution has not yet launched; scientific acceptance and G6/G7
+remain pending. The earlier transfer rejection and source-review-running
+sections are historical.
