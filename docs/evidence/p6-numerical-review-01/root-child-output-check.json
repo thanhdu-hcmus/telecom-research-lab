@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-10-13T15:00:28.229396+00:00",
+  "status": "PASS",
+  "parent_returned_complete_child_artifact_unchanged": true,
+  "check_kind": "Parsed full JSON object equality; no claim about surrounding transport whitespace",
+  "observed_child_final_phase": "final_answer",
+  "initial_auxiliary_filter_correction": "Initial final-only phase filter matched no message; corrected to the actual final_answer phase before asserting output equality.",
+  "raw_child_transport_not_retained": true,
+  "scientific_acceptance": false
+}

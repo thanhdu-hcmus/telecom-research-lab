@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-13T14:57:41.096805+00:00",
+  "status": "PASS",
+  "indexed_files_checked": 1287,
+  "approved_index_bindings": 1002,
+  "owned_files_checked": 285,
+  "locked_inputs_checked": 51,
+  "locked_inputs_unchanged": true,
+  "round5_packet_source_bindings_current": true,
+  "round5_review_transmitted": true,
+  "canonical_round5_source_review_ready": true,
+  "canonical_full_verification_status": "INCONCLUSIVE",
+  "candidate_author_diagnostic_status": "COMPLETE",
+  "raw_encrypted_runtime_transport_excluded": true,
+  "mismatches": [],
+  "scoped_numerical_review_evidence_byte_bindings_current": true,
+  "completed_attempt2_byte_bindings_current": true,
+  "canonical_jobs": 145,
+  "canonical_rows": 4718692,
+  "canonical_error_counts": {},
+  "scientific_acceptance": false
+}
