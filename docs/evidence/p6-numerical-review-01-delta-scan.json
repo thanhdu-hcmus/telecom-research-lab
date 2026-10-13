@@ -1,0 +1,2237 @@
+{
+  "timestamp": "2026-10-13T14:56:51.778921+00:00",
+  "status": "PASS",
+  "method": "Incremental scan of every new/modified scannable staged path since the CI-passing 72dc260; referenced native evidence also independently rehashed. Exact digests are classified only against rehashed actual files, verified Git object or existing operation UUID directories. No broad exclusions or unknown acceptances.",
+  "scanned_paths": [
+    "docs/remaining-work-audit.md",
+    "projects/m11-noma-qos/analysis/numerical-review-01-deterministic-authorization.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01-deterministic-launch.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01-local-preflight.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/launch.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stderr.txt",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/launch.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stderr.txt",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/launch.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stderr.txt",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-validation.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/final-launch-marker.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/findings.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/launch/authorization.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/launch/initial-launch-marker.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/launch/launch-receipt.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/launch/local-preflight-failure.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/launch/local-snapshot-mapping.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/launch/run_p6_numerical_review_01.py",
+    "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/runtime-audit.json",
+    "projects/m11-noma-qos/analysis/numerical-review-01/runtime-metadata-sanitized.json",
+    "projects/m11-noma-qos/analysis/supplement/README.md",
+    "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/completion-receipt.json",
+    "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+    "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/completion-receipt.json",
+    "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+    "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/completion-receipt.json",
+    "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+    "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0049.yaml",
+    "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0050.yaml",
+    "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0051.yaml",
+    "projects/m11-noma-qos/ara/trace/sessions/session_index.yaml",
+    "projects/m11-noma-qos/findings.md",
+    "projects/m11-noma-qos/to_human/P6-completed-attempt-status.md"
+  ],
+  "scanned_path_hashes": {
+    "docs/remaining-work-audit.md": "0e5a135b35cb7972b0f71441c25ccdb7caf32813d4c9642b85f4773f955c266a",
+    "projects/m11-noma-qos/analysis/numerical-review-01-deterministic-authorization.json": "68eca09dfc2d86c256230a9b2ccb0a532e964af248b1c0dab652cd4bf4e985e5",
+    "projects/m11-noma-qos/analysis/numerical-review-01-deterministic-launch.json": "54195ff112a9def57a2f4437c655b3bf87c88d504ac4bb541081ca615ebd9d08",
+    "projects/m11-noma-qos/analysis/numerical-review-01-local-preflight.json": "c3967188d044faf0e24da46ed1c14a3a2794a2e7c3ca9fca951e2df4891d0d0b",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/launch.json": "7c2481f61ebbd726503b4f97adf803be650fa66f65fb1d716d0c29f17bb7b5a4",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json": "ac617ff808df6f3e73db8f9bdaf98f1fb5eb6af6058ccf1c0ddaffaec4193a9b",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt": "bbead2d10515ffd4037c556c3624c013f6710a3fbc13ee1a2886e6fc697900c7",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/launch.json": "db0164622849db4dab47ff120fe1cd24642ba4c1d1fc410d5347138876770dc7",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json": "d0937dc600304ee6b74328f6a91b36f4c7b56786ee5364237e92177f1da78825",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt": "a33ce04b1267a493b7db65fa839d17316442310d39a05f2ae7f86b395f723f61",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/launch.json": "0725ac52f17283fff1c5ccb60546bfcf8188b1f8b9dacc93bf773ccde7d98b2b",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json": "55842398f6285b0a6171a7b1301be789c0c6fcf7b667196ffaf5b5f5c036c2ac",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt": "bf1c6547c060ed91eb61ac71304104ef6a44c9cf40cde36b2fb6301613963d13",
+    "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-validation.json": "acdfa24028b0ee5476ed5f48354977db192439aef880cd41957c3f851780fe21",
+    "projects/m11-noma-qos/analysis/numerical-review-01/final-launch-marker.json": "54195ff112a9def57a2f4437c655b3bf87c88d504ac4bb541081ca615ebd9d08",
+    "projects/m11-noma-qos/analysis/numerical-review-01/findings.json": "4ed0e523428710756bcf13fa7b9342220308d7400f7895e9866a13f0b0b084c3",
+    "projects/m11-noma-qos/analysis/numerical-review-01/launch/authorization.json": "68eca09dfc2d86c256230a9b2ccb0a532e964af248b1c0dab652cd4bf4e985e5",
+    "projects/m11-noma-qos/analysis/numerical-review-01/launch/initial-launch-marker.json": "6aa47363f17f67e898668ec08cd0c527b660f9e063479d51789b0e658809b8ea",
+    "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json": "8a8998da32d7a4394ba3ca812182818f29d875a53b84f3e5d33e9cc03a0f9457",
+    "projects/m11-noma-qos/analysis/numerical-review-01/launch/launch-receipt.json": "ce60e576b1d04c3adacabe34cd0bc2779f825154a7b7db75d0428d44618e0fe9",
+    "projects/m11-noma-qos/analysis/numerical-review-01/launch/local-preflight-failure.json": "c3967188d044faf0e24da46ed1c14a3a2794a2e7c3ca9fca951e2df4891d0d0b",
+    "projects/m11-noma-qos/analysis/numerical-review-01/launch/local-snapshot-mapping.json": "347809bd67af7d8f484f86dbfe09f1c5daa19bf287759584241f373b6ab89212",
+    "projects/m11-noma-qos/analysis/numerical-review-01/launch/run_p6_numerical_review_01.py": "5db50b094817d717d4518c008439822110bdf7e7d7c4d2f2b125ac84f498ab3c",
+    "projects/m11-noma-qos/analysis/numerical-review-01/packet.json": "559a322bd08443fa2efc403b01b1068ab42cc0a9782c14d1dd9fd1d423ef0762",
+    "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json": "5963995900ecd7094f2feca5c0a0847ca957558a4556dbad1854b8a619dd04ef",
+    "projects/m11-noma-qos/analysis/numerical-review-01/runtime-audit.json": "ce45243b38b3751485aca8b516217d2dc850440ae77c3557f254ddb0b4eb64c0",
+    "projects/m11-noma-qos/analysis/numerical-review-01/runtime-metadata-sanitized.json": "3bc327dd37e6540c10f06d2d066c9006bc05d8f82fa37490799f9b3a9a56f068",
+    "projects/m11-noma-qos/analysis/supplement/README.md": "da7e26eace740dcfa1f5820e3a7635a4d161589e9e2a4160d0ab833e539f9b38",
+    "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/completion-receipt.json": "503ef072ff5b3bba60362620047c026c5c91ec5e340dca0dabedebf1efdeb408",
+    "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json": "55842398f6285b0a6171a7b1301be789c0c6fcf7b667196ffaf5b5f5c036c2ac",
+    "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/completion-receipt.json": "39f469b5cd25cbc004154f99e89600dced6976455db12ac6e82282017b60367a",
+    "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json": "ac617ff808df6f3e73db8f9bdaf98f1fb5eb6af6058ccf1c0ddaffaec4193a9b",
+    "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/completion-receipt.json": "7098a0af72e2a83bf9fd8ec51e2bc54831e8bcfdbd66c538a0b6771447cbcfc0",
+    "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json": "d0937dc600304ee6b74328f6a91b36f4c7b56786ee5364237e92177f1da78825",
+    "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0049.yaml": "69f6a03acbd1796f4283176ecd92803e3e073588b3cfa42b089e295d6b9b3ee9",
+    "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0050.yaml": "1a0cbf3451983210fc3262dae18c20b861802c970cd57da42ed93ed09b0722b8",
+    "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0051.yaml": "cb8c221fb74f8486d91542383b97f396aeff3356f02516c5d2f75ac2f0a999ee",
+    "projects/m11-noma-qos/ara/trace/sessions/session_index.yaml": "06023faebb7d63bf4e850f20c4a175614aaf51a46a0cd00502244bedc76142c2",
+    "projects/m11-noma-qos/findings.md": "0b6bfca1528ca35b0aee9ba2062656f8f6ebbe2c3e781985c3b8489297922372",
+    "projects/m11-noma-qos/to_human/P6-completed-attempt-status.md": "5bfc6f292a1f73c076e16dd27ec1da38c25f48eb39b0e473537517afae8b53f6"
+  },
+  "new_exact_entries": [
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01-deterministic-authorization.json",
+      "line": 7,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c97c25f7d0345b12d8b7424f8b364a0b4b72bd30",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/packet.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01-deterministic-launch.json",
+      "line": 6,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c97c25f7d0345b12d8b7424f8b364a0b4b72bd30",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/packet.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/launch.json",
+      "line": 9,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "51b43f9dded8f069f9784be99ac5b0060175f718",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/028.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 15,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b5f42222380ad5ade2f045ff6250dbb35299b912",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/016.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 16,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "95e486c1b9475e1fbe78cb229816d3e13b7fe35d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/017.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 21,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8e73fe96d2cbb7d992d27cb721f82114dc513091",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/benchmark_synthetic.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 22,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb6b5952d7414098db248699f51b777ed44a86d2",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/011.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 23,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a37f73bc18724dc3cfcde595fb2ab59e37ec7ea8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/012.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 24,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ef99a99a4b708fc6451a2565772a3e4127d0e701",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/013.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 25,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8880560fa5619d08931460ed393fd2c9f9a4c440",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/run_unit_tests.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 26,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "51a0c01311133bfc8efc8817c4c06b5f6ce41973",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/test_supplement.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 32,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c7c2ae73954a3dd147070659bdd79d1aa6335be5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/000.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 33,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "dd59994c1e5ad101ede8def895810403efef9193",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/001.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 34,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d2ac8f0f3aa5d98f000bfe7df48c485036cf1ece",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/002.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 35,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d4274faff2ec74a1266f84934e4eb326cabded5f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/003.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 36,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "3cfc2891af44f3d525836b940822fea9730ecdcb",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/004.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 37,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1aa08e306ae5af5a3ecf339ccbd9ca700aa9f54f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/005.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 38,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "cbdfb903c31d32dd3b03b53e0772a495267c9540",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/006.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 39,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c223e9cb7cfa2d8e3c24d1a6528d1e1fd9cd6d39",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/007.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 40,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "19b0ee6451be22c21d097b44a98fd606f08c85e5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/008.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 41,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "7c7612c1564abf1864c383e3e9e7fd540f24360b",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/009.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 42,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "49e467abf617c68428cc34ad224961f4a7adf1c8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/010.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 49,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fd97e4686726cc59bb251ea1347252f83d441f63",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/014.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/result.json",
+      "line": 50,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "882106a360bfe7f8fa1385272dfb29c97379514d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/015.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "19b0ee6451be22c21d097b44a98fd606f08c85e5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/008.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1aa08e306ae5af5a3ecf339ccbd9ca700aa9f54f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/005.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "3cfc2891af44f3d525836b940822fea9730ecdcb",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/004.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "49e467abf617c68428cc34ad224961f4a7adf1c8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/010.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "51a0c01311133bfc8efc8817c4c06b5f6ce41973",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/test_supplement.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "7c7612c1564abf1864c383e3e9e7fd540f24360b",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/009.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "882106a360bfe7f8fa1385272dfb29c97379514d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/015.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8880560fa5619d08931460ed393fd2c9f9a4c440",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/run_unit_tests.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8e73fe96d2cbb7d992d27cb721f82114dc513091",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/benchmark_synthetic.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "95e486c1b9475e1fbe78cb229816d3e13b7fe35d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/017.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a37f73bc18724dc3cfcde595fb2ab59e37ec7ea8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/012.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b5f42222380ad5ade2f045ff6250dbb35299b912",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/016.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb6b5952d7414098db248699f51b777ed44a86d2",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/011.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c223e9cb7cfa2d8e3c24d1a6528d1e1fd9cd6d39",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/007.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c7c2ae73954a3dd147070659bdd79d1aa6335be5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/000.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "cbdfb903c31d32dd3b03b53e0772a495267c9540",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/006.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d2ac8f0f3aa5d98f000bfe7df48c485036cf1ece",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/002.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d4274faff2ec74a1266f84934e4eb326cabded5f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/003.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "dd59994c1e5ad101ede8def895810403efef9193",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/001.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ef99a99a4b708fc6451a2565772a3e4127d0e701",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/013.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fd97e4686726cc59bb251ea1347252f83d441f63",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/014.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/launch.json",
+      "line": 9,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "2374f024493af6acead8169d0c3850c92bae2349",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/029.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 15,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b5f42222380ad5ade2f045ff6250dbb35299b912",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/016.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 16,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "95e486c1b9475e1fbe78cb229816d3e13b7fe35d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/017.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 21,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8e73fe96d2cbb7d992d27cb721f82114dc513091",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/benchmark_synthetic.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 22,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb6b5952d7414098db248699f51b777ed44a86d2",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/011.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 23,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a37f73bc18724dc3cfcde595fb2ab59e37ec7ea8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/012.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 24,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ef99a99a4b708fc6451a2565772a3e4127d0e701",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/013.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 25,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8880560fa5619d08931460ed393fd2c9f9a4c440",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/run_unit_tests.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 26,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "51a0c01311133bfc8efc8817c4c06b5f6ce41973",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/test_supplement.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 32,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c7c2ae73954a3dd147070659bdd79d1aa6335be5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/000.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 33,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "dd59994c1e5ad101ede8def895810403efef9193",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/001.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 34,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d2ac8f0f3aa5d98f000bfe7df48c485036cf1ece",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/002.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 35,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d4274faff2ec74a1266f84934e4eb326cabded5f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/003.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 36,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "3cfc2891af44f3d525836b940822fea9730ecdcb",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/004.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 37,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1aa08e306ae5af5a3ecf339ccbd9ca700aa9f54f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/005.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 38,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "cbdfb903c31d32dd3b03b53e0772a495267c9540",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/006.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 39,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c223e9cb7cfa2d8e3c24d1a6528d1e1fd9cd6d39",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/007.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 40,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "19b0ee6451be22c21d097b44a98fd606f08c85e5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/008.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 41,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "7c7612c1564abf1864c383e3e9e7fd540f24360b",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/009.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 42,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "49e467abf617c68428cc34ad224961f4a7adf1c8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/010.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 49,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fd97e4686726cc59bb251ea1347252f83d441f63",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/014.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/result.json",
+      "line": 50,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "882106a360bfe7f8fa1385272dfb29c97379514d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/015.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "19b0ee6451be22c21d097b44a98fd606f08c85e5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/008.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1aa08e306ae5af5a3ecf339ccbd9ca700aa9f54f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/005.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "3cfc2891af44f3d525836b940822fea9730ecdcb",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/004.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "49e467abf617c68428cc34ad224961f4a7adf1c8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/010.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "51a0c01311133bfc8efc8817c4c06b5f6ce41973",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/test_supplement.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "7c7612c1564abf1864c383e3e9e7fd540f24360b",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/009.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "882106a360bfe7f8fa1385272dfb29c97379514d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/015.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8880560fa5619d08931460ed393fd2c9f9a4c440",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/run_unit_tests.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8e73fe96d2cbb7d992d27cb721f82114dc513091",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/benchmark_synthetic.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "95e486c1b9475e1fbe78cb229816d3e13b7fe35d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/017.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a37f73bc18724dc3cfcde595fb2ab59e37ec7ea8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/012.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b5f42222380ad5ade2f045ff6250dbb35299b912",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/016.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb6b5952d7414098db248699f51b777ed44a86d2",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/011.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c223e9cb7cfa2d8e3c24d1a6528d1e1fd9cd6d39",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/007.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c7c2ae73954a3dd147070659bdd79d1aa6335be5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/000.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "cbdfb903c31d32dd3b03b53e0772a495267c9540",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/006.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d2ac8f0f3aa5d98f000bfe7df48c485036cf1ece",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/002.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d4274faff2ec74a1266f84934e4eb326cabded5f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/003.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "dd59994c1e5ad101ede8def895810403efef9193",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/001.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ef99a99a4b708fc6451a2565772a3e4127d0e701",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/013.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fd97e4686726cc59bb251ea1347252f83d441f63",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/014.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/launch.json",
+      "line": 9,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "44cd7788f4d43339de81677dc2443f42b13ed621",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/027.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 15,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b5f42222380ad5ade2f045ff6250dbb35299b912",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/016.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 16,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "95e486c1b9475e1fbe78cb229816d3e13b7fe35d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/017.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 21,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8e73fe96d2cbb7d992d27cb721f82114dc513091",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/benchmark_synthetic.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 22,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb6b5952d7414098db248699f51b777ed44a86d2",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/011.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 23,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a37f73bc18724dc3cfcde595fb2ab59e37ec7ea8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/012.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 24,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ef99a99a4b708fc6451a2565772a3e4127d0e701",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/013.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 25,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8880560fa5619d08931460ed393fd2c9f9a4c440",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/run_unit_tests.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 26,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "51a0c01311133bfc8efc8817c4c06b5f6ce41973",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/test_supplement.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 32,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c7c2ae73954a3dd147070659bdd79d1aa6335be5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/000.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 33,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "dd59994c1e5ad101ede8def895810403efef9193",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/001.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 34,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d2ac8f0f3aa5d98f000bfe7df48c485036cf1ece",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/002.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 35,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d4274faff2ec74a1266f84934e4eb326cabded5f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/003.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 36,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "3cfc2891af44f3d525836b940822fea9730ecdcb",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/004.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 37,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1aa08e306ae5af5a3ecf339ccbd9ca700aa9f54f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/005.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 38,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "cbdfb903c31d32dd3b03b53e0772a495267c9540",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/006.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 39,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c223e9cb7cfa2d8e3c24d1a6528d1e1fd9cd6d39",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/007.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 40,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "19b0ee6451be22c21d097b44a98fd606f08c85e5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/008.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 41,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "7c7612c1564abf1864c383e3e9e7fd540f24360b",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/009.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 42,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "49e467abf617c68428cc34ad224961f4a7adf1c8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/010.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 49,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fd97e4686726cc59bb251ea1347252f83d441f63",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/014.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/result.json",
+      "line": 50,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "882106a360bfe7f8fa1385272dfb29c97379514d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/015.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "19b0ee6451be22c21d097b44a98fd606f08c85e5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/008.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1aa08e306ae5af5a3ecf339ccbd9ca700aa9f54f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/005.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "3cfc2891af44f3d525836b940822fea9730ecdcb",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/004.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "49e467abf617c68428cc34ad224961f4a7adf1c8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/010.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "51a0c01311133bfc8efc8817c4c06b5f6ce41973",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/test_supplement.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "7c7612c1564abf1864c383e3e9e7fd540f24360b",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/009.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "882106a360bfe7f8fa1385272dfb29c97379514d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/015.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8880560fa5619d08931460ed393fd2c9f9a4c440",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/run_unit_tests.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8e73fe96d2cbb7d992d27cb721f82114dc513091",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/benchmark_synthetic.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "95e486c1b9475e1fbe78cb229816d3e13b7fe35d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/017.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a37f73bc18724dc3cfcde595fb2ab59e37ec7ea8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/012.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b5f42222380ad5ade2f045ff6250dbb35299b912",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/016.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb6b5952d7414098db248699f51b777ed44a86d2",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/011.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c223e9cb7cfa2d8e3c24d1a6528d1e1fd9cd6d39",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/007.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c7c2ae73954a3dd147070659bdd79d1aa6335be5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/000.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "cbdfb903c31d32dd3b03b53e0772a495267c9540",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/006.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d2ac8f0f3aa5d98f000bfe7df48c485036cf1ece",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/002.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d4274faff2ec74a1266f84934e4eb326cabded5f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/003.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "dd59994c1e5ad101ede8def895810403efef9193",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/001.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ef99a99a4b708fc6451a2565772a3e4127d0e701",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/013.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt",
+      "line": 1,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fd97e4686726cc59bb251ea1347252f83d441f63",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/014.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-validation.json",
+      "line": 15,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "54a9bbbd5378d6c514ce6516544335aa3d099f41",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/completion-receipt.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-validation.json",
+      "line": 17,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "44cd7788f4d43339de81677dc2443f42b13ed621",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/027.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-validation.json",
+      "line": 27,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "2799740d3644985cd4b6e40cbfc9c45dc110d742",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/completion-receipt.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-validation.json",
+      "line": 29,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "51b43f9dded8f069f9784be99ac5b0060175f718",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/028.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-validation.json",
+      "line": 39,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "135d1f220075eea5298f2cbab6e1a3bf12a0dc86",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/completion-receipt.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-validation.json",
+      "line": 41,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "2374f024493af6acead8169d0c3850c92bae2349",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/029.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/final-launch-marker.json",
+      "line": 6,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c97c25f7d0345b12d8b7424f8b364a0b4b72bd30",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/packet.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/authorization.json",
+      "line": 7,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c97c25f7d0345b12d8b7424f8b364a0b4b72bd30",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/packet.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/initial-launch-marker.json",
+      "line": 6,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c97c25f7d0345b12d8b7424f8b364a0b4b72bd30",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/packet.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 38,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c7c2ae73954a3dd147070659bdd79d1aa6335be5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/000.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 39,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "dd59994c1e5ad101ede8def895810403efef9193",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/001.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 40,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d2ac8f0f3aa5d98f000bfe7df48c485036cf1ece",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/002.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 41,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d4274faff2ec74a1266f84934e4eb326cabded5f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/003.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 42,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "3cfc2891af44f3d525836b940822fea9730ecdcb",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/004.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 43,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1aa08e306ae5af5a3ecf339ccbd9ca700aa9f54f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/005.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 44,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "cbdfb903c31d32dd3b03b53e0772a495267c9540",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/006.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 45,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c223e9cb7cfa2d8e3c24d1a6528d1e1fd9cd6d39",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/007.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 46,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "19b0ee6451be22c21d097b44a98fd606f08c85e5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/008.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 47,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "7c7612c1564abf1864c383e3e9e7fd540f24360b",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/009.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 48,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "49e467abf617c68428cc34ad224961f4a7adf1c8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/010.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 49,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb6b5952d7414098db248699f51b777ed44a86d2",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/011.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 50,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a37f73bc18724dc3cfcde595fb2ab59e37ec7ea8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/012.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 51,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ef99a99a4b708fc6451a2565772a3e4127d0e701",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/013.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 52,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fd97e4686726cc59bb251ea1347252f83d441f63",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/014.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 53,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "882106a360bfe7f8fa1385272dfb29c97379514d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/015.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 54,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b5f42222380ad5ade2f045ff6250dbb35299b912",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/016.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 55,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "95e486c1b9475e1fbe78cb229816d3e13b7fe35d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/017.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 56,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1935bee9783d65d496415500a107c380201c2833",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/018.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 57,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ebb8275f663eb308969dd7f9e81f23cd234719f4",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/019.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 58,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "620d834cbd4c4102e8aafa0b6974a2d416153624",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/020.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 59,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "aedb2770c07e679c1e3f38ea7d5c5b5ca0a5103c",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/021.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 60,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "244f421f896bdcdd2784dccf4eaf7c8dfd5189b5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/023.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 62,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "14df72590e50297ad97d501bff9ec9aec2d5bacc",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/024.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 63,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "39ade6917cb1230e240e1f608e5bd0adc879a4ab",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/025.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 64,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "04b5e9befc0c219068cd33c5e812e5d7016f27ea",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/026.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 65,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "44cd7788f4d43339de81677dc2443f42b13ed621",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/027.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 66,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "51b43f9dded8f069f9784be99ac5b0060175f718",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/028.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 67,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "2374f024493af6acead8169d0c3850c92bae2349",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/029.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 68,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "24f3542924082ae3c1f7874c7395ec607bcd954c",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/030.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 69,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "974373d5b9fefc4f123df610d9a165d5cd155002",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/031.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 70,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "7178ac869286247bc163f0f6ce09d01181b3507b",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: .codex/agents/results_verifier.toml"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 104,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c97c25f7d0345b12d8b7424f8b364a0b4b72bd30",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/packet.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json",
+      "line": 107,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "314d1a51f5dea4926abf446154ebc5189bdc64dd",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/authorization.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/launch-receipt.json",
+      "line": 4,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c97c25f7d0345b12d8b7424f8b364a0b4b72bd30",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/packet.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/launch-receipt.json",
+      "line": 17,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "314d1a51f5dea4926abf446154ebc5189bdc64dd",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/authorization.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/launch-receipt.json",
+      "line": 18,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8379604e7afc767998d430252a1d4cbf2e35d68c",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/initial-launch-marker.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/launch-receipt.json",
+      "line": 19,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b198cfc1e4be2ad5ce7961af93eb628474133da7",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/launch-receipt.json",
+      "line": 20,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "93a6755bd020359335350da45666bcc5ad53f8bb",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/local-preflight-failure.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/launch-receipt.json",
+      "line": 21,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "9b96d96fb6456d68941a96d07244aa933acd1644",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/local-snapshot-mapping.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/launch/launch-receipt.json",
+      "line": 22,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "271429d955e31ffbfee45253cde46e24d540d175",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/run_p6_numerical_review_01.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 21,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c7c2ae73954a3dd147070659bdd79d1aa6335be5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/000.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 25,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "dd59994c1e5ad101ede8def895810403efef9193",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/001.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 29,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d2ac8f0f3aa5d98f000bfe7df48c485036cf1ece",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/002.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 33,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d4274faff2ec74a1266f84934e4eb326cabded5f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/003.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 37,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "3cfc2891af44f3d525836b940822fea9730ecdcb",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/004.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 41,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1aa08e306ae5af5a3ecf339ccbd9ca700aa9f54f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/005.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 45,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "cbdfb903c31d32dd3b03b53e0772a495267c9540",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/006.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 49,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c223e9cb7cfa2d8e3c24d1a6528d1e1fd9cd6d39",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/007.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 53,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "19b0ee6451be22c21d097b44a98fd606f08c85e5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/008.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 57,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "7c7612c1564abf1864c383e3e9e7fd540f24360b",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/009.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 61,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "49e467abf617c68428cc34ad224961f4a7adf1c8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/010.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 65,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb6b5952d7414098db248699f51b777ed44a86d2",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/011.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 69,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a37f73bc18724dc3cfcde595fb2ab59e37ec7ea8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/012.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 73,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ef99a99a4b708fc6451a2565772a3e4127d0e701",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/013.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 77,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fd97e4686726cc59bb251ea1347252f83d441f63",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/014.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 81,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "882106a360bfe7f8fa1385272dfb29c97379514d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/015.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 85,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b5f42222380ad5ade2f045ff6250dbb35299b912",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/016.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 89,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "95e486c1b9475e1fbe78cb229816d3e13b7fe35d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/017.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 93,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1935bee9783d65d496415500a107c380201c2833",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/018.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 97,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ebb8275f663eb308969dd7f9e81f23cd234719f4",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/019.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 101,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "620d834cbd4c4102e8aafa0b6974a2d416153624",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/020.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 105,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "aedb2770c07e679c1e3f38ea7d5c5b5ca0a5103c",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/021.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 109,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "244f421f896bdcdd2784dccf4eaf7c8dfd5189b5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/023.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 117,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "14df72590e50297ad97d501bff9ec9aec2d5bacc",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/024.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 121,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "39ade6917cb1230e240e1f608e5bd0adc879a4ab",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/025.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 125,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "04b5e9befc0c219068cd33c5e812e5d7016f27ea",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/026.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 129,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "44cd7788f4d43339de81677dc2443f42b13ed621",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/027.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 133,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "51b43f9dded8f069f9784be99ac5b0060175f718",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/028.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 137,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "2374f024493af6acead8169d0c3850c92bae2349",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/029.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 141,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "24f3542924082ae3c1f7874c7395ec607bcd954c",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/030.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/packet.json",
+      "line": 146,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "974373d5b9fefc4f123df610d9a165d5cd155002",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/031.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 18,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c97c25f7d0345b12d8b7424f8b364a0b4b72bd30",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/packet.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 30,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c09256b4a52fd63a3a88e96f62e2c4ccd3ef8f36",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-validation.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 31,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a326435abdbc166995ed3a76e376a2e3f341dcc4",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/final-launch-marker.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 32,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ff1d397cf5793da0de6a0ae9343441a1dc6b53e9",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/findings.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 34,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d6d475d1b0ceec5c9a42a3eb64414814950627e4",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/runtime-audit.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 35,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "4177a4c6c44e3cc8b0f667803ca19bc5a6b213c9",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/runtime-metadata-sanitized.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 36,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "314d1a51f5dea4926abf446154ebc5189bdc64dd",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/authorization.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 37,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8379604e7afc767998d430252a1d4cbf2e35d68c",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/initial-launch-marker.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 38,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b198cfc1e4be2ad5ce7961af93eb628474133da7",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/invocation.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 39,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "6cf8356f998f3adfa7421d1629db499d3e3a9898",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/launch-receipt.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 40,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "93a6755bd020359335350da45666bcc5ad53f8bb",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/local-preflight-failure.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 41,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "9b96d96fb6456d68941a96d07244aa933acd1644",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/local-snapshot-mapping.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 42,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "271429d955e31ffbfee45253cde46e24d540d175",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/run_p6_numerical_review_01.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 43,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "306c0eeed1517a386c44fad5f1ee52b42fc50b92",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/launch.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 44,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "92466de392cdf40b89e916ed559b0e3a3cbf3f19",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 45,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "244f421f896bdcdd2784dccf4eaf7c8dfd5189b5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/023.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 46,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a334e96e1d13ac231062140b0e38b60f92796772",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/oma_sum/stdout.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 47,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d22e135443dea6235d90748840fd03aea9ef7aac",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/launch.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 48,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "974a2fc4ab5a5344b41dd4ae5febc182d5f316f8",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 50,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "e69e8b6534e5886b7225077e4f2a751d7fb932a3",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/paired_difference/stdout.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 51,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "2696c1f9b33216e0faa96c548593f6f5eb360a55",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/launch.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 52,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d9b654bf189e6c46ce1a66cf79daf7a8e71ca761",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-01/receipt.json",
+      "line": 54,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "4c3468796f9a0c8aeb5caae43d43e78ded9d32ca",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-checks/sum_rate/stdout.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/completion-receipt.json",
+      "line": 5,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d9b654bf189e6c46ce1a66cf79daf7a8e71ca761",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 15,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b5f42222380ad5ade2f045ff6250dbb35299b912",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/016.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 16,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "95e486c1b9475e1fbe78cb229816d3e13b7fe35d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/017.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 21,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8e73fe96d2cbb7d992d27cb721f82114dc513091",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/benchmark_synthetic.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 22,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb6b5952d7414098db248699f51b777ed44a86d2",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/011.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 23,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a37f73bc18724dc3cfcde595fb2ab59e37ec7ea8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/012.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 24,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ef99a99a4b708fc6451a2565772a3e4127d0e701",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/013.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 25,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8880560fa5619d08931460ed393fd2c9f9a4c440",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/run_unit_tests.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 26,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "51a0c01311133bfc8efc8817c4c06b5f6ce41973",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/test_supplement.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 32,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c7c2ae73954a3dd147070659bdd79d1aa6335be5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/000.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 33,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "dd59994c1e5ad101ede8def895810403efef9193",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/001.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 34,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d2ac8f0f3aa5d98f000bfe7df48c485036cf1ece",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/002.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 35,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d4274faff2ec74a1266f84934e4eb326cabded5f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/003.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 36,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "3cfc2891af44f3d525836b940822fea9730ecdcb",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/004.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 37,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1aa08e306ae5af5a3ecf339ccbd9ca700aa9f54f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/005.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 38,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "cbdfb903c31d32dd3b03b53e0772a495267c9540",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/006.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 39,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c223e9cb7cfa2d8e3c24d1a6528d1e1fd9cd6d39",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/007.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 40,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "19b0ee6451be22c21d097b44a98fd606f08c85e5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/008.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 41,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "7c7612c1564abf1864c383e3e9e7fd540f24360b",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/009.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 42,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "49e467abf617c68428cc34ad224961f4a7adf1c8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/010.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 49,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fd97e4686726cc59bb251ea1347252f83d441f63",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/014.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage/lineage-receipt.json",
+      "line": 50,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "882106a360bfe7f8fa1385272dfb29c97379514d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/015.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/completion-receipt.json",
+      "line": 5,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "92466de392cdf40b89e916ed559b0e3a3cbf3f19",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 15,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b5f42222380ad5ade2f045ff6250dbb35299b912",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/016.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 16,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "95e486c1b9475e1fbe78cb229816d3e13b7fe35d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/017.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 21,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8e73fe96d2cbb7d992d27cb721f82114dc513091",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/benchmark_synthetic.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 22,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb6b5952d7414098db248699f51b777ed44a86d2",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/011.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 23,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a37f73bc18724dc3cfcde595fb2ab59e37ec7ea8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/012.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 24,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ef99a99a4b708fc6451a2565772a3e4127d0e701",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/013.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 25,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8880560fa5619d08931460ed393fd2c9f9a4c440",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/run_unit_tests.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 26,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "51a0c01311133bfc8efc8817c4c06b5f6ce41973",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/test_supplement.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 32,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c7c2ae73954a3dd147070659bdd79d1aa6335be5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/000.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 33,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "dd59994c1e5ad101ede8def895810403efef9193",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/001.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 34,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d2ac8f0f3aa5d98f000bfe7df48c485036cf1ece",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/002.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 35,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d4274faff2ec74a1266f84934e4eb326cabded5f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/003.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 36,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "3cfc2891af44f3d525836b940822fea9730ecdcb",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/004.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 37,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1aa08e306ae5af5a3ecf339ccbd9ca700aa9f54f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/005.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 38,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "cbdfb903c31d32dd3b03b53e0772a495267c9540",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/006.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 39,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c223e9cb7cfa2d8e3c24d1a6528d1e1fd9cd6d39",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/007.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 40,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "19b0ee6451be22c21d097b44a98fd606f08c85e5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/008.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 41,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "7c7612c1564abf1864c383e3e9e7fd540f24360b",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/009.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 42,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "49e467abf617c68428cc34ad224961f4a7adf1c8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/010.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 49,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fd97e4686726cc59bb251ea1347252f83d441f63",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/014.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json",
+      "line": 50,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "882106a360bfe7f8fa1385272dfb29c97379514d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/015.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/completion-receipt.json",
+      "line": 5,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "974a2fc4ab5a5344b41dd4ae5febc182d5f316f8",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 15,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b5f42222380ad5ade2f045ff6250dbb35299b912",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/016.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 16,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "95e486c1b9475e1fbe78cb229816d3e13b7fe35d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/017.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 21,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8e73fe96d2cbb7d992d27cb721f82114dc513091",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/benchmark_synthetic.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 22,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb6b5952d7414098db248699f51b777ed44a86d2",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/011.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 23,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a37f73bc18724dc3cfcde595fb2ab59e37ec7ea8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/012.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 24,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ef99a99a4b708fc6451a2565772a3e4127d0e701",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/013.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 25,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "8880560fa5619d08931460ed393fd2c9f9a4c440",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/run_unit_tests.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 26,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "51a0c01311133bfc8efc8817c4c06b5f6ce41973",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/test_supplement.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 32,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c7c2ae73954a3dd147070659bdd79d1aa6335be5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/000.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 33,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "dd59994c1e5ad101ede8def895810403efef9193",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/001.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 34,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d2ac8f0f3aa5d98f000bfe7df48c485036cf1ece",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/002.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 35,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d4274faff2ec74a1266f84934e4eb326cabded5f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/003.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 36,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "3cfc2891af44f3d525836b940822fea9730ecdcb",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/004.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 37,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1aa08e306ae5af5a3ecf339ccbd9ca700aa9f54f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/005.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 38,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "cbdfb903c31d32dd3b03b53e0772a495267c9540",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/006.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 39,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c223e9cb7cfa2d8e3c24d1a6528d1e1fd9cd6d39",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/007.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 40,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "19b0ee6451be22c21d097b44a98fd606f08c85e5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/008.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 41,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "7c7612c1564abf1864c383e3e9e7fd540f24360b",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/009.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 42,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "49e467abf617c68428cc34ad224961f4a7adf1c8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/010.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 49,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fd97e4686726cc59bb251ea1347252f83d441f63",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/014.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/runs/2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage/lineage-receipt.json",
+      "line": 50,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "882106a360bfe7f8fa1385272dfb29c97379514d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/015.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0049.yaml",
+      "line": 12,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "314d1a51f5dea4926abf446154ebc5189bdc64dd",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/authorization.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0050.yaml",
+      "line": 14,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "6cf8356f998f3adfa7421d1629db499d3e3a9898",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/launch/launch-receipt.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0051.yaml",
+      "line": 15,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "0ac3ab812bffcb00ed768f830a2324d0d47b9952",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/receipt.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0051.yaml",
+      "line": 16,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c09256b4a52fd63a3a88e96f62e2c4ccd3ef8f36",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-01/author-lineage-validation.json"
+    }
+  ],
+  "unreviewed": [],
+  "baseline_before_sha256": "c779b79d548c2ba50b1353691ac72b026cd47ff809ccd2493891262bb28fb3d4",
+  "unchanged_reviewed_sources": true,
+  "unchanged_locked_inputs": 51,
+  "scientific_acceptance": false
+}

@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-13T14:47:41.138710+00:00",
+  "argv": [
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\checker.py",
+    "--lineage-recipe",
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-sum_rate.json"
+  ],
+  "recipe_sha256": "357809250a9582b963202f3bd95ec4741f20ba1302b06c1343ad0629f0b2e0f6",
+  "author_validation_after_review": true
+}

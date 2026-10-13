@@ -1,0 +1,9 @@
+{
+  "finished": "2026-10-13T14:47:56.116063+00:00",
+  "report": "lineage-receipt.json",
+  "evidence_hashes": {
+    "analysis/supplement/runs/2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage/lineage-receipt.json": "ac617ff808df6f3e73db8f9bdaf98f1fb5eb6af6058ccf1c0ddaffaec4193a9b"
+  },
+  "status": "INCONCLUSIVE",
+  "scientific_gate_approval": false
+}

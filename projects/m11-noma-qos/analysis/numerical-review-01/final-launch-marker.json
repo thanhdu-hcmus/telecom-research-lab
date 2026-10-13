@@ -1,0 +1,10 @@
+{
+  "started": "2026-10-13T14:38:05.523942+00:00",
+  "round": 1,
+  "review_kind": "scoped-numerical-deterministic",
+  "run": ".cache\\p6-numerical-review\\a14fc83a75c648a6aa81d62c6b28e9c8",
+  "approved_packet_sha256": "559a322bd08443fa2efc403b01b1068ab42cc0a9782c14d1dd9fd1d423ef0762",
+  "status": "COMPLETED",
+  "finished": "2026-10-13T14:44:43.666038+00:00",
+  "enforced_independent_review": true
+}

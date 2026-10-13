@@ -103,8 +103,11 @@ The standard numerical review packet also needs explicit artifact selection:
 its filename filter includes author narratives and historical snapshots, while
 its per-file size limit omits the first complete supplement report. A local
 selection audit and final-artifact plan are retained in the M11 project
-`analysis/numerical-review-preparation/`. No external numerical packet has been
-transmitted. Bulk Monte Carlo rows remain local; a bounded artifact review
+`analysis/numerical-review-preparation/`. The first scoped deterministic numerical review has completed with
+checked_with_limitations and no open findings. Its effective read-only/fresh
+reviewer runtime was audited, and three author lineage executions reproduce
+the still-inconclusive deterministic records. Bulk Monte Carlo rows remain
+local; their numerical review is pending. A bounded artifact review
 must mark checks requiring unseen rows as not reviewed or inconclusive.
 
 The completed second-attempt receipts are retained in the M11 project

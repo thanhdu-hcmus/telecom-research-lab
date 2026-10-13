@@ -1,0 +1,14 @@
+id: 2026-10-13-0050
+timestamp: '2026-10-13T14:42:45.264338+00:00'
+phase: P6
+summary: Launched the one user-approved exact first deterministic numerical artifact
+  review through the existing authenticated OpenAI Codex account. A Windows path-length
+  copying failure occurred before any provider invocation; retained that negative
+  preflight and shortened local snapshot names without changing inline packet bytes.
+  Actual live root and named results_verifier child show read-only/approval-never
+  policies; root only spawned/waited, child has no tools. Full enforcement and findings
+  remain pending until completion. Source19/locks51 unchanged; no gate or Monte Carlo
+  acceptance requested.
+provenance: ai
+evidence:
+  analysis/numerical-review-01/launch/launch-receipt.json: ce60e576b1d04c3adacabe34cd0bc2779f825154a7b7db75d0428d44618e0fe9

@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-10-13T14:38:05.011790+00:00",
+  "status": "PREPARATION_FAILED_BEFORE_TRANSMISSION",
+  "cause": "Windows path-length limit while copying a nested lineage-recipe snapshot",
+  "local_run": ".cache/p6-numerical-review/61a8612c45da4f98b811709fe1712fc0",
+  "provider_invoked": false,
+  "private_packet_transmitted": false,
+  "review_sessions_started": 0,
+  "fix": "Use short numbered local snapshot filenames; preserve original artifact labels and bytes inside the exact authorized inline packet."
+}

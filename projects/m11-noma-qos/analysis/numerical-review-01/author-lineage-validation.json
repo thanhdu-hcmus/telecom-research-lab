@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-10-13T14:52:25.637007+00:00",
+  "status": "MATCHES_ORIGINAL_INCONCLUSIVE_RECORDS",
+  "author_validation_after_independent_review": true,
+  "independent_reviewer_did_not_execute_these_checks": true,
+  "results": [
+    {
+      "column": "sum_rate",
+      "value": 35.160924732819325,
+      "n": 50,
+      "rows": 100,
+      "independently_unresolved_rows": 5,
+      "status": "INCONCLUSIVE",
+      "run_directory": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\runs\\2026-10-13T14-47-42.014345+00-00-5f3c46207ea6444aac532d6dcf7fa7ce-lineage",
+      "completion_receipt_sha256": "503ef072ff5b3bba60362620047c026c5c91ec5e340dca0dabedebf1efdeb408",
+      "original_recipe": "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-sum_rate.json",
+      "recipe_sha256": "357809250a9582b963202f3bd95ec4741f20ba1302b06c1343ad0629f0b2e0f6"
+    },
+    {
+      "column": "oma_sum",
+      "value": 34.747487329945734,
+      "n": 50,
+      "rows": 100,
+      "independently_unresolved_rows": 5,
+      "status": "INCONCLUSIVE",
+      "run_directory": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\runs\\2026-10-13T14-47-49.414822+00-00-712cfb60fb14421fb52bbfa4cf90db62-lineage",
+      "completion_receipt_sha256": "39f469b5cd25cbc004154f99e89600dced6976455db12ac6e82282017b60367a",
+      "original_recipe": "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-oma_sum.json",
+      "recipe_sha256": "b487222a7ddba333134b242f169b5bcdf88d2a2066552079023e6abe285f80ec"
+    },
+    {
+      "column": "paired_difference",
+      "value": 0.413437402873584,
+      "n": 50,
+      "rows": 100,
+      "independently_unresolved_rows": 5,
+      "status": "INCONCLUSIVE",
+      "run_directory": "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\runs\\2026-10-13T14-47-57.169006+00-00-8d8a9ec682c2465481d3e89fb58fb0c4-lineage",
+      "completion_receipt_sha256": "7098a0af72e2a83bf9fd8ec51e2bc54831e8bcfdbd66c538a0b6771447cbcfc0",
+      "original_recipe": "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-paired_difference.json",
+      "recipe_sha256": "675dae4a55ff26ca7f2c4ff33a8e9d398f51269c7b75c615bdfc1ac3f18d7574"
+    }
+  ],
+  "scientific_acceptance": false,
+  "unresolved_labels_unchanged": true
+}

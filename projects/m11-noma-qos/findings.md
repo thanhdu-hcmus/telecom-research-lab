@@ -464,3 +464,16 @@ byte-exact artifacts and two explicitly checked deterministic report views.
 Monte Carlo numerical acceptance is outside its scope. No private packet has
 been transmitted; exact separate authorization is required before review.
 See analysis/numerical-review-01-deterministic-payload.json.
+
+## First scoped deterministic numerical review completed
+
+The one specifically authorized packet returned checked_with_limitations with
+zero open findings: twelve pass checks, one inconclusive certificate-coverage
+check and one unreviewed Monte Carlo/global-outcome check. Runtime audit proves
+fresh named reviewer, actual read-only/approval-never root and child, no reviewer
+tools and unchanged packet/artifact bytes. The single authorization is consumed.
+Author separately executed the three existing deterministic lineage recipes;
+all reproduce their recorded values/n50/100rows/five unresolved and remain
+INCONCLUSIVE. These post-review executions are author evidence, not reviewer
+execution or accepted manuscript claims. No source,51locks, numerical labels
+or scientific gates changed. See analysis/numerical-review-01.

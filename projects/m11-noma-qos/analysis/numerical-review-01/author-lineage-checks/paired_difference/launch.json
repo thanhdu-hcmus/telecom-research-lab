@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-13T14:47:56.313629+00:00",
+  "argv": [
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\checker.py",
+    "--lineage-recipe",
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-paired_difference.json"
+  ],
+  "recipe_sha256": "675dae4a55ff26ca7f2c4ff33a8e9d398f51269c7b75c615bdfc1ac3f18d7574",
+  "author_validation_after_review": true
+}

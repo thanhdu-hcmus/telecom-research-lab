@@ -1,0 +1,207 @@
+{
+  "round": 1,
+  "review_kind": "scoped-numerical-deterministic",
+  "recommendation": "checked_with_limitations",
+  "findings": [],
+  "checks": [
+    {
+      "dimension": "Deterministic input, row and output identities",
+      "assessment": "pass",
+      "locations": [
+        "sim/cases.yaml: cases",
+        "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/channels.csv: rows 0–99",
+        "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/metrics.csv",
+        "analysis/supplement/checker.py: process_job"
+      ],
+      "evidence": "The supplied rows use consecutive identities 0–99 and repeat the committed 20-case sequence five times. Corresponding inputs and serialized outputs repeat consistently; metrics.csv contains the matching metric projections. Cases unequal-gain-singleton and no-both-feasible intentionally have identical numerical inputs.",
+      "limitations": "This is inspection of the enclosed text, not an executed CSV comparison or checksum verification."
+    },
+    {
+      "dimension": "Received powers, three original SINRs, units and matched OMA",
+      "assessment": "pass",
+      "locations": [
+        "model/model-spec.tex: physical model and matched OMA",
+        "model/notation.yaml",
+        "sim/src/oracle.py: direct_rates",
+        "analysis/supplement/independent.py: rates and oma",
+        "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/channels.csv"
+      ],
+      "evidence": "Source uses A=P*gw, B=P*gs, normalized noise one, both weak decoding sites and post-SIC strong SINR. For row 7, the recorded SINRs are approximately 1, 1.5 and 3, producing rates 1, 1.3219280948873626 and 2. OMA records whole-block rates 1 and 1.6609640474436813. Row 17 uses A=10 and B=40 and records SINRs 3, 4.125 and 7 at a=0.175. OMA consistently includes the half-block factor.",
+      "limitations": "Agreement concerns the enclosed deterministic inputs and declared rate tolerances, not physical deployment or arbitrary finite inputs."
+    },
+    {
+      "dimension": "Accepted candidates and original constraints",
+      "assessment": "pass",
+      "locations": [
+        "sim/protocol.md: numerical uncertainty",
+        "analysis/supplement/independent.py: check_row and check_candidate_flags",
+        "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/channels.csv: accepted rows"
+      ],
+      "evidence": "The accepted deterministic candidates show no supplied rate residual below -1e-9. Row 18 and its repeats explicitly retain weak residual -5.551115123125783e-17 and candidate_constraints_pass=false while candidate_within_rate_tolerance=true. This distinguishes floating-point equality diagnostics from numerical acceptance. Both weak decoding capacities are supplied and satisfy the declared checks.",
+      "limitations": "Rounded binary64 candidates are not thereby exact real-arithmetic witnesses. Numerical tolerances do not establish feasibility of an otherwise empty domain."
+    },
+    {
+      "dimension": "Exact feasibility, singleton and narrow-domain handling",
+      "assessment": "pass",
+      "locations": [
+        "model/model-spec.tex: exact feasible set",
+        "analysis/supplement/independent.py: exact_residuals and noma_adjudicate",
+        "sim/src/oracle.py: rational witness and singleton handling",
+        "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/channels.csv: rows 6, 7, 12, 13, 19 and repeats",
+        "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/oracle.json: corresponding checks"
+      ],
+      "evidence": "The rational split 1/3 satisfies the original singleton constraints for A=B=3,qw=qs=1 and for A=3,B=9,qw=1,qs=2. Row 12 retains a feasible rational witness with B=9.000000000001 and a positive interval width approximately 3.7e-14; row 13 retains the opposite, empty-domain classification with B=8.999999999999. The base oracle leaves both narrow cases unresolved rather than turning a bracket or grid miss into infeasibility. Independent exact affine checks distinguish their classifications.",
+      "limitations": "The rational witness and its rounded a_star must remain distinct. Feasibility of row 12 does not supply its missing base-oracle optimality certificate."
+    },
+    {
+      "dimension": "Analytic endpoint optimality and degeneracies",
+      "assessment": "pass",
+      "locations": [
+        "model/model-spec.tex: optimizer and curvature",
+        "model/predictions.yaml: P3 and P4",
+        "analysis/supplement/independent.py: selected_endpoint and optimal_objective checks",
+        "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/channels.csv"
+      ],
+      "evidence": "Accepted analytic candidates select the recorded upper endpoint, including a=1 for zero weak targets. Equal-gain nonsingleton rows record nonunique=true, while equal-gain singleton rows record optimizer_unique=true. The supplied derivative expression has nonnegative sign for B>=A and supports endpoint selection within the approved model. Different oracle splits in the equal-gain tie case have the same recorded objective.",
+      "limitations": "This does not establish every numerical objective bound or provide universal implementation validation."
+    },
+    {
+      "dimension": "Complete base-oracle certificate coverage",
+      "assessment": "inconclusive",
+      "locations": [
+        "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/oracle.json",
+        "sim/src/oracle.py: _concavity_upper_bound and solve",
+        "derived/deterministic-supplement-view.json: deterministic_jobs[0].replay",
+        "sim/src/verifier.py: oracle_differences and convergence"
+      ],
+      "evidence": "The enclosed base results contain 65 feasible, 15 infeasible and 20 unresolved outcomes. Unresolved cases are rows congruent to 12, 13, 15 or 16 modulo 20. Large-finite-SNR rows retain candidate_sum_rate=333.19280948873626 but objective_gap_bound=99998.99999999432, exceeding 1e-7, and remain not-established. Exact singleton results record zero gap and no optimizer iterations. Numerical accepted gaps meet their recorded objective tolerances.",
+      "limitations": "The numerical secant envelope expressly lacks a validated floating-point error proof. Native convergence omits null oracle objectives and cannot independently establish complete certificate coverage."
+    },
+    {
+      "dimension": "Oracle caps and failure disclosure",
+      "assessment": "pass",
+      "locations": [
+        "sim/protocol.md: oracle tolerances and caps",
+        "sim/src/oracle.py: _bracket and solve",
+        "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/oracle.json"
+      ],
+      "evidence": "Results retain max_root_iterations=96 per constraint and max_optimizer_iterations=256. Recorded base root totals of 80 represent two 40-step brackets; tighter totals of 88 represent two 44-step brackets. Supplied optimizer counts remain below 256. The large-SNR rejection is an objective-gap failure, not a hidden iteration-cap failure.",
+      "limitations": "Recorded counters were inspected; solvers were not executed."
+    },
+    {
+      "dimension": "Exact base and tighter selection coverage",
+      "assessment": "pass",
+      "locations": [
+        "sim/protocol.yaml: deterministic params",
+        "analysis/supplement/replay.py: replay_job",
+        "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/oracle.json: checks",
+        "derived/deterministic-supplement-view.json: replay coverage"
+      ],
+      "evidence": "Base checks cover rows 0–99. Tighter results occur exactly for rows 0–7, with rate/split/objective tolerances 1e-10, 1e-13 and 1e-8. Their six feasible and two infeasible classifications agree with base classifications. Row 5 changes split from 0.10355339059333346 to 0.629364970698512 while retaining sum 2.3219280948873626, consistent with equal-gain nonuniqueness.",
+      "limitations": "The authorized first-eight sensitivity selection excludes narrow-feasible, narrow-infeasible, tiny-SNR, large-SNR and fractional-boundary cases. No tighter verification of those cases is established."
+    },
+    {
+      "dimension": "Stored and independent ambiguity ledger",
+      "assessment": "pass",
+      "locations": [
+        "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/ledger.json",
+        "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/ambiguities.jsonl",
+        "derived/deterministic-supplement-view.json: independent_counts",
+        "analysis/supplement/independent.py: category"
+      ],
+      "evidence": "Stored and projected independent categories agree: n00=20,n01=0,n10=25,n11=50,unresolved=5. Resolved counts sum to 95 and total coverage is 100. Rows 16,36,56,76,96 remain unresolved for both methods. The ambiguity ledger has ten method entries and five independent-oracle-comparison entries, representing five distinct rows; none endorses an unsupported stored resolved predicate.",
+      "limitations": "These counts preserve numerical ambiguity and do not assert exact classification of the fractional-boundary rows."
+    },
+    {
+      "dimension": "Deterministic means, denominators and undefined values",
+      "assessment": "pass",
+      "locations": [
+        "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/metrics.csv",
+        "derived/deterministic-supplement-view.json: deterministic_scenarios.deterministic",
+        "derived/deterministic-lineage-view.json: records",
+        "analysis/supplement/independent.py: Moments.summary"
+      ],
+      "evidence": "Both report projections use n=50 for each paired mean and agree on NOMA mean 35.160924732819325, OMA mean 34.747487329945734 and paired-difference mean 0.413437402873584. Their difference is consistent at displayed floating-point precision. Deterministic CI, halfwidth and relative-halfwidth fields are null; event summaries are empty. Infeasible and unresolved constrained optima remain NaN/null, and n10 rows do not enter paired differences.",
+      "limitations": "No new full-row numerical recomputation was executed. Variances describe the repeated table; they do not make its repetitions independent samples. Zero-denominator behavior is supported by source, but no empty-paired scenario report is enclosed."
+    },
+    {
+      "dimension": "Deterministic allocation diagnostics",
+      "assessment": "pass",
+      "locations": [
+        "analysis/supplement/independent.py: ablations",
+        "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/channels.csv: fixed and grid fields",
+        "derived/deterministic-supplement-view.json: ablations"
+      ],
+      "evidence": "The source uses fixed a=0.25 and a 101-point grid including endpoints. The projected counts are fixed n=45 and grid n=55 with minimum_loss=0. Singleton rows and narrow-feasible rows retain grid_found_feasible=0 without changing their certified NOMA feasibility. The selected grid split 0.01 in large-SNR rows is an objective tie within the diagnostic tolerance, not an exact optimizer-identity claim.",
+      "limitations": "A grid miss does not certify infeasibility, and tolerance-level objective agreement does not establish identical allocations."
+    },
+    {
+      "dimension": "Deterministic executable lineage scope",
+      "assessment": "pass",
+      "locations": [
+        "analysis/supplement/checker.py: lineage_value, validate_lineage_design and write_lineage",
+        "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-sum_rate.json",
+        "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-oma_sum.json",
+        "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-paired_difference.json",
+        "derived/deterministic-lineage-view.json"
+      ],
+      "evidence": "All three recipes name the enclosed deterministic manifest, its channels.csv, 100 source rows and the independent_both_feasible mask. Manifest/channel digest strings agree across recipes, bindings and manifest output entries. Source derives deterministic design from manifests, suppresses deterministic CIs, excludes independent unresolved rows and returns null for an empty accepted denominator. Projected records retain INCONCLUSIVE with five independently unresolved rows.",
+      "limitations": "Recipes were not executed. Textual binding agreement does not verify supplied byte counts or cryptographic digests. The full original lineage report and execution receipts are not enclosed."
+    },
+    {
+      "dimension": "Unresolved policy and combined recorded scope",
+      "assessment": "pass",
+      "locations": [
+        "analysis/supplement/checker.py: combined_assessment",
+        "analysis/verification.yaml",
+        "analysis/supplement/runs/2026-10-13T14-03-35.888214+00-00-841d586c48cd42d89cb3e4e4731ae71f-assessment/combined-assessment.json",
+        "derived/deterministic-supplement-view.json"
+      ],
+      "evidence": "The combined assessment retains INCONCLUSIVE, full_scientific_validation=false and eligible_for_gate_request=false despite recorded native PASS items. Its source treats unresolved rows, unsupported predicates and unestablished oracle optimality as barriers to combined PASS. Deterministic evidence independently warrants retaining uncertainty: five stored unresolved rows and twenty base-oracle unresolved checks. The oracle_uncertainty field aggregates overlapping uncertainty counters and is not a distinct-row count.",
+      "limitations": "The original native receipt, full supplement report and their completion bindings are absent. This checks conservative status handling, not every global aggregate or full P6 acceptance."
+    },
+    {
+      "dimension": "Monte Carlo outcomes, pooled and conditional numerical claims, reference reproduction and global coverage",
+      "assessment": "not_reviewed",
+      "locations": [
+        "sim/protocol.md: Monte Carlo statistical and reproduction policy",
+        "derived/deterministic-supplement-view.json: explicitly scoped projection and global counters",
+        "derived/deterministic-lineage-view.json: explicitly scoped projection",
+        "analysis/supplement/runs/2026-10-13T14-03-35.888214+00-00-841d586c48cd42d89cb3e4e4731ae71f-assessment/combined-assessment.json"
+      ],
+      "evidence": "Bulk Monte Carlo raw rows and full original reports are expressly unenclosed. Global oracle counts, failed_precision=[], recorded native verdicts and projected report statuses cannot independently verify Monte Carlo outcomes, conditional means, confidence intervals, event estimates or OMA reference reproduction.",
+      "limitations": "All numerical claims requiring unenclosed Monte Carlo rows remain not_reviewed; bulk Monte Carlo verification and full P6 acceptance are outside this review."
+    }
+  ],
+  "limitations": [
+    "Only the exact enclosed packet was reviewed; no tools, filesystem access, execution, network access, writes or agents were used.",
+    "The review inspected all enclosed deterministic rows and source but did not perform a new executable full-row recomputation.",
+    "Cryptographic digests, byte counts, execution environments and completion receipts were not independently authenticated.",
+    "The two derived views are explicit projections; their full original reports are not enclosed.",
+    "Analytic and independent classifications retain five unresolved fractional-boundary rows.",
+    "The base oracle retains twenty unresolved checks; missing certificates were not converted into successful objective comparisons.",
+    "The numerical secant objective envelope is explicitly nonrigorous in floating-point arithmetic.",
+    "Tighter checks cover only rows 0–7 and do not address the later unresolved stress cases.",
+    "Exact rational witnesses and rounded binary64 candidates have different evidentiary roles.",
+    "Native recorded prediction verdicts were not treated as independent acceptance.",
+    "Monte Carlo outcomes, global numerical claims, source-ready approval, full P6 acceptance and PI gate decisions were not reviewed."
+  ],
+  "scientific_gate_decision": false,
+  "bulk_monte_carlo_verified": false,
+  "summary": [
+    "Checked the enclosed deterministic packet with limitations; no demonstrated numerical contradiction warrants an open finding.",
+    "The fixed 20-case sequence is present five times with consistent row and metric identities.",
+    "Original SINRs, normalized units and matched equal-time OMA are consistent with the approved model.",
+    "Accepted candidates satisfy the supplied checks within declared rate tolerances.",
+    "Rational singleton witnesses and narrow-domain classifications remain distinct from numerical oracle agreement.",
+    "Stored and independent ledgers agree: 20 neither, 0 OMA-only, 25 NOMA-only, 50 both, 5 unresolved.",
+    "Base oracle coverage is 100 checks, with 20 unresolved outcomes.",
+    "Large-SNR objective gaps exceed tolerance and remain unestablished.",
+    "Tighter coverage is exactly the authorized first eight rows.",
+    "Deterministic summaries use 50 paired rows and suppress statistical confidence intervals.",
+    "Lineage recipes preserve deterministic design and independent unresolved exclusions.",
+    "Combined INCONCLUSIVE handling is appropriate for the enclosed uncertainty.",
+    "Monte Carlo outcomes and global numerical claims remain not_reviewed.",
+    "No source changes, scientific acceptance or PI gate decision are proposed."
+  ]
+}

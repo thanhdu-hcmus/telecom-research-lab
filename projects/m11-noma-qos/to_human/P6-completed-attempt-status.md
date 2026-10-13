@@ -43,7 +43,8 @@ claims. Nine native arithmetic examples remain provisional and unregistered.
 Independent numerical-results review and resolution or scientific treatment
 of the retained uncertainty remain required before G6 can be requested.
 A local artifact-selection plan is retained in analysis/numerical-review-preparation.
-No numerical-results packet has been transmitted. G6/G7 remain PI-only.
+The first scoped deterministic numerical review has completed. Monte Carlo
+review and full numerical acceptance remain pending. G6/G7 remain PI-only.
 
 ## First attempt: failed; preserved
 
@@ -58,7 +59,7 @@ analysis/supplement/native-output-archive-attempt1.
 M11 still requires accepted scientific results, the P7 manuscript/review/export
 and actual PI G6/G7 decisions. M12 remains unstarted.
 
-## First numerical review packet prepared locally
+## First scoped numerical review: checked with limitations
 
 The complete bundle is too large for the observed review context. The first
 scoped packet contains 32 artifacts and 517,502 bytes, covering all 100
@@ -66,5 +67,19 @@ deterministic raw rows, certificate handling and methodology. It excludes
 author narratives and previous review/test verdicts. Two derived report views
 are explicitly labelled and checked against their original full reports.
 Monte Carlo numerical acceptance remains outside this first review. See
-analysis/numerical-review-01-deterministic-payload.json. No transmission has
-occurred; separate authorization is pending.
+analysis/numerical-review-01-deterministic-payload.json. This packet was first
+prepared locally. The user then authorized it; the one review is complete
+and that authorization is consumed.
+
+The enforced fresh read-only results_verifier returned checked_with_limitations,
+with no open findings: twelve checks pass, one is inconclusive and one is not
+reviewed. Actual root/child policies, fresh fork, provider, no reviewer tools
+and unchanged artifact bytes were audited. The review explicitly leaves bulk
+Monte Carlo outcomes and full P6 acceptance outside its scope.
+
+Author executions of the three retained deterministic lineage recipes exactly
+reproduce their values and n=50/100 rows. All remain INCONCLUSIVE with five
+independently unresolved rows. These author executions occurred after review;
+the reviewer did not execute them. See analysis/numerical-review-01/receipt.json
+and author-lineage-validation.json. All 19 reviewed sources and 51 locked
+inputs are unchanged; no scientific gate decision or claim acceptance occurred.

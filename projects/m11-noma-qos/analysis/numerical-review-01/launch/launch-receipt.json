@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-13T14:42:45.220555+00:00",
+  "status": "ONE_AUTHORIZED_SCOPED_REVIEW_LAUNCHED",
+  "packet_sha256": "559a322bd08443fa2efc403b01b1068ab42cc0a9782c14d1dd9fd1d423ef0762",
+  "packet_bytes": 517502,
+  "approved_sessions": 1,
+  "run": ".cache\\p6-numerical-review\\a14fc83a75c648a6aa81d62c6b28e9c8",
+  "initial_preflight_started_remote_sessions": 0,
+  "short_local_snapshots_preserve_all_artifact_bytes": true,
+  "reviewer_artifacts": 32,
+  "scientific_acceptance": false,
+  "bulk_monte_carlo_review_requested": false,
+  "gates_changed": false,
+  "reviewed_source_bindings_current": 19,
+  "locked_inputs_unchanged": 51,
+  "evidence": {
+    "authorization.json": "68eca09dfc2d86c256230a9b2ccb0a532e964af248b1c0dab652cd4bf4e985e5",
+    "initial-launch-marker.json": "6aa47363f17f67e898668ec08cd0c527b660f9e063479d51789b0e658809b8ea",
+    "invocation.json": "8a8998da32d7a4394ba3ca812182818f29d875a53b84f3e5d33e9cc03a0f9457",
+    "local-preflight-failure.json": "c3967188d044faf0e24da46ed1c14a3a2794a2e7c3ca9fca951e2df4891d0d0b",
+    "local-snapshot-mapping.json": "347809bd67af7d8f484f86dbfe09f1c5daa19bf287759584241f373b6ab89212",
+    "run_p6_numerical_review_01.py": "5db50b094817d717d4518c008439822110bdf7e7d7c4d2f2b125ac84f498ab3c"
+  }
+}

@@ -13,8 +13,11 @@ remain unresolved. All 19 reviewed source bindings and 51 locked inputs match.
 The current source has 133 passing supplemental unit cases. The original
 preparation and earlier source-review/test notes below are historical records.
 See completed-attempt-02/closure-receipt.json for actual final receipt paths
-and ../../to_human/P6-completed-attempt-status.md for remaining work. No full
-scientific acceptance or independent numerical-results review is claimed.
+and ../../to_human/P6-completed-attempt-status.md for remaining work. The first
+scoped deterministic numerical review returned checked_with_limitations with
+no open findings; full numerical acceptance and Monte Carlo review remain
+pending. Three author lineage executions match the original deterministic
+records and remain INCONCLUSIVE. No full scientific acceptance is claimed.
 
 Run from the repository root in the existing pinned environment:
 

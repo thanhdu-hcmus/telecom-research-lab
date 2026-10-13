@@ -1,0 +1,16 @@
+id: 2026-10-13-0051
+timestamp: '2026-10-13T14:52:25.840949+00:00'
+phase: P6
+summary: Completed and retained the one authorized exact deterministic numerical review:checked_with_limitations,no
+  open findings,12pass/1inconclusive/1not_reviewed checks. Actual OpenAI root and
+  fresh named results_verifier child are read-only/approval-never; root only spawned/waited,
+  child no tools and all artifact/workspace bytes unchanged. Independently stored
+  reviewer limits leave Monte Carlo/global outcomes unreviewed and full P6 INCONCLUSIVE.
+  Author separately executed three existing deterministic lineage recipes with native
+  guards:all exactly reproduce values/n50/100rows/five unresolved and remain INCONCLUSIVE.
+  No code,19source/51lock bytes, scientific labels or gates changed; authorization
+  consumed.
+provenance: ai
+evidence:
+  analysis/numerical-review-01/receipt.json: 5963995900ecd7094f2feca5c0a0847ca957558a4556dbad1854b8a619dd04ef
+  analysis/numerical-review-01/author-lineage-validation.json: acdfa24028b0ee5476ed5f48354977db192439aef880cd41957c3f851780fe21
