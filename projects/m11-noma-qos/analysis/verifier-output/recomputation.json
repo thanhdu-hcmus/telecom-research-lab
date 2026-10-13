@@ -1,0 +1,373 @@
+{
+  "counts": {
+    "rows": 4718692,
+    "unresolved": 5,
+    "sic_violations": 0,
+    "constraint_violations": 0,
+    "oma_only": 0,
+    "negative_paired": 0,
+    "bracket_disagreements": 0,
+    "ledger_disagreements": 0,
+    "undefined_optimum_violations": 0,
+    "oracle_status_disagreements": 0,
+    "exact_certificate_failures": 0
+  },
+  "maxima": {
+    "sum_recomputation_error": 3.552713678800501e-15,
+    "weak_activation_error": 3.3306690738754696e-16,
+    "oma_recomputation_error": 0.0
+  },
+  "precision": {
+    "mc-00-q0": {
+      "sum_rate": {
+        "mean": 1.1975353509503,
+        "low": 1.195721845489701,
+        "high": 1.199348856410899,
+        "halfwidth": 0.0018135054605990355,
+        "relative_halfwidth": 0.0015143648654379468,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      },
+      "oma_sum": {
+        "mean": 0.8589638718144265,
+        "low": 0.8576249423609517,
+        "high": 0.8603028012679013,
+        "halfwidth": 0.0013389294534747775,
+        "relative_halfwidth": 0.001558772723055859,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      },
+      "paired_difference": {
+        "mean": 0.3385714791358736,
+        "low": 0.3377536675320681,
+        "high": 0.3393892907396791,
+        "halfwidth": 0.0008178116038054919,
+        "relative_halfwidth": 0.002415476950074972,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      }
+    },
+    "mc-00-q1": {
+      "sum_rate": {
+        "mean": 1.3311644258977953,
+        "low": 1.3289831779320875,
+        "high": 1.333345673863503,
+        "halfwidth": 0.0021812479657078317,
+        "relative_halfwidth": 0.0016386014554413163,
+        "n": 170996,
+        "method": "Student-t; assumes independent draws"
+      },
+      "oma_sum": {
+        "mean": 1.1746130649149065,
+        "low": 1.1729253547704463,
+        "high": 1.1763007750593666,
+        "halfwidth": 0.0016877101444600247,
+        "relative_halfwidth": 0.0014368222139452271,
+        "n": 170996,
+        "method": "Student-t; assumes independent draws"
+      },
+      "paired_difference": {
+        "mean": 0.1565513609828889,
+        "low": 0.15588663557720941,
+        "high": 0.1572160863885684,
+        "halfwidth": 0.0006647254056794837,
+        "relative_halfwidth": 0.004246053189867435,
+        "n": 170996,
+        "method": "Student-t; assumes independent draws"
+      }
+    },
+    "mc-00-q2": {
+      "sum_rate": {
+        "mean": 1.6313816288517191,
+        "low": 1.628254491889141,
+        "high": 1.6345087658142972,
+        "halfwidth": 0.003127136962578054,
+        "relative_halfwidth": 0.0019168641520005056,
+        "n": 53040,
+        "method": "Student-t; assumes independent draws"
+      },
+      "oma_sum": {
+        "mean": 1.5231728597789562,
+        "low": 1.520694434347315,
+        "high": 1.5256512852105975,
+        "halfwidth": 0.002478425431641222,
+        "relative_halfwidth": 0.001627146528858775,
+        "n": 53040,
+        "method": "Student-t; assumes independent draws"
+      },
+      "paired_difference": {
+        "mean": 0.10820876907276296,
+        "low": 0.10734842772690437,
+        "high": 0.10906911041862155,
+        "halfwidth": 0.0008603413458585949,
+        "relative_halfwidth": 0.007950754391079659,
+        "n": 53040,
+        "method": "Student-t; assumes independent draws"
+      }
+    },
+    "mc-10-q0": {
+      "sum_rate": {
+        "mean": 3.6550710298035565,
+        "low": 3.6518339078659983,
+        "high": 3.6583081517411147,
+        "halfwidth": 0.003237121937558333,
+        "relative_halfwidth": 0.0008856522653493586,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      },
+      "oma_sum": {
+        "mean": 2.9034189521680616,
+        "low": 2.9005117969597536,
+        "high": 2.9063261073763695,
+        "halfwidth": 0.002907155208308101,
+        "relative_halfwidth": 0.0010012868470591367,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      },
+      "paired_difference": {
+        "mean": 0.7516520776354948,
+        "low": 0.7499416324461614,
+        "high": 0.7533625228248282,
+        "halfwidth": 0.0017104451893333456,
+        "relative_halfwidth": 0.00227558100379895,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      }
+    },
+    "mc-10-q1": {
+      "sum_rate": {
+        "mean": 3.6311949939977297,
+        "low": 3.6279229830205066,
+        "high": 3.634467004974953,
+        "halfwidth": 0.003272010977223036,
+        "relative_halfwidth": 0.0009010837982073627,
+        "n": 362168,
+        "method": "Student-t; assumes independent draws"
+      },
+      "oma_sum": {
+        "mean": 3.014219639862625,
+        "low": 3.0114026138369363,
+        "high": 3.0170366658883134,
+        "halfwidth": 0.002817026025688429,
+        "relative_halfwidth": 0.0009345788835138825,
+        "n": 362168,
+        "method": "Student-t; assumes independent draws"
+      },
+      "paired_difference": {
+        "mean": 0.6169753541351053,
+        "low": 0.6155479080062506,
+        "high": 0.61840280026396,
+        "halfwidth": 0.001427446128854718,
+        "relative_halfwidth": 0.0023136193679174676,
+        "n": 362168,
+        "method": "Student-t; assumes independent draws"
+      }
+    },
+    "mc-10-q2": {
+      "sum_rate": {
+        "mean": 3.677636255693427,
+        "low": 3.6743760739035527,
+        "high": 3.6808964374833013,
+        "halfwidth": 0.003260181789874412,
+        "relative_halfwidth": 0.0008864883754686873,
+        "n": 321912,
+        "method": "Student-t; assumes independent draws"
+      },
+      "oma_sum": {
+        "mean": 3.1506208069552324,
+        "low": 3.1478782965229604,
+        "high": 3.1533633173875044,
+        "halfwidth": 0.0027425104322721956,
+        "relative_halfwidth": 0.0008704666795248408,
+        "n": 321912,
+        "method": "Student-t; assumes independent draws"
+      },
+      "paired_difference": {
+        "mean": 0.5270154487381943,
+        "low": 0.5257049507608254,
+        "high": 0.5283259467155632,
+        "halfwidth": 0.0013104979773689634,
+        "relative_halfwidth": 0.002486640534934262,
+        "n": 321912,
+        "method": "Student-t; assumes independent draws"
+      }
+    },
+    "mc-20-q0": {
+      "sum_rate": {
+        "mean": 6.826471173900011,
+        "low": 6.822806866652602,
+        "high": 6.830135481147419,
+        "halfwidth": 0.003664307247408387,
+        "relative_halfwidth": 0.0005367791284929638,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      },
+      "oma_sum": {
+        "mean": 5.880448845313935,
+        "low": 5.876683330882307,
+        "high": 5.884214359745562,
+        "halfwidth": 0.003765514431627764,
+        "relative_halfwidth": 0.0006403447305945806,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      },
+      "paired_difference": {
+        "mean": 0.9460223285860748,
+        "low": 0.9436927373110098,
+        "high": 0.9483519198611399,
+        "halfwidth": 0.0023295912750650365,
+        "relative_halfwidth": 0.0024625119351536283,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      }
+    },
+    "mc-20-q1": {
+      "sum_rate": {
+        "mean": 6.8139729087501495,
+        "low": 6.810289316017011,
+        "high": 6.817656501483288,
+        "halfwidth": 0.003683592733138584,
+        "relative_halfwidth": 0.000540593979821714,
+        "n": 390012,
+        "method": "Student-t; assumes independent draws"
+      },
+      "oma_sum": {
+        "mean": 5.903591605813779,
+        "low": 5.899889208628793,
+        "high": 5.907294002998765,
+        "halfwidth": 0.0037023971849860695,
+        "relative_halfwidth": 0.0006271431752392895,
+        "n": 390012,
+        "method": "Student-t; assumes independent draws"
+      },
+      "paired_difference": {
+        "mean": 0.9103813029363702,
+        "low": 0.9081999993151872,
+        "high": 0.9125626065575532,
+        "halfwidth": 0.0021813036211829465,
+        "relative_halfwidth": 0.002396032974477075,
+        "n": 390012,
+        "method": "Student-t; assumes independent draws"
+      }
+    },
+    "mc-20-q2": {
+      "sum_rate": {
+        "mean": 6.8106782023864545,
+        "low": 6.806995669131945,
+        "high": 6.814360735640964,
+        "halfwidth": 0.003682533254509381,
+        "relative_halfwidth": 0.0005406999339976194,
+        "n": 385465,
+        "method": "Student-t; assumes independent draws"
+      },
+      "oma_sum": {
+        "mean": 5.93388569687167,
+        "low": 5.930256890291749,
+        "high": 5.937514503451591,
+        "halfwidth": 0.0036288065799212075,
+        "relative_halfwidth": 0.0006115396833198701,
+        "n": 385465,
+        "method": "Student-t; assumes independent draws"
+      },
+      "paired_difference": {
+        "mean": 0.8767925055147844,
+        "low": 0.8747190028796884,
+        "high": 0.8788660081498804,
+        "halfwidth": 0.0020735026350959607,
+        "relative_halfwidth": 0.0023648726717600778,
+        "n": 385465,
+        "method": "Student-t; assumes independent draws"
+      }
+    },
+    "mc-30-q0": {
+      "sum_rate": {
+        "mean": 10.13092615025513,
+        "low": 10.127199136980968,
+        "high": 10.134653163529292,
+        "halfwidth": 0.003727013274161311,
+        "relative_halfwidth": 0.0003678847539587931,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      },
+      "oma_sum": {
+        "mean": 9.140060637950562,
+        "low": 9.136038585413747,
+        "high": 9.144082690487377,
+        "halfwidth": 0.004022052536814852,
+        "relative_halfwidth": 0.00044004659226382336,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      },
+      "paired_difference": {
+        "mean": 0.9908655123045671,
+        "low": 0.988301620987205,
+        "high": 0.9934294036219292,
+        "halfwidth": 0.0025638913173621092,
+        "relative_halfwidth": 0.0025875270513744894,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      }
+    },
+    "mc-40-q0": {
+      "sum_rate": {
+        "mean": 13.451055079559898,
+        "low": 13.447321099826782,
+        "high": 13.454789059293015,
+        "halfwidth": 0.00373397973311607,
+        "relative_halfwidth": 0.0002775975349911541,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      },
+      "oma_sum": {
+        "mean": 12.452861275457503,
+        "low": 12.448784904953003,
+        "high": 12.456937645962002,
+        "halfwidth": 0.004076370504499127,
+        "relative_halfwidth": 0.00032734408697967013,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      },
+      "paired_difference": {
+        "mean": 0.9981938041023956,
+        "low": 0.9955726169252431,
+        "high": 1.0008149912795479,
+        "halfwidth": 0.0026211871771524183,
+        "relative_halfwidth": 0.0026259301213650238,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      }
+    },
+    "mc-50-q0": {
+      "sum_rate": {
+        "mean": 16.772802369708515,
+        "low": 16.769067676385244,
+        "high": 16.776537063031785,
+        "halfwidth": 0.003734693323272187,
+        "relative_halfwidth": 0.00022266364564200672,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      },
+      "oma_sum": {
+        "mean": 15.773601602535551,
+        "low": 15.769515980793496,
+        "high": 15.777687224277607,
+        "halfwidth": 0.004085621742055562,
+        "relative_halfwidth": 0.00025901641521102023,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      },
+      "paired_difference": {
+        "mean": 0.999200767172962,
+        "low": 0.9965689427355557,
+        "high": 1.0018325916103683,
+        "halfwidth": 0.00263182443740628,
+        "relative_halfwidth": 0.0026339295603750377,
+        "n": 393216,
+        "method": "Student-t; assumes independent draws"
+      }
+    }
+  },
+  "maximum_oracle_difference": 6.66755539668884e-12,
+  "maximum_tighter_difference": 4.2730263771773025e-12,
+  "limits": "Finite numerical checks; boundary unresolveds retained; no universal proof."
+}

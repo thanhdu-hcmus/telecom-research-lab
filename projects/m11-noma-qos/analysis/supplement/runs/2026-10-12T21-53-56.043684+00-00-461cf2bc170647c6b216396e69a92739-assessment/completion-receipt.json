@@ -1,0 +1,10 @@
+{
+  "finished": "2026-10-12T21:54:32.319022+00:00",
+  "report": "combined-assessment.json",
+  "evidence_hashes": {
+    "analysis/supplement/runs/2026-10-12T21-53-56.043684+00-00-461cf2bc170647c6b216396e69a92739-assessment/combined-assessment.json": "bafb556ebe614740df601bad0aafec48f71604a9d6984a154f08c2442f3bafc4",
+    "analysis/supplement/runs/2026-10-12T21-53-56.043684+00-00-461cf2bc170647c6b216396e69a92739-assessment/combined-verification.yaml": "8844651d48226b02cbf506d4e3bdc714192460355707f45d5f5dc0b1ec212e35"
+  },
+  "status": "FAIL",
+  "scientific_gate_approval": false
+}

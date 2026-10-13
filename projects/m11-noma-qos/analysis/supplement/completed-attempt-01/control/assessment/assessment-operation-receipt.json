@@ -1,0 +1,86 @@
+{
+  "status": "RECORDED",
+  "started": "2026-10-12T15:28:22.354320+00:00",
+  "directory": ".cache\\p6-canonical\\811d27f9b7f7417db967e1461fc4677f-assessment",
+  "scientific_acceptance": false,
+  "numerical_external_review_launched": false,
+  "command": [
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\checker.py",
+    "--assess",
+    "analysis/supplement/runs/2026-10-12T15-09-58.183477+00-00-6aacbf54576d4d638666b082e5ae374d-supplement/execution-report.json",
+    "--native-receipt",
+    "analysis/supplement/runs/2026-10-12T15-09-53.545767+00-00-86665a33b2b84ec08c39b45d32ef23c5-native/native-receipt.json"
+  ],
+  "operations": {
+    "native": {
+      "status": "RECORDED",
+      "kind": "native",
+      "started": "2026-10-12T15:09:52.572218+00:00",
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\checker.py",
+        "--native"
+      ],
+      "directory": ".cache\\p6-canonical\\ca935cae4a4d4433b8115653c4a93a5d-native",
+      "source_ready_sha256": "d303b5f0ab3a6363cf78ec32519558dcb6ee54dc2371e9dd78535fe30be02583",
+      "canonical_execution_requested": true,
+      "scientific_acceptance": false,
+      "pid": 39164,
+      "exit_code": 0,
+      "scientific_receipt": "analysis/supplement/runs/2026-10-12T15-09-53.545767+00-00-86665a33b2b84ec08c39b45d32ef23c5-native/native-receipt.json",
+      "scientific_receipt_sha256": "db9b8973b7d5008496c9afb56f51e4ce25e5208521e9e626563e3d8e3803f23f",
+      "scientific_status": "PASS",
+      "jobs": 0,
+      "rows": 0,
+      "finished": "2026-10-12T16:05:05.224029+00:00",
+      "runtime_s": 3312.6101013000007,
+      "evidence": {
+        "launch.json": "8ee6c419f1a8e751535fbe5d325811d754d17081a42ebbd67b62503974614699",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.txt": "ddc31221651e9de5cfdf54d16e7918d4c64ccb364996eaa639e7f772a95513a7"
+      }
+    },
+    "supplement": {
+      "status": "RECORDED",
+      "kind": "supplement",
+      "started": "2026-10-12T15:09:57.270896+00:00",
+      "command": [
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+        "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\checker.py",
+        "--execute"
+      ],
+      "directory": ".cache\\p6-canonical\\5ba4a8aa5f1f4267a035876a45d11649-supplement",
+      "source_ready_sha256": "d303b5f0ab3a6363cf78ec32519558dcb6ee54dc2371e9dd78535fe30be02583",
+      "canonical_execution_requested": true,
+      "scientific_acceptance": false,
+      "pid": 38752,
+      "exit_code": 2,
+      "scientific_receipt": "analysis/supplement/runs/2026-10-12T15-09-58.183477+00-00-6aacbf54576d4d638666b082e5ae374d-supplement/execution-report.json",
+      "scientific_receipt_sha256": "3b69e8d8485f25c11b96f7e658d7e3496ad01bc0bae30ff2a0cc19bd33f986da",
+      "scientific_status": "FAIL",
+      "jobs": 145,
+      "rows": 4718692,
+      "finished": "2026-10-12T21:53:28.034236+00:00",
+      "runtime_s": 24210.470996799995,
+      "evidence": {
+        "launch.json": "5a8cbe0f4186522096b7fa885b9351ea7354fc2240e4f2c3e867cd0479063f64",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.txt": "8aaf63aeab28418a6c8fd0604371918a0abaaad251f0aa427a20171a7ebcd318"
+      }
+    }
+  },
+  "exit_code": 2,
+  "assessment": "analysis/supplement/runs/2026-10-12T21-53-56.043684+00-00-461cf2bc170647c6b216396e69a92739-assessment/combined-assessment.json",
+  "assessment_sha256": "bafb556ebe614740df601bad0aafec48f71604a9d6984a154f08c2442f3bafc4",
+  "combined_status": "FAIL",
+  "eligible_for_gate_request": false,
+  "completed_jobs": 145,
+  "completed_rows": 4718692,
+  "finished": "2026-10-12T21:54:32.676284+00:00",
+  "runtime_s": 23170.043301799975,
+  "evidence": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "03f7390792b108060d04f5f6a8f5bef3588553972efb0c3ce2819b4acb062b7f"
+  }
+}

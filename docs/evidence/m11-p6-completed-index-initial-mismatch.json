@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-10-13T01:16:32.542510+00:00",
+  "status": "INITIAL_MISMATCH_RESOLVED",
+  "path": "docs/evidence/m11-p6-retain-completed-attempt.py",
+  "cause": "New authored retention-helper copy had CRLF working bytes and LF Git bytes. Normalize this unbound documentation copy to repository LF convention; original cached/control evidence remains unchanged.",
+  "scientific_sources_changed": false
+}

@@ -331,3 +331,17 @@ separately. All 133 candidate unit cases pass, including corruption controls.
 The canonical reviewed source, active run, locked inputs and scientific
 tolerances have not changed. Full results, combined assessment, claim lineage
 and enforced numerical-results review remain pending.
+
+## P6 full first attempt completed: combined FAIL
+
+Full coverage is 145 jobs / 4,718,692 rows, with 4,708 base and 1,160 tighter
+replays. Native PASS is retained; supplement and combined assessment are FAIL
+with G6 request eligibility false. All 2,968 crossing errors were reproduced in
+a complete local diagnostic. Source/data/path bindings were rechecked unchanged.
+Five stored deterministic rows and 20 base-oracle checks retain uncertainty;
+the combined count 55 repeats unresolved/optimality categories. No precision
+failure was reported. The 39 generated conditional recipes remain unverified.
+Nine per-seed zero-QoS native arithmetic examples are provisional and are not
+registered manuscript claims. The isolated candidate author full-row check is
+running, and the exact fifth source-review approval remains pending. See
+to_human/P6-completed-attempt-status.md and the completed-attempt-01 receipt.

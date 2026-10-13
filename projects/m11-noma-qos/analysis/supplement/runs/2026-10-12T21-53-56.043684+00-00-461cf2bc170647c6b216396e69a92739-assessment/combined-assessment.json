@@ -1,0 +1,164 @@
+{
+  "status": "FAIL",
+  "eligible_for_gate_request": false,
+  "verification_items": [
+    {
+      "id": "supplement-P1",
+      "prediction_ref": "P1",
+      "method": "Combined native receipts and independently recomputed planned finite-input checks; unresolved/unsupported coverage is retained",
+      "metric": "source-reviewed finite coverage and original-constraint consistency",
+      "value": null,
+      "tolerance": {
+        "rate": 1e-09,
+        "split": 1e-12,
+        "objective": 1e-07,
+        "scope": "approved planned numerical regimes; not universal validation",
+        "unresolved": 5
+      },
+      "verdict": "FAIL",
+      "triage": "implementation-bug",
+      "evidence_paths": [
+        "analysis/supplement/runs/2026-10-12T15-09-53.545767+00-00-86665a33b2b84ec08c39b45d32ef23c5-native/native-receipt.json",
+        "analysis/supplement/runs/2026-10-12T15-09-58.183477+00-00-6aacbf54576d4d638666b082e5ae374d-supplement/execution-report.json"
+      ]
+    },
+    {
+      "id": "supplement-P2",
+      "prediction_ref": "P2",
+      "method": "Combined native receipts and independently recomputed planned finite-input checks; unresolved/unsupported coverage is retained",
+      "metric": "source-reviewed finite coverage and original-constraint consistency",
+      "value": null,
+      "tolerance": {
+        "rate": 1e-09,
+        "split": 1e-12,
+        "objective": 1e-07,
+        "scope": "approved planned numerical regimes; not universal validation",
+        "unresolved": 5
+      },
+      "verdict": "FAIL",
+      "triage": "implementation-bug",
+      "evidence_paths": [
+        "analysis/supplement/runs/2026-10-12T15-09-53.545767+00-00-86665a33b2b84ec08c39b45d32ef23c5-native/native-receipt.json",
+        "analysis/supplement/runs/2026-10-12T15-09-58.183477+00-00-6aacbf54576d4d638666b082e5ae374d-supplement/execution-report.json"
+      ]
+    },
+    {
+      "id": "supplement-P3",
+      "prediction_ref": "P3",
+      "method": "Combined native receipts and independently recomputed planned finite-input checks; unresolved/unsupported coverage is retained",
+      "metric": "source-reviewed finite coverage and original-constraint consistency",
+      "value": null,
+      "tolerance": {
+        "rate": 1e-09,
+        "split": 1e-12,
+        "objective": 1e-07,
+        "scope": "approved planned numerical regimes; not universal validation",
+        "unresolved": 5
+      },
+      "verdict": "FAIL",
+      "triage": "implementation-bug",
+      "evidence_paths": [
+        "analysis/supplement/runs/2026-10-12T15-09-53.545767+00-00-86665a33b2b84ec08c39b45d32ef23c5-native/native-receipt.json",
+        "analysis/supplement/runs/2026-10-12T15-09-58.183477+00-00-6aacbf54576d4d638666b082e5ae374d-supplement/execution-report.json"
+      ]
+    },
+    {
+      "id": "supplement-P4",
+      "prediction_ref": "P4",
+      "method": "Combined native receipts and independently recomputed planned finite-input checks; unresolved/unsupported coverage is retained",
+      "metric": "source-reviewed finite coverage and original-constraint consistency",
+      "value": null,
+      "tolerance": {
+        "rate": 1e-09,
+        "split": 1e-12,
+        "objective": 1e-07,
+        "scope": "approved planned numerical regimes; not universal validation",
+        "unresolved": 5
+      },
+      "verdict": "FAIL",
+      "triage": "implementation-bug",
+      "evidence_paths": [
+        "analysis/supplement/runs/2026-10-12T15-09-53.545767+00-00-86665a33b2b84ec08c39b45d32ef23c5-native/native-receipt.json",
+        "analysis/supplement/runs/2026-10-12T15-09-58.183477+00-00-6aacbf54576d4d638666b082e5ae374d-supplement/execution-report.json"
+      ]
+    },
+    {
+      "id": "supplement-P5",
+      "prediction_ref": "P5",
+      "method": "Combined native receipts and independently recomputed planned finite-input checks; unresolved/unsupported coverage is retained",
+      "metric": "source-reviewed finite coverage and original-constraint consistency",
+      "value": null,
+      "tolerance": {
+        "rate": 1e-09,
+        "split": 1e-12,
+        "objective": 1e-07,
+        "scope": "approved planned numerical regimes; not universal validation",
+        "unresolved": 5
+      },
+      "verdict": "FAIL",
+      "triage": "implementation-bug",
+      "evidence_paths": [
+        "analysis/supplement/runs/2026-10-12T15-09-53.545767+00-00-86665a33b2b84ec08c39b45d32ef23c5-native/native-receipt.json",
+        "analysis/supplement/runs/2026-10-12T15-09-58.183477+00-00-6aacbf54576d4d638666b082e5ae374d-supplement/execution-report.json"
+      ]
+    },
+    {
+      "id": "supplement-P6",
+      "prediction_ref": "P6",
+      "method": "Combined native receipts and independently recomputed planned finite-input checks; unresolved/unsupported coverage is retained",
+      "metric": "source-reviewed finite coverage and original-constraint consistency",
+      "value": null,
+      "tolerance": {
+        "rate": 1e-09,
+        "split": 1e-12,
+        "objective": 1e-07,
+        "scope": "approved planned numerical regimes; not universal validation",
+        "unresolved": 5
+      },
+      "verdict": "FAIL",
+      "triage": "implementation-bug",
+      "evidence_paths": [
+        "analysis/supplement/runs/2026-10-12T15-09-53.545767+00-00-86665a33b2b84ec08c39b45d32ef23c5-native/native-receipt.json",
+        "analysis/supplement/runs/2026-10-12T15-09-58.183477+00-00-6aacbf54576d4d638666b082e5ae374d-supplement/execution-report.json"
+      ]
+    },
+    {
+      "id": "supplement-P7",
+      "prediction_ref": "P7",
+      "method": "Combined native receipts and independently recomputed planned finite-input checks; unresolved/unsupported coverage is retained",
+      "metric": "source-reviewed finite coverage and original-constraint consistency",
+      "value": null,
+      "tolerance": {
+        "rate": 1e-09,
+        "split": 1e-12,
+        "objective": 1e-07,
+        "scope": "approved planned numerical regimes; not universal validation",
+        "unresolved": 5
+      },
+      "verdict": "FAIL",
+      "triage": "implementation-bug",
+      "evidence_paths": [
+        "analysis/supplement/runs/2026-10-12T15-09-53.545767+00-00-86665a33b2b84ec08c39b45d32ef23c5-native/native-receipt.json",
+        "analysis/supplement/runs/2026-10-12T15-09-58.183477+00-00-6aacbf54576d4d638666b082e5ae374d-supplement/execution-report.json"
+      ]
+    }
+  ],
+  "native_acceptance_status": "PASS",
+  "selected_native_invocation_status": "PASS",
+  "native_failure_kind": null,
+  "supplement_status": "FAIL",
+  "stored_and_unsupported_unresolved": 5,
+  "oracle_uncertainty": 55,
+  "failed_precision": [],
+  "full_scientific_validation": false,
+  "limitations": [
+    "Legacy native PASS is retained as its own receipt.",
+    "Combined assessment does not rewrite native or locked science.",
+    "Retained uncertainty is never promoted to scientific PASS.",
+    "Finite planned checks do not prove arbitrary real-input validity."
+  ],
+  "selected_evidence_hashes": {
+    "analysis/supplement/runs/2026-10-12T15-09-53.545767+00-00-86665a33b2b84ec08c39b45d32ef23c5-native/native-receipt.json": "db9b8973b7d5008496c9afb56f51e4ce25e5208521e9e626563e3d8e3803f23f",
+    "analysis/supplement/runs/2026-10-12T15-09-58.183477+00-00-6aacbf54576d4d638666b082e5ae374d-supplement/execution-report.json": "3b69e8d8485f25c11b96f7e658d7e3496ad01bc0bae30ff2a0cc19bd33f986da"
+  }
+}

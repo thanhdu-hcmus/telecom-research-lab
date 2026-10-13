@@ -1,0 +1,242 @@
+{
+  "timestamp": "2026-10-13T00:57:04.411596+00:00",
+  "status": "PROVISIONAL_ARITHMETIC_VERIFIED",
+  "scientific_acceptance": false,
+  "registered_manuscript_claims": false,
+  "native_arithmetic_checks": 9,
+  "claims": [
+    {
+      "claim": {
+        "key": "mc_00_q0_seed11001_noma_sum",
+        "unit": "bit/s/Hz",
+        "source_manifest": "results/runs/r_mc-00-q0-11001-250ccb4ad292-b2a7cf17890b_71a0714cd1ed/manifest.json",
+        "computation": "{\"op\":\"mean\",\"path\":\"results/runs/r_mc-00-q0-11001-250ccb4ad292-b2a7cf17890b_71a0714cd1ed/metrics.csv\",\"column\":\"sum_rate\"}",
+        "value": 1.1933472551478488,
+        "used_in": [
+          "analysis/provisional-native-claims.md"
+        ]
+      },
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-00-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "arithmetic_check": {
+        "key": "mc_00_q0_seed11001_noma_sum",
+        "value": 1.1933472551478488,
+        "manifest_sha256": "b5aab3afd4dc3f35ce39bb891633ab8e10eacd5a8553bca80b723d2c39babe51",
+        "data_sha256": "a812e23b0cde13472ad449a903ae25ed131b332e6d2c42eaa9954ba9d53aa744"
+      },
+      "status": "COMPUTED_NOT_SCIENTIFICALLY_ACCEPTED"
+    },
+    {
+      "claim": {
+        "key": "mc_00_q0_seed11001_oma_sum",
+        "unit": "bit/s/Hz",
+        "source_manifest": "results/runs/r_mc-00-q0-11001-250ccb4ad292-b2a7cf17890b_71a0714cd1ed/manifest.json",
+        "computation": "{\"op\":\"mean\",\"path\":\"results/runs/r_mc-00-q0-11001-250ccb4ad292-b2a7cf17890b_71a0714cd1ed/metrics.csv\",\"column\":\"oma_sum\"}",
+        "value": 0.8555712936509852,
+        "used_in": [
+          "analysis/provisional-native-claims.md"
+        ]
+      },
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-00-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "arithmetic_check": {
+        "key": "mc_00_q0_seed11001_oma_sum",
+        "value": 0.8555712936509852,
+        "manifest_sha256": "b5aab3afd4dc3f35ce39bb891633ab8e10eacd5a8553bca80b723d2c39babe51",
+        "data_sha256": "a812e23b0cde13472ad449a903ae25ed131b332e6d2c42eaa9954ba9d53aa744"
+      },
+      "status": "COMPUTED_NOT_SCIENTIFICALLY_ACCEPTED"
+    },
+    {
+      "claim": {
+        "key": "mc_00_q0_seed11001_noma_feasible_rows",
+        "unit": "channel realizations",
+        "source_manifest": "results/runs/r_mc-00-q0-11001-250ccb4ad292-b2a7cf17890b_71a0714cd1ed/manifest.json",
+        "computation": "{\"op\":\"count\",\"path\":\"results/runs/r_mc-00-q0-11001-250ccb4ad292-b2a7cf17890b_71a0714cd1ed/metrics.csv\",\"column\":\"feasible\"}",
+        "value": 32768.0,
+        "used_in": [
+          "analysis/provisional-native-claims.md"
+        ]
+      },
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-00-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "arithmetic_check": {
+        "key": "mc_00_q0_seed11001_noma_feasible_rows",
+        "value": 32768.0,
+        "manifest_sha256": "b5aab3afd4dc3f35ce39bb891633ab8e10eacd5a8553bca80b723d2c39babe51",
+        "data_sha256": "a812e23b0cde13472ad449a903ae25ed131b332e6d2c42eaa9954ba9d53aa744"
+      },
+      "status": "COMPUTED_NOT_SCIENTIFICALLY_ACCEPTED"
+    },
+    {
+      "claim": {
+        "key": "mc_20_q0_seed11001_noma_sum",
+        "unit": "bit/s/Hz",
+        "source_manifest": "results/runs/r_mc-20-q0-11001-250ccb4ad292-b2a7cf17890b_9b64c46d75e3/manifest.json",
+        "computation": "{\"op\":\"mean\",\"path\":\"results/runs/r_mc-20-q0-11001-250ccb4ad292-b2a7cf17890b_9b64c46d75e3/metrics.csv\",\"column\":\"sum_rate\"}",
+        "value": 6.820250425781409,
+        "used_in": [
+          "analysis/provisional-native-claims.md"
+        ]
+      },
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-20-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "arithmetic_check": {
+        "key": "mc_20_q0_seed11001_noma_sum",
+        "value": 6.820250425781408,
+        "manifest_sha256": "1afdcbda5f902c2ce3dc18e1f87d54ee63972848c81e672ec702d67ecae3ebc2",
+        "data_sha256": "72fa8b33f7b6a55af64d127912280adc6e41324d765f95638205cc8e36918d9f"
+      },
+      "status": "COMPUTED_NOT_SCIENTIFICALLY_ACCEPTED"
+    },
+    {
+      "claim": {
+        "key": "mc_20_q0_seed11001_oma_sum",
+        "unit": "bit/s/Hz",
+        "source_manifest": "results/runs/r_mc-20-q0-11001-250ccb4ad292-b2a7cf17890b_9b64c46d75e3/manifest.json",
+        "computation": "{\"op\":\"mean\",\"path\":\"results/runs/r_mc-20-q0-11001-250ccb4ad292-b2a7cf17890b_9b64c46d75e3/metrics.csv\",\"column\":\"oma_sum\"}",
+        "value": 5.872979575023407,
+        "used_in": [
+          "analysis/provisional-native-claims.md"
+        ]
+      },
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-20-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "arithmetic_check": {
+        "key": "mc_20_q0_seed11001_oma_sum",
+        "value": 5.8729795750234075,
+        "manifest_sha256": "1afdcbda5f902c2ce3dc18e1f87d54ee63972848c81e672ec702d67ecae3ebc2",
+        "data_sha256": "72fa8b33f7b6a55af64d127912280adc6e41324d765f95638205cc8e36918d9f"
+      },
+      "status": "COMPUTED_NOT_SCIENTIFICALLY_ACCEPTED"
+    },
+    {
+      "claim": {
+        "key": "mc_20_q0_seed11001_noma_feasible_rows",
+        "unit": "channel realizations",
+        "source_manifest": "results/runs/r_mc-20-q0-11001-250ccb4ad292-b2a7cf17890b_9b64c46d75e3/manifest.json",
+        "computation": "{\"op\":\"count\",\"path\":\"results/runs/r_mc-20-q0-11001-250ccb4ad292-b2a7cf17890b_9b64c46d75e3/metrics.csv\",\"column\":\"feasible\"}",
+        "value": 32768.0,
+        "used_in": [
+          "analysis/provisional-native-claims.md"
+        ]
+      },
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-20-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "arithmetic_check": {
+        "key": "mc_20_q0_seed11001_noma_feasible_rows",
+        "value": 32768.0,
+        "manifest_sha256": "1afdcbda5f902c2ce3dc18e1f87d54ee63972848c81e672ec702d67ecae3ebc2",
+        "data_sha256": "72fa8b33f7b6a55af64d127912280adc6e41324d765f95638205cc8e36918d9f"
+      },
+      "status": "COMPUTED_NOT_SCIENTIFICALLY_ACCEPTED"
+    },
+    {
+      "claim": {
+        "key": "mc_50_q0_seed11001_noma_sum",
+        "unit": "bit/s/Hz",
+        "source_manifest": "results/runs/r_mc-50-q0-11001-250ccb4ad292-b2a7cf17890b_94ba5ccee8f3/manifest.json",
+        "computation": "{\"op\":\"mean\",\"path\":\"results/runs/r_mc-50-q0-11001-250ccb4ad292-b2a7cf17890b_94ba5ccee8f3/metrics.csv\",\"column\":\"sum_rate\"}",
+        "value": 16.766563602036857,
+        "used_in": [
+          "analysis/provisional-native-claims.md"
+        ]
+      },
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-50-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "arithmetic_check": {
+        "key": "mc_50_q0_seed11001_noma_sum",
+        "value": 16.766563602036857,
+        "manifest_sha256": "172386b5269c0d77939f7224184a25fd536794bb02328c15642a7831ebb62251",
+        "data_sha256": "94fd027729970842583e31e07a11331a67730531aa9e23f4e6b1876292843ed4"
+      },
+      "status": "COMPUTED_NOT_SCIENTIFICALLY_ACCEPTED"
+    },
+    {
+      "claim": {
+        "key": "mc_50_q0_seed11001_oma_sum",
+        "unit": "bit/s/Hz",
+        "source_manifest": "results/runs/r_mc-50-q0-11001-250ccb4ad292-b2a7cf17890b_94ba5ccee8f3/manifest.json",
+        "computation": "{\"op\":\"mean\",\"path\":\"results/runs/r_mc-50-q0-11001-250ccb4ad292-b2a7cf17890b_94ba5ccee8f3/metrics.csv\",\"column\":\"oma_sum\"}",
+        "value": 15.766925087157112,
+        "used_in": [
+          "analysis/provisional-native-claims.md"
+        ]
+      },
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-50-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "arithmetic_check": {
+        "key": "mc_50_q0_seed11001_oma_sum",
+        "value": 15.766925087157112,
+        "manifest_sha256": "172386b5269c0d77939f7224184a25fd536794bb02328c15642a7831ebb62251",
+        "data_sha256": "94fd027729970842583e31e07a11331a67730531aa9e23f4e6b1876292843ed4"
+      },
+      "status": "COMPUTED_NOT_SCIENTIFICALLY_ACCEPTED"
+    },
+    {
+      "claim": {
+        "key": "mc_50_q0_seed11001_noma_feasible_rows",
+        "unit": "channel realizations",
+        "source_manifest": "results/runs/r_mc-50-q0-11001-250ccb4ad292-b2a7cf17890b_94ba5ccee8f3/manifest.json",
+        "computation": "{\"op\":\"count\",\"path\":\"results/runs/r_mc-50-q0-11001-250ccb4ad292-b2a7cf17890b_94ba5ccee8f3/metrics.csv\",\"column\":\"feasible\"}",
+        "value": 32768.0,
+        "used_in": [
+          "analysis/provisional-native-claims.md"
+        ]
+      },
+      "scope": {
+        "seed": 11001,
+        "scenario": "mc-50-q0",
+        "draws": 32768,
+        "pooled_across_seeds": false
+      },
+      "arithmetic_check": {
+        "key": "mc_50_q0_seed11001_noma_feasible_rows",
+        "value": 32768.0,
+        "manifest_sha256": "172386b5269c0d77939f7224184a25fd536794bb02328c15642a7831ebb62251",
+        "data_sha256": "94fd027729970842583e31e07a11331a67730531aa9e23f4e6b1876292843ed4"
+      },
+      "status": "COMPUTED_NOT_SCIENTIFICALLY_ACCEPTED"
+    }
+  ],
+  "combined_assessment_status": "FAIL",
+  "source_plan_sha256": "1628dfd2b6515cf74ea463e20a8d055d9e49565ac7497ab686df040ca9675371",
+  "limits": [
+    "Single seed per setting; zero QoS only; no pooled or conditional native claims.",
+    "Read-only native evaluate_claim was invoked with independently computed actual values, not fabricated probes.",
+    "No results/claims.json registration or gate approval.",
+    "Global scientific acceptance awaits repair, canonical verification, independent results review and PI decision."
+  ]
+}

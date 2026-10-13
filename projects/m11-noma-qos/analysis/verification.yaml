@@ -1,0 +1,98 @@
+- id: V-P1
+  prediction_ref: P1
+  method: Direct original-rate recomputation, full-domain constraint brackets and
+    distinct oracle
+  metric: Numerical consistency under locked protocol
+  value: null
+  tolerance:
+    rate: 1.0e-09
+    objective: 1.0e-07
+    unresolved: retained, no assertion
+  verdict: PASS
+  triage: null
+  evidence_paths:
+  - analysis/verifier-output/recomputation.json
+- id: V-P2
+  prediction_ref: P2
+  method: Direct original-rate recomputation, full-domain constraint brackets and
+    distinct oracle
+  metric: Numerical consistency under locked protocol
+  value: null
+  tolerance:
+    rate: 1.0e-09
+    objective: 1.0e-07
+    unresolved: retained, no assertion
+  verdict: PASS
+  triage: null
+  evidence_paths:
+  - analysis/verifier-output/recomputation.json
+- id: V-P3
+  prediction_ref: P3
+  method: Direct original-rate recomputation, full-domain constraint brackets and
+    distinct oracle
+  metric: Numerical consistency under locked protocol
+  value: null
+  tolerance:
+    rate: 1.0e-09
+    objective: 1.0e-07
+    unresolved: retained, no assertion
+  verdict: PASS
+  triage: null
+  evidence_paths:
+  - analysis/verifier-output/recomputation.json
+- id: V-P4
+  prediction_ref: P4
+  method: Direct original-rate recomputation, full-domain constraint brackets and
+    distinct oracle
+  metric: Numerical consistency under locked protocol
+  value: null
+  tolerance:
+    rate: 1.0e-09
+    objective: 1.0e-07
+    unresolved: retained, no assertion
+  verdict: PASS
+  triage: null
+  evidence_paths:
+  - analysis/verifier-output/recomputation.json
+- id: V-P5
+  prediction_ref: P5
+  method: Direct original-rate recomputation, full-domain constraint brackets and
+    distinct oracle
+  metric: Numerical consistency under locked protocol
+  value: null
+  tolerance:
+    rate: 1.0e-09
+    objective: 1.0e-07
+    unresolved: retained, no assertion
+  verdict: PASS
+  triage: null
+  evidence_paths:
+  - analysis/verifier-output/recomputation.json
+- id: V-P6
+  prediction_ref: P6
+  method: Direct original-rate recomputation, full-domain constraint brackets and
+    distinct oracle
+  metric: Numerical consistency under locked protocol
+  value: null
+  tolerance:
+    rate: 1.0e-09
+    objective: 1.0e-07
+    unresolved: retained, no assertion
+  verdict: PASS
+  triage: null
+  evidence_paths:
+  - analysis/verifier-output/recomputation.json
+- id: V-P7
+  prediction_ref: P7
+  method: Direct original-rate recomputation, full-domain constraint brackets and
+    distinct oracle
+  metric: Numerical consistency under locked protocol
+  value: null
+  tolerance:
+    rate: 1.0e-09
+    objective: 1.0e-07
+    unresolved: retained, no assertion
+  verdict: PASS
+  triage: null
+  evidence_paths:
+  - analysis/verifier-output/recomputation.json

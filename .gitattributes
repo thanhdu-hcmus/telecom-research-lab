@@ -112,3 +112,15 @@ docs/evidence/m11-p6-source-ready-native-secrets.json -text whitespace=cr-at-eol
 
 # Preserve exact P6 fifth-packet preparation secret-check evidence.
 docs/evidence/m11-p6-round5-preparation-native-secrets-final.json -text whitespace=cr-at-eol
+
+# Preserve exact completed P6 operation/control evidence bytes.
+projects/m11-noma-qos/analysis/supplement/completed-attempt-01/compute_p6_provisional_native_claims.py -text whitespace=cr-at-eol,-blank-at-eof
+projects/m11-noma-qos/analysis/supplement/completed-attempt-01/finish_p6_canonical_assessment.py -text whitespace=cr-at-eol,-blank-at-eof
+projects/m11-noma-qos/analysis/supplement/completed-attempt-01/run_p6_canonical_step.py -text whitespace=cr-at-eol,-blank-at-eof
+projects/m11-noma-qos/analysis/supplement/completed-attempt-01/run_p6_full_candidate_row_diagnostic.py -text whitespace=cr-at-eol,-blank-at-eof
+projects/m11-noma-qos/analysis/supplement/completed-attempt-01/control/assessment/stdout.txt -text whitespace=cr-at-eol,-blank-at-eof
+projects/m11-noma-qos/analysis/supplement/completed-attempt-01/control/native/stdout.txt -text whitespace=cr-at-eol,-blank-at-eof
+projects/m11-noma-qos/analysis/supplement/completed-attempt-01/control/supplement/stdout.txt -text whitespace=cr-at-eol,-blank-at-eof
+
+# Preserve exact completed-attempt native secret-check bytes.
+docs/evidence/m11-p6-completed-attempt-native-secrets-final.json -text whitespace=cr-at-eol

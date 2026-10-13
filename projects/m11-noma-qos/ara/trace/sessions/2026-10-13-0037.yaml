@@ -1,0 +1,15 @@
+id: 2026-10-13-0037
+timestamp: '2026-10-13T01:06:45.843474+00:00'
+phase: P6
+summary: Full first P6 attempt completed145jobs/4718692rows with4708base/1160tighterreplays.
+  Native PASS retained; combined FAIL and G6 request ineligible. All2968 crossing
+  discrepancies reproduced in complete author diagnosis. Five stored rows and20 base
+  checks retain uncertainty. Thirty-nine recipes remain unverified. Nine per-seed
+  examples computed from real CSV values and verified by unmodified native evaluate_claim,
+  kept provisional. Candidate full-row author diagnostic running; fifth source-review
+  authorization remains pending. No gate, locked input or canonical source changed.
+provenance: ai
+evidence:
+  analysis/supplement/completed-attempt-01/closure-receipt.json: 73a9895880d309b578e7d8be1f988781a7fcc74c1f5788dbd3cd3d3c241228e9
+  analysis/provisional-native-claims.json: 3bb2d04437e1a97137a5d0a83c850cdf08c80afb10c484684348ed492e622a50
+  to_human/P6-completed-attempt-status.md: 9b0d9fe4eed4f89a4c48ebde3e9b137d6157099e61ba7c2ee2365ecb50f4fad1

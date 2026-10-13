@@ -2,7 +2,7 @@
 
 ## Current boundary
 
-M0â€“M10 software acceptance is complete, including the successful PI Overleaf
+M0Ã¢â‚¬â€œM10 software acceptance is complete, including the successful PI Overleaf
 check and `test.pdf` receipt. M11's actual seven-gate dry run and M12's published
 reference reproduction remain unfinished. The earlier isolated software smoke
 fixture used test-only gate substitutes and does not satisfy either milestone.
@@ -29,7 +29,7 @@ the source plan and AGENTS.md still reserve scientific decisions for the PI.
 
 ## M11 work remaining
 
-Current state: G1–G5 approved; phase P6; G6/G7 invalidated. The canonical G5
+Current state: G1â€“G5 approved; phase P6; G6/G7 invalidated. The canonical G5
 reapproval supersedes the historical G5-pending audit. P5 R2 completed 145 fresh
 native jobs without changing the physical protocol. The fourth enforced
 read-only source review returned READY with zero findings; its exact source
@@ -40,10 +40,15 @@ report is `projects/m11-noma-qos/analysis/verification.json`; the unique native
 attempt receipt is retained under `analysis/supplement/runs/`. This result does
 not complete P6 acceptance or approve G6.
 
-Supplemental verification remains RUNNING. Snapshot at 2026-10-12T17:54:12.923194+00:00:
-57/145 jobs, 1,835,108/4,718,692 rows, 2,755 recorded discrepancies.
-The combined assessment watcher waits for the exact native and supplement
-receipts. The frozen reviewed source and all 51 locked inputs remain unchanged.
+The first full supplement completed all 145 jobs and 4,718,692 rows on
+2026-10-12 at 21:53 UTC. It returned FAIL with 2,968 diagnostic crossing errors
+(2,964 upper and four lower). The automatic combined assessment also returned
+FAIL and `eligible_for_gate_request: false`. Source, data and path bindings were
+rechecked unchanged. Every recorded error is reproduced in the completed
+crossing-field diagnosis. Five stored deterministic rows and twenty base-oracle
+checks remain unresolved; the combined uncertainty sum includes repeated
+categories. No precision failure was recorded. See the M11 project
+`to_human/P6-completed-attempt-status.md` for current scope and the exact receipts.
 
 A separate worktree on `fix/p6-crossing-r5` prepares an analysis-only correction.
 A bounded diagnosis of the first 56 completed jobs accounts for all 2,750 recorded
@@ -67,7 +72,7 @@ The reference paper is unspecified. Prefer the PI's own published RIS/NOMA work
 with available code/data; otherwise code_scout can propose an official-code IEEE
 Transactions reference for PI selection. Narrow P2 to the selected paper and
 references, then record the reproduction/ablation choice at G3 and complete
-P4â€“P7. Reference figures, numeric agreement and actual manuscript quality must
+P4Ã¢â‚¬â€œP7. Reference figures, numeric agreement and actual manuscript quality must
 be demonstrated; no reproduction is claimed yet.
 
 ## Optional capabilities and acceptance limits
@@ -88,7 +93,7 @@ be demonstrated; no reproduction is claimed yet.
 
 ## Evidence and failures
 
-Post-M10 regression evidence is recorded separately from historical M5â€“M10
+Post-M10 regression evidence is recorded separately from historical M5Ã¢â‚¬â€œM10
 acceptance. See `docs/evidence/post-m10-audit-deterministic.json` and
 `docs/evidence/post-m10-audit-failures.json`. Initial targeted checks encountered
 Windows temporary/cache directory access errors. Rerunning with workspace-local
