@@ -134,3 +134,8 @@ docs/evidence/p6-round5-accepted-source/framework-stdout.txt -text whitespace=cr
 
 # Preserve exact completed attempt2 native evidence bytes.
 projects/m11-noma-qos/analysis/supplement/attempt2-native-checkpoint/native-control/stdout.txt -text whitespace=cr-at-eol,-blank-at-eof
+
+# Preserve exact bytes bound in the completed second P6 attempt receipts.
+projects/m11-noma-qos/analysis/supplement/completed-attempt-02/control/assessment/stdout.txt -text whitespace=cr-at-eol,-blank-at-eof
+projects/m11-noma-qos/analysis/supplement/completed-attempt-02/control/native/stdout.txt -text whitespace=cr-at-eol,-blank-at-eof
+projects/m11-noma-qos/analysis/supplement/completed-attempt-02/control/supplement/stdout.txt -text whitespace=cr-at-eol,-blank-at-eof

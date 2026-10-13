@@ -1,0 +1,11 @@
+id: 2026-10-13-0047
+timestamp: '2026-10-13T14:03:54.978873+00:00'
+phase: P6
+summary: Automatically retained the completed second canonical operation receipts
+  and control logs with exact evidence hashes. Actual native/supplement/combined statuses
+  are recorded in closure-receipt.json; no full scientific acceptance, numerical-results
+  transmission or scientific gate decision is made. Original attempt and author certificate
+  remain separate.
+provenance: ai
+evidence:
+  analysis/supplement/completed-attempt-02/closure-receipt.json: 1255c6ea2b1fa7efcedc25c2424d5d3d0fe5370078abd7153e29698e615a79cf

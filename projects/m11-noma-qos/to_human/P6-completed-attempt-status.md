@@ -1,67 +1,70 @@
 # P6 verification status
 
+## Second canonical attempt: completed; INCONCLUSIVE
+
+| Check | Actual result |
+|---|---|
+| Native verification | PASS: eight checks and seven prediction items |
+| Supplement | CHECKED_WITH_DECLARED_UNRESOLVED |
+| Combined assessment | INCONCLUSIVE; not eligible for G6 request |
+| Coverage | 145 jobs, 4,718,692 rows; 4,708 base and 1,160 tighter replays |
+| Recorded errors | Zero |
+| Precision failures | None |
+| Integrity | All 19 reviewed source bindings and 51 locked inputs unchanged |
+
+The supplement finished on 2026-10-13 at 14:03 UTC. Its completed computation
+is retained in analysis/supplement/completed-attempt-02/closure-receipt.json,
+with exact links and hashes for the native, supplement and assessment receipts.
+The enforced fifth source review returned READY with zero findings; its source
+correction was applied before this fresh canonical attempt. The accepted-source
+unit run has 133 passing cases; the corresponding framework run has 97 passes.
+These test results do not establish scientific acceptance.
+
+## Remaining numerical uncertainty
+
+Five stored deterministic rows remain unresolved. Twenty base-oracle checks
+cover four stress cases repeated five times. The combined oracle uncertainty
+sum of 55 repeats categories; it is not a count of distinct rows. No unresolved
+base check was selected for canonical tighter replay. Extra author diagnostics
+using the existing tighter policy returned ten feasible and ten unresolved
+results; exact checks validate the ten feasible witnesses, without changing
+canonical labels or acceptance.
+
+The author fractional-boundary certificate explains the exact sqrt(2)-1
+singleton. It has not upgraded the verifier's unresolved labels. See
+analysis/supplement/attempt2-native-checkpoint and
+analysis/supplement/oracle-uncertainty-author-diagnostic.
+
+## Claim lineage and independent review
+
+The current run generated 39 executable conditional recipes: 36 are COMPUTED
+and three are INCONCLUSIVE. Computation receipts are not accepted manuscript
+claims. Nine native arithmetic examples remain provisional and unregistered.
+Independent numerical-results review and resolution or scientific treatment
+of the retained uncertainty remain required before G6 can be requested.
+A local artifact-selection plan is retained in analysis/numerical-review-preparation.
+No numerical-results packet has been transmitted. G6/G7 remain PI-only.
+
 ## First attempt: failed; preserved
 
-All 145 jobs / 4,718,692 rows completed. Native verification passed; the
-supplement and combined assessment failed. G6 request eligibility is false.
+The first full attempt completed the same 145 jobs and 4,718,692 rows. Native
+verification passed, while the supplement and combined assessment failed with
+2,968 diagnostic crossing errors (2,964 upper and four lower). The reviewed
+round-five correction removes those recorded errors in the fresh full attempt.
+Original outputs and failure evidence remain in
+analysis/supplement/completed-attempt-01 and
+analysis/supplement/native-output-archive-attempt1.
 
-All 2,968 errors are diagnostic crossing comparisons (2,964 upper; four lower).
-The complete author diagnosis reproduces every recorded error in these fields.
-The isolated correction fixes endpoint-residual cancellation and retains tiny
-out-of-domain representation differences separately; it preserves the physical
-checks and scientific tolerances. The explicitly authorized fifth source review returned READY with zero findings.
-Actual read-only root/child policies, no reviewer tools, fresh fork, OpenAI
-provider and unchanged bytes were audited. The exact two reviewed analysis
-source paths are applied; all 19 source bindings and 51 locked inputs match.
-The original eight native output files are archived with byte-identical mapping
-for the fresh rerun. All 133 supplemental unit cases pass; all 97 framework tests
-pass. Fresh native and supplemental canonical execution launched on 2026-10-13
-at 07:52 UTC from fd2877f. The automatic watcher will run combined assessment
-after both matching receipts finish. Coverage remains 145 jobs / 4,718,692
-rows. Progress is partial; scientific acceptance is pending.
+M11 still requires accepted scientific results, the P7 manuscript/review/export
+and actual PI G6/G7 decisions. M12 remains unstarted.
 
-## Uncertainty remains after the diagnostic repair
+## First numerical review packet prepared locally
 
-Five stored deterministic rows remain unresolved. Twenty base-oracle checks are
-unresolved; tighter replay resolves its selected checks. The combined uncertainty
-count of 55 includes repeated categories and is not a distinct-row count. A
-corrected crossing calculation does not resolve these scientific limitations.
-No precision failure was reported.
-
-## Claims and next work
-
-The run generated 39 conditional recipes, all marked UNVERIFIED_DUE_TO_ERRORS.
-Nine native per-seed zero-QoS arithmetic examples have been computed and checked
-against their actual manifests; they are provisional and are not registered for
-a manuscript. The candidate author diagnostic completed all 145 jobs / 4,718,692 rows
-with zero row errors and unchanged source and locked-input bindings. Ten
-deterministic method ambiguities remain; this is not canonical acceptance.
-Full canonical repaired verification, independent results review and actual PI
-G6/G7 decisions remain required.
-
-See analysis/supplement/completed-attempt-01/closure-receipt.json,
-analysis/provisional-native-claims.md and P6-fifth-source-review-authorization.md.
-
-## Second attempt: native PASS; supplement running
-
-Fresh native verification completed PASS on 2026-10-13 at 08:27 UTC. All eight
-checks and seven prediction items pass, with source and locked-input bindings
-unchanged. The full supplement is running; combined assessment is pending.
-Nine provisional arithmetic examples have been revalidated unchanged.
-
-An author-only certificate derives the exact fractional-boundary NOMA split
-sqrt(2)-1 and OMA equality for the five repeated saved rows, including exact
-rational bracket checks. It explains the boundary representation issue;
-existing unresolved labels and the frozen verifier remain unchanged.
-Independent numerical-results review and actual PI scientific decisions remain
-required. See analysis/supplement/attempt2-native-checkpoint.
-
-## Oracle sensitivity coverage and remaining cases
-
-The twenty unresolved base checks cover four cases repeated five times. None
-was selected for canonical tighter replay. Extra local diagnostic calls using
-the existing tighter policy resolve ten narrow-feasible/large-SNR rows, with
-exact checks of their accepted constraints; ten rows remain unresolved.
-Canonical results and replay counts remain unchanged. This informs a future
-review of certificate handling and sensitivity coverage, after full results.
-See analysis/supplement/oracle-uncertainty-author-diagnostic/census.md.
+The complete bundle is too large for the observed review context. The first
+scoped packet contains 32 artifacts and 517,502 bytes, covering all 100
+deterministic raw rows, certificate handling and methodology. It excludes
+author narratives and previous review/test verdicts. Two derived report views
+are explicitly labelled and checked against their original full reports.
+Monte Carlo numerical acceptance remains outside this first review. See
+analysis/numerical-review-01-deterministic-payload.json. No transmission has
+occurred; separate authorization is pending.

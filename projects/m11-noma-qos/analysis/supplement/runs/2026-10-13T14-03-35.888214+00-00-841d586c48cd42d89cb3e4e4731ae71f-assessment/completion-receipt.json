@@ -1,0 +1,10 @@
+{
+  "finished": "2026-10-13T14:03:50.485992+00:00",
+  "report": "combined-assessment.json",
+  "evidence_hashes": {
+    "analysis/supplement/runs/2026-10-13T14-03-35.888214+00-00-841d586c48cd42d89cb3e4e4731ae71f-assessment/combined-assessment.json": "1391ccf1be2032249725e3a035d033e775814889f5b288a25f940a32262b708d",
+    "analysis/supplement/runs/2026-10-13T14-03-35.888214+00-00-841d586c48cd42d89cb3e4e4731ae71f-assessment/combined-verification.yaml": "ab02303308a662b8eba42171a7435882f02ba219f629ed0d68f862b069869aa5"
+  },
+  "status": "INCONCLUSIVE",
+  "scientific_gate_approval": false
+}

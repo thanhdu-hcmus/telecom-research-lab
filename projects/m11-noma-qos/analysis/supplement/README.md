@@ -1,9 +1,20 @@
-# P6 independent supplemental checker â€” prepared only
+# P6 independent supplemental checker
 
-This directory contains independently written calculations from the approved
-model/protocol and raw-output schema. Preparation and isolated unit tests do not
-constitute verification of the canonical scientific results. Full execution
-must follow an enforced independent artifact-only source review that binds all 19 approved source files. Round 1 requested revisions; round 2 is reviewing the revised source. No full canonical verification has run.
+## Current status: second canonical attempt completed
+
+The explicitly authorized fifth enforced source review returned READY with zero
+findings. Its exact reviewed correction was applied before the fresh canonical
+execution. Native verification is PASS. The full supplement checked all 145
+jobs and 4,718,692 rows with zero errors; its status is
+CHECKED_WITH_DECLARED_UNRESOLVED. The combined assessment is INCONCLUSIVE and
+not eligible for a G6 request. Five stored rows and twenty base-oracle checks
+remain unresolved. All 19 reviewed source bindings and 51 locked inputs match.
+
+The current source has 133 passing supplemental unit cases. The original
+preparation and earlier source-review/test notes below are historical records.
+See completed-attempt-02/closure-receipt.json for actual final receipt paths
+and ../../to_human/P6-completed-attempt-status.md for remaining work. No full
+scientific acceptance or independent numerical-results review is claimed.
 
 Run from the repository root in the existing pinned environment:
 
@@ -121,12 +132,12 @@ attempted candidates are checked even when the accepted optimum is undefined.
 The synthetic timing receipt is an explicitly bounded ordinary-row estimate,
 including the large tracing overhead; it excludes IO, native guards, hashing and
 shared replay. Runtime-budget exhaustion remains INCOMPLETE. Initial failed
-test/lint receipts and the initial timing estimate are preserved. No readiness
-for a full canonical run is claimed.
+test/lint receipts and the initial timing estimate are preserved. Those initial timing and test notes are historical; the current execution
+status is recorded above.
 
-## Source-review repairs and retained evidence
+## Historical source-review repairs and retained evidence
 
-The current isolated suite has 87 tests and seven subtests (94 JUnit cases), with
+The first reviewed isolated suite had 87 tests and seven subtests (94 JUnit cases), with
 no failures or skips. Its unique unit-runs directory records source hashes and
 full outputs. These checks include the already approved 24 illustrative rows;
 they establish bounded schema interoperability only. Original source, receipts,

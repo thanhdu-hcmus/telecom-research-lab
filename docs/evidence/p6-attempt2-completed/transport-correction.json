@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-13T14:28:26.831061+00:00",
+  "status": "CORRECTED",
+  "initial_index_check": "Three control stdout blobs were LF-normalized by initial Git staging and did not match the original receipt-bound CRLF bytes.",
+  "fix": "Exact three-path -text attributes and git add --renormalize restore staged original bytes. All final index/working/receipt hashes match.",
+  "paths": {
+    "analysis/supplement/completed-attempt-02/control/native/stdout.txt": "bdba7bf7a49049450aa2d5af90860bca042f0e34e57cb7b74605d1fe07ffaf63",
+    "analysis/supplement/completed-attempt-02/control/supplement/stdout.txt": "89473565dc1b0d0e6ce13013c8715f3902792ed17101b547d79b3c11ad827b59",
+    "analysis/supplement/completed-attempt-02/control/assessment/stdout.txt": "d56aef2a6d0427ec6c908b53b6d96654d4695ef1b04d6f8f60e2d255603380c7"
+  },
+  "classification_helper_note": "An author-side comparison helper repeatedly parsed the same baseline; only that helper was interrupted after its actual scanner report completed. The report bytes and all classifications were checked against one parsed baseline. The retained helper now parses once.",
+  "scientific_processes_interrupted": false,
+  "scientific_inputs_or_sources_changed": false,
+  "scientific_acceptance": false
+}

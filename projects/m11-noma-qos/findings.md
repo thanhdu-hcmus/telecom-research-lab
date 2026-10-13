@@ -441,3 +441,26 @@ A local selection audit and explicit artifact plan now record those limits,
 final receipt requirements and the external review's unseen bulk-data scope.
 The previous tracked packet is restored. No numerical packet was transmitted.
 See analysis/numerical-review-preparation.
+
+## P6 second attempt completion retained automatically
+
+Second canonical attempt completion: {"status": "COMPLETED_CANONICAL_ATTEMPT_RETAINED", "native_status": "PASS", "supplement_status": "CHECKED_WITH_DECLARED_UNRESOLVED", "combined_status": "INCONCLUSIVE", "jobs": 145, "rows": 4718692, "error_counts": {}, "source_bindings_rechecked": true, "inventory_paths_rechecked": true, "input_bindings_rechecked": true, "eligible_for_gate_request": false, "failed_precision": [], "scientific_acceptance": false, "external_numerical_results_review_authorized": false, "note": "Actual runtime results retained. Scientific gates remain PI-only; any independent numerical-results transmission needs separate authorization. The author boundary certificate has not upgraded stored labels.", "timestamp": "2026-10-13T14:03:54.920041+00:00"}
+
+See analysis/supplement/completed-attempt-02/closure-receipt.json. Scientific
+acceptance, independent results review and PI gates remain pending.
+
+## P6 final second-attempt outcome and scoped review packet
+
+All 145 jobs / 4,718,692 rows completed with zero errors, 4,708 base and 1,160
+tighter replays. Native PASS is retained; the supplement is checked with
+declared unresolved outcomes and combined assessment is INCONCLUSIVE. There
+are no precision failures; G6 request eligibility is false. Lineage has 36
+COMPUTED and three INCONCLUSIVE recipes, not accepted manuscript claims.
+
+A complete local numerical bundle exceeds the observed review context under
+an explicit offline tokenizer estimate. The first scoped packet therefore
+contains all deterministic raw rows and methodology sources: 30 original
+byte-exact artifacts and two explicitly checked deterministic report views.
+Monte Carlo numerical acceptance is outside its scope. No private packet has
+been transmitted; exact separate authorization is required before review.
+See analysis/numerical-review-01-deterministic-payload.json.

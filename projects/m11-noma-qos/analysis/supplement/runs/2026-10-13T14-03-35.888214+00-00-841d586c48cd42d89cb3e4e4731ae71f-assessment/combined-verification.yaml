@@ -1,0 +1,107 @@
+- id: supplement-P1
+  prediction_ref: P1
+  method: Combined native receipts and independently recomputed planned finite-input
+    checks; unresolved/unsupported coverage is retained
+  metric: source-reviewed finite coverage and original-constraint consistency
+  value: null
+  tolerance:
+    rate: 1.0e-09
+    split: 1.0e-12
+    objective: 1.0e-07
+    scope: approved planned numerical regimes; not universal validation
+    unresolved: 5
+  verdict: INCONCLUSIVE
+  triage: approximation-gap
+  evidence_paths: &id001
+  - analysis/supplement/runs/2026-10-13T07-52-43.369473+00-00-fa4c86fcdf654621a00a0495440e8117-native/native-receipt.json
+  - analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/execution-report.json
+- id: supplement-P2
+  prediction_ref: P2
+  method: Combined native receipts and independently recomputed planned finite-input
+    checks; unresolved/unsupported coverage is retained
+  metric: source-reviewed finite coverage and original-constraint consistency
+  value: null
+  tolerance:
+    rate: 1.0e-09
+    split: 1.0e-12
+    objective: 1.0e-07
+    scope: approved planned numerical regimes; not universal validation
+    unresolved: 5
+  verdict: INCONCLUSIVE
+  triage: approximation-gap
+  evidence_paths: *id001
+- id: supplement-P3
+  prediction_ref: P3
+  method: Combined native receipts and independently recomputed planned finite-input
+    checks; unresolved/unsupported coverage is retained
+  metric: source-reviewed finite coverage and original-constraint consistency
+  value: null
+  tolerance:
+    rate: 1.0e-09
+    split: 1.0e-12
+    objective: 1.0e-07
+    scope: approved planned numerical regimes; not universal validation
+    unresolved: 5
+  verdict: INCONCLUSIVE
+  triage: approximation-gap
+  evidence_paths: *id001
+- id: supplement-P4
+  prediction_ref: P4
+  method: Combined native receipts and independently recomputed planned finite-input
+    checks; unresolved/unsupported coverage is retained
+  metric: source-reviewed finite coverage and original-constraint consistency
+  value: null
+  tolerance:
+    rate: 1.0e-09
+    split: 1.0e-12
+    objective: 1.0e-07
+    scope: approved planned numerical regimes; not universal validation
+    unresolved: 5
+  verdict: INCONCLUSIVE
+  triage: approximation-gap
+  evidence_paths: *id001
+- id: supplement-P5
+  prediction_ref: P5
+  method: Combined native receipts and independently recomputed planned finite-input
+    checks; unresolved/unsupported coverage is retained
+  metric: source-reviewed finite coverage and original-constraint consistency
+  value: null
+  tolerance:
+    rate: 1.0e-09
+    split: 1.0e-12
+    objective: 1.0e-07
+    scope: approved planned numerical regimes; not universal validation
+    unresolved: 5
+  verdict: INCONCLUSIVE
+  triage: approximation-gap
+  evidence_paths: *id001
+- id: supplement-P6
+  prediction_ref: P6
+  method: Combined native receipts and independently recomputed planned finite-input
+    checks; unresolved/unsupported coverage is retained
+  metric: source-reviewed finite coverage and original-constraint consistency
+  value: null
+  tolerance:
+    rate: 1.0e-09
+    split: 1.0e-12
+    objective: 1.0e-07
+    scope: approved planned numerical regimes; not universal validation
+    unresolved: 5
+  verdict: INCONCLUSIVE
+  triage: approximation-gap
+  evidence_paths: *id001
+- id: supplement-P7
+  prediction_ref: P7
+  method: Combined native receipts and independently recomputed planned finite-input
+    checks; unresolved/unsupported coverage is retained
+  metric: source-reviewed finite coverage and original-constraint consistency
+  value: null
+  tolerance:
+    rate: 1.0e-09
+    split: 1.0e-12
+    objective: 1.0e-07
+    scope: approved planned numerical regimes; not universal validation
+    unresolved: 5
+  verdict: INCONCLUSIVE
+  triage: approximation-gap
+  evidence_paths: *id001

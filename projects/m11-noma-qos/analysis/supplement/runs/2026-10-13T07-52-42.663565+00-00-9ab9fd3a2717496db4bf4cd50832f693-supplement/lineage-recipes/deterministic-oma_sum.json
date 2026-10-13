@@ -1,0 +1,15 @@
+{
+  "op": "independent_conditional_mean",
+  "column": "oma_sum",
+  "mask": "independent_both_feasible",
+  "source_kind": "deterministic",
+  "source_scenario": "deterministic",
+  "source_manifests": [
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/manifest.json"
+  ],
+  "input_hashes": {
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/manifest.json": "de28af136fadf6051baba604c3be4c8516f96bf739a9f11c55fe7a91ad44e485",
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/channels.csv": "8d6255650548020e604d10ccb5168cc0ccbf010c55d85d2005059618d76c0b2f"
+  },
+  "rows": 100
+}

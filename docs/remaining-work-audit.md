@@ -74,7 +74,9 @@ native outputs are archived byte-identically for a fresh canonical rerun.
 
 The fresh corrected native verifier completed PASS on 2026-10-13 at08:27 UTC
 with all eight checks and seven prediction items passing. The full supplement
-is active and the automatic combined-assessment watcher is waiting. An
+finished all 145 jobs / 4,718,692 rows on 2026-10-13 at 14:03 UTC with zero
+errors and CHECKED_WITH_DECLARED_UNRESOLVED. Its combined assessment is
+INCONCLUSIVE, with no precision failures and G6 request eligibility false. An
 author-only exact sqrt(2)-1 certificate explains the five fractional-boundary
 repeats; their stored unresolved labels remain unchanged. Nine provisional
 native arithmetic examples have been revalidated; no manuscript claims were
@@ -105,8 +107,11 @@ selection audit and final-artifact plan are retained in the M11 project
 transmitted. Bulk Monte Carlo rows remain local; a bounded artifact review
 must mark checks requiring unseen rows as not reviewed or inconclusive.
 
-P6 still needs completed corrected verification and combined assessment,
-executable accepted manuscript claims, and
+The completed second-attempt receipts are retained in the M11 project
+`analysis/supplement/completed-attempt-02/closure-receipt.json`. Its 39 conditional
+lineage recipes have 36 COMPUTED and three INCONCLUSIVE statuses; none is an
+accepted manuscript claim. P6 still needs resolution or scientific treatment
+of the retained uncertainty, executable accepted manuscript claims, and
 enforced independent numerical-results review.
 P7 requires the evidence-traced manuscript, verified citations, figures,
 compilation, independent paper review, Overleaf export and actual PI G6/G7

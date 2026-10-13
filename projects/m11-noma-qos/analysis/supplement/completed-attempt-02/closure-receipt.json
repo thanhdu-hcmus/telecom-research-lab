@@ -1,0 +1,40 @@
+{
+  "status": "COMPLETED_CANONICAL_ATTEMPT_RETAINED",
+  "native_status": "PASS",
+  "supplement_status": "CHECKED_WITH_DECLARED_UNRESOLVED",
+  "combined_status": "INCONCLUSIVE",
+  "jobs": 145,
+  "rows": 4718692,
+  "error_counts": {},
+  "source_bindings_rechecked": true,
+  "inventory_paths_rechecked": true,
+  "input_bindings_rechecked": true,
+  "eligible_for_gate_request": false,
+  "failed_precision": [],
+  "scientific_acceptance": false,
+  "external_numerical_results_review_authorized": false,
+  "scientific_receipts": {
+    "native": "analysis/supplement/runs/2026-10-13T07-52-43.369473+00-00-fa4c86fcdf654621a00a0495440e8117-native/native-receipt.json",
+    "supplement": "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/execution-report.json",
+    "assessment": "analysis/supplement/runs/2026-10-13T14-03-35.888214+00-00-841d586c48cd42d89cb3e4e4731ae71f-assessment/combined-assessment.json"
+  },
+  "note": "Actual runtime results retained. Scientific gates remain PI-only; any independent numerical-results transmission needs separate authorization. The author boundary certificate has not upgraded stored labels.",
+  "timestamp": "2026-10-13T14:03:54.920041+00:00",
+  "evidence": {
+    "analysis/supplement/completed-attempt-02/retain_p6_attempt2_when_complete.py": "e314bd88b034bde8a057cc0351d3f5344deb8f0429b57f97dc8b1995944cfd67",
+    "analysis/supplement/completed-attempt-02/control/assessment/assessment-operation-receipt.json": "02493e56b68c192b03eeb430754526a31b479e1f8b3f021315c77cf20f771675",
+    "analysis/supplement/completed-attempt-02/control/assessment/final-operation-marker.json": "02493e56b68c192b03eeb430754526a31b479e1f8b3f021315c77cf20f771675",
+    "analysis/supplement/completed-attempt-02/control/assessment/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis/supplement/completed-attempt-02/control/assessment/stdout.txt": "d56aef2a6d0427ec6c908b53b6d96654d4695ef1b04d6f8f60e2d255603380c7",
+    "analysis/supplement/completed-attempt-02/control/native/final-operation-marker.json": "0c60c292571e33362791a25d9868f99d24f933c7468643cda0bc87d79abc4da6",
+    "analysis/supplement/completed-attempt-02/control/native/launch.json": "357565b148d9edc236889fc94ff3760ce14fcb5945cde215f97cdee320367bdf",
+    "analysis/supplement/completed-attempt-02/control/native/operation-receipt.json": "0c60c292571e33362791a25d9868f99d24f933c7468643cda0bc87d79abc4da6",
+    "analysis/supplement/completed-attempt-02/control/native/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis/supplement/completed-attempt-02/control/native/stdout.txt": "bdba7bf7a49049450aa2d5af90860bca042f0e34e57cb7b74605d1fe07ffaf63",
+    "analysis/supplement/completed-attempt-02/control/supplement/final-operation-marker.json": "7360545020c7970a2dab9a110016e036c27080835ffa7d272f42af365bd1fefe",
+    "analysis/supplement/completed-attempt-02/control/supplement/launch.json": "3bf79cffdf82a9bb6d664492e113e71dbb7fff74014bfaa1cbedf219d75338e4",
+    "analysis/supplement/completed-attempt-02/control/supplement/operation-receipt.json": "7360545020c7970a2dab9a110016e036c27080835ffa7d272f42af365bd1fefe",
+    "analysis/supplement/completed-attempt-02/control/supplement/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis/supplement/completed-attempt-02/control/supplement/stdout.txt": "89473565dc1b0d0e6ce13013c8715f3902792ed17101b547d79b3c11ad827b59"
+  }
+}

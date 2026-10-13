@@ -1,0 +1,431 @@
+{
+  "timestamp": "2026-10-13T14:07:59.765328+00:00",
+  "status": "LOCAL_COMPLETE_BUNDLE_TOO_LARGE_FOR_SINGLE_REVIEW",
+  "packet": "analysis/numerical-review-01-packet.json",
+  "packet_sha256": "59db5ad857a51e85af1fc6c36e64fc83e779f1973c4acdf538d0da3c618301bd",
+  "packet_bytes": 2615697,
+  "artifacts": 79,
+  "artifact_bindings": {
+    "model/model-spec.tex": {
+      "sha256": "c885769e4d0d191bd82e11891de912340a7baa64af49d9b8c4584b4a3204f76e",
+      "bytes": 12165
+    },
+    "model/notation.yaml": {
+      "sha256": "2e937f7f98e3240f476471c44cc2756afdfe77079aa8f5845cfe1bcfe920de22",
+      "bytes": 5418
+    },
+    "model/assumptions.yaml": {
+      "sha256": "48689bf9d889c0b4d4ccc9c7abe4f484cc41fde5ac27ddc4e5ea6e399ec16b4a",
+      "bytes": 6478
+    },
+    "model/predictions.yaml": {
+      "sha256": "b18859e62c3a5306b9b341331b5acd7e7ec5fb93b5fbc3cf82032fb8959a6fd2",
+      "bytes": 5093
+    },
+    "sim/protocol.md": {
+      "sha256": "93bdad13f228362b232f66e7e5ba50a751836c7039516bc77895eb52eeaf0e25",
+      "bytes": 9286
+    },
+    "sim/protocol.yaml": {
+      "sha256": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+      "bytes": 4760
+    },
+    "sim/protocol-errata.md": {
+      "sha256": "77ea24e95efbc18e1eaa3cee292c87dabeecb0d1aed742b63d78a32a2f14037c",
+      "bytes": 1064
+    },
+    "sim/cases.yaml": {
+      "sha256": "1f76d4897394371498250edb71d8ae31c08f1f497bd0b3296c48c55718dd5840",
+      "bytes": 1161
+    },
+    "sim/lock.json": {
+      "sha256": "b01177976ab7f614bb387c19f1537445f04ffb84fb186a6f27ea107a7bd09c9c",
+      "bytes": 5293
+    },
+    "sim/src/verifier.py": {
+      "sha256": "1aefd2052cfbdbf39f82bb70e5b4c14f1017202cfd3911f456a180ecdf1317b9",
+      "bytes": 10283
+    },
+    "sim/src/oracle.py": {
+      "sha256": "2b145f6ef8633cf675a4ab34f6632dc09a13156cac0b83bd37f42b0df1dc0055",
+      "bytes": 14160
+    },
+    "analysis/supplement/benchmark_synthetic.py": {
+      "sha256": "c8b20f4600859248c980a120dae535cb23bc61bf587a39ee4a17b12c0ffb2830",
+      "bytes": 1841
+    },
+    "analysis/supplement/checker.py": {
+      "sha256": "5917100f8fefe37b3955d48e87c2b6c9d4f2b32e8957308f75dbb06751a4037f",
+      "bytes": 64989
+    },
+    "analysis/supplement/independent.py": {
+      "sha256": "ba888893efcd357fedfa9f5992d577e33389b3def2040cdbe04e4af976fd5aac",
+      "bytes": 30895
+    },
+    "analysis/supplement/replay.py": {
+      "sha256": "4838fef8a023e94dff52ecd5bdddeffd6f24613c5b54f9ede827de0f1449824d",
+      "bytes": 16964
+    },
+    "analysis/supplement/run_unit_tests.py": {
+      "sha256": "4bb6e3b922757cbfa9a7bcd706b107c108ad1966465f603c648fa5902654f4f4",
+      "bytes": 4856
+    },
+    "analysis/supplement/test_supplement.py": {
+      "sha256": "edda9a3e5007e08dc71e1fd8245fe3e48492319c23e37ad264e8fa6239e0dfdd",
+      "bytes": 94027
+    },
+    "@repo/lab/verification.py": {
+      "sha256": "c549b8cca4d34dd2fa66501f79072a946e579fe919d4109769673a328fc3dcfb",
+      "bytes": 15127
+    },
+    "@repo/schemas/verification_item.schema.json": {
+      "sha256": "0f170d8a63840534de3ac3d87ce0c4a43c1edcc8c262bbf038025810e9c5f972",
+      "bytes": 1588
+    },
+    "analysis/verification.json": {
+      "sha256": "3ce782b43896db2ed3675b14043174a6bceefb91551801fab248203e168065e7",
+      "bytes": 292623
+    },
+    "analysis/verification.yaml": {
+      "sha256": "a0b932402894c74f9872740880bb30e9855ef1b6429e794898eaa7014995f752",
+      "bytes": 2744
+    },
+    "results/statistics.json": {
+      "sha256": "c3068a2635fc7e07dfb28ecb5265a0872ef8e0062a5eb561b6f8c54fa3874180",
+      "bytes": 69971
+    },
+    "results/summary.csv": {
+      "sha256": "cf4c72e214e601f7b63a2a22a3df77ed9d5597e4000d830c141ccb3000901c65",
+      "bytes": 26320
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-43.369473+00-00-fa4c86fcdf654621a00a0495440e8117-native/native-receipt.json": {
+      "sha256": "a49702fc24ffcc232da6a6fe26bed7c6d669bb31ddd45511fd51d1702a7371ac",
+      "bytes": 300725
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/execution-report.json": {
+      "sha256": "3cf49723b565e35e8b756d9a449cb7ddecf880b0a448d117caaa7dc805ae9629",
+      "bytes": 763390
+    },
+    "analysis/supplement/runs/2026-10-13T14-03-35.888214+00-00-841d586c48cd42d89cb3e4e4731ae71f-assessment/combined-assessment.json": {
+      "sha256": "1391ccf1be2032249725e3a035d033e775814889f5b288a25f940a32262b708d",
+      "bytes": 7448
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-43.369473+00-00-fa4c86fcdf654621a00a0495440e8117-native/completion-receipt.json": {
+      "sha256": "485addf2186d28340d7adfa7cdd0507af60a87013ebcf27b22f6892bc85c06f0",
+      "bytes": 365
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/completion-receipt.json": {
+      "sha256": "6674c73622d989c57ad21a271f6ad99f89c5c4075365aeb8b978b2c8bd15adf5",
+      "bytes": 9528
+    },
+    "analysis/supplement/runs/2026-10-13T14-03-35.888214+00-00-841d586c48cd42d89cb3e4e4731ae71f-assessment/completion-receipt.json": {
+      "sha256": "47c610157d7392c06378800a491698c2625e811ca1f1e8e41e9fb1830537894e",
+      "bytes": 591
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/claim-lineage.json": {
+      "sha256": "0f6a8c9df2d031cff5efea935a11d816472792d44f29bc60fb68ab95b847c1b9",
+      "bytes": 236335
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/ambiguities.jsonl": {
+      "sha256": "4b88fdac7f18c51c2b4d425340a688437b16f151d7278dfdb3edf28f381dff1f",
+      "bytes": 3845
+    },
+    "analysis/supplement/runs/2026-10-13T14-03-35.888214+00-00-841d586c48cd42d89cb3e4e4731ae71f-assessment/combined-verification.yaml": {
+      "sha256": "ab02303308a662b8eba42171a7435882f02ba219f629ed0d68f862b069869aa5",
+      "bytes": 3848
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q0-sum_rate.json": {
+      "sha256": "ba1ef2f4c813cce7ac31bcd1497a91bdf31a724c16c372f986c31635d52ae0d7",
+      "bytes": 5101
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q0-oma_sum.json": {
+      "sha256": "655170c619ae1ba85e683caa594f0fa0bf998ff21cd1a2a2b02c8cc61b0189a9",
+      "bytes": 5100
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q0-paired_difference.json": {
+      "sha256": "39c8389b2de62bc04815e9de20c9592ac534e0676cfa4a02ce6f5fa97f8d1824",
+      "bytes": 5110
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q1-sum_rate.json": {
+      "sha256": "df775f9ca5b72b9aac27cfd8e4f8ffe7690ec506a5951479d5f1268e4decb8a4",
+      "bytes": 5101
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q1-oma_sum.json": {
+      "sha256": "74f86e34f79e3960d597d868088b3ca49ffc5cfc8e4009a34571d518baee653c",
+      "bytes": 5100
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q1-paired_difference.json": {
+      "sha256": "ce26a6269f7960d8c2a28c94517a306c024f6a623213c15ff6f27cd93eea87fd",
+      "bytes": 5110
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q2-sum_rate.json": {
+      "sha256": "91ab91ef71abae2c2f291428a22577f738cc8a97fb47ae26c16e866e423be1cb",
+      "bytes": 5101
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q2-oma_sum.json": {
+      "sha256": "6b9594295c385957482b2c4ee52c3f493d3e9ada183c49624561f9db8f90961d",
+      "bytes": 5100
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q2-paired_difference.json": {
+      "sha256": "aaddf5f3feb3e36e72b5e640f7c56142c8c6bbf76d84a940dd49842253a88cb1",
+      "bytes": 5110
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q0-sum_rate.json": {
+      "sha256": "1074765d4008ba7676d546520d51176044137d51c6a84b1f1ea17d5c85cf9af6",
+      "bytes": 5101
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q0-oma_sum.json": {
+      "sha256": "c57757d0f4afa67546d6e0513daa63091530d1e9818722752209d8ef088de1bd",
+      "bytes": 5100
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q0-paired_difference.json": {
+      "sha256": "81bb2af3049c20d9d34942ae334c79141609d6ff65affb5677231bb6af35f339",
+      "bytes": 5110
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q1-sum_rate.json": {
+      "sha256": "177e6dccde03bf82fc79d86473a45056a21a222406e78a670378bf13b8e8c8e5",
+      "bytes": 5101
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q1-oma_sum.json": {
+      "sha256": "23ae825b312d252704c71c0355b0521105df517bc34c2e7bbe2be99798c155a0",
+      "bytes": 5100
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q1-paired_difference.json": {
+      "sha256": "fa308bac8c505a4a4dd354f0ed360001191d2565ba3688179e8ab4941d0cb073",
+      "bytes": 5110
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q2-sum_rate.json": {
+      "sha256": "1c98ceb541c1a8e661da85f8454d5d46385da64adba1eff9f0366a2de0efd942",
+      "bytes": 5101
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q2-oma_sum.json": {
+      "sha256": "eff9c3f7fcff614c5ee3c232120d541b0a27bdc1eaeb10cf495d716dab3a2001",
+      "bytes": 5100
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q2-paired_difference.json": {
+      "sha256": "6e100310609dbc52d6bde3ab1bc155f11ee7ba485b1e908c66003b5d316a8e96",
+      "bytes": 5110
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q0-sum_rate.json": {
+      "sha256": "25d8dc324a450729f6cb774e4b3892dc79ede647941f15cfd129e870ffe54614",
+      "bytes": 5101
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q0-oma_sum.json": {
+      "sha256": "48f1c97a1f7e1ff510cd5105fe518a7ce20b52fc04f91d6932707bfbf4624eb6",
+      "bytes": 5100
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q0-paired_difference.json": {
+      "sha256": "f6f4220ff4a40cad8ff5fa2f418a80b6ddcf9fb5aa9634f1a13d2ed455885e4a",
+      "bytes": 5110
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q1-sum_rate.json": {
+      "sha256": "a7fb7efe78d30e919c400c50e114ed625defea905127ac295203d222632ed8ba",
+      "bytes": 5101
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q1-oma_sum.json": {
+      "sha256": "a98e0c7084c93a43b583da462e5a060b37f0d52136624498b3e2a9c38ac0a0ac",
+      "bytes": 5100
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q1-paired_difference.json": {
+      "sha256": "276d51eafc11361c7e046c549e99dfa9c35773f66e938738a295d362ac2fece0",
+      "bytes": 5110
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q2-sum_rate.json": {
+      "sha256": "739422ec929f88d5553994f75d0717948002c2627e7da75fd5cc2603200bcf1b",
+      "bytes": 5101
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q2-oma_sum.json": {
+      "sha256": "5f84f913a636688f28d4776aaba600bc432980c16ed296766d8770b9255c62d0",
+      "bytes": 5100
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q2-paired_difference.json": {
+      "sha256": "3b4013847a817fc99d490f34b8ba070328014edbdf1126d2c5020f79751b98e4",
+      "bytes": 5110
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-30-q0-sum_rate.json": {
+      "sha256": "410b58feae87d9146f512bc50f3d19395b4b3bd8182f1c2218253411b9f5d134",
+      "bytes": 5101
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-30-q0-oma_sum.json": {
+      "sha256": "65f7cf94cdae91c471dd12fe998a9c2523bc0b4221cc1542b3d04cbdbff10821",
+      "bytes": 5100
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-30-q0-paired_difference.json": {
+      "sha256": "7f5d9983b1cc2d7453ef17d94ab1db6ca6eb5cbec0c8dd047a61bb3b93be4d47",
+      "bytes": 5110
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-40-q0-sum_rate.json": {
+      "sha256": "8f89846a74d3d804caf3e9af6a20e8cdd3119c61d20b439db7f1d6fcbb33fb42",
+      "bytes": 5101
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-40-q0-oma_sum.json": {
+      "sha256": "277cd4cb3f5fecd8bb44f49116d9000fae35d5f076430076bcca2d9e9b57a97b",
+      "bytes": 5100
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-40-q0-paired_difference.json": {
+      "sha256": "67dbb9b655b8adce65c457e4405198d8ec0c3e2e4784d0bb0f53439ab45259f6",
+      "bytes": 5110
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-50-q0-sum_rate.json": {
+      "sha256": "3552339ae982c2286d42bb24afe15062fea13bedbd398472e0fbc23aec43c15b",
+      "bytes": 5101
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-50-q0-oma_sum.json": {
+      "sha256": "aafde0a7b9f1a2b7099d03320a942f6530c62641be8204ec52d720bae36f93e5",
+      "bytes": 5100
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-50-q0-paired_difference.json": {
+      "sha256": "a4c3db7f7256840db5c2a3a4ff926a17b41761ae00b5931d01cab63eae9078ce",
+      "bytes": 5110
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-sum_rate.json": {
+      "sha256": "357809250a9582b963202f3bd95ec4741f20ba1302b06c1343ad0629f0b2e0f6",
+      "bytes": 656
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-oma_sum.json": {
+      "sha256": "b487222a7ddba333134b242f169b5bcdf88d2a2066552079023e6abe285f80ec",
+      "bytes": 655
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-paired_difference.json": {
+      "sha256": "675dae4a55ff26ca7f2c4ff33a8e9d398f51269c7b75c615bdfc1ac3f18d7574",
+      "bytes": 665
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/manifest.json": {
+      "sha256": "de28af136fadf6051baba604c3be4c8516f96bf739a9f11c55fe7a91ad44e485",
+      "bytes": 7846
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/channels.csv": {
+      "sha256": "8d6255650548020e604d10ccb5168cc0ccbf010c55d85d2005059618d76c0b2f",
+      "bytes": 46678
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/ledger.json": {
+      "sha256": "9bc12ee713b796b9da81aa2ea7f6e6626d1fa020574933799b45bd82df7e5712",
+      "bytes": 111
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/metrics.csv": {
+      "sha256": "0abc365629fb5577f4463ffc8f8cc6a63e54ce72f02438c050f4bab41dbbb787",
+      "bytes": 7548
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/oracle.json": {
+      "sha256": "0d23ce254f6106ac3f000463987beae44a3e832b647ddb1911198f895da8a5ba",
+      "bytes": 182371
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/sampling.json": {
+      "sha256": "9657dd9921e5417bb6a0723e2c8e0d47297ab8e2979c9c9c3cf65c9441cfbeaf",
+      "bytes": 342
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  },
+  "canonical_receipts": {
+    "native": "analysis/supplement/runs/2026-10-13T07-52-43.369473+00-00-fa4c86fcdf654621a00a0495440e8117-native/native-receipt.json",
+    "supplement": "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/execution-report.json",
+    "assessment": "analysis/supplement/runs/2026-10-13T14-03-35.888214+00-00-841d586c48cd42d89cb3e4e4731ae71f-assessment/combined-assessment.json"
+  },
+  "actual_combined_status": "INCONCLUSIVE",
+  "scientific_acceptance": false,
+  "external_transmission_authorized": false,
+  "external_transmission_performed": false,
+  "author_narratives_and_previous_reviews_excluded": true,
+  "bulk_monte_carlo_raw_rows_enclosed": false,
+  "receiving_session_capacity_confirmed": false,
+  "original_artifact_bytes_roundtrip_verified": true,
+  "locked_inputs_unchanged": 51,
+  "reviewed_source_bindings_current": 19,
+  "sizing": {
+    "encoding": "o200k_base",
+    "model_encoding_mapping_confirmed": false,
+    "token_estimate": 995210,
+    "observed_prior_same_model_context_window": 475000,
+    "packet_bytes": 2615697,
+    "private_artifacts_sent": false,
+    "artifact_token_estimates": {
+      "model/model-spec.tex": 3545,
+      "model/notation.yaml": 1358,
+      "model/assumptions.yaml": 1446,
+      "model/predictions.yaml": 1196,
+      "sim/protocol.md": 2070,
+      "sim/protocol.yaml": 1954,
+      "sim/protocol-errata.md": 204,
+      "sim/cases.yaml": 595,
+      "sim/lock.json": 2645,
+      "sim/src/verifier.py": 2666,
+      "sim/src/oracle.py": 3583,
+      "analysis/supplement/benchmark_synthetic.py": 450,
+      "analysis/supplement/checker.py": 13976,
+      "analysis/supplement/independent.py": 7878,
+      "analysis/supplement/replay.py": 3659,
+      "analysis/supplement/run_unit_tests.py": 1100,
+      "analysis/supplement/test_supplement.py": 24174,
+      "@repo/lab/verification.py": 3518,
+      "@repo/schemas/verification_item.schema.json": 447,
+      "analysis/verification.json": 137407,
+      "analysis/verification.yaml": 742,
+      "results/statistics.json": 25968,
+      "results/summary.csv": 14024,
+      "analysis/supplement/runs/2026-10-13T07-52-43.369473+00-00-fa4c86fcdf654621a00a0495440e8117-native/native-receipt.json": 138880,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/execution-report.json": 248537,
+      "analysis/supplement/runs/2026-10-13T14-03-35.888214+00-00-841d586c48cd42d89cb3e4e4731ae71f-assessment/combined-assessment.json": 2208,
+      "analysis/supplement/runs/2026-10-13T07-52-43.369473+00-00-fa4c86fcdf654621a00a0495440e8117-native/completion-receipt.json": 153,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/completion-receipt.json": 4533,
+      "analysis/supplement/runs/2026-10-13T14-03-35.888214+00-00-841d586c48cd42d89cb3e4e4731ae71f-assessment/completion-receipt.json": 248,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/claim-lineage.json": 102388,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/ambiguities.jsonl": 1280,
+      "analysis/supplement/runs/2026-10-13T14-03-35.888214+00-00-841d586c48cd42d89cb3e4e4731ae71f-assessment/combined-verification.yaml": 1031,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q0-sum_rate.json": 2416,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q0-oma_sum.json": 2416,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q0-paired_difference.json": 2416,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q1-sum_rate.json": 2444,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q1-oma_sum.json": 2444,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q1-paired_difference.json": 2444,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q2-sum_rate.json": 2459,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q2-oma_sum.json": 2459,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-00-q2-paired_difference.json": 2459,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q0-sum_rate.json": 2470,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q0-oma_sum.json": 2470,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q0-paired_difference.json": 2470,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q1-sum_rate.json": 2452,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q1-oma_sum.json": 2452,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q1-paired_difference.json": 2452,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q2-sum_rate.json": 2457,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q2-oma_sum.json": 2457,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-10-q2-paired_difference.json": 2457,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q0-sum_rate.json": 2450,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q0-oma_sum.json": 2450,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q0-paired_difference.json": 2450,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q1-sum_rate.json": 2472,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q1-oma_sum.json": 2472,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q1-paired_difference.json": 2472,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q2-sum_rate.json": 2441,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q2-oma_sum.json": 2441,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-20-q2-paired_difference.json": 2441,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-30-q0-sum_rate.json": 2445,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-30-q0-oma_sum.json": 2445,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-30-q0-paired_difference.json": 2445,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-40-q0-sum_rate.json": 2437,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-40-q0-oma_sum.json": 2437,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-40-q0-paired_difference.json": 2437,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-50-q0-sum_rate.json": 2441,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-50-q0-oma_sum.json": 2441,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/mc-50-q0-paired_difference.json": 2441,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-sum_rate.json": 269,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-oma_sum.json": 269,
+      "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-paired_difference.json": 269,
+      "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/manifest.json": 3721,
+      "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/channels.csv": 25199,
+      "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/ledger.json": 59,
+      "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/metrics.csv": 4673,
+      "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/oracle.json": 57803,
+      "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/sampling.json": 110,
+      "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/stderr.txt": 0,
+      "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/stdout.txt": 0
+    }
+  },
+  "transfer_eligible": false
+}

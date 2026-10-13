@@ -1,0 +1,30 @@
+{
+  "status": "RECORDED",
+  "attempt": 2,
+  "review_round": 5,
+  "kind": "supplement",
+  "started": "2026-10-13T07:52:41.705519+00:00",
+  "command": [
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\.venv\\Scripts\\python.exe",
+    "D:\\02_EDUCATION\\THESIS\\telecom-research-lab\\projects\\m11-noma-qos\\analysis\\supplement\\checker.py",
+    "--execute"
+  ],
+  "directory": ".cache\\p6-canonical-attempt2\\7427f6b5e6ce4ea3ae3d8098e91ed264-supplement",
+  "source_ready_sha256": "ed5e8212099d138753b2ebb91f4634003e533335209ffa9f48c0b2502873df18",
+  "canonical_execution_requested": true,
+  "scientific_acceptance": false,
+  "pid": 36492,
+  "exit_code": 2,
+  "scientific_receipt": "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/execution-report.json",
+  "scientific_receipt_sha256": "3cf49723b565e35e8b756d9a449cb7ddecf880b0a448d117caaa7dc805ae9629",
+  "scientific_status": "CHECKED_WITH_DECLARED_UNRESOLVED",
+  "jobs": 145,
+  "rows": 4718692,
+  "finished": "2026-10-13T14:03:17.122089+00:00",
+  "runtime_s": 22235.161749299965,
+  "evidence": {
+    "launch.json": "3bf79cffdf82a9bb6d664492e113e71dbb7fff74014bfaa1cbedf219d75338e4",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "89473565dc1b0d0e6ce13013c8715f3902792ed17101b547d79b3c11ad827b59"
+  }
+}

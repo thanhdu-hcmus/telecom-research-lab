@@ -1,0 +1,17 @@
+id: 2026-10-13-0048
+timestamp: '2026-10-13T14:18:35.446163+00:00'
+phase: P6
+summary: Finalized second canonical P6 attempt:145jobs/4718692rows,4708base/1160tighter
+  replays,zero errors,no precision failures; nativePASS,supplementCHECKED_WITH_DECLARED_UNRESOLVED,combinedINCONCLUSIVE,G6ineligible.
+  Updated final status documents and prepared a byte-bound local full numerical artifact
+  bundle. Offline o200k_base estimate995210tokens exceeds observed475000context, so
+  prepared a separate32artifact deterministic scope:30original byte-exact artifacts
+  and2explicit verified projections,168182estimatedtokens. No author narratives or
+  previous review/test verdicts enclosed. All19sources/51locks unchanged; no scientific
+  decision or private transmission.
+provenance: ai
+evidence:
+  analysis/supplement/completed-attempt-02/closure-receipt.json: 1255c6ea2b1fa7efcedc25c2424d5d3d0fe5370078abd7153e29698e615a79cf
+  analysis/numerical-review-01-payload.json: c7aa9cfcff4b006dd3b26ff71ebab30475ffe4c870dedc54524bb8bf5a58cb67
+  analysis/numerical-review-01-deterministic-payload.json: 7d8141eaf53940fecb688964b1efd34a7960fb1ed9def724100a31164d35c8c6
+  analysis/numerical-review-preparation/scoped-packet-validation.json: 4c33a1ba2f277399801667c83d2bd40c05251d887746fc17141a9a1a33bd21f8

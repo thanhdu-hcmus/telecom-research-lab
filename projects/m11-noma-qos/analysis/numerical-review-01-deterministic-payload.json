@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-10-13T14:16:26.408204+00:00",
+  "status": "LOCAL_SCOPED_PACKET_PREPARED_NOT_TRANSMITTED",
+  "packet": "analysis/numerical-review-01-deterministic-packet.json",
+  "packet_sha256": "559a322bd08443fa2efc403b01b1068ab42cc0a9782c14d1dd9fd1d423ef0762",
+  "packet_bytes": 517502,
+  "artifacts": 32,
+  "original_artifacts": 30,
+  "explicit_derived_views": 2,
+  "scope": "First scoped numerical review: all 100 deterministic raw rows and original-constraint certificate handling, with methodology source. No bulk Monte Carlo numerical acceptance.",
+  "artifact_bindings": {
+    "model/model-spec.tex": {
+      "sha256": "c885769e4d0d191bd82e11891de912340a7baa64af49d9b8c4584b4a3204f76e",
+      "bytes": 12165
+    },
+    "model/notation.yaml": {
+      "sha256": "2e937f7f98e3240f476471c44cc2756afdfe77079aa8f5845cfe1bcfe920de22",
+      "bytes": 5418
+    },
+    "model/assumptions.yaml": {
+      "sha256": "48689bf9d889c0b4d4ccc9c7abe4f484cc41fde5ac27ddc4e5ea6e399ec16b4a",
+      "bytes": 6478
+    },
+    "model/predictions.yaml": {
+      "sha256": "b18859e62c3a5306b9b341331b5acd7e7ec5fb93b5fbc3cf82032fb8959a6fd2",
+      "bytes": 5093
+    },
+    "sim/protocol.md": {
+      "sha256": "93bdad13f228362b232f66e7e5ba50a751836c7039516bc77895eb52eeaf0e25",
+      "bytes": 9286
+    },
+    "sim/protocol.yaml": {
+      "sha256": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+      "bytes": 4760
+    },
+    "sim/protocol-errata.md": {
+      "sha256": "77ea24e95efbc18e1eaa3cee292c87dabeecb0d1aed742b63d78a32a2f14037c",
+      "bytes": 1064
+    },
+    "sim/cases.yaml": {
+      "sha256": "1f76d4897394371498250edb71d8ae31c08f1f497bd0b3296c48c55718dd5840",
+      "bytes": 1161
+    },
+    "sim/lock.json": {
+      "sha256": "b01177976ab7f614bb387c19f1537445f04ffb84fb186a6f27ea107a7bd09c9c",
+      "bytes": 5293
+    },
+    "sim/src/verifier.py": {
+      "sha256": "1aefd2052cfbdbf39f82bb70e5b4c14f1017202cfd3911f456a180ecdf1317b9",
+      "bytes": 10283
+    },
+    "sim/src/oracle.py": {
+      "sha256": "2b145f6ef8633cf675a4ab34f6632dc09a13156cac0b83bd37f42b0df1dc0055",
+      "bytes": 14160
+    },
+    "analysis/supplement/checker.py": {
+      "sha256": "5917100f8fefe37b3955d48e87c2b6c9d4f2b32e8957308f75dbb06751a4037f",
+      "bytes": 64989
+    },
+    "analysis/supplement/independent.py": {
+      "sha256": "ba888893efcd357fedfa9f5992d577e33389b3def2040cdbe04e4af976fd5aac",
+      "bytes": 30895
+    },
+    "analysis/supplement/replay.py": {
+      "sha256": "4838fef8a023e94dff52ecd5bdddeffd6f24613c5b54f9ede827de0f1449824d",
+      "bytes": 16964
+    },
+    "@repo/lab/verification.py": {
+      "sha256": "c549b8cca4d34dd2fa66501f79072a946e579fe919d4109769673a328fc3dcfb",
+      "bytes": 15127
+    },
+    "@repo/schemas/verification_item.schema.json": {
+      "sha256": "0f170d8a63840534de3ac3d87ce0c4a43c1edcc8c262bbf038025810e9c5f972",
+      "bytes": 1588
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/manifest.json": {
+      "sha256": "de28af136fadf6051baba604c3be4c8516f96bf739a9f11c55fe7a91ad44e485",
+      "bytes": 7846
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/channels.csv": {
+      "sha256": "8d6255650548020e604d10ccb5168cc0ccbf010c55d85d2005059618d76c0b2f",
+      "bytes": 46678
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/ledger.json": {
+      "sha256": "9bc12ee713b796b9da81aa2ea7f6e6626d1fa020574933799b45bd82df7e5712",
+      "bytes": 111
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/metrics.csv": {
+      "sha256": "0abc365629fb5577f4463ffc8f8cc6a63e54ce72f02438c050f4bab41dbbb787",
+      "bytes": 7548
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/oracle.json": {
+      "sha256": "0d23ce254f6106ac3f000463987beae44a3e832b647ddb1911198f895da8a5ba",
+      "bytes": 182371
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/sampling.json": {
+      "sha256": "9657dd9921e5417bb6a0723e2c8e0d47297ab8e2979c9c9c3cf65c9441cfbeaf",
+      "bytes": 342
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/verification.yaml": {
+      "sha256": "a0b932402894c74f9872740880bb30e9855ef1b6429e794898eaa7014995f752",
+      "bytes": 2744
+    },
+    "analysis/supplement/runs/2026-10-13T14-03-35.888214+00-00-841d586c48cd42d89cb3e4e4731ae71f-assessment/combined-assessment.json": {
+      "sha256": "1391ccf1be2032249725e3a035d033e775814889f5b288a25f940a32262b708d",
+      "bytes": 7448
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/ambiguities.jsonl": {
+      "sha256": "4b88fdac7f18c51c2b4d425340a688437b16f151d7278dfdb3edf28f381dff1f",
+      "bytes": 3845
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-sum_rate.json": {
+      "sha256": "357809250a9582b963202f3bd95ec4741f20ba1302b06c1343ad0629f0b2e0f6",
+      "bytes": 656
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-oma_sum.json": {
+      "sha256": "b487222a7ddba333134b242f169b5bcdf88d2a2066552079023e6abe285f80ec",
+      "bytes": 655
+    },
+    "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/lineage-recipes/deterministic-paired_difference.json": {
+      "sha256": "675dae4a55ff26ca7f2c4ff33a8e9d398f51269c7b75c615bdfc1ac3f18d7574",
+      "bytes": 665
+    },
+    "derived/deterministic-supplement-view.json": {
+      "sha256": "c0864dc390af205a20767d28fd560bb55473fbb79d18bb74d50d58db4b5b0512",
+      "bytes": 6138,
+      "derived": true
+    },
+    "derived/deterministic-lineage-view.json": {
+      "sha256": "49756aef5014223f9ca5f613224015299504e9bc82c55cef8e21491403820cba",
+      "bytes": 5333,
+      "derived": true
+    }
+  },
+  "external_transmission_authorized": false,
+  "external_transmission_performed": false,
+  "scientific_acceptance": false,
+  "reviewed_source_subset_enclosed": 16,
+  "reviewed_source_bindings_current": 19,
+  "locked_inputs_unchanged": 51,
+  "capacity_check_pending": false,
+  "complete_bundle_retained_locally": "analysis/numerical-review-01-packet.json",
+  "offline_sizing": {
+    "encoding": "o200k_base",
+    "model_encoding_mapping_confirmed": false,
+    "token_estimate": 168182,
+    "observed_prior_same_model_context_window": 475000,
+    "twice_packet_tokens_plus_50000_reserve": 386364,
+    "estimate_fits_prior_root_child_route": true,
+    "private_artifacts_sent": false
+  },
+  "capacity_note": "Estimate under an explicit encoding, not a confirmed model tokenizer mapping. Runtime context/window must be audited again if a review is authorized."
+}
