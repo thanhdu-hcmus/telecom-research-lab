@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-13T15:24:02.488898+00:00",
+  "status": "AUTHOR_PROPOSAL_ONLY",
+  "stress_groups": 4,
+  "base_unresolved_rows": 20,
+  "canonical_tighter_coverage_of_these_rows": 0,
+  "scientific_source_changes": 0,
+  "gates_or_deviations_changed": false,
+  "scientific_acceptance": false,
+  "evidence": {
+    "plan.md": "f1ee1e30ae1b067861c542f93fae76e379dfbf4bf39a679fc6c3e2253985ac04"
+  },
+  "census_sha256": "eca80ff8f0df90e50b68da028b9c50da2f4a0fb6120ab9aec9a6fb1bd0743a3b"
+}

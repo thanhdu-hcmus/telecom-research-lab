@@ -477,3 +477,20 @@ all reproduce their recorded values/n50/100rows/five unresolved and remain
 INCONCLUSIVE. These post-review executions are author evidence, not reviewer
 execution or accepted manuscript claims. No source,51locks, numerical labels
 or scientific gates changed. See analysis/numerical-review-01.
+
+## Second statistical review packet and certificate plan prepared locally
+
+The remaining packet covers reported Monte Carlo statistics, CI/event bounds,
+OMA comparisons, original native checks and 36 reconstructed lineage records.
+It includes 20 original artifacts and four explicit normalized views, preserving
+all selected numeric/check results and defining omissions. Offline size estimate
+fits the prior review context. Native/supplement integrity guards, all19source
+bindings and51locked inputs recheck unchanged. No new private transmission is
+authorized or performed. Raw Monte Carlo recomputation remains outside scope.
+
+The author certificate-resolution plan maps four repeated stress groups to
+possible original-constraint certificates, isolating future implementation and
+review from any metric, acceptance-rule or protocol change requiring PI decisions.
+No candidate source implementation or scientific decision has been made.
+See analysis/numerical-review-02-statistical-payload.json and
+analysis/certificate-resolution-plan/plan.md.

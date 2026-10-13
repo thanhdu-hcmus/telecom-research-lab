@@ -83,3 +83,16 @@ independently unresolved rows. These author executions occurred after review;
 the reviewer did not execute them. See analysis/numerical-review-01/receipt.json
 and author-lineage-validation.json. All 19 reviewed sources and 51 locked
 inputs are unchanged; no scientific gate decision or claim acceptance occurred.
+
+## Remaining statistical review packet prepared
+
+The second packet has 24 artifacts and 579,837 bytes. It covers saved Monte
+Carlo statistics, intervals/events, six OMA references, native check results
+and 36 exact reconstructed conditional recipes. Four report views explicitly
+state their selected and omitted fields; raw Monte Carlo rows remain local.
+This preparation does not establish new numerical acceptance. See
+analysis/numerical-review-02-statistical-payload.json. No second transmission
+has occurred; specific transfer authorization is still required.
+
+The separate author certificate plan is in analysis/certificate-resolution-plan.
+It makes no source, metric, protocol or PI gate changes. G6 remains ineligible.

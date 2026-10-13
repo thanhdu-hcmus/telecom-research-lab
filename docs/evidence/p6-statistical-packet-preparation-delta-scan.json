@@ -1,0 +1,462 @@
+{
+  "timestamp": "2026-10-13T15:32:10.659206+00:00",
+  "status": "PASS",
+  "method": "Incremental scan of every new/modified scannable staged path since the CI-passing fdc745a; referenced native evidence also independently rehashed. Exact digests are classified only against rehashed actual files, verified Git object or existing operation UUID directories. No broad exclusions or unknown acceptances.",
+  "scanned_paths": [
+    "docs/remaining-work-audit.md",
+    "projects/m11-noma-qos/analysis/certificate-resolution-plan/plan.md",
+    "projects/m11-noma-qos/analysis/certificate-resolution-plan/receipt.json",
+    "projects/m11-noma-qos/analysis/numerical-review-02-preparation/prepare_p6_statistical_packet.py",
+    "projects/m11-noma-qos/analysis/numerical-review-02-preparation/receipt.json",
+    "projects/m11-noma-qos/analysis/numerical-review-02-preparation/validate_p6_statistical_packet.py",
+    "projects/m11-noma-qos/analysis/numerical-review-02-preparation/validation.json",
+    "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+    "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+    "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0052.yaml",
+    "projects/m11-noma-qos/ara/trace/sessions/session_index.yaml",
+    "projects/m11-noma-qos/findings.md",
+    "projects/m11-noma-qos/to_human/P6-completed-attempt-status.md"
+  ],
+  "scanned_path_hashes": {
+    "docs/remaining-work-audit.md": "136721d75c6891853ea13e4c4dfb2e56c25527cb9f4ddf323ce839a97b18922d",
+    "projects/m11-noma-qos/analysis/certificate-resolution-plan/plan.md": "f1ee1e30ae1b067861c542f93fae76e379dfbf4bf39a679fc6c3e2253985ac04",
+    "projects/m11-noma-qos/analysis/certificate-resolution-plan/receipt.json": "3167940af9215282d32da89c36ac45920eafa7db520dfa824696d4a709a0e7f6",
+    "projects/m11-noma-qos/analysis/numerical-review-02-preparation/prepare_p6_statistical_packet.py": "eaf30b12efb28d3e5dcd8913e9f785ed558a28fbe884d651c30cc91a1ce7b14b",
+    "projects/m11-noma-qos/analysis/numerical-review-02-preparation/receipt.json": "85f034ce4dd91d5e481010e659c42d902d46b5c86aa4c091a99817105ed315d4",
+    "projects/m11-noma-qos/analysis/numerical-review-02-preparation/validate_p6_statistical_packet.py": "9dc5aaca7f4a2096ddf8266e1da2709e49859aab7ae049b4b562d44bc665efb7",
+    "projects/m11-noma-qos/analysis/numerical-review-02-preparation/validation.json": "7ef22f897c90c386ff9e2eeec759ce2cfc7ab3c846ef20a0a780e078d675d29d",
+    "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json": "45fee76ddb9c11b654eea436f970d22362204c11f1d5791c83f1453c5b4fff15",
+    "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json": "dcb208d83d59cda22d1d065848e3cd690b686819a106a9dfc22436286b46d735",
+    "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0052.yaml": "2dcf3e74205632de00e540b6d4df25ddc0a162a7d9de019ecaf83ccadcb9afe9",
+    "projects/m11-noma-qos/ara/trace/sessions/session_index.yaml": "b5a81270100b1933d988398593ffe22a539f4b7d6bf8dd364621a6de0366d292",
+    "projects/m11-noma-qos/findings.md": "2cc2e0837b14eafea98ae32a449daf31eddcff5f9bf4c3b11e39b75477e2d48a",
+    "projects/m11-noma-qos/to_human/P6-completed-attempt-status.md": "099bc51e41ab5a95846e4f1d7754dce4be316d8d8c1c5f0e97791e3e48f005f3"
+  },
+  "new_exact_entries": [
+    {
+      "path": "projects/m11-noma-qos/analysis/certificate-resolution-plan/receipt.json",
+      "line": 11,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "3c265b56e672d1402e92f6347ea5184ce47cb394",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/certificate-resolution-plan/plan.md"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/certificate-resolution-plan/receipt.json",
+      "line": 13,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "77ff5668ad0944834411174181def6c2055e4fd0",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/census.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-preparation/receipt.json",
+      "line": 5,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "776a63f0024ede60cb41340a8fd362f84ab671b3",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-preparation/receipt.json",
+      "line": 11,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fb5327c5633d4ba00ed124abaf40a9e728324dbe",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-02-preparation/prepare_p6_statistical_packet.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-preparation/receipt.json",
+      "line": 12,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d3be173aa297d152f1c79e12c1ef4d352de3a41e",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-02-preparation/validate_p6_statistical_packet.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-preparation/receipt.json",
+      "line": 13,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "72efc7bb96b5279a70b5153a4cfc60b638e5c45e",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-02-preparation/validation.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-preparation/validation.json",
+      "line": 4,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "776a63f0024ede60cb41340a8fd362f84ab671b3",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 23,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c7c2ae73954a3dd147070659bdd79d1aa6335be5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/000.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 28,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "dd59994c1e5ad101ede8def895810403efef9193",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/001.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 33,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d2ac8f0f3aa5d98f000bfe7df48c485036cf1ece",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/002.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 38,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d4274faff2ec74a1266f84934e4eb326cabded5f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/003.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 43,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "3cfc2891af44f3d525836b940822fea9730ecdcb",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/004.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 48,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1aa08e306ae5af5a3ecf339ccbd9ca700aa9f54f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/005.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 53,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "cbdfb903c31d32dd3b03b53e0772a495267c9540",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/006.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 58,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c223e9cb7cfa2d8e3c24d1a6528d1e1fd9cd6d39",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/007.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 63,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "19b0ee6451be22c21d097b44a98fd606f08c85e5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/008.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 68,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "7c7612c1564abf1864c383e3e9e7fd540f24360b",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/009.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 73,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "49e467abf617c68428cc34ad224961f4a7adf1c8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/010.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 78,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb6b5952d7414098db248699f51b777ed44a86d2",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/011.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 83,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a37f73bc18724dc3cfcde595fb2ab59e37ec7ea8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/012.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 88,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ef99a99a4b708fc6451a2565772a3e4127d0e701",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/013.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 93,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fd97e4686726cc59bb251ea1347252f83d441f63",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/014.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 98,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "882106a360bfe7f8fa1385272dfb29c97379514d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/015.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 103,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b8cc9b1267dbb45888eec5b01d1687aba683280e",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/results/statistics.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 108,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "186c85cb1b6d30d50976f2849fa49cb860d1150b",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/results/summary.csv"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 113,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "14df72590e50297ad97d501bff9ec9aec2d5bacc",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/024.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 118,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "39ade6917cb1230e240e1f608e5bd0adc879a4ab",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/025.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 123,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb14ee17b18dc7fb2f982ac15d3e126b88fe9aed",
+      "evidence": "Rehashed exact explicitly normalized statistical view derived/monte-carlo-scenario-statistics.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 128,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a2de11a0761d7415727e9bdaf0ca86b70ff632ee",
+      "evidence": "Rehashed exact explicitly normalized statistical view derived/native-checks.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 133,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a1b8c172cdd21c5fa0660186dace5feafb8b790d",
+      "evidence": "Rehashed exact explicitly normalized statistical view derived/monte-carlo-job-coverage.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json",
+      "line": 138,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "78147404eb8002dca796f981f53a6ab1ed2c12e9",
+      "evidence": "Rehashed exact explicitly normalized statistical view derived/monte-carlo-lineage.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 5,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "776a63f0024ede60cb41340a8fd362f84ab671b3",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-02-statistical-packet.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 13,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c7c2ae73954a3dd147070659bdd79d1aa6335be5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/000.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 18,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "dd59994c1e5ad101ede8def895810403efef9193",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/001.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 23,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d2ac8f0f3aa5d98f000bfe7df48c485036cf1ece",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/002.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 28,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d4274faff2ec74a1266f84934e4eb326cabded5f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/003.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 33,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "3cfc2891af44f3d525836b940822fea9730ecdcb",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/004.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 38,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "1aa08e306ae5af5a3ecf339ccbd9ca700aa9f54f",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/005.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 43,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "cbdfb903c31d32dd3b03b53e0772a495267c9540",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/006.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 48,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c223e9cb7cfa2d8e3c24d1a6528d1e1fd9cd6d39",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/007.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 53,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "19b0ee6451be22c21d097b44a98fd606f08c85e5",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/008.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 58,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "7c7612c1564abf1864c383e3e9e7fd540f24360b",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/009.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 63,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "49e467abf617c68428cc34ad224961f4a7adf1c8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/010.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 68,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb6b5952d7414098db248699f51b777ed44a86d2",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/011.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 73,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a37f73bc18724dc3cfcde595fb2ab59e37ec7ea8",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/012.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 78,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "ef99a99a4b708fc6451a2565772a3e4127d0e701",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/013.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 83,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fd97e4686726cc59bb251ea1347252f83d441f63",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/014.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 88,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "882106a360bfe7f8fa1385272dfb29c97379514d",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/015.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 93,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b8cc9b1267dbb45888eec5b01d1687aba683280e",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/results/statistics.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 98,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "186c85cb1b6d30d50976f2849fa49cb860d1150b",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/results/summary.csv"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 103,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "14df72590e50297ad97d501bff9ec9aec2d5bacc",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/024.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 108,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "39ade6917cb1230e240e1f608e5bd0adc879a4ab",
+      "evidence": "Actual unchanged scoped reviewer snapshot/config SHA256: artifact-files/025.txt"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 113,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "bb14ee17b18dc7fb2f982ac15d3e126b88fe9aed",
+      "evidence": "Rehashed exact explicitly normalized statistical view derived/monte-carlo-scenario-statistics.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 118,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a2de11a0761d7415727e9bdaf0ca86b70ff632ee",
+      "evidence": "Rehashed exact explicitly normalized statistical view derived/native-checks.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 123,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a1b8c172cdd21c5fa0660186dace5feafb8b790d",
+      "evidence": "Rehashed exact explicitly normalized statistical view derived/monte-carlo-job-coverage.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 128,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "78147404eb8002dca796f981f53a6ab1ed2c12e9",
+      "evidence": "Rehashed exact explicitly normalized statistical view derived/monte-carlo-lineage.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json",
+      "line": 182,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "d9406a2f6eca012d7481b338c5032ad86387d5f5",
+      "evidence": "Actual retained oversized preliminary statistical packet SHA256; not transmitted."
+    },
+    {
+      "path": "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0052.yaml",
+      "line": 16,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c0b414bfbfc7fa7da7e4e159f420cc93d7778bc3",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-02-preparation/receipt.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0052.yaml",
+      "line": 17,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "fdc9932301319d7701a59446c7a29257f0cf956a",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/numerical-review-02-statistical-payload.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0052.yaml",
+      "line": 18,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "867dd592859756de44a3ea4c320cc711e2f59e91",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/certificate-resolution-plan/receipt.json"
+    }
+  ],
+  "unreviewed": [],
+  "baseline_before_sha256": "cb69490088d556d71f2ada64b8315d5ba43a64fb95c603ca2a708ef65bf6c00f",
+  "unchanged_reviewed_sources": true,
+  "unchanged_locked_inputs": 51,
+  "scientific_acceptance": false
+}

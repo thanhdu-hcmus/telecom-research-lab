@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-13T15:26:36.157881+00:00",
+  "status": "PASS",
+  "packet_sha256": "45fee76ddb9c11b654eea436f970d22362204c11f1d5791c83f1453c5b4fff15",
+  "packet_bytes": 579837,
+  "original_artifacts_verified": 20,
+  "normalized_views_reconstructed_exactly": 4,
+  "monte_carlo_scenarios": 12,
+  "reported_jobs": 144,
+  "reported_rows": 4718592,
+  "exact_lineage_records_reconstructed": 36,
+  "author_narratives_and_previous_reviews_excluded": true,
+  "source_bindings_current": 19,
+  "locked_inputs_unchanged": 51,
+  "completed_native_supplement_input_guards_rechecked": true,
+  "bulk_rows_enclosed": false,
+  "external_transmission": false,
+  "scientific_acceptance": false
+}

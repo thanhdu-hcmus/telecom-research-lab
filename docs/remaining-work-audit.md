@@ -116,6 +116,14 @@ lineage recipes have 36 COMPUTED and three INCONCLUSIVE statuses; none is an
 accepted manuscript claim. P6 still needs resolution or scientific treatment
 of the retained uncertainty, executable accepted manuscript claims, and
 enforced independent numerical-results review.
+A second statistical artifact packet is now prepared locally with exact
+byte bindings, four explicit normalized views and scope limits for unseen
+Monte Carlo rows. It has not been transmitted. The author certificate plan
+maps all four unresolved stress groups to possible original-constraint proof
+work and preserves requirements for new source review and actual PI decisions.
+See the M11 project `analysis/numerical-review-02-statistical-payload.json` and
+`analysis/certificate-resolution-plan/plan.md`.
+
 P7 requires the evidence-traced manuscript, verified citations, figures,
 compilation, independent paper review, Overleaf export and actual PI G6/G7
 approval/report usability judgments. M11 completion is not claimed.

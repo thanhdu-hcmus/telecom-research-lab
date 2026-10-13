@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-13T15:30:28.977205+00:00",
+  "status": "LOCAL_STATISTICAL_PACKET_PREPARED",
+  "packet": "analysis/numerical-review-02-statistical-packet.json",
+  "packet_sha256": "45fee76ddb9c11b654eea436f970d22362204c11f1d5791c83f1453c5b4fff15",
+  "packet_bytes": 579837,
+  "scope": "Reported Monte Carlo statistics, intervals, reference and lineage methodology; no raw-row recomputation or full P6 acceptance",
+  "external_transmission": false,
+  "scientific_acceptance": false,
+  "evidence": {
+    "prepare_p6_statistical_packet.py": "eaf30b12efb28d3e5dcd8913e9f785ed558a28fbe884d651c30cc91a1ce7b14b",
+    "validate_p6_statistical_packet.py": "9dc5aaca7f4a2096ddf8266e1da2709e49859aab7ae049b4b562d44bc665efb7",
+    "validation.json": "7ef22f897c90c386ff9e2eeec759ce2cfc7ab3c846ef20a0a780e078d675d29d"
+  }
+}

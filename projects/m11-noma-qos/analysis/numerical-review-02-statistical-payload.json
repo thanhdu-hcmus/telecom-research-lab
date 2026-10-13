@@ -1,0 +1,199 @@
+{
+  "timestamp": "2026-10-13T15:20:01.689496+00:00",
+  "status": "LOCAL_PACKET_PREPARED_NOT_TRANSMITTED",
+  "packet": "analysis/numerical-review-02-statistical-packet.json",
+  "packet_sha256": "45fee76ddb9c11b654eea436f970d22362204c11f1d5791c83f1453c5b4fff15",
+  "packet_bytes": 579837,
+  "artifacts": 24,
+  "original_artifacts": 20,
+  "explicit_derived_views": 4,
+  "scope": "Second scoped numerical review: Monte Carlo reported statistics, CI/event and reference/claim-lineage methodology and internal artifact consistency. Bulk raw-row numerical recomputation and deterministic certificate resolution are outside scope.",
+  "artifact_bindings": {
+    "model/model-spec.tex": {
+      "sha256": "c885769e4d0d191bd82e11891de912340a7baa64af49d9b8c4584b4a3204f76e",
+      "bytes": 12165,
+      "derived": false
+    },
+    "model/notation.yaml": {
+      "sha256": "2e937f7f98e3240f476471c44cc2756afdfe77079aa8f5845cfe1bcfe920de22",
+      "bytes": 5418,
+      "derived": false
+    },
+    "model/assumptions.yaml": {
+      "sha256": "48689bf9d889c0b4d4ccc9c7abe4f484cc41fde5ac27ddc4e5ea6e399ec16b4a",
+      "bytes": 6478,
+      "derived": false
+    },
+    "model/predictions.yaml": {
+      "sha256": "b18859e62c3a5306b9b341331b5acd7e7ec5fb93b5fbc3cf82032fb8959a6fd2",
+      "bytes": 5093,
+      "derived": false
+    },
+    "sim/protocol.md": {
+      "sha256": "93bdad13f228362b232f66e7e5ba50a751836c7039516bc77895eb52eeaf0e25",
+      "bytes": 9286,
+      "derived": false
+    },
+    "sim/protocol.yaml": {
+      "sha256": "250ccb4ad29282be0cb2f02a7eb5bda4cb64b6adf4dbd11d4f00949bf6320e51",
+      "bytes": 4760,
+      "derived": false
+    },
+    "sim/protocol-errata.md": {
+      "sha256": "77ea24e95efbc18e1eaa3cee292c87dabeecb0d1aed742b63d78a32a2f14037c",
+      "bytes": 1064,
+      "derived": false
+    },
+    "sim/cases.yaml": {
+      "sha256": "1f76d4897394371498250edb71d8ae31c08f1f497bd0b3296c48c55718dd5840",
+      "bytes": 1161,
+      "derived": false
+    },
+    "sim/lock.json": {
+      "sha256": "b01177976ab7f614bb387c19f1537445f04ffb84fb186a6f27ea107a7bd09c9c",
+      "bytes": 5293,
+      "derived": false
+    },
+    "sim/src/verifier.py": {
+      "sha256": "1aefd2052cfbdbf39f82bb70e5b4c14f1017202cfd3911f456a180ecdf1317b9",
+      "bytes": 10283,
+      "derived": false
+    },
+    "sim/src/oracle.py": {
+      "sha256": "2b145f6ef8633cf675a4ab34f6632dc09a13156cac0b83bd37f42b0df1dc0055",
+      "bytes": 14160,
+      "derived": false
+    },
+    "analysis/supplement/checker.py": {
+      "sha256": "5917100f8fefe37b3955d48e87c2b6c9d4f2b32e8957308f75dbb06751a4037f",
+      "bytes": 64989,
+      "derived": false
+    },
+    "analysis/supplement/independent.py": {
+      "sha256": "ba888893efcd357fedfa9f5992d577e33389b3def2040cdbe04e4af976fd5aac",
+      "bytes": 30895,
+      "derived": false
+    },
+    "analysis/supplement/replay.py": {
+      "sha256": "4838fef8a023e94dff52ecd5bdddeffd6f24613c5b54f9ede827de0f1449824d",
+      "bytes": 16964,
+      "derived": false
+    },
+    "@repo/lab/verification.py": {
+      "sha256": "c549b8cca4d34dd2fa66501f79072a946e579fe919d4109769673a328fc3dcfb",
+      "bytes": 15127,
+      "derived": false
+    },
+    "@repo/schemas/verification_item.schema.json": {
+      "sha256": "0f170d8a63840534de3ac3d87ce0c4a43c1edcc8c262bbf038025810e9c5f972",
+      "bytes": 1588,
+      "derived": false
+    },
+    "results/statistics.json": {
+      "sha256": "c3068a2635fc7e07dfb28ecb5265a0872ef8e0062a5eb561b6f8c54fa3874180",
+      "bytes": 69971,
+      "derived": false
+    },
+    "results/summary.csv": {
+      "sha256": "cf4c72e214e601f7b63a2a22a3df77ed9d5597e4000d830c141ccb3000901c65",
+      "bytes": 26320,
+      "derived": false
+    },
+    "analysis/verification.yaml": {
+      "sha256": "a0b932402894c74f9872740880bb30e9855ef1b6429e794898eaa7014995f752",
+      "bytes": 2744,
+      "derived": false
+    },
+    "analysis/supplement/runs/2026-10-13T14-03-35.888214+00-00-841d586c48cd42d89cb3e4e4731ae71f-assessment/combined-assessment.json": {
+      "sha256": "1391ccf1be2032249725e3a035d033e775814889f5b288a25f940a32262b708d",
+      "bytes": 7448,
+      "derived": false
+    },
+    "derived/monte-carlo-scenario-statistics.json": {
+      "sha256": "880d8d3b3513a1b093324b0e0a7a01cfa301418a7ea6bb405d55d4e0bb138064",
+      "bytes": 43250,
+      "derived": true
+    },
+    "derived/native-checks.json": {
+      "sha256": "a183c33fe745f20aa1adcc67aa9acbff0b148f8001211cb36169e36ae42ac819",
+      "bytes": 14950,
+      "derived": true
+    },
+    "derived/monte-carlo-job-coverage.json": {
+      "sha256": "f926f8964dc401c094ceee344b10533fb8b650bffbc09912b155d8b13ec73b44",
+      "bytes": 58922,
+      "derived": true
+    },
+    "derived/monte-carlo-lineage.json": {
+      "sha256": "b336a53d9c96900e4dbbb3a722b2abb599f1e4c6962654b31666d2c689bb53c6",
+      "bytes": 111383,
+      "derived": true
+    }
+  },
+  "view_specs": {
+    "derived/monte-carlo-scenario-statistics.json": {
+      "origin": "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/execution-report.json",
+      "selection": "All twelve non-deterministic scenario objects and all six OMA-reference objects, copied without field edits",
+      "omitted": [
+        "Deterministic scenario details",
+        "Per-job replay comparison details",
+        "Original report input/source digest inventories",
+        "Raw Monte Carlo rows and full original execution report"
+      ]
+    },
+    "derived/native-checks.json": {
+      "origin": "analysis/verification.json",
+      "selection": "Every original native field except input_hashes; eight identical check evidence-path lists stored once and referenced explicitly. All check results retained.",
+      "omitted": [
+        "Native report input_hashes; full original report is not enclosed"
+      ]
+    },
+    "derived/monte-carlo-job-coverage.json": {
+      "origin": "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/execution-report.json",
+      "selection": "Exact selected coverage/count fields for all 144 Monte Carlo jobs",
+      "omitted": [
+        "Deterministic job",
+        "Per-job runtime and detailed oracle comparisons/transitions",
+        "Original report digest inventories and raw rows"
+      ]
+    },
+    "derived/monte-carlo-lineage.json": {
+      "origin": "analysis/supplement/runs/2026-10-13T07-52-42.663565+00-00-9ab9fd3a2717496db4bf4cd50832f693-supplement/claim-lineage.json",
+      "selection": "All 36 Monte Carlo records; identical per-scenario recipe fields stored once. Each original recipe is common_recipe_fields plus recipe_column as column.",
+      "omitted": [
+        "Three deterministic records",
+        "Full original lineage file and separate recipe file bytes; reconstructed recipe content is supplied",
+        "Raw channel rows and manifest bodies"
+      ]
+    }
+  },
+  "monte_carlo_scenarios": 12,
+  "reported_jobs": 144,
+  "reported_rows": 4718592,
+  "lineage_records": 36,
+  "full_p6_acceptance": false,
+  "scientific_acceptance": false,
+  "external_transmission_authorized": false,
+  "external_transmission_performed": false,
+  "capacity_check_pending": false,
+  "source_bindings_current": 19,
+  "locked_inputs_unchanged": 51,
+  "preliminary_size_failure": {
+    "packet_sha256": "1f1e1b4ac93e47f4db3306cf5c5cabf965c260a6f44afd3e197cb2438e80339b",
+    "packet_bytes": 681020,
+    "token_estimate": 236253,
+    "twice_packet_tokens_plus_50000_reserve": 522506,
+    "observed_context_window": 475000,
+    "transmitted": false,
+    "fix": "Store the eight identical native-check evidence path lists once, with explicit references; no check result discarded."
+  },
+  "offline_sizing": {
+    "encoding": "o200k_base",
+    "model_encoding_mapping_confirmed": false,
+    "token_estimate": 194897,
+    "observed_prior_same_model_context_window": 475000,
+    "twice_packet_tokens_plus_50000_reserve": 439794,
+    "estimate_fits_prior_root_child_route": true,
+    "private_artifacts_sent": false
+  }
+}
