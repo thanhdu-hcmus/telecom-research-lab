@@ -432,3 +432,12 @@ rows remain unresolved. Exact domain and objective-gap deductions explain
 the numerical limits. These twenty extra calls are outside canonical coverage
 and do not change results, source, protocol, gates or uncertainty acceptance.
 See analysis/supplement/oracle-uncertainty-author-diagnostic/census.md.
+
+## P6 numerical-review handoff preparation
+
+The standard results packet includes author narratives and historical snapshots;
+its per-file size limit omits the first completed full supplement report.
+A local selection audit and explicit artifact plan now record those limits,
+final receipt requirements and the external review's unseen bulk-data scope.
+The previous tracked packet is restored. No numerical packet was transmitted.
+See analysis/numerical-review-preparation.

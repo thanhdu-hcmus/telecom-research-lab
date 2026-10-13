@@ -97,6 +97,14 @@ retained, but independent numerical acceptance remains pending. Any proposed
 implementation or locked-protocol change must follow the existing review and
 PI decision requirements before it becomes canonical.
 
+The standard numerical review packet also needs explicit artifact selection:
+its filename filter includes author narratives and historical snapshots, while
+its per-file size limit omits the first complete supplement report. A local
+selection audit and final-artifact plan are retained in the M11 project
+`analysis/numerical-review-preparation/`. No external numerical packet has been
+transmitted. Bulk Monte Carlo rows remain local; a bounded artifact review
+must mark checks requiring unseen rows as not reviewed or inconclusive.
+
 P6 still needs completed corrected verification and combined assessment,
 executable accepted manuscript claims, and
 enforced independent numerical-results review.

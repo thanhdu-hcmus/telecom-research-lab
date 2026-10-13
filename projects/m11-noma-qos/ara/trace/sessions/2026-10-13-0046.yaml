@@ -1,0 +1,13 @@
+id: 2026-10-13-0046
+timestamp: '2026-10-13T13:53:37.435415+00:00'
+phase: P6
+summary: Prepared the author-side numerical-results handoff scope while canonical
+  attempt2 completes. Ordinary results packet generation includes author narratives
+  and historical snapshots and omits a measured complete supplement report through
+  its 300000-byte file cap. Retained the generated draft locally, restored the previous
+  tracked packet from HEAD, and recorded an explicit source/result allowlist, exclusions,
+  final-receipt conditions and unseen bulk-data limits. No source,51locks, gates or
+  external transmission changed.
+provenance: ai
+evidence:
+  analysis/numerical-review-preparation/preparation-receipt.json: 12cd1293e7359b6b772933569c3028040c5ede196deb0be4e1519b6f85321905

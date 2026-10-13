@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-13T13:53:37.426204+00:00",
+  "status": "LOCAL_HANDOFF_PREPARATION_ONLY",
+  "source_bindings_current": 19,
+  "locked_inputs_unchanged": 51,
+  "external_transmission": false,
+  "scientific_acceptance": false,
+  "evidence": {
+    "artifact-selection-plan.json": "c7cd078aa4b02480a0905e3aa0c99710af1608333786247452e670264aabe88a",
+    "native-packet-selection-audit.json": "df17cb28cb662d996defbdc8dadaadfd7d276c53ac0c2e943083623014d95b65",
+    "README.md": "44c75715dd207e70269d1723f12ea66d0e69ea1ef4498c931da5760b36be1ebf"
+  }
+}
