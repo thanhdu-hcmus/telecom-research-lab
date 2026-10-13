@@ -1,4 +1,6 @@
-# Completed P6 attempt — repair and review pending
+# P6 verification status
+
+## First attempt: failed; preserved
 
 All 145 jobs / 4,718,692 rows completed. Native verification passed; the
 supplement and combined assessment failed. G6 request eligibility is false.
@@ -40,7 +42,7 @@ G6/G7 decisions remain required.
 See analysis/supplement/completed-attempt-01/closure-receipt.json,
 analysis/provisional-native-claims.md and P6-fifth-source-review-authorization.md.
 
-## Latest corrected-attempt native result
+## Second attempt: native PASS; supplement running
 
 Fresh native verification completed PASS on 2026-10-13 at 08:27 UTC. All eight
 checks and seven prediction items pass, with source and locked-input bindings

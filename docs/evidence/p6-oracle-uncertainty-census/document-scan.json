@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-13T10:44:59.057556+00:00",
+  "status": "PASS",
+  "scanned_paths": [
+    "docs/remaining-work-audit.md",
+    "projects/m11-noma-qos/to_human/P6-completed-attempt-status.md"
+  ],
+  "unknown_detections": 0,
+  "detector_settings_unchanged": true,
+  "baseline_unchanged": true
+}

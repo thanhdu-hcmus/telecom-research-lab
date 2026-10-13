@@ -79,6 +79,24 @@ author-only exact sqrt(2)-1 certificate explains the five fractional-boundary
 repeats; their stored unresolved labels remain unchanged. Nine provisional
 native arithmetic examples have been revalidated; no manuscript claims were
 registered. Full corrected scientific acceptance remains pending.
+
+The uncertainty census now identifies a sensitivity-coverage limit: none of
+its twenty unresolved deterministic base checks belongs to the canonical
+selection of eight tighter replay rows. Extra author-only calls using the
+existing tighter policy returned ten feasible and ten unresolved results.
+All ten feasible witnesses satisfy the three original SINR constraints under
+exact rational checks. These extra calls do not change canonical replay counts
+or accepted labels. See the M11 project
+`analysis/supplement/oracle-uncertainty-author-diagnostic/census.md`.
+
+The next certificate review must distinguish four issues: a narrow feasible
+interval with an exact maximizing endpoint, an exactly empty integer-QoS
+interval, a loose numerical objective bound at large finite SNR, and the
+irrational fractional-QoS singleton. Author deductions for these cases are
+retained, but independent numerical acceptance remains pending. Any proposed
+implementation or locked-protocol change must follow the existing review and
+PI decision requirements before it becomes canonical.
+
 P6 still needs completed corrected verification and combined assessment,
 executable accepted manuscript claims, and
 enforced independent numerical-results review.
