@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T10:42:13.239103+00:00",
+  "status": "PASS",
+  "indexed_files_checked": 1186,
+  "approved_index_bindings": 1002,
+  "owned_files_checked": 184,
+  "locked_inputs_checked": 51,
+  "locked_inputs_unchanged": true,
+  "round5_packet_source_bindings_current": true,
+  "round5_review_transmitted": true,
+  "canonical_round5_source_review_ready": true,
+  "canonical_full_verification_status": "FRESH_NATIVE_PASS_FULL_SUPPLEMENT_IN_PROGRESS",
+  "candidate_author_diagnostic_status": "COMPLETE",
+  "raw_encrypted_runtime_transport_excluded": true,
+  "mismatches": []
+}

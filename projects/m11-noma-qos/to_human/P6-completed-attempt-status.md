@@ -53,3 +53,13 @@ rational bracket checks. It explains the boundary representation issue;
 existing unresolved labels and the frozen verifier remain unchanged.
 Independent numerical-results review and actual PI scientific decisions remain
 required. See analysis/supplement/attempt2-native-checkpoint.
+
+## Oracle sensitivity coverage and remaining cases
+
+The twenty unresolved base checks cover four cases repeated five times. None
+was selected for canonical tighter replay. Extra local diagnostic calls using
+the existing tighter policy resolve ten narrow-feasible/large-SNR rows, with
+exact checks of their accepted constraints; ten rows remain unresolved.
+Canonical results and replay counts remain unchanged. This informs a future
+review of certificate handling and sensitivity coverage, after full results.
+See analysis/supplement/oracle-uncertainty-author-diagnostic/census.md.

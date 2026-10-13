@@ -1,0 +1,15 @@
+id: 2026-10-13-0045
+timestamp: '2026-10-13T10:36:23.913354+00:00'
+phase: P6
+summary: 'Retained author census of20unresolved deterministic base-oracle checks across4cases
+  repeated5times: narrow feasible/infeasible, large finite SNR and fractional boundary.
+  None of these rows has canonical tighter coverage. Extra local calls with the already
+  declared10fold tighter policy and unchanged96/256caps resolve10tofeasible and leave10unresolved;
+  exact rational checks validate all10accepted witnesses. Exact domain and objective-gap
+  deductions explain limits. These extra calls remain outside canonical4708/1160coverage;
+  source,51locks, stored labels and scientific gates are unchanged.'
+provenance: ai
+evidence:
+  analysis/supplement/oracle-uncertainty-author-diagnostic/retention-receipt.json: 063288d99a4dfc9072b65c52b158a5749a842056020db84dfe1aaa47febe3475
+  analysis/supplement/oracle-uncertainty-author-diagnostic/census.json: eca80ff8f0df90e50b68da028b9c50da2f4a0fb6120ab9aec9a6fb1bd0743a3b
+  analysis/supplement/oracle-uncertainty-author-diagnostic/extra-tighter-validation.json: 6b282bd4b44106ff6fbee04d10ea766fdb63106a8e3a46ccae9d93831210e424

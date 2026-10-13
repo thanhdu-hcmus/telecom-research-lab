@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-13T10:36:23.868248+00:00",
+  "status": "AUTHOR_UNCERTAINTY_DIAGNOSTICS_RETAINED",
+  "unresolved_base_rows": 20,
+  "case_groups": 4,
+  "rows_per_group": 5,
+  "canonical_tighter_coverage": 0,
+  "extra_tighter_calls": 20,
+  "extra_feasible_witnesses_exactly_checked": 10,
+  "extra_unresolved": 10,
+  "canonical_counts_unchanged": true,
+  "source_and_locked_inputs_unchanged": true,
+  "scientific_acceptance": false,
+  "evidence": {
+    "audit_p6_oracle_uncertainty_cases.py": "94641335f9e71e310636864836977bbaa8cca34bdc535edaef808dc75d0fa947",
+    "census.json": "eca80ff8f0df90e50b68da028b9c50da2f4a0fb6120ab9aec9a6fb1bd0743a3b",
+    "census.md": "8b7c9e67ecbda028881e70d37c21e82ae03a87ad535cd445a139d45e888da8c0",
+    "extra-tighter-validation.json": "6b282bd4b44106ff6fbee04d10ea766fdb63106a8e3a46ccae9d93831210e424",
+    "retain_p6_oracle_uncertainty_census.py": "3d020abd48f9efd0aa584ac995909b9b20a773a820ab2dd138e2c9e5615aad6b",
+    "validate_p6_extra_tighter_diagnostic.py": "710b21b00092be354c548cfeb14b277ba842a46de9e2e886826e1f5f7db8a941"
+  }
+}

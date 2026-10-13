@@ -1,0 +1,143 @@
+{
+  "timestamp": "2026-10-13T10:38:22.512718+00:00",
+  "status": "PASS",
+  "method": "Incremental scan of every new/modified scannable staged path since the CI-passing 7610ba8; referenced native evidence also independently rehashed. Exact digests are classified only against rehashed actual files, verified Git object or existing operation UUID directories. No broad exclusions or unknown acceptances.",
+  "scanned_paths": [
+    "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/audit_p6_oracle_uncertainty_cases.py",
+    "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/census.json",
+    "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/census.md",
+    "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/extra-tighter-validation.json",
+    "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/retain_p6_oracle_uncertainty_census.py",
+    "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/retention-receipt.json",
+    "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/validate_p6_extra_tighter_diagnostic.py",
+    "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0045.yaml",
+    "projects/m11-noma-qos/ara/trace/sessions/session_index.yaml",
+    "projects/m11-noma-qos/findings.md",
+    "projects/m11-noma-qos/to_human/P6-completed-attempt-status.md"
+  ],
+  "scanned_path_hashes": {
+    "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/audit_p6_oracle_uncertainty_cases.py": "94641335f9e71e310636864836977bbaa8cca34bdc535edaef808dc75d0fa947",
+    "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/census.json": "eca80ff8f0df90e50b68da028b9c50da2f4a0fb6120ab9aec9a6fb1bd0743a3b",
+    "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/census.md": "8b7c9e67ecbda028881e70d37c21e82ae03a87ad535cd445a139d45e888da8c0",
+    "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/extra-tighter-validation.json": "6b282bd4b44106ff6fbee04d10ea766fdb63106a8e3a46ccae9d93831210e424",
+    "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/retain_p6_oracle_uncertainty_census.py": "3d020abd48f9efd0aa584ac995909b9b20a773a820ab2dd138e2c9e5615aad6b",
+    "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/retention-receipt.json": "063288d99a4dfc9072b65c52b158a5749a842056020db84dfe1aaa47febe3475",
+    "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/validate_p6_extra_tighter_diagnostic.py": "710b21b00092be354c548cfeb14b277ba842a46de9e2e886826e1f5f7db8a941",
+    "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0045.yaml": "8141d2d9920e33cc738d8426b85158f53312161e8ee67fe43359e7e4f01b6534",
+    "projects/m11-noma-qos/ara/trace/sessions/session_index.yaml": "f308d8476bd195148e96f08972f0929a70a4fbbed75a404f9404b44ff85dd00a",
+    "projects/m11-noma-qos/findings.md": "1f1e79dd0131251a2cefaf5d79b6eaf68c6a4c191441f32398b00b5350ab7d7d",
+    "projects/m11-noma-qos/to_human/P6-completed-attempt-status.md": "bce34814b20e241914e773bcdf59797b2a4d28a229693d022e642a78f37d5f7e"
+  },
+  "new_exact_entries": [
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/census.json",
+      "line": 1967,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "b5f42222380ad5ade2f045ff6250dbb35299b912",
+      "evidence": "Independently rehashed actual fresh native input/output file SHA256: results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/manifest.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/census.json",
+      "line": 1969,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "95e486c1b9475e1fbe78cb229816d3e13b7fe35d",
+      "evidence": "Independently rehashed actual fresh native input/output file SHA256: results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/channels.csv"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/census.json",
+      "line": 1971,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "620d834cbd4c4102e8aafa0b6974a2d416153624",
+      "evidence": "Independently rehashed actual fresh native input/output file SHA256: results/runs/r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7/oracle.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/census.json",
+      "line": 1973,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "49e467abf617c68428cc34ad224961f4a7adf1c8",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/sim/src/oracle.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/census.json",
+      "line": 1975,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c7c2ae73954a3dd147070659bdd79d1aa6335be5",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/model/model-spec.tex"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/extra-tighter-validation.json",
+      "line": 4,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "77ff5668ad0944834411174181def6c2055e4fd0",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/census.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/retention-receipt.json",
+      "line": 15,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "89248c7f4b838aa9e3ccb731b385d2e0cedfe777",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/audit_p6_oracle_uncertainty_cases.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/retention-receipt.json",
+      "line": 16,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "77ff5668ad0944834411174181def6c2055e4fd0",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/census.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/retention-receipt.json",
+      "line": 17,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "2baa7114ef22c1383276df0a475a6b6514d7ed9a",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/census.md"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/retention-receipt.json",
+      "line": 18,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "9dd219a7c93d533e0831bb3e02495835d57f6161",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/extra-tighter-validation.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/retention-receipt.json",
+      "line": 19,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "a9dafa15b7cb74594acfe1c186b0f54739934bc6",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/retain_p6_oracle_uncertainty_census.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/retention-receipt.json",
+      "line": 20,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "91cf291bf17270d13dbbc04ee6b55dc74f5cd213",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/validate_p6_extra_tighter_diagnostic.py"
+    },
+    {
+      "path": "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0045.yaml",
+      "line": 13,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "c0f83ceeca3624e16475f563c97618159f008015",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/retention-receipt.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0045.yaml",
+      "line": 14,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "77ff5668ad0944834411174181def6c2055e4fd0",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/census.json"
+    },
+    {
+      "path": "projects/m11-noma-qos/ara/trace/sessions/2026-10-13-0045.yaml",
+      "line": 15,
+      "type": "Hex High Entropy String",
+      "hashed_secret": "9dd219a7c93d533e0831bb3e02495835d57f6161",
+      "evidence": "Actual current tracked file SHA256: projects/m11-noma-qos/analysis/supplement/oracle-uncertainty-author-diagnostic/extra-tighter-validation.json"
+    }
+  ],
+  "unreviewed": [],
+  "baseline_before_sha256": "eec9593a6d0bd59e7932ba6c01ec57125563e1dda1b5ed97631bdfc37bcdf69c",
+  "unchanged_reviewed_sources": true,
+  "unchanged_locked_inputs": 51,
+  "scientific_acceptance": false
+}

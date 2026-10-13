@@ -1,0 +1,147 @@
+{
+  "timestamp": "2026-10-13T10:27:40.236083+00:00",
+  "status": "AUTHOR_EXTRA_TIGHTER_WITNESSES_CHECKED",
+  "census_sha256": "eca80ff8f0df90e50b68da028b9c50da2f4a0fb6120ab9aec9a6fb1bd0743a3b",
+  "by_case": {
+    "narrow-feasible": {
+      "feasible": 5
+    },
+    "narrow-infeasible": {
+      "unresolved": 5
+    },
+    "large-finite-snr": {
+      "feasible": 5
+    },
+    "fractional-boundary": {
+      "unresolved": 5
+    }
+  },
+  "feasible_witnesses_checked": 10,
+  "exact_original_constraints_checked": true,
+  "oracle_gap_claim": "Reported numerical bound checked against declared tighter tolerance; no validated interval-arithmetic certification asserted.",
+  "witnesses": [
+    {
+      "row": 12,
+      "case_id": "narrow-feasible",
+      "accepted_split_exact_fraction": "5864062014805/17592186044416",
+      "exact_original_constraint_residuals": {
+        "weak_at_weak": "1/8796093022208",
+        "weak_at_strong": "9903520314286381782510425617/4951760157141521099596496896",
+        "strong": "1612617054071279/9903520314283042199192993792"
+      },
+      "oracle_numerical_gap_bound": 1.758593271006248e-13,
+      "oracle_numerical_gap_within_declared_tighter_tolerance": true
+    },
+    {
+      "row": 15,
+      "case_id": "large-finite-snr",
+      "accepted_split_exact_fraction": "9007199254739967/18014398509481984",
+      "exact_original_constraint_residuals": {
+        "weak_at_weak": "1137978600240785472031372224659313550095810360978533617940062854977549238352745385164799",
+        "weak_at_strong": "2275957200481570944062744449318627100191620721957067235880125709955098476705490770329599",
+        "strong": "9999999999998862180428670312127149096136149250395185579420349024129898709315403511575117240471650303"
+      },
+      "oracle_numerical_gap_bound": 1.460875864722766e-11,
+      "oracle_numerical_gap_within_declared_tighter_tolerance": true
+    },
+    {
+      "row": 32,
+      "case_id": "narrow-feasible",
+      "accepted_split_exact_fraction": "5864062014805/17592186044416",
+      "exact_original_constraint_residuals": {
+        "weak_at_weak": "1/8796093022208",
+        "weak_at_strong": "9903520314286381782510425617/4951760157141521099596496896",
+        "strong": "1612617054071279/9903520314283042199192993792"
+      },
+      "oracle_numerical_gap_bound": 1.758593271006248e-13,
+      "oracle_numerical_gap_within_declared_tighter_tolerance": true
+    },
+    {
+      "row": 35,
+      "case_id": "large-finite-snr",
+      "accepted_split_exact_fraction": "9007199254739967/18014398509481984",
+      "exact_original_constraint_residuals": {
+        "weak_at_weak": "1137978600240785472031372224659313550095810360978533617940062854977549238352745385164799",
+        "weak_at_strong": "2275957200481570944062744449318627100191620721957067235880125709955098476705490770329599",
+        "strong": "9999999999998862180428670312127149096136149250395185579420349024129898709315403511575117240471650303"
+      },
+      "oracle_numerical_gap_bound": 1.460875864722766e-11,
+      "oracle_numerical_gap_within_declared_tighter_tolerance": true
+    },
+    {
+      "row": 52,
+      "case_id": "narrow-feasible",
+      "accepted_split_exact_fraction": "5864062014805/17592186044416",
+      "exact_original_constraint_residuals": {
+        "weak_at_weak": "1/8796093022208",
+        "weak_at_strong": "9903520314286381782510425617/4951760157141521099596496896",
+        "strong": "1612617054071279/9903520314283042199192993792"
+      },
+      "oracle_numerical_gap_bound": 1.758593271006248e-13,
+      "oracle_numerical_gap_within_declared_tighter_tolerance": true
+    },
+    {
+      "row": 55,
+      "case_id": "large-finite-snr",
+      "accepted_split_exact_fraction": "9007199254739967/18014398509481984",
+      "exact_original_constraint_residuals": {
+        "weak_at_weak": "1137978600240785472031372224659313550095810360978533617940062854977549238352745385164799",
+        "weak_at_strong": "2275957200481570944062744449318627100191620721957067235880125709955098476705490770329599",
+        "strong": "9999999999998862180428670312127149096136149250395185579420349024129898709315403511575117240471650303"
+      },
+      "oracle_numerical_gap_bound": 1.460875864722766e-11,
+      "oracle_numerical_gap_within_declared_tighter_tolerance": true
+    },
+    {
+      "row": 72,
+      "case_id": "narrow-feasible",
+      "accepted_split_exact_fraction": "5864062014805/17592186044416",
+      "exact_original_constraint_residuals": {
+        "weak_at_weak": "1/8796093022208",
+        "weak_at_strong": "9903520314286381782510425617/4951760157141521099596496896",
+        "strong": "1612617054071279/9903520314283042199192993792"
+      },
+      "oracle_numerical_gap_bound": 1.758593271006248e-13,
+      "oracle_numerical_gap_within_declared_tighter_tolerance": true
+    },
+    {
+      "row": 75,
+      "case_id": "large-finite-snr",
+      "accepted_split_exact_fraction": "9007199254739967/18014398509481984",
+      "exact_original_constraint_residuals": {
+        "weak_at_weak": "1137978600240785472031372224659313550095810360978533617940062854977549238352745385164799",
+        "weak_at_strong": "2275957200481570944062744449318627100191620721957067235880125709955098476705490770329599",
+        "strong": "9999999999998862180428670312127149096136149250395185579420349024129898709315403511575117240471650303"
+      },
+      "oracle_numerical_gap_bound": 1.460875864722766e-11,
+      "oracle_numerical_gap_within_declared_tighter_tolerance": true
+    },
+    {
+      "row": 92,
+      "case_id": "narrow-feasible",
+      "accepted_split_exact_fraction": "5864062014805/17592186044416",
+      "exact_original_constraint_residuals": {
+        "weak_at_weak": "1/8796093022208",
+        "weak_at_strong": "9903520314286381782510425617/4951760157141521099596496896",
+        "strong": "1612617054071279/9903520314283042199192993792"
+      },
+      "oracle_numerical_gap_bound": 1.758593271006248e-13,
+      "oracle_numerical_gap_within_declared_tighter_tolerance": true
+    },
+    {
+      "row": 95,
+      "case_id": "large-finite-snr",
+      "accepted_split_exact_fraction": "9007199254739967/18014398509481984",
+      "exact_original_constraint_residuals": {
+        "weak_at_weak": "1137978600240785472031372224659313550095810360978533617940062854977549238352745385164799",
+        "weak_at_strong": "2275957200481570944062744449318627100191620721957067235880125709955098476705490770329599",
+        "strong": "9999999999998862180428670312127149096136149250395185579420349024129898709315403511575117240471650303"
+      },
+      "oracle_numerical_gap_bound": 1.460875864722766e-11,
+      "oracle_numerical_gap_within_declared_tighter_tolerance": true
+    }
+  ],
+  "canonical_results_changed": false,
+  "scientific_acceptance": false,
+  "independent_results_review": false
+}

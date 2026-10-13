@@ -419,3 +419,16 @@ rational checks validate their recorded brackets. This separate certificate
 has not received independent results review and does not upgrade stored
 classifications or the frozen runtime assessment. G6/G7 remain invalidated.
 See analysis/supplement/attempt2-native-checkpoint for exact receipts and limits.
+
+## P6 remaining oracle uncertainty mapped by case
+
+The twenty unresolved base-oracle checks belong to four deterministic cases,
+each repeated five times. Canonical tighter checks select rows0-7; none of the
+twenty unresolved rows is selected. A separate author diagnostic using the
+already declared tenfold tighter policy and unchanged96/256caps resolves the
+ten narrow-feasible/large-SNR rows to feasible, with all original constraints
+checked using exact rationals. The ten narrow-infeasible/fractional-boundary
+rows remain unresolved. Exact domain and objective-gap deductions explain
+the numerical limits. These twenty extra calls are outside canonical coverage
+and do not change results, source, protocol, gates or uncertainty acceptance.
+See analysis/supplement/oracle-uncertainty-author-diagnostic/census.md.
