@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T09:55:45.500532+00:00",
+  "status": "LOCAL_COMPLETION_HANDLER_RUNNING",
+  "marker_snapshot": {
+    "status": "WAITING",
+    "started": "2026-10-13T09:52:23.351450+00:00",
+    "scientific_acceptance": false,
+    "external_review_launched": false
+  },
+  "helper_sha256": "e314bd88b034bde8a057cc0351d3f5344deb8f0429b57f97dc8b1995944cfd67",
+  "control_session": 32502,
+  "actions": "Wait for matching assessment completion; preserve actual scientific/control receipts locally, update findings/status and provenance.",
+  "scientific_gate_actions": false,
+  "external_calls": false,
+  "automatic_git_push": false
+}
