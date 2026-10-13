@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-10-13T07:15:11.794001+00:00",
+  "status": "INDEX_NEWLINE_MISMATCH_REPRODUCED",
+  "path": "docs/evidence/p6-round5-preflight/native-secrets.json",
+  "index_sha256": "c142162c48c2d6c021d0bc78fe371a710a61feaa72ce41d4bc2b080bc8d16b62",
+  "working_sha256": "b0a01e19c249351eeadcaa7016a2888c32256d4541b584c664e804fc23d54889",
+  "cause": "Git text normalization converted the captured native scan JSON CRLF to LF; receipt binds original captured bytes.",
+  "resolution": "Preserve original native scan receipt bytes with this exact -text attribute; retain all bound receipt hashes."
+}

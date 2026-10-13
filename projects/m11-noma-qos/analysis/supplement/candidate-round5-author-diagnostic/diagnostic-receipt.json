@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE",
+  "started": "2026-10-13T00:52:21.920882+00:00",
+  "kind": "LOCAL_AUTHOR_DIAGNOSTIC_ONLY",
+  "canonical_execution": false,
+  "scientific_acceptance": false,
+  "directory": ".cache/p6-full-candidate-audit/6393ed4d41914d239b24cb9900ea26c5",
+  "source_review_transmitted": false,
+  "planned_jobs": 145,
+  "planned_rows": 4718692,
+  "completed_jobs": 145,
+  "completed_rows": 4718692,
+  "errors": 0,
+  "source_bindings_unchanged": true,
+  "locked_inputs_unchanged": true,
+  "finished": "2026-10-13T02:01:21.779802+00:00",
+  "runtime_s": 4140.735603100038,
+  "limitations": "Author check_row/seed regeneration diagnosis only; omits production integrity guards, shared oracle replay, global statistics, full canonical rerun and independent source/results review.",
+  "evidence": {
+    "jobs.jsonl": "5c255cacf4beb47841136f2e56c4c12299ad94def79620db427670500fd2b791",
+    "launch.json": "218208f0aa929f2d207fd16d650eff2853aff93fd73de2aac545f36d7c80a96d"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "RUNNING",
+  "started": "2026-10-13T00:52:21.920882+00:00",
+  "kind": "LOCAL_AUTHOR_DIAGNOSTIC_ONLY",
+  "canonical_execution": false,
+  "scientific_acceptance": false,
+  "directory": ".cache/p6-full-candidate-audit/6393ed4d41914d239b24cb9900ea26c5",
+  "source_review_transmitted": false,
+  "planned_jobs": 145,
+  "planned_rows": 4718692
+}

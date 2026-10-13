@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-13T07:15:12.972518+00:00",
+  "status": "PASS",
+  "indexed_files_checked": 1156,
+  "approved_index_bindings": 1002,
+  "owned_files_checked": 154,
+  "locked_inputs_checked": 51,
+  "locked_inputs_unchanged": true,
+  "round4_packet_source_bindings_current": true,
+  "round4_review_transmitted": true,
+  "canonical_round4_source_review_ready": true,
+  "round5_review_transmitted": false,
+  "canonical_full_verification_status": "COMPLETE_ATTEMPT_COMBINED_FAIL",
+  "candidate_author_diagnostic_status": "COMPLETE",
+  "raw_encrypted_runtime_transport_excluded": true,
+  "mismatches": []
+}

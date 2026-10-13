@@ -1,0 +1,21 @@
+from pathlib import Path
+
+repo = Path.cwd()
+auth = (repo / '.cache/record_p6_round4_authorization.py').read_text(encoding='utf-8')
+auth = auth.replace('round4', 'round5').replace('388193', '406937')
+auth = auth.replace("for name,digest in meta['source_hashes'].items():", "source_repo=r/meta['candidate_repo_relative'];source_project=source_repo/'projects/m11-noma-qos'\nassert subprocess.check_output(['git','-c',f'safe.directory={source_repo.as_posix()}','rev-parse','HEAD'],cwd=source_repo,text=True).strip()=='aa68d62ac47da40a1a9f2b4890ee780d4ccb1755'\nassert not (p/'analysis/P6-code-review-round5-authorization.json').exists(),'Authorization already recorded'\nfor name,digest in meta['source_hashes'].items():")
+auth = auth.replace("f=r/name.removeprefix('@repo/') if name.startswith('@repo/') else p/name", "f=source_repo/name.removeprefix('@repo/') if name.startswith('@repo/') else source_project/name")
+auth = auth.replace("user_statement='Approve the fourth P6 source review'", "user_statement='Approved',approval_context='Direct response to the exact fifth source-review authorization document and packet; one additional source-only review',candidate_commit='aa68d62ac47da40a1a9f2b4890ee780d4ccb1755',candidate_repo_relative=meta['candidate_repo_relative']")
+auth = auth.replace('authorized_round=4', 'authorized_round=5')
+auth = auth.replace("illustrative_rows=24,", "illustrative_rows=24,embedded_saved_row_regression_snapshots=6,")
+(repo / '.cache/record_p6_round5_authorization.py').write_text(auth, encoding='utf-8', newline='\n')
+
+review = (repo / '.cache/run_p6_source_review_round4.py').read_text(encoding='utf-8')
+review = review.replace('round4', 'round5').replace('round_number=4', 'round_number=5').replace('Round 4', 'Round 5').replace('round 4', 'round 5').replace("'round':4", "'round':5").replace("['authorized_round']==4", "['authorized_round']==5").replace('388193', '406937')
+review = review.replace("# Round 5 transmits", "source_repo=repo/metadata['candidate_repo_relative'];source_project=source_repo/'projects/m11-noma-qos'\nassert subprocess.check_output(['git','-c',f'safe.directory={source_repo.as_posix()}','rev-parse','HEAD'],cwd=source_repo,text=True).strip()==permission['candidate_commit']=='aa68d62ac47da40a1a9f2b4890ee780d4ccb1755'\nassert permission['packet_sha256']=='58b0a1787afbf47296cc66b5e8a9ccd07cdbf01152e82cb62edaddb7de8a54c4'\n# Round 5 transmits")
+review = review.replace("repo/name.removeprefix('@repo/') if name.startswith('@repo/') else project/name", "source_repo/name.removeprefix('@repo/') if name.startswith('@repo/') else source_project/name")
+review = review.replace('plus24 illustrative-row packet for', 'plus24 illustrative-row packet (and six saved-row snapshots embedded in the test source) for')
+review = review.replace('This is source inspection BEFORE full canonical execution.', 'This is source inspection BEFORE full canonical execution of this candidate.')
+review = review.replace("'started':now(),'round':round_number,'argv'", "'started':now(),'round':round_number,'candidate_commit':permission['candidate_commit'],'candidate_repo_relative':metadata['candidate_repo_relative'],'argv'")
+(repo / '.cache/run_p6_source_review_round5.py').write_text(review, encoding='utf-8', newline='\n')
+print('Prepared fifth-review helpers; no transmission performed.')

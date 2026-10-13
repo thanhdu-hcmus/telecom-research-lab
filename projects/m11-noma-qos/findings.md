@@ -345,3 +345,19 @@ Nine per-seed zero-QoS native arithmetic examples are provisional and are not
 registered manuscript claims. The isolated candidate author full-row check is
 running, and the exact fifth source-review approval remains pending. See
 to_human/P6-completed-attempt-status.md and the completed-attempt-01 receipt.
+
+## P6 candidate author diagnostic complete; fifth transfer blocked
+
+The isolated candidate checked every saved row: 145 jobs / 4,718,692 rows,
+zero row errors, with source and all 51 locked-input bindings unchanged.
+Ten recorded deterministic method ambiguities remain explicit. This author
+diagnostic omits canonical integrity guards, shared oracle replays and global
+statistics; it is not canonical verification or scientific acceptance.
+Evidence is retained in analysis/supplement/candidate-round5-author-diagnostic.
+
+The PI responded Approved to the fifth source-review request. The automatic
+approval review rejected the external launch because the available message
+did not explicitly name the private payload and destination. No packet was
+transmitted and no reviewer launched. Explicit transfer authorization has been
+requested. The original round-four source remains active, its completed FAIL
+remains recorded, and G6/G7 remain invalidated.

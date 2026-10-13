@@ -1,0 +1,14 @@
+id: 2026-10-13-0039
+timestamp: '2026-10-13T07:05:59.894531+00:00'
+phase: P6
+summary: 'Retained complete candidate author diagnostic: 145 jobs and 4,718,692 saved
+  rows, zero row errors, ten deterministic method ambiguity entries preserved; all19
+  canonical source bindings, all19 candidate bindings and all51 locked inputs unchanged.
+  Author-only diagnostic excludes production guards/shared replay/global statistics
+  and cannot establish scientific acceptance. Original completed combined FAIL and
+  source-ready round4 retained; fifth external review blocked before transmission.'
+provenance: ai
+evidence:
+  analysis/supplement/candidate-round5-author-diagnostic/retention-receipt.json: 31c127f06ae23d562c736ca53be97658933e1c41aca8158f7475c2337be644e4
+  analysis/P6-code-review-round5-transfer-blocked.json: 6b3ae0aa7c30754f458f299de843cda07df5c0bad505ca70626bbaae217ebdac
+  to_human/P6-completed-attempt-status.md: 9f42b6b57c7562889162ad550de64ea14581f1c41913952b28709da35e68ad91

@@ -7,8 +7,10 @@ All 2,968 errors are diagnostic crossing comparisons (2,964 upper; four lower).
 The complete author diagnosis reproduces every recorded error in these fields.
 The isolated correction fixes endpoint-residual cancellation and retains tiny
 out-of-domain representation differences separately; it preserves the physical
-checks and scientific tolerances. Candidate source review round five remains
-pending under the exact packet already prepared.
+checks and scientific tolerances. Candidate source review round five is prepared. The automatic approval
+review blocked launch pending explicit authorization of the private packet
+transfer to the existing authenticated OpenAI Codex session. No transmission
+occurred; the packet remains unchanged.
 
 ## Uncertainty remains after the diagnostic repair
 
@@ -23,7 +25,9 @@ No precision failure was reported.
 The run generated 39 conditional recipes, all marked UNVERIFIED_DUE_TO_ERRORS.
 Nine native per-seed zero-QoS arithmetic examples have been computed and checked
 against their actual manifests; they are provisional and are not registered for
-a manuscript. An author check of every saved row with the candidate is running.
+a manuscript. The candidate author diagnostic completed all 145 jobs / 4,718,692 rows
+with zero row errors and unchanged source and locked-input bindings. Ten
+deterministic method ambiguities remain; this is not canonical acceptance.
 Full canonical repaired verification, independent results review and actual PI
 G6/G7 decisions remain required.
 

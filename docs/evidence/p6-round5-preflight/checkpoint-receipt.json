@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-10-13T07:14:19.522584+00:00",
+  "status": "LOCAL_CHECKPOINT_READY",
+  "author_diagnostic_jobs": 145,
+  "author_diagnostic_rows": 4718692,
+  "author_row_errors": 0,
+  "scientific_acceptance": false,
+  "canonical_corrected_rerun_started": false,
+  "external_source_review_launched": false,
+  "external_source_packet_transmitted": false,
+  "automatic_transfer_review": "REJECTED; explicit private packet and destination authorization requested",
+  "native_secrets": {
+    "status": "PASS",
+    "files_scanned": 2604,
+    "findings": []
+  },
+  "index_bindings": {
+    "timestamp": "2026-10-13T07:11:22.196278+00:00",
+    "status": "PASS",
+    "indexed_files_checked": 1150,
+    "approved_index_bindings": 1002,
+    "owned_files_checked": 148,
+    "locked_inputs_checked": 51,
+    "locked_inputs_unchanged": true,
+    "round4_packet_source_bindings_current": true,
+    "round4_review_transmitted": true,
+    "canonical_round4_source_review_ready": true,
+    "round5_review_transmitted": false,
+    "canonical_full_verification_status": "COMPLETE_ATTEMPT_COMBINED_FAIL",
+    "candidate_author_diagnostic_status": "COMPLETE",
+    "raw_encrypted_runtime_transport_excluded": true,
+    "mismatches": []
+  },
+  "candidate_diagnostic_retention_sha256": "31c127f06ae23d562c736ca53be97658933e1c41aca8158f7475c2337be644e4",
+  "transfer_blocked_sha256": "6b3ae0aa7c30754f458f299de843cda07df5c0bad505ca70626bbaae217ebdac",
+  "evidence": {
+    "audit_p6_round5_preflight_checksums.py": "efe5bc29edb250c79333d3155238bf9e5cfc512d18c6dc172f9dc503e2c731b4",
+    "check_p6_round5_preflight_index.py": "a3d5e1332fded2e61f11abf77c4a5a617df285d482fb606cbb2e41024cd6361f",
+    "finalize_p6_round5_preflight.py": "58cb175382ed6adaae136f7c2148ecad801cd7795aa370ffb961f0f6fc57b0ed",
+    "index-bindings.json": "0c4782872ad039c95a3b3148fd8c62ebe77e4783d143c7f35f97399a3f0dcf81",
+    "native-secrets.json": "b0a01e19c249351eeadcaa7016a2888c32256d4541b584c664e804fc23d54889",
+    "prepare_p6_round5_helpers.py": "11826a866e061fe9d844f32dde0be5aff8ccd1963e472936bda80c4cc12493d4",
+    "record_p6_round5_authorization.py": "0b4fab97998897928e7cfb09ebe2346962beddf72499f5256260bab2fd92889a",
+    "resolve_p6_round5_preflight_checksum.py": "a7d8a4232367e292fc3b30794ba94f00275787767b8e13f4d6069552c56d564b",
+    "retain_p6_round5_preflight.py": "f77580e82820ba2fe09244e8363b45eb5185e480a4968546c8f7284254da8438",
+    "run_p6_source_review_round5.py": "f826739ee659307aab1e2c40795fa11996552b156c89fa25b535765e6048b1fd",
+    "secret-audit-initial-failure.json": "f09ced4791c1cccf1669c28e1bb8289446876115d6e8a702a171b08067909165",
+    "secret-checksum-classification.json": "cb88f629b4a469cf55fda53567bac71388b2992e29b99247a0e4760f63a0b9bd"
+  }
+}

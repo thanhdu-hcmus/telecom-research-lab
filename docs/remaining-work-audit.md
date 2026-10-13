@@ -60,8 +60,16 @@ Candidate unit checks pass 133 cases; this is not canonical scientific acceptanc
 A changed source packet requires a fresh explicit review authorization before
 external transmission. The fourth approval covers its completed exact packet.
 
-P6 still needs complete discrepancy triage, any necessary repair/rerun, combined
-assessment, executable manuscript claims and enforced independent results review.
+Complete discrepancy triage is retained. The candidate author diagnostic has
+completed all 145 jobs / 4,718,692 rows with zero row errors; it retains the
+deterministic ambiguities and omits canonical guards, shared replay and global
+statistics. The automatic approval review rejected the fifth external review
+launch pending explicit private-packet/destination authorization. No review
+was launched or transmitted.
+
+P6 still needs independent candidate source review, the corrected canonical
+rerun and combined assessment, executable accepted manuscript claims, and
+enforced independent numerical-results review.
 P7 requires the evidence-traced manuscript, verified citations, figures,
 compilation, independent paper review, Overleaf export and actual PI G6/G7
 approval/report usability judgments. M11 completion is not claimed.
