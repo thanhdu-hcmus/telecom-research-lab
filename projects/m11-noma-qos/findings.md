@@ -390,3 +390,14 @@ The original combined FAIL and uncertainty remain historical evidence. Fresh
 canonical execution has not yet launched; scientific acceptance and G6/G7
 remain pending. The earlier transfer rejection and source-review-running
 sections are historical.
+
+## P6 corrected canonical attempt two running
+
+Fresh native and supplemental operations launched on 2026-10-13 at 07:52 UTC
+from committed reviewed source fd2877f, with an automatic combined-assessment
+watcher. Planned full coverage remains 145 jobs / 4,718,692 rows, 4,708 base and
+1,160 tighter shared-oracle replays. Every active source binding and all 51
+locked inputs match. Initial partial progress is retained in
+analysis/supplement/attempt2-launch; it is not completion or scientific PASS.
+Original first-attempt evidence and explicit unresolved scope remain retained.
+G6/G7 remain invalidated; no external numerical-results review is authorized.

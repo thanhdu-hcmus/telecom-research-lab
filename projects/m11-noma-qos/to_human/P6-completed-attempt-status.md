@@ -13,7 +13,10 @@ provider and unchanged bytes were audited. The exact two reviewed analysis
 source paths are applied; all 19 source bindings and 51 locked inputs match.
 The original eight native output files are archived with byte-identical mapping
 for the fresh rerun. All 133 supplemental unit cases pass; all 97 framework tests
-pass. Canonical corrected execution has not started yet.
+pass. Fresh native and supplemental canonical execution launched on 2026-10-13
+at 07:52 UTC from fd2877f. The automatic watcher will run combined assessment
+after both matching receipts finish. Coverage remains 145 jobs / 4,718,692
+rows. Progress is partial; scientific acceptance is pending.
 
 ## Uncertainty remains after the diagnostic repair
 

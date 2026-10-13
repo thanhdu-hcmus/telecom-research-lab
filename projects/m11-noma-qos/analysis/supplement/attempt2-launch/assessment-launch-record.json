@@ -1,0 +1,9 @@
+{
+  "status": "WAITING",
+  "attempt": 2,
+  "review_round": 5,
+  "started": "2026-10-13T07:53:03.156656+00:00",
+  "directory": ".cache\\p6-canonical-attempt2\\bc7ed6ff10e940c6b3a804d54a21c76a-assessment",
+  "scientific_acceptance": false,
+  "numerical_external_review_launched": false
+}

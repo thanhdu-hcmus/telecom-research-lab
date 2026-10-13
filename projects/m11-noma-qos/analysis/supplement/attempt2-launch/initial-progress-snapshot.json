@@ -1,0 +1,559 @@
+{
+  "timestamp": "2026-10-13T07:58:44.131785+00:00",
+  "status": "IN_PROGRESS",
+  "completed_jobs": 5,
+  "completed_rows": 131172,
+  "row_errors": 0,
+  "jobs": [
+    {
+      "run_id": "r_deterministic-11999-250ccb4ad292-b2a7cf178_9d6f22bd59c7",
+      "rows": 100,
+      "replay": {
+        "base": 100,
+        "tighter": 8,
+        "statuses": {
+          "feasible": 71,
+          "infeasible": 17,
+          "unresolved": 20
+        },
+        "base_statuses": {
+          "feasible": 65,
+          "infeasible": 15,
+          "unresolved": 20
+        },
+        "tighter_statuses": {
+          "feasible": 6,
+          "infeasible": 2
+        },
+        "comparisons": {
+          "analytic_base": {
+            "resolved_classifications": 80,
+            "classification_conflicts": 0,
+            "accepted_objectives": 65,
+            "objective_failures": 0,
+            "objective_max_residual": 1.4317436125566019e-12,
+            "unresolved": 20,
+            "optimality_not_established": 20
+          },
+          "analytic_tighter": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 6,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "base_tighter": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 6,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "analytic_independent": {
+            "resolved_classifications": 95,
+            "classification_conflicts": 0,
+            "accepted_objectives": 75,
+            "objective_failures": 0,
+            "objective_max_residual": 1.4317436125566019e-12,
+            "unresolved": 5,
+            "optimality_not_established": 5
+          },
+          "base_independent": {
+            "resolved_classifications": 80,
+            "classification_conflicts": 0,
+            "accepted_objectives": 65,
+            "objective_failures": 0,
+            "objective_max_residual": 3.277378368693462e-13,
+            "unresolved": 20,
+            "optimality_not_established": 20
+          },
+          "tighter_independent": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 6,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          }
+        },
+        "unresolved_counts": {
+          "analytic": 5,
+          "independent": 5,
+          "base": 20,
+          "tighter": 0
+        },
+        "optimality_not_established_counts": {
+          "independent": 5,
+          "base": 20,
+          "tighter": 0
+        },
+        "optimality_not_applicable_counts": {
+          "independent": 20,
+          "base": 15,
+          "tighter": 2
+        },
+        "classification_transitions": {
+          "feasible->feasible": 6,
+          "infeasible->infeasible": 2
+        },
+        "optimality_transitions": {
+          "numerical-concavity-bound->numerical-concavity-bound": 4,
+          "not-established->not-established": 2,
+          "exact-singleton->exact-singleton": 2
+        },
+        "evidence_kind": "shared-pinned-oracle-reproduction-with-independent-original-constraint-comparisons"
+      },
+      "runtime_s": 2.7088366000098176,
+      "row_error_count": 0,
+      "cumulative_error_count": 0,
+      "independent_counts": {
+        "n00": 20,
+        "n01": 0,
+        "n10": 25,
+        "n11": 50,
+        "unresolved": 5
+      },
+      "ambiguity_entries": 15,
+      "unsupported_resolved_predicates": 0
+    },
+    {
+      "run_id": "r_mc-00-q0-11001-250ccb4ad292-b2a7cf17890b_71a0714cd1ed",
+      "rows": 32768,
+      "replay": {
+        "base": 32,
+        "tighter": 8,
+        "statuses": {
+          "feasible": 40
+        },
+        "base_statuses": {
+          "feasible": 32
+        },
+        "tighter_statuses": {
+          "feasible": 8
+        },
+        "comparisons": {
+          "analytic_base": {
+            "resolved_classifications": 32,
+            "classification_conflicts": 0,
+            "accepted_objectives": 32,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "analytic_tighter": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 8,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "base_tighter": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 8,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "analytic_independent": {
+            "resolved_classifications": 32,
+            "classification_conflicts": 0,
+            "accepted_objectives": 32,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "base_independent": {
+            "resolved_classifications": 32,
+            "classification_conflicts": 0,
+            "accepted_objectives": 32,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "tighter_independent": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 8,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          }
+        },
+        "unresolved_counts": {
+          "analytic": 0,
+          "independent": 0,
+          "base": 0,
+          "tighter": 0
+        },
+        "optimality_not_established_counts": {
+          "independent": 0,
+          "base": 0,
+          "tighter": 0
+        },
+        "optimality_not_applicable_counts": {
+          "independent": 0,
+          "base": 0,
+          "tighter": 0
+        },
+        "classification_transitions": {
+          "feasible->feasible": 8
+        },
+        "optimality_transitions": {
+          "numerical-concavity-bound->numerical-concavity-bound": 8
+        },
+        "evidence_kind": "shared-pinned-oracle-reproduction-with-independent-original-constraint-comparisons"
+      },
+      "runtime_s": 75.38919049996184,
+      "row_error_count": 0,
+      "cumulative_error_count": 0,
+      "independent_counts": {
+        "n00": 0,
+        "n01": 0,
+        "n10": 0,
+        "n11": 32768,
+        "unresolved": 0
+      },
+      "ambiguity_entries": 0,
+      "unsupported_resolved_predicates": 0
+    },
+    {
+      "run_id": "r_mc-00-q0-11002-250ccb4ad292-b2a7cf17890b_936e92cd914a",
+      "rows": 32768,
+      "replay": {
+        "base": 32,
+        "tighter": 8,
+        "statuses": {
+          "feasible": 40
+        },
+        "base_statuses": {
+          "feasible": 32
+        },
+        "tighter_statuses": {
+          "feasible": 8
+        },
+        "comparisons": {
+          "analytic_base": {
+            "resolved_classifications": 32,
+            "classification_conflicts": 0,
+            "accepted_objectives": 32,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "analytic_tighter": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 8,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "base_tighter": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 8,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "analytic_independent": {
+            "resolved_classifications": 32,
+            "classification_conflicts": 0,
+            "accepted_objectives": 32,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "base_independent": {
+            "resolved_classifications": 32,
+            "classification_conflicts": 0,
+            "accepted_objectives": 32,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "tighter_independent": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 8,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          }
+        },
+        "unresolved_counts": {
+          "analytic": 0,
+          "independent": 0,
+          "base": 0,
+          "tighter": 0
+        },
+        "optimality_not_established_counts": {
+          "independent": 0,
+          "base": 0,
+          "tighter": 0
+        },
+        "optimality_not_applicable_counts": {
+          "independent": 0,
+          "base": 0,
+          "tighter": 0
+        },
+        "classification_transitions": {
+          "feasible->feasible": 8
+        },
+        "optimality_transitions": {
+          "numerical-concavity-bound->numerical-concavity-bound": 8
+        },
+        "evidence_kind": "shared-pinned-oracle-reproduction-with-independent-original-constraint-comparisons"
+      },
+      "runtime_s": 74.84015570004703,
+      "row_error_count": 0,
+      "cumulative_error_count": 0,
+      "independent_counts": {
+        "n00": 0,
+        "n01": 0,
+        "n10": 0,
+        "n11": 32768,
+        "unresolved": 0
+      },
+      "ambiguity_entries": 0,
+      "unsupported_resolved_predicates": 0
+    },
+    {
+      "run_id": "r_mc-00-q0-11003-250ccb4ad292-b2a7cf17890b_cc7036b49048",
+      "rows": 32768,
+      "replay": {
+        "base": 32,
+        "tighter": 8,
+        "statuses": {
+          "feasible": 40
+        },
+        "base_statuses": {
+          "feasible": 32
+        },
+        "tighter_statuses": {
+          "feasible": 8
+        },
+        "comparisons": {
+          "analytic_base": {
+            "resolved_classifications": 32,
+            "classification_conflicts": 0,
+            "accepted_objectives": 32,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "analytic_tighter": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 8,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "base_tighter": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 8,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "analytic_independent": {
+            "resolved_classifications": 32,
+            "classification_conflicts": 0,
+            "accepted_objectives": 32,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "base_independent": {
+            "resolved_classifications": 32,
+            "classification_conflicts": 0,
+            "accepted_objectives": 32,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "tighter_independent": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 8,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          }
+        },
+        "unresolved_counts": {
+          "analytic": 0,
+          "independent": 0,
+          "base": 0,
+          "tighter": 0
+        },
+        "optimality_not_established_counts": {
+          "independent": 0,
+          "base": 0,
+          "tighter": 0
+        },
+        "optimality_not_applicable_counts": {
+          "independent": 0,
+          "base": 0,
+          "tighter": 0
+        },
+        "classification_transitions": {
+          "feasible->feasible": 8
+        },
+        "optimality_transitions": {
+          "numerical-concavity-bound->numerical-concavity-bound": 8
+        },
+        "evidence_kind": "shared-pinned-oracle-reproduction-with-independent-original-constraint-comparisons"
+      },
+      "runtime_s": 75.36017070000526,
+      "row_error_count": 0,
+      "cumulative_error_count": 0,
+      "independent_counts": {
+        "n00": 0,
+        "n01": 0,
+        "n10": 0,
+        "n11": 32768,
+        "unresolved": 0
+      },
+      "ambiguity_entries": 0,
+      "unsupported_resolved_predicates": 0
+    },
+    {
+      "run_id": "r_mc-00-q0-11004-250ccb4ad292-b2a7cf17890b_01d3f351521b",
+      "rows": 32768,
+      "replay": {
+        "base": 32,
+        "tighter": 8,
+        "statuses": {
+          "feasible": 40
+        },
+        "base_statuses": {
+          "feasible": 32
+        },
+        "tighter_statuses": {
+          "feasible": 8
+        },
+        "comparisons": {
+          "analytic_base": {
+            "resolved_classifications": 32,
+            "classification_conflicts": 0,
+            "accepted_objectives": 32,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "analytic_tighter": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 8,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "base_tighter": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 8,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "analytic_independent": {
+            "resolved_classifications": 32,
+            "classification_conflicts": 0,
+            "accepted_objectives": 32,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "base_independent": {
+            "resolved_classifications": 32,
+            "classification_conflicts": 0,
+            "accepted_objectives": 32,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          },
+          "tighter_independent": {
+            "resolved_classifications": 8,
+            "classification_conflicts": 0,
+            "accepted_objectives": 8,
+            "objective_failures": 0,
+            "objective_max_residual": 0,
+            "unresolved": 0,
+            "optimality_not_established": 0
+          }
+        },
+        "unresolved_counts": {
+          "analytic": 0,
+          "independent": 0,
+          "base": 0,
+          "tighter": 0
+        },
+        "optimality_not_established_counts": {
+          "independent": 0,
+          "base": 0,
+          "tighter": 0
+        },
+        "optimality_not_applicable_counts": {
+          "independent": 0,
+          "base": 0,
+          "tighter": 0
+        },
+        "classification_transitions": {
+          "feasible->feasible": 8
+        },
+        "optimality_transitions": {
+          "numerical-concavity-bound->numerical-concavity-bound": 8
+        },
+        "evidence_kind": "shared-pinned-oracle-reproduction-with-independent-original-constraint-comparisons"
+      },
+      "runtime_s": 75.82632980000926,
+      "row_error_count": 0,
+      "cumulative_error_count": 0,
+      "independent_counts": {
+        "n00": 0,
+        "n01": 0,
+        "n10": 0,
+        "n11": 32768,
+        "unresolved": 0
+      },
+      "ambiguity_entries": 0,
+      "unsupported_resolved_predicates": 0
+    }
+  ],
+  "scientific_acceptance": false,
+  "limits": "Partial execution snapshot; not final canonical verification."
+}

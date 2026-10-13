@@ -72,8 +72,10 @@ retained. The exact two reviewed analysis source paths are now applied, all19
 active source bindings match, and all51 locked inputs are unchanged. Original
 native outputs are archived byte-identically for a fresh canonical rerun.
 
-P6 still needs the corrected canonical
-rerun and combined assessment, executable accepted manuscript claims, and
+The fresh corrected native and supplemental canonical runs are active, with
+an automatic combined-assessment watcher. Their completion remains pending.
+P6 still needs completed corrected verification and combined assessment,
+executable accepted manuscript claims, and
 enforced independent numerical-results review.
 P7 requires the evidence-traced manuscript, verified citations, figures,
 compilation, independent paper review, Overleaf export and actual PI G6/G7

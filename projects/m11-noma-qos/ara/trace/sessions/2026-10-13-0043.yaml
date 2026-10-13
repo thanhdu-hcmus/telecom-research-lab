@@ -1,0 +1,14 @@
+id: 2026-10-13-0043
+timestamp: '2026-10-13T07:58:44.175163+00:00'
+phase: P6
+summary: Fresh corrected P6 native and supplemental canonical operations launched
+  from reviewed committed source fd2877f in separate unique attempt2 directories.
+  Supplement covers145jobs/4718692rows with4708base/1160tighterreplays under ordinary
+  guards; automatic combined assessor waits for both matching completed receipts.
+  All19sourcebindings and51locks unchanged. First partial progress snapshot retained;
+  no completion or scientific PASS asserted. G6/G7 remain invalidated; numerical-results
+  review excluded.
+provenance: ai
+evidence:
+  analysis/supplement/attempt2-launch/launch-receipt.json: edcd1517541d6154860a5695416e93e53acb5aa2cad45e2a6203c410f8b0975e
+  analysis/supplement/attempt2-launch/initial-progress-snapshot.json: e5dbb96e04181aba86b76da26a9ebffc0deba7cba51585e3761767071b11a583

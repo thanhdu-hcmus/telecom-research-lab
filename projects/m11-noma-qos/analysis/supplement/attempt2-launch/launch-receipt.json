@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-10-13T07:58:44.159104+00:00",
+  "status": "FRESH_CORRECTED_CANONICAL_OPERATIONS_RUNNING",
+  "attempt": 2,
+  "source_review_round": 5,
+  "source_commit": "fd2877faa2629e6a7cb98b82b661ed1a89108ef0",
+  "source_ready_sha256": "ed5e8212099d138753b2ebb91f4634003e533335209ffa9f48c0b2502873df18",
+  "planned_jobs": 145,
+  "planned_rows": 4718692,
+  "planned_base_replays": 4708,
+  "planned_tighter_replays": 1160,
+  "source_bindings_unchanged": true,
+  "locked_inputs_unchanged": true,
+  "combined_assessment_watcher": "WAITING_FOR_BOTH_COMPLETE_RECEIPTS",
+  "scientific_acceptance": false,
+  "external_numerical_results_review_authorized": false,
+  "evidence": {
+    "assessment-initial-marker.json": "1683f1b11c817736b917f1d025620b6905d2cdc823895b3cdf2d276459af2f81",
+    "assessment-launch-record.json": "1683f1b11c817736b917f1d025620b6905d2cdc823895b3cdf2d276459af2f81",
+    "initial-progress-snapshot.json": "e5dbb96e04181aba86b76da26a9ebffc0deba7cba51585e3761767071b11a583",
+    "native-initial-marker.json": "c54c5a685dd398015443480caaf95fae94bb7f7d6a59e727940e3062706fd962",
+    "native-launch-record.json": "357565b148d9edc236889fc94ff3760ce14fcb5945cde215f97cdee320367bdf",
+    "supplement-initial-marker.json": "7c0dfb8b6b71a3016f35e2372a497bbbc662c81894d9f717449e260a74fed42e",
+    "supplement-launch-record.json": "3bf79cffdf82a9bb6d664492e113e71dbb7fff74014bfaa1cbedf219d75338e4"
+  }
+}
