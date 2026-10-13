@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-12T04:19:43.741220+00:00",
+  "updated_at": "2026-10-13T16:10:48.179450+00:00",
   "plan_sha256": "4e027cc09dcd15212e81a03dce9ece037489b8aebfe4c492991fa2bfb226c62b",
   "active_milestone": "M11",
-  "status": "m11_p6_external_source_review_authorization_pending",
+  "status": "framework_ready_m11_p6_inconclusive",
   "verification_complete": true,
   "pi_approval": {
     "quote": "Approve M0, continue M1–M10 automatically, and create the new private repository.",
@@ -38,7 +38,7 @@
     "Run independent reviewers in separately configured read-only root sessions; verify shell enforcement before L4 acceptance"
   ],
   "unresolved": [
-    "M11 P6 independent raw-based checks, enforced reviews and P7 manuscript remain; G6/G7 PI decisions required",
+    "M11 canonical verification completed with retained uncertainty; combined P6 assessment INCONCLUSIVE. Mathematical certificate treatment, full numerical acceptance and P7 manuscript remain; G6/G7 PI decisions required",
     "M12 reference paper and code/data availability require PI selection",
     "Real thesis profile is an unreviewed draft with chapter plan, publications, deadlines and venues missing",
     "Optional Gemini unavailable; manual independent review packets provided",
@@ -282,5 +282,28 @@
     "repair_packet": "projects/m11-noma-qos/to_human/P6-repair.md",
     "repair_receipt": "projects/m11-noma-qos/ara/staging/P6-fix-preparation.json",
     "gate_status": "G6 not_started"
+  },
+  "development_priority": {
+    "goal": "Finish the agent team and create an end-to-end telecommunications research workflow",
+    "readiness_handoff": "docs/workflow-readiness.md",
+    "heavy_evaluation_running": false,
+    "additional_full_evaluation_scheduled": false,
+    "numerical_parallelism": "proposed_not_implemented",
+    "scientific_acceptance_unchanged": true
+  },
+  "m11_p6_current": {
+    "native_status": "PASS",
+    "supplement_status": "CHECKED_WITH_DECLARED_UNRESOLVED",
+    "combined_status": "INCONCLUSIVE",
+    "jobs": 145,
+    "rows": 4718692,
+    "error_counts": {},
+    "stored_unresolved_rows": 5,
+    "base_oracle_unresolved": 20,
+    "eligible_for_gate_request": false,
+    "scientific_acceptance": false,
+    "closure_receipt": "projects/m11-noma-qos/analysis/supplement/completed-attempt-02/closure-receipt.json",
+    "first_numerical_review": "checked_with_limitations; no open findings",
+    "second_statistical_review": "local_packet_prepared_not_transmitted"
   }
 }

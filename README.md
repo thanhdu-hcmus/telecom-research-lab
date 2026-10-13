@@ -7,6 +7,11 @@ The PI authorized the software build through M10. Scientific gates G1-G7 require
 separate PI decisions; this repository contains no approved original research.
 M0-M10 are complete, including the PI's successful Overleaf compilation check.
 
+The agent team and workflow tooling are ready to use within the recorded software
+acceptance scope. M11's research dry run is currently inconclusive; M12 has not
+started. See [workflow readiness](docs/workflow-readiness.md) for the agent
+handoffs, evaluation budget, and proposed numerical parallelism.
+
 ```powershell
 uv sync --locked --dev
 uv run lab --help

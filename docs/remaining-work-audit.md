@@ -1,5 +1,17 @@
 # Remaining-work audit
 
+## Current development priority
+
+The PI clarified that the goal is to finish the agent team and create an
+end-to-end telecommunications research workflow. M0-M10 software readiness and
+the existing isolated integration evidence are documented in
+[workflow readiness](workflow-readiness.md). No evaluation process is currently
+active; no further full M11 pass or external review was launched for this handoff.
+The mathematical acceptance work below remains unfinished under the original
+plan. It does not prevent using the framework for another correctly scoped
+project with actual PI gates. Numerical job parallelism is proposed, not yet
+implemented; the current runners are sequential.
+
 ## Current boundary
 
 M0Ã¢â‚¬â€œM10 software acceptance is complete, including the successful PI Overleaf
